@@ -1,21 +1,23 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a function separator in a mathematical Equation. An EquationFunctionArgumentSeparator cannot contain any other element. For more information on
   * document structure, see the guide to
   * extending Google Docs.
   */
-trait EquationFunctionArgumentSeparator extends Element
-
+trait EquationFunctionArgumentSeparator
+  extends StObject
+     with Element
 object EquationFunctionArgumentSeparator {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     asBody: CallbackTo[Body],
+    asDate: CallbackTo[Date],
     asEquation: CallbackTo[Equation],
     asEquationFunction: CallbackTo[EquationFunction],
     asEquationFunctionArgumentSeparator: CallbackTo[EquationFunctionArgumentSeparator],
@@ -30,13 +32,15 @@ object EquationFunctionArgumentSeparator {
     asListItem: CallbackTo[ListItem],
     asPageBreak: CallbackTo[PageBreak],
     asParagraph: CallbackTo[Paragraph],
+    asPerson: CallbackTo[Person],
+    asRichLink: CallbackTo[RichLink],
     asTable: CallbackTo[Table],
     asTableCell: CallbackTo[TableCell],
     asTableOfContents: CallbackTo[TableOfContents],
     asTableRow: CallbackTo[TableRow],
     asText: CallbackTo[Text],
     copy: CallbackTo[Element],
-    getAttributes: CallbackTo[js.Any],
+    getAttributes: CallbackTo[Any],
     getNextSibling: CallbackTo[Element],
     getParent: CallbackTo[ContainerElement],
     getPreviousSibling: CallbackTo[Element],
@@ -44,40 +48,9 @@ object EquationFunctionArgumentSeparator {
     isAtDocumentEnd: CallbackTo[Boolean],
     merge: CallbackTo[Element],
     removeFromParent: CallbackTo[Element],
-    setAttributes: js.Any => CallbackTo[Element]
+    setAttributes: Any => Element
   ): EquationFunctionArgumentSeparator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBody")(asBody.toJsFn)
-    __obj.updateDynamic("asEquation")(asEquation.toJsFn)
-    __obj.updateDynamic("asEquationFunction")(asEquationFunction.toJsFn)
-    __obj.updateDynamic("asEquationFunctionArgumentSeparator")(asEquationFunctionArgumentSeparator.toJsFn)
-    __obj.updateDynamic("asEquationSymbol")(asEquationSymbol.toJsFn)
-    __obj.updateDynamic("asFooterSection")(asFooterSection.toJsFn)
-    __obj.updateDynamic("asFootnote")(asFootnote.toJsFn)
-    __obj.updateDynamic("asFootnoteSection")(asFootnoteSection.toJsFn)
-    __obj.updateDynamic("asHeaderSection")(asHeaderSection.toJsFn)
-    __obj.updateDynamic("asHorizontalRule")(asHorizontalRule.toJsFn)
-    __obj.updateDynamic("asInlineDrawing")(asInlineDrawing.toJsFn)
-    __obj.updateDynamic("asInlineImage")(asInlineImage.toJsFn)
-    __obj.updateDynamic("asListItem")(asListItem.toJsFn)
-    __obj.updateDynamic("asPageBreak")(asPageBreak.toJsFn)
-    __obj.updateDynamic("asParagraph")(asParagraph.toJsFn)
-    __obj.updateDynamic("asTable")(asTable.toJsFn)
-    __obj.updateDynamic("asTableCell")(asTableCell.toJsFn)
-    __obj.updateDynamic("asTableOfContents")(asTableOfContents.toJsFn)
-    __obj.updateDynamic("asTableRow")(asTableRow.toJsFn)
-    __obj.updateDynamic("asText")(asText.toJsFn)
-    __obj.updateDynamic("copy")(copy.toJsFn)
-    __obj.updateDynamic("getAttributes")(getAttributes.toJsFn)
-    __obj.updateDynamic("getNextSibling")(getNextSibling.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling.toJsFn)
-    __obj.updateDynamic("getType")(getType.toJsFn)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd.toJsFn)
-    __obj.updateDynamic("merge")(merge.toJsFn)
-    __obj.updateDynamic("removeFromParent")(removeFromParent.toJsFn)
-    __obj.updateDynamic("setAttributes")(js.Any.fromFunction1((t0: js.Any) => setAttributes(t0).runNow()))
+    val __obj = js.Dynamic.literal(asBody = asBody.toJsFn, asDate = asDate.toJsFn, asEquation = asEquation.toJsFn, asEquationFunction = asEquationFunction.toJsFn, asEquationFunctionArgumentSeparator = asEquationFunctionArgumentSeparator.toJsFn, asEquationSymbol = asEquationSymbol.toJsFn, asFooterSection = asFooterSection.toJsFn, asFootnote = asFootnote.toJsFn, asFootnoteSection = asFootnoteSection.toJsFn, asHeaderSection = asHeaderSection.toJsFn, asHorizontalRule = asHorizontalRule.toJsFn, asInlineDrawing = asInlineDrawing.toJsFn, asInlineImage = asInlineImage.toJsFn, asListItem = asListItem.toJsFn, asPageBreak = asPageBreak.toJsFn, asParagraph = asParagraph.toJsFn, asPerson = asPerson.toJsFn, asRichLink = asRichLink.toJsFn, asTable = asTable.toJsFn, asTableCell = asTableCell.toJsFn, asTableOfContents = asTableOfContents.toJsFn, asTableRow = asTableRow.toJsFn, asText = asText.toJsFn, copy = copy.toJsFn, getAttributes = getAttributes.toJsFn, getNextSibling = getNextSibling.toJsFn, getParent = getParent.toJsFn, getPreviousSibling = getPreviousSibling.toJsFn, getType = getType.toJsFn, isAtDocumentEnd = isAtDocumentEnd.toJsFn, merge = merge.toJsFn, removeFromParent = removeFromParent.toJsFn, setAttributes = js.Any.fromFunction1(setAttributes))
     __obj.asInstanceOf[EquationFunctionArgumentSeparator]
   }
 }
-

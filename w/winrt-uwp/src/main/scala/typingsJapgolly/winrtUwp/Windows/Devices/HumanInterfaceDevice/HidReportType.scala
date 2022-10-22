@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HidReportType extends js.Object
-
+sealed trait HidReportType extends StObject
 /** Specifies a HID report type. */
 @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidReportType")
 @js.native
-object HidReportType extends js.Object {
+object HidReportType extends StObject {
+  
   /** The report is a feature report. */
   @js.native
-  sealed trait feature extends HidReportType
+  sealed trait feature
+    extends StObject
+       with HidReportType
   
   /** The report is an input report. */
   @js.native
-  sealed trait input extends HidReportType
+  sealed trait input
+    extends StObject
+       with HidReportType
   
   /** The report is an output report. */
   @js.native
-  sealed trait output extends HidReportType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HidReportType with Double] = js.native
-  /* 2 */ @js.native
-  object feature extends TopLevel[feature with Double]
-  
-  /* 0 */ @js.native
-  object input extends TopLevel[input with Double]
-  
-  /* 1 */ @js.native
-  object output extends TopLevel[output with Double]
-  
+  sealed trait output
+    extends StObject
+       with HidReportType
 }
-

@@ -1,37 +1,109 @@
 package typingsJapgolly.muiDatatables.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableFilterOptions extends js.Object {
+trait MUIDataTableFilterOptions extends StObject {
+  
+  /**
+    * Custom rendering inside the filter dialog.
+    * `filterList` must be of the same type in the main column options, that is an array of arrays, where each array corresponds to the filter list for a given column.
+    *
+    * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
+    */
   var display: js.UndefOr[
-    js.Function4[
-      /* filterList */ js.Array[String], 
-      /* onChange */ js.Any, 
+    js.Function5[
+      /* filterList */ js.Array[js.Array[String]], 
+      /* onChange */ js.Function3[
+        /* val */ String | js.Array[String], 
+        /* index */ Double, 
+        /* column */ MUIDataTableColumn, 
+        Unit
+      ], 
       /* index */ Double, 
-      /* column */ js.Any, 
+      /* column */ MUIDataTableColumn, 
+      /* filterData */ js.Array[js.Array[String]], 
       Unit
     ]
   ] = js.undefined
-  var logic: js.UndefOr[js.Function2[/* prop */ String, /* filterValue */ js.Array[_], Boolean]] = js.undefined
+  
+  /** Will force a filter option to take up the grid's full width. */
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * custom filter logic.
+    *
+    * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
+    */
+  var logic: js.UndefOr[
+    js.Function3[
+      /* prop */ String, 
+      /* filterValue */ js.Array[Any], 
+      /* row */ js.UndefOr[js.Array[Any]], 
+      Boolean
+    ]
+  ] = js.undefined
+  
+  /**
+    * Custom names for the filter fields.
+    *
+    * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/column-filters/index.js)
+    */
   var names: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * A function to customize filter choices.
+    * Use case: changing empty strings to "(empty)" in a dropdown.
+    *
+    * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
+    */
+  var renderValue: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
 }
-
 object MUIDataTableFilterOptions {
-  @scala.inline
-  def apply(
-    display: (/* filterList */ js.Array[String], /* onChange */ js.Any, /* index */ Double, /* column */ js.Any) => Callback = null,
-    logic: (/* prop */ String, /* filterValue */ js.Array[js.Any]) => CallbackTo[Boolean] = null,
-    names: js.Array[String] = null
-  ): MUIDataTableFilterOptions = {
+  
+  inline def apply(): MUIDataTableFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(js.Any.fromFunction4((t0: /* filterList */ js.Array[java.lang.String], t1: /* onChange */ js.Any, t2: /* index */ scala.Double, t3: /* column */ js.Any) => display(t0, t1, t2, t3).runNow()))
-    if (logic != null) __obj.updateDynamic("logic")(js.Any.fromFunction2((t0: /* prop */ java.lang.String, t1: /* filterValue */ js.Array[js.Any]) => logic(t0, t1).runNow()))
-    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableFilterOptions]
   }
+  
+  extension [Self <: MUIDataTableFilterOptions](x: Self) {
+    
+    inline def setDisplay(
+      value: (/* filterList */ js.Array[js.Array[String]], /* onChange */ js.Function3[
+          /* val */ String | js.Array[String], 
+          /* index */ Double, 
+          /* column */ MUIDataTableColumn, 
+          Unit
+        ], /* index */ Double, /* column */ MUIDataTableColumn, /* filterData */ js.Array[js.Array[String]]) => Callback
+    ): Self = StObject.set(x, "display", js.Any.fromFunction5((t0: /* filterList */ js.Array[js.Array[String]], t1: /* onChange */ js.Function3[
+          /* val */ String | js.Array[String], 
+          /* index */ Double, 
+          /* column */ MUIDataTableColumn, 
+          Unit
+        ], t2: /* index */ Double, t3: /* column */ MUIDataTableColumn, t4: /* filterData */ js.Array[js.Array[String]]) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    
+    inline def setLogic(
+      value: (/* prop */ String, /* filterValue */ js.Array[Any], /* row */ js.UndefOr[js.Array[Any]]) => Boolean
+    ): Self = StObject.set(x, "logic", js.Any.fromFunction3(value))
+    
+    inline def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
+    
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
+    
+    inline def setRenderValue(value: /* value */ String => String): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
+    
+    inline def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
+  }
 }
-

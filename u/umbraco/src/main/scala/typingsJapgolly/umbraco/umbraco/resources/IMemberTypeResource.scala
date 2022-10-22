@@ -1,26 +1,29 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.memberTypeResource
   * @description Loads in data for member types
   **/
-trait IMemberTypeResource extends js.Object {
+trait IMemberTypeResource extends StObject {
+  
   //return all member types
-  def getTypes(): js.Any
+  def getTypes(): Any
 }
-
 object IMemberTypeResource {
-  @scala.inline
-  def apply(getTypes: CallbackTo[js.Any]): IMemberTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTypes")(getTypes.toJsFn)
+  
+  inline def apply(getTypes: CallbackTo[Any]): IMemberTypeResource = {
+    val __obj = js.Dynamic.literal(getTypes = getTypes.toJsFn)
     __obj.asInstanceOf[IMemberTypeResource]
   }
+  
+  extension [Self <: IMemberTypeResource](x: Self) {
+    
+    inline def setGetTypes(value: CallbackTo[Any]): Self = StObject.set(x, "getTypes", value.toJsFn)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cloud-config-client
 
-Typings are for version 1.4
+Typings are for version 1.6.2
 
 ## Library description:
 Spring Cloud Config Client for NodeJS
@@ -10,10 +10,10 @@ Spring Cloud Config Client for NodeJS
 | ------------------ | :-------------: |
 | Full name          | cloud-config-client |
 | Keywords           | Spring Cloud Config, configuration, client |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 136094 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 27236.666666666668 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/victorherraiz/cloud-config-client#readme)
@@ -24,7 +24,7 @@ Spring Cloud Config Client for NodeJS
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

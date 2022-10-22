@@ -1,17 +1,38 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapGridViewColumn")
-@js.native
-class BootstrapGridViewColumn protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val fieldName: String = js.native
-  val index: Double = js.native
-  val instance: js.Any = js.native
-  val name: String = js.native
-  val visible: Boolean = js.native
+trait BootstrapGridViewColumn extends StObject {
+  
+  val fieldName: String
+  
+  val index: Double
+  
+  /* protected */ val instance: Any
+  
+  val name: String
+  
+  val visible: Boolean
 }
-
+object BootstrapGridViewColumn {
+  
+  inline def apply(fieldName: String, index: Double, instance: Any, name: String, visible: Boolean): BootstrapGridViewColumn = {
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapGridViewColumn]
+  }
+  
+  extension [Self <: BootstrapGridViewColumn](x: Self) {
+    
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
+}

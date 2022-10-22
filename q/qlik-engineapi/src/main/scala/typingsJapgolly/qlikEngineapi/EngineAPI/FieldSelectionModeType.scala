@@ -1,24 +1,20 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NORMAL
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AND
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT
 */
-trait FieldSelectionModeType extends js.Object
-
+trait FieldSelectionModeType extends StObject
 object FieldSelectionModeType {
-  @scala.inline
-  def AND: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AND = this.cast("AND")
-  @scala.inline
-  def NORMAL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NORMAL = this.cast("NORMAL")
-  @scala.inline
-  def NOT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT = this.cast("NOT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AND: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AND = "AND".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AND]
+  
+  inline def NORMAL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NORMAL = "NORMAL".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NORMAL]
+  
+  inline def NOT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT = "NOT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT]
 }
-

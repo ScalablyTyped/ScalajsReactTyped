@@ -1,20 +1,25 @@
 package typingsJapgolly.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IncomingHttpStatusHeader extends js.Object {
+trait IncomingHttpStatusHeader extends StObject {
+  
   @JSName(":status")
   var Colonstatus: js.UndefOr[Double] = js.undefined
 }
-
 object IncomingHttpStatusHeader {
-  @scala.inline
-  def apply(Colonstatus: Int | Double = null): IncomingHttpStatusHeader = {
+  
+  inline def apply(): IncomingHttpStatusHeader = {
     val __obj = js.Dynamic.literal()
-    if (Colonstatus != null) __obj.updateDynamic(":status")(Colonstatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingHttpStatusHeader]
   }
+  
+  extension [Self <: IncomingHttpStatusHeader](x: Self) {
+    
+    inline def setColonstatus(value: Double): Self = StObject.set(x, ":status", value.asInstanceOf[js.Any])
+    
+    inline def setColonstatusUndefined: Self = StObject.set(x, ":status", js.undefined)
+  }
 }
-

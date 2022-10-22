@@ -2,43 +2,56 @@ package typingsJapgolly.consul.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.consul.mod.Lock.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("consul", JSImport.Namespace)
 @js.native
-class ^ () extends Consul {
+open class ^ ()
+  extends StObject
+     with Consul {
   def this(opts: ConsulOptions) = this()
+  
   /* CompleteClass */
-  override var acl: Acl = js.native
+  var acl: Acl = js.native
+  
   /* CompleteClass */
-  override var agent: Agent = js.native
+  var agent: Agent = js.native
+  
   /* CompleteClass */
-  override var catalog: Catalog = js.native
+  var catalog: Catalog = js.native
+  
   /* CompleteClass */
-  override var event: Event = js.native
+  var event: Event = js.native
+  
   /* CompleteClass */
-  override var health: Health = js.native
+  var health: Health = js.native
+  
   /* CompleteClass */
-  override var kv: Kv = js.native
-  /* CompleteClass */
-  override var session: Session = js.native
-  /* CompleteClass */
-  override var status: Status = js.native
+  var kv: Kv = js.native
+  
   /**
     * Lock helper.
     */
   /* CompleteClass */
   override def lock(opts: Options): Lock = js.native
+  
+  /* CompleteClass */
+  var session: Session = js.native
+  
+  /* CompleteClass */
+  var status: Status = js.native
+  
   /**
     * Watch helper.
     */
   /* CompleteClass */
   override def watch(opts: typingsJapgolly.consul.mod.Watch.Options): Watch = js.native
 }
-
 @JSImport("consul", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[ConsulStatic]
-
+object ^
+  extends StObject
+     with TopLevel[js.Object & ConsulStatic]

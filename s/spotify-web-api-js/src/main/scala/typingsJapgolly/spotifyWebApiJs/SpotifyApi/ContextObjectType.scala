@@ -1,24 +1,20 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.artist
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.playlist
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.album
 */
-trait ContextObjectType extends js.Object
-
+trait ContextObjectType extends StObject
 object ContextObjectType {
-  @scala.inline
-  def album: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.album = this.cast("album")
-  @scala.inline
-  def artist: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.artist = this.cast("artist")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def playlist: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.playlist = this.cast("playlist")
+  
+  inline def album: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.album = "album".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.album]
+  
+  inline def artist: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.artist = "artist".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.artist]
+  
+  inline def playlist: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.playlist = "playlist".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.playlist]
 }
-

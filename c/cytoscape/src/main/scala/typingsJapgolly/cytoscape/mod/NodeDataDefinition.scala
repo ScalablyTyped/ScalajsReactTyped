@@ -1,30 +1,28 @@
 package typingsJapgolly.cytoscape.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NodeDataDefinition
-  extends ElementDataDefinition
-     with /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with ElementDataDefinition
+     with /* key */ StringDictionary[Any] {
+  
   var parent: js.UndefOr[String] = js.undefined
 }
-
 object NodeDataDefinition {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    id: String = null,
-    parent: String = null,
-    position: Position = null
-  ): NodeDataDefinition = {
+  
+  inline def apply(): NodeDataDefinition = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDataDefinition]
   }
+  
+  extension [Self <: NodeDataDefinition](x: Self) {
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
 }
-

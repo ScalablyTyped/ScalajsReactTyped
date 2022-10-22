@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A range of elements in a document. The user's selection is represented as a Range, among
@@ -31,21 +31,26 @@ import scala.scalajs.js.annotation._
   *       }
   *     }
   */
-trait Range extends js.Object {
+trait Range extends StObject {
+  
   def getRangeElements(): js.Array[RangeElement]
+  
   /** @deprecated DO NOT USE */ def getSelectedElements(): js.Array[RangeElement]
 }
-
 object Range {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getRangeElements: CallbackTo[js.Array[RangeElement]],
     getSelectedElements: CallbackTo[js.Array[RangeElement]]
   ): Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRangeElements")(getRangeElements.toJsFn)
-    __obj.updateDynamic("getSelectedElements")(getSelectedElements.toJsFn)
+    val __obj = js.Dynamic.literal(getRangeElements = getRangeElements.toJsFn, getSelectedElements = getSelectedElements.toJsFn)
     __obj.asInstanceOf[Range]
   }
+  
+  extension [Self <: Range](x: Self) {
+    
+    inline def setGetRangeElements(value: CallbackTo[js.Array[RangeElement]]): Self = StObject.set(x, "getRangeElements", value.toJsFn)
+    
+    inline def setGetSelectedElements(value: CallbackTo[js.Array[RangeElement]]): Self = StObject.set(x, "getSelectedElements", value.toJsFn)
+  }
 }
-

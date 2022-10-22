@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-publish
 
-Typings are for version 21.2.0
+Typings are for version 23.6.0
 
 ## Library description:
 Part of [electron-builder](https://github.com/electron-userland/electron-builder).
@@ -10,10 +10,10 @@ Part of [electron-builder](https://github.com/electron-userland/electron-builder
 | ------------------ | :-------------: |
 | Full name          | electron-publish |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 12 |
-| # downloads        | 4337814 |
-| # stars            | 0 |
+| # releases         | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 1156395.6666666667 |
+| # stars            | 12336.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

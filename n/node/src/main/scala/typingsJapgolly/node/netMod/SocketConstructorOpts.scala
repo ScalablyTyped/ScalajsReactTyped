@@ -1,30 +1,49 @@
 package typingsJapgolly.node.netMod
 
+import typingsJapgolly.node.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SocketConstructorOpts extends js.Object {
+trait SocketConstructorOpts extends StObject {
+  
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
+  
   var fd: js.UndefOr[Double] = js.undefined
+  
   var readable: js.UndefOr[Boolean] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   var writable: js.UndefOr[Boolean] = js.undefined
 }
-
 object SocketConstructorOpts {
-  @scala.inline
-  def apply(
-    allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
-    fd: Int | Double = null,
-    readable: js.UndefOr[Boolean] = js.undefined,
-    writable: js.UndefOr[Boolean] = js.undefined
-  ): SocketConstructorOpts = {
+  
+  inline def apply(): SocketConstructorOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketConstructorOpts]
   }
+  
+  extension [Self <: SocketConstructorOpts](x: Self) {
+    
+    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    
+    inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    
+    inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+    
+    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    
+    inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+  }
 }
-

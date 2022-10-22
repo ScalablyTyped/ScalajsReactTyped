@@ -1,16 +1,19 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.Hours
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/set", JSImport.Namespace)
-@js.native
-object setMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn2[AnonDate, Date | Double, Date]]
+object setMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, values: Hours): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, values: Hours): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/set", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

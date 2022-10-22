@@ -1,23 +1,38 @@
 organization := "org.scalablytyped.japgolly"
 name := "angular__router"
-version := "8.2.14-3ea036"
-scalaVersion := "2.13.1"
+version := "14.2.6-d0a4e5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "angular__common" % "8.2.14-f11b0b",
-  "org.scalablytyped.japgolly" %%% "angular__compiler" % "8.2.14-5163d7",
-  "org.scalablytyped.japgolly" %%% "angular__core" % "8.2.14-2e847b",
-  "org.scalablytyped.japgolly" %%% "inquirer" % "6.5-dt-20200226Z-29a9c4",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "rxjs" % "6.5.4-a27765",
-  "org.scalablytyped.japgolly" %%% "rxjs-compat" % "6.5.4-968493",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "through" % "0.0-unknown-dt-20200225Z-90fce9",
-  "org.scalablytyped.japgolly" %%% "typescript" % "3.8.2-cfbb15")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "ajv" % "8.11.0-e04284",
+  "org.scalablytyped.japgolly" %%% "angular-devkit__core" % "14.2.3-c5d746",
+  "org.scalablytyped.japgolly" %%% "angular-devkit__schematics" % "14.2.3-0bd34c",
+  "org.scalablytyped.japgolly" %%% "angular__animations" % "14.2.6-c22480",
+  "org.scalablytyped.japgolly" %%% "angular__common" % "14.2.6-50d8f1",
+  "org.scalablytyped.japgolly" %%% "angular__compiler" % "14.2.6-9e8e56",
+  "org.scalablytyped.japgolly" %%% "angular__compiler-cli" % "14.2.2-422122",
+  "org.scalablytyped.japgolly" %%% "angular__core" % "14.2.6-dbc336",
+  "org.scalablytyped.japgolly" %%% "angular__platform-browser" % "14.2.6-82cccb",
+  "org.scalablytyped.japgolly" %%% "babel__core" % "7.1-dt-20220624Z-70ea58",
+  "org.scalablytyped.japgolly" %%% "babel__generator" % "7.6-dt-20211223Z-d287e9",
+  "org.scalablytyped.japgolly" %%% "babel__parser" % "7.19.4-03fc7e",
+  "org.scalablytyped.japgolly" %%% "babel__template" % "7.4-dt-20211202Z-a6f3ab",
+  "org.scalablytyped.japgolly" %%% "babel__traverse" % "7.18-dt-20220923Z-12cca0",
+  "org.scalablytyped.japgolly" %%% "babel__types" % "7.19.4-3aab9c",
+  "org.scalablytyped.japgolly" %%% "convert-source-map" % "1.5-dt-20211202Z-11da11",
+  "org.scalablytyped.japgolly" %%% "dependency-graph" % "0.11.0-c491e6",
+  "org.scalablytyped.japgolly" %%% "jsonc-parser" % "3.2.0-b0d53a",
+  "org.scalablytyped.japgolly" %%% "magic-string" % "0.26.7-a42afe",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "re2" % "1.17.7-1eb746",
+  "org.scalablytyped.japgolly" %%% "rxjs" % "7.5.7-c83f26",
+  "org.scalablytyped.japgolly" %%% "semver" % "7.3-dt-20220811Z-25b2d2",
+  "org.scalablytyped.japgolly" %%% "source-map" % "0.7.4-4daf59",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "typescript" % "4.8.4-7a2e7a",
+  "org.scalablytyped.japgolly" %%% "uri-js" % "4.4.1-ea7df5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

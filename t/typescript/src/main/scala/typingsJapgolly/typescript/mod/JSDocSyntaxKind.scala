@@ -1,8 +1,8 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.SyntaxKind.EndOfFileToken
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.SyntaxKind.DotToken
   - typingsJapgolly.typescript.mod.SyntaxKind.Identifier
   - typingsJapgolly.typescript.mod.SyntaxKind.BacktickToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.HashToken
   - typingsJapgolly.typescript.mod.SyntaxKind.Unknown
   - typingsJapgolly.typescript.mod.KeywordSyntaxKind
 */
-trait JSDocSyntaxKind extends js.Object
-
+trait JSDocSyntaxKind extends StObject

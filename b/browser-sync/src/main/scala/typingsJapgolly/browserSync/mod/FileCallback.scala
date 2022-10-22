@@ -1,29 +1,37 @@
 package typingsJapgolly.browserSync.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.chokidar.mod.WatchOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileCallback extends js.Object {
+trait FileCallback extends StObject {
+  
+  def fn(event: String, file: String): Any
+  
   var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var options: js.UndefOr[WatchOptions] = js.undefined
-  def fn(event: String, file: String): js.Any
 }
-
 object FileCallback {
-  @scala.inline
-  def apply(
-    fn: (String, String) => CallbackTo[js.Any],
-    `match`: String | js.Array[String] = null,
-    options: WatchOptions = null
-  ): FileCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fn")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => fn(t0, t1).runNow()))
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+  
+  inline def apply(fn: (String, String) => Any): FileCallback = {
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
     __obj.asInstanceOf[FileCallback]
   }
+  
+  extension [Self <: FileCallback](x: Self) {
+    
+    inline def setFn(value: (String, String) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+    
+    inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    
+    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
+    
+    inline def setOptions(value: WatchOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

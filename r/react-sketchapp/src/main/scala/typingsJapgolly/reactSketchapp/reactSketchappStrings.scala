@@ -1,553 +1,310 @@
 package typingsJapgolly.reactSketchapp
 
-import typingsJapgolly.reactSketchapp.mod.ResizeMode
-import typingsJapgolly.reactSketchapp.propsMod.AlignmentBaseline
-import typingsJapgolly.reactSketchapp.propsMod.FontStretch
-import typingsJapgolly.reactSketchapp.propsMod.FontStyle
-import typingsJapgolly.reactSketchapp.propsMod.FontVariant
-import typingsJapgolly.reactSketchapp.propsMod.FontVariantLigatures
-import typingsJapgolly.reactSketchapp.propsMod.FontWeight
-import typingsJapgolly.reactSketchapp.propsMod.LengthAdjust
-import typingsJapgolly.reactSketchapp.propsMod.Method
-import typingsJapgolly.reactSketchapp.propsMod.MidLine
-import typingsJapgolly.reactSketchapp.propsMod.Side
-import typingsJapgolly.reactSketchapp.propsMod.Spacing
-import typingsJapgolly.reactSketchapp.propsMod.TextAnchor
-import typingsJapgolly.reactSketchapp.propsMod.TextDecoration
-import typingsJapgolly.reactSketchapp.propsMod._BaselineShift
-import typingsJapgolly.reactSketchapp.typesMod.BorderStyle
-import typingsJapgolly.reactSketchapp.typesMod.MeasureMode
-import typingsJapgolly.reactSketchapp.typesMod.Overflow
+import typingsJapgolly.reactSketchapp.libTypesMod.MeasureMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSketchappStrings {
-  @js.native
-  sealed trait `100` extends FontWeight
-  
-  @js.native
-  sealed trait `200` extends FontWeight
-  
-  @js.native
-  sealed trait `300` extends FontWeight
-  
-  @js.native
-  sealed trait `400` extends FontWeight
-  
-  @js.native
-  sealed trait `500` extends FontWeight
-  
-  @js.native
-  sealed trait `600` extends FontWeight
-  
-  @js.native
-  sealed trait `700` extends FontWeight
-  
-  @js.native
-  sealed trait `800` extends FontWeight
-  
-  @js.native
-  sealed trait `900` extends FontWeight
-  
-  @js.native
-  sealed trait StyleSheet extends js.Object
-  
-  @js.native
-  sealed trait absolute extends js.Object
-  
-  @js.native
-  sealed trait `after-edge` extends AlignmentBaseline
-  
-  @js.native
-  sealed trait align extends Method
-  
-  @js.native
-  sealed trait alphabetic extends AlignmentBaseline
-  
-  @js.native
-  sealed trait `at-most` extends MeasureMode
   
   @js.native
-  sealed trait auto extends Spacing
+  sealed trait NodeJS extends StObject
+  inline def NodeJS: NodeJS = "NodeJS".asInstanceOf[NodeJS]
   
   @js.native
-  sealed trait baseline
-    extends AlignmentBaseline
-       with _BaselineShift
+  sealed trait absolute extends StObject
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
-  sealed trait `before-edge` extends AlignmentBaseline
+  sealed trait `at-most`
+    extends StObject
+       with MeasureMode
+       with typingsJapgolly.reactSketchapp.libModuleTypesMod.MeasureMode
+  inline def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait blink extends TextDecoration
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait bolder extends FontWeight
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait bottom extends AlignmentBaseline
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait center
-    extends AlignmentBaseline
-       with ResizeMode
+  sealed trait `column-reverse` extends StObject
+  inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
-  sealed trait central extends AlignmentBaseline
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait cover extends StObject
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait `column-reverse` extends js.Object
+  sealed trait dashed extends StObject
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
-  sealed trait condensed extends FontStretch
+  sealed trait dotted extends StObject
+  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
-  sealed trait contain extends ResizeMode
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait cover extends ResizeMode
+  sealed trait exactly
+    extends StObject
+       with MeasureMode
+       with typingsJapgolly.reactSketchapp.libModuleTypesMod.MeasureMode
+  inline def exactly: exactly = "exactly".asInstanceOf[exactly]
   
   @js.native
-  sealed trait dashed extends BorderStyle
+  sealed trait `flex-end` extends StObject
+  inline def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   
   @js.native
-  sealed trait dotted extends BorderStyle
+  sealed trait `flex-start` extends StObject
+  inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait flowDestination extends StObject
+  inline def flowDestination: flowDestination = "flowDestination".asInstanceOf[flowDestination]
   
   @js.native
-  sealed trait end extends TextAnchor
+  sealed trait fontFamily extends StObject
+  inline def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait fontSize extends StObject
+  inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
   @js.native
-  sealed trait exact extends Spacing
+  sealed trait fontStyle extends StObject
+  inline def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
   
   @js.native
-  sealed trait exactly extends MeasureMode
+  sealed trait fontWeight extends StObject
+  inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   
   @js.native
-  sealed trait expanded extends FontStretch
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait `extra-condensed` extends FontStretch
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait `extra-expanded` extends FontStretch
+  sealed trait italic extends StObject
+  inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait `flex-end` extends js.Object
+  sealed trait justify extends StObject
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait `flex-start` extends js.Object
+  sealed trait layerStyle extends StObject
+  inline def layerStyle: layerStyle = "layerStyle".asInstanceOf[layerStyle]
   
   @js.native
-  sealed trait hanging extends AlignmentBaseline
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait hidden extends Overflow
+  sealed trait letterSpacing extends StObject
+  inline def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
   
   @js.native
-  sealed trait ideographic extends AlignmentBaseline
+  sealed trait `line-through` extends StObject
+  inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
   @js.native
-  sealed trait italic extends FontStyle
+  sealed trait lineHeight extends StObject
+  inline def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait lowercase extends StObject
+  inline def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   
   @js.native
-  sealed trait left extends Side
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait lighter extends FontWeight
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait `line-through` extends TextDecoration
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait lowercase extends js.Object
+  sealed trait nowrap extends StObject
+  inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait paragraphSpacing extends StObject
+  inline def paragraphSpacing: paragraphSpacing = "paragraphSpacing".asInstanceOf[paragraphSpacing]
   
   @js.native
-  sealed trait mathematical extends AlignmentBaseline
+  sealed trait relative extends StObject
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait middle
-    extends AlignmentBaseline
-       with TextAnchor
+  sealed trait repeat extends StObject
+  inline def repeat: repeat = "repeat".asInstanceOf[repeat]
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait narrower extends FontStretch
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait none
-    extends FontVariantLigatures
-       with ResizeMode
-       with TextDecoration
+  sealed trait row extends StObject
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait `row-reverse` extends StObject
+  inline def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
   @js.native
-  sealed trait normal
-    extends FontStretch
-       with FontStyle
-       with FontVariant
-       with FontVariantLigatures
-       with FontWeight
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait nowrap extends js.Object
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait objectBoundingBox extends js.Object
+  sealed trait slideFromBottom extends StObject
+  inline def slideFromBottom: slideFromBottom = "slideFromBottom".asInstanceOf[slideFromBottom]
   
   @js.native
-  sealed trait oblique extends FontStyle
+  sealed trait slideFromLeft extends StObject
+  inline def slideFromLeft: slideFromLeft = "slideFromLeft".asInstanceOf[slideFromLeft]
   
   @js.native
-  sealed trait overline extends TextDecoration
+  sealed trait slideFromRight extends StObject
+  inline def slideFromRight: slideFromRight = "slideFromRight".asInstanceOf[slideFromRight]
   
   @js.native
-  sealed trait relative extends js.Object
+  sealed trait slideFromTop extends StObject
+  inline def slideFromTop: slideFromTop = "slideFromTop".asInstanceOf[slideFromTop]
   
   @js.native
-  sealed trait repeat extends ResizeMode
+  sealed trait solid extends StObject
+  inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
-  sealed trait right extends Side
+  sealed trait `space-around` extends StObject
+  inline def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait `space-between` extends StObject
+  inline def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait `row-reverse` extends js.Object
+  sealed trait stretch extends StObject
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait stringValue extends StObject
+  inline def stringValue: stringValue = "stringValue".asInstanceOf[stringValue]
   
   @js.native
-  sealed trait scroll extends Overflow
+  sealed trait symbolID extends StObject
+  inline def symbolID: symbolID = "symbolID".asInstanceOf[symbolID]
   
   @js.native
-  sealed trait `semi-condensed` extends FontStretch
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
   @js.native
-  sealed trait `semi-expanded` extends FontStretch
+  sealed trait textDecoration extends StObject
+  inline def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
   
   @js.native
-  sealed trait sharp extends MidLine
+  sealed trait textShadowColor extends StObject
+  inline def textShadowColor: textShadowColor = "textShadowColor".asInstanceOf[textShadowColor]
   
   @js.native
-  sealed trait sketch extends js.Object
+  sealed trait textShadowOffset extends StObject
+  inline def textShadowOffset: textShadowOffset = "textShadowOffset".asInstanceOf[textShadowOffset]
   
   @js.native
-  sealed trait `small-caps` extends FontVariant
+  sealed trait textShadowOpacity extends StObject
+  inline def textShadowOpacity: textShadowOpacity = "textShadowOpacity".asInstanceOf[textShadowOpacity]
   
   @js.native
-  sealed trait smooth extends MidLine
+  sealed trait textShadowRadius extends StObject
+  inline def textShadowRadius: textShadowRadius = "textShadowRadius".asInstanceOf[textShadowRadius]
   
   @js.native
-  sealed trait solid extends BorderStyle
+  sealed trait textShadowSpread extends StObject
+  inline def textShadowSpread: textShadowSpread = "textShadowSpread".asInstanceOf[textShadowSpread]
   
   @js.native
-  sealed trait `space-around` extends js.Object
+  sealed trait textStyle extends StObject
+  inline def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
   
   @js.native
-  sealed trait `space-between` extends js.Object
+  sealed trait textTransform extends StObject
+  inline def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
   
   @js.native
-  sealed trait spacing extends LengthAdjust
+  sealed trait undefined
+    extends StObject
+       with MeasureMode
+       with typingsJapgolly.reactSketchapp.libModuleTypesMod.MeasureMode
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait spacingAndGlyphs extends LengthAdjust
+  sealed trait underline extends StObject
+  inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait uppercase extends StObject
+  inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
-  sealed trait start extends TextAnchor
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
-  sealed trait stretch
-    extends Method
-       with ResizeMode
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
   
   @js.native
-  sealed trait sub extends _BaselineShift
+  sealed trait `wrap-reverse` extends StObject
+  inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   
   @js.native
-  sealed trait `super` extends _BaselineShift
-  
-  @js.native
-  sealed trait `text-after-edge` extends AlignmentBaseline
-  
-  @js.native
-  sealed trait `text-before-edge` extends AlignmentBaseline
-  
-  @js.native
-  sealed trait `text-bottom` extends AlignmentBaseline
-  
-  @js.native
-  sealed trait `text-top` extends AlignmentBaseline
-  
-  @js.native
-  sealed trait top extends AlignmentBaseline
-  
-  @js.native
-  sealed trait `ultra-condensed` extends FontStretch
-  
-  @js.native
-  sealed trait `ultra-expanded` extends FontStretch
-  
-  @js.native
-  sealed trait undefined extends MeasureMode
-  
-  @js.native
-  sealed trait underline extends TextDecoration
-  
-  @js.native
-  sealed trait uppercase extends js.Object
-  
-  @js.native
-  sealed trait userSpaceOnUse extends js.Object
-  
-  @js.native
-  sealed trait visible extends Overflow
-  
-  @js.native
-  sealed trait wider extends FontStretch
-  
-  @js.native
-  sealed trait wrap extends js.Object
-  
-  @scala.inline
-  def `100`: `100` = "100".asInstanceOf[`100`]
-  @scala.inline
-  def `200`: `200` = "200".asInstanceOf[`200`]
-  @scala.inline
-  def `300`: `300` = "300".asInstanceOf[`300`]
-  @scala.inline
-  def `400`: `400` = "400".asInstanceOf[`400`]
-  @scala.inline
-  def `500`: `500` = "500".asInstanceOf[`500`]
-  @scala.inline
-  def `600`: `600` = "600".asInstanceOf[`600`]
-  @scala.inline
-  def `700`: `700` = "700".asInstanceOf[`700`]
-  @scala.inline
-  def `800`: `800` = "800".asInstanceOf[`800`]
-  @scala.inline
-  def `900`: `900` = "900".asInstanceOf[`900`]
-  @scala.inline
-  def StyleSheet: StyleSheet = "StyleSheet".asInstanceOf[StyleSheet]
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
-  @scala.inline
-  def align: align = "align".asInstanceOf[align]
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  @scala.inline
-  def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def blink: blink = "blink".asInstanceOf[blink]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bolder: bolder = "bolder".asInstanceOf[bolder]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
-  @scala.inline
-  def condensed: condensed = "condensed".asInstanceOf[condensed]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def exactly: exactly = "exactly".asInstanceOf[exactly]
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
-  @scala.inline
-  def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
-  @scala.inline
-  def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
-  @scala.inline
-  def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
-  @scala.inline
-  def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
-  @scala.inline
-  def hanging: hanging = "hanging".asInstanceOf[hanging]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
-  @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def lighter: lighter = "lighter".asInstanceOf[lighter]
-  @scala.inline
-  def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
-  @scala.inline
-  def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def narrower: narrower = "narrower".asInstanceOf[narrower]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
-  @scala.inline
-  def objectBoundingBox: objectBoundingBox = "objectBoundingBox".asInstanceOf[objectBoundingBox]
-  @scala.inline
-  def oblique: oblique = "oblique".asInstanceOf[oblique]
-  @scala.inline
-  def overline: overline = "overline".asInstanceOf[overline]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def repeat: repeat = "repeat".asInstanceOf[repeat]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def `semi-condensed`: `semi-condensed` = "semi-condensed".asInstanceOf[`semi-condensed`]
-  @scala.inline
-  def `semi-expanded`: `semi-expanded` = "semi-expanded".asInstanceOf[`semi-expanded`]
-  @scala.inline
-  def sharp: sharp = "sharp".asInstanceOf[sharp]
-  @scala.inline
-  def sketch: sketch = "sketch".asInstanceOf[sketch]
-  @scala.inline
-  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
-  @scala.inline
-  def smooth: smooth = "smooth".asInstanceOf[smooth]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
-  @scala.inline
-  def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
-  @scala.inline
-  def spacing: spacing = "spacing".asInstanceOf[spacing]
-  @scala.inline
-  def spacingAndGlyphs: spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[spacingAndGlyphs]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def `super`: `super` = "super".asInstanceOf[`super`]
-  @scala.inline
-  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
-  @scala.inline
-  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
-  @scala.inline
-  def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
-  @scala.inline
-  def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]
-  @scala.inline
-  def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
-  @scala.inline
-  def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
-  @scala.inline
-  def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def wider: wider = "wider".asInstanceOf[wider]
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  sealed trait writingDirection extends StObject
+  inline def writingDirection: writingDirection = "writingDirection".asInstanceOf[writingDirection]
 }
-

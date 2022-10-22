@@ -1,19 +1,54 @@
 package typingsJapgolly.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.Event")
-@js.native
-class Event protected () extends js.Object {
-  def this(time: Double, data: EventData) = this()
-  var balance: Double = js.native
-  var data: EventData = js.native
-  var floatValue: Double = js.native
-  var intValue: Double = js.native
-  var stringValue: String = js.native
-  var time: Double = js.native
-  var volume: Double = js.native
+trait Event extends StObject {
+  
+  var balance: Double
+  
+  var data: EventData
+  
+  var floatValue: Double
+  
+  var intValue: Double
+  
+  var stringValue: String
+  
+  var time: Double
+  
+  var volume: Double
 }
-
+object Event {
+  
+  inline def apply(
+    balance: Double,
+    data: EventData,
+    floatValue: Double,
+    intValue: Double,
+    stringValue: String,
+    time: Double,
+    volume: Double
+  ): Event = {
+    val __obj = js.Dynamic.literal(balance = balance.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], floatValue = floatValue.asInstanceOf[js.Any], intValue = intValue.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Event]
+  }
+  
+  extension [Self <: Event](x: Self) {
+    
+    inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
+    
+    inline def setIntValue(value: Double): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
+    
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+  }
+}

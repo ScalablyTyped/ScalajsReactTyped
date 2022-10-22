@@ -1,113 +1,111 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatPermission extends js.Object
-
+sealed trait EChatPermission extends StObject
 @JSImport("steam-client", "EChatPermission")
 @js.native
-object EChatPermission extends js.Object {
-  @js.native
-  sealed trait Ban extends EChatPermission
-  
-  @js.native
-  sealed trait ChangeAccess extends EChatPermission
-  
-  @js.native
-  sealed trait ChangePermissions extends EChatPermission
-  
-  @js.native
-  sealed trait Close extends EChatPermission
-  
-   // 10
-  @js.native
-  sealed trait EveryoneDefault extends EChatPermission
-  
-   // 8
-  @js.native
-  sealed trait EveryoneNotInClanDefault extends EChatPermission
-  
-  @js.native
-  sealed trait Invite extends EChatPermission
-  
-  @js.native
-  sealed trait Kick extends EChatPermission
-  
-  @js.native
-  sealed trait Mask extends EChatPermission
-  
-  // todo: this doesn't seem correct...
-   // 282
-  @js.native
-  sealed trait MemberDefault extends EChatPermission
-  
-  @js.native
-  sealed trait Mute extends EChatPermission
-  
-   // 282
-  @js.native
-  sealed trait OfficerDefault extends EChatPermission
-  
-   // 891
-  @js.native
-  sealed trait OwnerDefault extends EChatPermission
-  
-  @js.native
-  sealed trait SetMetadata extends EChatPermission
-  
-  @js.native
-  sealed trait Talk extends EChatPermission
+object EChatPermission extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EChatPermission with Double] = js.native
-  /* 256 */ @js.native
-  object Ban extends TopLevel[Ban with Double]
+  def apply(value: Double): js.UndefOr[EChatPermission & Double] = js.native
   
-  /* 512 */ @js.native
-  object ChangeAccess extends TopLevel[ChangeAccess with Double]
+  @js.native
+  sealed trait Ban
+    extends StObject
+       with EChatPermission
+  /* 256 */ val Ban: typingsJapgolly.steamClient.mod.EChatPermission.Ban & Double = js.native
   
-  /* 128 */ @js.native
-  object ChangePermissions extends TopLevel[ChangePermissions with Double]
+  @js.native
+  sealed trait ChangeAccess
+    extends StObject
+       with EChatPermission
+  /* 512 */ val ChangeAccess: typingsJapgolly.steamClient.mod.EChatPermission.ChangeAccess & Double = js.native
   
-  /* 1 */ @js.native
-  object Close extends TopLevel[Close with Double]
+  @js.native
+  sealed trait ChangePermissions
+    extends StObject
+       with EChatPermission
+  /* 128 */ val ChangePermissions: typingsJapgolly.steamClient.mod.EChatPermission.ChangePermissions & Double = js.native
   
-  /* 8 | 2 */ @js.native
-  object EveryoneDefault extends TopLevel[EveryoneDefault with Double]
+  @js.native
+  sealed trait Close
+    extends StObject
+       with EChatPermission
+  /* 1 */ val Close: typingsJapgolly.steamClient.mod.EChatPermission.Close & Double = js.native
   
-  /* 8 */ @js.native
-  object EveryoneNotInClanDefault extends TopLevel[EveryoneNotInClanDefault with Double]
+  // 8
+  @js.native
+  sealed trait EveryoneDefault
+    extends StObject
+       with EChatPermission
+  /* 8 | 2 */ val EveryoneDefault: typingsJapgolly.steamClient.mod.EChatPermission.EveryoneDefault & Double = js.native
   
-  /* 2 */ @js.native
-  object Invite extends TopLevel[Invite with Double]
+  @js.native
+  sealed trait EveryoneNotInClanDefault
+    extends StObject
+       with EChatPermission
+  /* 8 */ val EveryoneNotInClanDefault: typingsJapgolly.steamClient.mod.EChatPermission.EveryoneNotInClanDefault & Double = js.native
   
-  /* 16 */ @js.native
-  object Kick extends TopLevel[Kick with Double]
+  @js.native
+  sealed trait Invite
+    extends StObject
+       with EChatPermission
+  /* 2 */ val Invite: typingsJapgolly.steamClient.mod.EChatPermission.Invite & Double = js.native
   
-  /* 1019 */ @js.native
-  object Mask extends TopLevel[Mask with Double]
+  @js.native
+  sealed trait Kick
+    extends StObject
+       with EChatPermission
+  /* 16 */ val Kick: typingsJapgolly.steamClient.mod.EChatPermission.Kick & Double = js.native
   
-  /* 256 | 16 | 8 | 2 */ @js.native
-  object MemberDefault extends TopLevel[MemberDefault with Double]
+  // 891
+  @js.native
+  sealed trait Mask
+    extends StObject
+       with EChatPermission
+  /* 1019 */ val Mask: typingsJapgolly.steamClient.mod.EChatPermission.Mask & Double = js.native
   
-  /* 32 */ @js.native
-  object Mute extends TopLevel[Mute with Double]
+  // 10
+  // todo: this doesn't seem correct...
+  @js.native
+  sealed trait MemberDefault
+    extends StObject
+       with EChatPermission
+  /* 256 | 16 | 8 | 2 */ val MemberDefault: typingsJapgolly.steamClient.mod.EChatPermission.MemberDefault & Double = js.native
   
-  /* 256 | 16 | 8 | 2 */ @js.native
-  object OfficerDefault extends TopLevel[OfficerDefault with Double]
+  @js.native
+  sealed trait Mute
+    extends StObject
+       with EChatPermission
+  /* 32 */ val Mute: typingsJapgolly.steamClient.mod.EChatPermission.Mute & Double = js.native
   
-  /* 512 | 256 | 64 | 32 | 16 | 8 | 2 | 1 */ @js.native
-  object OwnerDefault extends TopLevel[OwnerDefault with Double]
+  // 282
+  @js.native
+  sealed trait OfficerDefault
+    extends StObject
+       with EChatPermission
+  /* 256 | 16 | 8 | 2 */ val OfficerDefault: typingsJapgolly.steamClient.mod.EChatPermission.OfficerDefault & Double = js.native
   
-  /* 64 */ @js.native
-  object SetMetadata extends TopLevel[SetMetadata with Double]
+  // 282
+  @js.native
+  sealed trait OwnerDefault
+    extends StObject
+       with EChatPermission
+  /* 512 | 256 | 64 | 32 | 16 | 8 | 2 | 1 */ val OwnerDefault: typingsJapgolly.steamClient.mod.EChatPermission.OwnerDefault & Double = js.native
   
-  /* 8 */ @js.native
-  object Talk extends TopLevel[Talk with Double]
+  @js.native
+  sealed trait SetMetadata
+    extends StObject
+       with EChatPermission
+  /* 64 */ val SetMetadata: typingsJapgolly.steamClient.mod.EChatPermission.SetMetadata & Double = js.native
   
+  @js.native
+  sealed trait Talk
+    extends StObject
+       with EChatPermission
+  /* 8 */ val Talk: typingsJapgolly.steamClient.mod.EChatPermission.Talk & Double = js.native
 }
-

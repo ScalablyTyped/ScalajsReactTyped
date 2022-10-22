@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-haste-map
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-haste-map |
 | Keywords           | - |
-| # releases         | 66 |
-| # dependents       | 77 |
-| # downloads        | 257097873 |
-| # stars            | 0 |
+| # releases         | 69 |
+| # dependents       | 0.0 |
+| # downloads        | 1.08555595E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

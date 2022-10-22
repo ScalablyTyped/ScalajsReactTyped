@@ -1,42 +1,33 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControlMode extends js.Object
-
+sealed trait ControlMode extends StObject
 /** Represents display mode for a control or form */
 @JSGlobal("SP.ControlMode")
 @js.native
-object ControlMode extends js.Object {
-  @js.native
-  sealed trait displayMode extends ControlMode
+object ControlMode extends StObject {
   
   @js.native
-  sealed trait editMode extends ControlMode
+  sealed trait displayMode
+    extends StObject
+       with ControlMode
   
   @js.native
-  sealed trait invalid extends ControlMode
+  sealed trait editMode
+    extends StObject
+       with ControlMode
   
   @js.native
-  sealed trait newMode extends ControlMode
+  sealed trait invalid
+    extends StObject
+       with ControlMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ControlMode with Double] = js.native
-  /* 1 */ @js.native
-  object displayMode extends TopLevel[displayMode with Double]
-  
-  /* 2 */ @js.native
-  object editMode extends TopLevel[editMode with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 3 */ @js.native
-  object newMode extends TopLevel[newMode with Double]
-  
+  @js.native
+  sealed trait newMode
+    extends StObject
+       with ControlMode
 }
-

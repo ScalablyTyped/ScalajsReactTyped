@@ -1,33 +1,37 @@
 package typingsJapgolly.hapiJoi.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Cache extends js.Object {
+trait Cache extends StObject {
+  
   /**
     * Retrieve an item from the cache.
     *
     * Note that key and value can be anything including objects, array, etc.
     */
-  def get(key: js.Any): js.Any
+  def get(key: Any): Any
+  
   /**
     * Add an item to the cache.
     *
     * Note that key and value can be anything including objects, array, etc.
     */
-  def set(key: js.Any, value: js.Any): Unit
+  def set(key: Any, value: Any): Unit
 }
-
 object Cache {
-  @scala.inline
-  def apply(get: js.Any => CallbackTo[js.Any], set: (js.Any, js.Any) => Callback): Cache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: js.Any) => get(t0).runNow()))
-    __obj.updateDynamic("set")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => set(t0, t1).runNow()))
+  
+  inline def apply(get: Any => Any, set: (Any, Any) => Callback): Cache = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2((t0: Any, t1: Any) => (set(t0, t1)).runNow()))
     __obj.asInstanceOf[Cache]
   }
+  
+  extension [Self <: Cache](x: Self) {
+    
+    inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setSet(value: (Any, Any) => Callback): Self = StObject.set(x, "set", js.Any.fromFunction2((t0: Any, t1: Any) => (value(t0, t1)).runNow()))
+  }
 }
-

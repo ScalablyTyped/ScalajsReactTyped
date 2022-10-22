@@ -1,19 +1,14 @@
 package typingsJapgolly.mssql.mod
 
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mssql", "PreparedStatementError")
 @js.native
-class PreparedStatementError protected () extends Error {
+open class PreparedStatementError protected () extends MSSQLError {
   def this(message: String) = this()
-  def this(message: String, code: js.Any) = this()
-  var code: String = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
+  def this(message: js.Error) = this()
+  def this(message: String, code: String) = this()
+  def this(message: js.Error, code: String) = this()
 }
-

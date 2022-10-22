@@ -1,39 +1,32 @@
 package typingsJapgolly.jqueryTypeahead
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryTypeaheadStrings {
-  @js.native
-  sealed trait any extends js.Object
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait localStorage extends js.Object
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait sessionStorage extends js.Object
+  sealed trait localStorage extends StObject
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait sessionStorage extends StObject
+  inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
   
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  @js.native
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }
-

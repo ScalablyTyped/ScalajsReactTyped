@@ -1,22 +1,17 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import typingsJapgolly.ionic.ionicStrings.yarn_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.ionic.ionicStrings.yarn_
+  - typingsJapgolly.ionic.ionicStrings.yarn
   - typingsJapgolly.ionic.ionicStrings.npm
 */
-trait NpmClient extends js.Object
-
+trait NpmClient extends StObject
 object NpmClient {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def npm: typingsJapgolly.ionic.ionicStrings.npm = this.cast("npm")
-  @scala.inline
-  def yarn: yarn_ = this.cast("yarn")
+  
+  inline def npm: typingsJapgolly.ionic.ionicStrings.npm = "npm".asInstanceOf[typingsJapgolly.ionic.ionicStrings.npm]
+  
+  inline def yarn: typingsJapgolly.ionic.ionicStrings.yarn = "yarn".asInstanceOf[typingsJapgolly.ionic.ionicStrings.yarn]
 }
-

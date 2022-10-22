@@ -1,19 +1,22 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationUriActionPayload extends js.Object {
+trait NavigationUriActionPayload extends StObject {
+  
   var uri: String
 }
-
 object NavigationUriActionPayload {
-  @scala.inline
-  def apply(uri: String): NavigationUriActionPayload = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
   
+  inline def apply(uri: String): NavigationUriActionPayload = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationUriActionPayload]
   }
+  
+  extension [Self <: NavigationUriActionPayload](x: Self) {
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+  }
 }
-

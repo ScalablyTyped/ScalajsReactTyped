@@ -1,19 +1,12 @@
 package typingsJapgolly.angularAnimations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularAnimationsStrings {
-  @js.native
-  sealed trait Asterisk extends js.Object
   
   @js.native
-  sealed trait Exclamationmark extends js.Object
-  
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
 }
-

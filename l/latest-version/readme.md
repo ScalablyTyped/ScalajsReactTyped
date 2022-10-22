@@ -1,7 +1,7 @@
 
 # Scala.js typings for latest-version
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 Get the latest version of an npm package
@@ -10,10 +10,10 @@ Get the latest version of an npm package
 | ------------------ | :-------------: |
 | Full name          | latest-version |
 | Keywords           | latest, version, npm, pkg, package, package.json, current, module |
-| # releases         | 4 |
-| # dependents       | 364 |
-| # downloads        | 190797262 |
-| # stars            | 9 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1997334E7 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/latest-version#readme)

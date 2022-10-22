@@ -1,11 +1,12 @@
 package typingsJapgolly.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonExpectationStatic extends js.Object {
+trait SinonExpectationStatic extends StObject {
+  
   /**
     * Creates an expectation without a mock object, basically an anonymous mock function.
     * Method name is optional and is used in exception messages to make them more readable.
@@ -14,4 +15,3 @@ trait SinonExpectationStatic extends js.Object {
   def create(): SinonExpectation = js.native
   def create(methodName: String): SinonExpectation = js.native
 }
-

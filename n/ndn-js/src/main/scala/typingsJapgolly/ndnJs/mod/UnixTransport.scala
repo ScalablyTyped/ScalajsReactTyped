@@ -1,22 +1,19 @@
 package typingsJapgolly.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "UnixTransport")
 @js.native
-class UnixTransport ()
-  extends typingsJapgolly.ndnJs.transportMod.Transport
-
-@JSImport("ndn-js", "UnixTransport")
-@js.native
-object UnixTransport extends js.Object {
+open class UnixTransport ()
+  extends typingsJapgolly.ndnJs.transportMod.UnixTransport
+object UnixTransport {
+  
+  @JSImport("ndn-js", "UnixTransport.ConnectionInfo")
   @js.native
-  class ConnectionInfo protected ()
+  open class ConnectionInfo protected ()
     extends typingsJapgolly.ndnJs.transportMod.UnixTransport.ConnectionInfo {
     def this(filePath: String) = this()
   }
-  
 }
-

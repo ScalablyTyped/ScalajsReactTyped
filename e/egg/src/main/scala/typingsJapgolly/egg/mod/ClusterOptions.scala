@@ -1,54 +1,79 @@
 package typingsJapgolly.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClusterOptions
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[Any] {
+  
   /** directory of application, default to `process.cwd()` */
   var baseDir: js.UndefOr[String] = js.undefined
+  
   /** ssl cert */
   var cert: js.UndefOr[String] = js.undefined
+  
   /** specify framework that can be absolute path or npm package */
   var framework: js.UndefOr[String] = js.undefined
+  
   /** https or not */
   var https: js.UndefOr[Boolean] = js.undefined
+  
   /** ssl key */
   var key: js.UndefOr[String] = js.undefined
+  
   /** customized plugins, for unittest */
   var plugins: js.UndefOr[js.Object | Null] = js.undefined
+  
   /** listening port, default to 7001(http) or 8443(https) */
   var port: js.UndefOr[Double] = js.undefined
+  
   /** numbers of app workers, default to `os.cpus().length` */
   var workers: js.UndefOr[Double] = js.undefined
 }
-
 object ClusterOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /* prop */ StringDictionary[js.Any] = null,
-    baseDir: String = null,
-    cert: String = null,
-    framework: String = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    plugins: js.Object = null,
-    port: Int | Double = null,
-    workers: Int | Double = null
-  ): ClusterOptions = {
+  
+  inline def apply(): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
+  
+  extension [Self <: ClusterOptions](x: Self) {
+    
+    inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    
+    inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+    
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    
+    inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setPlugins(value: js.Object): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsNull: Self = StObject.set(x, "plugins", null)
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    
+    inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+  }
 }
-

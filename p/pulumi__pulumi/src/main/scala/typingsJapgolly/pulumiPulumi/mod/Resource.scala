@@ -2,13 +2,13 @@ package typingsJapgolly.pulumiPulumi.mod
 
 import typingsJapgolly.pulumiPulumi.outputMod.Inputs
 import typingsJapgolly.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi", "Resource")
+/* note: abstract class */ @JSImport("@pulumi/pulumi", "Resource")
 @js.native
-abstract class Resource protected ()
+open class Resource protected ()
   extends typingsJapgolly.pulumiPulumi.resourceMod.Resource {
   /**
     * Creates and registers a new resource object.  [t] is the fully qualified type token and
@@ -21,16 +21,96 @@ abstract class Resource protected ()
     * @param custom True to indicate that this is a custom resource, managed by a plugin.
     * @param props The arguments to use to populate the new resource.
     * @param opts A bag of options that control this resource's behavior.
+    * @param remote True if this is a remote component resource.
+    * @param dependency True if this is a synthetic resource used internally for dependency tracking.
     */
   def this(t: String, name: String, custom: Boolean) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs) = this()
+  def this(t: String, name: String, custom: Boolean, props: Unit, opts: ResourceOptions) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions) = this()
+  def this(t: String, name: String, custom: Boolean, props: Unit, opts: Unit, remote: Boolean) = this()
+  def this(t: String, name: String, custom: Boolean, props: Unit, opts: ResourceOptions, remote: Boolean) = this()
+  def this(t: String, name: String, custom: Boolean, props: Inputs, opts: Unit, remote: Boolean) = this()
+  def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions, remote: Boolean) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Unit,
+    opts: Unit,
+    remote: Boolean,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Unit,
+    opts: Unit,
+    remote: Unit,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Unit,
+    opts: ResourceOptions,
+    remote: Boolean,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Unit,
+    opts: ResourceOptions,
+    remote: Unit,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Inputs,
+    opts: Unit,
+    remote: Boolean,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Inputs,
+    opts: Unit,
+    remote: Unit,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Inputs,
+    opts: ResourceOptions,
+    remote: Boolean,
+    dependency: Boolean
+  ) = this()
+  def this(
+    t: String,
+    name: String,
+    custom: Boolean,
+    props: Inputs,
+    opts: ResourceOptions,
+    remote: Unit,
+    dependency: Boolean
+  ) = this()
 }
-
 /* static members */
-@JSImport("@pulumi/pulumi", "Resource")
-@js.native
-object Resource extends js.Object {
-  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = js.native
+object Resource {
+  
+  @JSImport("@pulumi/pulumi", "Resource")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isInstance(obj: Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
 }
-

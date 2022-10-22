@@ -1,53 +1,42 @@
 package typingsJapgolly.winrt.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceWatcherStatus extends js.Object
-
+sealed trait DeviceWatcherStatus extends StObject
 @JSGlobal("Windows.Devices.Enumeration.DeviceWatcherStatus")
 @js.native
-object DeviceWatcherStatus extends js.Object {
-  @js.native
-  sealed trait aborted extends DeviceWatcherStatus
+object DeviceWatcherStatus extends StObject {
   
   @js.native
-  sealed trait created extends DeviceWatcherStatus
+  sealed trait aborted
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait enumerationCompleted extends DeviceWatcherStatus
+  sealed trait created
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait started extends DeviceWatcherStatus
+  sealed trait enumerationCompleted
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait stopped extends DeviceWatcherStatus
+  sealed trait started
+    extends StObject
+       with DeviceWatcherStatus
   
   @js.native
-  sealed trait stopping extends DeviceWatcherStatus
+  sealed trait stopped
+    extends StObject
+       with DeviceWatcherStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceWatcherStatus with Double] = js.native
-  /* 5 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 4 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
-  /* 3 */ @js.native
-  object stopping extends TopLevel[stopping with Double]
-  
+  @js.native
+  sealed trait stopping
+    extends StObject
+       with DeviceWatcherStatus
 }
-

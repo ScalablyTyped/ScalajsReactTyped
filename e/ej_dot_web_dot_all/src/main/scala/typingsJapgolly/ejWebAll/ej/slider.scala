@@ -1,42 +1,33 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.slider")
-@js.native
-object slider extends js.Object {
-  @js.native
-  sealed trait sliderType extends js.Object
+object slider {
   
   @js.native
-  object sliderType extends js.Object {
+  sealed trait sliderType extends StObject
+  @JSGlobal("ej.slider.sliderType")
+  @js.native
+  object sliderType extends StObject {
+    
     //Shows default slider
     @js.native
-    sealed trait Default extends sliderType
+    sealed trait Default
+      extends StObject
+         with sliderType
     
     //Shows minRange slider
     @js.native
-    sealed trait MinRange extends sliderType
+    sealed trait MinRange
+      extends StObject
+         with sliderType
     
     //Shows Range slider
     @js.native
-    sealed trait Range extends sliderType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[sliderType with Double] = js.native
-    /* 0 */ @js.native
-    object Default extends TopLevel[Default with Double]
-    
-    /* 1 */ @js.native
-    object MinRange extends TopLevel[MinRange with Double]
-    
-    /* 2 */ @js.native
-    object Range extends TopLevel[Range with Double]
-    
+    sealed trait Range
+      extends StObject
+         with sliderType
   }
-  
 }
-

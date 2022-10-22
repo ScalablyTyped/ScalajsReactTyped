@@ -10,13 +10,13 @@ A user interface for JSON.
 | ------------------ | :-------------: |
 | Full name          | hjson |
 | Keywords           | json, comments, config, hjson, parser, serializer, human |
-| # releases         | 5 |
-| # dependents       | 140 |
-| # downloads        | 1236632 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 381169.6666666667 |
+| # stars            | 372.0 |
 
 ## Links
-- [Homepage](http://hjson.org)
+- [Homepage](https://hjson.github.io)
 - [Bugs](https://github.com/hjson/hjson-js/issues)
 - [Repository](https://github.com/hjson/hjson-js)
 - [Npm](https://www.npmjs.com/package/hjson)

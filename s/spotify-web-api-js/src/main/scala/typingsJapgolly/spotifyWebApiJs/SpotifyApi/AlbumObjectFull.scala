@@ -1,9 +1,8 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
-import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.album
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Objects from the Object Models of the Spotify Web Api, ordered alphabetically.
@@ -13,20 +12,29 @@ import scala.scalajs.js.annotation._
   * Full Album Object
   * [album object (full)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
   */
-trait AlbumObjectFull extends AlbumObjectSimplified {
+trait AlbumObjectFull
+  extends StObject
+     with AlbumObjectSimplified {
+  
   var artists: js.Array[ArtistObjectSimplified]
+  
   var copyrights: js.Array[CopyrightObject]
+  
   var external_ids: ExternalIdObject
+  
   var genres: js.Array[String]
+  
   var popularity: Double
+  
   var release_date: String
+  
   var release_date_precision: String
+  
   var tracks: PagingObject[TrackObjectSimplified]
 }
-
 object AlbumObjectFull {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     album_type: String,
     artists: js.Array[ArtistObjectSimplified],
     copyrights: js.Array[CopyrightObject],
@@ -41,14 +49,35 @@ object AlbumObjectFull {
     release_date: String,
     release_date_precision: String,
     tracks: PagingObject[TrackObjectSimplified],
-    `type`: album,
-    uri: String,
-    available_markets: js.Array[String] = null
+    uri: String
   ): AlbumObjectFull = {
     val __obj = js.Dynamic.literal(album_type = album_type.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], copyrights = copyrights.asInstanceOf[js.Any], external_ids = external_ids.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], genres = genres.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], release_date_precision = release_date_precision.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("album")
     __obj.asInstanceOf[AlbumObjectFull]
   }
+  
+  extension [Self <: AlbumObjectFull](x: Self) {
+    
+    inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    
+    inline def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value*))
+    
+    inline def setCopyrights(value: js.Array[CopyrightObject]): Self = StObject.set(x, "copyrights", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightsVarargs(value: CopyrightObject*): Self = StObject.set(x, "copyrights", js.Array(value*))
+    
+    inline def setExternal_ids(value: ExternalIdObject): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
+    
+    inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
+    
+    inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+    
+    inline def setRelease_date(value: String): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+    
+    inline def setRelease_date_precision(value: String): Self = StObject.set(x, "release_date_precision", value.asInstanceOf[js.Any])
+    
+    inline def setTracks(value: PagingObject[TrackObjectSimplified]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+  }
 }
-

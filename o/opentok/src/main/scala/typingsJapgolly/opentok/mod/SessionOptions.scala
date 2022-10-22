@@ -1,23 +1,36 @@
 package typingsJapgolly.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SessionOptions extends js.Object {
+trait SessionOptions extends StObject {
+  
   var archiveMode: js.UndefOr[ArchiveMode] = js.undefined
+  
   var location: js.UndefOr[String] = js.undefined
+  
   var mediaMode: js.UndefOr[MediaMode] = js.undefined
 }
-
 object SessionOptions {
-  @scala.inline
-  def apply(archiveMode: ArchiveMode = null, location: String = null, mediaMode: MediaMode = null): SessionOptions = {
+  
+  inline def apply(): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (archiveMode != null) __obj.updateDynamic("archiveMode")(archiveMode.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (mediaMode != null) __obj.updateDynamic("mediaMode")(mediaMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
+  
+  extension [Self <: SessionOptions](x: Self) {
+    
+    inline def setArchiveMode(value: ArchiveMode): Self = StObject.set(x, "archiveMode", value.asInstanceOf[js.Any])
+    
+    inline def setArchiveModeUndefined: Self = StObject.set(x, "archiveMode", js.undefined)
+    
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMediaMode(value: MediaMode): Self = StObject.set(x, "mediaMode", value.asInstanceOf[js.Any])
+    
+    inline def setMediaModeUndefined: Self = StObject.set(x, "mediaMode", js.undefined)
+  }
 }
-

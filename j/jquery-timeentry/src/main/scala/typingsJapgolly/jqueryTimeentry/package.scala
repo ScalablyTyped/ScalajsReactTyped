@@ -1,15 +1,15 @@
-package typingsJapgolly
+package typingsJapgolly.jqueryTimeentry
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object jqueryTimeentry {
-  type ITimeEntry = js.Function3[
-    /* configOrFnName */ js.UndefOr[typingsJapgolly.jqueryTimeentry.ITimeEntryOptions | java.lang.String], 
-    /* nameOrOption */ js.UndefOr[js.Any], 
-    /* value */ js.UndefOr[js.Any], 
-    js.Any
-  ]
-  type ITimeEntryLocales = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.jqueryTimeentry.ITimeEntryRegionalOptions]
-}
+
+type ITimeEntry = js.Function3[
+/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], 
+/* nameOrOption */ js.UndefOr[Any], 
+/* value */ js.UndefOr[Any], 
+Any]
+
+type ITimeEntryLocales = StringDictionary[ITimeEntryRegionalOptions]

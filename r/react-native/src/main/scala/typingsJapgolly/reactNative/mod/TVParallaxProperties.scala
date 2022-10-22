@@ -1,66 +1,90 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TVParallaxProperties extends js.Object {
+trait TVParallaxProperties extends StObject {
+  
   /**
     * If true, parallax effects are enabled.  Defaults to true.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Defaults to 1.0
     */
   var magnification: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 0.3
     */
   var pressDelay: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 0.3
     */
   var pressDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 1.0
     */
   var pressMagnification: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 2.0.
     */
   var shiftDistanceX: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 2.0.
     */
   var shiftDistanceY: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defaults to 0.05.
     */
   var tiltAngle: js.UndefOr[Double] = js.undefined
 }
-
 object TVParallaxProperties {
-  @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    magnification: Int | Double = null,
-    pressDelay: Int | Double = null,
-    pressDuration: Int | Double = null,
-    pressMagnification: Int | Double = null,
-    shiftDistanceX: Int | Double = null,
-    shiftDistanceY: Int | Double = null,
-    tiltAngle: Int | Double = null
-  ): TVParallaxProperties = {
+  
+  inline def apply(): TVParallaxProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (magnification != null) __obj.updateDynamic("magnification")(magnification.asInstanceOf[js.Any])
-    if (pressDelay != null) __obj.updateDynamic("pressDelay")(pressDelay.asInstanceOf[js.Any])
-    if (pressDuration != null) __obj.updateDynamic("pressDuration")(pressDuration.asInstanceOf[js.Any])
-    if (pressMagnification != null) __obj.updateDynamic("pressMagnification")(pressMagnification.asInstanceOf[js.Any])
-    if (shiftDistanceX != null) __obj.updateDynamic("shiftDistanceX")(shiftDistanceX.asInstanceOf[js.Any])
-    if (shiftDistanceY != null) __obj.updateDynamic("shiftDistanceY")(shiftDistanceY.asInstanceOf[js.Any])
-    if (tiltAngle != null) __obj.updateDynamic("tiltAngle")(tiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TVParallaxProperties]
   }
+  
+  extension [Self <: TVParallaxProperties](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setMagnification(value: Double): Self = StObject.set(x, "magnification", value.asInstanceOf[js.Any])
+    
+    inline def setMagnificationUndefined: Self = StObject.set(x, "magnification", js.undefined)
+    
+    inline def setPressDelay(value: Double): Self = StObject.set(x, "pressDelay", value.asInstanceOf[js.Any])
+    
+    inline def setPressDelayUndefined: Self = StObject.set(x, "pressDelay", js.undefined)
+    
+    inline def setPressDuration(value: Double): Self = StObject.set(x, "pressDuration", value.asInstanceOf[js.Any])
+    
+    inline def setPressDurationUndefined: Self = StObject.set(x, "pressDuration", js.undefined)
+    
+    inline def setPressMagnification(value: Double): Self = StObject.set(x, "pressMagnification", value.asInstanceOf[js.Any])
+    
+    inline def setPressMagnificationUndefined: Self = StObject.set(x, "pressMagnification", js.undefined)
+    
+    inline def setShiftDistanceX(value: Double): Self = StObject.set(x, "shiftDistanceX", value.asInstanceOf[js.Any])
+    
+    inline def setShiftDistanceXUndefined: Self = StObject.set(x, "shiftDistanceX", js.undefined)
+    
+    inline def setShiftDistanceY(value: Double): Self = StObject.set(x, "shiftDistanceY", value.asInstanceOf[js.Any])
+    
+    inline def setShiftDistanceYUndefined: Self = StObject.set(x, "shiftDistanceY", js.undefined)
+    
+    inline def setTiltAngle(value: Double): Self = StObject.set(x, "tiltAngle", value.asInstanceOf[js.Any])
+    
+    inline def setTiltAngleUndefined: Self = StObject.set(x, "tiltAngle", js.undefined)
+  }
 }
-

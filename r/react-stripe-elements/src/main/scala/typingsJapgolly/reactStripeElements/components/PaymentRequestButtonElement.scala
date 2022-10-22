@@ -1,86 +1,75 @@
 package typingsJapgolly.reactStripeElements.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactStripeElements.mod.ReactStripeElements.ElementChangeResponse
 import typingsJapgolly.reactStripeElements.mod.ReactStripeElements.HTMLStripeElement
 import typingsJapgolly.reactStripeElements.mod.ReactStripeElements.PaymentRequestButtonElementProps
-import typingsJapgolly.stripeV3.AnonBase
-import typingsJapgolly.stripeV3.AnonComplete
+import typingsJapgolly.stripeV3.anon.Base
+import typingsJapgolly.stripeV3.anon.Complete
 import typingsJapgolly.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typingsJapgolly.stripeV3.stripeV3Strings.default
 import typingsJapgolly.stripeV3.stripeV3Strings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PaymentRequestButtonElement {
-  def apply(
-    className: String = null,
-    classes: AnonBase = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementRef: /* ref */ js.Any => Callback = null,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    hidePostalCode: js.UndefOr[Boolean] = js.undefined,
-    iconStyle: solid | default = null,
-    id: String = null,
-    onBlur: /* event */ ElementChangeResponse => Callback = null,
-    onChange: /* event */ ElementChangeResponse => Callback = null,
-    onClick: /* event */ js.Any => Callback = null,
-    onFocus: /* event */ ElementChangeResponse => Callback = null,
-    onReady: /* el */ HTMLStripeElement => Callback = null,
-    paymentRequest: StripePaymentRequest = null,
-    placeholder: String = null,
-    placeholderCountry: String = null,
-    style: AnonComplete = null,
-    supportedCountries: js.Array[String] = null,
-    value: String | StringDictionary[String] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    PaymentRequestButtonElementProps, 
-    typingsJapgolly.reactStripeElements.mod.PaymentRequestButtonElement, 
-    Unit, 
-    PaymentRequestButtonElementProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1((t0: /* ref */ js.Any) => elementRef(t0).runNow()))
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactStripeElements.mod.ReactStripeElements.ElementChangeResponse) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactStripeElements.mod.ReactStripeElements.ElementChangeResponse) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ js.Any) => onClick(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactStripeElements.mod.ReactStripeElements.ElementChangeResponse) => onFocus(t0).runNow()))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1((t0: /* el */ typingsJapgolly.reactStripeElements.mod.ReactStripeElements.HTMLStripeElement) => onReady(t0).runNow()))
-    if (paymentRequest != null) __obj.updateDynamic("paymentRequest")(paymentRequest.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderCountry != null) __obj.updateDynamic("placeholderCountry")(placeholderCountry.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (supportedCountries != null) __obj.updateDynamic("supportedCountries")(supportedCountries.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactStripeElements.mod.ReactStripeElements.PaymentRequestButtonElementProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactStripeElements.mod.PaymentRequestButtonElement](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactStripeElements.mod.ReactStripeElements.PaymentRequestButtonElementProps])(children: _*)
-  }
   @JSImport("react-stripe-elements", "PaymentRequestButtonElement")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactStripeElements.mod.PaymentRequestButtonElement] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classes(value: Base): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def elementRef(value: /* ref */ Any => Callback): this.type = set("elementRef", js.Any.fromFunction1((t0: /* ref */ Any) => value(t0).runNow()))
+    
+    inline def hideIcon(value: Boolean): this.type = set("hideIcon", value.asInstanceOf[js.Any])
+    
+    inline def hidePostalCode(value: Boolean): this.type = set("hidePostalCode", value.asInstanceOf[js.Any])
+    
+    inline def iconStyle(value: solid | default): this.type = set("iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* event */ ElementChangeResponse => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* event */ ElementChangeResponse) => value(t0).runNow()))
+    
+    inline def onChange(value: /* event */ ElementChangeResponse => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* event */ ElementChangeResponse) => value(t0).runNow()))
+    
+    inline def onClick(value: /* event */ Any => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def onFocus(value: /* event */ ElementChangeResponse => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: /* event */ ElementChangeResponse) => value(t0).runNow()))
+    
+    inline def onReady(value: /* el */ HTMLStripeElement => Callback): this.type = set("onReady", js.Any.fromFunction1((t0: /* el */ HTMLStripeElement) => value(t0).runNow()))
+    
+    inline def paymentRequest(value: StripePaymentRequest): this.type = set("paymentRequest", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def placeholderCountry(value: String): this.type = set("placeholderCountry", value.asInstanceOf[js.Any])
+    
+    inline def showIcon(value: Boolean): this.type = set("showIcon", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Complete): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def supportedCountries(value: js.Array[String]): this.type = set("supportedCountries", value.asInstanceOf[js.Any])
+    
+    inline def supportedCountriesVarargs(value: String*): this.type = set("supportedCountries", js.Array(value*))
+    
+    inline def value(value: String | StringDictionary[String]): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: PaymentRequestButtonElement.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PaymentRequestButtonElementProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

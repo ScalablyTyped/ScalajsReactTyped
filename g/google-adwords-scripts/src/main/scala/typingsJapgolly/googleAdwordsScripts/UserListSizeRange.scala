@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_FIVE_HUNDRED
@@ -22,42 +22,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THIRTY_MILLION_TO_FIFTY_MILLION
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.OVER_FIFTY_MILLION
 */
-trait UserListSizeRange extends js.Object
-
+trait UserListSizeRange extends StObject
 object UserListSizeRange {
-  @scala.inline
-  def FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND = this.cast("FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND")
-  @scala.inline
-  def FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION = this.cast("FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION")
-  @scala.inline
-  def FIVE_MILLION_TO_TEN_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_MILLION_TO_TEN_MILLION = this.cast("FIVE_MILLION_TO_TEN_MILLION")
-  @scala.inline
-  def LESS_THAN_FIVE_HUNDRED: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_FIVE_HUNDRED = this.cast("LESS_THAN_FIVE_HUNDRED")
-  @scala.inline
-  def LESS_THAN_ONE_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_ONE_THOUSAND = this.cast("LESS_THAN_ONE_THOUSAND")
-  @scala.inline
-  def ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND = this.cast("ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND")
-  @scala.inline
-  def ONE_MILLION_TO_TWO_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_MILLION_TO_TWO_MILLION = this.cast("ONE_MILLION_TO_TWO_MILLION")
-  @scala.inline
-  def ONE_THOUSAND_TO_TEN_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_THOUSAND_TO_TEN_THOUSAND = this.cast("ONE_THOUSAND_TO_TEN_THOUSAND")
-  @scala.inline
-  def OVER_FIFTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.OVER_FIFTY_MILLION = this.cast("OVER_FIFTY_MILLION")
-  @scala.inline
-  def TEN_MILLION_TO_TWENTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_MILLION_TO_TWENTY_MILLION = this.cast("TEN_MILLION_TO_TWENTY_MILLION")
-  @scala.inline
-  def TEN_THOUSAND_TO_FIFTY_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_THOUSAND_TO_FIFTY_THOUSAND = this.cast("TEN_THOUSAND_TO_FIFTY_THOUSAND")
-  @scala.inline
-  def THIRTY_MILLION_TO_FIFTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THIRTY_MILLION_TO_FIFTY_MILLION = this.cast("THIRTY_MILLION_TO_FIFTY_MILLION")
-  @scala.inline
-  def THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND = this.cast("THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND")
-  @scala.inline
-  def THREE_MILLION_TO_FIVE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_MILLION_TO_FIVE_MILLION = this.cast("THREE_MILLION_TO_FIVE_MILLION")
-  @scala.inline
-  def TWENTY_MILLION_TO_THIRTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWENTY_MILLION_TO_THIRTY_MILLION = this.cast("TWENTY_MILLION_TO_THIRTY_MILLION")
-  @scala.inline
-  def TWO_MILLION_TO_THREE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWO_MILLION_TO_THREE_MILLION = this.cast("TWO_MILLION_TO_THREE_MILLION")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND = "FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND]
+  
+  inline def FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION = "FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION]
+  
+  inline def FIVE_MILLION_TO_TEN_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_MILLION_TO_TEN_MILLION = "FIVE_MILLION_TO_TEN_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.FIVE_MILLION_TO_TEN_MILLION]
+  
+  inline def LESS_THAN_FIVE_HUNDRED: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_FIVE_HUNDRED = "LESS_THAN_FIVE_HUNDRED".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_FIVE_HUNDRED]
+  
+  inline def LESS_THAN_ONE_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_ONE_THOUSAND = "LESS_THAN_ONE_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.LESS_THAN_ONE_THOUSAND]
+  
+  inline def ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND = "ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND]
+  
+  inline def ONE_MILLION_TO_TWO_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_MILLION_TO_TWO_MILLION = "ONE_MILLION_TO_TWO_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_MILLION_TO_TWO_MILLION]
+  
+  inline def ONE_THOUSAND_TO_TEN_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_THOUSAND_TO_TEN_THOUSAND = "ONE_THOUSAND_TO_TEN_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.ONE_THOUSAND_TO_TEN_THOUSAND]
+  
+  inline def OVER_FIFTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.OVER_FIFTY_MILLION = "OVER_FIFTY_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.OVER_FIFTY_MILLION]
+  
+  inline def TEN_MILLION_TO_TWENTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_MILLION_TO_TWENTY_MILLION = "TEN_MILLION_TO_TWENTY_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_MILLION_TO_TWENTY_MILLION]
+  
+  inline def TEN_THOUSAND_TO_FIFTY_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_THOUSAND_TO_FIFTY_THOUSAND = "TEN_THOUSAND_TO_FIFTY_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEN_THOUSAND_TO_FIFTY_THOUSAND]
+  
+  inline def THIRTY_MILLION_TO_FIFTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THIRTY_MILLION_TO_FIFTY_MILLION = "THIRTY_MILLION_TO_FIFTY_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THIRTY_MILLION_TO_FIFTY_MILLION]
+  
+  inline def THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND = "THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND]
+  
+  inline def THREE_MILLION_TO_FIVE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_MILLION_TO_FIVE_MILLION = "THREE_MILLION_TO_FIVE_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.THREE_MILLION_TO_FIVE_MILLION]
+  
+  inline def TWENTY_MILLION_TO_THIRTY_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWENTY_MILLION_TO_THIRTY_MILLION = "TWENTY_MILLION_TO_THIRTY_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWENTY_MILLION_TO_THIRTY_MILLION]
+  
+  inline def TWO_MILLION_TO_THREE_MILLION: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWO_MILLION_TO_THREE_MILLION = "TWO_MILLION_TO_THREE_MILLION".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TWO_MILLION_TO_THREE_MILLION]
 }
-

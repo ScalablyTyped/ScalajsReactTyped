@@ -1,17 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Decorator
-  extends Node
+  extends StObject
+     with Node
      with CallLikeExpression {
-  var expression: LeftHandSideExpression = js.native
+  
+  val expression: LeftHandSideExpression = js.native
+  
   @JSName("kind")
-  var kind_Decorator: typingsJapgolly.typescript.mod.SyntaxKind.Decorator = js.native
+  val kind_Decorator: typingsJapgolly.typescript.mod.SyntaxKind.Decorator = js.native
+  
   @JSName("parent")
-  var parent_Decorator: NamedDeclaration = js.native
+  val parent_Decorator: NamedDeclaration = js.native
 }
-

@@ -1,150 +1,154 @@
 package typingsJapgolly.devexpressWeb
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base object for all the editors that support validation.
   */
-@JSGlobal("ASPxClientEdit")
-@js.native
-class ASPxClientEdit () extends ASPxClientEditBase {
-  /**
-    * Fires on the client side when the editor receives input focus.
-    */
-  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]] = js.native
-  /**
-    * Fires on the client side when the editor loses input focus.
-    */
-  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]] = js.native
-  /**
-    * Allows you to specify whether the value entered into the editor is valid, and whether the editor is allowed to lose focus.
-    */
-  var Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]] = js.native
-  /**
-    * Fires after the editor's value has been changed by end-user interactions.
-    */
-  var ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]] = js.native
+trait ASPxClientEdit
+  extends StObject
+     with ASPxClientEditBase {
+  
   /**
     * Sets input focus to the editor.
     */
-  def Focus(): Unit = js.native
+  def Focus(): Unit
+  
   /**
     * Gets the error text to be displayed within the editor's error frame if the editor's validation fails.
     */
-  def GetErrorText(): String = js.native
+  def GetErrorText(): String
+  
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
-  def GetInputElement(): js.Any = js.native
+  def GetInputElement(): Any
+  
   /**
     * Gets a value that indicates whether the editor's value passes validation.
     */
-  def GetIsValid(): Boolean = js.native
+  def GetIsValid(): Boolean
+  
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
     */
-  def GetReadOnly(): Boolean = js.native
+  def GetReadOnly(): Boolean
+  
+  /**
+    * Fires on the client side when the editor receives input focus.
+    */
+  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]
+  
+  /**
+    * Fires on the client side when the editor loses input focus.
+    */
+  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]
+  
   /**
     * Sets the error text to be displayed within the editor's error frame if the editor's validation fails.
     * @param errorText A string value representing the error text.
     */
-  def SetErrorText(errorText: String): Unit = js.native
+  def SetErrorText(errorText: String): Unit
+  
   /**
     * Sets a value that specifies whether the editor's value is valid.
     * @param isValid True if the editor's value is valid; otherwise, False.
     */
-  def SetIsValid(isValid: Boolean): Unit = js.native
+  def SetIsValid(isValid: Boolean): Unit
+  
   /**
     * Specifies whether the control's state is read-only on the client side.
     * @param readOnly true, to make the control read-only on the client side; otherwise, false.
     */
-  def SetReadOnly(readOnly: Boolean): Unit = js.native
+  def SetReadOnly(readOnly: Boolean): Unit
+  
   /**
     * Performs the editor's validation.
     */
-  def Validate(): Unit = js.native
+  def Validate(): Unit
+  
+  /**
+    * Allows you to specify whether the value entered into the editor is valid, and whether the editor is allowed to lose focus.
+    */
+  var Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]]
+  
+  /**
+    * Fires after the editor's value has been changed by end-user interactions.
+    */
+  var ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]]
 }
-
-/* static members */
-@JSGlobal("ASPxClientEdit")
-@js.native
-object ASPxClientEdit extends js.Object {
-  /**
-    * Verifies whether the editors in a specified visibility state, which are located within a specified container and belong to a specific validation group, are valid. true if the editors are valid; otherwise, false.
-    * @param container An HTML element specifying the container of editors to be validated.
-    * @param validationGroup A string value that specifies the validation group's name.
-    * @param checkInvisibleEditors true to check both visible and invisible editors that belong to the specified container; false to check only visible editors.
-    */
-  def AreEditorsValid(): Boolean = js.native
-  def AreEditorsValid(container: String): Boolean = js.native
-  def AreEditorsValid(container: String, validationGroup: String): Boolean = js.native
-  def AreEditorsValid(container: String, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = js.native
-  def AreEditorsValid(container: js.Any): Boolean = js.native
-  def AreEditorsValid(container: js.Any, validationGroup: String): Boolean = js.native
-  def AreEditorsValid(container: js.Any, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = js.native
-  /**
-    * Attaches a handler to the ASPxClientEdit's event indicating whether the editor has been changed since the previous state.
-    * @param handler An object representing a handler.
-    * @param predicate An ASPxClientControlPredicate object representing the predicate criteria.
-    */
-  def AttachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = js.native
-  /**
-    * Assigns a null value to all editors in a specified visibility state, which are located within a specified container and belong to a specific validation group.
-    * @param container An HTML element specifying the container of editors to be validated.
-    * @param validationGroup A string value specifying the validation group's name.
-    * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified container and group; false to clear only visible editors.
-    */
-  def ClearEditorsInContainer(container: js.Any): Unit = js.native
-  def ClearEditorsInContainer(container: js.Any, validationGroup: String): Unit = js.native
-  def ClearEditorsInContainer(container: js.Any, validationGroup: String, clearInvisibleEditors: Boolean): Unit = js.native
-  /**
-    * Assigns a null value to all editors which are located within the specified container object, and belonging to a specific validation group, dependent on the visibility state specified.
-    * @param containerId A string value specifying the editor container's identifier.
-    * @param validationGroup A string value specifying the validatiion group's name.
-    * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified container and group; false to clear only visible editors.
-    */
-  def ClearEditorsInContainerById(containerId: String): Unit = js.native
-  def ClearEditorsInContainerById(containerId: String, validationGroup: String): Unit = js.native
-  def ClearEditorsInContainerById(containerId: String, validationGroup: String, clearInvisibleEditors: Boolean): Unit = js.native
-  /**
-    * Assigns a null value to all editors which belong to a specific validation group, dependent on the visibility state specified.
-    * @param validationGroup A string value specifying the validation group's name.
-    * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified validation group; false to clear only visible editors.
-    */
-  def ClearGroup(validationGroup: String): Unit = js.native
-  def ClearGroup(validationGroup: String, clearInvisibleEditors: Boolean): Unit = js.native
-  /**
-    * Detaches a handler from the editor's event if the editor meets the predicate criteria.
-    * @param handler An object representing a handler.
-    * @param predicate An ASPxClientControlPredicate object representing a predicate criteria.
-    */
-  def DetachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = js.native
-  /**
-    * Performs validation of all editors in a specified visibility state, which are located within a specified container and belong to a specific validation group. true if the specified editors pass validation; otherwise, false.
-    * @param container An HTML element specifying the container of editors to be validated.
-    * @param validationGroup A string value that specifies the validation group's name.
-    * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified container and group; false to validate only visible editors.
-    */
-  def ValidateEditorsInContainer(container: js.Any): Boolean = js.native
-  def ValidateEditorsInContainer(container: js.Any, validationGroup: String): Boolean = js.native
-  def ValidateEditorsInContainer(container: js.Any, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = js.native
-  /**
-    * Performs validation of the editors which are located within the specified container and belong to a specific validation group, dependent on the visibility state specified. true if the specified editors pass validation; otherwise, false.
-    * @param containerId A string value specifying the editor container's identifier.
-    * @param validationGroup A string value that specifies the validation group's name.
-    * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified container and group; false to validate only visible editors.
-    */
-  def ValidateEditorsInContainerById(containerId: String): Boolean = js.native
-  def ValidateEditorsInContainerById(containerId: String, validationGroup: String): Boolean = js.native
-  def ValidateEditorsInContainerById(containerId: String, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = js.native
-  /**
-    * Performs validation of editors contained within the specified validation group, dependent on the editor visibility state specified. true if editors of the specified validation group pass validation; otherwise, false.
-    * @param validationGroup A string value specifying the validation group's name.
-    * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified validation group; false to validate only visible editors.
-    */
-  def ValidateGroup(validationGroup: String): Boolean = js.native
-  def ValidateGroup(validationGroup: String, validateInvisibleEditors: Boolean): Boolean = js.native
+object ASPxClientEdit {
+  
+  inline def apply(
+    AdjustControl: Callback,
+    Focus: Callback,
+    GetCaption: CallbackTo[String],
+    GetClientVisible: CallbackTo[Boolean],
+    GetEnabled: CallbackTo[Boolean],
+    GetErrorText: CallbackTo[String],
+    GetHeight: CallbackTo[Double],
+    GetInputElement: CallbackTo[Any],
+    GetIsValid: CallbackTo[Boolean],
+    GetMainElement: CallbackTo[Any],
+    GetParentControl: CallbackTo[Any],
+    GetReadOnly: CallbackTo[Boolean],
+    GetValue: CallbackTo[Any],
+    GetVisible: CallbackTo[Boolean],
+    GetWidth: CallbackTo[Double],
+    GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
+    InCallback: CallbackTo[Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
+    SendMessageToAssistiveTechnology: String => Callback,
+    SetCaption: String => Callback,
+    SetClientVisible: Boolean => Callback,
+    SetEnabled: Boolean => Callback,
+    SetErrorText: String => Callback,
+    SetHeight: Double => Callback,
+    SetIsValid: Boolean => Callback,
+    SetReadOnly: Boolean => Callback,
+    SetValue: Any => Callback,
+    SetVisible: Boolean => Callback,
+    SetWidth: Double => Callback,
+    Validate: Callback,
+    Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]],
+    ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]],
+    name: String
+  ): ASPxClientEdit = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl.toJsFn, Focus = Focus.toJsFn, GetCaption = GetCaption.toJsFn, GetClientVisible = GetClientVisible.toJsFn, GetEnabled = GetEnabled.toJsFn, GetErrorText = GetErrorText.toJsFn, GetHeight = GetHeight.toJsFn, GetInputElement = GetInputElement.toJsFn, GetIsValid = GetIsValid.toJsFn, GetMainElement = GetMainElement.toJsFn, GetParentControl = GetParentControl.toJsFn, GetReadOnly = GetReadOnly.toJsFn, GetValue = GetValue.toJsFn, GetVisible = GetVisible.toJsFn, GetWidth = GetWidth.toJsFn, GotFocus = GotFocus.asInstanceOf[js.Any], InCallback = InCallback.toJsFn, Init = Init.asInstanceOf[js.Any], LostFocus = LostFocus.asInstanceOf[js.Any], SendMessageToAssistiveTechnology = js.Any.fromFunction1((t0: String) => SendMessageToAssistiveTechnology(t0).runNow()), SetCaption = js.Any.fromFunction1((t0: String) => SetCaption(t0).runNow()), SetClientVisible = js.Any.fromFunction1((t0: Boolean) => SetClientVisible(t0).runNow()), SetEnabled = js.Any.fromFunction1((t0: Boolean) => SetEnabled(t0).runNow()), SetErrorText = js.Any.fromFunction1((t0: String) => SetErrorText(t0).runNow()), SetHeight = js.Any.fromFunction1((t0: Double) => SetHeight(t0).runNow()), SetIsValid = js.Any.fromFunction1((t0: Boolean) => SetIsValid(t0).runNow()), SetReadOnly = js.Any.fromFunction1((t0: Boolean) => SetReadOnly(t0).runNow()), SetValue = js.Any.fromFunction1((t0: Any) => SetValue(t0).runNow()), SetVisible = js.Any.fromFunction1((t0: Boolean) => SetVisible(t0).runNow()), SetWidth = js.Any.fromFunction1((t0: Double) => SetWidth(t0).runNow()), Validate = Validate.toJsFn, Validation = Validation.asInstanceOf[js.Any], ValueChanged = ValueChanged.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientEdit]
+  }
+  
+  extension [Self <: ASPxClientEdit](x: Self) {
+    
+    inline def setFocus(value: Callback): Self = StObject.set(x, "Focus", value.toJsFn)
+    
+    inline def setGetErrorText(value: CallbackTo[String]): Self = StObject.set(x, "GetErrorText", value.toJsFn)
+    
+    inline def setGetInputElement(value: CallbackTo[Any]): Self = StObject.set(x, "GetInputElement", value.toJsFn)
+    
+    inline def setGetIsValid(value: CallbackTo[Boolean]): Self = StObject.set(x, "GetIsValid", value.toJsFn)
+    
+    inline def setGetReadOnly(value: CallbackTo[Boolean]): Self = StObject.set(x, "GetReadOnly", value.toJsFn)
+    
+    inline def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "GotFocus", value.asInstanceOf[js.Any])
+    
+    inline def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "LostFocus", value.asInstanceOf[js.Any])
+    
+    inline def setSetErrorText(value: String => Callback): Self = StObject.set(x, "SetErrorText", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetIsValid(value: Boolean => Callback): Self = StObject.set(x, "SetIsValid", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setSetReadOnly(value: Boolean => Callback): Self = StObject.set(x, "SetReadOnly", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setValidate(value: Callback): Self = StObject.set(x, "Validate", value.toJsFn)
+    
+    inline def setValidation(value: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
+    
+    inline def setValueChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]]): Self = StObject.set(x, "ValueChanged", value.asInstanceOf[js.Any])
+  }
 }
-

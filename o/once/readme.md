@@ -11,9 +11,9 @@ Run a function exactly one time
 | Full name          | once |
 | Keywords           | once, function, one, single |
 | # releases         | 1 |
-| # dependents       | 890 |
-| # downloads        | 592144589 |
-| # stars            | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4606696833333334E8 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/once#readme)

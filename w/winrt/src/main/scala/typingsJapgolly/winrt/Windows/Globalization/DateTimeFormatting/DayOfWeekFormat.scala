@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DayOfWeekFormat extends js.Object
-
+sealed trait DayOfWeekFormat extends StObject
 @JSGlobal("Windows.Globalization.DateTimeFormatting.DayOfWeekFormat")
 @js.native
-object DayOfWeekFormat extends js.Object {
-  @js.native
-  sealed trait abbreviated extends DayOfWeekFormat
+object DayOfWeekFormat extends StObject {
   
   @js.native
-  sealed trait default extends DayOfWeekFormat
+  sealed trait default
+    extends StObject
+       with DayOfWeekFormat
   
   @js.native
-  sealed trait full extends DayOfWeekFormat
+  sealed trait abbreviated
+    extends StObject
+       with DayOfWeekFormat
   
   @js.native
-  sealed trait none extends DayOfWeekFormat
+  sealed trait full
+    extends StObject
+       with DayOfWeekFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DayOfWeekFormat with Double] = js.native
-  /* 2 */ @js.native
-  object abbreviated extends TopLevel[abbreviated with Double]
-  
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 3 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with DayOfWeekFormat
 }
-

@@ -1,44 +1,60 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertPattern extends js.Object {
+trait CertPattern extends StObject {
+  
   /**
     * List of URIs to which the user can be directed in case
     * no certificates that match this pattern are found.
     */
   var EnrollmentURI: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * If set, pattern against which X.509 issuer settings should be matched.
     */
   var Issuer: js.UndefOr[IssuerSubjectPattern] = js.undefined
+  
   /**
     * List of certificate issuer CA certificates.
     * A certificate must be signed by one of them in order to match this pattern.
     */
   var IssuerCARef: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * If set, pattern against which X.509 subject settings should be matched.
     */
   var IssuerSubjectPattern: js.UndefOr[typingsJapgolly.chromeApps.chrome.networking.onc.IssuerSubjectPattern] = js.undefined
 }
-
 object CertPattern {
-  @scala.inline
-  def apply(
-    EnrollmentURI: js.Array[String] = null,
-    Issuer: IssuerSubjectPattern = null,
-    IssuerCARef: js.Array[String] = null,
-    IssuerSubjectPattern: IssuerSubjectPattern = null
-  ): CertPattern = {
+  
+  inline def apply(): CertPattern = {
     val __obj = js.Dynamic.literal()
-    if (EnrollmentURI != null) __obj.updateDynamic("EnrollmentURI")(EnrollmentURI.asInstanceOf[js.Any])
-    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
-    if (IssuerCARef != null) __obj.updateDynamic("IssuerCARef")(IssuerCARef.asInstanceOf[js.Any])
-    if (IssuerSubjectPattern != null) __obj.updateDynamic("IssuerSubjectPattern")(IssuerSubjectPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertPattern]
   }
+  
+  extension [Self <: CertPattern](x: Self) {
+    
+    inline def setEnrollmentURI(value: js.Array[String]): Self = StObject.set(x, "EnrollmentURI", value.asInstanceOf[js.Any])
+    
+    inline def setEnrollmentURIUndefined: Self = StObject.set(x, "EnrollmentURI", js.undefined)
+    
+    inline def setEnrollmentURIVarargs(value: String*): Self = StObject.set(x, "EnrollmentURI", js.Array(value*))
+    
+    inline def setIssuer(value: IssuerSubjectPattern): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerCARef(value: js.Array[String]): Self = StObject.set(x, "IssuerCARef", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerCARefUndefined: Self = StObject.set(x, "IssuerCARef", js.undefined)
+    
+    inline def setIssuerCARefVarargs(value: String*): Self = StObject.set(x, "IssuerCARef", js.Array(value*))
+    
+    inline def setIssuerSubjectPattern(value: IssuerSubjectPattern): Self = StObject.set(x, "IssuerSubjectPattern", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerSubjectPatternUndefined: Self = StObject.set(x, "IssuerSubjectPattern", js.undefined)
+    
+    inline def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
+  }
 }
-

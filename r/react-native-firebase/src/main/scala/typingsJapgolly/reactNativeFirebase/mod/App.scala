@@ -14,34 +14,50 @@ import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.messaging.Messaging
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Notifications
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.perf.Perf
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.storage.Storage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "App")
 @js.native
-class App protected () extends js.Object {
-  // utils(): RNFirebase.utils.Utils;
-  val name: String = js.native
-  val options: Options = js.native
+/* private */ open class App () extends StObject {
+  
   // admob(): RNFirebase.admob.AdMob;
   def analytics(): Analytics = js.native
+  
   def auth(): Auth = js.native
+  
   def config(): Config = js.native
+  
   def crashlytics(): Crashlytics = js.native
+  
   def database(): Database = js.native
+  
   def firestore(): Firestore = js.native
+  
   def functions(): Functions = js.native
   def functions(appOrRegion: String): Functions = js.native
   def functions(appOrRegion: String, region: String): Functions = js.native
+  def functions(appOrRegion: Unit, region: String): Functions = js.native
   def functions(appOrRegion: App): Functions = js.native
   def functions(appOrRegion: App, region: String): Functions = js.native
+  
   def iid(): InstanceId = js.native
+  
   def links(): Links = js.native
+  
   def messaging(): Messaging = js.native
+  
+  // utils(): RNFirebase.utils.Utils;
+  val name: String = js.native
+  
   def notifications(): Notifications = js.native
+  
   def onReady(): js.Promise[App] = js.native
+  
+  val options: Options = js.native
+  
   def perf(): Perf = js.native
+  
   def storage(): Storage = js.native
 }
-

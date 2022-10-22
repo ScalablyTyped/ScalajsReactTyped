@@ -1,13 +1,14 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.visualization.Histogram")
 @js.native
-class Histogram () extends CoreChartBase {
+trait Histogram
+  extends StObject
+     with CoreChartBase {
+  
   def draw(data: DataTable, options: HistogramOptions): Unit = js.native
   def draw(data: DataView, options: HistogramOptions): Unit = js.native
 }
-

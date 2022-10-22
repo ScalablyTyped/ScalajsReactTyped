@@ -1,14 +1,19 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.WebGLRenderingContext
+import typingsJapgolly.three.srcRenderersWebglWebGLAttributesMod.WebGLAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.WebGLGeometries")
 @js.native
-class WebGLGeometries protected ()
+open class WebGLGeometries protected ()
   extends typingsJapgolly.three.mod.WebGLGeometries {
-  def this(gl: WebGLRenderingContext, extensions: js.Any, _infoRender: js.Any) = this()
+  def this(
+    gl: WebGLRenderingContext,
+    attributes: WebGLAttributes,
+    info: typingsJapgolly.three.srcRenderersWebglWebGLInfoMod.WebGLInfo
+  ) = this()
 }
-

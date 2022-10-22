@@ -1,114 +1,127 @@
 package typingsJapgolly.extjs.Ext.layout
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISizeModel extends IBase {
+trait ISizeModel
+  extends StObject
+     with IBase {
+  
   /** [Property] (Boolean) */
   var auto: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var calculated: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var calculatedFromConfigured: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var calculatedFromNatural: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var calculatedFromShrinkWrap: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var configured: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var constrainedMax: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var constrainedMin: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var fixed: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (String) */
   var name: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Object) */
-  var names: js.UndefOr[js.Any] = js.undefined
+  var names: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Boolean) */
   var natural: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Number) */
   var ordinal: js.UndefOr[Double] = js.undefined
+  
   /** [Property] (Object[]) */
   var pairsByHeightOrdinal: js.UndefOr[Array] = js.undefined
+  
   /** [Property] (Boolean) */
   var shrinkWrap: js.UndefOr[Boolean] = js.undefined
 }
-
 object ISizeModel {
-  @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    auto: js.UndefOr[Boolean] = js.undefined,
-    calculated: js.UndefOr[Boolean] = js.undefined,
-    calculatedFromConfigured: js.UndefOr[Boolean] = js.undefined,
-    calculatedFromNatural: js.UndefOr[Boolean] = js.undefined,
-    calculatedFromShrinkWrap: js.UndefOr[Boolean] = js.undefined,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    config: js.Any = null,
-    configured: js.UndefOr[Boolean] = js.undefined,
-    constrainedMax: js.UndefOr[Boolean] = js.undefined,
-    constrainedMin: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[ISizeModel] = null,
-    mixins: js.Any = null,
-    name: String = null,
-    names: js.Any = null,
-    natural: js.UndefOr[Boolean] = js.undefined,
-    ordinal: Int | Double = null,
-    pairsByHeightOrdinal: Array = null,
-    requires: Array = null,
-    self: IClass = null,
-    shrinkWrap: js.UndefOr[Boolean] = js.undefined,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): ISizeModel = {
+  
+  inline def apply(): ISizeModel = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculated)) __obj.updateDynamic("calculated")(calculated.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculatedFromConfigured)) __obj.updateDynamic("calculatedFromConfigured")(calculatedFromConfigured.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculatedFromNatural)) __obj.updateDynamic("calculatedFromNatural")(calculatedFromNatural.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculatedFromShrinkWrap)) __obj.updateDynamic("calculatedFromShrinkWrap")(calculatedFromShrinkWrap.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(configured)) __obj.updateDynamic("configured")(configured.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainedMax)) __obj.updateDynamic("constrainedMax")(constrainedMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainedMin)) __obj.updateDynamic("constrainedMin")(constrainedMin.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
-    if (!js.isUndefined(natural)) __obj.updateDynamic("natural")(natural.asInstanceOf[js.Any])
-    if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal.asInstanceOf[js.Any])
-    if (pairsByHeightOrdinal != null) __obj.updateDynamic("pairsByHeightOrdinal")(pairsByHeightOrdinal.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkWrap)) __obj.updateDynamic("shrinkWrap")(shrinkWrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISizeModel]
   }
+  
+  extension [Self <: ISizeModel](x: Self) {
+    
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    
+    inline def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
+    
+    inline def setCalculatedFromConfigured(value: Boolean): Self = StObject.set(x, "calculatedFromConfigured", value.asInstanceOf[js.Any])
+    
+    inline def setCalculatedFromConfiguredUndefined: Self = StObject.set(x, "calculatedFromConfigured", js.undefined)
+    
+    inline def setCalculatedFromNatural(value: Boolean): Self = StObject.set(x, "calculatedFromNatural", value.asInstanceOf[js.Any])
+    
+    inline def setCalculatedFromNaturalUndefined: Self = StObject.set(x, "calculatedFromNatural", js.undefined)
+    
+    inline def setCalculatedFromShrinkWrap(value: Boolean): Self = StObject.set(x, "calculatedFromShrinkWrap", value.asInstanceOf[js.Any])
+    
+    inline def setCalculatedFromShrinkWrapUndefined: Self = StObject.set(x, "calculatedFromShrinkWrap", js.undefined)
+    
+    inline def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
+    
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
+    
+    inline def setConfiguredUndefined: Self = StObject.set(x, "configured", js.undefined)
+    
+    inline def setConstrainedMax(value: Boolean): Self = StObject.set(x, "constrainedMax", value.asInstanceOf[js.Any])
+    
+    inline def setConstrainedMaxUndefined: Self = StObject.set(x, "constrainedMax", js.undefined)
+    
+    inline def setConstrainedMin(value: Boolean): Self = StObject.set(x, "constrainedMin", value.asInstanceOf[js.Any])
+    
+    inline def setConstrainedMinUndefined: Self = StObject.set(x, "constrainedMin", js.undefined)
+    
+    inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNames(value: Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    
+    inline def setNatural(value: Boolean): Self = StObject.set(x, "natural", value.asInstanceOf[js.Any])
+    
+    inline def setNaturalUndefined: Self = StObject.set(x, "natural", js.undefined)
+    
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    
+    inline def setPairsByHeightOrdinal(value: Array): Self = StObject.set(x, "pairsByHeightOrdinal", value.asInstanceOf[js.Any])
+    
+    inline def setPairsByHeightOrdinalUndefined: Self = StObject.set(x, "pairsByHeightOrdinal", js.undefined)
+    
+    inline def setShrinkWrap(value: Boolean): Self = StObject.set(x, "shrinkWrap", value.asInstanceOf[js.Any])
+    
+    inline def setShrinkWrapUndefined: Self = StObject.set(x, "shrinkWrap", js.undefined)
+  }
 }
-

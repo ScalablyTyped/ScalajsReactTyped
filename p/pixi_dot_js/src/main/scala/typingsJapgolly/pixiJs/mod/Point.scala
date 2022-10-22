@@ -1,22 +1,19 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The Point object represents a location in a two-dimensional coordinate system, where x represents
-  * the horizontal axis and y represents the vertical axis.
-  *
-  * @class
-  * @memberof PIXI
-  * @implements IPoint
-  */
 @JSImport("pixi.js", "Point")
 @js.native
-class Point ()
-  extends typingsJapgolly.pixiJs.PIXI.Point {
+/**
+  * Creates a new `Point`
+  * @param {number} [x=0] - position of the point on the x axis
+  * @param {number} [y=0] - position of the point on the y axis
+  */
+open class Point ()
+  extends typingsJapgolly.pixiMath.mod.Point {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
 }
-

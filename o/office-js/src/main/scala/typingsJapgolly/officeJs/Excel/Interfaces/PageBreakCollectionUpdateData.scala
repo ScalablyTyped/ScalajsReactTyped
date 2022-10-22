@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PageBreakCollection object, for use in `pageBreakCollection.set({ ... })`. */
-trait PageBreakCollectionUpdateData extends js.Object {
+trait PageBreakCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[PageBreakData]] = js.undefined
 }
-
 object PageBreakCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[PageBreakData] = null): PageBreakCollectionUpdateData = {
+  
+  inline def apply(): PageBreakCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageBreakCollectionUpdateData]
   }
+  
+  extension [Self <: PageBreakCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[PageBreakData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: PageBreakData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

@@ -1,49 +1,48 @@
 package typingsJapgolly.minipass
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minipassStrings {
-  @js.native
-  sealed trait close extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait drain extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait drain extends StObject
+  inline def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
-  sealed trait prefinish extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait resume extends js.Object
+  sealed trait finish extends StObject
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def prefinish: prefinish = "prefinish".asInstanceOf[prefinish]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
+  @js.native
+  sealed trait prefinish extends StObject
+  inline def prefinish: prefinish = "prefinish".asInstanceOf[prefinish]
+  
+  @js.native
+  sealed trait readable extends StObject
+  inline def readable: readable = "readable".asInstanceOf[readable]
+  
+  @js.native
+  sealed trait resume extends StObject
+  inline def resume: resume = "resume".asInstanceOf[resume]
 }
-

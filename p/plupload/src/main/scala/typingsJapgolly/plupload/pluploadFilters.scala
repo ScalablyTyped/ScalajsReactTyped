@@ -1,27 +1,38 @@
 package typingsJapgolly.plupload
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait pluploadFilters extends js.Object {
+trait pluploadFilters extends StObject {
+  
   var max_file_size: js.UndefOr[Double | String] = js.undefined
+  
   var mime_types: js.UndefOr[js.Array[pluploadFiltersMimeTypes]] = js.undefined
+  
   var prevent_duplicates: js.UndefOr[Boolean] = js.undefined
 }
-
 object pluploadFilters {
-  @scala.inline
-  def apply(
-    max_file_size: Double | String = null,
-    mime_types: js.Array[pluploadFiltersMimeTypes] = null,
-    prevent_duplicates: js.UndefOr[Boolean] = js.undefined
-  ): pluploadFilters = {
+  
+  inline def apply(): pluploadFilters = {
     val __obj = js.Dynamic.literal()
-    if (max_file_size != null) __obj.updateDynamic("max_file_size")(max_file_size.asInstanceOf[js.Any])
-    if (mime_types != null) __obj.updateDynamic("mime_types")(mime_types.asInstanceOf[js.Any])
-    if (!js.isUndefined(prevent_duplicates)) __obj.updateDynamic("prevent_duplicates")(prevent_duplicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadFilters]
   }
+  
+  extension [Self <: pluploadFilters](x: Self) {
+    
+    inline def setMax_file_size(value: Double | String): Self = StObject.set(x, "max_file_size", value.asInstanceOf[js.Any])
+    
+    inline def setMax_file_sizeUndefined: Self = StObject.set(x, "max_file_size", js.undefined)
+    
+    inline def setMime_types(value: js.Array[pluploadFiltersMimeTypes]): Self = StObject.set(x, "mime_types", value.asInstanceOf[js.Any])
+    
+    inline def setMime_typesUndefined: Self = StObject.set(x, "mime_types", js.undefined)
+    
+    inline def setMime_typesVarargs(value: pluploadFiltersMimeTypes*): Self = StObject.set(x, "mime_types", js.Array(value*))
+    
+    inline def setPrevent_duplicates(value: Boolean): Self = StObject.set(x, "prevent_duplicates", value.asInstanceOf[js.Any])
+    
+    inline def setPrevent_duplicatesUndefined: Self = StObject.set(x, "prevent_duplicates", js.undefined)
+  }
 }
-

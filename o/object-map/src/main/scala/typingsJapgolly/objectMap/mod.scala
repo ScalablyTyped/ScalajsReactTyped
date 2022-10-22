@@ -1,14 +1,13 @@
 package typingsJapgolly.objectMap
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("object-map", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[TInput, TOutput, TThis](
+object mod {
+  
+  inline def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 
@@ -17,8 +16,8 @@ object mod extends js.Object {
       /* object */ StringDictionary[TInput], 
       TOutput
     ]
-  ): StringDictionary[TOutput] = js.native
-  def apply[TInput, TOutput, TThis](
+  ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
+  inline def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 
@@ -28,6 +27,9 @@ object mod extends js.Object {
       TOutput
     ],
     thisArg: TThis
-  ): StringDictionary[TOutput] = js.native
+  ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
+  
+  @JSImport("object-map", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

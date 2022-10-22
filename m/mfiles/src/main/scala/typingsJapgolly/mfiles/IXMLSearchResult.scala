@@ -1,20 +1,26 @@
 package typingsJapgolly.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IXMLSearchResult extends js.Object {
+trait IXMLSearchResult extends StObject {
+  
   val MoreResults: Boolean
+  
   val SearchResult: String
 }
-
 object IXMLSearchResult {
-  @scala.inline
-  def apply(MoreResults: Boolean, SearchResult: String): IXMLSearchResult = {
-    val __obj = js.Dynamic.literal(MoreResults = MoreResults.asInstanceOf[js.Any], SearchResult = SearchResult.asInstanceOf[js.Any])
   
+  inline def apply(MoreResults: Boolean, SearchResult: String): IXMLSearchResult = {
+    val __obj = js.Dynamic.literal(MoreResults = MoreResults.asInstanceOf[js.Any], SearchResult = SearchResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXMLSearchResult]
   }
+  
+  extension [Self <: IXMLSearchResult](x: Self) {
+    
+    inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
+    
+    inline def setSearchResult(value: String): Self = StObject.set(x, "SearchResult", value.asInstanceOf[js.Any])
+  }
 }
-

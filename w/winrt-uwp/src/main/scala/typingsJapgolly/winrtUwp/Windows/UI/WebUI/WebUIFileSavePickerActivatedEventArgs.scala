@@ -4,27 +4,63 @@ import typingsJapgolly.winrtUwp.Windows.ApplicationModel.Activation.ActivationKi
 import typingsJapgolly.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typingsJapgolly.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typingsJapgolly.winrtUwp.Windows.Storage.Pickers.Provider.FileSavePickerUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires when the user saves a file through the file picker and selects the app as the location. */
-@JSGlobal("Windows.UI.WebUI.WebUIFileSavePickerActivatedEventArgs")
-@js.native
-abstract class WebUIFileSavePickerActivatedEventArgs () extends js.Object {
+trait WebUIFileSavePickerActivatedEventArgs extends StObject {
+  
   /** Gets the app activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
+  
   /** Gets the family name of the caller's package. */
-  var callerPackageFamilyName: String = js.native
+  var callerPackageFamilyName: String
+  
   /** Gets the ID of the enterprise that owns the file. */
-  var enterpriseId: String = js.native
+  var enterpriseId: String
+  
   /** Gets the letterbox UI of the file picker that is displayed when the user saves a file and selects the app as the save location. */
-  var fileSavePickerUI: FileSavePickerUI = js.native
+  var fileSavePickerUI: FileSavePickerUI
+  
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
+  
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
+  
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
 }
-
+object WebUIFileSavePickerActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    callerPackageFamilyName: String,
+    enterpriseId: String,
+    fileSavePickerUI: FileSavePickerUI,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): WebUIFileSavePickerActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], callerPackageFamilyName = callerPackageFamilyName.asInstanceOf[js.Any], enterpriseId = enterpriseId.asInstanceOf[js.Any], fileSavePickerUI = fileSavePickerUI.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIFileSavePickerActivatedEventArgs]
+  }
+  
+  extension [Self <: WebUIFileSavePickerActivatedEventArgs](x: Self) {
+    
+    inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
+    
+    inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    
+    inline def setFileSavePickerUI(value: FileSavePickerUI): Self = StObject.set(x, "fileSavePickerUI", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+  }
+}

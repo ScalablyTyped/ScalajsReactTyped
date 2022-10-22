@@ -1,32 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RecordOperation extends CommsOperation {
-  var recordingAccessToken: js.UndefOr[String] = js.undefined
-  var recordingLocation: js.UndefOr[String] = js.undefined
+trait RecordOperation
+  extends StObject
+     with CommsOperation {
+  
+  // The access token required to retrieve the recording.
+  var recordingAccessToken: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The location where the recording is located.
+  var recordingLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object RecordOperation {
-  @scala.inline
-  def apply(
-    clientContext: String = null,
-    id: String = null,
-    recordingAccessToken: String = null,
-    recordingLocation: String = null,
-    resultInfo: ResultInfo = null,
-    status: OperationStatus = null
-  ): RecordOperation = {
+  
+  inline def apply(): RecordOperation = {
     val __obj = js.Dynamic.literal()
-    if (clientContext != null) __obj.updateDynamic("clientContext")(clientContext.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (recordingAccessToken != null) __obj.updateDynamic("recordingAccessToken")(recordingAccessToken.asInstanceOf[js.Any])
-    if (recordingLocation != null) __obj.updateDynamic("recordingLocation")(recordingLocation.asInstanceOf[js.Any])
-    if (resultInfo != null) __obj.updateDynamic("resultInfo")(resultInfo.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordOperation]
   }
+  
+  extension [Self <: RecordOperation](x: Self) {
+    
+    inline def setRecordingAccessToken(value: NullableOption[String]): Self = StObject.set(x, "recordingAccessToken", value.asInstanceOf[js.Any])
+    
+    inline def setRecordingAccessTokenNull: Self = StObject.set(x, "recordingAccessToken", null)
+    
+    inline def setRecordingAccessTokenUndefined: Self = StObject.set(x, "recordingAccessToken", js.undefined)
+    
+    inline def setRecordingLocation(value: NullableOption[String]): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
+    
+    inline def setRecordingLocationNull: Self = StObject.set(x, "recordingLocation", null)
+    
+    inline def setRecordingLocationUndefined: Self = StObject.set(x, "recordingLocation", js.undefined)
+  }
 }
-

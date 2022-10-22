@@ -1,17 +1,20 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.diagram.Connector")
 @js.native
-class Connector () extends Observable_ {
-  def this(options: ConnectorOptions) = this()
-  var connections: js.Any = js.native
+trait Connector
+  extends StObject
+     with Observable {
+  
+  var connections: Any = js.native
+  
   var options: ConnectorOptions = js.native
-  var shape: Shape = js.native
+  
   def position(): Point = js.native
+  
+  var shape: Shape = js.native
 }
-

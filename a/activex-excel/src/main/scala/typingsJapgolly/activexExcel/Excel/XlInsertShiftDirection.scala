@@ -1,23 +1,19 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4121`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4161`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4121`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4161`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4121`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4161`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4121`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4161`
 */
-trait XlInsertShiftDirection extends js.Object
-
+trait XlInsertShiftDirection extends StObject
 object XlInsertShiftDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlShiftDown: `-4121` = this.cast(-4121)
-  @scala.inline
-  def xlShiftToRight: `-4161` = this.cast(-4161)
+  
+  inline def xlShiftDown: `-4121` = -4121.asInstanceOf[`-4121`]
+  
+  inline def xlShiftToRight: `-4161` = -4161.asInstanceOf[`-4161`]
 }
-

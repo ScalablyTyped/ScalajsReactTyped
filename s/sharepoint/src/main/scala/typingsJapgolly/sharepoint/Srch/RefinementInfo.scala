@@ -1,38 +1,59 @@
 package typingsJapgolly.sharepoint.Srch
 
 import typingsJapgolly.sharepoint.SP.Guid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefinementInfo extends js.Object {
+trait RefinementInfo extends StObject {
+  
   var Culture: String
+  
   var DisplayName: String
+  
   var Entropy: Double
+  
   var HitCount: Double
+  
   var Max: Double
+  
   var Mean: Double
+  
   var Min: Double
+  
   var Modifier: String
+  
   var NonZeroCount: Double
+  
   var PartitionId: Guid
+  
   var Ratio: Double
+  
   var RefinementCount: Double
+  
   var RefinementName: String
+  
   var RefinementToken: String
+  
   var RefinementValue: String
+  
   var RefinerName: String
+  
   var RenderTemplateId: String
+  
   var Score: Double
+  
   var Sum: Double
+  
   var Type: String
+  
   var UniqueCount: Double
+  
   var UrlZone: Double
 }
-
 object RefinementInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Culture: String,
     DisplayName: String,
     Entropy: Double,
@@ -57,8 +78,53 @@ object RefinementInfo {
     UrlZone: Double
   ): RefinementInfo = {
     val __obj = js.Dynamic.literal(Culture = Culture.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], Entropy = Entropy.asInstanceOf[js.Any], HitCount = HitCount.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], Mean = Mean.asInstanceOf[js.Any], Min = Min.asInstanceOf[js.Any], Modifier = Modifier.asInstanceOf[js.Any], NonZeroCount = NonZeroCount.asInstanceOf[js.Any], PartitionId = PartitionId.asInstanceOf[js.Any], Ratio = Ratio.asInstanceOf[js.Any], RefinementCount = RefinementCount.asInstanceOf[js.Any], RefinementName = RefinementName.asInstanceOf[js.Any], RefinementToken = RefinementToken.asInstanceOf[js.Any], RefinementValue = RefinementValue.asInstanceOf[js.Any], RefinerName = RefinerName.asInstanceOf[js.Any], RenderTemplateId = RenderTemplateId.asInstanceOf[js.Any], Score = Score.asInstanceOf[js.Any], Sum = Sum.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UniqueCount = UniqueCount.asInstanceOf[js.Any], UrlZone = UrlZone.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RefinementInfo]
   }
+  
+  extension [Self <: RefinementInfo](x: Self) {
+    
+    inline def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setEntropy(value: Double): Self = StObject.set(x, "Entropy", value.asInstanceOf[js.Any])
+    
+    inline def setHitCount(value: Double): Self = StObject.set(x, "HitCount", value.asInstanceOf[js.Any])
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    
+    inline def setMean(value: Double): Self = StObject.set(x, "Mean", value.asInstanceOf[js.Any])
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    
+    inline def setModifier(value: String): Self = StObject.set(x, "Modifier", value.asInstanceOf[js.Any])
+    
+    inline def setNonZeroCount(value: Double): Self = StObject.set(x, "NonZeroCount", value.asInstanceOf[js.Any])
+    
+    inline def setPartitionId(value: Guid): Self = StObject.set(x, "PartitionId", value.asInstanceOf[js.Any])
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "Ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRefinementCount(value: Double): Self = StObject.set(x, "RefinementCount", value.asInstanceOf[js.Any])
+    
+    inline def setRefinementName(value: String): Self = StObject.set(x, "RefinementName", value.asInstanceOf[js.Any])
+    
+    inline def setRefinementToken(value: String): Self = StObject.set(x, "RefinementToken", value.asInstanceOf[js.Any])
+    
+    inline def setRefinementValue(value: String): Self = StObject.set(x, "RefinementValue", value.asInstanceOf[js.Any])
+    
+    inline def setRefinerName(value: String): Self = StObject.set(x, "RefinerName", value.asInstanceOf[js.Any])
+    
+    inline def setRenderTemplateId(value: String): Self = StObject.set(x, "RenderTemplateId", value.asInstanceOf[js.Any])
+    
+    inline def setScore(value: Double): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    
+    inline def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueCount(value: Double): Self = StObject.set(x, "UniqueCount", value.asInstanceOf[js.Any])
+    
+    inline def setUrlZone(value: Double): Self = StObject.set(x, "UrlZone", value.asInstanceOf[js.Any])
+  }
 }
-

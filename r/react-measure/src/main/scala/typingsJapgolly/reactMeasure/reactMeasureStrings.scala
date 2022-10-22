@@ -1,35 +1,39 @@
 package typingsJapgolly.reactMeasure
 
 import typingsJapgolly.reactMeasure.mod.MeasurementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMeasureStrings {
-  @js.native
-  sealed trait bounds extends MeasurementType
   
   @js.native
-  sealed trait client extends MeasurementType
+  sealed trait bounds
+    extends StObject
+       with MeasurementType
+  inline def bounds: bounds = "bounds".asInstanceOf[bounds]
   
   @js.native
-  sealed trait margin extends MeasurementType
+  sealed trait client
+    extends StObject
+       with MeasurementType
+  inline def client: client = "client".asInstanceOf[client]
   
   @js.native
-  sealed trait offset extends MeasurementType
+  sealed trait margin
+    extends StObject
+       with MeasurementType
+  inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
-  sealed trait scroll extends MeasurementType
+  sealed trait offset
+    extends StObject
+       with MeasurementType
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
-  @scala.inline
-  def bounds: bounds = "bounds".asInstanceOf[bounds]
-  @scala.inline
-  def client: client = "client".asInstanceOf[client]
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def offset: offset = "offset".asInstanceOf[offset]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @js.native
+  sealed trait scroll
+    extends StObject
+       with MeasurementType
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
 }
-

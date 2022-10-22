@@ -1,14 +1,16 @@
 package typingsJapgolly.kendoUi.kendo.dataviz
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.Navigator")
 @js.native
-class Navigator () extends Observable_ {
+trait Navigator
+  extends StObject
+     with Observable {
+  
   var options: NavigatorOptions = js.native
-  def select(): js.Any = js.native
+  
+  def select(): Any = js.native
 }
-

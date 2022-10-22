@@ -2,121 +2,181 @@ package typingsJapgolly.extjs.Ext.form.field
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INumber extends ISpinner {
+trait INumber
+  extends StObject
+     with ISpinner {
+  
   /** [Config Option] (Boolean) */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var allowExponential: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var autoStripChars: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var baseChars: js.UndefOr[String] = js.undefined
+  
   /** [Method] Template method to do any pre blur processing  */
   @JSName("beforeBlur")
   var beforeBlur_INumber: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Number) */
   var decimalPrecision: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var decimalSeparator: js.UndefOr[String] = js.undefined
+  
   /** [Method] Returns the value that would be included in a standard form submit for this field
-  		* @returns String The value to be submitted, or null.
-  		*/
+    * @returns String The value to be submitted, or null.
+    */
   @JSName("getSubmitValue")
   var getSubmitValue_INumber: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Config Option] (String) */
   var maxText: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Number) */
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var minText: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Number) */
   var minValue: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var nanText: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var negativeText: js.UndefOr[String] = js.undefined
+  
   /** [Method] Replaces any existing maxValue with the new value
-  		* @param value Number The maximum value
-  		*/
+    * @param value Number The maximum value
+    */
   var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Replaces any existing minValue with the new value
-  		* @param value Number The minimum value
-  		*/
+    * @param value Number The minimum value
+    */
   var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets whether the spinner down button is enabled
-  		* @param enabled Object
-  		* @param internal Object
-  		*/
+    * @param enabled Object
+    * @param internal Object
+    */
   @JSName("setSpinDownEnabled")
   var setSpinDownEnabled_INumber: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any], Unit]
   ] = js.undefined
+  
   /** [Method] Sets whether the spinner up button is enabled
-  		* @param enabled Object
-  		* @param internal Object
-  		*/
+    * @param enabled Object
+    * @param internal Object
+    */
   @JSName("setSpinUpEnabled")
   var setSpinUpEnabled_INumber: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any], Unit]
   ] = js.undefined
+  
   /** [Config Option] (Number) */
   var step: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var submitLocaleSeparator: js.UndefOr[Boolean] = js.undefined
 }
-
 object INumber {
-  @scala.inline
-  def apply(
-    ISpinner: ISpinner = null,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    allowExponential: js.UndefOr[Boolean] = js.undefined,
-    autoStripChars: js.UndefOr[Boolean] = js.undefined,
-    baseChars: String = null,
-    beforeBlur: js.UndefOr[Callback] = js.undefined,
-    decimalPrecision: Int | Double = null,
-    decimalSeparator: String = null,
-    getSubmitValue: js.UndefOr[CallbackTo[String]] = js.undefined,
-    maxText: String = null,
-    maxValue: Int | Double = null,
-    minText: String = null,
-    minValue: Int | Double = null,
-    nanText: String = null,
-    negativeText: String = null,
-    setMaxValue: /* value */ js.UndefOr[Double] => Callback = null,
-    setMinValue: /* value */ js.UndefOr[Double] => Callback = null,
-    setSpinDownEnabled: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Callback = null,
-    setSpinUpEnabled: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Callback = null,
-    step: Int | Double = null,
-    submitLocaleSeparator: js.UndefOr[Boolean] = js.undefined
-  ): INumber = {
+  
+  inline def apply(): INumber = {
     val __obj = js.Dynamic.literal()
-    if (ISpinner != null) js.Dynamic.global.Object.assign(__obj, ISpinner)
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExponential)) __obj.updateDynamic("allowExponential")(allowExponential.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStripChars)) __obj.updateDynamic("autoStripChars")(autoStripChars.asInstanceOf[js.Any])
-    if (baseChars != null) __obj.updateDynamic("baseChars")(baseChars.asInstanceOf[js.Any])
-    beforeBlur.foreach(p => __obj.updateDynamic("beforeBlur")(p.toJsFn))
-    if (decimalPrecision != null) __obj.updateDynamic("decimalPrecision")(decimalPrecision.asInstanceOf[js.Any])
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    getSubmitValue.foreach(p => __obj.updateDynamic("getSubmitValue")(p.toJsFn))
-    if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (nanText != null) __obj.updateDynamic("nanText")(nanText.asInstanceOf[js.Any])
-    if (negativeText != null) __obj.updateDynamic("negativeText")(negativeText.asInstanceOf[js.Any])
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[scala.Double]) => setMaxValue(t0).runNow()))
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[scala.Double]) => setMinValue(t0).runNow()))
-    if (setSpinDownEnabled != null) __obj.updateDynamic("setSpinDownEnabled")(js.Any.fromFunction2((t0: /* enabled */ js.UndefOr[js.Any], t1: /* internal */ js.UndefOr[js.Any]) => setSpinDownEnabled(t0, t1).runNow()))
-    if (setSpinUpEnabled != null) __obj.updateDynamic("setSpinUpEnabled")(js.Any.fromFunction2((t0: /* enabled */ js.UndefOr[js.Any], t1: /* internal */ js.UndefOr[js.Any]) => setSpinUpEnabled(t0, t1).runNow()))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitLocaleSeparator)) __obj.updateDynamic("submitLocaleSeparator")(submitLocaleSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[INumber]
   }
+  
+  extension [Self <: INumber](x: Self) {
+    
+    inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
+    
+    inline def setAllowExponential(value: Boolean): Self = StObject.set(x, "allowExponential", value.asInstanceOf[js.Any])
+    
+    inline def setAllowExponentialUndefined: Self = StObject.set(x, "allowExponential", js.undefined)
+    
+    inline def setAutoStripChars(value: Boolean): Self = StObject.set(x, "autoStripChars", value.asInstanceOf[js.Any])
+    
+    inline def setAutoStripCharsUndefined: Self = StObject.set(x, "autoStripChars", js.undefined)
+    
+    inline def setBaseChars(value: String): Self = StObject.set(x, "baseChars", value.asInstanceOf[js.Any])
+    
+    inline def setBaseCharsUndefined: Self = StObject.set(x, "baseChars", js.undefined)
+    
+    inline def setBeforeBlur(value: Callback): Self = StObject.set(x, "beforeBlur", value.toJsFn)
+    
+    inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
+    
+    inline def setDecimalPrecision(value: Double): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
+    
+    inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    
+    inline def setGetSubmitValue(value: CallbackTo[String]): Self = StObject.set(x, "getSubmitValue", value.toJsFn)
+    
+    inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
+    
+    inline def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
+    
+    inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setNanText(value: String): Self = StObject.set(x, "nanText", value.asInstanceOf[js.Any])
+    
+    inline def setNanTextUndefined: Self = StObject.set(x, "nanText", js.undefined)
+    
+    inline def setNegativeText(value: String): Self = StObject.set(x, "negativeText", value.asInstanceOf[js.Any])
+    
+    inline def setNegativeTextUndefined: Self = StObject.set(x, "negativeText", js.undefined)
+    
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    
+    inline def setSetMinValue(value: /* value */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    
+    inline def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any]) => Callback): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2((t0: /* enabled */ js.UndefOr[Any], t1: /* internal */ js.UndefOr[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
+    
+    inline def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any]) => Callback): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2((t0: /* enabled */ js.UndefOr[Any], t1: /* internal */ js.UndefOr[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setSubmitLocaleSeparator(value: Boolean): Self = StObject.set(x, "submitLocaleSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitLocaleSeparatorUndefined: Self = StObject.set(x, "submitLocaleSeparator", js.undefined)
+  }
 }
-

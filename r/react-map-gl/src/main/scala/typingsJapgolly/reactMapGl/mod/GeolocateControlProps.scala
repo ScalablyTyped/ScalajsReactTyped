@@ -3,57 +3,87 @@ package typingsJapgolly.reactMapGl.mod
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.mapboxGl.mod.FitBoundsOptions
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeolocateControlProps extends BaseControlProps {
+trait GeolocateControlProps
+  extends StObject
+     with BaseControlProps {
+  
+  var auto: js.UndefOr[Boolean] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var onGeolocate: js.UndefOr[js.Function1[/* options */ PositionOptions, Unit]] = js.undefined
+  
   var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
+  
   var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
+  
   var positionOptions: js.UndefOr[typingsJapgolly.mapboxGl.mod.PositionOptions] = js.undefined
+  
   var showUserLocation: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
+  
   var trackUserLocation: js.UndefOr[Boolean] = js.undefined
 }
-
 object GeolocateControlProps {
-  @scala.inline
-  def apply(
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    fitBoundsOptions: FitBoundsOptions = null,
-    label: String = null,
-    onGeolocate: /* options */ PositionOptions => Callback = null,
-    onViewStateChange: /* info */ ViewStateChangeInfo => Callback = null,
-    onViewportChange: /* viewState */ ViewportProps => Callback = null,
-    positionOptions: typingsJapgolly.mapboxGl.mod.PositionOptions = null,
-    showUserLocation: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    trackUserLocation: js.UndefOr[Boolean] = js.undefined
-  ): GeolocateControlProps = {
+  
+  inline def apply(): GeolocateControlProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onGeolocate != null) __obj.updateDynamic("onGeolocate")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.reactMapGl.mod.PositionOptions) => onGeolocate(t0).runNow()))
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.reactMapGl.mod.ViewStateChangeInfo) => onViewStateChange(t0).runNow()))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1((t0: /* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps) => onViewportChange(t0).runNow()))
-    if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocateControlProps]
   }
+  
+  extension [Self <: GeolocateControlProps](x: Self) {
+    
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setOnGeolocate(value: /* options */ PositionOptions => Callback): Self = StObject.set(x, "onGeolocate", js.Any.fromFunction1((t0: /* options */ PositionOptions) => value(t0).runNow()))
+    
+    inline def setOnGeolocateUndefined: Self = StObject.set(x, "onGeolocate", js.undefined)
+    
+    inline def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Callback): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1((t0: /* info */ ViewStateChangeInfo) => value(t0).runNow()))
+    
+    inline def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
+    
+    inline def setOnViewportChange(value: /* viewState */ ViewportProps => Callback): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1((t0: /* viewState */ ViewportProps) => value(t0).runNow()))
+    
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    
+    inline def setPositionOptions(value: typingsJapgolly.mapboxGl.mod.PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
+    
+    inline def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
+    
+    inline def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
+    
+    inline def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
+  }
 }
-

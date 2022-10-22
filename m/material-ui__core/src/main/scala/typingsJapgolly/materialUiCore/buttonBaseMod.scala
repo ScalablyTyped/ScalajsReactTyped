@@ -1,26 +1,33 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseTypeMap
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/ButtonBase", JSImport.Namespace)
-@js.native
-object buttonBaseMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ButtonBaseProps, ComponentState, js.Any] {
-    def this(props: ButtonBaseProps) = this()
-    def this(props: ButtonBaseProps, context: js.Any) = this()
-  }
+object buttonBaseMod extends Shortcut {
   
+  /**
+    * `ButtonBase` contains as few styles as possible.
+    * It aims to be a simple building block for creating a button.
+    * It contains a load of style reset and some focus/ripple logic.
+    * Demos:
+    *
+    * - [Buttons](https://mui.com/components/buttons/)
+    *
+    * API:
+    *
+    * - [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/ButtonBase", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[ButtonBaseProps]]
+  val default: ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]] = js.native
   
+  type _To = ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]
+  
+  /* This means you don't have to write `default`, but can instead just say `buttonBaseMod.foo` */
+  override def _to: ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]] = default
 }
-

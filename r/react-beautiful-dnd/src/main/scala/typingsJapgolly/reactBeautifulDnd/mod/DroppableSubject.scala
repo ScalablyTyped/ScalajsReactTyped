@@ -1,10 +1,11 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DroppableSubject extends js.Object {
+trait DroppableSubject extends StObject {
+  
   // The hitbox for a droppable
   // - page margin box
   // - with scroll changes
@@ -12,18 +13,29 @@ trait DroppableSubject extends js.Object {
   // - clipped by frame
   // The subject will be null if the hit area is completely empty
   var active: js.UndefOr[Rect] = js.undefined
+  
   // raw, unchanging
   var page: BoxModel
+  
   var withPlaceholder: js.UndefOr[PlaceholderInSubject] = js.undefined
 }
-
 object DroppableSubject {
-  @scala.inline
-  def apply(page: BoxModel, active: Rect = null, withPlaceholder: PlaceholderInSubject = null): DroppableSubject = {
+  
+  inline def apply(page: BoxModel): DroppableSubject = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (withPlaceholder != null) __obj.updateDynamic("withPlaceholder")(withPlaceholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableSubject]
   }
+  
+  extension [Self <: DroppableSubject](x: Self) {
+    
+    inline def setActive(value: Rect): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setWithPlaceholder(value: PlaceholderInSubject): Self = StObject.set(x, "withPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setWithPlaceholderUndefined: Self = StObject.set(x, "withPlaceholder", js.undefined)
+  }
 }
-

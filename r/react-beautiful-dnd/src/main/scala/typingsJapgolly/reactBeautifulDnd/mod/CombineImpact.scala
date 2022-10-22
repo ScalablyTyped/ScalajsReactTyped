@@ -1,22 +1,30 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
 import typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.COMBINE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CombineImpact extends ImpactLocation {
+trait CombineImpact
+  extends StObject
+     with ImpactLocation {
+  
   var combine: Combine
+  
   var `type`: COMBINE
-  var whenEntered: UserDirection
 }
-
 object CombineImpact {
-  @scala.inline
-  def apply(combine: Combine, `type`: COMBINE, whenEntered: UserDirection): CombineImpact = {
-    val __obj = js.Dynamic.literal(combine = combine.asInstanceOf[js.Any], whenEntered = whenEntered.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(combine: Combine): CombineImpact = {
+    val __obj = js.Dynamic.literal(combine = combine.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("COMBINE")
     __obj.asInstanceOf[CombineImpact]
   }
+  
+  extension [Self <: CombineImpact](x: Self) {
+    
+    inline def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: COMBINE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,61 +1,126 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCIceCandidatePairStats extends RTCStats {
+trait RTCIceCandidatePairStats
+  extends StObject
+     with RTCStats {
+  
+  /* standard dom */
   var availableIncomingBitrate: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var availableOutgoingBitrate: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var bytesReceived: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var bytesSent: js.UndefOr[Double] = js.undefined
-  var localCandidateId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var currentRoundTripTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var localCandidateId: java.lang.String
+  
+  /* standard dom */
   var nominated: js.UndefOr[scala.Boolean] = js.undefined
-  var priority: js.UndefOr[Double] = js.undefined
-  var readable: js.UndefOr[scala.Boolean] = js.undefined
-  var remoteCandidateId: js.UndefOr[java.lang.String] = js.undefined
-  var roundTripTime: js.UndefOr[Double] = js.undefined
-  var state: js.UndefOr[RTCStatsIceCandidatePairState] = js.undefined
-  var transportId: js.UndefOr[java.lang.String] = js.undefined
-  var writable: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
+  var remoteCandidateId: java.lang.String
+  
+  /* standard dom */
+  var requestsReceived: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var requestsSent: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var responsesReceived: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var responsesSent: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var state: RTCStatsIceCandidatePairState
+  
+  /* standard dom */
+  var totalRoundTripTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var transportId: java.lang.String
 }
-
 object RTCIceCandidatePairStats {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     id: java.lang.String,
-    timestamp: Double,
-    `type`: org.scalajs.dom.experimental.webrtc.RTCStatsType,
-    availableIncomingBitrate: Int | Double = null,
-    availableOutgoingBitrate: Int | Double = null,
-    bytesReceived: Int | Double = null,
-    bytesSent: Int | Double = null,
-    localCandidateId: java.lang.String = null,
-    nominated: js.UndefOr[scala.Boolean] = js.undefined,
-    priority: Int | Double = null,
-    readable: js.UndefOr[scala.Boolean] = js.undefined,
-    remoteCandidateId: java.lang.String = null,
-    roundTripTime: Int | Double = null,
-    state: RTCStatsIceCandidatePairState = null,
-    transportId: java.lang.String = null,
-    writable: js.UndefOr[scala.Boolean] = js.undefined
+    localCandidateId: java.lang.String,
+    remoteCandidateId: java.lang.String,
+    state: RTCStatsIceCandidatePairState,
+    timestamp: DOMHighResTimeStamp,
+    transportId: java.lang.String,
+    `type`: org.scalajs.dom.RTCStatsType
   ): RTCIceCandidatePairStats = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], localCandidateId = localCandidateId.asInstanceOf[js.Any], remoteCandidateId = remoteCandidateId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transportId = transportId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (availableIncomingBitrate != null) __obj.updateDynamic("availableIncomingBitrate")(availableIncomingBitrate.asInstanceOf[js.Any])
-    if (availableOutgoingBitrate != null) __obj.updateDynamic("availableOutgoingBitrate")(availableOutgoingBitrate.asInstanceOf[js.Any])
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (localCandidateId != null) __obj.updateDynamic("localCandidateId")(localCandidateId.asInstanceOf[js.Any])
-    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
-    if (remoteCandidateId != null) __obj.updateDynamic("remoteCandidateId")(remoteCandidateId.asInstanceOf[js.Any])
-    if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidatePairStats]
   }
+  
+  extension [Self <: RTCIceCandidatePairStats](x: Self) {
+    
+    inline def setAvailableIncomingBitrate(value: Double): Self = StObject.set(x, "availableIncomingBitrate", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableIncomingBitrateUndefined: Self = StObject.set(x, "availableIncomingBitrate", js.undefined)
+    
+    inline def setAvailableOutgoingBitrate(value: Double): Self = StObject.set(x, "availableOutgoingBitrate", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableOutgoingBitrateUndefined: Self = StObject.set(x, "availableOutgoingBitrate", js.undefined)
+    
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    
+    inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
+    
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    
+    inline def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
+    
+    inline def setCurrentRoundTripTime(value: Double): Self = StObject.set(x, "currentRoundTripTime", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentRoundTripTimeUndefined: Self = StObject.set(x, "currentRoundTripTime", js.undefined)
+    
+    inline def setLocalCandidateId(value: java.lang.String): Self = StObject.set(x, "localCandidateId", value.asInstanceOf[js.Any])
+    
+    inline def setNominated(value: scala.Boolean): Self = StObject.set(x, "nominated", value.asInstanceOf[js.Any])
+    
+    inline def setNominatedUndefined: Self = StObject.set(x, "nominated", js.undefined)
+    
+    inline def setRemoteCandidateId(value: java.lang.String): Self = StObject.set(x, "remoteCandidateId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsReceived(value: Double): Self = StObject.set(x, "requestsReceived", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsReceivedUndefined: Self = StObject.set(x, "requestsReceived", js.undefined)
+    
+    inline def setRequestsSent(value: Double): Self = StObject.set(x, "requestsSent", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsSentUndefined: Self = StObject.set(x, "requestsSent", js.undefined)
+    
+    inline def setResponsesReceived(value: Double): Self = StObject.set(x, "responsesReceived", value.asInstanceOf[js.Any])
+    
+    inline def setResponsesReceivedUndefined: Self = StObject.set(x, "responsesReceived", js.undefined)
+    
+    inline def setResponsesSent(value: Double): Self = StObject.set(x, "responsesSent", value.asInstanceOf[js.Any])
+    
+    inline def setResponsesSentUndefined: Self = StObject.set(x, "responsesSent", js.undefined)
+    
+    inline def setState(value: RTCStatsIceCandidatePairState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setTotalRoundTripTime(value: Double): Self = StObject.set(x, "totalRoundTripTime", value.asInstanceOf[js.Any])
+    
+    inline def setTotalRoundTripTimeUndefined: Self = StObject.set(x, "totalRoundTripTime", js.undefined)
+    
+    inline def setTransportId(value: java.lang.String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
+  }
 }
-

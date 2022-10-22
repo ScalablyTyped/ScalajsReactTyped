@@ -1,49 +1,89 @@
 package typingsJapgolly.catalog.mod
 
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReactSpecimenProps extends js.Object {
+trait ReactSpecimenProps extends StObject {
+  
   var children: Node | String
+  
   var dark: js.UndefOr[Boolean] = js.undefined
+  
   var frame: js.UndefOr[Boolean] = js.undefined
+  
   var light: js.UndefOr[Boolean] = js.undefined
+  
   var noSource: js.UndefOr[Boolean] = js.undefined
+  
   var plain: js.UndefOr[Boolean] = js.undefined
+  
   var responsive: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
+  
   var showSource: js.UndefOr[Boolean] = js.undefined
+  
   var sourceText: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[js.Any] = js.undefined
+  
+  var state: js.UndefOr[Any] = js.undefined
 }
-
 object ReactSpecimenProps {
-  @scala.inline
-  def apply(
-    children: Node | String = null,
-    dark: js.UndefOr[Boolean] = js.undefined,
-    frame: js.UndefOr[Boolean] = js.undefined,
-    light: js.UndefOr[Boolean] = js.undefined,
-    noSource: js.UndefOr[Boolean] = js.undefined,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    responsive: Boolean | String | js.Array[String] = null,
-    showSource: js.UndefOr[Boolean] = js.undefined,
-    sourceText: String = null,
-    state: js.Any = null
-  ): ReactSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSource)) __obj.updateDynamic("showSource")(showSource.asInstanceOf[js.Any])
-    if (sourceText != null) __obj.updateDynamic("sourceText")(sourceText.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+  
+  inline def apply(): ReactSpecimenProps = {
+    val __obj = js.Dynamic.literal(children = null)
     __obj.asInstanceOf[ReactSpecimenProps]
   }
+  
+  extension [Self <: ReactSpecimenProps](x: Self) {
+    
+    inline def setChildren(value: Node | String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    
+    inline def setFrame(value: Boolean): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    
+    inline def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    
+    inline def setNoSource(value: Boolean): Self = StObject.set(x, "noSource", value.asInstanceOf[js.Any])
+    
+    inline def setNoSourceUndefined: Self = StObject.set(x, "noSource", js.undefined)
+    
+    inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    
+    inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+    
+    inline def setResponsive(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setResponsiveVarargs(value: String*): Self = StObject.set(x, "responsive", js.Array(value*))
+    
+    inline def setShowSource(value: Boolean): Self = StObject.set(x, "showSource", value.asInstanceOf[js.Any])
+    
+    inline def setShowSourceUndefined: Self = StObject.set(x, "showSource", js.undefined)
+    
+    inline def setSourceText(value: String): Self = StObject.set(x, "sourceText", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTextUndefined: Self = StObject.set(x, "sourceText", js.undefined)
+    
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

@@ -2,50 +2,67 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MouseWrapper
-  extends /**
-	 * Option for mouseWrapper
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var cancel: js.UndefOr[String] = js.undefined
+  
   var capture: js.UndefOr[CaptureEvent] = js.undefined
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var drag: js.UndefOr[DragEvent] = js.undefined
+  
   var start: js.UndefOr[StartEvent] = js.undefined
+  
   var stop: js.UndefOr[StopEvent] = js.undefined
 }
-
 object MouseWrapper {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for mouseWrapper
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cancel: String = null,
-    capture: (/* event */ Event_, /* ui */ CaptureEventUIParam) => Callback = null,
-    delay: Int | Double = null,
-    distance: Int | Double = null,
-    drag: (/* event */ Event_, /* ui */ DragEventUIParam) => Callback = null,
-    start: (/* event */ Event_, /* ui */ StartEventUIParam) => Callback = null,
-    stop: (/* event */ Event_, /* ui */ StopEventUIParam) => Callback = null
-  ): MouseWrapper = {
+  
+  inline def apply(): MouseWrapper = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (capture != null) __obj.updateDynamic("capture")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CaptureEventUIParam) => capture(t0, t1).runNow()))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DragEventUIParam) => drag(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.StartEventUIParam) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.StopEventUIParam) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[MouseWrapper]
   }
+  
+  extension [Self <: MouseWrapper](x: Self) {
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setCapture(value: (/* event */ Event, /* ui */ CaptureEventUIParam) => Callback): Self = StObject.set(x, "capture", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CaptureEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DragEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setStart(value: (/* event */ Event, /* ui */ StartEventUIParam) => Callback): Self = StObject.set(x, "start", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ StartEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: (/* event */ Event, /* ui */ StopEventUIParam) => Callback): Self = StObject.set(x, "stop", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ StopEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+  }
 }
-

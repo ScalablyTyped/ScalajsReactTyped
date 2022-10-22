@@ -1,31 +1,45 @@
 package typingsJapgolly.griddleReact.mod.components
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableBodyProps extends js.Object {
-  var Row: js.UndefOr[js.Any] = js.undefined
+trait TableBodyProps extends StObject {
+  
+  var Row: js.UndefOr[Any] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var rowIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object TableBodyProps {
-  @scala.inline
-  def apply(
-    Row: js.Any = null,
-    className: String = null,
-    rowIds: js.Array[Double] = null,
-    style: CSSProperties = null
-  ): TableBodyProps = {
+  
+  inline def apply(): TableBodyProps = {
     val __obj = js.Dynamic.literal()
-    if (Row != null) __obj.updateDynamic("Row")(Row.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (rowIds != null) __obj.updateDynamic("rowIds")(rowIds.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBodyProps]
   }
+  
+  extension [Self <: TableBodyProps](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setRow(value: Any): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
+    
+    inline def setRowIds(value: js.Array[Double]): Self = StObject.set(x, "rowIds", value.asInstanceOf[js.Any])
+    
+    inline def setRowIdsUndefined: Self = StObject.set(x, "rowIds", js.undefined)
+    
+    inline def setRowIdsVarargs(value: Double*): Self = StObject.set(x, "rowIds", js.Array(value*))
+    
+    inline def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

@@ -1,13 +1,30 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.FunctionComponent
-import typingsJapgolly.stardustUiReactComponentRef.typesMod.RefProps
+import typingsJapgolly.fluentuiReactComponentRef.distEsRefMod.RefProps
+import typingsJapgolly.fluentuiReactComponentRef.distEsRefMod.RefState
+import typingsJapgolly.semanticUiReact.anon.ReadonlyRefProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Ref")
 @js.native
-object Ref extends TopLevel[FunctionComponent[RefProps]]
-
+open class Ref protected ()
+  extends typingsJapgolly.fluentuiReactComponentRef.mod.Ref {
+  def this(props: RefProps) = this()
+  def this(props: ReadonlyRefProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: RefProps, context: Any) = this()
+}
+/* static members */
+object Ref {
+  
+  @JSImport("semantic-ui-react", "Ref")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getDerivedStateFromProps(props: RefProps): RefState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[RefState]
+}

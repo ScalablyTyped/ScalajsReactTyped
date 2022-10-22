@@ -1,26 +1,30 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "clusterer")
-@js.native
-object clusterer extends js.Object {
+object clusterer {
+  
+  @JSImport("yandex-maps", "clusterer.Balloon")
   @js.native
-  class Balloon protected () extends IBalloonManager[Clusterer_] {
-    //tslint:disable-line no-shadowed-variable
+  open class Balloon protected ()
+    extends StObject
+       with IBalloonManager[Clusterer_] {
     def this(clusterer: Clusterer_) = this()
+    
     /* CompleteClass */
-    override var events: IEventManager = js.native
+    var events: IEventManager[js.Object] = js.native
   }
   
+  @JSImport("yandex-maps", "clusterer.Hint")
   @js.native
-  class Hint protected () extends IPopupManager[Clusterer_] {
+  open class Hint protected ()
+    extends StObject
+       with IPopupManager[Clusterer_] {
     def this(clusterer: Clusterer_) = this()
+    
     /* CompleteClass */
-    override var events: IEventManager = js.native
+    var events: IEventManager[js.Object] = js.native
   }
-  
 }
-

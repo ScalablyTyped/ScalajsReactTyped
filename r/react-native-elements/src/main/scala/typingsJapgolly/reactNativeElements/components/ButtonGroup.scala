@@ -1,94 +1,126 @@
 package typingsJapgolly.reactNativeElements.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ComponentType
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeElements.mod.ButtonGroupProps
-import typingsJapgolly.reactNativeElements.mod.ElementObject
-import typingsJapgolly.reactNativeElements.mod.InnerBorderStyleProperty
+import typingsJapgolly.reactNativeElements.anon.Color
+import typingsJapgolly.reactNativeElements.anon.RecursivePartialFullThemeAvatar
+import typingsJapgolly.reactNativeElements.anon.TypeofComponent
+import typingsJapgolly.reactNativeElements.distButtonsButtonGroupMod.ButtonGroupProps
+import typingsJapgolly.reactNativeElements.distConfigThemeMod.Theme
+import typingsJapgolly.reactNativeElements.distConfigThemeProviderMod.ThemeProps
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ButtonGroup {
-  def apply(
-    buttons: js.Array[ElementObject | String],
-    onPress: Double => Callback,
-    Component: ComponentType[_] = null,
-    activeOpacity: Int | Double = null,
-    buttonStyle: StyleProp[ViewStyle] = null,
-    containerBorderRadius: Int | Double = null,
-    containerStyle: StyleProp[ViewStyle] = null,
-    disabled: Boolean | js.Array[Double] = null,
-    disabledSelectedStyle: StyleProp[ViewStyle] = null,
-    disabledSelectedTextStyle: StyleProp[TextStyle] = null,
-    disabledStyle: StyleProp[ViewStyle] = null,
-    disabledTextStyle: StyleProp[TextStyle] = null,
-    innerBorderStyle: InnerBorderStyleProperty = null,
-    lastBorderStyle: StyleProp[TextStyle | ViewStyle] = null,
-    onHideUnderlay: js.UndefOr[Callback] = js.undefined,
-    onShowUnderlay: js.UndefOr[Callback] = js.undefined,
-    selectMultiple: js.UndefOr[Boolean] = js.undefined,
-    selectedButtonStyle: StyleProp[ViewStyle] = null,
-    selectedIndex: Int | Double = null,
-    selectedIndexes: js.Array[Double] = null,
-    selectedTextStyle: StyleProp[TextStyle] = null,
-    setOpacityTo: /* value */ Double => Callback = null,
-    textStyle: StyleProp[TextStyle] = null,
-    underlayColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ButtonGroupProps, 
-    typingsJapgolly.reactNativeElements.mod.ButtonGroup, 
-    Unit, 
-    ButtonGroupProps
-  ] = {
-    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: scala.Double) => onPress(t0).runNow()))
-    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (containerBorderRadius != null) __obj.updateDynamic("containerBorderRadius")(containerBorderRadius.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledSelectedStyle != null) __obj.updateDynamic("disabledSelectedStyle")(disabledSelectedStyle.asInstanceOf[js.Any])
-    if (disabledSelectedTextStyle != null) __obj.updateDynamic("disabledSelectedTextStyle")(disabledSelectedTextStyle.asInstanceOf[js.Any])
-    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
-    if (disabledTextStyle != null) __obj.updateDynamic("disabledTextStyle")(disabledTextStyle.asInstanceOf[js.Any])
-    if (innerBorderStyle != null) __obj.updateDynamic("innerBorderStyle")(innerBorderStyle.asInstanceOf[js.Any])
-    if (lastBorderStyle != null) __obj.updateDynamic("lastBorderStyle")(lastBorderStyle.asInstanceOf[js.Any])
-    onHideUnderlay.foreach(p => __obj.updateDynamic("onHideUnderlay")(p.toJsFn))
-    onShowUnderlay.foreach(p => __obj.updateDynamic("onShowUnderlay")(p.toJsFn))
-    if (!js.isUndefined(selectMultiple)) __obj.updateDynamic("selectMultiple")(selectMultiple.asInstanceOf[js.Any])
-    if (selectedButtonStyle != null) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
-    if (selectedIndexes != null) __obj.updateDynamic("selectedIndexes")(selectedIndexes.asInstanceOf[js.Any])
-    if (selectedTextStyle != null) __obj.updateDynamic("selectedTextStyle")(selectedTextStyle.asInstanceOf[js.Any])
-    if (setOpacityTo != null) __obj.updateDynamic("setOpacityTo")(js.Any.fromFunction1((t0: /* value */ scala.Double) => setOpacityTo(t0).runNow()))
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeElements.mod.ButtonGroupProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeElements.mod.ButtonGroup](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeElements.mod.ButtonGroupProps])(children: _*)
+  inline def apply(
+    replaceTheme: RecursivePartialFullThemeAvatar => Callback,
+    theme: Theme[ButtonGroupProps],
+    updateTheme: RecursivePartialFullThemeAvatar => Callback
+  ): Builder = {
+    val __props = js.Dynamic.literal(replaceTheme = js.Any.fromFunction1((t0: RecursivePartialFullThemeAvatar) => replaceTheme(t0).runNow()), theme = theme.asInstanceOf[js.Any], updateTheme = js.Any.fromFunction1((t0: RecursivePartialFullThemeAvatar) => updateTheme(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ButtonGroupProps & Partial[ThemeProps[ButtonGroupProps]]]))
   }
-  @JSImport("react-native-elements", "ButtonGroup")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-elements/dist/buttons/ButtonGroup", "ButtonGroup")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def Component(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+        ])
+    ): this.type = set("Component", value.asInstanceOf[js.Any])
+    
+    inline def activeOpacity(value: Double): this.type = set("activeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def button(value: js.Object): this.type = set("button", value.asInstanceOf[js.Any])
+    
+    inline def buttonContainerStyle(value: StyleProp[ViewStyle]): this.type = set("buttonContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def buttonContainerStyleNull: this.type = set("buttonContainerStyle", null)
+    
+    inline def buttonStyle(value: StyleProp[ViewStyle]): this.type = set("buttonStyle", value.asInstanceOf[js.Any])
+    
+    inline def buttonStyleNull: this.type = set("buttonStyle", null)
+    
+    inline def buttons(value: js.Array[String | Element]): this.type = set("buttons", value.asInstanceOf[js.Any])
+    
+    inline def buttonsVarargs(value: (String | Element)*): this.type = set("buttons", js.Array(value*))
+    
+    inline def containerStyle(value: StyleProp[ViewStyle]): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def containerStyleNull: this.type = set("containerStyle", null)
+    
+    inline def disabled(value: Boolean | js.Array[Double]): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def disabledSelectedStyle(value: StyleProp[ViewStyle]): this.type = set("disabledSelectedStyle", value.asInstanceOf[js.Any])
+    
+    inline def disabledSelectedStyleNull: this.type = set("disabledSelectedStyle", null)
+    
+    inline def disabledSelectedTextStyle(value: StyleProp[TextStyle]): this.type = set("disabledSelectedTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def disabledSelectedTextStyleNull: this.type = set("disabledSelectedTextStyle", null)
+    
+    inline def disabledStyle(value: StyleProp[ViewStyle]): this.type = set("disabledStyle", value.asInstanceOf[js.Any])
+    
+    inline def disabledStyleNull: this.type = set("disabledStyle", null)
+    
+    inline def disabledTextStyle(value: StyleProp[TextStyle]): this.type = set("disabledTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def disabledTextStyleNull: this.type = set("disabledTextStyle", null)
+    
+    inline def disabledVarargs(value: Double*): this.type = set("disabled", js.Array(value*))
+    
+    inline def innerBorderStyle(value: Color): this.type = set("innerBorderStyle", value.asInstanceOf[js.Any])
+    
+    inline def onHideUnderlay(value: Callback): this.type = set("onHideUnderlay", value.toJsFn)
+    
+    inline def onPress(value: /* repeated */ Any => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def onShowUnderlay(value: Callback): this.type = set("onShowUnderlay", value.toJsFn)
+    
+    inline def selectMultiple(value: Boolean): this.type = set("selectMultiple", value.asInstanceOf[js.Any])
+    
+    inline def selectedButtonStyle(value: StyleProp[ViewStyle]): this.type = set("selectedButtonStyle", value.asInstanceOf[js.Any])
+    
+    inline def selectedButtonStyleNull: this.type = set("selectedButtonStyle", null)
+    
+    inline def selectedIndex(value: Double): this.type = set("selectedIndex", value.asInstanceOf[js.Any])
+    
+    inline def selectedIndexNull: this.type = set("selectedIndex", null)
+    
+    inline def selectedIndexes(value: js.Array[Double]): this.type = set("selectedIndexes", value.asInstanceOf[js.Any])
+    
+    inline def selectedIndexesVarargs(value: Double*): this.type = set("selectedIndexes", js.Array(value*))
+    
+    inline def selectedTextStyle(value: StyleProp[TextStyle]): this.type = set("selectedTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def selectedTextStyleNull: this.type = set("selectedTextStyle", null)
+    
+    inline def setOpacityTo(value: /* value */ Double => Callback): this.type = set("setOpacityTo", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+    
+    inline def textStyle(value: StyleProp[TextStyle]): this.type = set("textStyle", value.asInstanceOf[js.Any])
+    
+    inline def textStyleNull: this.type = set("textStyle", null)
+    
+    inline def underlayColor(value: String): this.type = set("underlayColor", value.asInstanceOf[js.Any])
+    
+    inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ButtonGroupProps & Partial[ThemeProps[ButtonGroupProps]]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

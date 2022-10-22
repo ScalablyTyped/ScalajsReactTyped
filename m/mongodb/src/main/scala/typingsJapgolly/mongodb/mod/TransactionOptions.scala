@@ -1,27 +1,43 @@
 package typingsJapgolly.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionOptions extends js.Object {
-  var readConcern: js.UndefOr[ReadConcern] = js.undefined
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
-  var writeConcern: js.UndefOr[WriteConcern] = js.undefined
+trait TransactionOptions
+  extends StObject
+     with CommandOperationOptions {
+  
+  /** Specifies the maximum amount of time to allow a commit action on a transaction to run in milliseconds */
+  var maxCommitTimeMS: js.UndefOr[scala.Double] = js.undefined
+  
+  /** A default read preference for commands in this transaction */
+  @JSName("readPreference")
+  var readPreference_TransactionOptions: js.UndefOr[ReadPreference] = js.undefined
+  
+  /** A default writeConcern for commands in this transaction */
+  @JSName("writeConcern")
+  var writeConcern_TransactionOptions: js.UndefOr[WriteConcern] = js.undefined
 }
-
 object TransactionOptions {
-  @scala.inline
-  def apply(
-    readConcern: ReadConcern = null,
-    readPreference: ReadPreferenceOrMode = null,
-    writeConcern: WriteConcern = null
-  ): TransactionOptions = {
+  
+  inline def apply(): TransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (writeConcern != null) __obj.updateDynamic("writeConcern")(writeConcern.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOptions]
   }
+  
+  extension [Self <: TransactionOptions](x: Self) {
+    
+    inline def setMaxCommitTimeMS(value: scala.Double): Self = StObject.set(x, "maxCommitTimeMS", value.asInstanceOf[js.Any])
+    
+    inline def setMaxCommitTimeMSUndefined: Self = StObject.set(x, "maxCommitTimeMS", js.undefined)
+    
+    inline def setReadPreference(value: ReadPreference): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    
+    inline def setWriteConcern(value: WriteConcern): Self = StObject.set(x, "writeConcern", value.asInstanceOf[js.Any])
+    
+    inline def setWriteConcernUndefined: Self = StObject.set(x, "writeConcern", js.undefined)
+  }
 }
-

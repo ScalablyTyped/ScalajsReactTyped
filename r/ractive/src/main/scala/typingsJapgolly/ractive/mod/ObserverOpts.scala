@@ -1,42 +1,47 @@
 package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObserverOpts extends ObserverBaseOpts {
+trait ObserverOpts
+  extends StObject
+     with ObserverBaseOpts {
+  
   /**
   	 * Whether or not to follow any links when observing.
   	 */
   var links: js.UndefOr[Boolean] = js.undefined
+  
   /**
   	 * The function called to get an old value for the observer. This can be used to do things like freeze the initial value as the old value for all future callbacks.
   	 */
-  var old: js.UndefOr[ObserverCallback[Ractive[Ractive[_]]]] = js.undefined
+  var old: js.UndefOr[ObserverCallback[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.undefined
+  
   /**
   	 * Whether or not to use strict equality when checking to see if a value has changed. Defaults to false.
   	 */
   var strict: js.UndefOr[Boolean] = js.undefined
 }
-
 object ObserverOpts {
-  @scala.inline
-  def apply(
-    context: js.Any = null,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    init: js.UndefOr[Boolean] = js.undefined,
-    links: js.UndefOr[Boolean] = js.undefined,
-    old: ObserverCallback[Ractive[Ractive[_]]] = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): ObserverOpts = {
+  
+  inline def apply(): ObserverOpts = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (!js.isUndefined(links)) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (old != null) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverOpts]
   }
+  
+  extension [Self <: ObserverOpts](x: Self) {
+    
+    inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
+    inline def setOld(value: ObserverCallback[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    
+    inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+  }
 }
-

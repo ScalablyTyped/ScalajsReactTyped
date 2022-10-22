@@ -1,48 +1,34 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _Provider extends js.Object
-
+trait _Provider extends StObject
 object _Provider {
-  @scala.inline
-  def ClassProvider(provide: js.Any, useClass: Type[_], multi: js.UndefOr[Boolean] = js.undefined): _Provider = {
+  
+  inline def ClassProvider(provide: Any, useClass: Type[Any]): typingsJapgolly.angularCore.mod.ClassProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Provider]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.ClassProvider]
   }
-  @scala.inline
-  def ConstructorProvider(provide: Type[_], deps: js.Array[_] = null, multi: js.UndefOr[Boolean] = js.undefined): _Provider = {
+  
+  inline def ConstructorProvider(provide: Type[Any]): typingsJapgolly.angularCore.mod.ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Provider]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.ConstructorProvider]
   }
-  @scala.inline
-  def ExistingProvider(provide: js.Any, useExisting: js.Any, multi: js.UndefOr[Boolean] = js.undefined): _Provider = {
+  
+  inline def ExistingProvider(provide: Any, useExisting: Any): typingsJapgolly.angularCore.mod.ExistingProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useExisting = useExisting.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Provider]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.ExistingProvider]
   }
-  @scala.inline
-  def ValueProvider(provide: js.Any, useValue: js.Any, multi: js.UndefOr[Boolean] = js.undefined): _Provider = {
-    val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useValue = useValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Provider]
-  }
-  @scala.inline
-  def FactoryProvider(
-    provide: js.Any,
-    useFactory: js.Function,
-    deps: js.Array[_] = null,
-    multi: js.UndefOr[Boolean] = js.undefined
-  ): _Provider = {
+  
+  inline def FactoryProvider(provide: Any, useFactory: js.Function): typingsJapgolly.angularCore.mod.FactoryProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useFactory = useFactory.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Provider]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.FactoryProvider]
+  }
+  
+  inline def ValueProvider(provide: Any, useValue: Any): typingsJapgolly.angularCore.mod.ValueProvider = {
+    val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useValue = useValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.ValueProvider]
   }
 }
-

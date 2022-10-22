@@ -10,10 +10,10 @@ A Javascript string manipulation library without npm dependences.
 | ------------------ | :-------------: |
 | Full name          | strman |
 | Keywords           | string, manipulate, str, manipulation, strman |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 24663 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13505.0 |
+| # stars            | 2013.0 |
 
 ## Links
 - [Homepage](https://github.com/dleitee/strman#readme)

@@ -11,9 +11,9 @@ A wrapper for DynamoDB tables, with a promise wrapped simplified API for the AWS
 | Full name          | dynatable |
 | Keywords           | dynamodb |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 1182 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 100.33333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/fanderzon/dynatable#readme)

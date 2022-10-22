@@ -1,19 +1,24 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Renderer for Particles that is designer for speed over feature set.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "ParticleRenderer")
 @js.native
-class ParticleRenderer protected ()
-  extends typingsJapgolly.pixiJs.PIXI.ParticleRenderer {
-  def this(renderer: typingsJapgolly.pixiJs.PIXI.Renderer) = this()
+open class ParticleRenderer protected ()
+  extends typingsJapgolly.pixiParticleContainer.mod.ParticleRenderer {
+  /**
+    * @param renderer - The renderer this sprite batch works for.
+    */
+  def this(renderer: typingsJapgolly.pixiCore.mod.Renderer) = this()
 }
-
+/* static members */
+object ParticleRenderer {
+  
+  /** @ignore */
+  @JSImport("pixi.js", "ParticleRenderer.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+}

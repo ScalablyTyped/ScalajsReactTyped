@@ -1,96 +1,120 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the `format.borders` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.borders` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the `format.borders` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.borders` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellBorderCollection extends js.Object {
+trait CellBorderCollection extends StObject {
+  
   /**
-    *
     * Represents the `format.borders.bottom` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bottom: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.diagonalDown` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var diagonalDown: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.diagonalUp` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var diagonalUp: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.horizontal` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var horizontal: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.left` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.right` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var right: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.top` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[CellBorder] = js.undefined
+  
   /**
-    *
     * Represents the `format.borders.vertical` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var vertical: js.UndefOr[CellBorder] = js.undefined
 }
-
 object CellBorderCollection {
-  @scala.inline
-  def apply(
-    bottom: CellBorder = null,
-    diagonalDown: CellBorder = null,
-    diagonalUp: CellBorder = null,
-    horizontal: CellBorder = null,
-    left: CellBorder = null,
-    right: CellBorder = null,
-    top: CellBorder = null,
-    vertical: CellBorder = null
-  ): CellBorderCollection = {
+  
+  inline def apply(): CellBorderCollection = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (diagonalDown != null) __obj.updateDynamic("diagonalDown")(diagonalDown.asInstanceOf[js.Any])
-    if (diagonalUp != null) __obj.updateDynamic("diagonalUp")(diagonalUp.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellBorderCollection]
   }
+  
+  extension [Self <: CellBorderCollection](x: Self) {
+    
+    inline def setBottom(value: CellBorder): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setDiagonalDown(value: CellBorder): Self = StObject.set(x, "diagonalDown", value.asInstanceOf[js.Any])
+    
+    inline def setDiagonalDownUndefined: Self = StObject.set(x, "diagonalDown", js.undefined)
+    
+    inline def setDiagonalUp(value: CellBorder): Self = StObject.set(x, "diagonalUp", value.asInstanceOf[js.Any])
+    
+    inline def setDiagonalUpUndefined: Self = StObject.set(x, "diagonalUp", js.undefined)
+    
+    inline def setHorizontal(value: CellBorder): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setLeft(value: CellBorder): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: CellBorder): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: CellBorder): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setVertical(value: CellBorder): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

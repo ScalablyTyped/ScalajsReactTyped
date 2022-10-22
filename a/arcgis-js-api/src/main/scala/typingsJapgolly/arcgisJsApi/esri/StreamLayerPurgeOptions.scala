@@ -1,40 +1,70 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StreamLayerPurgeOptions extends Object {
+trait StreamLayerPurgeOptions
+  extends StObject
+     with Object {
+  
   /**
-    * The maximum time in minutes that a feature should be kept. After this time, the feature is removed from the layer.
+    * Specifies the maximum age of a feature in minutes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var age: Double
+  var age: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The maximum number of features to display. Excess features are purged from the beginning of the graphics array.
+    * Specifies the maximum age of a feature in minutes since it arrived in the application.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
-  var displayCount: Double
+  var ageReceived: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Controls the overall maximum number of features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
+    */
+  var displayCount: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Controls the maximum number of observations to show within a [track](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
+    */
+  var maxObservations: js.UndefOr[Double] = js.undefined
 }
-
 object StreamLayerPurgeOptions {
-  @scala.inline
-  def apply(
-    age: Double,
+  
+  inline def apply(
     constructor: js.Function,
-    displayCount: Double,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): StreamLayerPurgeOptions = {
-    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], displayCount = displayCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[StreamLayerPurgeOptions]
   }
+  
+  extension [Self <: StreamLayerPurgeOptions](x: Self) {
+    
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    
+    inline def setAgeReceived(value: Double): Self = StObject.set(x, "ageReceived", value.asInstanceOf[js.Any])
+    
+    inline def setAgeReceivedUndefined: Self = StObject.set(x, "ageReceived", js.undefined)
+    
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    
+    inline def setDisplayCount(value: Double): Self = StObject.set(x, "displayCount", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayCountUndefined: Self = StObject.set(x, "displayCount", js.undefined)
+    
+    inline def setMaxObservations(value: Double): Self = StObject.set(x, "maxObservations", value.asInstanceOf[js.Any])
+    
+    inline def setMaxObservationsUndefined: Self = StObject.set(x, "maxObservations", js.undefined)
+  }
 }
-

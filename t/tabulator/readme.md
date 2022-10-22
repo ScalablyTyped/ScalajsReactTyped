@@ -10,10 +10,10 @@ Put data into tables
 | ------------------ | :-------------: |
 | Full name          | tabulator |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 5362 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 731.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/codenautas/tabulator#readme)

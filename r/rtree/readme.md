@@ -11,9 +11,9 @@ rtree library for javascript
 | Full name          | rtree |
 | Keywords           | rtree |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 40599 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4707.666666666667 |
+| # stars            | 223.0 |
 
 ## Links
 - [Homepage](https://github.com/leaflet-extras/RTree)

@@ -1,23 +1,36 @@
 package typingsJapgolly.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LibraryResponse extends js.Object {
+trait LibraryResponse extends StObject {
+  
   var data: js.UndefOr[LibraryData] = js.undefined
+  
   var kind: js.UndefOr[String] = js.undefined
+  
   var nextPageToken: js.UndefOr[String] = js.undefined
 }
-
 object LibraryResponse {
-  @scala.inline
-  def apply(data: LibraryData = null, kind: String = null, nextPageToken: String = null): LibraryResponse = {
+  
+  inline def apply(): LibraryResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibraryResponse]
   }
+  
+  extension [Self <: LibraryResponse](x: Self) {
+    
+    inline def setData(value: LibraryData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+  }
 }
-

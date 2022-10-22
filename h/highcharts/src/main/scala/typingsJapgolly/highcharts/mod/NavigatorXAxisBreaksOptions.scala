@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigatorXAxisBreaksOptions extends js.Object {
+trait NavigatorXAxisBreaksOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Gantt) A number indicating how much space should
     * be left between the start and the end of the break. The break size is
@@ -12,35 +13,46 @@ trait NavigatorXAxisBreaksOptions extends js.Object {
     * of 3600000 would indicate the equivalent of an hour.
     */
   var breakSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The point where the break starts.
     */
   var from: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Defines an interval after which the break
     * appears again. By default the breaks do not repeat.
     */
   var repeat: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The point where the break ends.
     */
   var to: js.UndefOr[Double] = js.undefined
 }
-
 object NavigatorXAxisBreaksOptions {
-  @scala.inline
-  def apply(
-    breakSize: Int | Double = null,
-    from: Int | Double = null,
-    repeat: Int | Double = null,
-    to: Int | Double = null
-  ): NavigatorXAxisBreaksOptions = {
+  
+  inline def apply(): NavigatorXAxisBreaksOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakSize != null) __obj.updateDynamic("breakSize")(breakSize.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorXAxisBreaksOptions]
   }
+  
+  extension [Self <: NavigatorXAxisBreaksOptions](x: Self) {
+    
+    inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
+    
+    inline def setBreakSizeUndefined: Self = StObject.set(x, "breakSize", js.undefined)
+    
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

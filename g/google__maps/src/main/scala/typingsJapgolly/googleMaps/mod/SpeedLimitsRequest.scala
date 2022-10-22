@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpeedLimitsRequest extends js.Object {
+trait SpeedLimitsRequest extends StObject {
+  
   /**
     * The place ID(s) representing one or more road segments.
     * Make sure each place ID refers to a road segment and not a different type of place.
@@ -18,6 +19,7 @@ trait SpeedLimitsRequest extends js.Object {
     * `placeId=ChIJX12duJAwGQ0Ra0d4Oi4jOGE&placeId=ChIJLQcticc0GQ0RoiNZJVa5GxU`
     */
   var placeId: String
+  
   /**
     * Whether to return speed limits in kilometers or miles per hour. This can be set to either `KPH` or `MPH`.
     *
@@ -25,13 +27,19 @@ trait SpeedLimitsRequest extends js.Object {
     */
   var units: js.UndefOr[SpeedLimitUnit] = js.undefined
 }
-
 object SpeedLimitsRequest {
-  @scala.inline
-  def apply(placeId: String, units: SpeedLimitUnit = null): SpeedLimitsRequest = {
+  
+  inline def apply(placeId: String): SpeedLimitsRequest = {
     val __obj = js.Dynamic.literal(placeId = placeId.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeedLimitsRequest]
   }
+  
+  extension [Self <: SpeedLimitsRequest](x: Self) {
+    
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    
+    inline def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+  }
 }
-

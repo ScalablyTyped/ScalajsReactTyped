@@ -1,19 +1,23 @@
 package typingsJapgolly.clsx
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Array
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("clsx", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait ClassArray extends Array[ClassValue]
+object mod {
   
-  def default(classes: ClassValue*): String = js.native
-  type ClassDictionary = StringDictionary[js.Any]
-  type ClassValue = js.UndefOr[ClassArray | ClassDictionary | String | Double | Null | Boolean]
+  @JSImport("clsx", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(inputs: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+  
+  inline def clsx(inputs: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clsx")(inputs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+  
+  type ClassArray = js.Array[ClassValue]
+  
+  type ClassDictionary = Record[String, Any]
+  
+  type ClassValue = js.UndefOr[Any | ClassDictionary | String | Double | Null | Boolean]
 }
-

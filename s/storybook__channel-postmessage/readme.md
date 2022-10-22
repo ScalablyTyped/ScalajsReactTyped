@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__channel-postmessage
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook PostMessage Channel is a channel for Storybook that can be used when the Storybook Renderer runs inside an iframe or a child window. A channel can be created using the `createChannel` function.
@@ -10,13 +10,13 @@ Storybook PostMessage Channel is a channel for Storybook that can be used when t
 | ------------------ | :-------------: |
 | Full name          | @storybook/channel-postmessage |
 | Keywords           | storybook |
-| # releases         | 429 |
-| # dependents       | 16 |
-| # downloads        | 44055833 |
-| # stars            | 0 |
+| # releases         | 465 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0447779E7 |
+| # stars            | 74448.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/channel-postmessage)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/channel-postmessage)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fchannel-postmessage)

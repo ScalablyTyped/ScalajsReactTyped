@@ -1,82 +1,122 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClosestFacilitySolveResultProperties extends js.Object {
+trait ClosestFacilitySolveResultProperties extends StObject {
+  
   /**
-    * An array of directions. A direction is an instance of [DirectionsFeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html). Route directions are returned if `returnDirections = true` (default is false).
+    * An array of directions.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#directions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#directions)
     */
-  var directions: js.UndefOr[DirectionsFeatureSetProperties] = js.undefined
+  var directions: js.UndefOr[js.Array[DirectionsFeatureSetProperties]] = js.undefined
+  
   /**
-    * An array of points representing facilities. Only returned when `ClosestFacilityParameters.returnFacilities = true`.
+    * An array of points representing facilities.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#facilities)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#facilities)
     */
   var facilities: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  
   /**
-    * An array of points representing incidents. Only returned when `ClosestFacilityParameters.returnIncidents = true`.
+    * An array of points representing incidents.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#incidents)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#incidents)
     */
   var incidents: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  
   /**
-    * Message received when the solve is complete. If a closest facility cannot be solved, the message returned by the server identifies the incident that could not be solved.
+    * Message received when the solve is complete.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#messages)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#messages)
     */
   var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.undefined
+  
   /**
-    * The point barriers are an array of points. They are returned only if `ClosestFacilityParameters.returnPointBarriers` was set to `true` (which is not the default). If you send in the point barriers as a FeatureSet (instead of using DataLayer), you already have the barriers and might not need to request them back from the server.
+    * The point barriers are an array of points.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#pointBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#pointBarriers)
     */
   var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  
   /**
-    * The polygon barriers are an array of polygons. They are returned only if `ClosestFacilityParameters.returnPolygonBarriers` was set to `true` (which is not the default). If you send in the polygon barriers as a FeatureSet (instead of using DataLayer), you already have the barriers and might not need to request them back from the server.
+    * The polygon barriers are an array of polygons.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#polygonBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#polygonBarriers)
     */
   var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
+  
   /**
-    * The polyline barriers are an array of polylines. They are returned only if `ClosestFacilityParameters.returnPolylineBarriers` was set to `true` (which is not the default). If you send in the polyline barriers as a FeatureSet (instead of using DataLayer), you already have the barriers and might not need to request them back from the server.
+    * The polyline barriers are an array of polylines.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#polylineBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#polylineBarriers)
     */
   var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
+  
   /**
-    * The array of routes. Route graphics are returned if `returnRoutes = true` and `outputLines` does not equal `none`. From version 2.0 to 2.5 the type is an array of Polylines. At version 2.6 the type is an array of Graphics.
+    * The array of graphics representing routes.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#routes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilitySolveResult.html#routes)
     */
   var routes: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
-
 object ClosestFacilitySolveResultProperties {
-  @scala.inline
-  def apply(
-    directions: DirectionsFeatureSetProperties = null,
-    facilities: js.Array[PointProperties] = null,
-    incidents: js.Array[PointProperties] = null,
-    messages: js.Array[NAMessageProperties] = null,
-    pointBarriers: js.Array[PointProperties] = null,
-    polygonBarriers: js.Array[PolygonProperties] = null,
-    polylineBarriers: js.Array[PolylineProperties] = null,
-    routes: js.Array[GraphicProperties] = null
-  ): ClosestFacilitySolveResultProperties = {
+  
+  inline def apply(): ClosestFacilitySolveResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
-    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
-    if (incidents != null) __obj.updateDynamic("incidents")(incidents.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
-    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
-    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosestFacilitySolveResultProperties]
   }
+  
+  extension [Self <: ClosestFacilitySolveResultProperties](x: Self) {
+    
+    inline def setDirections(value: js.Array[DirectionsFeatureSetProperties]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    
+    inline def setDirectionsVarargs(value: DirectionsFeatureSetProperties*): Self = StObject.set(x, "directions", js.Array(value*))
+    
+    inline def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
+    
+    inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
+    
+    inline def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value*))
+    
+    inline def setIncidents(value: js.Array[PointProperties]): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
+    
+    inline def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
+    
+    inline def setIncidentsVarargs(value: PointProperties*): Self = StObject.set(x, "incidents", js.Array(value*))
+    
+    inline def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value*))
+    
+    inline def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
+    
+    inline def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value*))
+    
+    inline def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
+    
+    inline def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value*))
+    
+    inline def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    
+    inline def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value*))
+    
+    inline def setRoutes(value: js.Array[GraphicProperties]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    
+    inline def setRoutesVarargs(value: GraphicProperties*): Self = StObject.set(x, "routes", js.Array(value*))
+  }
 }
-

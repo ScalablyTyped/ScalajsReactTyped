@@ -2,9 +2,9 @@ package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   *
   *
   **/
-trait IStylesheetResource extends js.Object {
+trait IStylesheetResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getAll
@@ -34,6 +35,7 @@ trait IStylesheetResource extends js.Object {
     *
     */
   def getAll(): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRules
@@ -54,6 +56,7 @@ trait IStylesheetResource extends js.Object {
     *
     */
   def getRules(id: Double): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRulesByName
@@ -75,19 +78,23 @@ trait IStylesheetResource extends js.Object {
     */
   def getRulesByName(name: String): IPromise[IResourcePromise]
 }
-
 object IStylesheetResource {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getAll: CallbackTo[IPromise[IResourcePromise]],
-    getRules: Double => CallbackTo[IPromise[IResourcePromise]],
-    getRulesByName: String => CallbackTo[IPromise[IResourcePromise]]
+    getRules: Double => IPromise[IResourcePromise],
+    getRulesByName: String => IPromise[IResourcePromise]
   ): IStylesheetResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAll")(getAll.toJsFn)
-    __obj.updateDynamic("getRules")(js.Any.fromFunction1((t0: scala.Double) => getRules(t0).runNow()))
-    __obj.updateDynamic("getRulesByName")(js.Any.fromFunction1((t0: java.lang.String) => getRulesByName(t0).runNow()))
+    val __obj = js.Dynamic.literal(getAll = getAll.toJsFn, getRules = js.Any.fromFunction1(getRules), getRulesByName = js.Any.fromFunction1(getRulesByName))
     __obj.asInstanceOf[IStylesheetResource]
   }
+  
+  extension [Self <: IStylesheetResource](x: Self) {
+    
+    inline def setGetAll(value: CallbackTo[IPromise[IResourcePromise]]): Self = StObject.set(x, "getAll", value.toJsFn)
+    
+    inline def setGetRules(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getRules", js.Any.fromFunction1(value))
+    
+    inline def setGetRulesByName(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getRulesByName", js.Any.fromFunction1(value))
+  }
 }
-

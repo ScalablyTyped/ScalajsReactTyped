@@ -1,20 +1,21 @@
 package typingsJapgolly.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/open-ssl", JSImport.Namespace)
-@js.native
-object openSslMod extends js.Object {
-  @js.native
-  class Openssl () extends js.Object
+object openSslMod {
   
+  @JSImport("nodegit/open-ssl", "Openssl")
+  @js.native
+  open class Openssl () extends StObject
   /* static members */
-  @js.native
-  object Openssl extends js.Object {
-    def setLocking(): Double = js.native
+  object Openssl {
+    
+    @JSImport("nodegit/open-ssl", "Openssl")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def setLocking(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocking")().asInstanceOf[Double]
   }
-  
 }
-

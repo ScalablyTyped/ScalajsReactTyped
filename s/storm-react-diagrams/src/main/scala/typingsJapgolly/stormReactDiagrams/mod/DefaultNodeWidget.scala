@@ -1,14 +1,13 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
-import typingsJapgolly.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeProps
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultNodeWidgetMod.DefaultNodeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "DefaultNodeWidget")
 @js.native
-class DefaultNodeWidget protected ()
-  extends typingsJapgolly.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeWidget {
+open class DefaultNodeWidget protected ()
+  extends typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultNodeWidgetMod.DefaultNodeWidget {
   def this(props: DefaultNodeProps) = this()
 }
-

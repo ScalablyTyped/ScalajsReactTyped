@@ -1,217 +1,769 @@
 package typingsJapgolly.uifabricStyling
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Partial
-import typingsJapgolly.uifabricMergeStyles.irawstylebaseMod.IFontFace
-import typingsJapgolly.uifabricMergeStyles.irawstylebaseMod.IFontWeight
-import typingsJapgolly.uifabricMergeStyles.istyleMod.IRawStyle
-import typingsJapgolly.uifabricMergeStyles.istyleMod.IStyle
-import typingsJapgolly.uifabricMergeStyles.istyleMod.IStyleBaseArray
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet
-import typingsJapgolly.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
-import typingsJapgolly.uifabricMergeStyles.istylesetMod.IStyleSet
-import typingsJapgolly.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
-import typingsJapgolly.uifabricStyling.colorClassNamesMod.IColorClassNames
-import typingsJapgolly.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames
-import typingsJapgolly.uifabricStyling.ianimationstylesMod.IAnimationStyles
-import typingsJapgolly.uifabricStyling.ianimationstylesMod.IAnimationVariables
-import typingsJapgolly.uifabricStyling.iconsMod.IIconRecord
-import typingsJapgolly.uifabricStyling.iconsMod.IIconSubset
-import typingsJapgolly.uifabricStyling.ieffectsMod.IEffects
-import typingsJapgolly.uifabricStyling.ifontstylesMod.IFontStyles
-import typingsJapgolly.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
-import typingsJapgolly.uifabricStyling.ipaletteMod.IPalette
-import typingsJapgolly.uifabricStyling.ithemeMod.IPartialTheme
-import typingsJapgolly.uifabricStyling.ithemeMod.ISchemeNames
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
+import typingsJapgolly.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import typingsJapgolly.fluentuiTheme.libTypesIanimationstylesMod.IAnimationStyles
+import typingsJapgolly.fluentuiTheme.libTypesIanimationstylesMod.IAnimationVariables
+import typingsJapgolly.fluentuiTheme.libTypesIeffectsMod.IEffects
+import typingsJapgolly.fluentuiTheme.libTypesIfontstylesMod.IFontStyles
+import typingsJapgolly.fluentuiTheme.libTypesIpaletteMod.IPalette
+import typingsJapgolly.fluentuiTheme.libTypesIschemeMod.ISchemeNames
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.IPartialTheme
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.fluentuiTheme.libTypesThemeMod.PartialTheme
+import typingsJapgolly.fluentuiTheme.libTypesThemeMod.Theme
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIkeyframesMod.IKeyframes
+import typingsJapgolly.uifabricMergeStyles.libIrawstyleMod.IRawStyle
+import typingsJapgolly.uifabricMergeStyles.libIrawstylebaseMod.IFontFace
+import typingsJapgolly.uifabricMergeStyles.libIstyleMod.IStyle
+import typingsJapgolly.uifabricMergeStyles.libIstyleMod.IStyleBaseArray
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricMergeStyles.libIstylesetMod.IConcatenatedStyleSet
+import typingsJapgolly.uifabricMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typingsJapgolly.uifabricMergeStyles.libIstylesetMod.IStyleSet
+import typingsJapgolly.uifabricMergeStyles.libObjectOnlyMod.ObjectOnly
+import typingsJapgolly.uifabricMergeStyles.libStylesheetMod.IStyleSheetConfig
+import typingsJapgolly.uifabricStyling.anon.PartialIIconOptions
+import typingsJapgolly.uifabricStyling.libClassNamesColorClassNamesMod.IColorClassNames
+import typingsJapgolly.uifabricStyling.libInterfacesIgetfocusstylesMod.IGetFocusStylesOptions
+import typingsJapgolly.uifabricStyling.libStylesGetGlobalClassNamesMod.GlobalClassNames
+import typingsJapgolly.uifabricStyling.libUtilitiesIconsMod.IIconRecord
+import typingsJapgolly.uifabricStyling.libUtilitiesIconsMod.IIconSubset
 import typingsJapgolly.uifabricStyling.uifabricStylingBooleans.`false`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`0`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`1024`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`1366`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`1920`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`1`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`2`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`320`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`480`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`640`
-import typingsJapgolly.uifabricStyling.uifabricStylingNumbers.`768`
-import typingsJapgolly.uifabricStyling.uifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis`
-import typingsJapgolly.uifabricStyling.uifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis`
-import typingsJapgolly.uifabricStyling.uifabricStylingStrings.`@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis`
+import typingsJapgolly.uifabricStyling.uifabricStylingInts.`0`
+import typingsJapgolly.uifabricStyling.uifabricStylingInts.`1`
+import typingsJapgolly.uifabricStyling.uifabricStylingInts.`2`
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.absolute
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.border
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.borderBottom
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.horizontal
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.relative
-import typingsJapgolly.uifabricStyling.uifabricStylingStrings.theme
 import typingsJapgolly.uifabricStyling.uifabricStylingStrings.vertical
-import typingsJapgolly.uifabricUtilities.customizerContextMod.ICustomizerContext
+import typingsJapgolly.uifabricUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/styling", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@uifabric/styling", JSImport.Namespace)
   @js.native
-  class Stylesheet ()
-    extends typingsJapgolly.uifabricStyling.mergeStylesMod.Stylesheet {
-    def this(config: IStyleSheetConfig) = this()
+  val ^ : js.Any = js.native
+  
+  /* Inlined {[ key in keyof @uifabric/styling.@uifabric/styling/lib/interfaces.IAnimationStyles ]:? string} */
+  object AnimationClassNames {
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeIn100")
+    @js.native
+    def fadeIn100: js.UndefOr[String] = js.native
+    inline def fadeIn100_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeIn100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeIn200")
+    @js.native
+    def fadeIn200: js.UndefOr[String] = js.native
+    inline def fadeIn200_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeIn200")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeIn400")
+    @js.native
+    def fadeIn400: js.UndefOr[String] = js.native
+    inline def fadeIn400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeIn400")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeIn500")
+    @js.native
+    def fadeIn500: js.UndefOr[String] = js.native
+    inline def fadeIn500_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeIn500")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeOut100")
+    @js.native
+    def fadeOut100: js.UndefOr[String] = js.native
+    inline def fadeOut100_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeOut100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeOut200")
+    @js.native
+    def fadeOut200: js.UndefOr[String] = js.native
+    inline def fadeOut200_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeOut200")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeOut400")
+    @js.native
+    def fadeOut400: js.UndefOr[String] = js.native
+    inline def fadeOut400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeOut400")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.fadeOut500")
+    @js.native
+    def fadeOut500: js.UndefOr[String] = js.native
+    inline def fadeOut500_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fadeOut500")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.rotate90deg")
+    @js.native
+    def rotate90deg: js.UndefOr[String] = js.native
+    inline def rotate90deg_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotate90deg")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.rotateN90deg")
+    @js.native
+    def rotateN90deg: js.UndefOr[String] = js.native
+    inline def rotateN90deg_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotateN90deg")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.scaleDownIn100")
+    @js.native
+    def scaleDownIn100: js.UndefOr[String] = js.native
+    inline def scaleDownIn100_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scaleDownIn100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.scaleDownOut98")
+    @js.native
+    def scaleDownOut98: js.UndefOr[String] = js.native
+    inline def scaleDownOut98_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scaleDownOut98")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.scaleUpIn100")
+    @js.native
+    def scaleUpIn100: js.UndefOr[String] = js.native
+    inline def scaleUpIn100_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scaleUpIn100")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.scaleUpOut103")
+    @js.native
+    def scaleUpOut103: js.UndefOr[String] = js.native
+    inline def scaleUpOut103_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scaleUpOut103")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideDownIn10")
+    @js.native
+    def slideDownIn10: js.UndefOr[String] = js.native
+    inline def slideDownIn10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideDownIn10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideDownIn20")
+    @js.native
+    def slideDownIn20: js.UndefOr[String] = js.native
+    inline def slideDownIn20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideDownIn20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideDownOut10")
+    @js.native
+    def slideDownOut10: js.UndefOr[String] = js.native
+    inline def slideDownOut10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideDownOut10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideDownOut20")
+    @js.native
+    def slideDownOut20: js.UndefOr[String] = js.native
+    inline def slideDownOut20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideDownOut20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftIn10")
+    @js.native
+    def slideLeftIn10: js.UndefOr[String] = js.native
+    inline def slideLeftIn10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftIn10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftIn20")
+    @js.native
+    def slideLeftIn20: js.UndefOr[String] = js.native
+    inline def slideLeftIn20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftIn20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftIn40")
+    @js.native
+    def slideLeftIn40: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftIn400")
+    @js.native
+    def slideLeftIn400: js.UndefOr[String] = js.native
+    inline def slideLeftIn400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftIn400")(x.asInstanceOf[js.Any])
+    
+    inline def slideLeftIn40_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftIn40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftOut10")
+    @js.native
+    def slideLeftOut10: js.UndefOr[String] = js.native
+    inline def slideLeftOut10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftOut10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftOut20")
+    @js.native
+    def slideLeftOut20: js.UndefOr[String] = js.native
+    inline def slideLeftOut20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftOut20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftOut40")
+    @js.native
+    def slideLeftOut40: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideLeftOut400")
+    @js.native
+    def slideLeftOut400: js.UndefOr[String] = js.native
+    inline def slideLeftOut400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftOut400")(x.asInstanceOf[js.Any])
+    
+    inline def slideLeftOut40_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideLeftOut40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightIn10")
+    @js.native
+    def slideRightIn10: js.UndefOr[String] = js.native
+    inline def slideRightIn10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightIn10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightIn20")
+    @js.native
+    def slideRightIn20: js.UndefOr[String] = js.native
+    inline def slideRightIn20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightIn20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightIn40")
+    @js.native
+    def slideRightIn40: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightIn400")
+    @js.native
+    def slideRightIn400: js.UndefOr[String] = js.native
+    inline def slideRightIn400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightIn400")(x.asInstanceOf[js.Any])
+    
+    inline def slideRightIn40_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightIn40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightOut10")
+    @js.native
+    def slideRightOut10: js.UndefOr[String] = js.native
+    inline def slideRightOut10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightOut10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightOut20")
+    @js.native
+    def slideRightOut20: js.UndefOr[String] = js.native
+    inline def slideRightOut20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightOut20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightOut40")
+    @js.native
+    def slideRightOut40: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideRightOut400")
+    @js.native
+    def slideRightOut400: js.UndefOr[String] = js.native
+    inline def slideRightOut400_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightOut400")(x.asInstanceOf[js.Any])
+    
+    inline def slideRightOut40_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideRightOut40")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideUpIn10")
+    @js.native
+    def slideUpIn10: js.UndefOr[String] = js.native
+    inline def slideUpIn10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideUpIn10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideUpIn20")
+    @js.native
+    def slideUpIn20: js.UndefOr[String] = js.native
+    inline def slideUpIn20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideUpIn20")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideUpOut10")
+    @js.native
+    def slideUpOut10: js.UndefOr[String] = js.native
+    inline def slideUpOut10_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideUpOut10")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "AnimationClassNames.slideUpOut20")
+    @js.native
+    def slideUpOut20: js.UndefOr[String] = js.native
+    inline def slideUpOut20_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slideUpOut20")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@uifabric/styling", "AnimationStyles")
+  @js.native
   val AnimationStyles: IAnimationStyles = js.native
+  
+  @JSImport("@uifabric/styling", "AnimationVariables")
+  @js.native
   val AnimationVariables: IAnimationVariables = js.native
+  
+  @JSImport("@uifabric/styling", "ColorClassNames")
+  @js.native
   val ColorClassNames: IColorClassNames = js.native
+  
+  @JSImport("@uifabric/styling", "DefaultEffects")
+  @js.native
   val DefaultEffects: IEffects = js.native
+  
+  @JSImport("@uifabric/styling", "DefaultFontStyles")
+  @js.native
   val DefaultFontStyles: IFontStyles = js.native
+  
+  @JSImport("@uifabric/styling", "DefaultPalette")
+  @js.native
   val DefaultPalette: IPalette = js.native
-  val HighContrastSelector: `@media screen and Leftparenthesis-ms-high-contrastColon activeRightparenthesis` = js.native
-  val HighContrastSelectorBlack: `@media screen and Leftparenthesis-ms-high-contrastColon white-on-blackRightparenthesis` = js.native
-  val HighContrastSelectorWhite: `@media screen and Leftparenthesis-ms-high-contrastColon black-on-whiteRightparenthesis` = js.native
+  
+  @JSImport("@uifabric/styling", "EdgeChromiumHighContrastSelector")
+  @js.native
+  val EdgeChromiumHighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = js.native
+  
+  /* Inlined {[ key in keyof @uifabric/styling.@uifabric/styling/lib/interfaces.IFontStyles ]:? string} */
+  object FontClassNames {
+    
+    @JSImport("@uifabric/styling", "FontClassNames")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@uifabric/styling", "FontClassNames.large")
+    @js.native
+    def large: js.UndefOr[String] = js.native
+    inline def large_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("large")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.medium")
+    @js.native
+    def medium: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "FontClassNames.mediumPlus")
+    @js.native
+    def mediumPlus: js.UndefOr[String] = js.native
+    inline def mediumPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mediumPlus")(x.asInstanceOf[js.Any])
+    
+    inline def medium_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.mega")
+    @js.native
+    def mega: js.UndefOr[String] = js.native
+    inline def mega_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mega")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.small")
+    @js.native
+    def small: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "FontClassNames.smallPlus")
+    @js.native
+    def smallPlus: js.UndefOr[String] = js.native
+    inline def smallPlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallPlus")(x.asInstanceOf[js.Any])
+    
+    inline def small_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.superLarge")
+    @js.native
+    def superLarge: js.UndefOr[String] = js.native
+    inline def superLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("superLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.tiny")
+    @js.native
+    def tiny: js.UndefOr[String] = js.native
+    inline def tiny_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tiny")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.xLarge")
+    @js.native
+    def xLarge: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "FontClassNames.xLargePlus")
+    @js.native
+    def xLargePlus: js.UndefOr[String] = js.native
+    inline def xLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLargePlus")(x.asInstanceOf[js.Any])
+    
+    inline def xLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.xSmall")
+    @js.native
+    def xSmall: js.UndefOr[String] = js.native
+    inline def xSmall_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "FontClassNames.xxLarge")
+    @js.native
+    def xxLarge: js.UndefOr[String] = js.native
+    
+    @JSImport("@uifabric/styling", "FontClassNames.xxLargePlus")
+    @js.native
+    def xxLargePlus: js.UndefOr[String] = js.native
+    inline def xxLargePlus_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLargePlus")(x.asInstanceOf[js.Any])
+    
+    inline def xxLarge_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxLarge")(x.asInstanceOf[js.Any])
+  }
+  
+  object FontSizes {
+    
+    @JSImport("@uifabric/styling", "FontSizes.icon")
+    @js.native
+    val icon: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.large")
+    @js.native
+    val large: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.medium")
+    @js.native
+    val medium: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.mediumPlus")
+    @js.native
+    val mediumPlus: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.mega")
+    @js.native
+    val mega: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.mini")
+    @js.native
+    val mini: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size10")
+    @js.native
+    val size10: /* "10px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size12")
+    @js.native
+    val size12: /* "12px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size14")
+    @js.native
+    val size14: /* "14px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size16")
+    @js.native
+    val size16: /* "16px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size18")
+    @js.native
+    val size18: /* "18px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size20")
+    @js.native
+    val size20: /* "20px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size24")
+    @js.native
+    val size24: /* "24px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size28")
+    @js.native
+    val size28: /* "28px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size32")
+    @js.native
+    val size32: /* "32px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size42")
+    @js.native
+    val size42: /* "42px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.size68")
+    @js.native
+    val size68: /* "68px" */ String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.small")
+    @js.native
+    val small: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.smallPlus")
+    @js.native
+    val smallPlus: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.superLarge")
+    @js.native
+    val superLarge: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.xLarge")
+    @js.native
+    val xLarge: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.xLargePlus")
+    @js.native
+    val xLargePlus: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.xSmall")
+    @js.native
+    val xSmall: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.xxLarge")
+    @js.native
+    val xxLarge: String = js.native
+    
+    @JSImport("@uifabric/styling", "FontSizes.xxLargePlus")
+    @js.native
+    val xxLargePlus: String = js.native
+  }
+  
+  object FontWeights {
+    
+    @JSImport("@uifabric/styling", "FontWeights.bold")
+    @js.native
+    val bold: IFontWeight = js.native
+    
+    @JSImport("@uifabric/styling", "FontWeights.light")
+    @js.native
+    val light: IFontWeight = js.native
+    
+    @JSImport("@uifabric/styling", "FontWeights.regular")
+    @js.native
+    val regular: IFontWeight = js.native
+    
+    @JSImport("@uifabric/styling", "FontWeights.semibold")
+    @js.native
+    val semibold: IFontWeight = js.native
+    
+    @JSImport("@uifabric/styling", "FontWeights.semilight")
+    @js.native
+    val semilight: IFontWeight = js.native
+  }
+  
+  @JSImport("@uifabric/styling", "HighContrastSelector")
+  @js.native
+  val HighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = js.native
+  
+  @JSImport("@uifabric/styling", "HighContrastSelectorBlack")
+  @js.native
+  val HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black), screen and (forced-colors: active) and (prefers-color-scheme: dark)" */ String = js.native
+  
+  @JSImport("@uifabric/styling", "HighContrastSelectorWhite")
+  @js.native
+  val HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white), screen and (forced-colors: active) and (prefers-color-scheme: light)" */ String = js.native
+  
+  object IconFontSizes {
+    
+    @JSImport("@uifabric/styling", "IconFontSizes.large")
+    @js.native
+    val large: String = js.native
+    
+    @JSImport("@uifabric/styling", "IconFontSizes.medium")
+    @js.native
+    val medium: String = js.native
+    
+    @JSImport("@uifabric/styling", "IconFontSizes.small")
+    @js.native
+    val small: String = js.native
+    
+    @JSImport("@uifabric/styling", "IconFontSizes.xSmall")
+    @js.native
+    val xSmall: String = js.native
+  }
+  
+  object InjectionMode {
+    
+    @JSImport("@uifabric/styling", "InjectionMode")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Appends rules using appendChild.
+      */
+    @JSImport("@uifabric/styling", "InjectionMode.appendChild")
+    @js.native
+    def appendChild: `2` = js.native
+    inline def appendChild_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendChild")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Inserts rules using the insertRule api.
+      */
+    @JSImport("@uifabric/styling", "InjectionMode.insertNode")
+    @js.native
+    def insertNode: `1` = js.native
+    inline def insertNode_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertNode")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Avoids style injection, use getRules() to read the styles.
+      */
+    @JSImport("@uifabric/styling", "InjectionMode.none")
+    @js.native
+    def none: `0` = js.native
+    inline def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  }
+  
+  object PulsingBeaconAnimationStyles {
+    
+    @JSImport("@uifabric/styling", "PulsingBeaconAnimationStyles")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@uifabric/styling", "PulsingBeaconAnimationStyles.continuousPulseAnimationDouble")
+    @js.native
+    def continuousPulseAnimationDouble: js.Function5[
+        /* beaconColorOne */ String, 
+        /* beaconColorTwo */ String, 
+        /* innerDimension */ String, 
+        /* outerDimension */ String, 
+        /* borderWidth */ String, 
+        String
+      ] = js.native
+    inline def continuousPulseAnimationDouble(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationDouble")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def continuousPulseAnimationDouble_=(
+      x: js.Function5[
+          /* beaconColorOne */ String, 
+          /* beaconColorTwo */ String, 
+          /* innerDimension */ String, 
+          /* outerDimension */ String, 
+          /* borderWidth */ String, 
+          String
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("continuousPulseAnimationDouble")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "PulsingBeaconAnimationStyles.continuousPulseAnimationSingle")
+    @js.native
+    def continuousPulseAnimationSingle: js.Function5[
+        /* beaconColorOne */ String, 
+        /* beaconColorTwo */ String, 
+        /* innerDimension */ String, 
+        /* outerDimension */ String, 
+        /* borderWidth */ String, 
+        String
+      ] = js.native
+    inline def continuousPulseAnimationSingle(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationSingle")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def continuousPulseAnimationSingle_=(
+      x: js.Function5[
+          /* beaconColorOne */ String, 
+          /* beaconColorTwo */ String, 
+          /* innerDimension */ String, 
+          /* outerDimension */ String, 
+          /* borderWidth */ String, 
+          String
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("continuousPulseAnimationSingle")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uifabric/styling", "PulsingBeaconAnimationStyles.createDefaultAnimation")
+    @js.native
+    def createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
+    inline def createDefaultAnimation(animationName: String): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+    inline def createDefaultAnimation(animationName: String, delayLength: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any], delayLength.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+    inline def createDefaultAnimation_=(x: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultAnimation")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMaxLarge")
+  @js.native
   val ScreenWidthMaxLarge: Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMaxMedium")
+  @js.native
   val ScreenWidthMaxMedium: Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMaxSmall")
+  @js.native
   val ScreenWidthMaxSmall: Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMaxXLarge")
+  @js.native
   val ScreenWidthMaxXLarge: Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMaxXXLarge")
+  @js.native
   val ScreenWidthMaxXXLarge: Double = js.native
-  val ScreenWidthMinLarge: `640` = js.native
-  val ScreenWidthMinMedium: `480` = js.native
-  val ScreenWidthMinSmall: `320` = js.native
-  val ScreenWidthMinUhfMobile: `768` = js.native
-  val ScreenWidthMinXLarge: `1024` = js.native
-  val ScreenWidthMinXXLarge: `1366` = js.native
-  val ScreenWidthMinXXXLarge: `1920` = js.native
-  val ThemeSettingName: theme = js.native
-  val hiddenContentStyle: IRawStyle = js.native
-  val noWrap: IRawStyle = js.native
-  val normalize: IRawStyle = js.native
-  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? string}
-    */ typingsJapgolly.uifabricStyling.uifabricStylingStrings.buildClassMap with js.Any = js.native
-  def concatStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](): IConcatenatedStyleSet[TStyleSet] = js.native
-  def concatStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: TStyleSet): IConcatenatedStyleSet[TStyleSet] = js.native
-  def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: Null, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet3 | TStyleSet4
-  ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Partial[TStyleSet] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false(styleSets: (js.UndefOr[IStyleSet[_] | `false` | Null])*): IConcatenatedStyleSet[_] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: `false`): IConcatenatedStyleSet[TStyleSet] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: Null, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: `false`,
-    styleSet4: TStyleSet3 | TStyleSet4
-  ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: `false`,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet3 | TStyleSet4
-  ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet3 | TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](
-    styleSet1: `false`,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet3 | TStyleSet4
-  ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: TStyleSet3 | TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: TStyleSet3 | TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet3 | TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](
-    styleSet1: TStyleSet1 | `false`,
-    styleSet2: TStyleSet2 | `false`,
-    styleSet3: TStyleSet3 | `false`,
-    styleSet4: TStyleSet4 | `false`,
-    styleSet5: TStyleSet5 | `false`
-  ): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */, TStyleSet6 /* <: IStyleSet[TStyleSet6] */](
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinLarge")
+  @js.native
+  val ScreenWidthMinLarge: /* 640 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinMedium")
+  @js.native
+  val ScreenWidthMinMedium: /* 480 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinSmall")
+  @js.native
+  val ScreenWidthMinSmall: /* 320 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinUhfMobile")
+  @js.native
+  val ScreenWidthMinUhfMobile: /* 768 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinXLarge")
+  @js.native
+  val ScreenWidthMinXLarge: /* 1024 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinXXLarge")
+  @js.native
+  val ScreenWidthMinXXLarge: /* 1366 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "ScreenWidthMinXXXLarge")
+  @js.native
+  val ScreenWidthMinXXXLarge: /* 1920 */ Double = js.native
+  
+  @JSImport("@uifabric/styling", "Stylesheet")
+  @js.native
+  open class Stylesheet ()
+    extends typingsJapgolly.uifabricStyling.libMergeStylesMod.Stylesheet {
+    def this(config: IStyleSheetConfig) = this()
+  }
+  /* static members */
+  object Stylesheet {
+    
+    @JSImport("@uifabric/styling", "Stylesheet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Gets the singleton instance.
+      */
+    inline def getInstance(): typingsJapgolly.uifabricMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typingsJapgolly.uifabricMergeStyles.libStylesheetMod.Stylesheet]
+  }
+  
+  @JSImport("@uifabric/styling", "ThemeSettingName")
+  @js.native
+  val ThemeSettingName: /* "theme" */ String = js.native
+  
+  object ZIndexes {
+    
+    @JSImport("@uifabric/styling", "ZIndexes.Coachmark")
+    @js.native
+    val Coachmark: Double = js.native
+    
+    @JSImport("@uifabric/styling", "ZIndexes.FocusStyle")
+    @js.native
+    val FocusStyle: Double = js.native
+    
+    @JSImport("@uifabric/styling", "ZIndexes.KeytipLayer")
+    @js.native
+    val KeytipLayer: Double = js.native
+    
+    @JSImport("@uifabric/styling", "ZIndexes.Layer")
+    @js.native
+    val Layer: Double = js.native
+    
+    @JSImport("@uifabric/styling", "ZIndexes.Nav")
+    @js.native
+    val Nav: Double = js.native
+    
+    /**
+      * @deprecated ScrollablePane
+      */
+    @JSImport("@uifabric/styling", "ZIndexes.ScrollablePane")
+    @js.native
+    val ScrollablePane: Double = js.native
+  }
+  
+  inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any]
+  
+  inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def concatStyleSets[TStyleSet](styleSet: TStyleSet): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): DeepPartial[TStyleSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSetsWithProps")(scala.List(styleProps.asInstanceOf[js.Any]).`++`(allStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DeepPartial[TStyleSet]]
+  
+  inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def concatStyleSets_false(styleSets: (js.UndefOr[IStyleSet[StringDictionary[Any]] | `false` | Null])*): IConcatenatedStyleSet[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IConcatenatedStyleSet[Any]]
+  inline def concatStyleSets_false[TStyleSet](styleSet: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null]
+  ): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+    styleSet4: js.UndefOr[TStyleSet4 | `false` | Null]
+  ): IConcatenatedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]
+  ]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+    styleSet4: js.UndefOr[TStyleSet4 | `false` | Null],
+    styleSet5: js.UndefOr[TStyleSet5 | `false` | Null]
+  ): IConcatenatedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5]
+  ]]
+  inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5, TStyleSet6](
     styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
     styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
     styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
@@ -219,464 +771,167 @@ object mod extends js.Object {
     styleSet5: js.UndefOr[TStyleSet5 | `false` | Null],
     styleSet6: js.UndefOr[TStyleSet6 | `false` | Null]
   ): IConcatenatedStyleSet[
-    TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5 with TStyleSet6
-  ] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet4): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4TStyleSet5_IStyleSetTStyleSet5[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */, TStyleSet5 /* <: IStyleSet[TStyleSet5] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  def createFontStyles(): IFontStyles = js.native
-  def createFontStyles(localeCode: String): IFontStyles = js.native
-  def createTheme(theme: IPartialTheme): ITheme = js.native
-  def createTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
-  def focusClear(): IRawStyle = js.native
-  def fontFace(font: IFontFace): Unit = js.native
-  def getFadedOverflowStyle(theme: ITheme): IRawStyle = js.native
-  def getFadedOverflowStyle(theme: ITheme, color: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: String, height: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: String, height: Double): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: Double): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: Double, height: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_horizontal(theme: ITheme, color: String, direction: horizontal, width: Double, height: Double): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: String, height: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: String, height: Double): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: Double): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: Double, height: String): IRawStyle = js.native
-  @JSName("getFadedOverflowStyle")
-  def getFadedOverflowStyle_vertical(theme: ITheme, color: String, direction: vertical, width: Double, height: Double): IRawStyle = js.native
-  def getFocusOutlineStyle(theme: ITheme): IRawStyle = js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = js.native
-  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = js.native
-  def getFocusStyle(theme: ITheme): IRawStyle = js.native
-  def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = js.native
-  @JSName("getFocusStyle")
-  def getFocusStyle_absolute(
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5] & ObjectOnly[TStyleSet6]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any], styleSet6.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5] & ObjectOnly[TStyleSet6]
+  ]]
+  
+  inline def concatStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def createFontStyles(): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[IFontStyles]
+  inline def createFontStyles(localeCode: String): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[IFontStyles]
+  
+  inline def createTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Theme]
+  inline def createTheme(theme: Unit, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+  inline def createTheme(theme: PartialTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def createTheme(theme: PartialTheme, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+  
+  inline def focusClear(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("focusClear")().asInstanceOf[IRawStyle]
+  
+  inline def fontFace(font: IFontFace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def getEdgeChromiumNoHighContrastAdjustSelector(): typingsJapgolly.uifabricStyling.anon.EdgeChromiumHighContrastSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeChromiumNoHighContrastAdjustSelector")().asInstanceOf[typingsJapgolly.uifabricStyling.anon.EdgeChromiumHighContrastSelector]
+  
+  inline def getFadedOverflowStyle(
+    theme: ITheme,
+    color: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typingsJapgolly.uifabricStyling.uifabricStylingStrings.bodyBackground, typingsJapgolly.uifabricStyling.uifabricStylingStrings.bodyBackgroundHovered, typingsJapgolly.uifabricStyling.uifabricStylingStrings.bodyBackgroundChecked */ Any
+    ],
+    direction: js.UndefOr[horizontal | vertical],
+    width: js.UndefOr[String | Double],
+    height: js.UndefOr[String | Double]
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFadedOverflowStyle")(theme.asInstanceOf[js.Any], color.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  
+  inline def getFocusOutlineStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  
+  inline def getFocusStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+  inline def getFocusStyle(
     theme: ITheme,
     inset: js.UndefOr[Double],
-    position: js.UndefOr[absolute],
+    position: js.UndefOr[relative | absolute],
     highContrastStyle: js.UndefOr[IRawStyle],
     borderColor: js.UndefOr[String],
     outlineColor: js.UndefOr[String],
     isFocusedOnly: js.UndefOr[Boolean]
-  ): IRawStyle = js.native
-  @JSName("getFocusStyle")
-  def getFocusStyle_relative(
-    theme: ITheme,
-    inset: js.UndefOr[Double],
-    position: js.UndefOr[relative],
-    highContrastStyle: js.UndefOr[IRawStyle],
-    borderColor: js.UndefOr[String],
-    outlineColor: js.UndefOr[String],
-    isFocusedOnly: js.UndefOr[Boolean]
-  ): IRawStyle = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): Partial[GlobalClassNames[T]] = js.native
-  def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): Partial[GlobalClassNames[T]] = js.native
-  def getIcon(): js.UndefOr[IIconRecord] = js.native
-  def getIcon(name: String): js.UndefOr[IIconRecord] = js.native
-  def getIconClassName(name: String): String = js.native
-  def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = js.native
-  def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border, borderPosition: Double): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_border(borderColor: String, borderRadius: Double, borderType: border, borderPosition: Double): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: String, borderType: borderBottom, borderPosition: Double): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom): IRawStyle = js.native
-  @JSName("getInputFocusStyle")
-  def getInputFocusStyle_borderBottom(borderColor: String, borderRadius: Double, borderType: borderBottom, borderPosition: Double): IRawStyle = js.native
-  def getPlaceholderStyles(styles: IStyle): IStyle = js.native
-  def getScreenSelector(min: Double, max: Double): String = js.native
-  def getTheme(): ITheme = js.native
-  def getTheme(depComments: Boolean): ITheme = js.native
-  def getThemedContext(context: ICustomizerContext): ICustomizerContext = js.native
-  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = js.native
-  def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = js.native
-  def keyframes(timeline: StringDictionary[js.Object]): String = js.native
-  def loadTheme(theme: IPartialTheme): ITheme = js.native
-  def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
-  def mergeStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](): IProcessedStyleSet[TStyleSet] = js.native
-  def mergeStyleSets[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: TStyleSet): IProcessedStyleSet[TStyleSet] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: Null, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false(styleSets: (js.UndefOr[IStyleSet[_] | `false` | Null])*): IProcessedStyleSet[_] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet /* <: IStyleSet[TStyleSet] */](styleSet: `false`): IProcessedStyleSet[TStyleSet] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: Null, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: TStyleSet4): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`, styleSet4: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */](styleSet1: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: `false`, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: TStyleSet2, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: TStyleSet3): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1_IStyleSetTStyleSet1TStyleSet2_IStyleSetTStyleSet2TStyleSet3_IStyleSetTStyleSet3TStyleSet4_IStyleSetTStyleSet4[TStyleSet1 /* <: IStyleSet[TStyleSet1] */, TStyleSet2 /* <: IStyleSet[TStyleSet2] */, TStyleSet3 /* <: IStyleSet[TStyleSet3] */, TStyleSet4 /* <: IStyleSet[TStyleSet4] */](styleSet1: `false`, styleSet2: `false`, styleSet3: `false`): IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("mergeStyles")
-  def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = js.native
-  def registerDefaultFontFaces(baseUrl: String): Unit = js.native
-  def registerIconAlias(iconName: String, mappedToName: String): Unit = js.native
-  def registerIcons(iconSubset: IIconSubset): Unit = js.native
-  def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = js.native
-  def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
-  def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
-  def setIconOptions(options: PartialIIconOptions): Unit = js.native
-  def unregisterIcons(iconNames: js.Array[String]): Unit = js.native
-  @js.native
-  object AnimationClassNames extends js.Object {
-    var fadeIn100: js.UndefOr[String] = js.native
-    var fadeIn200: js.UndefOr[String] = js.native
-    var fadeIn400: js.UndefOr[String] = js.native
-    var fadeIn500: js.UndefOr[String] = js.native
-    var fadeOut100: js.UndefOr[String] = js.native
-    var fadeOut200: js.UndefOr[String] = js.native
-    var fadeOut400: js.UndefOr[String] = js.native
-    var fadeOut500: js.UndefOr[String] = js.native
-    var rotate90deg: js.UndefOr[String] = js.native
-    var rotateN90deg: js.UndefOr[String] = js.native
-    var scaleDownIn100: js.UndefOr[String] = js.native
-    var scaleDownOut98: js.UndefOr[String] = js.native
-    var scaleUpIn100: js.UndefOr[String] = js.native
-    var scaleUpOut103: js.UndefOr[String] = js.native
-    var slideDownIn10: js.UndefOr[String] = js.native
-    var slideDownIn20: js.UndefOr[String] = js.native
-    var slideDownOut10: js.UndefOr[String] = js.native
-    var slideDownOut20: js.UndefOr[String] = js.native
-    var slideLeftIn10: js.UndefOr[String] = js.native
-    var slideLeftIn20: js.UndefOr[String] = js.native
-    var slideLeftIn40: js.UndefOr[String] = js.native
-    var slideLeftIn400: js.UndefOr[String] = js.native
-    var slideLeftOut10: js.UndefOr[String] = js.native
-    var slideLeftOut20: js.UndefOr[String] = js.native
-    var slideLeftOut40: js.UndefOr[String] = js.native
-    var slideLeftOut400: js.UndefOr[String] = js.native
-    var slideRightIn10: js.UndefOr[String] = js.native
-    var slideRightIn20: js.UndefOr[String] = js.native
-    var slideRightIn40: js.UndefOr[String] = js.native
-    var slideRightIn400: js.UndefOr[String] = js.native
-    var slideRightOut10: js.UndefOr[String] = js.native
-    var slideRightOut20: js.UndefOr[String] = js.native
-    var slideRightOut40: js.UndefOr[String] = js.native
-    var slideRightOut400: js.UndefOr[String] = js.native
-    var slideUpIn10: js.UndefOr[String] = js.native
-    var slideUpIn20: js.UndefOr[String] = js.native
-    var slideUpOut10: js.UndefOr[String] = js.native
-    var slideUpOut20: js.UndefOr[String] = js.native
-  }
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], position.asInstanceOf[js.Any], highContrastStyle.asInstanceOf[js.Any], borderColor.asInstanceOf[js.Any], outlineColor.asInstanceOf[js.Any], isFocusedOnly.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @js.native
-  object FontClassNames extends js.Object {
-    var large: js.UndefOr[String] = js.native
-    var medium: js.UndefOr[String] = js.native
-    var mediumPlus: js.UndefOr[String] = js.native
-    var mega: js.UndefOr[String] = js.native
-    var small: js.UndefOr[String] = js.native
-    var smallPlus: js.UndefOr[String] = js.native
-    var superLarge: js.UndefOr[String] = js.native
-    var tiny: js.UndefOr[String] = js.native
-    var xLarge: js.UndefOr[String] = js.native
-    var xLargePlus: js.UndefOr[String] = js.native
-    var xSmall: js.UndefOr[String] = js.native
-    var xxLarge: js.UndefOr[String] = js.native
-    var xxLargePlus: js.UndefOr[String] = js.native
-  }
+  inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
+  inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], disableGlobalClassNames.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
   
-  @js.native
-  object FontSizes extends js.Object {
-    val icon: String = js.native
-    val large: String = js.native
-    val medium: String = js.native
-    val mediumPlus: String = js.native
-    val mega: String = js.native
-    val mini: String = js.native
-    val small: String = js.native
-    val smallPlus: String = js.native
-    val superLarge: String = js.native
-    val xLarge: String = js.native
-    val xLargePlus: String = js.native
-    val xSmall: String = js.native
-    val xxLarge: String = js.native
-    val xxLargePlus: String = js.native
-  }
+  inline def getHighContrastNoAdjustStyle(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getHighContrastNoAdjustStyle")().asInstanceOf[IRawStyle]
   
-  @js.native
-  object FontWeights extends js.Object {
-    val bold: IFontWeight = js.native
-    val light: IFontWeight = js.native
-    val regular: IFontWeight = js.native
-    val semibold: IFontWeight = js.native
-    val semilight: IFontWeight = js.native
-  }
+  inline def getIcon(): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[IIconRecord]]
+  inline def getIcon(name: String): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IIconRecord]]
   
-  @js.native
-  object IconFontSizes extends js.Object {
-    val large: String = js.native
-    val medium: String = js.native
-    val small: String = js.native
-    val xSmall: String = js.native
-  }
+  inline def getIconClassName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconClassName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
-  object InjectionMode extends js.Object {
-    /**
-      * Appends rules using appendChild.
-      */
-    var appendChild: `2` = js.native
-    /**
-      * Inserts rules using the insertRule api.
-      */
-    var insertNode: `1` = js.native
-    /**
-      * Avoids style injection, use getRules() to read the styles.
-      */
-    var none: `0` = js.native
-  }
+  inline def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: String,
+    borderType: border | borderBottom,
+    borderPosition: Double
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: Double,
+    borderType: border | borderBottom,
+    borderPosition: Double
+  ): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+  inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
   
-  @js.native
-  object PulsingBeaconAnimationStyles extends js.Object {
-    var continuousPulseAnimationDouble: js.Function5[
-        /* beaconColorOne */ String, 
-        /* beaconColorTwo */ String, 
-        /* innerDimension */ String, 
-        /* outerDimension */ String, 
-        /* borderWidth */ String, 
-        String
-      ] = js.native
-    var continuousPulseAnimationSingle: js.Function5[
-        /* beaconColorOne */ String, 
-        /* beaconColorTwo */ String, 
-        /* innerDimension */ String, 
-        /* outerDimension */ String, 
-        /* borderWidth */ String, 
-        String
-      ] = js.native
-    var createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
-  }
+  inline def getPlaceholderStyles(styles: IStyle): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholderStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[IStyle]
   
-  /* static members */
-  @js.native
-  object Stylesheet extends js.Object {
-    /**
-      * Gets the singleton instance.
-      */
-    def getInstance(): typingsJapgolly.uifabricMergeStyles.stylesheetMod.Stylesheet = js.native
-  }
+  inline def getScreenSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")().asInstanceOf[String]
+  inline def getScreenSelector(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getScreenSelector(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getScreenSelector(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
-  object ZIndexes extends js.Object {
-    val Coachmark: Double = js.native
-    val FocusStyle: Double = js.native
-    val KeytipLayer: Double = js.native
-    val Layer: Double = js.native
-    val Nav: Double = js.native
-    /**
-      * @deprecated ScrollablePane
-      */
-    val ScrollablePane: Double = js.native
-  }
+  inline def getTheme(): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[ITheme]
+  inline def getTheme(depComments: Boolean): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[ITheme]
   
+  inline def getThemedContext(context: ICustomizerContext): ICustomizerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any]).asInstanceOf[ICustomizerContext]
+  inline def getThemedContext(context: ICustomizerContext, scheme: Unit, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  inline def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  inline def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+  
+  @JSImport("@uifabric/styling", "hiddenContentStyle")
+  @js.native
+  val hiddenContentStyle: IRawStyle = js.native
+  
+  inline def keyframes(timeline: IKeyframes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(timeline.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
+  inline def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
+  
+  inline def mergeStyleSets[TStyleSet](): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def mergeStyleSets[TStyleSet](styleSet: TStyleSet): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def mergeStyleSets_false(styleSets: (js.UndefOr[IStyleSet[StringDictionary[Any]] | `false` | Null])*): IProcessedStyleSet[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IProcessedStyleSet[Any]]
+  inline def mergeStyleSets_false[TStyleSet](styleSet: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null]
+  ): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]]]
+  inline def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+    styleSet4: js.UndefOr[TStyleSet4 | `false` | Null]
+  ): IProcessedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[
+    ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]
+  ]]
+  
+  inline def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+  
+  inline def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+  
+  @JSImport("@uifabric/styling", "noWrap")
+  @js.native
+  val noWrap: IRawStyle = js.native
+  
+  @JSImport("@uifabric/styling", "normalize")
+  @js.native
+  val normalize: IRawStyle = js.native
+  
+  inline def registerDefaultFontFaces(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def registerIconAlias(iconName: String, mappedToName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def registerIcons(iconSubset: IIconSubset): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setIconOptions(options: PartialIIconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def unregisterIcons(iconNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

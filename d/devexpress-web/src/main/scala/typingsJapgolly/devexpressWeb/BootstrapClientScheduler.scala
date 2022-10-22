@@ -1,20 +1,13 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapScheduler control.
   */
-@JSGlobal("BootstrapClientScheduler")
 @js.native
-class BootstrapClientScheduler () extends ASPxClientScheduler
-
-/* static members */
-@JSGlobal("BootstrapClientScheduler")
-@js.native
-object BootstrapClientScheduler extends js.Object {
-  def Cast(obj: js.Any): ASPxClientScheduler = js.native
-}
-
+trait BootstrapClientScheduler
+  extends StObject
+     with ASPxClientScheduler

@@ -1,20 +1,21 @@
 package typingsJapgolly.typescriptCollections
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.typescriptCollections.bstreekvMod.default
-import typingsJapgolly.typescriptCollections.utilMod.ICompareFunction
-import typingsJapgolly.typescriptCollections.utilMod.IEqualsFunction
-import typingsJapgolly.typescriptCollections.utilMod.ILoopFunction
+import typingsJapgolly.typescriptCollections.distLibBstreeMod.default
+import typingsJapgolly.typescriptCollections.distLibUtilMod.ICompareFunction
+import typingsJapgolly.typescriptCollections.distLibUtilMod.IEqualsFunction
+import typingsJapgolly.typescriptCollections.distLibUtilMod.ILoopFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class BSTree[T] () extends default[T, T]
+object mod {
   
+  @JSImport("typescript-collections", "BSTree")
+  @js.native
+  open class BSTree[T] () extends default[T]
+  
+  @JSImport("typescript-collections", "BSTreeKV")
   @js.native
   /**
     * Creates an empty binary search tree.
@@ -51,10 +52,12 @@ object mod extends js.Object {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class BSTreeKV[K, V /* <: K */] () extends default[K, V] {
+  open class BSTreeKV[K, V /* <: K */] ()
+    extends typingsJapgolly.typescriptCollections.distLibBstreekvMod.default[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
   }
   
+  @JSImport("typescript-collections", "Bag")
   @js.native
   /**
     * Creates an empty bag.
@@ -75,14 +78,15 @@ object mod extends js.Object {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class Bag[T] ()
-    extends typingsJapgolly.typescriptCollections.bagMod.default[T] {
+  open class Bag[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibBagMod.default[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
   
+  @JSImport("typescript-collections", "DefaultDictionary")
   @js.native
-  class DefaultDictionary[K, V] protected ()
-    extends typingsJapgolly.typescriptCollections.factoryDictionaryMod.default[K, V] {
+  open class DefaultDictionary[K, V] protected ()
+    extends typingsJapgolly.typescriptCollections.distLibFactoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
       * @class <p>Dictionaries map keys to values; each key can map to at most one value.
@@ -115,6 +119,7 @@ object mod extends js.Object {
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Dictionary")
   @js.native
   /**
     * Creates an empty dictionary.
@@ -134,14 +139,15 @@ object mod extends js.Object {
     * is not appropriate, a custom function which receives a key and returns a
     * unique string must be provided.
     */
-  class Dictionary[K, V] ()
-    extends typingsJapgolly.typescriptCollections.dictionaryMod.default[K, V] {
+  open class Dictionary[K, V] ()
+    extends typingsJapgolly.typescriptCollections.distLibDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "FactoryDictionary")
   @js.native
-  class FactoryDictionary[K, V] protected ()
-    extends typingsJapgolly.typescriptCollections.factoryDictionaryMod.default[K, V] {
+  open class FactoryDictionary[K, V] protected ()
+    extends typingsJapgolly.typescriptCollections.distLibFactoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
       * @class <p>Dictionaries map keys to values; each key can map to at most one value.
@@ -174,6 +180,7 @@ object mod extends js.Object {
     def this(defaultFactoryFunction: js.Function0[V], toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Heap")
   @js.native
   /**
     * Creates an empty Heap.
@@ -218,17 +225,19 @@ object mod extends js.Object {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class Heap[T] ()
-    extends typingsJapgolly.typescriptCollections.heapMod.default[T] {
+  open class Heap[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibHeapMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
+  @JSImport("typescript-collections", "LinkedDictionary")
   @js.native
-  class LinkedDictionary[K, V] ()
-    extends typingsJapgolly.typescriptCollections.linkedDictionaryMod.default[K, V] {
+  open class LinkedDictionary[K, V] ()
+    extends typingsJapgolly.typescriptCollections.distLibLinkedDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
+  @JSImport("typescript-collections", "LinkedList")
   @js.native
   /**
     * Creates an empty Linked List.
@@ -236,9 +245,10 @@ object mod extends js.Object {
     * which together represent a sequence.
     * @constructor
     */
-  class LinkedList[T] ()
-    extends typingsJapgolly.typescriptCollections.linkedListMod.default[T]
+  open class LinkedList[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibLinkedListMod.default[T]
   
+  @JSImport("typescript-collections", "MultiDictionary")
   @js.native
   /**
     * Creates an empty multi dictionary.
@@ -254,7 +264,7 @@ object mod extends js.Object {
     *
     * <pre>
     * function petToString(pet) {
-    *  return pet.name;
+    *     return pet.name;
     * }
     * </pre>
     * <p>If the values are custom objects a function to check equality between values
@@ -262,7 +272,7 @@ object mod extends js.Object {
     *
     * <pre>
     * function petsAreEqualByAge(pet1,pet2) {
-    *  return pet1.age===pet2.age;
+    *     return pet1.age === pet2.age;
     * }
     * </pre>
     * @constructor
@@ -275,24 +285,35 @@ object mod extends js.Object {
     *
     * @param allowDuplicateValues
     */
-  class MultiDictionary[K, V] ()
-    extends typingsJapgolly.typescriptCollections.multiDictionaryMod.default[K, V] {
+  open class MultiDictionary[K, V] ()
+    extends typingsJapgolly.typescriptCollections.distLibMultiDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V]) = this()
+    def this(
+      toStrFunction: js.Function1[/* key */ K, String],
+      valuesEqualsFunction: Unit,
+      allowDuplicateValues: Boolean
+    ) = this()
     def this(
       toStrFunction: js.Function1[/* key */ K, String],
       valuesEqualsFunction: IEqualsFunction[V],
       allowDuplicateValues: Boolean
     ) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: Unit, allowDuplicateValues: Boolean) = this()
+    def this(toStrFunction: Unit, valuesEqualsFunction: IEqualsFunction[V], allowDuplicateValues: Boolean) = this()
   }
   
+  @JSImport("typescript-collections", "MultiRootTree")
   @js.native
-  class MultiRootTree ()
-    extends typingsJapgolly.typescriptCollections.multiRootTreeMod.default {
+  open class MultiRootTree ()
+    extends typingsJapgolly.typescriptCollections.distLibMultiRootTreeMod.default {
     def this(rootIds: js.Array[String]) = this()
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
+    def this(rootIds: Unit, nodes: StringDictionary[js.Array[String]]) = this()
   }
   
+  @JSImport("typescript-collections", "PriorityQueue")
   @js.native
   /**
     * Creates an empty priority queue.
@@ -318,11 +339,12 @@ object mod extends js.Object {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class PriorityQueue[T] ()
-    extends typingsJapgolly.typescriptCollections.priorityQueueMod.default[T] {
+  open class PriorityQueue[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibPriorityQueueMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
+  @JSImport("typescript-collections", "Queue")
   @js.native
   /**
     * Creates an empty queue.
@@ -331,9 +353,10 @@ object mod extends js.Object {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class Queue[T] ()
-    extends typingsJapgolly.typescriptCollections.queueMod.default[T]
+  open class Queue[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibQueueMod.default[T]
   
+  @JSImport("typescript-collections", "Set")
   @js.native
   /**
     * Creates an empty set.
@@ -353,11 +376,12 @@ object mod extends js.Object {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class Set[T] ()
-    extends typingsJapgolly.typescriptCollections.setMod.default[T] {
+  open class Set[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibSetMod.default[T] {
     def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
   }
   
+  @JSImport("typescript-collections", "Stack")
   @js.native
   /**
     * Creates an empty Stack.
@@ -366,44 +390,68 @@ object mod extends js.Object {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class Stack[T] ()
-    extends typingsJapgolly.typescriptCollections.stackMod.default[T]
+  open class Stack[T] ()
+    extends typingsJapgolly.typescriptCollections.distLibStackMod.default[T]
   
-  @js.native
-  object arrays extends js.Object {
-    def contains[T](array: js.Array[T], item: T): Boolean = js.native
-    def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
-    def copy[T](array: js.Array[T]): js.Array[T] = js.native
-    def equals[T](array1: js.Array[T], array2: js.Array[T]): Boolean = js.native
-    def equals[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = js.native
-    def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = js.native
-    def frequency[T](array: js.Array[T], item: T): Double = js.native
-    def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
-    def indexOf[T](array: js.Array[T], item: T): Double = js.native
-    def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
-    def lastIndexOf[T](array: js.Array[T], item: T): Double = js.native
-    def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = js.native
-    def remove[T](array: js.Array[T], item: T): Boolean = js.native
-    def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = js.native
-    def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = js.native
-    def toString[T](array: js.Array[T]): String = js.native
+  object arrays {
+    
+    @JSImport("typescript-collections", "arrays")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def contains[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def contains[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def copy[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    inline def equals_[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals_[T](array1: js.Array[T], array2: js.Array[T], equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def forEach[T](array: js.Array[T], callback: ILoopFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def frequency[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def frequency[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def indexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def indexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def lastIndexOf[T](array: js.Array[T], item: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def lastIndexOf[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def remove[T](array: js.Array[T], item: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def remove[T](array: js.Array[T], item: T, equalsFunction: IEqualsFunction[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], equalsFunction.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def swap[T](array: js.Array[T], i: Double, j: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(array.asInstanceOf[js.Any], i.asInstanceOf[js.Any], j.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def toString_[T](array: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
-  object util extends js.Object {
-    def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = js.native
-    def defaultCompare[T](a: T, b: T): Double = js.native
-    def defaultEquals[T](a: T, b: T): Boolean = js.native
-    def defaultToString(item: js.Any): String = js.native
-    def has(obj: js.Any, prop: js.Any): js.Any = js.native
-    def isFunction(func: js.Any): Boolean = js.native
-    def isString(obj: js.Any): Boolean = js.native
-    def isUndefined(obj: js.Any): /* is undefined */ Boolean = js.native
-    def makeString[T](item: T): String = js.native
-    def makeString[T](item: T, join: String): String = js.native
-    def reverseCompareFunction[T](): ICompareFunction[T] = js.native
-    def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = js.native
+  object util {
+    
+    @JSImport("typescript-collections", "util")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def compareToEquals[T](compareFunction: ICompareFunction[T]): IEqualsFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compareToEquals")(compareFunction.asInstanceOf[js.Any]).asInstanceOf[IEqualsFunction[T]]
+    
+    inline def defaultCompare[T](a: T, b: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def defaultEquals[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def defaultToString(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultToString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def has(obj: Any, prop: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def isFunction(func: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isString(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isUndefined(obj: Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+    
+    inline def makeString[T](item: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def makeString[T](item: T, join: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def reverseCompareFunction[T](): ICompareFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCompareFunction")().asInstanceOf[ICompareFunction[T]]
+    inline def reverseCompareFunction[T](compareFunction: ICompareFunction[T]): ICompareFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseCompareFunction")(compareFunction.asInstanceOf[js.Any]).asInstanceOf[ICompareFunction[T]]
   }
-  
 }
-

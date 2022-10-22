@@ -1,78 +1,55 @@
 package typingsJapgolly.materialUiCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import japgolly.scalajs.react.raw.React.RefHandle
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.createBreakpointsMod.Breakpoint
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUiCore.hiddenHiddenMod.HiddenProps
-import typingsJapgolly.materialUiCore.hiddenMod.default
 import typingsJapgolly.materialUiCore.materialUiCoreStrings.css
 import typingsJapgolly.materialUiCore.materialUiCoreStrings.js_
-import typingsJapgolly.materialUiCore.withStylesMod.ClassNameMap
-import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.std.Partial
+import typingsJapgolly.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Hidden {
-  def apply(
-    className: String = null,
-    classes: Partial[ClassNameMap[scala.Nothing]] = null,
-    implementation: js_ | css = null,
-    initialWidth: Breakpoint = null,
-    innerRef: Ref | RefHandle[_] = null,
-    lgDown: js.UndefOr[Boolean] = js.undefined,
-    lgUp: js.UndefOr[Boolean] = js.undefined,
-    mdDown: js.UndefOr[Boolean] = js.undefined,
-    mdUp: js.UndefOr[Boolean] = js.undefined,
-    only: Breakpoint | js.Array[Breakpoint] = null,
-    smDown: js.UndefOr[Boolean] = js.undefined,
-    smUp: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    xlDown: js.UndefOr[Boolean] = js.undefined,
-    xlUp: js.UndefOr[Boolean] = js.undefined,
-    xsDown: js.UndefOr[Boolean] = js.undefined,
-    xsUp: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HiddenProps, default, Unit, HiddenProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (implementation != null) __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
-    if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgDown)) __obj.updateDynamic("lgDown")(lgDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgUp)) __obj.updateDynamic("lgUp")(lgUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdDown)) __obj.updateDynamic("mdDown")(mdDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdUp)) __obj.updateDynamic("mdUp")(mdUp.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(smDown)) __obj.updateDynamic("smDown")(smDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(smUp)) __obj.updateDynamic("smUp")(smUp.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlDown)) __obj.updateDynamic("xlDown")(xlDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlUp)) __obj.updateDynamic("xlUp")(xlUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsDown)) __obj.updateDynamic("xsDown")(xsDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsUp)) __obj.updateDynamic("xsUp")(xsUp.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.hiddenHiddenMod.HiddenProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.hiddenMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.hiddenHiddenMod.HiddenProps])(children: _*)
-  }
-  @JSImport("@material-ui/core/Hidden", JSImport.Default)
+  @JSImport("@material-ui/core", "Hidden")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def implementation(value: js_ | css): this.type = set("implementation", value.asInstanceOf[js.Any])
+    
+    inline def initialWidth(value: Breakpoint): this.type = set("initialWidth", value.asInstanceOf[js.Any])
+    
+    inline def lgDown(value: Boolean): this.type = set("lgDown", value.asInstanceOf[js.Any])
+    
+    inline def lgUp(value: Boolean): this.type = set("lgUp", value.asInstanceOf[js.Any])
+    
+    inline def mdDown(value: Boolean): this.type = set("mdDown", value.asInstanceOf[js.Any])
+    
+    inline def mdUp(value: Boolean): this.type = set("mdUp", value.asInstanceOf[js.Any])
+    
+    inline def only(value: Breakpoint | js.Array[Breakpoint]): this.type = set("only", value.asInstanceOf[js.Any])
+    
+    inline def onlyVarargs(value: Breakpoint*): this.type = set("only", js.Array(value*))
+    
+    inline def smDown(value: Boolean): this.type = set("smDown", value.asInstanceOf[js.Any])
+    
+    inline def smUp(value: Boolean): this.type = set("smUp", value.asInstanceOf[js.Any])
+    
+    inline def xlDown(value: Boolean): this.type = set("xlDown", value.asInstanceOf[js.Any])
+    
+    inline def xlUp(value: Boolean): this.type = set("xlUp", value.asInstanceOf[js.Any])
+    
+    inline def xsDown(value: Boolean): this.type = set("xsDown", value.asInstanceOf[js.Any])
+    
+    inline def xsUp(value: Boolean): this.type = set("xsUp", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Hidden.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HiddenProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

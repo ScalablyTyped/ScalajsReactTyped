@@ -1,26 +1,35 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITextSnapshotLine extends js.Object {
+trait ITextSnapshotLine extends StObject {
+  
   def end(): SnapshotPoint
+  
   def endIncludingLineBreak(): SnapshotPoint
+  
   def endIncludingLineBreakPosition(): Double
+  
   def endPosition(): Double
+  
   def getText(): String
+  
   def length(): Double
+  
   def lineNumber(): Double
+  
   def snapshot(): ITextSnapshot
+  
   def start(): SnapshotPoint
+  
   def startPosition(): Double
 }
-
 object ITextSnapshotLine {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     end: CallbackTo[SnapshotPoint],
     endIncludingLineBreak: CallbackTo[SnapshotPoint],
     endIncludingLineBreakPosition: CallbackTo[Double],
@@ -32,18 +41,30 @@ object ITextSnapshotLine {
     start: CallbackTo[SnapshotPoint],
     startPosition: CallbackTo[Double]
   ): ITextSnapshotLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end.toJsFn)
-    __obj.updateDynamic("endIncludingLineBreak")(endIncludingLineBreak.toJsFn)
-    __obj.updateDynamic("endIncludingLineBreakPosition")(endIncludingLineBreakPosition.toJsFn)
-    __obj.updateDynamic("endPosition")(endPosition.toJsFn)
-    __obj.updateDynamic("getText")(getText.toJsFn)
-    __obj.updateDynamic("length")(length.toJsFn)
-    __obj.updateDynamic("lineNumber")(lineNumber.toJsFn)
-    __obj.updateDynamic("snapshot")(snapshot.toJsFn)
-    __obj.updateDynamic("start")(start.toJsFn)
-    __obj.updateDynamic("startPosition")(startPosition.toJsFn)
+    val __obj = js.Dynamic.literal(end = end.toJsFn, endIncludingLineBreak = endIncludingLineBreak.toJsFn, endIncludingLineBreakPosition = endIncludingLineBreakPosition.toJsFn, endPosition = endPosition.toJsFn, getText = getText.toJsFn, length = length.toJsFn, lineNumber = lineNumber.toJsFn, snapshot = snapshot.toJsFn, start = start.toJsFn, startPosition = startPosition.toJsFn)
     __obj.asInstanceOf[ITextSnapshotLine]
   }
+  
+  extension [Self <: ITextSnapshotLine](x: Self) {
+    
+    inline def setEnd(value: CallbackTo[SnapshotPoint]): Self = StObject.set(x, "end", value.toJsFn)
+    
+    inline def setEndIncludingLineBreak(value: CallbackTo[SnapshotPoint]): Self = StObject.set(x, "endIncludingLineBreak", value.toJsFn)
+    
+    inline def setEndIncludingLineBreakPosition(value: CallbackTo[Double]): Self = StObject.set(x, "endIncludingLineBreakPosition", value.toJsFn)
+    
+    inline def setEndPosition(value: CallbackTo[Double]): Self = StObject.set(x, "endPosition", value.toJsFn)
+    
+    inline def setGetText(value: CallbackTo[String]): Self = StObject.set(x, "getText", value.toJsFn)
+    
+    inline def setLength(value: CallbackTo[Double]): Self = StObject.set(x, "length", value.toJsFn)
+    
+    inline def setLineNumber(value: CallbackTo[Double]): Self = StObject.set(x, "lineNumber", value.toJsFn)
+    
+    inline def setSnapshot(value: CallbackTo[ITextSnapshot]): Self = StObject.set(x, "snapshot", value.toJsFn)
+    
+    inline def setStart(value: CallbackTo[SnapshotPoint]): Self = StObject.set(x, "start", value.toJsFn)
+    
+    inline def setStartPosition(value: CallbackTo[Double]): Self = StObject.set(x, "startPosition", value.toJsFn)
+  }
 }
-

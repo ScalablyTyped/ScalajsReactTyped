@@ -1,8 +1,8 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactTable.reactTableStrings.text
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactTable.reactTableStrings.equals
   - typingsJapgolly.reactTable.reactTableStrings.between
 */
-trait DefaultFilterTypes extends js.Object
-
+trait DefaultFilterTypes extends StObject
 object DefaultFilterTypes {
-  @scala.inline
-  def between: typingsJapgolly.reactTable.reactTableStrings.between = this.cast("between")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def equals: typingsJapgolly.reactTable.reactTableStrings.equals = this.cast("equals")
-  @scala.inline
-  def exact: typingsJapgolly.reactTable.reactTableStrings.exact = this.cast("exact")
-  @scala.inline
-  def exactText: typingsJapgolly.reactTable.reactTableStrings.exactText = this.cast("exactText")
-  @scala.inline
-  def exactTextCase: typingsJapgolly.reactTable.reactTableStrings.exactTextCase = this.cast("exactTextCase")
-  @scala.inline
-  def includes: typingsJapgolly.reactTable.reactTableStrings.includes = this.cast("includes")
-  @scala.inline
-  def includesAll: typingsJapgolly.reactTable.reactTableStrings.includesAll = this.cast("includesAll")
-  @scala.inline
-  def text: typingsJapgolly.reactTable.reactTableStrings.text = this.cast("text")
+  
+  inline def between: typingsJapgolly.reactTable.reactTableStrings.between = "between".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.between]
+  
+  inline def equals: typingsJapgolly.reactTable.reactTableStrings.equals = "equals".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.equals]
+  
+  inline def exact: typingsJapgolly.reactTable.reactTableStrings.exact = "exact".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.exact]
+  
+  inline def exactText: typingsJapgolly.reactTable.reactTableStrings.exactText = "exactText".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.exactText]
+  
+  inline def exactTextCase: typingsJapgolly.reactTable.reactTableStrings.exactTextCase = "exactTextCase".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.exactTextCase]
+  
+  inline def includes: typingsJapgolly.reactTable.reactTableStrings.includes = "includes".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.includes]
+  
+  inline def includesAll: typingsJapgolly.reactTable.reactTableStrings.includesAll = "includesAll".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.includesAll]
+  
+  inline def text: typingsJapgolly.reactTable.reactTableStrings.text = "text".asInstanceOf[typingsJapgolly.reactTable.reactTableStrings.text]
 }
-

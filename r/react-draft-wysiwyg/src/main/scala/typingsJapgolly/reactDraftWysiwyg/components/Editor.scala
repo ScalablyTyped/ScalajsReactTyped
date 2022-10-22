@@ -1,135 +1,138 @@
 package typingsJapgolly.reactDraftWysiwyg.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.EventTarget
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.draftJs.mod.Draft.Model.Constants.DraftEditorCommand
+import typingsJapgolly.draftJs.mod.Draft.Model.Constants.DraftHandleValue
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactDraftWysiwyg.mod.ContentBlock
 import typingsJapgolly.reactDraftWysiwyg.mod.EditorProps
 import typingsJapgolly.reactDraftWysiwyg.mod.EditorState
 import typingsJapgolly.reactDraftWysiwyg.mod.RawDraftContentState
+import typingsJapgolly.reactDraftWysiwyg.mod.SyntheticEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Editor {
-  def apply(
-    ariaActiveDescendantID: String = null,
-    ariaAutoComplete: String = null,
-    ariaDescribedBy: String = null,
-    ariaExpanded: String = null,
-    ariaHasPopup: String = null,
-    ariaLabel: String = null,
-    ariaOwneeID: String = null,
-    contentState: RawDraftContentState = null,
-    customBlockRenderFunc: /* block */ ContentBlock => CallbackTo[js.Any] = null,
-    customDecorators: js.Array[js.Object] = null,
-    customStyleMap: js.Object = null,
-    defaultContentState: RawDraftContentState = null,
-    defaultEditorState: EditorState = null,
-    editorClassName: String = null,
-    editorRef: /* ref */ js.Object => Callback = null,
-    editorState: EditorState = null,
-    editorStyle: CSSProperties = null,
-    handlePastedText: (/* text */ String, /* html */ String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, Unit]) => CallbackTo[Boolean] = null,
-    hashtag: js.Object = null,
-    initialContentState: RawDraftContentState = null,
-    locale: String = null,
-    localization: js.Object = null,
-    mention: js.Object = null,
-    onBlur: ReactEventFrom[EventTarget with js.Object with Element] => Callback = null,
-    onChange: /* contentState */ RawDraftContentState => Callback = null,
-    onContentStateChange: /* contentState */ RawDraftContentState => Callback = null,
-    onEditorStateChange: /* editorState */ EditorState => Callback = null,
-    onFocus: ReactEventFrom[EventTarget with js.Object with Element] => Callback = null,
-    onTab: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    stripPastedStyles: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
-    textAlignment: String = null,
-    toolbar: js.Object = null,
-    toolbarClassName: String = null,
-    toolbarCustomButtons: js.Array[japgolly.scalajs.react.raw.React.Element] = null,
-    toolbarHidden: js.UndefOr[Boolean] = js.undefined,
-    toolbarOnFocus: js.UndefOr[Boolean] = js.undefined,
-    toolbarStyle: js.Object = null,
-    uploadCallback: /* file */ js.Object => CallbackTo[js.Promise[js.Object]] = null,
-    wrapperClassName: String = null,
-    wrapperId: Int | Double = null,
-    wrapperStyle: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[EditorProps, typingsJapgolly.reactDraftWysiwyg.mod.Editor, Unit, EditorProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaActiveDescendantID != null) __obj.updateDynamic("ariaActiveDescendantID")(ariaActiveDescendantID.asInstanceOf[js.Any])
-    if (ariaAutoComplete != null) __obj.updateDynamic("ariaAutoComplete")(ariaAutoComplete.asInstanceOf[js.Any])
-    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
-    if (ariaExpanded != null) __obj.updateDynamic("ariaExpanded")(ariaExpanded.asInstanceOf[js.Any])
-    if (ariaHasPopup != null) __obj.updateDynamic("ariaHasPopup")(ariaHasPopup.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaOwneeID != null) __obj.updateDynamic("ariaOwneeID")(ariaOwneeID.asInstanceOf[js.Any])
-    if (contentState != null) __obj.updateDynamic("contentState")(contentState.asInstanceOf[js.Any])
-    if (customBlockRenderFunc != null) __obj.updateDynamic("customBlockRenderFunc")(js.Any.fromFunction1((t0: /* block */ typingsJapgolly.reactDraftWysiwyg.mod.ContentBlock) => customBlockRenderFunc(t0).runNow()))
-    if (customDecorators != null) __obj.updateDynamic("customDecorators")(customDecorators.asInstanceOf[js.Any])
-    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap.asInstanceOf[js.Any])
-    if (defaultContentState != null) __obj.updateDynamic("defaultContentState")(defaultContentState.asInstanceOf[js.Any])
-    if (defaultEditorState != null) __obj.updateDynamic("defaultEditorState")(defaultEditorState.asInstanceOf[js.Any])
-    if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName.asInstanceOf[js.Any])
-    if (editorRef != null) __obj.updateDynamic("editorRef")(js.Any.fromFunction1((t0: /* ref */ js.Object) => editorRef(t0).runNow()))
-    if (editorState != null) __obj.updateDynamic("editorState")(editorState.asInstanceOf[js.Any])
-    if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle.asInstanceOf[js.Any])
-    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(js.Any.fromFunction4((t0: /* text */ java.lang.String, t1: /* html */ java.lang.String, t2: /* editorState */ typingsJapgolly.reactDraftWysiwyg.mod.EditorState, t3: /* onChange */ js.Function1[/* editorState */ typingsJapgolly.reactDraftWysiwyg.mod.EditorState, scala.Unit]) => handlePastedText(t0, t1, t2, t3).runNow()))
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
-    if (initialContentState != null) __obj.updateDynamic("initialContentState")(initialContentState.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localization != null) __obj.updateDynamic("localization")(localization.asInstanceOf[js.Any])
-    if (mention != null) __obj.updateDynamic("mention")(mention.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.EventTarget with js.Object with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* contentState */ typingsJapgolly.reactDraftWysiwyg.mod.RawDraftContentState) => onChange(t0).runNow()))
-    if (onContentStateChange != null) __obj.updateDynamic("onContentStateChange")(js.Any.fromFunction1((t0: /* contentState */ typingsJapgolly.reactDraftWysiwyg.mod.RawDraftContentState) => onContentStateChange(t0).runNow()))
-    if (onEditorStateChange != null) __obj.updateDynamic("onEditorStateChange")(js.Any.fromFunction1((t0: /* editorState */ typingsJapgolly.reactDraftWysiwyg.mod.EditorState) => onEditorStateChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.EventTarget with js.Object with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onTab(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName.asInstanceOf[js.Any])
-    if (toolbarCustomButtons != null) __obj.updateDynamic("toolbarCustomButtons")(toolbarCustomButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarHidden)) __obj.updateDynamic("toolbarHidden")(toolbarHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarOnFocus)) __obj.updateDynamic("toolbarOnFocus")(toolbarOnFocus.asInstanceOf[js.Any])
-    if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle.asInstanceOf[js.Any])
-    if (uploadCallback != null) __obj.updateDynamic("uploadCallback")(js.Any.fromFunction1((t0: /* file */ js.Object) => uploadCallback(t0).runNow()))
-    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
-    if (wrapperId != null) __obj.updateDynamic("wrapperId")(wrapperId.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactDraftWysiwyg.mod.EditorProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDraftWysiwyg.mod.Editor](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactDraftWysiwyg.mod.EditorProps])(children: _*)
-  }
   @JSImport("react-draft-wysiwyg", "Editor")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactDraftWysiwyg.mod.Editor] {
+    
+    inline def ariaActiveDescendantID(value: String): this.type = set("ariaActiveDescendantID", value.asInstanceOf[js.Any])
+    
+    inline def ariaAutoComplete(value: String): this.type = set("ariaAutoComplete", value.asInstanceOf[js.Any])
+    
+    inline def ariaDescribedBy(value: String): this.type = set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    
+    inline def ariaExpanded(value: String): this.type = set("ariaExpanded", value.asInstanceOf[js.Any])
+    
+    inline def ariaHasPopup(value: String): this.type = set("ariaHasPopup", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaOwneeID(value: String): this.type = set("ariaOwneeID", value.asInstanceOf[js.Any])
+    
+    inline def contentState(value: RawDraftContentState): this.type = set("contentState", value.asInstanceOf[js.Any])
+    
+    inline def customBlockRenderFunc(value: /* block */ ContentBlock => Any): this.type = set("customBlockRenderFunc", js.Any.fromFunction1(value))
+    
+    inline def customDecorators(value: js.Array[js.Object]): this.type = set("customDecorators", value.asInstanceOf[js.Any])
+    
+    inline def customDecoratorsVarargs(value: js.Object*): this.type = set("customDecorators", js.Array(value*))
+    
+    inline def customStyleMap(value: js.Object): this.type = set("customStyleMap", value.asInstanceOf[js.Any])
+    
+    inline def defaultContentState(value: RawDraftContentState): this.type = set("defaultContentState", value.asInstanceOf[js.Any])
+    
+    inline def defaultEditorState(value: EditorState): this.type = set("defaultEditorState", value.asInstanceOf[js.Any])
+    
+    inline def editorClassName(value: String): this.type = set("editorClassName", value.asInstanceOf[js.Any])
+    
+    inline def editorRef(value: /* ref */ js.Object => Callback): this.type = set("editorRef", js.Any.fromFunction1((t0: /* ref */ js.Object) => value(t0).runNow()))
+    
+    inline def editorState(value: EditorState): this.type = set("editorState", value.asInstanceOf[js.Any])
+    
+    inline def editorStyle(value: CSSProperties): this.type = set("editorStyle", value.asInstanceOf[js.Any])
+    
+    inline def handleKeyCommand(
+      value: (/* command */ DraftEditorCommand, /* editorState */ EditorState, /* eventTimeStamp */ Double) => DraftHandleValue
+    ): this.type = set("handleKeyCommand", js.Any.fromFunction3(value))
+    
+    inline def handlePastedText(
+      value: (/* text */ String, /* html */ String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, Unit]) => Boolean
+    ): this.type = set("handlePastedText", js.Any.fromFunction4(value))
+    
+    inline def handleReturn(value: (ReactKeyboardEventFrom[js.Object & Element], /* editorState */ EditorState) => Boolean): this.type = set("handleReturn", js.Any.fromFunction2(value))
+    
+    inline def hashtag(value: js.Object): this.type = set("hashtag", value.asInstanceOf[js.Any])
+    
+    inline def initialContentState(value: RawDraftContentState): this.type = set("initialContentState", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: String): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def localization(value: js.Object): this.type = set("localization", value.asInstanceOf[js.Any])
+    
+    inline def mention(value: js.Object): this.type = set("mention", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* event */ SyntheticEvent => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* event */ SyntheticEvent) => value(t0).runNow()))
+    
+    inline def onChange(value: /* contentState */ RawDraftContentState => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* contentState */ RawDraftContentState) => value(t0).runNow()))
+    
+    inline def onContentStateChange(value: /* contentState */ RawDraftContentState => Callback): this.type = set("onContentStateChange", js.Any.fromFunction1((t0: /* contentState */ RawDraftContentState) => value(t0).runNow()))
+    
+    inline def onEditorStateChange(value: /* editorState */ EditorState => Callback): this.type = set("onEditorStateChange", js.Any.fromFunction1((t0: /* editorState */ EditorState) => value(t0).runNow()))
+    
+    inline def onFocus(value: /* event */ SyntheticEvent => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: /* event */ SyntheticEvent) => value(t0).runNow()))
+    
+    inline def onTab(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): this.type = set("onTab", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def spellCheck(value: Boolean): this.type = set("spellCheck", value.asInstanceOf[js.Any])
+    
+    inline def stripPastedStyles(value: Boolean): this.type = set("stripPastedStyles", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def textAlignment(value: String): this.type = set("textAlignment", value.asInstanceOf[js.Any])
+    
+    inline def toolbar(value: js.Object): this.type = set("toolbar", value.asInstanceOf[js.Any])
+    
+    inline def toolbarClassName(value: String): this.type = set("toolbarClassName", value.asInstanceOf[js.Any])
+    
+    inline def toolbarCustomButtons(value: js.Array[japgolly.scalajs.react.facade.React.Element]): this.type = set("toolbarCustomButtons", value.asInstanceOf[js.Any])
+    
+    inline def toolbarCustomButtonsVarargs(value: japgolly.scalajs.react.facade.React.Element*): this.type = set("toolbarCustomButtons", js.Array(value*))
+    
+    inline def toolbarHidden(value: Boolean): this.type = set("toolbarHidden", value.asInstanceOf[js.Any])
+    
+    inline def toolbarOnFocus(value: Boolean): this.type = set("toolbarOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def toolbarStyle(value: js.Object): this.type = set("toolbarStyle", value.asInstanceOf[js.Any])
+    
+    inline def uploadCallback(value: /* file */ js.Object => js.Promise[js.Object]): this.type = set("uploadCallback", js.Any.fromFunction1(value))
+    
+    inline def webDriverTestID(value: String): this.type = set("webDriverTestID", value.asInstanceOf[js.Any])
+    
+    inline def wrapperClassName(value: String): this.type = set("wrapperClassName", value.asInstanceOf[js.Any])
+    
+    inline def wrapperId(value: Double): this.type = set("wrapperId", value.asInstanceOf[js.Any])
+    
+    inline def wrapperStyle(value: CSSProperties): this.type = set("wrapperStyle", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Editor.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: EditorProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

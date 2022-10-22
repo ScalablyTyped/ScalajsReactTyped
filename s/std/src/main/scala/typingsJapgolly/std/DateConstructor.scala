@@ -8,48 +8,63 @@ import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DateConstructor
-  extends Instantiable0[Date]
-     with Instantiable1[
-      (/* value */ Date) | (/* value */ Double) | (/* value */ java.lang.String) | (/* vd */ VarDate), 
-      Date
+  extends StObject
+     with /* standard es2015.core */
+/* standard es5 */
+/* standard scripthost */
+Instantiable1[
+      (/* value */ js.Date) | (/* value */ Double) | (/* value */ java.lang.String) | (/* vd */ VarDate), 
+      js.Date
     ]
-     with Instantiable2[/* year */ Double, /* month */ Double, Date]
-     with Instantiable3[/* year */ Double, /* month */ Double, /* date */ Double, Date]
-     with Instantiable4[/* year */ Double, /* month */ Double, /* date */ Double, /* hours */ Double, Date]
+     with /* standard es5 */
+Instantiable0[js.Date]
+     with /* standard es5 */
+Instantiable2[/* year */ Double, /* month */ Double, js.Date]
+     with Instantiable3[/* year */ Double, /* month */ Double, /* date */ Double, js.Date]
+     with Instantiable4[
+      /* year */ Double, 
+      /* month */ Double, 
+      (/* date */ Double) | (/* date */ Unit), 
+      /* hours */ Double, 
+      js.Date
+    ]
      with Instantiable5[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
+      (/* date */ Double) | (/* date */ Unit), 
+      (/* hours */ Double) | (/* hours */ Unit), 
       /* minutes */ Double, 
-      Date
+      js.Date
     ]
      with Instantiable6[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
-      /* minutes */ Double, 
+      (/* date */ Double) | (/* date */ Unit), 
+      (/* hours */ Double) | (/* hours */ Unit), 
+      (/* minutes */ Double) | (/* minutes */ Unit), 
       /* seconds */ Double, 
-      Date
+      js.Date
     ]
      with Instantiable7[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
-      /* minutes */ Double, 
-      /* seconds */ Double, 
+      (/* date */ Double) | (/* date */ Unit), 
+      (/* hours */ Double) | (/* hours */ Unit), 
+      (/* minutes */ Double) | (/* minutes */ Unit), 
+      (/* seconds */ Double) | (/* seconds */ Unit), 
       /* ms */ Double, 
-      Date
+      js.Date
     ] {
+  
+  /* standard es5 */
   def apply(): java.lang.String = js.native
+  
   /**
     * Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the specified date.
     * @param year The full year designation is required for cross-century date accuracy. If year is between 0 and 99 is used, then year is assumed to be 1900 + year.
@@ -60,6 +75,7 @@ trait DateConstructor
     * @param seconds Must be supplied if milliseconds is supplied. A number from 0 to 59 that specifies the seconds.
     * @param ms A number from 0 to 999 that specifies the milliseconds.
     */
+  /* standard es5 */
   def UTC(year: Double, month: Double): Double = js.native
   def UTC(year: Double, month: Double, date: Double): Double = js.native
   def UTC(year: Double, month: Double, date: Double, hours: Double): Double = js.native
@@ -74,11 +90,72 @@ trait DateConstructor
     seconds: Double,
     ms: Double
   ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: Unit,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Double, seconds: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Unit,
+    hours: Double,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Double, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Double, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Double, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Double = js.native
+  def UTC(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Double = js.native
+  
+  /* standard es5 */
   def now(): Double = js.native
+  
   /**
     * Parses a string containing a date, and returns the number of milliseconds between that date and midnight, January 1, 1970.
     * @param s A date string
     */
+  /* standard es5 */
   def parse(s: java.lang.String): Double = js.native
 }
-

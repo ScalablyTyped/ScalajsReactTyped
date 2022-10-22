@@ -1,12 +1,14 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
 import typingsJapgolly.angular.mod.IRootScopeService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExtensionScope extends IRootScopeService {
+trait IExtensionScope
+  extends StObject
+     with IRootScopeService {
+  
   var component: IExtensionComponent = js.native
 }
-

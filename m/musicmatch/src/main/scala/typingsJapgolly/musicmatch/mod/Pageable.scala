@@ -1,21 +1,30 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Pageable extends js.Object {
+trait Pageable extends StObject {
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var page_size: js.UndefOr[Double] = js.undefined
 }
-
 object Pageable {
-  @scala.inline
-  def apply(page: Int | Double = null, page_size: Int | Double = null): Pageable = {
+  
+  inline def apply(): Pageable = {
     val __obj = js.Dynamic.literal()
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pageable]
   }
+  
+  extension [Self <: Pageable](x: Self) {
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+  }
 }
-

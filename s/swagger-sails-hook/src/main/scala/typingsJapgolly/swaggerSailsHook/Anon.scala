@@ -1,25 +1,49 @@
 package typingsJapgolly.swaggerSailsHook
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Anon extends js.Object {
-  /**
-  				 * This route will match any routes that aren't bound in the app via a custom route configuration
-  				 * or a blueprint.
-  				 */
-  @JSName("/*")
-  def SlashAsterisk(req: js.Any, res: js.Any, next: js.Function0[_]): js.Any
-}
-
-object Anon {
-  @scala.inline
-  def apply(SlashAsterisk: (js.Any, js.Any, js.Function0[js.Any]) => CallbackTo[js.Any]): Anon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SlashAsterisk")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: js.Function0[js.Any]) => SlashAsterisk(t0, t1, t2).runNow()))
-    __obj.asInstanceOf[Anon]
+object anon {
+  
+  trait After extends StObject {
+    
+    /** routes specified in the `after` object will be bound after custom and blueprint routes */
+    var after: _empty
+  }
+  object After {
+    
+    inline def apply(after: _empty): After = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
+      __obj.asInstanceOf[After]
+    }
+    
+    extension [Self <: After](x: Self) {
+      
+      inline def setAfter(value: _empty): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait _empty extends StObject {
+    
+    /**
+      * This route will match any routes that aren't bound in the app via a custom route configuration
+      * or a blueprint.
+      */
+    @JSName("/*")
+    def SlashAsterisk(req: Any, res: Any, next: js.Function0[Any]): Any
+  }
+  object _empty {
+    
+    inline def apply(SlashAsterisk: (Any, Any, js.Function0[Any]) => Any): _empty = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("/*")(js.Any.fromFunction3(SlashAsterisk))
+      __obj.asInstanceOf[_empty]
+    }
+    
+    extension [Self <: _empty](x: Self) {
+      
+      inline def setSlashAsterisk(value: (Any, Any, js.Function0[Any]) => Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
+    }
   }
 }
-

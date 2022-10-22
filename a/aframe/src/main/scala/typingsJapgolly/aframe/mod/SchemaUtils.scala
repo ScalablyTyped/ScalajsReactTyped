@@ -1,25 +1,26 @@
 package typingsJapgolly.aframe.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchemaUtils extends js.Object {
+trait SchemaUtils extends StObject {
+  
   def isSingleProperty(schema: Schema_[js.Object]): Boolean
+  
   def process(schema: Schema_[js.Object]): Boolean
 }
-
 object SchemaUtils {
-  @scala.inline
-  def apply(
-    isSingleProperty: Schema_[js.Object] => CallbackTo[Boolean],
-    process: Schema_[js.Object] => CallbackTo[Boolean]
-  ): SchemaUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSingleProperty")(js.Any.fromFunction1((t0: typingsJapgolly.aframe.mod.Schema_[js.Object]) => isSingleProperty(t0).runNow()))
-    __obj.updateDynamic("process")(js.Any.fromFunction1((t0: typingsJapgolly.aframe.mod.Schema_[js.Object]) => process(t0).runNow()))
+  
+  inline def apply(isSingleProperty: Schema_[js.Object] => Boolean, process: Schema_[js.Object] => Boolean): SchemaUtils = {
+    val __obj = js.Dynamic.literal(isSingleProperty = js.Any.fromFunction1(isSingleProperty), process = js.Any.fromFunction1(process))
     __obj.asInstanceOf[SchemaUtils]
   }
+  
+  extension [Self <: SchemaUtils](x: Self) {
+    
+    inline def setIsSingleProperty(value: Schema_[js.Object] => Boolean): Self = StObject.set(x, "isSingleProperty", js.Any.fromFunction1(value))
+    
+    inline def setProcess(value: Schema_[js.Object] => Boolean): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+  }
 }
-

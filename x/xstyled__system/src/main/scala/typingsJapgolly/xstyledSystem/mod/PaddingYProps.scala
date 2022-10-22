@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.PaddingTopProperty
+import typingsJapgolly.csstype.mod.Property.PaddingTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaddingYProps[TLength] extends js.Object {
-  val py: js.UndefOr[ResponsiveValue[PaddingTopProperty[TLength]]] = js.undefined
+trait PaddingYProps[TLength] extends StObject {
+  
+  val py: js.UndefOr[ResponsiveValue[PaddingTop[TLength]]] = js.undefined
 }
-
 object PaddingYProps {
-  @scala.inline
-  def apply[TLength](py: ResponsiveValue[PaddingTopProperty[TLength]] = null): PaddingYProps[TLength] = {
+  
+  inline def apply[TLength](): PaddingYProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (py != null) __obj.updateDynamic("py")(py.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingYProps[TLength]]
   }
+  
+  extension [Self <: PaddingYProps[?], TLength](x: Self & PaddingYProps[TLength]) {
+    
+    inline def setPy(value: ResponsiveValue[PaddingTop[TLength]]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+    
+    inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
+    
+    inline def setPyVarargs(value: PaddingTop[TLength]*): Self = StObject.set(x, "py", js.Array(value*))
+  }
 }
-

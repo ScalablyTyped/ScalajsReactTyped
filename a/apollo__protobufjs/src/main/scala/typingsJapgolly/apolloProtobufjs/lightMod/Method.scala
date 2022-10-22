@@ -2,15 +2,14 @@ package typingsJapgolly.apolloProtobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.apolloProtobufjs.mod.IMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/light", "Method")
 @js.native
-class Method protected ()
+open class Method protected ()
   extends typingsJapgolly.apolloProtobufjs.mod.Method {
-  def this(name: String, `type`: js.UndefOr[scala.Nothing], requestType: String, responseType: String) = this()
   /**
     * Constructs a new service method instance.
     * @param name Method name
@@ -22,251 +21,24 @@ class Method protected ()
     * @param [options] Declared options
     * @param [comment] The comment for this method
     */
-  def this(name: String, `type`: String, requestType: String, responseType: String) = this()
   def this(
     name: String,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any]
-  ) = this()
-  def this(name: String, `type`: String, requestType: String, responseType: String, requestStream: Boolean) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: String,
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
+    requestStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    options: js.UndefOr[StringDictionary[Any]],
+    comment: js.UndefOr[String]
   ) = this()
 }
-
 /* static members */
-@JSImport("@apollo/protobufjs/light", "Method")
-@js.native
-object Method extends js.Object {
+object Method {
+  
+  @JSImport("@apollo/protobufjs/light", "Method")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -274,6 +46,5 @@ object Method extends js.Object {
     * @returns Created method
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IMethod): typingsJapgolly.apolloProtobufjs.mod.Method = js.native
+  inline def fromJSON(name: String, json: IMethod): typingsJapgolly.apolloProtobufjs.mod.Method = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.apolloProtobufjs.mod.Method]
 }
-

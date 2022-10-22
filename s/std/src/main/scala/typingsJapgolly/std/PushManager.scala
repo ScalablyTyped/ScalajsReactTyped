@@ -1,23 +1,24 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Push API interface provides a way to receive notifications from third-party servers as well as request URLs for push notifications. */
+/**
+  * This Push API interface provides a way to receive notifications from third-party servers as well as request URLs for push notifications.
+  * Available only in secure contexts.
+  */
 @js.native
-trait PushManager extends js.Object {
-  def getSubscription(): js.Promise[org.scalajs.dom.experimental.push.PushSubscription | Null] = js.native
-  def permissionState(): js.Promise[org.scalajs.dom.experimental.push.PushPermissionState] = js.native
-  def permissionState(options: PushSubscriptionOptionsInit): js.Promise[org.scalajs.dom.experimental.push.PushPermissionState] = js.native
-  def subscribe(): js.Promise[org.scalajs.dom.experimental.push.PushSubscription] = js.native
-  def subscribe(options: PushSubscriptionOptionsInit): js.Promise[org.scalajs.dom.experimental.push.PushSubscription] = js.native
+trait PushManager extends StObject {
+  
+  /* standard dom */
+  def getSubscription(): js.Promise[org.scalajs.dom.PushSubscription | Null] = js.native
+  
+  /* standard dom */
+  def permissionState(): js.Promise[PermissionState] = js.native
+  def permissionState(options: PushSubscriptionOptionsInit): js.Promise[PermissionState] = js.native
+  
+  /* standard dom */
+  def subscribe(): js.Promise[org.scalajs.dom.PushSubscription] = js.native
+  def subscribe(options: PushSubscriptionOptionsInit): js.Promise[org.scalajs.dom.PushSubscription] = js.native
 }
-
-@JSGlobal("PushManager")
-@js.native
-object PushManager extends Instantiable0[PushManager] {
-  val supportedContentEncodings: js.Array[java.lang.String] = js.native
-}
-

@@ -9,11 +9,11 @@ Typings are for version 1.0
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chunk-text |
-| Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 51711 |
-| # stars            | 0 |
+| Keywords           | chunk-text, split, chunk, algolia, text, string, array, length, index, size, splice, slice, text-processing, text processing, multi-byte, multibyte, multi, byte, runes, rune, glyphs, glyph, encoding, emoji, MIT |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7719.0 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/chunk-text#readme)

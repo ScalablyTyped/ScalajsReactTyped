@@ -1,34 +1,51 @@
 package typingsJapgolly.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Cache extends js.Object {
+trait Cache extends StObject {
+  
   /**
     * State of a cache entry after the request.
     *
     * Leave out this field if the information is not available.
     */
   var afterRequest: js.UndefOr[CacheDetails | Null] = js.undefined
+  
   /**
     * State of a cache entry before the request.
     *
     * Leave out this field if the information is not available.
     */
   var beforeRequest: js.UndefOr[CacheDetails | Null] = js.undefined
+  
   /**  A comment provided by the user or the application */
   var comment: js.UndefOr[String] = js.undefined
 }
-
 object Cache {
-  @scala.inline
-  def apply(afterRequest: CacheDetails = null, beforeRequest: CacheDetails = null, comment: String = null): Cache = {
+  
+  inline def apply(): Cache = {
     val __obj = js.Dynamic.literal()
-    if (afterRequest != null) __obj.updateDynamic("afterRequest")(afterRequest.asInstanceOf[js.Any])
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cache]
   }
+  
+  extension [Self <: Cache](x: Self) {
+    
+    inline def setAfterRequest(value: CacheDetails): Self = StObject.set(x, "afterRequest", value.asInstanceOf[js.Any])
+    
+    inline def setAfterRequestNull: Self = StObject.set(x, "afterRequest", null)
+    
+    inline def setAfterRequestUndefined: Self = StObject.set(x, "afterRequest", js.undefined)
+    
+    inline def setBeforeRequest(value: CacheDetails): Self = StObject.set(x, "beforeRequest", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeRequestNull: Self = StObject.set(x, "beforeRequest", null)
+    
+    inline def setBeforeRequestUndefined: Self = StObject.set(x, "beforeRequest", js.undefined)
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+  }
 }
-

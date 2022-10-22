@@ -1,9 +1,9 @@
 package typingsJapgolly.winjs.mod.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows users to pick a date value.
@@ -17,25 +17,34 @@ import scala.scalajs.js.annotation._
   * @param element The DOM element associated with the DatePicker control.
   * @param options The set of options to be applied initially to the DatePicker control. The options are the following: calendar, current, datePattern, disabled, maxYear, minYear, monthPattern, yearPattern.
   **/
-class DatePicker ()
-  extends typingsJapgolly.winjs.WinJS.UI.DatePicker {
+open class DatePicker ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.UI.DatePicker {
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
+  def this(element: Unit, options: Any) = this()
 }
-
-/* static members */
-@JSImport("winjs", "UI.DatePicker")
-@js.native
-object DatePicker extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+object DatePicker {
+  
+  @JSImport("winjs", "UI.DatePicker")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
-  def getInformation(startDate: js.Any, endDate: js.Any): js.Any = js.native
-  def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = js.native
-  def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = js.native
+  /* static member */
+  inline def getInformation(startDate: Any, endDate: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getInformation(startDate: Any, endDate: Any, calendar: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getInformation(startDate: Any, endDate: Any, calendar: Any, datePatterns: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getInformation(startDate: Any, endDate: Any, calendar: Unit, datePatterns: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  /**
+    * Indicates that the object is compatibile with declarative processing.
+    **/
+  /* static member */
+  @JSImport("winjs", "UI.DatePicker.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

@@ -1,26 +1,36 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistoryResponse extends js.Object {
+trait HistoryResponse extends StObject {
+  
   var endTimeToken: js.UndefOr[String | Double] = js.undefined
+  
   var messages: js.Array[HistoryMessage]
+  
   var startTimeToken: js.UndefOr[String | Double] = js.undefined
 }
-
 object HistoryResponse {
-  @scala.inline
-  def apply(
-    messages: js.Array[HistoryMessage],
-    endTimeToken: String | Double = null,
-    startTimeToken: String | Double = null
-  ): HistoryResponse = {
+  
+  inline def apply(messages: js.Array[HistoryMessage]): HistoryResponse = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
-    if (endTimeToken != null) __obj.updateDynamic("endTimeToken")(endTimeToken.asInstanceOf[js.Any])
-    if (startTimeToken != null) __obj.updateDynamic("startTimeToken")(startTimeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryResponse]
   }
+  
+  extension [Self <: HistoryResponse](x: Self) {
+    
+    inline def setEndTimeToken(value: String | Double): Self = StObject.set(x, "endTimeToken", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeTokenUndefined: Self = StObject.set(x, "endTimeToken", js.undefined)
+    
+    inline def setMessages(value: js.Array[HistoryMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesVarargs(value: HistoryMessage*): Self = StObject.set(x, "messages", js.Array(value*))
+    
+    inline def setStartTimeToken(value: String | Double): Self = StObject.set(x, "startTimeToken", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeTokenUndefined: Self = StObject.set(x, "startTimeToken", js.undefined)
+  }
 }
-

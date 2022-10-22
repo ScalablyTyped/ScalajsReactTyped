@@ -1,20 +1,28 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonSize
-import typingsJapgolly.antDesignReactNative.iconMod.default
+import typingsJapgolly.antDesignReactNative.anon.Size
+import typingsJapgolly.antDesignReactNative.libIconMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Icon")
 @js.native
-class Icon () extends default
-
+open class Icon () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Icon")
-@js.native
-object Icon extends js.Object {
-  var defaultProps: AnonSize = js.native
-  var displayName: String = js.native
+object Icon {
+  
+  @JSImport("@ant-design/react-native", "Icon")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Icon.defaultProps")
+  @js.native
+  def defaultProps: Size = js.native
+  inline def defaultProps_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@ant-design/react-native", "Icon.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-

@@ -10,10 +10,10 @@ Vanilla, lightweight, simple JavaScript decorators to use in your classes.
 | ------------------ | :-------------: |
 | Full name          | decorum |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 139 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12.333333333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/varbrad/decorum#readme)

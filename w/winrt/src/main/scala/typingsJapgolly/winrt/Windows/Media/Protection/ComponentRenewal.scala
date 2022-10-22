@@ -1,18 +1,7 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
-import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Protection.ComponentRenewal")
-@js.native
-class ComponentRenewal () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Media.Protection.ComponentRenewal")
-@js.native
-object ComponentRenewal extends js.Object {
-  def renewSystemComponentsAsync(information: RevocationAndRenewalInformation): IAsyncOperationWithProgress[RenewalStatus, Double] = js.native
-}
-
+trait ComponentRenewal extends StObject

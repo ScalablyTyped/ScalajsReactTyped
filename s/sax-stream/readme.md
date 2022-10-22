@@ -10,10 +10,10 @@ Transform stream implemented using SAX parser
 | ------------------ | :-------------: |
 | Full name          | sax-stream |
 | Keywords           | xml, stream, sax, objects |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 29679 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 26879.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/melitele/sax-stream)

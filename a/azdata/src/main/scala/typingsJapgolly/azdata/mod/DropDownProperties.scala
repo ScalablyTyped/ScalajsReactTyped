@@ -1,52 +1,72 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownProperties extends ComponentProperties {
+trait DropDownProperties
+  extends StObject
+     with LoadingComponentProperties {
+  
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   var fireOnTextChange: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Adds a short hint that describes the expected value for the editable dropdown
+    */
+  var placeholder: js.UndefOr[String] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Define error messages to show when custom validation fails. For empty required dropdowns we use a default error message.
+    */
+  var validationErrorMessages: js.UndefOr[js.Array[String]] = js.undefined
+  
   var value: js.UndefOr[String | CategoryValue] = js.undefined
+  
   var values: js.UndefOr[js.Array[CategoryValue | String]] = js.undefined
 }
-
 object DropDownProperties {
-  @scala.inline
-  def apply(
-    CSSStyles: StringDictionary[String] = null,
-    ariaLabel: String = null,
-    ariaRole: String = null,
-    ariaSelected: js.UndefOr[Boolean] = js.undefined,
-    display: DisplayType = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fireOnTextChange: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    position: PositionType = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    value: String | CategoryValue = null,
-    values: js.Array[CategoryValue | String] = null,
-    width: Double | String = null
-  ): DropDownProperties = {
+  
+  inline def apply(): DropDownProperties = {
     val __obj = js.Dynamic.literal()
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fireOnTextChange)) __obj.updateDynamic("fireOnTextChange")(fireOnTextChange.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownProperties]
   }
+  
+  extension [Self <: DropDownProperties](x: Self) {
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setFireOnTextChange(value: Boolean): Self = StObject.set(x, "fireOnTextChange", value.asInstanceOf[js.Any])
+    
+    inline def setFireOnTextChangeUndefined: Self = StObject.set(x, "fireOnTextChange", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setValidationErrorMessages(value: js.Array[String]): Self = StObject.set(x, "validationErrorMessages", value.asInstanceOf[js.Any])
+    
+    inline def setValidationErrorMessagesUndefined: Self = StObject.set(x, "validationErrorMessages", js.undefined)
+    
+    inline def setValidationErrorMessagesVarargs(value: String*): Self = StObject.set(x, "validationErrorMessages", js.Array(value*))
+    
+    inline def setValue(value: String | CategoryValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setValues(value: js.Array[CategoryValue | String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: (CategoryValue | String)*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

@@ -1,112 +1,49 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.ClassPrivateMethod
-import typingsJapgolly.babelTypes.babelTypesStrings.ClassPrivateProperty
-import typingsJapgolly.babelTypes.babelTypesStrings.PrivateName
-import typingsJapgolly.babelTypes.babelTypesStrings.`private`
-import typingsJapgolly.babelTypes.babelTypesStrings.`protected`
-import typingsJapgolly.babelTypes.babelTypesStrings.constructor
 import typingsJapgolly.babelTypes.babelTypesStrings.get
-import typingsJapgolly.babelTypes.babelTypesStrings.method
-import typingsJapgolly.babelTypes.babelTypesStrings.public
+import typingsJapgolly.babelTypes.babelTypesStrings.method_
 import typingsJapgolly.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.ClassPrivateProperty_
   - typingsJapgolly.babelTypes.mod.ClassPrivateMethod_
   - typingsJapgolly.babelTypes.mod.PrivateName_
 */
-trait Private extends _Node
-
+trait Private
+  extends StObject
+     with _Node
 object Private {
-  @scala.inline
-  def ClassPrivateProperty_(
-    key: PrivateName_,
-    `type`: ClassPrivateProperty,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    value: Expression = null
-  ): Private = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Private]
-  }
-  @scala.inline
-  def ClassPrivateMethod_(
+  
+  inline def ClassPrivateMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
     key: PrivateName_,
-    kind: get | set | method | constructor,
+    kind: get | set | method_,
+    `override`: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    returnType: js.Any,
-    static: Boolean,
-    `type`: ClassPrivateMethod,
-    typeParameters: js.Any,
-    `abstract`: js.UndefOr[Boolean] = js.undefined,
-    access: public | `private` | `protected` = null,
-    accessibility: public | `private` | `protected` = null,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Private = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Private]
+    static: Boolean
+  ): typingsJapgolly.babelTypes.mod.ClassPrivateMethod_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassPrivateMethod")
+    __obj.updateDynamic("abstract")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ClassPrivateMethod_]
   }
-  @scala.inline
-  def PrivateName_(
-    id: Identifier_,
-    `type`: PrivateName,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Private = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Private]
+  
+  inline def ClassPrivateProperty_(key: PrivateName_, static: Boolean): typingsJapgolly.babelTypes.mod.ClassPrivateProperty_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
+    __obj.updateDynamic("type")("ClassPrivateProperty")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ClassPrivateProperty_]
+  }
+  
+  inline def PrivateName_(id: Identifier_): typingsJapgolly.babelTypes.mod.PrivateName_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("PrivateName")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.PrivateName_]
   }
 }
-

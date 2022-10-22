@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerSize extends js.Object
-
+sealed trait MarkerSize extends StObject
 /**
   * An enum representing the size of a marker added to a map.
   * See also
@@ -16,26 +14,20 @@ sealed trait MarkerSize extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Maps.MarkerSize")
 @js.native
-object MarkerSize extends js.Object {
-  @js.native
-  sealed trait MID extends MarkerSize
+object MarkerSize extends StObject {
   
   @js.native
-  sealed trait SMALL extends MarkerSize
+  sealed trait MID
+    extends StObject
+       with MarkerSize
   
   @js.native
-  sealed trait TINY extends MarkerSize
+  sealed trait SMALL
+    extends StObject
+       with MarkerSize
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MarkerSize with Double] = js.native
-  /* 1 */ @js.native
-  object MID extends TopLevel[MID with Double]
-  
-  /* 2 */ @js.native
-  object SMALL extends TopLevel[SMALL with Double]
-  
-  /* 0 */ @js.native
-  object TINY extends TopLevel[TINY with Double]
-  
+  @js.native
+  sealed trait TINY
+    extends StObject
+       with MarkerSize
 }
-

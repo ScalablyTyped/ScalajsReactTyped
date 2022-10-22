@@ -1,13 +1,12 @@
 package typingsJapgolly.mapboxGl.mod
 
-import typingsJapgolly.mapboxGl.AnonShowCompass
+import typingsJapgolly.mapboxGl.anon.ShowCompass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "NavigationControl")
 @js.native
-class NavigationControl () extends Evented {
-  def this(options: AnonShowCompass) = this()
+open class NavigationControl () extends Control {
+  def this(options: ShowCompass) = this()
 }
-

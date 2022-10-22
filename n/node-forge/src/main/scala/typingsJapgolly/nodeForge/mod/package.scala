@@ -1,14 +1,22 @@
-package typingsJapgolly.nodeForge
+package typingsJapgolly.nodeForge.mod
 
+import typingsJapgolly.nodeForge.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Base64 = java.lang.String
-  type Byte = scala.Double
-  type Bytes = java.lang.String
-  type Hex = java.lang.String
-  type OID = java.lang.String
-  type Utf8 = java.lang.String
-}
+
+/* was `typeof md.sha384` */
+inline def sha384: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof md.sha384 */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("sha384").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof md.sha384 */ Any]
+
+type Base64 = String
+
+type Byte = Double
+
+type Bytes = String
+
+type Hex = String
+
+type OID = String
+
+type Utf8 = String

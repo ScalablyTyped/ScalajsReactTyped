@@ -1,58 +1,49 @@
 package typingsJapgolly.reactSparklines.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactSparklines.mod.SparklinesProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sparklines {
-  def apply(
-    data: js.Array[Double] = null,
-    height: Int | Double = null,
-    limit: Int | Double = null,
-    margin: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    preserveAspectRatio: String = null,
-    style: CSSProperties = null,
-    svgHeight: Double | String = null,
-    svgWidth: Double | String = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SparklinesProps, typingsJapgolly.reactSparklines.mod.Sparklines, Unit, SparklinesProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (svgHeight != null) __obj.updateDynamic("svgHeight")(svgHeight.asInstanceOf[js.Any])
-    if (svgWidth != null) __obj.updateDynamic("svgWidth")(svgWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSparklines.mod.SparklinesProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSparklines.mod.Sparklines](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSparklines.mod.SparklinesProps])(children: _*)
-  }
   @JSImport("react-sparklines", "Sparklines")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSparklines.mod.Sparklines] {
+    
+    inline def data(value: js.Array[Double]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: Double*): this.type = set("data", js.Array(value*))
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def limit(value: Double): this.type = set("limit", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: Double): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def preserveAspectRatio(value: String): this.type = set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def svgHeight(value: Double | String): this.type = set("svgHeight", value.asInstanceOf[js.Any])
+    
+    inline def svgWidth(value: Double | String): this.type = set("svgWidth", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Sparklines.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SparklinesProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

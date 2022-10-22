@@ -1,41 +1,70 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InlineKeyboardButton extends js.Object {
+trait InlineKeyboardButton extends StObject {
+  
   var callback_data: js.UndefOr[String] = js.undefined
+  
   var callback_game: js.UndefOr[CallbackGame] = js.undefined
+  
   var login_url: js.UndefOr[LoginUrl] = js.undefined
+  
   var pay: js.UndefOr[Boolean] = js.undefined
+  
   var switch_inline_query: js.UndefOr[String] = js.undefined
+  
   var switch_inline_query_current_chat: js.UndefOr[String] = js.undefined
+  
   var text: String
+  
   var url: js.UndefOr[String] = js.undefined
+  
+  var web_app: js.UndefOr[WebAppInfo] = js.undefined
 }
-
 object InlineKeyboardButton {
-  @scala.inline
-  def apply(
-    text: String,
-    callback_data: String = null,
-    callback_game: CallbackGame = null,
-    login_url: LoginUrl = null,
-    pay: js.UndefOr[Boolean] = js.undefined,
-    switch_inline_query: String = null,
-    switch_inline_query_current_chat: String = null,
-    url: String = null
-  ): InlineKeyboardButton = {
+  
+  inline def apply(text: String): InlineKeyboardButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data.asInstanceOf[js.Any])
-    if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game.asInstanceOf[js.Any])
-    if (login_url != null) __obj.updateDynamic("login_url")(login_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay.asInstanceOf[js.Any])
-    if (switch_inline_query != null) __obj.updateDynamic("switch_inline_query")(switch_inline_query.asInstanceOf[js.Any])
-    if (switch_inline_query_current_chat != null) __obj.updateDynamic("switch_inline_query_current_chat")(switch_inline_query_current_chat.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineKeyboardButton]
   }
+  
+  extension [Self <: InlineKeyboardButton](x: Self) {
+    
+    inline def setCallback_data(value: String): Self = StObject.set(x, "callback_data", value.asInstanceOf[js.Any])
+    
+    inline def setCallback_dataUndefined: Self = StObject.set(x, "callback_data", js.undefined)
+    
+    inline def setCallback_game(value: CallbackGame): Self = StObject.set(x, "callback_game", value.asInstanceOf[js.Any])
+    
+    inline def setCallback_gameUndefined: Self = StObject.set(x, "callback_game", js.undefined)
+    
+    inline def setLogin_url(value: LoginUrl): Self = StObject.set(x, "login_url", value.asInstanceOf[js.Any])
+    
+    inline def setLogin_urlUndefined: Self = StObject.set(x, "login_url", js.undefined)
+    
+    inline def setPay(value: Boolean): Self = StObject.set(x, "pay", value.asInstanceOf[js.Any])
+    
+    inline def setPayUndefined: Self = StObject.set(x, "pay", js.undefined)
+    
+    inline def setSwitch_inline_query(value: String): Self = StObject.set(x, "switch_inline_query", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_inline_queryUndefined: Self = StObject.set(x, "switch_inline_query", js.undefined)
+    
+    inline def setSwitch_inline_query_current_chat(value: String): Self = StObject.set(x, "switch_inline_query_current_chat", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_inline_query_current_chatUndefined: Self = StObject.set(x, "switch_inline_query_current_chat", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWeb_app(value: WebAppInfo): Self = StObject.set(x, "web_app", value.asInstanceOf[js.Any])
+    
+    inline def setWeb_appUndefined: Self = StObject.set(x, "web_app", js.undefined)
+  }
 }
-

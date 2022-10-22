@@ -1,62 +1,108 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PolylineOptions extends js.Object {
+trait PolylineOptions extends StObject {
+  
   var clickable: js.UndefOr[Boolean] = js.undefined
+  
   var endIcon: js.UndefOr[PointingIcon] = js.undefined
+  
   var endIconSize: js.UndefOr[Double] = js.undefined
+  
   var map: js.UndefOr[Map] = js.undefined
+  
   var path: ArrayOfCoords | KVOArrayOfCoords | ArrayOfCoordsLiteral
+  
   var startIcon: js.UndefOr[PointingIcon] = js.undefined
+  
   var startIconSize: js.UndefOr[Double] = js.undefined
+  
   var strokeColor: js.UndefOr[String] = js.undefined
+  
   var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
+  
   var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
+  
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
   var strokeStyle: js.UndefOr[strokeStyleType] = js.undefined
+  
   var strokeWeight: js.UndefOr[Double] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object PolylineOptions {
-  @scala.inline
-  def apply(
-    path: ArrayOfCoords | KVOArrayOfCoords | ArrayOfCoordsLiteral,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    endIcon: PointingIcon = null,
-    endIconSize: Int | Double = null,
-    map: Map = null,
-    startIcon: PointingIcon = null,
-    startIconSize: Int | Double = null,
-    strokeColor: String = null,
-    strokeLineCap: strokeLineCapType = null,
-    strokeLineJoin: strokeLineJoinType = null,
-    strokeOpacity: Int | Double = null,
-    strokeStyle: strokeStyleType = null,
-    strokeWeight: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): PolylineOptions = {
+  
+  inline def apply(path: ArrayOfCoords | KVOArrayOfCoords | ArrayOfCoordsLiteral): PolylineOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon.asInstanceOf[js.Any])
-    if (endIconSize != null) __obj.updateDynamic("endIconSize")(endIconSize.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (startIcon != null) __obj.updateDynamic("startIcon")(startIcon.asInstanceOf[js.Any])
-    if (startIconSize != null) __obj.updateDynamic("startIconSize")(startIconSize.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeLineCap != null) __obj.updateDynamic("strokeLineCap")(strokeLineCap.asInstanceOf[js.Any])
-    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineOptions]
   }
+  
+  extension [Self <: PolylineOptions](x: Self) {
+    
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    
+    inline def setEndIcon(value: PointingIcon): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
+    
+    inline def setEndIconSize(value: Double): Self = StObject.set(x, "endIconSize", value.asInstanceOf[js.Any])
+    
+    inline def setEndIconSizeUndefined: Self = StObject.set(x, "endIconSize", js.undefined)
+    
+    inline def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
+    
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setPath(value: ArrayOfCoords | KVOArrayOfCoords | ArrayOfCoordsLiteral): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathVarargs(value: (LatLng | LatLngLiteral | Point | PointLiteral)*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setStartIcon(value: PointingIcon): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
+    
+    inline def setStartIconSize(value: Double): Self = StObject.set(x, "startIconSize", value.asInstanceOf[js.Any])
+    
+    inline def setStartIconSizeUndefined: Self = StObject.set(x, "startIconSize", js.undefined)
+    
+    inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
+    
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    
+    inline def setStrokeLineCap(value: strokeLineCapType): Self = StObject.set(x, "strokeLineCap", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLineCapUndefined: Self = StObject.set(x, "strokeLineCap", js.undefined)
+    
+    inline def setStrokeLineJoin(value: strokeLineJoinType): Self = StObject.set(x, "strokeLineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLineJoinUndefined: Self = StObject.set(x, "strokeLineJoin", js.undefined)
+    
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeStyle(value: strokeStyleType): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    
+    inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

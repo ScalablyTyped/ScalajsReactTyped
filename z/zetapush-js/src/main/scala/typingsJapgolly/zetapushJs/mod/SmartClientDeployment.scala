@@ -1,21 +1,30 @@
 package typingsJapgolly.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SmartClientDeployment extends js.Object {
+trait SmartClientDeployment extends StObject {
+  
   var simple: js.UndefOr[String] = js.undefined
+  
   var weak: js.UndefOr[String] = js.undefined
 }
-
 object SmartClientDeployment {
-  @scala.inline
-  def apply(simple: String = null, weak: String = null): SmartClientDeployment = {
+  
+  inline def apply(): SmartClientDeployment = {
     val __obj = js.Dynamic.literal()
-    if (simple != null) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
-    if (weak != null) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartClientDeployment]
   }
+  
+  extension [Self <: SmartClientDeployment](x: Self) {
+    
+    inline def setSimple(value: String): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
+    
+    inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
+    
+    inline def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+  }
 }
-

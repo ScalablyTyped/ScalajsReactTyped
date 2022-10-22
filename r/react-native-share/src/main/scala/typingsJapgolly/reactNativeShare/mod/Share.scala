@@ -1,64 +1,97 @@
 package typingsJapgolly.reactNativeShare.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-share", "Share")
-@js.native
-object Share extends js.Object {
-  @js.native
-  sealed trait InstagramStories extends js.Object
+object Share {
   
   @js.native
-  sealed trait Social extends js.Object
-  
+  sealed trait InstagramStories extends StObject
+  @JSImport("react-native-share", "Share.InstagramStories")
   @js.native
-  object InstagramStories extends js.Object {
-    @js.native
-    sealed trait SHARE_BACKGROUND_AND_STICKER_IMAGE extends InstagramStories
+  object InstagramStories extends StObject {
     
     @js.native
-    sealed trait SHARE_BACKGROUND_IMAGE extends InstagramStories
+    sealed trait SHARE_BACKGROUND_AND_STICKER_IMAGE
+      extends StObject
+         with InstagramStories
     
     @js.native
-    sealed trait SHARE_STICKER_IMAGE extends InstagramStories
+    sealed trait SHARE_BACKGROUND_IMAGE
+      extends StObject
+         with InstagramStories
     
+    @js.native
+    sealed trait SHARE_BACKGROUND_VIDEO
+      extends StObject
+         with InstagramStories
+    
+    @js.native
+    sealed trait SHARE_STICKER_IMAGE
+      extends StObject
+         with InstagramStories
   }
   
   @js.native
-  object Social extends js.Object {
-    @js.native
-    sealed trait EMAIL extends Social
+  sealed trait Social extends StObject
+  @JSImport("react-native-share", "Share.Social")
+  @js.native
+  object Social extends StObject {
     
     @js.native
-    sealed trait FACEBOOK extends Social
+    sealed trait EMAIL
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait GOOGLEPLUS extends Social
+    sealed trait FACEBOOK
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait INSTAGRAM extends Social
+    sealed trait GOOGLEPLUS
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait INSTAGRAM_STORIES extends Social
+    sealed trait INSTAGRAM
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait LINKEDIN extends Social
+    sealed trait INSTAGRAM_STORIES
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait PAGESMANAGER extends Social
+    sealed trait LINKEDIN
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait PINTEREST extends Social
+    sealed trait PAGESMANAGER
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait TWITTER extends Social
+    sealed trait PINTEREST
+      extends StObject
+         with Social
     
     @js.native
-    sealed trait WHATSAPP extends Social
+    sealed trait SMS
+      extends StObject
+         with Social
     
+    @js.native
+    sealed trait TWITTER
+      extends StObject
+         with Social
+    
+    @js.native
+    sealed trait WHATSAPP
+      extends StObject
+         with Social
   }
-  
 }
-

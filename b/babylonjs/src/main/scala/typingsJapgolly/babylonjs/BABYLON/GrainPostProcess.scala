@@ -1,0 +1,21 @@
+package typingsJapgolly.babylonjs.BABYLON
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait GrainPostProcess
+  extends StObject
+     with PostProcess {
+  
+  /**
+    * If the grain should be randomized on every frame
+    */
+  var animated: Boolean = js.native
+  
+  /**
+    * The intensity of the grain added (default: 30)
+    */
+  var intensity: Double = js.native
+}

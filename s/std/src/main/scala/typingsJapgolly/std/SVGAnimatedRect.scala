@@ -1,17 +1,29 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of basic SVGRect which can be animated. */
-trait SVGAnimatedRect extends js.Object {
+trait SVGAnimatedRect extends StObject {
+  
+  /* standard dom */
   val animVal: DOMRectReadOnly
-  val baseVal: DOMRect
+  
+  /* standard dom */
+  val baseVal: org.scalajs.dom.DOMRect
 }
-
-@JSGlobal("SVGAnimatedRect")
-@js.native
-object SVGAnimatedRect extends Instantiable0[SVGAnimatedRect]
-
+object SVGAnimatedRect {
+  
+  inline def apply(animVal: DOMRectReadOnly, baseVal: org.scalajs.dom.DOMRect): SVGAnimatedRect = {
+    val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAnimatedRect]
+  }
+  
+  extension [Self <: SVGAnimatedRect](x: Self) {
+    
+    inline def setAnimVal(value: DOMRectReadOnly): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    
+    inline def setBaseVal(value: org.scalajs.dom.DOMRect): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+  }
+}

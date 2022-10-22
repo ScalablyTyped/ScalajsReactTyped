@@ -1,50 +1,52 @@
 package typingsJapgolly.youtube.YT
 
-import typingsJapgolly.youtube.youtubeNumbers.`100`
-import typingsJapgolly.youtube.youtubeNumbers.`101`
-import typingsJapgolly.youtube.youtubeNumbers.`150`
-import typingsJapgolly.youtube.youtubeNumbers.`2`
-import typingsJapgolly.youtube.youtubeNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.youtube.youtubeNumbers.`2`
-  - typingsJapgolly.youtube.youtubeNumbers.`5`
-  - typingsJapgolly.youtube.youtubeNumbers.`100`
-  - typingsJapgolly.youtube.youtubeNumbers.`101`
-  - typingsJapgolly.youtube.youtubeNumbers.`150`
-*/
-trait PlayerError extends js.Object
-
-object PlayerError {
+@js.native
+sealed trait PlayerError extends StObject
+@JSGlobal("YT.PlayerError")
+@js.native
+object PlayerError extends StObject {
+  
   /**
-  		 * The owner of the requested video does not allow it to be played in embedded players.
-  		 */
-  @scala.inline
-  def EmbeddingNotAllowed: `101` = this.cast(101)
+    * The owner of the requested video does not allow it to be played in embedded players.
+    */
+  @js.native
+  sealed trait EmbeddingNotAllowed
+    extends StObject
+       with PlayerError
+  
   /**
-  		 * This error is the same as 101. It's just a 101 error in disguise!
-  		 */
-  @scala.inline
-  def EmbeddingNotAllowed2: `150` = this.cast(150)
+    * This error is the same as 101. It's just a 101 error in disguise!
+    */
+  @js.native
+  sealed trait EmbeddingNotAllowed2
+    extends StObject
+       with PlayerError
+  
   /**
-  		 * The requested content cannot be played in an HTML5 player.
-  		 */
-  @scala.inline
-  def Html5Error: `5` = this.cast(5)
+    * The requested content cannot be played in an HTML5 player.
+    */
+  @js.native
+  sealed trait Html5Error
+    extends StObject
+       with PlayerError
+  
   /**
-  		 * The request contained an invalid parameter value.
-  		 */
-  @scala.inline
-  def InvalidParam: `2` = this.cast(2)
+    * The request contained an invalid parameter value.
+    */
+  @js.native
+  sealed trait InvalidParam
+    extends StObject
+       with PlayerError
+  
   /**
-  		 * The video requested was not found.
-  		 */
-  @scala.inline
-  def VideoNotFound: `100` = this.cast(100)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+    * The video requested was not found.
+    */
+  @js.native
+  sealed trait VideoNotFound
+    extends StObject
+       with PlayerError
 }
-

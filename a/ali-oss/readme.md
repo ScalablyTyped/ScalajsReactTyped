@@ -1,7 +1,7 @@
 
 # Scala.js typings for ali-oss
 
-Typings are for version 6.0
+Typings are for version 6.16
 
 ## Library description:
 aliyun oss(object storage service) node client
@@ -10,15 +10,12 @@ aliyun oss(object storage service) node client
 | ------------------ | :-------------: |
 | Full name          | ali-oss |
 | Keywords           | oss, client, file, aliyun |
-| # releases         | 31 |
-| # dependents       | 384 |
-| # downloads        | 526419 |
-| # stars            | 7 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 127188.0 |
+| # stars            | 1672.0 |
 
 ## Links
-- [Homepage](https://github.com/aliyun/oss-nodejs-sdk)
-- [Bugs](https://github.com/aliyun/oss-nodejs-sdk/issues)
-- [Repository](https://github.com/aliyun/oss-nodejs-sdk)
 - [Npm](https://www.npmjs.com/package/ali-oss)
     
 

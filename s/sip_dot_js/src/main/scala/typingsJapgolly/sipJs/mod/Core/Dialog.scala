@@ -1,26 +1,28 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.dialogStateMod.DialogState
+import typingsJapgolly.sipJs.libCoreDialogsDialogStateMod.DialogState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.Dialog")
 @js.native
-class Dialog protected ()
-  extends typingsJapgolly.sipJs.coreMod.Dialog {
+open class Dialog protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.Dialog {
   /**
     * Dialog constructor.
     * @param core - User agent core.
     * @param dialogState - Initial dialog state.
     */
-  protected def this(core: typingsJapgolly.sipJs.userAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
+  /* protected */ def this(core: typingsJapgolly.sipJs.libCoreUserAgentCoreMod.UserAgentCore, dialogState: DialogState) = this()
 }
-
 /* static members */
-@JSImport("sip.js", "Core.Dialog")
-@js.native
-object Dialog extends js.Object {
+object Dialog {
+  
+  @JSImport("sip.js", "Core.Dialog")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * When a UAC receives a response that establishes a dialog, it
     * constructs the state of the dialog.  This state MUST be maintained
@@ -29,10 +31,11 @@ object Dialog extends js.Object {
     * @param outgoingRequestMessage - Outgoing request message for dialog.
     * @param incomingResponseMessage - Incoming response message creating dialog.
     */
-  def initialDialogStateForUserAgentClient(
-    outgoingRequestMessage: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage,
-    incomingResponseMessage: typingsJapgolly.sipJs.messagesMod.IncomingResponseMessage
-  ): DialogState = js.native
+  inline def initialDialogStateForUserAgentClient(
+    outgoingRequestMessage: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingResponseMessage: typingsJapgolly.sipJs.libCoreMessagesMod.IncomingResponseMessage
+  ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentClient")(outgoingRequestMessage.asInstanceOf[js.Any], incomingResponseMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+  
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
     * maintained for the duration of the dialog.
@@ -40,11 +43,13 @@ object Dialog extends js.Object {
     * @param incomingRequestMessage - Incoming request message creating dialog.
     * @param toTag - Tag in the To field in the response to the incoming request.
     */
-  def initialDialogStateForUserAgentServer(incomingRequestMessage: typingsJapgolly.sipJs.messagesMod.IncomingRequestMessage, toTag: String): DialogState = js.native
-  def initialDialogStateForUserAgentServer(
-    incomingRequestMessage: typingsJapgolly.sipJs.messagesMod.IncomingRequestMessage,
+  inline def initialDialogStateForUserAgentServer(
+    incomingRequestMessage: typingsJapgolly.sipJs.libCoreMessagesMod.IncomingRequestMessage,
+    toTag: String
+  ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+  inline def initialDialogStateForUserAgentServer(
+    incomingRequestMessage: typingsJapgolly.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     toTag: String,
     early: Boolean
-  ): DialogState = js.native
+  ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any], early.asInstanceOf[js.Any])).asInstanceOf[DialogState]
 }
-

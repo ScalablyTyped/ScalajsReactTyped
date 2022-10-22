@@ -1,23 +1,27 @@
 package typingsJapgolly.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OData.BinaryOperation")
 @js.native
-class BinaryOperation protected () extends IExecutable {
-  def this(propertyOrPredicate: js.Any) = this()
-  def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any) = this()
-  def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
-  var filterOperator: js.Any = js.native
-  var operandA: js.Any = js.native
-  var operandB: js.Any = js.native
-  def and(propertyOrPredicate: js.Any): BinaryOperation = js.native
-  def and(propertyOrPredicate: js.Any, operatorOrValue: js.Any): BinaryOperation = js.native
-  def and(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): BinaryOperation = js.native
-  def or(propertyOrPredicate: js.Any): BinaryOperation = js.native
-  def or(propertyOrPredicate: js.Any, operatorOrValue: js.Any): BinaryOperation = js.native
-  def or(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): BinaryOperation = js.native
+trait BinaryOperation
+  extends StObject
+     with IExecutable {
+  
+  def and(propertyOrPredicate: Any): BinaryOperation = js.native
+  def and(propertyOrPredicate: Any, operatorOrValue: Any): BinaryOperation = js.native
+  def and(propertyOrPredicate: Any, operatorOrValue: Any, value: Any): BinaryOperation = js.native
+  def and(propertyOrPredicate: Any, operatorOrValue: Unit, value: Any): BinaryOperation = js.native
+  
+  /* private */ var filterOperator: Any = js.native
+  
+  /* private */ var operandA: Any = js.native
+  
+  /* private */ var operandB: Any = js.native
+  
+  def or(propertyOrPredicate: Any): BinaryOperation = js.native
+  def or(propertyOrPredicate: Any, operatorOrValue: Any): BinaryOperation = js.native
+  def or(propertyOrPredicate: Any, operatorOrValue: Any, value: Any): BinaryOperation = js.native
+  def or(propertyOrPredicate: Any, operatorOrValue: Unit, value: Any): BinaryOperation = js.native
 }
-

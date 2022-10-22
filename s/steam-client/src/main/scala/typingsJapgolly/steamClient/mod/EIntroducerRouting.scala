@@ -1,36 +1,34 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EIntroducerRouting extends js.Object
-
+sealed trait EIntroducerRouting extends StObject
 @JSImport("steam-client", "EIntroducerRouting")
 @js.native
-object EIntroducerRouting extends js.Object {
-   // removed
-  @js.native
-  sealed trait FileShare extends EIntroducerRouting
-  
-  @js.native
-  sealed trait P2PNetworking extends EIntroducerRouting
-  
-  @js.native
-  sealed trait P2PVoiceChat extends EIntroducerRouting
+object EIntroducerRouting extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EIntroducerRouting with Double] = js.native
-  /* 0 */ @js.native
-  object FileShare extends TopLevel[FileShare with Double]
+  def apply(value: Double): js.UndefOr[EIntroducerRouting & Double] = js.native
   
-  /* 2 */ @js.native
-  object P2PNetworking extends TopLevel[P2PNetworking with Double]
+  @js.native
+  sealed trait FileShare
+    extends StObject
+       with EIntroducerRouting
+  /* 0 */ val FileShare: typingsJapgolly.steamClient.mod.EIntroducerRouting.FileShare & Double = js.native
   
-  /* 1 */ @js.native
-  object P2PVoiceChat extends TopLevel[P2PVoiceChat with Double]
+  @js.native
+  sealed trait P2PNetworking
+    extends StObject
+       with EIntroducerRouting
+  /* 2 */ val P2PNetworking: typingsJapgolly.steamClient.mod.EIntroducerRouting.P2PNetworking & Double = js.native
   
+  // removed
+  @js.native
+  sealed trait P2PVoiceChat
+    extends StObject
+       with EIntroducerRouting
+  /* 1 */ val P2PVoiceChat: typingsJapgolly.steamClient.mod.EIntroducerRouting.P2PVoiceChat & Double = js.native
 }
-

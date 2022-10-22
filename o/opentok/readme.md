@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentok
 
-Typings are for version v2.3.2
+Typings are for version v2.13.0
 
 ## Library description:
 OpenTok server-side SDK
@@ -10,15 +10,12 @@ OpenTok server-side SDK
 | ------------------ | :-------------: |
 | Full name          | opentok |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 406366 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 98776.0 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/opentok/opentok-node)
-- [Bugs](https://github.com/opentok/opentok-node/issues)
-- [Repository](https://github.com/opentok/opentok-node)
 - [Npm](https://www.npmjs.com/package/opentok)
     
 

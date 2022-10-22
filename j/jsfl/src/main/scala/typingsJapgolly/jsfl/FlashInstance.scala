@@ -1,22 +1,31 @@
 package typingsJapgolly.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // if FlashElement.elementType == 'instance'
-trait FlashInstance extends js.Object {
+trait FlashInstance extends StObject {
+  
   var instanceType: js.UndefOr[String] = js.undefined
+  
   var libraryItem: js.UndefOr[FlashItem] = js.undefined
 }
-
 object FlashInstance {
-  @scala.inline
-  def apply(instanceType: String = null, libraryItem: FlashItem = null): FlashInstance = {
+  
+  inline def apply(): FlashInstance = {
     val __obj = js.Dynamic.literal()
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (libraryItem != null) __obj.updateDynamic("libraryItem")(libraryItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashInstance]
   }
+  
+  extension [Self <: FlashInstance](x: Self) {
+    
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    
+    inline def setLibraryItem(value: FlashItem): Self = StObject.set(x, "libraryItem", value.asInstanceOf[js.Any])
+    
+    inline def setLibraryItemUndefined: Self = StObject.set(x, "libraryItem", js.undefined)
+  }
 }
-

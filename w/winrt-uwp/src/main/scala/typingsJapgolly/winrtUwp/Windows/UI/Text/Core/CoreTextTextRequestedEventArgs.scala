@@ -1,14 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TextRequested event. */
-@JSGlobal("Windows.UI.Text.Core.CoreTextTextRequestedEventArgs")
-@js.native
-abstract class CoreTextTextRequestedEventArgs () extends js.Object {
+trait CoreTextTextRequestedEventArgs extends StObject {
+  
   /** Gets information about a TextRequested event. */
-  var request: CoreTextTextRequest = js.native
+  var request: CoreTextTextRequest
 }
-
+object CoreTextTextRequestedEventArgs {
+  
+  inline def apply(request: CoreTextTextRequest): CoreTextTextRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreTextTextRequestedEventArgs]
+  }
+  
+  extension [Self <: CoreTextTextRequestedEventArgs](x: Self) {
+    
+    inline def setRequest(value: CoreTextTextRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+  }
+}

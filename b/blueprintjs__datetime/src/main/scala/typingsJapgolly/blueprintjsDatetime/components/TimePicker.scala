@@ -1,64 +1,64 @@
 package typingsJapgolly.blueprintjsDatetime.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsDatetime.timePickerMod.ITimePickerProps
-import typingsJapgolly.blueprintjsDatetime.timePickerMod.TimePrecision
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit
+import typingsJapgolly.blueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
+import typingsJapgolly.blueprintjsDatetime.libEsmTimePickerMod.TimePrecision
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimePicker {
-  def apply(
-    className: String = null,
-    defaultValue: js.Date = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    maxTime: js.Date = null,
-    minTime: js.Date = null,
-    onChange: /* newTime */ js.Date => Callback = null,
-    precision: TimePrecision = null,
-    selectAllOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showArrowButtons: js.UndefOr[Boolean] = js.undefined,
-    useAmPm: js.UndefOr[Boolean] = js.undefined,
-    value: js.Date = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITimePickerProps, 
-    typingsJapgolly.blueprintjsDatetime.mod.TimePicker, 
-    Unit, 
-    ITimePickerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
-    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* newTime */ js.Date) => onChange(t0).runNow()))
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrowButtons)) __obj.updateDynamic("showArrowButtons")(showArrowButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAmPm)) __obj.updateDynamic("useAmPm")(useAmPm.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsDatetime.timePickerMod.ITimePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsDatetime.mod.TimePicker](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsDatetime.timePickerMod.ITimePickerProps])(children: _*)
-  }
   @JSImport("@blueprintjs/datetime", "TimePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsDatetime.mod.TimePicker] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: js.Date): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def maxTime(value: js.Date): this.type = set("maxTime", value.asInstanceOf[js.Any])
+    
+    inline def minTime(value: js.Date): this.type = set("minTime", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: (/* event */ ReactFocusEventFrom[HTMLInputElement], /* unit */ TimeUnit) => Callback): this.type = set("onBlur", js.Any.fromFunction2((t0: /* event */ ReactFocusEventFrom[HTMLInputElement], t1: /* unit */ TimeUnit) => (value(t0, t1)).runNow()))
+    
+    inline def onChange(value: /* newTime */ js.Date => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* newTime */ js.Date) => value(t0).runNow()))
+    
+    inline def onFocus(value: (/* event */ ReactFocusEventFrom[HTMLInputElement], /* unit */ TimeUnit) => Callback): this.type = set("onFocus", js.Any.fromFunction2((t0: /* event */ ReactFocusEventFrom[HTMLInputElement], t1: /* unit */ TimeUnit) => (value(t0, t1)).runNow()))
+    
+    inline def onKeyDown(value: (/* event */ ReactKeyboardEventFrom[HTMLInputElement], /* unit */ TimeUnit) => Callback): this.type = set("onKeyDown", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLInputElement], t1: /* unit */ TimeUnit) => (value(t0, t1)).runNow()))
+    
+    inline def onKeyUp(value: (/* event */ ReactKeyboardEventFrom[HTMLInputElement], /* unit */ TimeUnit) => Callback): this.type = set("onKeyUp", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLInputElement], t1: /* unit */ TimeUnit) => (value(t0, t1)).runNow()))
+    
+    inline def precision(value: TimePrecision): this.type = set("precision", value.asInstanceOf[js.Any])
+    
+    inline def selectAllOnFocus(value: Boolean): this.type = set("selectAllOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def showArrowButtons(value: Boolean): this.type = set("showArrowButtons", value.asInstanceOf[js.Any])
+    
+    inline def useAmPm(value: Boolean): this.type = set("useAmPm", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Date): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueNull: this.type = set("value", null)
+  }
+  
+  implicit def make(companion: TimePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ITimePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

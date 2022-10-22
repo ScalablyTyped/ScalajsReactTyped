@@ -1,21 +1,30 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartGridlines extends js.Object {
+trait ChartGridlines extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var count: js.UndefOr[Double] = js.undefined
 }
-
 object ChartGridlines {
-  @scala.inline
-  def apply(color: String = null, count: Int | Double = null): ChartGridlines = {
+  
+  inline def apply(): ChartGridlines = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartGridlines]
   }
+  
+  extension [Self <: ChartGridlines](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+  }
 }
-

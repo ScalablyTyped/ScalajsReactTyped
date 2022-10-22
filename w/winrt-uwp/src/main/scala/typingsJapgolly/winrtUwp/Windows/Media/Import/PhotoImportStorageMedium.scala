@@ -1,28 +1,69 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Import
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a storage medium exposed by a photo import source device. */
-@JSGlobal("Windows.Media.Import.PhotoImportStorageMedium")
-@js.native
-abstract class PhotoImportStorageMedium () extends js.Object {
+trait PhotoImportStorageMedium extends StObject {
+  
   /** Gets the available space on the storage medium, in bytes. */
-  var availableSpaceInBytes: Double = js.native
+  var availableSpaceInBytes: Double
+  
   /** Gets the capacity of the storage media, in bytes. */
-  var capacityInBytes: Double = js.native
+  var capacityInBytes: Double
+  
   /** Gets a description of the storage medium. */
-  var description: String = js.native
+  var description: String
+  
   /** Gets the name of the storage medium. */
-  var name: String = js.native
-  /** Gets the serial number of the storage medium. */
-  var serialNumber: String = js.native
-  /** Gets the type of the storage medium. */
-  var storageMediumType: PhotoImportStorageMediumType = js.native
-  /** Gets a value indicating the access modes supported by the storage medium. */
-  var supportedAccessMode: PhotoImportAccessMode = js.native
+  var name: String
+  
   /** Refreshes the information about the storage medium. */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
+  
+  /** Gets the serial number of the storage medium. */
+  var serialNumber: String
+  
+  /** Gets the type of the storage medium. */
+  var storageMediumType: PhotoImportStorageMediumType
+  
+  /** Gets a value indicating the access modes supported by the storage medium. */
+  var supportedAccessMode: PhotoImportAccessMode
 }
-
+object PhotoImportStorageMedium {
+  
+  inline def apply(
+    availableSpaceInBytes: Double,
+    capacityInBytes: Double,
+    description: String,
+    name: String,
+    refresh: Callback,
+    serialNumber: String,
+    storageMediumType: PhotoImportStorageMediumType,
+    supportedAccessMode: PhotoImportAccessMode
+  ): PhotoImportStorageMedium = {
+    val __obj = js.Dynamic.literal(availableSpaceInBytes = availableSpaceInBytes.asInstanceOf[js.Any], capacityInBytes = capacityInBytes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], refresh = refresh.toJsFn, serialNumber = serialNumber.asInstanceOf[js.Any], storageMediumType = storageMediumType.asInstanceOf[js.Any], supportedAccessMode = supportedAccessMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoImportStorageMedium]
+  }
+  
+  extension [Self <: PhotoImportStorageMedium](x: Self) {
+    
+    inline def setAvailableSpaceInBytes(value: Double): Self = StObject.set(x, "availableSpaceInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityInBytes(value: Double): Self = StObject.set(x, "capacityInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh(value: Callback): Self = StObject.set(x, "refresh", value.toJsFn)
+    
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    
+    inline def setStorageMediumType(value: PhotoImportStorageMediumType): Self = StObject.set(x, "storageMediumType", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedAccessMode(value: PhotoImportAccessMode): Self = StObject.set(x, "supportedAccessMode", value.asInstanceOf[js.Any])
+  }
+}

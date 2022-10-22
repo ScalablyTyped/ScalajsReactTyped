@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.activate
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.magicTap
   - typingsJapgolly.reactNative.reactNativeStrings.escape
 */
-trait AccessibilityActionName extends js.Object
-
+trait AccessibilityActionName extends StObject
 object AccessibilityActionName {
-  @scala.inline
-  def activate: typingsJapgolly.reactNative.reactNativeStrings.activate = this.cast("activate")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def decrement: typingsJapgolly.reactNative.reactNativeStrings.decrement = this.cast("decrement")
-  @scala.inline
-  def escape: typingsJapgolly.reactNative.reactNativeStrings.escape = this.cast("escape")
-  @scala.inline
-  def increment: typingsJapgolly.reactNative.reactNativeStrings.increment = this.cast("increment")
-  @scala.inline
-  def longpress: typingsJapgolly.reactNative.reactNativeStrings.longpress = this.cast("longpress")
-  @scala.inline
-  def magicTap: typingsJapgolly.reactNative.reactNativeStrings.magicTap = this.cast("magicTap")
+  
+  inline def activate: typingsJapgolly.reactNative.reactNativeStrings.activate = "activate".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.activate]
+  
+  inline def decrement: typingsJapgolly.reactNative.reactNativeStrings.decrement = "decrement".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.decrement]
+  
+  inline def escape: typingsJapgolly.reactNative.reactNativeStrings.escape = "escape".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.escape]
+  
+  inline def increment: typingsJapgolly.reactNative.reactNativeStrings.increment = "increment".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.increment]
+  
+  inline def longpress: typingsJapgolly.reactNative.reactNativeStrings.longpress = "longpress".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.longpress]
+  
+  inline def magicTap: typingsJapgolly.reactNative.reactNativeStrings.magicTap = "magicTap".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.magicTap]
 }
-

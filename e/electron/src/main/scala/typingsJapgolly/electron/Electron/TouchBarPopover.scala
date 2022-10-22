@@ -1,15 +1,22 @@
 package typingsJapgolly.electron.Electron
 
+import typingsJapgolly.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Electron.TouchBarPopover")
 @js.native
-class TouchBarPopover protected () extends EventEmitter {
-  // Docs: http://electronjs.org/docs/api/touch-bar-popover
-  def this(options: TouchBarPopoverConstructorOptions) = this()
+trait TouchBarPopover extends EventEmitter {
+  
+  /**
+    * A `NativeImage` representing the popover's current button icon. Changing this
+    * value immediately updates the popover in the touch bar.
+    */
   var icon: NativeImage_ = js.native
+  
+  /**
+    * A `string` representing the popover's current button text. Changing this value
+    * immediately updates the popover in the touch bar.
+    */
   var label: String = js.native
 }
-

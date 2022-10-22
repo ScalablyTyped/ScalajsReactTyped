@@ -2,24 +2,31 @@ package typingsJapgolly.winrt.Windows.UI.Input
 
 import typingsJapgolly.winrt.Windows.Devices.Input.PointerDevice
 import typingsJapgolly.winrt.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPointerPoint extends js.Object {
+trait IPointerPoint extends StObject {
+  
   var frameId: Double
+  
   var isInContact: Boolean
+  
   var pointerDevice: PointerDevice
+  
   var pointerId: Double
+  
   var position: Point
+  
   var properties: PointerPointProperties
+  
   var rawPosition: Point
+  
   var timestamp: Double
 }
-
 object IPointerPoint {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     frameId: Double,
     isInContact: Boolean,
     pointerDevice: PointerDevice,
@@ -30,8 +37,25 @@ object IPointerPoint {
     timestamp: Double
   ): IPointerPoint = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], isInContact = isInContact.asInstanceOf[js.Any], pointerDevice = pointerDevice.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rawPosition = rawPosition.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IPointerPoint]
   }
+  
+  extension [Self <: IPointerPoint](x: Self) {
+    
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    
+    inline def setIsInContact(value: Boolean): Self = StObject.set(x, "isInContact", value.asInstanceOf[js.Any])
+    
+    inline def setPointerDevice(value: PointerDevice): Self = StObject.set(x, "pointerDevice", value.asInstanceOf[js.Any])
+    
+    inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: PointerPointProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setRawPosition(value: Point): Self = StObject.set(x, "rawPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

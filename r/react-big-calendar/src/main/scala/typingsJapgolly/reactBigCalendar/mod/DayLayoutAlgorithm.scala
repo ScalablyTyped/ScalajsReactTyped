@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBigCalendar.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.overlap
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.`no-overlap`
 */
-trait DayLayoutAlgorithm extends js.Object
-
+trait DayLayoutAlgorithm extends StObject
 object DayLayoutAlgorithm {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `no-overlap`: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = this.cast("no-overlap")
-  @scala.inline
-  def overlap: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.overlap = this.cast("overlap")
+  
+  inline def `no-overlap`: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = "no-overlap".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.`no-overlap`]
+  
+  inline def overlap: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.overlap = "overlap".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.overlap]
 }
-

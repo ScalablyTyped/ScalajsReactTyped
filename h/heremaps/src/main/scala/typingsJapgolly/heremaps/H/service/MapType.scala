@@ -2,9 +2,9 @@ package typingsJapgolly.heremaps.H.service
 
 import typingsJapgolly.heremaps.H.map.layer.MarkerTileLayer
 import typingsJapgolly.heremaps.H.map.layer.TileLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A map type is an object holding tile layers corresponding to a map type (e.g. 'normal', 'satellite' or 'terrain'). A map type contains at least a map property which defines the basic
@@ -20,38 +20,69 @@ import scala.scalajs.js.annotation._
   * @property transit {H.map.layer.TileLayer=} - map tiles with public transit lines highlighted
   * @property labels {H.map.layer.TileLayer=} - transparent map tiles with labels only
   */
-trait MapType extends js.Object {
+trait MapType extends StObject {
+  
   var base: TileLayer
+  
   var basenight: js.UndefOr[TileLayer | Null] = js.undefined
+  
   var labels: TileLayer
+  
   var map: TileLayer
+  
   var mapnight: js.UndefOr[TileLayer | Null] = js.undefined
+  
   var trafficincidents: js.UndefOr[MarkerTileLayer | Null] = js.undefined
+  
   var transit: js.UndefOr[TileLayer] = js.undefined
+  
   var xbase: TileLayer
+  
   var xbasenight: js.UndefOr[TileLayer | Null] = js.undefined
 }
-
 object MapType {
-  @scala.inline
-  def apply(
-    base: TileLayer,
-    labels: TileLayer,
-    map: TileLayer,
-    xbase: TileLayer,
-    basenight: TileLayer = null,
-    mapnight: TileLayer = null,
-    trafficincidents: MarkerTileLayer = null,
-    transit: TileLayer = null,
-    xbasenight: TileLayer = null
-  ): MapType = {
+  
+  inline def apply(base: TileLayer, labels: TileLayer, map: TileLayer, xbase: TileLayer): MapType = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], xbase = xbase.asInstanceOf[js.Any])
-    if (basenight != null) __obj.updateDynamic("basenight")(basenight.asInstanceOf[js.Any])
-    if (mapnight != null) __obj.updateDynamic("mapnight")(mapnight.asInstanceOf[js.Any])
-    if (trafficincidents != null) __obj.updateDynamic("trafficincidents")(trafficincidents.asInstanceOf[js.Any])
-    if (transit != null) __obj.updateDynamic("transit")(transit.asInstanceOf[js.Any])
-    if (xbasenight != null) __obj.updateDynamic("xbasenight")(xbasenight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapType]
   }
+  
+  extension [Self <: MapType](x: Self) {
+    
+    inline def setBase(value: TileLayer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setBasenight(value: TileLayer): Self = StObject.set(x, "basenight", value.asInstanceOf[js.Any])
+    
+    inline def setBasenightNull: Self = StObject.set(x, "basenight", null)
+    
+    inline def setBasenightUndefined: Self = StObject.set(x, "basenight", js.undefined)
+    
+    inline def setLabels(value: TileLayer): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setMap(value: TileLayer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapnight(value: TileLayer): Self = StObject.set(x, "mapnight", value.asInstanceOf[js.Any])
+    
+    inline def setMapnightNull: Self = StObject.set(x, "mapnight", null)
+    
+    inline def setMapnightUndefined: Self = StObject.set(x, "mapnight", js.undefined)
+    
+    inline def setTrafficincidents(value: MarkerTileLayer): Self = StObject.set(x, "trafficincidents", value.asInstanceOf[js.Any])
+    
+    inline def setTrafficincidentsNull: Self = StObject.set(x, "trafficincidents", null)
+    
+    inline def setTrafficincidentsUndefined: Self = StObject.set(x, "trafficincidents", js.undefined)
+    
+    inline def setTransit(value: TileLayer): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+    
+    inline def setTransitUndefined: Self = StObject.set(x, "transit", js.undefined)
+    
+    inline def setXbase(value: TileLayer): Self = StObject.set(x, "xbase", value.asInstanceOf[js.Any])
+    
+    inline def setXbasenight(value: TileLayer): Self = StObject.set(x, "xbasenight", value.asInstanceOf[js.Any])
+    
+    inline def setXbasenightNull: Self = StObject.set(x, "xbasenight", null)
+    
+    inline def setXbasenightUndefined: Self = StObject.set(x, "xbasenight", js.undefined)
+  }
 }
-

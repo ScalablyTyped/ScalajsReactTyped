@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
 */
-trait WdFramesetType extends js.Object
-
+trait WdFramesetType extends StObject
 object WdFramesetType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdFramesetTypeFrame: `1` = this.cast(1)
-  @scala.inline
-  def wdFramesetTypeFrameset: `0` = this.cast(0)
+  
+  inline def wdFramesetTypeFrame: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdFramesetTypeFrameset: `0` = 0.asInstanceOf[`0`]
 }
-

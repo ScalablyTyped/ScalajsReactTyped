@@ -1,27 +1,38 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SortingEventUIParam extends js.Object {
+trait SortingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the pivot grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the pivot grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets an array of the tuple indices and sort directions that will be used.
-  	 */
-  var sortDirections: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets an array of the tuple indices and sort directions that will be used.
+    */
+  var sortDirections: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object SortingEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, sortDirections: js.Array[_] = null): SortingEventUIParam = {
+  
+  inline def apply(): SortingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortingEventUIParam]
   }
+  
+  extension [Self <: SortingEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSortDirections(value: js.Array[Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
+    
+    inline def setSortDirectionsUndefined: Self = StObject.set(x, "sortDirections", js.undefined)
+    
+    inline def setSortDirectionsVarargs(value: Any*): Self = StObject.set(x, "sortDirections", js.Array(value*))
+  }
 }
-

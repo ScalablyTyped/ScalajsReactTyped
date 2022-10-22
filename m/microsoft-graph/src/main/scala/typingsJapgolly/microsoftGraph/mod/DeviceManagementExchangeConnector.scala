@@ -1,56 +1,95 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceManagementExchangeConnector extends Entity {
+trait DeviceManagementExchangeConnector
+  extends StObject
+     with Entity {
+  
   // The name of the server hosting the Exchange Connector.
-  var connectorServerName: js.UndefOr[String] = js.undefined
+  var connectorServerName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // An alias assigned to the Exchange server
-  var exchangeAlias: js.UndefOr[String] = js.undefined
+  var exchangeAlias: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated.
   var exchangeConnectorType: js.UndefOr[DeviceManagementExchangeConnectorType] = js.undefined
+  
   // Exchange Organization to the Exchange server
-  var exchangeOrganization: js.UndefOr[String] = js.undefined
+  var exchangeOrganization: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Last sync time for the Exchange Connector
   var lastSyncDateTime: js.UndefOr[String] = js.undefined
+  
   // Email address used to configure the Service To Service Exchange Connector.
-  var primarySmtpAddress: js.UndefOr[String] = js.undefined
+  var primarySmtpAddress: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The name of the Exchange server.
-  var serverName: js.UndefOr[String] = js.undefined
+  var serverName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected.
   var status: js.UndefOr[DeviceManagementExchangeConnectorStatus] = js.undefined
+  
   // The version of the ExchangeConnectorAgent
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DeviceManagementExchangeConnector {
-  @scala.inline
-  def apply(
-    connectorServerName: String = null,
-    exchangeAlias: String = null,
-    exchangeConnectorType: DeviceManagementExchangeConnectorType = null,
-    exchangeOrganization: String = null,
-    id: String = null,
-    lastSyncDateTime: String = null,
-    primarySmtpAddress: String = null,
-    serverName: String = null,
-    status: DeviceManagementExchangeConnectorStatus = null,
-    version: String = null
-  ): DeviceManagementExchangeConnector = {
+  
+  inline def apply(): DeviceManagementExchangeConnector = {
     val __obj = js.Dynamic.literal()
-    if (connectorServerName != null) __obj.updateDynamic("connectorServerName")(connectorServerName.asInstanceOf[js.Any])
-    if (exchangeAlias != null) __obj.updateDynamic("exchangeAlias")(exchangeAlias.asInstanceOf[js.Any])
-    if (exchangeConnectorType != null) __obj.updateDynamic("exchangeConnectorType")(exchangeConnectorType.asInstanceOf[js.Any])
-    if (exchangeOrganization != null) __obj.updateDynamic("exchangeOrganization")(exchangeOrganization.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastSyncDateTime != null) __obj.updateDynamic("lastSyncDateTime")(lastSyncDateTime.asInstanceOf[js.Any])
-    if (primarySmtpAddress != null) __obj.updateDynamic("primarySmtpAddress")(primarySmtpAddress.asInstanceOf[js.Any])
-    if (serverName != null) __obj.updateDynamic("serverName")(serverName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementExchangeConnector]
   }
+  
+  extension [Self <: DeviceManagementExchangeConnector](x: Self) {
+    
+    inline def setConnectorServerName(value: NullableOption[String]): Self = StObject.set(x, "connectorServerName", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorServerNameNull: Self = StObject.set(x, "connectorServerName", null)
+    
+    inline def setConnectorServerNameUndefined: Self = StObject.set(x, "connectorServerName", js.undefined)
+    
+    inline def setExchangeAlias(value: NullableOption[String]): Self = StObject.set(x, "exchangeAlias", value.asInstanceOf[js.Any])
+    
+    inline def setExchangeAliasNull: Self = StObject.set(x, "exchangeAlias", null)
+    
+    inline def setExchangeAliasUndefined: Self = StObject.set(x, "exchangeAlias", js.undefined)
+    
+    inline def setExchangeConnectorType(value: DeviceManagementExchangeConnectorType): Self = StObject.set(x, "exchangeConnectorType", value.asInstanceOf[js.Any])
+    
+    inline def setExchangeConnectorTypeUndefined: Self = StObject.set(x, "exchangeConnectorType", js.undefined)
+    
+    inline def setExchangeOrganization(value: NullableOption[String]): Self = StObject.set(x, "exchangeOrganization", value.asInstanceOf[js.Any])
+    
+    inline def setExchangeOrganizationNull: Self = StObject.set(x, "exchangeOrganization", null)
+    
+    inline def setExchangeOrganizationUndefined: Self = StObject.set(x, "exchangeOrganization", js.undefined)
+    
+    inline def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
+    
+    inline def setPrimarySmtpAddress(value: NullableOption[String]): Self = StObject.set(x, "primarySmtpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setPrimarySmtpAddressNull: Self = StObject.set(x, "primarySmtpAddress", null)
+    
+    inline def setPrimarySmtpAddressUndefined: Self = StObject.set(x, "primarySmtpAddress", js.undefined)
+    
+    inline def setServerName(value: NullableOption[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+    
+    inline def setServerNameNull: Self = StObject.set(x, "serverName", null)
+    
+    inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+    
+    inline def setStatus(value: DeviceManagementExchangeConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

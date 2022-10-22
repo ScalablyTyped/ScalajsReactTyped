@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartSeriesDefaultsOverlay extends js.Object {
+trait ChartSeriesDefaultsOverlay extends StObject {
+  
   var gradient: js.UndefOr[String] = js.undefined
 }
-
 object ChartSeriesDefaultsOverlay {
-  @scala.inline
-  def apply(gradient: String = null): ChartSeriesDefaultsOverlay = {
+  
+  inline def apply(): ChartSeriesDefaultsOverlay = {
     val __obj = js.Dynamic.literal()
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesDefaultsOverlay]
   }
+  
+  extension [Self <: ChartSeriesDefaultsOverlay](x: Self) {
+    
+    inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+  }
 }
-

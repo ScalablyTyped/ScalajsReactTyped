@@ -1,25 +1,42 @@
 package typingsJapgolly.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestLogger_ extends js.Object {
-  var headers: js.UndefOr[js.Any] = js.undefined
-  var log: js.UndefOr[js.Any] = js.undefined
-  var properties: js.UndefOr[js.Any] = js.undefined
-  var serializers: js.UndefOr[js.Any] = js.undefined
+trait RequestLogger_ extends StObject {
+  
+  var headers: js.UndefOr[Any] = js.undefined
+  
+  var log: js.UndefOr[Any] = js.undefined
+  
+  var properties: js.UndefOr[Any] = js.undefined
+  
+  var serializers: js.UndefOr[Any] = js.undefined
 }
-
 object RequestLogger_ {
-  @scala.inline
-  def apply(headers: js.Any = null, log: js.Any = null, properties: js.Any = null, serializers: js.Any = null): RequestLogger_ = {
+  
+  inline def apply(): RequestLogger_ = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestLogger_]
   }
+  
+  extension [Self <: RequestLogger_](x: Self) {
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setSerializers(value: Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+    
+    inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+  }
 }
-

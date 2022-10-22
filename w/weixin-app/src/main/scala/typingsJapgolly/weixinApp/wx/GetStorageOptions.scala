@@ -1,33 +1,33 @@
 package typingsJapgolly.weixinApp.wx
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.weixinApp.Anon0
+import typingsJapgolly.weixinApp.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetStorageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /** 本地缓存中的指定的 key */
   var key: String
+  
   /** 接口调用的回调函数,res = {data: key对应的内容} */
   @JSName("success")
-  def success_MGetStorageOptions(res: Anon0): Unit
+  def success_MGetStorageOptions(res: `0`): Unit
 }
-
 object GetStorageOptions {
-  @scala.inline
-  def apply(
-    key: String,
-    success: Anon0 => Callback,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null
-  ): GetStorageOptions = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.weixinApp.Anon0) => success(t0).runNow()))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
+  
+  inline def apply(key: String, success: `0` => Callback): GetStorageOptions = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], success = js.Any.fromFunction1((t0: `0`) => success(t0).runNow()))
     __obj.asInstanceOf[GetStorageOptions]
   }
+  
+  extension [Self <: GetStorageOptions](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: `0` => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: `0`) => value(t0).runNow()))
+  }
 }
-

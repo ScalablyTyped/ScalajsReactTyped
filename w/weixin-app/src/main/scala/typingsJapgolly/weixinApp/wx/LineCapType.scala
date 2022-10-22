@@ -1,24 +1,20 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.butt
   - typingsJapgolly.weixinApp.weixinAppStrings.round
   - typingsJapgolly.weixinApp.weixinAppStrings.square
 */
-trait LineCapType extends js.Object
-
+trait LineCapType extends StObject
 object LineCapType {
-  @scala.inline
-  def butt: typingsJapgolly.weixinApp.weixinAppStrings.butt = this.cast("butt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def round: typingsJapgolly.weixinApp.weixinAppStrings.round = this.cast("round")
-  @scala.inline
-  def square: typingsJapgolly.weixinApp.weixinAppStrings.square = this.cast("square")
+  
+  inline def butt: typingsJapgolly.weixinApp.weixinAppStrings.butt = "butt".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.butt]
+  
+  inline def round: typingsJapgolly.weixinApp.weixinAppStrings.round = "round".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.round]
+  
+  inline def square: typingsJapgolly.weixinApp.weixinAppStrings.square = "square".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.square]
 }
-

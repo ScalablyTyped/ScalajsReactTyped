@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.KeyUp event.
   */
-@JSGlobal("ASPxClientRichEditKeyUpEventArgs")
-@js.native
-class ASPxClientRichEditKeyUpEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRichEditKeyUpEventArgs object. For internal use only.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(htmlEvent: js.Any) = this()
+trait ASPxClientRichEditKeyUpEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientRichEditKeyUpEventArgs {
+  
+  inline def apply(htmlEvent: Any): ASPxClientRichEditKeyUpEventArgs = {
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRichEditKeyUpEventArgs]
+  }
+  
+  extension [Self <: ASPxClientRichEditKeyUpEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

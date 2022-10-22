@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBufferFactory extends js.Object {
+trait IBufferFactory extends StObject {
+  
   def create(capacity: Double): Buffer
 }
-
 object IBufferFactory {
-  @scala.inline
-  def apply(create: Double => CallbackTo[Buffer]): IBufferFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction1((t0: scala.Double) => create(t0).runNow()))
+  
+  inline def apply(create: Double => Buffer): IBufferFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[IBufferFactory]
   }
+  
+  extension [Self <: IBufferFactory](x: Self) {
+    
+    inline def setCreate(value: Double => Buffer): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+  }
 }
-

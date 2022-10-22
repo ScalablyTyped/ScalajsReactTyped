@@ -1,12 +1,11 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IFormController
 import typingsJapgolly.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation._
   * @description
   * Some angular helper/extension methods
   */
-trait IAngularHelper extends js.Object {
+trait IAngularHelper extends StObject {
+  
   /**
     * @ngdoc function
     * @name getCurrentForm
@@ -26,7 +26,8 @@ trait IAngularHelper extends js.Object {
     * @description
     * Returns the current form object applied to the scope or null if one is not found
     */
-  def getCurrentForm(scope: IScope): js.Any
+  def getCurrentForm(scope: IScope): Any
+  
   /**
     * @ngdoc function
     * @name getNullForm
@@ -41,6 +42,7 @@ trait IAngularHelper extends js.Object {
     * @param {string} formName The form name to assign
     */
   def getNullForm(formName: String): IFormController
+  
   /**
     * @ngdoc function
     * @name validateHasForm
@@ -52,6 +54,7 @@ trait IAngularHelper extends js.Object {
     * it does we return the form object.
     */
   def getRequiredCurrentForm(scope: IScope): js.Object
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#rejectedPromise
@@ -65,6 +68,7 @@ trait IAngularHelper extends js.Object {
     * @param {object} objReject The object to send back with the promise rejection
     */
   def rejectedPromise(objReject: js.Object): Unit
+  
   /**
     * @ngdoc function
     * @name safeApply
@@ -76,23 +80,29 @@ trait IAngularHelper extends js.Object {
     */
   def safeApply(scope: IScope, fn: js.Function): Unit
 }
-
 object IAngularHelper {
-  @scala.inline
-  def apply(
-    getCurrentForm: IScope => CallbackTo[js.Any],
-    getNullForm: String => CallbackTo[IFormController],
-    getRequiredCurrentForm: IScope => CallbackTo[js.Object],
+  
+  inline def apply(
+    getCurrentForm: IScope => Any,
+    getNullForm: String => IFormController,
+    getRequiredCurrentForm: IScope => js.Object,
     rejectedPromise: js.Object => Callback,
     safeApply: (IScope, js.Function) => Callback
   ): IAngularHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentForm")(js.Any.fromFunction1((t0: typingsJapgolly.angular.mod.IScope) => getCurrentForm(t0).runNow()))
-    __obj.updateDynamic("getNullForm")(js.Any.fromFunction1((t0: java.lang.String) => getNullForm(t0).runNow()))
-    __obj.updateDynamic("getRequiredCurrentForm")(js.Any.fromFunction1((t0: typingsJapgolly.angular.mod.IScope) => getRequiredCurrentForm(t0).runNow()))
-    __obj.updateDynamic("rejectedPromise")(js.Any.fromFunction1((t0: js.Object) => rejectedPromise(t0).runNow()))
-    __obj.updateDynamic("safeApply")(js.Any.fromFunction2((t0: typingsJapgolly.angular.mod.IScope, t1: js.Function) => safeApply(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(getCurrentForm = js.Any.fromFunction1(getCurrentForm), getNullForm = js.Any.fromFunction1(getNullForm), getRequiredCurrentForm = js.Any.fromFunction1(getRequiredCurrentForm), rejectedPromise = js.Any.fromFunction1((t0: js.Object) => rejectedPromise(t0).runNow()), safeApply = js.Any.fromFunction2((t0: IScope, t1: js.Function) => (safeApply(t0, t1)).runNow()))
     __obj.asInstanceOf[IAngularHelper]
   }
+  
+  extension [Self <: IAngularHelper](x: Self) {
+    
+    inline def setGetCurrentForm(value: IScope => Any): Self = StObject.set(x, "getCurrentForm", js.Any.fromFunction1(value))
+    
+    inline def setGetNullForm(value: String => IFormController): Self = StObject.set(x, "getNullForm", js.Any.fromFunction1(value))
+    
+    inline def setGetRequiredCurrentForm(value: IScope => js.Object): Self = StObject.set(x, "getRequiredCurrentForm", js.Any.fromFunction1(value))
+    
+    inline def setRejectedPromise(value: js.Object => Callback): Self = StObject.set(x, "rejectedPromise", js.Any.fromFunction1((t0: js.Object) => value(t0).runNow()))
+    
+    inline def setSafeApply(value: (IScope, js.Function) => Callback): Self = StObject.set(x, "safeApply", js.Any.fromFunction2((t0: IScope, t1: js.Function) => (value(t0, t1)).runNow()))
+  }
 }
-

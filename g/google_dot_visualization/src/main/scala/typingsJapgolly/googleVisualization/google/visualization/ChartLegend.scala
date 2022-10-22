@@ -1,33 +1,48 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartLegend extends js.Object {
+trait ChartLegend extends StObject {
+  
   var alignment: js.UndefOr[ChartLegendAlignment] = js.undefined
+  
   var maxLines: js.UndefOr[Double] = js.undefined
+  
   var numberFormat: js.UndefOr[String] = js.undefined
+  
   var position: js.UndefOr[ChartLegendPosition] = js.undefined
+  
   var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
 }
-
 object ChartLegend {
-  @scala.inline
-  def apply(
-    alignment: ChartLegendAlignment = null,
-    maxLines: Int | Double = null,
-    numberFormat: String = null,
-    position: ChartLegendPosition = null,
-    textStyle: ChartTextStyle = null
-  ): ChartLegend = {
+  
+  inline def apply(): ChartLegend = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegend]
   }
+  
+  extension [Self <: ChartLegend](x: Self) {
+    
+    inline def setAlignment(value: ChartLegendAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
+    
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    
+    inline def setPosition(value: ChartLegendPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+  }
 }
-

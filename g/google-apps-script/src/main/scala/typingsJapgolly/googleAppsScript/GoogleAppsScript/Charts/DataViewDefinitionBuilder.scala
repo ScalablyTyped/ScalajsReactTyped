@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder for DataViewDefinition objects.
@@ -46,21 +46,23 @@ import scala.scalajs.js.annotation._
   *       return htmlOutput;
   *     }
   */
-trait DataViewDefinitionBuilder extends js.Object {
+trait DataViewDefinitionBuilder extends StObject {
+  
   def build(): DataViewDefinition
-  def setColumns(columns: js.Array[_]): DataViewDefinitionBuilder
+  
+  def setColumns(columns: js.Array[Any]): DataViewDefinitionBuilder
 }
-
 object DataViewDefinitionBuilder {
-  @scala.inline
-  def apply(
-    build: CallbackTo[DataViewDefinition],
-    setColumns: js.Array[js.Any] => CallbackTo[DataViewDefinitionBuilder]
-  ): DataViewDefinitionBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setColumns")(js.Any.fromFunction1((t0: js.Array[js.Any]) => setColumns(t0).runNow()))
+  
+  inline def apply(build: CallbackTo[DataViewDefinition], setColumns: js.Array[Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
+    val __obj = js.Dynamic.literal(build = build.toJsFn, setColumns = js.Any.fromFunction1(setColumns))
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
+  
+  extension [Self <: DataViewDefinitionBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[DataViewDefinition]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetColumns(value: js.Array[Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+  }
 }
-

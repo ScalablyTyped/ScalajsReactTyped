@@ -1,19 +1,26 @@
 package typingsJapgolly.isaac
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("isaac", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def internals(): js.Any = js.native
-  def prng(n: Double): Unit = js.native
-  def rand(): Double = js.native
-  def random(): Double = js.native
-  def reset(): Unit = js.native
-  def seed(s: String): Unit = js.native
-  def seed(s: js.Array[Double]): Unit = js.native
-  def seed(s: Double): Unit = js.native
+object mod {
+  
+  @JSImport("isaac", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def internals(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("internals")().asInstanceOf[Any]
+  
+  inline def prng(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prng")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def rand(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")().asInstanceOf[Double]
+  
+  inline def random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Double]
+  
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
+  inline def seed(s: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def seed(s: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def seed(s: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

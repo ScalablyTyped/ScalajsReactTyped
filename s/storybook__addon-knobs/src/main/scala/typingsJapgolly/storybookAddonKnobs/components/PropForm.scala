@@ -1,43 +1,28 @@
 package typingsJapgolly.storybookAddonKnobs.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
-import typingsJapgolly.storybookAddonKnobs.propFormMod.PropFormProps
-import typingsJapgolly.storybookAddonKnobs.propFormMod.default
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.storybookAddonKnobs.distComponentsPropFormMod.PropFormProps
+import typingsJapgolly.storybookAddonKnobs.distComponentsPropFormMod.default
+import typingsJapgolly.storybookAddonKnobs.distKnobStoreMod.KnobStoreKnob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PropForm {
-  def apply(
+  
+  inline def apply(
     knobs: js.Array[KnobStoreKnob],
     onFieldChange: KnobStoreKnob => Callback,
-    onFieldClick: KnobStoreKnob => Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PropFormProps, default, Unit, PropFormProps] = {
-    val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("onFieldChange")(js.Any.fromFunction1((t0: typingsJapgolly.storybookAddonKnobs.knobStoreMod.KnobStoreKnob) => onFieldChange(t0).runNow()))
-    __obj.updateDynamic("onFieldClick")(js.Any.fromFunction1((t0: typingsJapgolly.storybookAddonKnobs.knobStoreMod.KnobStoreKnob) => onFieldClick(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookAddonKnobs.propFormMod.PropFormProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookAddonKnobs.propFormMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookAddonKnobs.propFormMod.PropFormProps])(children: _*)
+    onFieldClick: KnobStoreKnob => Callback
+  ): Default[default] = {
+    val __props = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any], onFieldChange = js.Any.fromFunction1((t0: KnobStoreKnob) => onFieldChange(t0).runNow()), onFieldClick = js.Any.fromFunction1((t0: KnobStoreKnob) => onFieldClick(t0).runNow()))
+    new Default[default](js.Array(this.component, __props.asInstanceOf[PropFormProps]))
   }
+  
   @JSImport("@storybook/addon-knobs/dist/components/PropForm", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: PropFormProps): Default[default] = new Default[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

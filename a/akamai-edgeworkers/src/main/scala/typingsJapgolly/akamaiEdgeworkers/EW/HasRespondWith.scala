@@ -1,11 +1,12 @@
 package typingsJapgolly.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasRespondWith extends js.Object {
+trait HasRespondWith extends StObject {
+  
   /**
     * Indicates that a complete response is being generated for a
     * request, rather than fetching a response from cache or the origin.
@@ -31,4 +32,3 @@ trait HasRespondWith extends js.Object {
   def respondWith(status: Double, headers: js.Object, body: String): Unit = js.native
   def respondWith(status: Double, headers: js.Object, body: String, deny_reason: String): Unit = js.native
 }
-

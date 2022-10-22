@@ -1,30 +1,27 @@
 
 # Scala.js typings for react-native-restart
 
-Typings are for version 0.0
+Typings are for version 0.0.24
 
 ## Library description:
-React Native Restart Component
+Sometimes you want to reload your app bundle during app runtime. This package will allow you to do it.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-restart |
-| Keywords           | react-component, react-native, ios, android, restart |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 752160 |
-| # stars            | 3 |
+| Keywords           | react-native, ios, android |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 278213.3333333333 |
+| # stars            | 740.0 |
 
 ## Links
-- [Homepage](https://github.com/avishayil/react-native-restart#readme)
-- [Bugs](https://github.com/avishayil/react-native-restart/issues)
-- [Repository](https://github.com/avishayil/react-native-restart)
 - [Npm](https://www.npmjs.com/package/react-native-restart)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

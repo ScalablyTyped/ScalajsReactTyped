@@ -11,9 +11,9 @@ The lodash method `_.throttle` exported as a module.
 | Full name          | lodash.throttle |
 | Keywords           | lodash-modularized, throttle |
 | # releases         | 1 |
-| # dependents       | 1158 |
-| # downloads        | 81132988 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6224101E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

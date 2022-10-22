@@ -1,6 +1,6 @@
 package typingsJapgolly.hapi.mod
 
-import typingsJapgolly.hapi.AnonVary
+import typingsJapgolly.hapi.anon.Vary
 import typingsJapgolly.hapi.hapiStrings.ascii
 import typingsJapgolly.hapi.hapiStrings.base64
 import typingsJapgolly.hapi.hapiStrings.binary
@@ -16,63 +16,22 @@ import typingsJapgolly.hapi.mod.Json.StringifyReplacer
 import typingsJapgolly.hapi.mod.Lifecycle.ReturnValue
 import typingsJapgolly.hapi.mod.Util.Dictionary
 import typingsJapgolly.podium.mod.Podium
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseObject extends Podium {
+trait ResponseObject
+  extends StObject
+     with Podium {
+  
   /**
     * Default value: {}.
     * Application-specific state. Provides a safe place to store application data without potential conflicts with the framework. Should not be used by plugins which should use plugins[name].
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseapp)
     */
   var app: ApplicationState = js.native
-  /**
-    * Access: read only and the public podium interface.
-    * The response.events object supports the following events:
-    * * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
-    * * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
-    * [See docs](https://hapijs.com/api/17.0.1#-responseevents)
-    */
-  val events: ResponseEvents = js.native
-  /**
-    * Default value: {}.
-    * An object containing the response headers where each key is a header field name and the value is the string header value or array of string.
-    * Note that this is an incomplete list of headers to be included with the response. Additional headers will be added once the response is prepared for transmission.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseheaders)
-    */
-  val headers: Dictionary[String | js.Array[String]] = js.native
-  /**
-    * Default value: {}.
-    * Plugin-specific state. Provides a place to store and pass request-level plugin data. plugins is an object where each key is a plugin name and the value is the state.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseplugins)
-    */
-  var plugins: PluginsStates = js.native
-  /**
-    * Object containing the response handling flags.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesettings)
-    */
-  val settings: ResponseSettings = js.native
-  /**
-    * The raw value returned by the lifecycle method.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesource)
-    */
-  val source: ReturnValue = js.native
-  /**
-    * Default value: 200.
-    * The HTTP response status code.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsestatuscode)
-    */
-  val statusCode: Double = js.native
-  /**
-    * A string indicating the type of source with available values:
-    * * 'plain' - a plain response such as string, number, null, or simple object.
-    * * 'buffer' - a Buffer.
-    * * 'stream' - a Stream.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsevariety)
-    */
-  val variety: plain | buffer | stream = js.native
+  
   /**
     * Sets the HTTP 'Content-Length' header (to avoid chunked transfer encoding) where:
     * @param length - the header value. Must match the actual payload size.
@@ -80,6 +39,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://hapijs.com/api/17.0.1#-responsebyteslength)
     */
   def bytes(length: Double): ResponseObject = js.native
+  
   /**
     * Sets the 'Content-Type' HTTP header 'charset' property where:
     * @param charset - the charset property value.
@@ -87,6 +47,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://hapijs.com/api/17.0.1#-responsecharsetcharset)
     */
   def charset(charset: String): ResponseObject = js.native
+  
   /**
     * Sets the HTTP status code where:
     * @param statusCode - the HTTP status code (e.g. 200).
@@ -94,6 +55,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsecodestatuscode)
     */
   def code(statusCode: Double): ResponseObject = js.native
+  
   /**
     * Sets the HTTP status code to Created (201) and the HTTP 'Location' header where:
     * @param uri - an absolute or relative URI used as the 'Location' header value.
@@ -101,6 +63,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsecreateduri)
     */
   def created(uri: String): ResponseObject = js.native
+  
   /**
     * Sets the string encoding scheme used to serial data into the HTTP payload where:
     * @param encoding  the encoding property value (see node Buffer encoding [See docs](https://nodejs.org/api/buffer.html#buffer_buffers_and_character_encodings)).
@@ -115,22 +78,8 @@ trait ResponseObject extends Podium {
     * @return Return value: the current response object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseencodingencoding)
     */
-  @JSName("encoding")
-  def encoding_ascii(encoding: ascii): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_base64(encoding: base64): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_binary(encoding: binary): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_hex(encoding: hex): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_latin1(encoding: latin1): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_ucs2(encoding: ucs2): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf16le(encoding: utf16le): ResponseObject = js.native
-  @JSName("encoding")
-  def encoding_utf8(encoding: utf8): ResponseObject = js.native
+  def encoding(encoding: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): ResponseObject = js.native
+  
   /**
     * Sets the representation entity tag where:
     * @param tag - the entity tag string without the double-quote.
@@ -142,7 +91,17 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseetagtag-options)
     */
   def etag(tag: String): ResponseObject = js.native
-  def etag(tag: String, options: AnonVary): ResponseObject = js.native
+  def etag(tag: String, options: Vary): ResponseObject = js.native
+  
+  /**
+    * Access: read only and the public podium interface.
+    * The response.events object supports the following events:
+    * * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
+    * * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
+    * [See docs](https://hapijs.com/api/17.0.1#-responseevents)
+    */
+  val events: ResponseEvents = js.native
+  
   /**
     * Sets an HTTP header where:
     * @param name - the header name.
@@ -157,6 +116,15 @@ trait ResponseObject extends Podium {
     */
   def header(name: String, value: String): ResponseObject = js.native
   def header(name: String, value: String, options: ResponseObjectHeaderOptions): ResponseObject = js.native
+  
+  /**
+    * Default value: {}.
+    * An object containing the response headers where each key is a header field name and the value is the string header value or array of string.
+    * Note that this is an incomplete list of headers to be included with the response. Additional headers will be added once the response is prepared for transmission.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseheaders)
+    */
+  val headers: Dictionary[String | js.Array[String]] = js.native
+  
   /**
     * Sets the HTTP 'Location' header where:
     * @param uri - an absolute or relative URI used as the 'Location' header value.
@@ -164,6 +132,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responselocationuri)
     */
   def location(uri: String): ResponseObject = js.native
+  
   /**
     * Sets the HTTP status message where:
     * @param httpMessage - the HTTP status message (e.g. 'Ok' for status code 200).
@@ -171,6 +140,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsemessagehttpmessage)
     */
   def message(httpMessage: String): ResponseObject = js.native
+  
   /**
     * Sets the status code to 301 or 308 (based on the response.rewritable() setting) where:
     * @param isPermanent - if false, sets status to temporary. Defaults to true.
@@ -179,6 +149,14 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsepermanentispermanent)
     */
   def permanent(isPermanent: Boolean): ResponseObject = js.native
+  
+  /**
+    * Default value: {}.
+    * Plugin-specific state. Provides a place to store and pass request-level plugin data. plugins is an object where each key is a plugin name and the value is the state.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseplugins)
+    */
+  var plugins: PluginsStates = js.native
+  
   /**
     * Sets an HTTP redirection response (302) and decorates the response with additional methods, where:
     * @param uri - an absolute or relative URI used to redirect the client to another resource.
@@ -187,6 +165,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseredirecturi)
     */
   def redirect(uri: String): ResponseObject = js.native
+  
   /**
     * Sets the JSON.stringify() replacer argument where:
     * @param method - the replacer function or array. Defaults to none.
@@ -194,6 +173,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsereplacermethod)
     */
   def replacer(method: StringifyReplacer): ResponseObject = js.native
+  
   /**
     * Sets the status code to 301/302 for rewritable (allows changing the request method from 'POST' to 'GET') or 307/308 for non-rewritable (does not allow changing the request method from 'POST'
     * to 'GET'). Exact code based on the response.temporary() or response.permanent() setting. Arguments:
@@ -203,6 +183,19 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responserewritableisrewritable)
     */
   def rewritable(isRewritable: Boolean): ResponseObject = js.native
+  
+  /**
+    * Object containing the response handling flags.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesettings)
+    */
+  val settings: ResponseSettings = js.native
+  
+  /**
+    * The raw value returned by the lifecycle method.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesource)
+    */
+  val source: ReturnValue = js.native
+  
   /**
     * Sets the JSON.stringify() space argument where:
     * @param count - the number of spaces to indent nested object keys. Defaults to no indentation.
@@ -210,6 +203,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsespacescount)
     */
   def spaces(count: Double): ResponseObject = js.native
+  
   def state(name: String, value: String): ResponseObject = js.native
   def state(name: String, value: String, options: ServerStateCookieOptions): ResponseObject = js.native
   /**
@@ -223,6 +217,14 @@ trait ResponseObject extends Podium {
     */
   def state(name: String, value: js.Object): ResponseObject = js.native
   def state(name: String, value: js.Object, options: ServerStateCookieOptions): ResponseObject = js.native
+  
+  /**
+    * Default value: 200.
+    * The HTTP response status code.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsestatuscode)
+    */
+  val statusCode: Double = js.native
+  
   /**
     * Sets a string suffix when the response is process via JSON.stringify() where:
     * @param suffix - the string suffix.
@@ -230,12 +232,14 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesuffixsuffix)
     */
   def suffix(suffix: String): ResponseObject = js.native
+  
   /**
     * Marks the response object as a takeover response.
     * @return Return value: the current response object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsetakeover)
     */
   def takeover(): ResponseObject = js.native
+  
   /**
     * Sets the status code to 302 or 307 (based on the response.rewritable() setting) where:
     * @param isTemporary - if false, sets status to permanent. Defaults to true.
@@ -244,6 +248,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsetemporaryistemporary)
     */
   def temporary(isTemporary: Boolean): ResponseObject = js.native
+  
   /**
     * Overrides the default route cache expiration rule for this response instance where:
     * @param msec - the time-to-live value in milliseconds.
@@ -251,6 +256,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsettlmsec)
     */
   def ttl(msec: Double): ResponseObject = js.native
+  
   /**
     * Sets the HTTP 'Content-Type' header where:
     * @param mimeType - is the mime type.
@@ -259,6 +265,7 @@ trait ResponseObject extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsetypemimetype)
     */
   def `type`(mimeType: String): ResponseObject = js.native
+  
   /**
     * Clears the HTTP cookie by setting an expired value where:
     * @param name - the cookie name.
@@ -269,6 +276,16 @@ trait ResponseObject extends Podium {
     */
   def unstate(name: String): ResponseObject = js.native
   def unstate(name: String, options: ServerStateCookieOptions): ResponseObject = js.native
+  
+  /**
+    * A string indicating the type of source with available values:
+    * * 'plain' - a plain response such as string, number, null, or simple object.
+    * * 'buffer' - a Buffer.
+    * * 'stream' - a Stream.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsevariety)
+    */
+  val variety: plain | buffer | stream = js.native
+  
   /**
     * Adds the provided header to the list of inputs affected the response generation via the HTTP 'Vary' header where:
     * @param header - the HTTP request header name.
@@ -277,4 +294,3 @@ trait ResponseObject extends Podium {
     */
   def vary(header: String): ResponseObject = js.native
 }
-

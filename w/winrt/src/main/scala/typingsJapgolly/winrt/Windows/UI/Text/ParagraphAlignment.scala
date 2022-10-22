@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphAlignment extends js.Object
-
+sealed trait ParagraphAlignment extends StObject
 @JSGlobal("Windows.UI.Text.ParagraphAlignment")
 @js.native
-object ParagraphAlignment extends js.Object {
-  @js.native
-  sealed trait center extends ParagraphAlignment
+object ParagraphAlignment extends StObject {
   
   @js.native
-  sealed trait justify extends ParagraphAlignment
+  sealed trait center
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait left extends ParagraphAlignment
+  sealed trait justify
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait right extends ParagraphAlignment
+  sealed trait left
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait undefined extends ParagraphAlignment
+  sealed trait right
+    extends StObject
+       with ParagraphAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParagraphAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 4 */ @js.native
-  object justify extends TopLevel[justify with Double]
-  
-  /* 1 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 3 */ @js.native
-  object right extends TopLevel[right with Double]
-  
-  /* 0 */ @js.native
-  object undefined extends TopLevel[undefined with Double]
-  
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with ParagraphAlignment
 }
-

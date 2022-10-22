@@ -1,7 +1,7 @@
 
 # Scala.js typings for globby
 
-Typings are for version 10.0.2
+Typings are for version 13.1.2
 
 ## Library description:
 User-friendly glob matching
@@ -10,10 +10,10 @@ User-friendly glob matching
 | ------------------ | :-------------: |
 | Full name          | globby |
 | Keywords           | all, array, directories, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
-| # releases         | 8 |
-| # dependents       | 2751 |
-| # downloads        | 762831122 |
-| # stars            | 49 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2.21719855E8 |
+| # stars            | 2070.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/globby#readme)

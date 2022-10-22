@@ -1,19 +1,21 @@
 package typingsJapgolly.yeomanGenerator
 
+import typingsJapgolly.yeomanGenerator.mod.GeneratorFeaturesUniqueBy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yeomanGeneratorStrings {
-  @js.native
-  sealed trait strong extends js.Object
   
   @js.native
-  sealed trait weak extends js.Object
+  sealed trait argument
+    extends StObject
+       with GeneratorFeaturesUniqueBy
+  inline def argument: argument = "argument".asInstanceOf[argument]
   
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
-  @scala.inline
-  def weak: weak = "weak".asInstanceOf[weak]
+  @js.native
+  sealed trait namespacep
+    extends StObject
+       with GeneratorFeaturesUniqueBy
+  inline def namespacep: namespacep = "namespacep".asInstanceOf[namespacep]
 }
-

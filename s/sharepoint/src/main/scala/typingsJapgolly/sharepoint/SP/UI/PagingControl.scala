@@ -1,33 +1,68 @@
 package typingsJapgolly.sharepoint.SP.UI
 
-import org.scalajs.dom.raw.HTMLSpanElement
-import typingsJapgolly.sharepoint.AnonDisabled
-import typingsJapgolly.sharepoint.AnonNext
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.HTMLSpanElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.UI.PagingControl")
-@js.native
-class PagingControl protected () extends js.Object {
-  def this(id: String) = this()
-  def getButtonState(buttonId: Double): Double = js.native
-  def get_innerContent(): HTMLSpanElement = js.native
-  def get_innerContentClass(): String = js.native
-  def onNext(): Unit = js.native
+trait PagingControl extends StObject {
+  
+  def getButtonState(buttonId: Double): Double
+  
+  def get_innerContent(): HTMLSpanElement
+  
+  def get_innerContentClass(): String
+  
+  def onNext(): Unit
+  
   /**Should override*/
-  def onPrev(): Unit = js.native
-  def onWindowResized(): Unit = js.native
-  def postRender(): Unit = js.native
-  def render(innerContent: String): String = js.native
-  def setButtonState(buttonId: Double, state: Double): Unit = js.native
+  def onPrev(): Unit
+  
+  def onWindowResized(): Unit
+  
+  def postRender(): Unit
+  
+  def render(innerContent: String): String
+  
+  def setButtonState(buttonId: Double, state: Double): Unit
 }
-
-/* static members */
-@JSGlobal("SP.UI.PagingControl")
-@js.native
-object PagingControl extends js.Object {
-  var ButtonIDs: AnonNext = js.native
-  var ButtonState: AnonDisabled = js.native
+object PagingControl {
+  
+  inline def apply(
+    getButtonState: Double => Double,
+    get_innerContent: CallbackTo[HTMLSpanElement],
+    get_innerContentClass: CallbackTo[String],
+    onNext: Callback,
+    onPrev: Callback,
+    onWindowResized: Callback,
+    postRender: Callback,
+    render: String => String,
+    setButtonState: (Double, Double) => Callback
+  ): PagingControl = {
+    val __obj = js.Dynamic.literal(getButtonState = js.Any.fromFunction1(getButtonState), get_innerContent = get_innerContent.toJsFn, get_innerContentClass = get_innerContentClass.toJsFn, onNext = onNext.toJsFn, onPrev = onPrev.toJsFn, onWindowResized = onWindowResized.toJsFn, postRender = postRender.toJsFn, render = js.Any.fromFunction1(render), setButtonState = js.Any.fromFunction2((t0: Double, t1: Double) => (setButtonState(t0, t1)).runNow()))
+    __obj.asInstanceOf[PagingControl]
+  }
+  
+  extension [Self <: PagingControl](x: Self) {
+    
+    inline def setGetButtonState(value: Double => Double): Self = StObject.set(x, "getButtonState", js.Any.fromFunction1(value))
+    
+    inline def setGet_innerContent(value: CallbackTo[HTMLSpanElement]): Self = StObject.set(x, "get_innerContent", value.toJsFn)
+    
+    inline def setGet_innerContentClass(value: CallbackTo[String]): Self = StObject.set(x, "get_innerContentClass", value.toJsFn)
+    
+    inline def setOnNext(value: Callback): Self = StObject.set(x, "onNext", value.toJsFn)
+    
+    inline def setOnPrev(value: Callback): Self = StObject.set(x, "onPrev", value.toJsFn)
+    
+    inline def setOnWindowResized(value: Callback): Self = StObject.set(x, "onWindowResized", value.toJsFn)
+    
+    inline def setPostRender(value: Callback): Self = StObject.set(x, "postRender", value.toJsFn)
+    
+    inline def setRender(value: String => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    
+    inline def setSetButtonState(value: (Double, Double) => Callback): Self = StObject.set(x, "setButtonState", js.Any.fromFunction2((t0: Double, t1: Double) => (value(t0, t1)).runNow()))
+  }
 }
-

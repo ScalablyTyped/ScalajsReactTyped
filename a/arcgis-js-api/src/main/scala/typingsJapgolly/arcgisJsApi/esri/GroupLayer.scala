@@ -1,45 +1,68 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.exclusive
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.group
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.independent
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.inherited
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GroupLayer
-  extends Layer
+  extends StObject
+     with Layer
      with LayersMixin
-     with PortalLayer {
+     with TablesMixin
+     with PortalLayer
+     with BlendLayer {
+  
+  /**
+    * A flattened collection of all [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) in the group layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#allLayers)
+    */
+  val allLayers: Collection[Layer] = js.native
+  
+  /**
+    * A flattened collection of tables anywhere in the group layer's hierarchy.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#allTables)
+    */
+  val allTables: Collection[Layer] = js.native
+  
+  /**
+    * Loads all the externally loadable resources associated with the group layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#loadAll)
+    */
+  def loadAll(): js.Promise[GroupLayer] = js.native
+  
+  /**
+    * The maximum scale (most zoomed in) at which the layer is visible in the view.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#maxScale)
+    */
+  var maxScale: Double = js.native
+  
+  /**
+    * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#minScale)
+    */
+  var minScale: Double = js.native
+  
   @JSName("type")
   val type_GroupLayer: group = js.native
+  
   /**
-    * Indicates how to manage the visibility of the children layers. Possible values are described in the table below.
-    *
-    * Value | Description
-    * ------|------------
-    * independent | Each child layer manages its visibility independent from other layers.
-    * inherited | Each child layer's visibility matches the [GroupLayer’s visibility](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visible).
-    * exclusive | Only one child layer is visible at a time.
-    *
+    * Indicates how to manage the visibility of the children layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visibilityMode)
     */
   var visibilityMode: independent | inherited | exclusive = js.native
-  /**
-    * Loads all the externally loadable resources associated with the group layer. For the group layer this will load all the layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#loadAll)
-    *
-    *
-    */
-  def loadAll(): js.Promise[GroupLayer] = js.native
 }
-
-@JSGlobal("__esri.GroupLayer")
-@js.native
-object GroupLayer extends TopLevel[GroupLayerConstructor]
-

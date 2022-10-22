@@ -1,81 +1,89 @@
 package typingsJapgolly.devextreme.mod.DevExpress
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonX
-import typingsJapgolly.devextreme.AnonXY
-import typingsJapgolly.devextreme.AnonY
-import typingsJapgolly.devextreme.devextremeStrings.`fit flip`
-import typingsJapgolly.devextreme.devextremeStrings.`fit flipfit`
-import typingsJapgolly.devextreme.devextremeStrings.`fit none`
-import typingsJapgolly.devextreme.devextremeStrings.`flip fit`
-import typingsJapgolly.devextreme.devextremeStrings.`flip none`
-import typingsJapgolly.devextreme.devextremeStrings.`flipfit fit`
-import typingsJapgolly.devextreme.devextremeStrings.`flipfit none`
-import typingsJapgolly.devextreme.devextremeStrings.`left bottom`
-import typingsJapgolly.devextreme.devextremeStrings.`left top`
-import typingsJapgolly.devextreme.devextremeStrings.`none fit`
-import typingsJapgolly.devextreme.devextremeStrings.`none flip`
-import typingsJapgolly.devextreme.devextremeStrings.`none flipfit`
-import typingsJapgolly.devextreme.devextremeStrings.`right bottom`
-import typingsJapgolly.devextreme.devextremeStrings.`right top`
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.fit
-import typingsJapgolly.devextreme.devextremeStrings.flip
-import typingsJapgolly.devextreme.devextremeStrings.flipfit
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.top
-import typingsJapgolly.devextreme.mod._Global_.JQuery
-import typingsJapgolly.std.Window_
+import org.scalajs.dom.Element
+import org.scalajs.dom.Window
+import typingsJapgolly.devextreme.anon.X
+import typingsJapgolly.devextreme.anon.XY
+import typingsJapgolly.devextreme.anon.Y
+import typingsJapgolly.devextreme.mod.DevExpress.animation.CollisionResolutionCombination
+import typingsJapgolly.devextreme.mod.DevExpress.common.PositionAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait positionConfig extends js.Object {
-  /** The target element position that the widget is positioned against. */
-  var at: js.UndefOr[
-    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
-  ] = js.undefined
-  /** The element within which the widget is positioned. */
-  var boundary: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
-  /** Specifies the horizontal and vertical offset from the window's boundaries. */
-  var boundaryOffset: js.UndefOr[String | AnonY] = js.undefined
-  /** Specifies how to move the widget if it overflows the screen. */
-  var collision: js.UndefOr[
-    fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | AnonXY
-  ] = js.undefined
-  /** The position of the widget to align against the target element. */
-  var my: js.UndefOr[
-    bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX
-  ] = js.undefined
-  /** The target element that the widget is positioned against. */
-  var of: js.UndefOr[String | Element | JQuery | Window_] = js.undefined
-  /** Specifies horizontal and vertical offset in pixels. */
-  var offset: js.UndefOr[String | AnonY] = js.undefined
+trait PositionConfig extends StObject {
+  
+  /**
+    * Specifies the target element&apos;s side or corner where the overlay element should be positioned.
+    */
+  var at: js.UndefOr[PositionAlignment | X] = js.undefined
+  
+  /**
+    * A boundary element in which the overlay element must be positioned.
+    */
+  var boundary: js.UndefOr[String | UserDefinedElement[Element] | Window] = js.undefined
+  
+  /**
+    * Specifies the offset of boundaries from the boundary element.
+    */
+  var boundaryOffset: js.UndefOr[String | Y] = js.undefined
+  
+  /**
+    * Specifies how to resolve collisions - when the overlay element exceeds the boundary element.
+    */
+  var collision: js.UndefOr[CollisionResolutionCombination | XY] = js.undefined
+  
+  /**
+    * Specifies the overlay element&apos;s side or corner to align with a target element.
+    */
+  var my: js.UndefOr[PositionAlignment | X] = js.undefined
+  
+  /**
+    * The target element relative to which the overlay element should be positioned.
+    */
+  var of: js.UndefOr[String | UserDefinedElement[Element] | Window] = js.undefined
+  
+  /**
+    * Specifies the overlay element&apos;s offset from a specified position.
+    */
+  var offset: js.UndefOr[String | Y] = js.undefined
 }
-
-object positionConfig {
-  @scala.inline
-  def apply(
-    at: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX = null,
-    boundary: String | Element | JQuery | Window_ = null,
-    boundaryOffset: String | AnonY = null,
-    collision: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | AnonXY = null,
-    my: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | AnonX = null,
-    of: String | Element | JQuery | Window_ = null,
-    offset: String | AnonY = null
-  ): positionConfig = {
+object PositionConfig {
+  
+  inline def apply(): PositionConfig = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (boundaryOffset != null) __obj.updateDynamic("boundaryOffset")(boundaryOffset.asInstanceOf[js.Any])
-    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    __obj.asInstanceOf[positionConfig]
+    __obj.asInstanceOf[PositionConfig]
+  }
+  
+  extension [Self <: PositionConfig](x: Self) {
+    
+    inline def setAt(value: PositionAlignment | X): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    
+    inline def setBoundary(value: String | UserDefinedElement[Element] | Window): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    
+    inline def setBoundaryOffset(value: String | Y): Self = StObject.set(x, "boundaryOffset", value.asInstanceOf[js.Any])
+    
+    inline def setBoundaryOffsetUndefined: Self = StObject.set(x, "boundaryOffset", js.undefined)
+    
+    inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    
+    inline def setCollision(value: CollisionResolutionCombination | XY): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+    
+    inline def setMy(value: PositionAlignment | X): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    
+    inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+    
+    inline def setOf(value: String | UserDefinedElement[Element] | Window): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    
+    inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+    
+    inline def setOffset(value: String | Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }
-

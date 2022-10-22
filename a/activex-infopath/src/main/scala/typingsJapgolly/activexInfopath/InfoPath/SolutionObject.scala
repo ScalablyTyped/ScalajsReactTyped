@@ -1,18 +1,47 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
 import typingsJapgolly.activexMsxml2.MSXML2.IXMLDOMDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("InfoPath.SolutionObject")
-@js.native
-class SolutionObject protected () extends js.Object {
-  val DOM: IXMLDOMDocument = js.native
-  @JSName("InfoPath.SolutionObject_typekey")
-  var InfoPathDotSolutionObject_typekey: SolutionObject = js.native
-  val PackageURL: String = js.native
-  val URI: String = js.native
-  val Version: String = js.native
+trait SolutionObject extends StObject {
+  
+  val DOM: IXMLDOMDocument
+  
+  /* private */ @JSName("InfoPath.SolutionObject_typekey")
+  var InfoPathDotSolutionObject_typekey: SolutionObject
+  
+  val PackageURL: String
+  
+  val URI: String
+  
+  val Version: String
 }
-
+object SolutionObject {
+  
+  inline def apply(
+    DOM: IXMLDOMDocument,
+    InfoPathDotSolutionObject_typekey: SolutionObject,
+    PackageURL: String,
+    URI: String,
+    Version: String
+  ): SolutionObject = {
+    val __obj = js.Dynamic.literal(DOM = DOM.asInstanceOf[js.Any], PackageURL = PackageURL.asInstanceOf[js.Any], URI = URI.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.SolutionObject_typekey")(InfoPathDotSolutionObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SolutionObject]
+  }
+  
+  extension [Self <: SolutionObject](x: Self) {
+    
+    inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    
+    inline def setInfoPathDotSolutionObject_typekey(value: SolutionObject): Self = StObject.set(x, "InfoPath.SolutionObject_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setPackageURL(value: String): Self = StObject.set(x, "PackageURL", value.asInstanceOf[js.Any])
+    
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+  }
+}

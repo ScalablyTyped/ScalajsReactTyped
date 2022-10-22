@@ -10,10 +10,10 @@ check whether a command line command exists in the current environment
 | ------------------ | :-------------: |
 | Full name          | command-exists |
 | Keywords           | cli, command, exists |
-| # releases         | 7 |
-| # dependents       | 528 |
-| # downloads        | 21450585 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7855092.0 |
+| # stars            | 130.0 |
 
 ## Links
 - [Homepage](https://github.com/mathisonian/command-exists)

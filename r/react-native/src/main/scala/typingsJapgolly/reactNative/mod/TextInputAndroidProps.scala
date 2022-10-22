@@ -1,17 +1,41 @@
 package typingsJapgolly.reactNative.mod
 
+import typingsJapgolly.reactNative.reactNativeStrings.`birthdate-day`
+import typingsJapgolly.reactNative.reactNativeStrings.`birthdate-full`
+import typingsJapgolly.reactNative.reactNativeStrings.`birthdate-month`
+import typingsJapgolly.reactNative.reactNativeStrings.`birthdate-year`
 import typingsJapgolly.reactNative.reactNativeStrings.`cc-csc`
+import typingsJapgolly.reactNative.reactNativeStrings.`cc-exp-day`
 import typingsJapgolly.reactNative.reactNativeStrings.`cc-exp-month`
 import typingsJapgolly.reactNative.reactNativeStrings.`cc-exp-year`
 import typingsJapgolly.reactNative.reactNativeStrings.`cc-exp`
 import typingsJapgolly.reactNative.reactNativeStrings.`cc-number`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-family`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-given`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-middle-initial`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-middle`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-prefix`
+import typingsJapgolly.reactNative.reactNativeStrings.`name-suffix`
+import typingsJapgolly.reactNative.reactNativeStrings.`password-new`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address-country`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address-extended-postal-code`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address-extended`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address-locality`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address-region`
+import typingsJapgolly.reactNative.reactNativeStrings.`postal-address`
 import typingsJapgolly.reactNative.reactNativeStrings.`postal-code`
+import typingsJapgolly.reactNative.reactNativeStrings.`sms-otp`
 import typingsJapgolly.reactNative.reactNativeStrings.`street-address`
+import typingsJapgolly.reactNative.reactNativeStrings.`tel-country-code`
+import typingsJapgolly.reactNative.reactNativeStrings.`tel-device`
+import typingsJapgolly.reactNative.reactNativeStrings.`tel-national`
+import typingsJapgolly.reactNative.reactNativeStrings.`username-new`
 import typingsJapgolly.reactNative.reactNativeStrings.auto
 import typingsJapgolly.reactNative.reactNativeStrings.balanced
 import typingsJapgolly.reactNative.reactNativeStrings.bottom
 import typingsJapgolly.reactNative.reactNativeStrings.center
 import typingsJapgolly.reactNative.reactNativeStrings.email
+import typingsJapgolly.reactNative.reactNativeStrings.gender
 import typingsJapgolly.reactNative.reactNativeStrings.highQuality
 import typingsJapgolly.reactNative.reactNativeStrings.name
 import typingsJapgolly.reactNative.reactNativeStrings.no
@@ -24,36 +48,70 @@ import typingsJapgolly.reactNative.reactNativeStrings.top
 import typingsJapgolly.reactNative.reactNativeStrings.username
 import typingsJapgolly.reactNative.reactNativeStrings.yes
 import typingsJapgolly.reactNative.reactNativeStrings.yesExcludeDescendants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextInputAndroidProps extends js.Object {
+trait TextInputAndroidProps extends StObject {
+  
   /**
-    * Determines which content to suggest on auto complete, e.g.`username`.
-    * To disable auto complete, use `off`.
+    * Specifies autocomplete hints for the system, so it can provide autofill. On Android, the system will always attempt to offer autofill by using heuristics to identify the type of content.
+    * To disable autocomplete, set `autoComplete` to `off`.
     *
     * *Android Only*
     *
-    * The following values work on Android only:
+    * Possible values for `autoComplete` are:
     *
-    * - `username`
-    * - `password`
-    * - `email`
-    * - `name`
-    * - `tel`
-    * - `street-address`
-    * - `postal-code`
-    * - `cc-number`
+    * - `birthdate-day`
+    * - `birthdate-full`
+    * - `birthdate-month`
+    * - `birthdate-year`
     * - `cc-csc`
     * - `cc-exp`
+    * - `cc-exp-day`
     * - `cc-exp-month`
     * - `cc-exp-year`
+    * - `cc-number`
+    * - `email`
+    * - `gender`
+    * - `name`
+    * - `name-family`
+    * - `name-given`
+    * - `name-middle`
+    * - `name-middle-initial`
+    * - `name-prefix`
+    * - `name-suffix`
+    * - `password`
+    * - `password-new`
+    * - `postal-address`
+    * - `postal-address-country`
+    * - `postal-address-extended`
+    * - `postal-address-extended-postal-code`
+    * - `postal-address-locality`
+    * - `postal-address-region`
+    * - `postal-code`
+    * - `street-address`
+    * - `sms-otp`
+    * - `tel`
+    * - `tel-country-code`
+    * - `tel-national`
+    * - `tel-device`
+    * - `username`
+    * - `username-new`
     * - `off`
     */
-  var autoCompleteType: js.UndefOr[
-    `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
+  var autoComplete: js.UndefOr[
+    `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
   ] = js.undefined
+  
+  /**
+    * When provided it will set the color of the cursor (or "caret") in the component.
+    * Unlike the behavior of `selectionColor` the cursor color will be set independently
+    * from the color of the text selection box.
+    * @platform android
+    */
+  var cursorColor: js.UndefOr[ColorValue | Null] = js.undefined
+  
   /**
     * When false, if there is a small amount of space available around a text input (e.g. landscape orientation on a phone),
     *   the OS may choose to have the user edit the text inside of a full screen text input mode.
@@ -61,6 +119,7 @@ trait TextInputAndroidProps extends js.Object {
     * Defaults to false.
     */
   var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Determines whether the individual fields in your app should be included in a
     * view structure for autofill purposes on Android API Level 26+. Defaults to auto.
@@ -77,65 +136,109 @@ trait TextInputAndroidProps extends js.Object {
     * - `yesExcludeDescendants` - this view is important for autofill but its children aren't
     */
   var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.undefined
+  
   /**
     * If defined, the provided image resource will be rendered on the left.
     */
   var inlineImageLeft: js.UndefOr[String] = js.undefined
+  
   /**
     * Padding between the inline image, if any, and the text input itself.
     */
   var inlineImagePadding: js.UndefOr[Double] = js.undefined
+  
   /**
     * Sets the number of lines for a TextInput.
     * Use it with multiline set to true to be able to fill the lines.
     */
   var numberOfLines: js.UndefOr[Double] = js.undefined
+  
   /**
     * Sets the return key to the label. Use it instead of `returnKeyType`.
     * @platform android
     */
   var returnKeyLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * When false, it will prevent the soft keyboard from showing when the field is focused. The default value is true
+    */
+  var showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Vertically align text when `multiline` is set to true
     */
   var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
+  
   /**
     * Set text break strategy on Android API Level 23+, possible values are simple, highQuality, balanced
     * The default value is simple.
     */
   var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  
   /**
     * The color of the textInput underline.
     */
-  var underlineColorAndroid: js.UndefOr[String] = js.undefined
+  var underlineColorAndroid: js.UndefOr[ColorValue] = js.undefined
 }
-
 object TextInputAndroidProps {
-  @scala.inline
-  def apply(
-    autoCompleteType: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off = null,
-    disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
-    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
-    inlineImageLeft: String = null,
-    inlineImagePadding: Int | Double = null,
-    numberOfLines: Int | Double = null,
-    returnKeyLabel: String = null,
-    textAlignVertical: auto | top | bottom | center = null,
-    textBreakStrategy: simple | highQuality | balanced = null,
-    underlineColorAndroid: String = null
-  ): TextInputAndroidProps = {
+  
+  inline def apply(): TextInputAndroidProps = {
     val __obj = js.Dynamic.literal()
-    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.asInstanceOf[js.Any])
-    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
-    if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
-    if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])
-    if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
-    if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputAndroidProps]
   }
+  
+  extension [Self <: TextInputAndroidProps](x: Self) {
+    
+    inline def setAutoComplete(
+      value: `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
+    ): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setCursorColor(value: ColorValue): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorColorNull: Self = StObject.set(x, "cursorColor", null)
+    
+    inline def setCursorColorUndefined: Self = StObject.set(x, "cursorColor", js.undefined)
+    
+    inline def setDisableFullscreenUI(value: Boolean): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
+    
+    inline def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
+    
+    inline def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
+    
+    inline def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
+    
+    inline def setInlineImageLeft(value: String): Self = StObject.set(x, "inlineImageLeft", value.asInstanceOf[js.Any])
+    
+    inline def setInlineImageLeftUndefined: Self = StObject.set(x, "inlineImageLeft", js.undefined)
+    
+    inline def setInlineImagePadding(value: Double): Self = StObject.set(x, "inlineImagePadding", value.asInstanceOf[js.Any])
+    
+    inline def setInlineImagePaddingUndefined: Self = StObject.set(x, "inlineImagePadding", js.undefined)
+    
+    inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+    
+    inline def setReturnKeyLabel(value: String): Self = StObject.set(x, "returnKeyLabel", value.asInstanceOf[js.Any])
+    
+    inline def setReturnKeyLabelUndefined: Self = StObject.set(x, "returnKeyLabel", js.undefined)
+    
+    inline def setShowSoftInputOnFocus(value: Boolean): Self = StObject.set(x, "showSoftInputOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
+    
+    inline def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
+    
+    inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
+    
+    inline def setUnderlineColorAndroid(value: ColorValue): Self = StObject.set(x, "underlineColorAndroid", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineColorAndroidUndefined: Self = StObject.set(x, "underlineColorAndroid", js.undefined)
+  }
 }
-

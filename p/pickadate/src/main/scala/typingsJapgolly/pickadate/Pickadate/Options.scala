@@ -2,54 +2,63 @@ package typingsJapgolly.pickadate.Pickadate
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.pickadate.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // options shared between date and time pickers
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   /**
     * Set the clear button text.
     * Defaults to 'Clear'
     */
   var clear: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether or not to close the picker when the "clear" button is pressed.
     * Defaults to `true`.
     */
   var closeOnClear: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether or not to close the picker when a date is selected.
     * Defaults to `true`.
     */
   var closeOnSelect: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Specify where to insert the picker's root element by passing any
     * valid CSS selector to this option. Defaults to undefined.
     */
   var container: js.UndefOr[String | JQuery] = js.undefined
+  
   /**
     * The hidden input container.
     * Defaults to undefined.
     */
   var containerHidden: js.UndefOr[String] = js.undefined
+  
   /**
     * By default, typing into the input is disabled by giving it a readOnly
     * attribute. Setting the editable option to true allows the input field
     * to be edited directly.
     */
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The human-friendly display format.
     * Escape any "rule" characters with an exclamation mark (!).
     * Defaults to 'd mmmm, yyyy'
     */
   var format: js.UndefOr[String] = js.undefined
+  
   /**
     * An alternate format to submit to the server.
     * Defaults to undefined.
     */
   var formatSubmit: js.UndefOr[String] = js.undefined
+  
   /**
     * A majority of the time, the value that needs to be sent to the server
     * is just the hidden value and not the visible one. To make this happen,
@@ -58,67 +67,109 @@ trait Options extends js.Object {
     * then sets it as the name of the hidden input. Defaults to undefined.
     */
   var hiddenName: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * An optional name prefix for the new hidden input element used
     * when a custom human-friendly display format is specified.
     * Defaults to undefined.
     */
   var hiddenPrefix: js.UndefOr[String] = js.undefined
+  
   /**
     * An optional name suffix for the new hidden input element used
     * when a custom human-friendly display format is specified.
     * Defaults to '_submit'
     */
   var hiddenSuffix: js.UndefOr[String] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var onRender: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var onSet: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  
+  var onClose: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
+  var onOpen: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
+  var onRender: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
+  var onSet: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
   // Events
-  var onStart: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var onStop: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
+  var onStop: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    clear: String = null,
-    closeOnClear: js.UndefOr[Boolean] = js.undefined,
-    closeOnSelect: js.UndefOr[Boolean] = js.undefined,
-    container: String | JQuery = null,
-    containerHidden: String = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    formatSubmit: String = null,
-    hiddenName: js.UndefOr[Boolean] = js.undefined,
-    hiddenPrefix: String = null,
-    hiddenSuffix: String = null,
-    onClose: /* event */ js.Any => Callback = null,
-    onOpen: /* event */ js.Any => Callback = null,
-    onRender: /* event */ js.Any => Callback = null,
-    onSet: /* event */ js.Any => Callback = null,
-    onStart: /* event */ js.Any => Callback = null,
-    onStop: /* event */ js.Any => Callback = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClear)) __obj.updateDynamic("closeOnClear")(closeOnClear.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerHidden != null) __obj.updateDynamic("containerHidden")(containerHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatSubmit != null) __obj.updateDynamic("formatSubmit")(formatSubmit.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenName)) __obj.updateDynamic("hiddenName")(hiddenName.asInstanceOf[js.Any])
-    if (hiddenPrefix != null) __obj.updateDynamic("hiddenPrefix")(hiddenPrefix.asInstanceOf[js.Any])
-    if (hiddenSuffix != null) __obj.updateDynamic("hiddenSuffix")(hiddenSuffix.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* event */ js.Any) => onClose(t0).runNow()))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* event */ js.Any) => onOpen(t0).runNow()))
-    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction1((t0: /* event */ js.Any) => onRender(t0).runNow()))
-    if (onSet != null) __obj.updateDynamic("onSet")(js.Any.fromFunction1((t0: /* event */ js.Any) => onSet(t0).runNow()))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1((t0: /* event */ js.Any) => onStart(t0).runNow()))
-    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1((t0: /* event */ js.Any) => onStop(t0).runNow()))
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    
+    inline def setCloseOnClear(value: Boolean): Self = StObject.set(x, "closeOnClear", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClearUndefined: Self = StObject.set(x, "closeOnClear", js.undefined)
+    
+    inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
+    
+    inline def setContainer(value: String | JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerHidden(value: String): Self = StObject.set(x, "containerHidden", value.asInstanceOf[js.Any])
+    
+    inline def setContainerHiddenUndefined: Self = StObject.set(x, "containerHidden", js.undefined)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatSubmit(value: String): Self = StObject.set(x, "formatSubmit", value.asInstanceOf[js.Any])
+    
+    inline def setFormatSubmitUndefined: Self = StObject.set(x, "formatSubmit", js.undefined)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHiddenName(value: Boolean): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
+    
+    inline def setHiddenPrefix(value: String): Self = StObject.set(x, "hiddenPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenPrefixUndefined: Self = StObject.set(x, "hiddenPrefix", js.undefined)
+    
+    inline def setHiddenSuffix(value: String): Self = StObject.set(x, "hiddenSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenSuffixUndefined: Self = StObject.set(x, "hiddenSuffix", js.undefined)
+    
+    inline def setOnClose(value: /* event */ Any => Callback): Self = StObject.set(x, "onClose", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnOpen(value: /* event */ Any => Callback): Self = StObject.set(x, "onOpen", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+    
+    inline def setOnRender(value: /* event */ Any => Callback): Self = StObject.set(x, "onRender", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+    
+    inline def setOnSet(value: /* event */ Any => Callback): Self = StObject.set(x, "onSet", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnSetUndefined: Self = StObject.set(x, "onSet", js.undefined)
+    
+    inline def setOnStart(value: /* event */ Any => Callback): Self = StObject.set(x, "onStart", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    
+    inline def setOnStop(value: /* event */ Any => Callback): Self = StObject.set(x, "onStop", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+  }
 }
-

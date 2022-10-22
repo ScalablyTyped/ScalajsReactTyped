@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD
 */
-trait AdType extends js.Object
-
+trait AdType extends StObject
 object AdType {
-  @scala.inline
-  def EXPANDED_TEXT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD = this.cast("EXPANDED_TEXT_AD")
-  @scala.inline
-  def IMAGE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD = this.cast("IMAGE_AD")
-  @scala.inline
-  def MOBILE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD = this.cast("MOBILE_AD")
-  @scala.inline
-  def MOBILE_IMAGE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD = this.cast("MOBILE_IMAGE_AD")
-  @scala.inline
-  def PRODUCT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD = this.cast("PRODUCT_AD")
-  @scala.inline
-  def RICH_MEDIA_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD = this.cast("RICH_MEDIA_AD")
-  @scala.inline
-  def TEMPLATE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD = this.cast("TEMPLATE_AD")
-  @scala.inline
-  def TEXT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD = this.cast("TEXT_AD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def EXPANDED_TEXT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD = "EXPANDED_TEXT_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.EXPANDED_TEXT_AD]
+  
+  inline def IMAGE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD = "IMAGE_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.IMAGE_AD]
+  
+  inline def MOBILE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD = "MOBILE_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_AD]
+  
+  inline def MOBILE_IMAGE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD = "MOBILE_IMAGE_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MOBILE_IMAGE_AD]
+  
+  inline def PRODUCT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD = "PRODUCT_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PRODUCT_AD]
+  
+  inline def RICH_MEDIA_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD = "RICH_MEDIA_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.RICH_MEDIA_AD]
+  
+  inline def TEMPLATE_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD = "TEMPLATE_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEMPLATE_AD]
+  
+  inline def TEXT_AD: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD = "TEXT_AD".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.TEXT_AD]
 }
-

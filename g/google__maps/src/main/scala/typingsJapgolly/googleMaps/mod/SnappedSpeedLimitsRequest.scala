@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SnappedSpeedLimitsRequest extends js.Object {
+trait SnappedSpeedLimitsRequest extends StObject {
+  
   /**
     * A list of latitude/longitude pairs representing a path. Latitude and longitude values must be separated by commas.
     * Latitude/longitude pairs must be separated by the pipe character: "|".
@@ -16,6 +17,7 @@ trait SnappedSpeedLimitsRequest extends js.Object {
     * `path=60.170880,24.942795|60.170879,24.942796|60.170877,24.942796`.
     */
   var path: js.Array[LatLng]
+  
   /**
     * Whether to return speed limits in kilometers or miles per hour. This can be set to either `KPH` or `MPH`.
     *
@@ -23,13 +25,21 @@ trait SnappedSpeedLimitsRequest extends js.Object {
     */
   var units: js.UndefOr[SpeedLimitUnit] = js.undefined
 }
-
 object SnappedSpeedLimitsRequest {
-  @scala.inline
-  def apply(path: js.Array[LatLng], units: SpeedLimitUnit = null): SnappedSpeedLimitsRequest = {
+  
+  inline def apply(path: js.Array[LatLng]): SnappedSpeedLimitsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnappedSpeedLimitsRequest]
   }
+  
+  extension [Self <: SnappedSpeedLimitsRequest](x: Self) {
+    
+    inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+  }
 }
-

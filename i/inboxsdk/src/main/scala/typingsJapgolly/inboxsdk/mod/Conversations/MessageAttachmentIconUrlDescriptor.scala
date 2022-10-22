@@ -1,29 +1,26 @@
 package typingsJapgolly.inboxsdk.mod.Conversations
 
-import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MessageAttachmentIconUrlDescriptor
-  extends MessageAttachmentIconDescriptorBase
+  extends StObject
+     with MessageAttachmentIconDescriptorBase
      with MessageAttachmentIconDescriptor {
+  
   var iconUrl: String
 }
-
 object MessageAttachmentIconUrlDescriptor {
-  @scala.inline
-  def apply(
-    iconUrl: String,
-    tooltip: String | HTMLElement,
-    iconClass: String = null,
-    onClick: js.UndefOr[Callback] = js.undefined
-  ): MessageAttachmentIconUrlDescriptor = {
+  
+  inline def apply(iconUrl: String, tooltip: String | HTMLElement): MessageAttachmentIconUrlDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
     __obj.asInstanceOf[MessageAttachmentIconUrlDescriptor]
   }
+  
+  extension [Self <: MessageAttachmentIconUrlDescriptor](x: Self) {
+    
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+  }
 }
-

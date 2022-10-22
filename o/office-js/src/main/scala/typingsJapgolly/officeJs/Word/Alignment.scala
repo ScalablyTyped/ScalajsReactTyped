@@ -1,81 +1,75 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Alignment extends js.Object
-
+sealed trait Alignment extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.Alignment")
 @js.native
-object Alignment extends js.Object {
+object Alignment extends StObject {
+  
   /**
-    *
     * Alignment to the center.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait centered extends Alignment
+  sealed trait centered
+    extends StObject
+       with Alignment
   
   /**
-    *
     * Fully justified alignment.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait justified extends Alignment
+  sealed trait justified
+    extends StObject
+       with Alignment
   
   /**
-    *
     * Alignment to the left.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait left extends Alignment
-  
-  @js.native
-  sealed trait mixed extends Alignment
+  sealed trait left
+    extends StObject
+       with Alignment
   
   /**
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  @js.native
+  sealed trait mixed
+    extends StObject
+       with Alignment
+  
+  /**
     * Alignment to the right.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait right extends Alignment
+  sealed trait right
+    extends StObject
+       with Alignment
   
   /**
-    *
     * Unknown alignment.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait unknown extends Alignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Alignment with String] = js.native
-  /* "Centered" */ @js.native
-  object centered extends TopLevel[centered with String]
-  
-  /* "Justified" */ @js.native
-  object justified extends TopLevel[justified with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  sealed trait unknown
+    extends StObject
+       with Alignment
 }
-

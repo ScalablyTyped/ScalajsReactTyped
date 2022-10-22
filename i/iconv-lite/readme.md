@@ -1,7 +1,7 @@
 
 # Scala.js typings for iconv-lite
 
-Typings are for version 0.5.1
+Typings are for version 0.6.3
 
 ## Library description:
 Convert character encodings in pure javascript.
@@ -10,10 +10,10 @@ Convert character encodings in pure javascript.
 | ------------------ | :-------------: |
 | Full name          | iconv-lite |
 | Keywords           | iconv, convert, charset, icu |
-| # releases         | 7 |
-| # dependents       | 2060 |
-| # downloads        | 913383540 |
-| # stars            | 107 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9759079133333334E8 |
+| # stars            | 2780.0 |
 
 ## Links
 - [Homepage](https://github.com/ashtuchkin/iconv-lite)

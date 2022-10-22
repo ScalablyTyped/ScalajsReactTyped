@@ -3,21 +3,20 @@ package typingsJapgolly.winrtUwp.Windows.Storage.Search
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IIterable
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IMapView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables Windows Store apps to place content properties in the system index. */
-@JSGlobal("Windows.Storage.Search.ContentIndexer")
 @js.native
-abstract class ContentIndexer () extends js.Object {
-  /** Gets the version of the ContentIndexer . */
-  var revision: Double = js.native
+trait ContentIndexer extends StObject {
+  
   /**
     * Adds app-defined items with properties and content to the system index.
     * @param indexableContent The content properties to index.
     */
-  def addAsync(indexableContent: IIndexableContent): js.Any = js.native
+  def addAsync(indexableContent: IIndexableContent): Any = js.native
+  
   /**
     * Builds a query with the specified search filter and identifies which properties to retrieve.
     * @param searchFilter The AQS filter to apply.
@@ -25,7 +24,8 @@ abstract class ContentIndexer () extends js.Object {
     * @return The query.
     */
   def createQuery(searchFilter: String, propertiesToRetrieve: IIterable[String]): ContentIndexerQuery = js.native
-   /* unmapped return type */ /**
+  /* unmapped return type */
+  /**
     * Builds a query with the specified search filter, sort order, and identifies which properties to retrieve.
     * @param searchFilter The AQS filter.
     * @param propertiesToRetrieve The properties to retrieve, specified by their Windows canonical property names.
@@ -47,48 +47,41 @@ abstract class ContentIndexer () extends js.Object {
     sortOrder: IIterable[SortEntry],
     searchFilterLanguage: String
   ): ContentIndexerQuery = js.native
+  
   /**
     * Removes all app-defined items from the ContentIndexer .
     */
-  def deleteAllAsync(): js.Any = js.native
-   /* unmapped return type */ /**
+  def deleteAllAsync(): Any = js.native
+  
+  /* unmapped return type */
+  /**
     * Removes the specified app-defined item from the ContentIndexer .
     * @param contentId The identifier of the item to remove.
     */
-  def deleteAsync(contentId: String): js.Any = js.native
-   /* unmapped return type */ /**
+  def deleteAsync(contentId: String): Any = js.native
+  
+  /* unmapped return type */
+  /**
     * Removes the specified app-defined items from the ContentIndexer .
     * @param contentIds The identifier of the item to remove.
     */
-  def deleteMultipleAsync(contentIds: IIterable[String]): js.Any = js.native
-   /* unmapped return type */ /**
+  def deleteMultipleAsync(contentIds: IIterable[String]): Any = js.native
+  
+  /* unmapped return type */
+  /**
     * Gets content properties based on the given content identifier.
     * @param contentId The identifier for the content properties.
     * @param propertiesToRetrieve The retrieved properties, based on contentId.
     * @return When this method completes, it returns the retrieved properties as a map of key-value pairs.
     */
-  def retrievePropertiesAsync(contentId: String, propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+  def retrievePropertiesAsync(contentId: String, propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMapView[Any, Any]] = js.native
+  
+  /** Gets the version of the ContentIndexer . */
+  var revision: Double = js.native
+  
   /**
     * Updates app content and properties in the ContentIndexer .
     * @param indexableContent The content properties to update.
     */
-  def updateAsync(indexableContent: IIndexableContent): js.Any = js.native
+  def updateAsync(indexableContent: IIndexableContent): Any = js.native
 }
-
-/* static members */
-@JSGlobal("Windows.Storage.Search.ContentIndexer")
-@js.native
-object ContentIndexer extends js.Object {
-  /**
-    * Gets an existing per-app index or creates a new one, if necessary.
-    * @return The index.
-    */
-  def getIndexer(): ContentIndexer = js.native
-  /**
-    * Gets the per-app index with the specified name or creates a new one, if necessary.
-    * @param indexName The index name.
-    * @return The index.
-    */
-  def getIndexer(indexName: String): ContentIndexer = js.native
-}
-

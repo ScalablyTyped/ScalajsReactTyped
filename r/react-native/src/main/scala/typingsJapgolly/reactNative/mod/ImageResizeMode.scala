@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.cover
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.repeat
   - typingsJapgolly.reactNative.reactNativeStrings.center
 */
-trait ImageResizeMode extends js.Object
-
+trait ImageResizeMode extends StObject
 object ImageResizeMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.reactNative.reactNativeStrings.center = this.cast("center")
-  @scala.inline
-  def contain: typingsJapgolly.reactNative.reactNativeStrings.contain = this.cast("contain")
-  @scala.inline
-  def cover: typingsJapgolly.reactNative.reactNativeStrings.cover = this.cast("cover")
-  @scala.inline
-  def repeat: typingsJapgolly.reactNative.reactNativeStrings.repeat = this.cast("repeat")
-  @scala.inline
-  def stretch: typingsJapgolly.reactNative.reactNativeStrings.stretch = this.cast("stretch")
+  
+  inline def center: typingsJapgolly.reactNative.reactNativeStrings.center = "center".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.center]
+  
+  inline def contain: typingsJapgolly.reactNative.reactNativeStrings.contain = "contain".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.contain]
+  
+  inline def cover: typingsJapgolly.reactNative.reactNativeStrings.cover = "cover".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.cover]
+  
+  inline def repeat: typingsJapgolly.reactNative.reactNativeStrings.repeat = "repeat".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.repeat]
+  
+  inline def stretch: typingsJapgolly.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.stretch]
 }
-

@@ -1,34 +1,36 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgLoading
-  extends /**
-	 * Option for igLoading
-	 */
-/* optionName */ StringDictionary[js.Any] {
-  var cssClass: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
+  var cssClass: js.UndefOr[Any] = js.undefined
+  
   var includeVerticalOffset: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgLoading {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igLoading
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cssClass: js.Any = null,
-    includeVerticalOffset: js.UndefOr[Boolean] = js.undefined
-  ): IgLoading = {
+  
+  inline def apply(): IgLoading = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeVerticalOffset)) __obj.updateDynamic("includeVerticalOffset")(includeVerticalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLoading]
   }
+  
+  extension [Self <: IgLoading](x: Self) {
+    
+    inline def setCssClass(value: Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setIncludeVerticalOffset(value: Boolean): Self = StObject.set(x, "includeVerticalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeVerticalOffsetUndefined: Self = StObject.set(x, "includeVerticalOffset", js.undefined)
+  }
 }
-

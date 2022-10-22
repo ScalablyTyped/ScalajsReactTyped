@@ -1,55 +1,24 @@
 package typingsJapgolly.urllib
 
-import typingsJapgolly.urllib.mod.HttpMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urllibStrings {
-  @js.native
-  sealed trait CONNECT extends HttpMethod
   
   @js.native
-  sealed trait DELETE extends HttpMethod
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait HEAD extends HttpMethod
+  sealed trait stream extends StObject
+  inline def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
-  sealed trait OPTIONS extends HttpMethod
-  
-  @js.native
-  sealed trait PATCH extends HttpMethod
-  
-  @js.native
-  sealed trait POST extends HttpMethod
-  
-  @js.native
-  sealed trait PUT extends HttpMethod
-  
-  @js.native
-  sealed trait TRACE extends HttpMethod
-  
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }
-

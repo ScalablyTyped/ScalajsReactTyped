@@ -1,34 +1,36 @@
 package typingsJapgolly.hopscotch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hopscotchStrings {
-  @js.native
-  sealed trait bottom extends placementTypes
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait bottom
+    extends StObject
+       with placementTypes
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait left extends placementTypes
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait right extends placementTypes
+  sealed trait left
+    extends StObject
+       with placementTypes
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait top extends placementTypes
+  sealed trait right
+    extends StObject
+       with placementTypes
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  @js.native
+  sealed trait top
+    extends StObject
+       with placementTypes
+  inline def top: top = "top".asInstanceOf[top]
 }
-

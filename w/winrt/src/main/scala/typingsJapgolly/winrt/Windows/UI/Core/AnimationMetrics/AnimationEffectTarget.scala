@@ -1,137 +1,112 @@
 package typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AnimationEffectTarget extends js.Object
-
+sealed trait AnimationEffectTarget extends StObject
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffectTarget")
 @js.native
-object AnimationEffectTarget extends js.Object {
-  @js.native
-  sealed trait added extends AnimationEffectTarget
+object AnimationEffectTarget extends StObject {
   
   @js.native
-  sealed trait affected extends AnimationEffectTarget
+  sealed trait added
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait background extends AnimationEffectTarget
+  sealed trait affected
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait content extends AnimationEffectTarget
+  sealed trait background
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait deleted extends AnimationEffectTarget
+  sealed trait content
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait deselected extends AnimationEffectTarget
+  sealed trait deleted
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait dragSource extends AnimationEffectTarget
+  sealed trait deselected
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait hidden extends AnimationEffectTarget
+  sealed trait dragSource
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait incoming extends AnimationEffectTarget
+  sealed trait hidden
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait outgoing extends AnimationEffectTarget
+  sealed trait incoming
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait outline extends AnimationEffectTarget
+  sealed trait outgoing
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait primary extends AnimationEffectTarget
+  sealed trait outline
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait remaining extends AnimationEffectTarget
+  sealed trait primary
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait revealed extends AnimationEffectTarget
+  sealed trait remaining
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait rowIn extends AnimationEffectTarget
+  sealed trait revealed
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait rowOut extends AnimationEffectTarget
+  sealed trait rowIn
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait selected extends AnimationEffectTarget
+  sealed trait rowOut
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait selection extends AnimationEffectTarget
+  sealed trait selected
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait shown extends AnimationEffectTarget
+  sealed trait selection
+    extends StObject
+       with AnimationEffectTarget
   
   @js.native
-  sealed trait tapped extends AnimationEffectTarget
+  sealed trait shown
+    extends StObject
+       with AnimationEffectTarget
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AnimationEffectTarget with Double] = js.native
-  /* 1 */ @js.native
-  object added extends TopLevel[added with Double]
-  
-  /* 2 */ @js.native
-  object affected extends TopLevel[affected with Double]
-  
-  /* 3 */ @js.native
-  object background extends TopLevel[background with Double]
-  
-  /* 4 */ @js.native
-  object content extends TopLevel[content with Double]
-  
-  /* 5 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 6 */ @js.native
-  object deselected extends TopLevel[deselected with Double]
-  
-  /* 7 */ @js.native
-  object dragSource extends TopLevel[dragSource with Double]
-  
-  /* 8 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 9 */ @js.native
-  object incoming extends TopLevel[incoming with Double]
-  
-  /* 10 */ @js.native
-  object outgoing extends TopLevel[outgoing with Double]
-  
-  /* 11 */ @js.native
-  object outline extends TopLevel[outline with Double]
-  
-  /* 0 */ @js.native
-  object primary extends TopLevel[primary with Double]
-  
-  /* 12 */ @js.native
-  object remaining extends TopLevel[remaining with Double]
-  
-  /* 13 */ @js.native
-  object revealed extends TopLevel[revealed with Double]
-  
-  /* 14 */ @js.native
-  object rowIn extends TopLevel[rowIn with Double]
-  
-  /* 15 */ @js.native
-  object rowOut extends TopLevel[rowOut with Double]
-  
-  /* 16 */ @js.native
-  object selected extends TopLevel[selected with Double]
-  
-  /* 17 */ @js.native
-  object selection extends TopLevel[selection with Double]
-  
-  /* 18 */ @js.native
-  object shown extends TopLevel[shown with Double]
-  
-  /* 19 */ @js.native
-  object tapped extends TopLevel[tapped with Double]
-  
+  @js.native
+  sealed trait tapped
+    extends StObject
+       with AnimationEffectTarget
 }
-

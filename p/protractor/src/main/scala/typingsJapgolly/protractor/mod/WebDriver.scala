@@ -1,13 +1,13 @@
 package typingsJapgolly.protractor.mod
 
 import typingsJapgolly.seleniumWebdriver.httpMod.Executor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "WebDriver")
 @js.native
-class WebDriver protected ()
+open class WebDriver protected ()
   extends typingsJapgolly.seleniumWebdriver.mod.WebDriver {
   def this(session: js.Promise[typingsJapgolly.seleniumWebdriver.mod.Session], executor: Executor) = this()
   // region Constructors
@@ -19,11 +19,13 @@ class WebDriver protected ()
     */
   def this(session: typingsJapgolly.seleniumWebdriver.mod.Session, executor: Executor) = this()
 }
-
 /* static members */
-@JSImport("protractor", "WebDriver")
-@js.native
-object WebDriver extends js.Object {
+object WebDriver {
+  
+  @JSImport("protractor", "WebDriver")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // endregion
   // region StaticMethods
   /**
@@ -85,6 +87,5 @@ object WebDriver extends js.Object {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  def createSession(var_args: js.Any*): typingsJapgolly.seleniumWebdriver.mod.WebDriver = js.native
+  inline def createSession(var_args: Any*): typingsJapgolly.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typingsJapgolly.seleniumWebdriver.mod.WebDriver]
 }
-

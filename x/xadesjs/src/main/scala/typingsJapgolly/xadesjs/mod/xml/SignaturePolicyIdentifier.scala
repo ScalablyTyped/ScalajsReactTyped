@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.SignaturePolicyIdentifier")
 @js.native
-class SignaturePolicyIdentifier ()
-  extends typingsJapgolly.xadesjs.xmlMod.SignaturePolicyIdentifier
-
+open class SignaturePolicyIdentifier ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.SignaturePolicyIdentifier {
+  def this(properties: js.Object) = this()
+}

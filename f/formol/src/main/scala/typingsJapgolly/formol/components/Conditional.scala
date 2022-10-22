@@ -1,49 +1,36 @@
 package typingsJapgolly.formol.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.formol.mod.ConditionalProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Conditional {
-  def apply(
-    context: js.Any = null,
-    readOnly: (js.Function1[js.Any, Boolean]) | Boolean = null,
-    show: (js.Function1[js.Any, Boolean]) | Boolean = null,
-    value: js.Any => CallbackTo[js.Any] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ConditionalProps[js.Any], 
-    typingsJapgolly.formol.mod.Conditional, 
-    Unit, 
-    ConditionalProps[js.Any]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1((t0: js.Any) => value(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.formol.mod.ConditionalProps[js.Any], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.formol.mod.Conditional](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.formol.mod.ConditionalProps[js.Any]])(children: _*)
-  }
   @JSImport("formol", "Conditional")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def context(value: Any): this.type = set("context", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: (js.Function1[Any, Boolean]) | Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def readOnlyFunction1(value: Any => Boolean): this.type = set("readOnly", js.Any.fromFunction1(value))
+    
+    inline def show(value: (js.Function1[Any, Boolean]) | Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def showFunction1(value: Any => Boolean): this.type = set("show", js.Any.fromFunction1(value))
+    
+    inline def value(value: Any => Any): this.type = set("value", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make(companion: Conditional.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ConditionalProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,29 +1,31 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QuickDiffProvider extends js.Object {
+trait QuickDiffProvider extends StObject {
+  
   /**
-  		 * Provide a [uri](#Uri) to the original resource of any given resource uri.
-  		 *
-  		 * @param uri The uri of the resource open in a text editor.
-  		 * @param token A cancellation token.
-  		 * @return A thenable that resolves to uri of the matching original resource.
-  		 */
+    * Provide a {@link Uri} to the original resource of any given resource uri.
+    *
+    * @param uri The uri of the resource open in a text editor.
+    * @param token A cancellation token.
+    * @return A thenable that resolves to uri of the matching original resource.
+    */
   var provideOriginalResource: js.UndefOr[js.Function2[/* uri */ Uri, /* token */ CancellationToken, ProviderResult[Uri]]] = js.undefined
 }
-
 object QuickDiffProvider {
-  @scala.inline
-  def apply(
-    provideOriginalResource: (/* uri */ Uri, /* token */ CancellationToken) => CallbackTo[ProviderResult[Uri]] = null
-  ): QuickDiffProvider = {
+  
+  inline def apply(): QuickDiffProvider = {
     val __obj = js.Dynamic.literal()
-    if (provideOriginalResource != null) __obj.updateDynamic("provideOriginalResource")(js.Any.fromFunction2((t0: /* uri */ typingsJapgolly.vscode.mod.Uri, t1: /* token */ typingsJapgolly.vscode.mod.CancellationToken) => provideOriginalResource(t0, t1).runNow()))
     __obj.asInstanceOf[QuickDiffProvider]
   }
+  
+  extension [Self <: QuickDiffProvider](x: Self) {
+    
+    inline def setProvideOriginalResource(value: (/* uri */ Uri, /* token */ CancellationToken) => ProviderResult[Uri]): Self = StObject.set(x, "provideOriginalResource", js.Any.fromFunction2(value))
+    
+    inline def setProvideOriginalResourceUndefined: Self = StObject.set(x, "provideOriginalResource", js.undefined)
+  }
 }
-

@@ -1,22 +1,25 @@
 package typingsJapgolly.vue2Hammer
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.vue.pluginMod.PluginObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue2-hammer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait VueHammer
-    extends PluginObject[js.Any] {
-    var config: js.Any = js.native
+object mod {
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PluginObject<any> * / any */ trait VueHammer extends StObject {
+    
+    var config: Any
   }
-  
-  @js.native
-  object VueHammer extends TopLevel[VueHammer]
-  
+  object VueHammer {
+    
+    @JSImport("vue2-hammer", "VueHammer")
+    @js.native
+    val ^ : VueHammer = js.native
+    
+    extension [Self <: VueHammer](x: Self) {
+      
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

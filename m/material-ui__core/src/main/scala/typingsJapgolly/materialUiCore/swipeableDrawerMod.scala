@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.materialUiCore.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/SwipeableDrawer", JSImport.Namespace)
-@js.native
-object swipeableDrawerMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[SwipeableDrawerProps, ComponentState, js.Any] {
-    def this(props: SwipeableDrawerProps) = this()
-    def this(props: SwipeableDrawerProps, context: js.Any) = this()
-  }
+object swipeableDrawerMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Drawers](https://mui.com/components/drawers/)
+    *
+    * API:
+    *
+    * - [SwipeableDrawer API](https://mui.com/api/swipeable-drawer/)
+    * - inherits [Drawer API](https://mui.com/api/drawer/)
+    */
+  @JSImport("@material-ui/core/SwipeableDrawer", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[SwipeableDrawerProps]]
+  val default: ComponentType[SwipeableDrawerProps] = js.native
   
+  type _To = ComponentType[SwipeableDrawerProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `swipeableDrawerMod.foo` */
+  override def _to: ComponentType[SwipeableDrawerProps] = default
 }
-

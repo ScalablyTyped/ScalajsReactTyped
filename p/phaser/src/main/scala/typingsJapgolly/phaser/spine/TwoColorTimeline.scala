@@ -1,15 +1,17 @@
 package typingsJapgolly.phaser.spine
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.TwoColorTimeline")
-@js.native
-class TwoColorTimeline protected () extends CurveTimeline {
-  def this(frameCount: Double) = this()
-  var frames: ArrayLike[Double] = js.native
-  var slotIndex: Double = js.native
+trait TwoColorTimeline
+  extends StObject
+     with CurveTimeline {
+  
+  var frames: ArrayLike[Double]
+  
   def setFrame(
     frameIndex: Double,
     time: Double,
@@ -20,28 +22,36 @@ class TwoColorTimeline protected () extends CurveTimeline {
     r2: Double,
     g2: Double,
     b2: Double
-  ): Unit = js.native
+  ): Unit
+  
+  var slotIndex: Double
 }
-
-/* static members */
-@JSGlobal("spine.TwoColorTimeline")
-@js.native
-object TwoColorTimeline extends js.Object {
-  var A: Double = js.native
-  var B: Double = js.native
-  var B2: Double = js.native
-  var ENTRIES: Double = js.native
-  var G: Double = js.native
-  var G2: Double = js.native
-  var PREV_A: Double = js.native
-  var PREV_B: Double = js.native
-  var PREV_B2: Double = js.native
-  var PREV_G: Double = js.native
-  var PREV_G2: Double = js.native
-  var PREV_R: Double = js.native
-  var PREV_R2: Double = js.native
-  var PREV_TIME: Double = js.native
-  var R: Double = js.native
-  var R2: Double = js.native
+object TwoColorTimeline {
+  
+  inline def apply(
+    apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Callback,
+    curves: Any,
+    frames: ArrayLike[Double],
+    getCurvePercent: (Double, Double) => Double,
+    getCurveType: Double => Double,
+    getFrameCount: CallbackTo[Double],
+    getPropertyId: CallbackTo[Double],
+    setCurve: (Double, Double, Double, Double, Double) => Callback,
+    setFrame: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => Callback,
+    setLinear: Double => Callback,
+    setStepped: Double => Callback,
+    slotIndex: Double
+  ): TwoColorTimeline = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7((t0: Skeleton, t1: Double, t2: Double, t3: js.Array[Event], t4: Double, t5: MixBlend, t6: MixDirection) => (apply(t0, t1, t2, t3, t4, t5, t6)).runNow()), curves = curves.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], getCurvePercent = js.Any.fromFunction2(getCurvePercent), getCurveType = js.Any.fromFunction1(getCurveType), getFrameCount = getFrameCount.toJsFn, getPropertyId = getPropertyId.toJsFn, setCurve = js.Any.fromFunction5((t0: Double, t1: Double, t2: Double, t3: Double, t4: Double) => (setCurve(t0, t1, t2, t3, t4)).runNow()), setFrame = js.Any.fromFunction9((t0: Double, t1: Double, t2: Double, t3: Double, t4: Double, t5: Double, t6: Double, t7: Double, t8: Double) => (setFrame(t0, t1, t2, t3, t4, t5, t6, t7, t8)).runNow()), setLinear = js.Any.fromFunction1((t0: Double) => setLinear(t0).runNow()), setStepped = js.Any.fromFunction1((t0: Double) => setStepped(t0).runNow()), slotIndex = slotIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TwoColorTimeline]
+  }
+  
+  extension [Self <: TwoColorTimeline](x: Self) {
+    
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    
+    inline def setSetFrame(value: (Double, Double, Double, Double, Double, Double, Double, Double, Double) => Callback): Self = StObject.set(x, "setFrame", js.Any.fromFunction9((t0: Double, t1: Double, t2: Double, t3: Double, t4: Double, t5: Double, t6: Double, t7: Double, t8: Double) => (value(t0, t1, t2, t3, t4, t5, t6, t7, t8)).runNow()))
+    
+    inline def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
+  }
 }
-

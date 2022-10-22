@@ -1,24 +1,26 @@
 package typingsJapgolly.jasmineFixture
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Affixes the given jquery selectors into the element and will be removed after each spec
     * @param selector The JQuery selector to be added to the dom
     */
   def affix(selector: String): JQuery
 }
-
 object JQuery {
-  @scala.inline
-  def apply(affix: String => CallbackTo[JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affix")(js.Any.fromFunction1((t0: java.lang.String) => affix(t0).runNow()))
+  
+  inline def apply(affix: String => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(affix = js.Any.fromFunction1(affix))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setAffix(value: String => JQuery): Self = StObject.set(x, "affix", js.Any.fromFunction1(value))
+  }
 }
-

@@ -11,14 +11,11 @@ Returns a promise from a node-style callback function.
 | Full name          | @protobufjs/aspromise |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 55661655 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7751349333333332E7 |
+| # stars            | 8342.0 |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/protobuf.js#readme)
-- [Bugs](https://github.com/dcodeIO/protobuf.js/issues)
-- [Repository](https://github.com/dcodeIO/protobuf.js)
 - [Npm](https://www.npmjs.com/package/%40protobufjs%2Faspromise)
     
 

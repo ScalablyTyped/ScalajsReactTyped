@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 按键类型
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
   */
-trait PlusKeyKeyType extends js.Object {
+trait PlusKeyKeyType extends StObject {
+  
   /**
     * 设备“返回”按钮按键事件
     * 如果需要改变默认“返回”按钮的处理逻辑，则可通过plus.key.addEventListener来注册监听"backbutton"事件。
@@ -17,30 +18,34 @@ trait PlusKeyKeyType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var backbutton: js.UndefOr[String] = js.undefined
+  
   /**
     * 键按下事件
     * 如果需要改变默认键按下的处理逻辑，则可通过plus.key.addEventListener来注册监听"keydown"事件。
-    * 	可通过回调函数中KeyEvent对象的keyCode来获取按下的键值。
+    *     可通过回调函数中KeyEvent对象的keyCode来获取按下的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var keydown: js.UndefOr[String] = js.undefined
+  
   /**
     * 键松开事件
     * 如果需要改变默认键松开的处理逻辑，则可通过plus.key.addEventListener来注册监听"keyup"事件。
-    * 	可通过回调函数中KeyEvent对象的keyCode来获取松开的键值。
+    *     可通过回调函数中KeyEvent对象的keyCode来获取松开的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var keyup: js.UndefOr[String] = js.undefined
+  
   /**
     * 长按键事件
     * 如果需要改变默认长按键的处理逻辑，则可通过plus.key.addEventListener来注册监听"longpressed"事件。
-    * 	长按键时会多次触发回调函数，通过回调函数中KeyEvent对象的keyCode来获取长按的键值。
+    *     长按键时会多次触发回调函数，通过回调函数中KeyEvent对象的keyCode来获取长按的键值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var longpressed: js.UndefOr[String] = js.undefined
+  
   /**
     * 设备“菜单”按钮按键事件
     * 如果需要改变默认“菜单”按钮的处理逻辑，则可通过plus.key.addEventListener来注册监听"menubutton"事件。
@@ -48,6 +53,7 @@ trait PlusKeyKeyType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var menubutton: js.UndefOr[String] = js.undefined
+  
   /**
     * 设备“搜索”按钮按键事件
     * 如果需要改变默认“搜索”按钮的处理逻辑，则可通过plus.key.addEventListener来注册监听"searchbutton"事件。
@@ -55,6 +61,7 @@ trait PlusKeyKeyType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var searchbutton: js.UndefOr[String] = js.undefined
+  
   /**
     * 设备“音量-”按钮按键事件
     * 如果需要改变默认“音量-”按钮的处理逻辑，则可通过plus.key.addEventListener来注册监听"volumedownbutton"事件。
@@ -62,6 +69,7 @@ trait PlusKeyKeyType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   var volumedownbutton: js.UndefOr[String] = js.undefined
+  
   /**
     * 设备“音量+”按钮按键事件
     * 如果需要改变默认“音量+”按钮的处理逻辑，则可通过plus.key.addEventListener来注册监听"volumeupbutton"事件。
@@ -70,29 +78,45 @@ trait PlusKeyKeyType extends js.Object {
     */
   var volumeupbutton: js.UndefOr[String] = js.undefined
 }
-
 object PlusKeyKeyType {
-  @scala.inline
-  def apply(
-    backbutton: String = null,
-    keydown: String = null,
-    keyup: String = null,
-    longpressed: String = null,
-    menubutton: String = null,
-    searchbutton: String = null,
-    volumedownbutton: String = null,
-    volumeupbutton: String = null
-  ): PlusKeyKeyType = {
+  
+  inline def apply(): PlusKeyKeyType = {
     val __obj = js.Dynamic.literal()
-    if (backbutton != null) __obj.updateDynamic("backbutton")(backbutton.asInstanceOf[js.Any])
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown.asInstanceOf[js.Any])
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup.asInstanceOf[js.Any])
-    if (longpressed != null) __obj.updateDynamic("longpressed")(longpressed.asInstanceOf[js.Any])
-    if (menubutton != null) __obj.updateDynamic("menubutton")(menubutton.asInstanceOf[js.Any])
-    if (searchbutton != null) __obj.updateDynamic("searchbutton")(searchbutton.asInstanceOf[js.Any])
-    if (volumedownbutton != null) __obj.updateDynamic("volumedownbutton")(volumedownbutton.asInstanceOf[js.Any])
-    if (volumeupbutton != null) __obj.updateDynamic("volumeupbutton")(volumeupbutton.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusKeyKeyType]
   }
+  
+  extension [Self <: PlusKeyKeyType](x: Self) {
+    
+    inline def setBackbutton(value: String): Self = StObject.set(x, "backbutton", value.asInstanceOf[js.Any])
+    
+    inline def setBackbuttonUndefined: Self = StObject.set(x, "backbutton", js.undefined)
+    
+    inline def setKeydown(value: String): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
+    
+    inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
+    
+    inline def setKeyup(value: String): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
+    
+    inline def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
+    
+    inline def setLongpressed(value: String): Self = StObject.set(x, "longpressed", value.asInstanceOf[js.Any])
+    
+    inline def setLongpressedUndefined: Self = StObject.set(x, "longpressed", js.undefined)
+    
+    inline def setMenubutton(value: String): Self = StObject.set(x, "menubutton", value.asInstanceOf[js.Any])
+    
+    inline def setMenubuttonUndefined: Self = StObject.set(x, "menubutton", js.undefined)
+    
+    inline def setSearchbutton(value: String): Self = StObject.set(x, "searchbutton", value.asInstanceOf[js.Any])
+    
+    inline def setSearchbuttonUndefined: Self = StObject.set(x, "searchbutton", js.undefined)
+    
+    inline def setVolumedownbutton(value: String): Self = StObject.set(x, "volumedownbutton", value.asInstanceOf[js.Any])
+    
+    inline def setVolumedownbuttonUndefined: Self = StObject.set(x, "volumedownbutton", js.undefined)
+    
+    inline def setVolumeupbutton(value: String): Self = StObject.set(x, "volumeupbutton", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeupbuttonUndefined: Self = StObject.set(x, "volumeupbutton", js.undefined)
+  }
 }
-

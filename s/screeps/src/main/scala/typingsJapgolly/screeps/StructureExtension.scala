@@ -1,9 +1,10 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.screeps.anon.StoreRESOURCEENERGYfalse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains energy which can be spent on spawning bigger creeps. Extensions can
@@ -11,26 +12,57 @@ import scala.scalajs.js.annotation._
   * of distance.
   */
 trait StructureExtension
-  extends OwnedStructure[STRUCTURE_EXTENSION]
+  extends StObject
+     with OwnedStructure[STRUCTURE_EXTENSION]
      with AnyOwnedStructure
      with AnyStoreStructure {
+  
   /**
     * The amount of energy containing in the extension.
     * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   var energy: Double
+  
   /**
     * The total amount of energy the extension can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   var energyCapacity: Double
+  
   /**
     * A Store object that contains cargo of this structure.
     */
   var store: StoreRESOURCEENERGYfalse
 }
-
-@JSGlobal("StructureExtension")
-@js.native
-object StructureExtension extends TopLevel[StructureExtensionConstructor]
-
+object StructureExtension {
+  
+  inline def apply(
+    destroy: CallbackTo[ScreepsReturnCode],
+    effects: js.Array[RoomObjectEffect],
+    energy: Double,
+    energyCapacity: Double,
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructureExtension],
+    isActive: CallbackTo[Boolean],
+    my: Boolean,
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: T extends screeps.STRUCTURE_CONTROLLER ? screeps.Owner | undefined : screeps.Owner */ js.Any,
+    pos: RoomPosition,
+    room: Room,
+    store: StoreRESOURCEENERGYfalse,
+    structureType: STRUCTURE_EXTENSION
+  ): StructureExtension = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn, effects = effects.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], energyCapacity = energyCapacity.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.toJsFn, my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructureExtension]
+  }
+  
+  extension [Self <: StructureExtension](x: Self) {
+    
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    
+    inline def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setStore(value: StoreRESOURCEENERGYfalse): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,35 +1,50 @@
 package typingsJapgolly.foundation.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/tabs.html
-trait TabOptions extends js.Object {
+trait TabOptions extends StObject {
+  
   var active_class: js.UndefOr[String] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var deep_linking: js.UndefOr[Boolean] = js.undefined
+  
   var is_hover: js.UndefOr[Boolean] = js.undefined
+  
   var scroll_to_content: js.UndefOr[Boolean] = js.undefined
 }
-
 object TabOptions {
-  @scala.inline
-  def apply(
-    active_class: String = null,
-    callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    deep_linking: js.UndefOr[Boolean] = js.undefined,
-    is_hover: js.UndefOr[Boolean] = js.undefined,
-    scroll_to_content: js.UndefOr[Boolean] = js.undefined
-  ): TabOptions = {
+  
+  inline def apply(): TabOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (!js.isUndefined(deep_linking)) __obj.updateDynamic("deep_linking")(deep_linking.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll_to_content)) __obj.updateDynamic("scroll_to_content")(scroll_to_content.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabOptions]
   }
+  
+  extension [Self <: TabOptions](x: Self) {
+    
+    inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
+    
+    inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setDeep_linking(value: Boolean): Self = StObject.set(x, "deep_linking", value.asInstanceOf[js.Any])
+    
+    inline def setDeep_linkingUndefined: Self = StObject.set(x, "deep_linking", js.undefined)
+    
+    inline def setIs_hover(value: Boolean): Self = StObject.set(x, "is_hover", value.asInstanceOf[js.Any])
+    
+    inline def setIs_hoverUndefined: Self = StObject.set(x, "is_hover", js.undefined)
+    
+    inline def setScroll_to_content(value: Boolean): Self = StObject.set(x, "scroll_to_content", value.asInstanceOf[js.Any])
+    
+    inline def setScroll_to_contentUndefined: Self = StObject.set(x, "scroll_to_content", js.undefined)
+  }
 }
-

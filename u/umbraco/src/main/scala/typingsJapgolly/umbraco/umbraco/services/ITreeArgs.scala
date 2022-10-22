@@ -1,23 +1,31 @@
 package typingsJapgolly.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tree args
   */
-trait ITreeArgs extends js.Object {
+trait ITreeArgs extends StObject {
+  
   var cacheKey: js.UndefOr[String] = js.undefined
+  
   var section: String
 }
-
 object ITreeArgs {
-  @scala.inline
-  def apply(section: String, cacheKey: String = null): ITreeArgs = {
+  
+  inline def apply(section: String): ITreeArgs = {
     val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
-    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITreeArgs]
   }
+  
+  extension [Self <: ITreeArgs](x: Self) {
+    
+    inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    
+    inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+    
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+  }
 }
-

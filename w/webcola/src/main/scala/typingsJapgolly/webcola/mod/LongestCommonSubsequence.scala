@@ -1,20 +1,24 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "LongestCommonSubsequence")
 @js.native
-class LongestCommonSubsequence[T] protected ()
-  extends typingsJapgolly.webcola.gridrouterMod.LongestCommonSubsequence[T] {
+open class LongestCommonSubsequence[T] protected ()
+  extends typingsJapgolly.webcola.distSrcGridrouterMod.LongestCommonSubsequence[T] {
   def this(s: js.Array[T], t: js.Array[T]) = this()
 }
-
 /* static members */
-@JSImport("webcola", "LongestCommonSubsequence")
-@js.native
-object LongestCommonSubsequence extends js.Object {
-  var findMatch: js.Any = js.native
+object LongestCommonSubsequence {
+  
+  @JSImport("webcola", "LongestCommonSubsequence")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("webcola", "LongestCommonSubsequence.findMatch")
+  @js.native
+  def findMatch: Any = js.native
+  inline def findMatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findMatch")(x.asInstanceOf[js.Any])
 }
-

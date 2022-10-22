@@ -1,9 +1,14 @@
-package typingsJapgolly.vastClient
+package typingsJapgolly.vastClient.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.XMLDocument
+import typingsJapgolly.vastClient.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type VastAdChildAttributes = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+inline def UrlHandlerCbType(err: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlHandlerCbType")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def UrlHandlerCbType(err: Null, xml: XMLDocument): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlHandlerCbType")(err.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+type VastAdChildAttributes = StringDictionary[Any]

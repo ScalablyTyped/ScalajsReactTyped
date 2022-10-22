@@ -1,31 +1,40 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.KeyBindings")
 @js.native
-class KeyBindings protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Context: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.KeyBindings_typekey")
-  var WordDotKeyBindings_typekey: KeyBindings = js.native
+trait KeyBindings extends StObject {
+  
   def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double): KeyBinding = js.native
-  def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
+  def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double, KeyCode2: Any, CommandParameter: Any): KeyBinding = js.native
   def Add(
     KeyCategory: WdKeyCategory,
     Command: String,
     KeyCode: Double,
-    KeyCode2: js.Any,
-    CommandParameter: js.Any
+    KeyCode2: Unit,
+    CommandParameter: Any
   ): KeyBinding = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   def ClearAll(): Unit = js.native
+  
+  val Context: Any = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Item(Index: Double): KeyBinding = js.native
+  
   def Key(KeyCode: Double): KeyBinding = js.native
-  def Key(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def Key(KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.KeyBindings_typekey")
+  var WordDotKeyBindings_typekey: KeyBindings = js.native
 }
-

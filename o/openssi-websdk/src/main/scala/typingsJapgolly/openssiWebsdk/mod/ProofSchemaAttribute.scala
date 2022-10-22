@@ -1,19 +1,26 @@
 package typingsJapgolly.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProofSchemaAttribute extends js.Object {
+trait ProofSchemaAttribute extends StObject {
+  
   var restrictions: js.UndefOr[js.Array[Restriction]] = js.undefined
 }
-
 object ProofSchemaAttribute {
-  @scala.inline
-  def apply(restrictions: js.Array[Restriction] = null): ProofSchemaAttribute = {
+  
+  inline def apply(): ProofSchemaAttribute = {
     val __obj = js.Dynamic.literal()
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProofSchemaAttribute]
   }
+  
+  extension [Self <: ProofSchemaAttribute](x: Self) {
+    
+    inline def setRestrictions(value: js.Array[Restriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    
+    inline def setRestrictionsVarargs(value: Restriction*): Self = StObject.set(x, "restrictions", js.Array(value*))
+  }
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "DigestMethod")
 @js.native
-class DigestMethod ()
-  extends typingsJapgolly.xmldsigjs.digestMethodMod.DigestMethod
-
+open class DigestMethod ()
+  extends typingsJapgolly.xmldsigjs.buildTypesXmlMod.DigestMethod {
+  def this(hashNamespace: String) = this()
+}

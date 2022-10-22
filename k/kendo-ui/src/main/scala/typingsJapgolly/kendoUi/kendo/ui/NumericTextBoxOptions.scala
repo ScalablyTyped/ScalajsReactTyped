@@ -1,70 +1,153 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NumericTextBoxOptions extends js.Object {
+trait NumericTextBoxOptions
+  extends StObject
+     with AllEditorOptions {
+  
   var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.undefined
+  
   var culture: js.UndefOr[String] = js.undefined
+  
   var decimals: js.UndefOr[Double] = js.undefined
+  
   var downArrowText: js.UndefOr[String] = js.undefined
+  
   var factor: js.UndefOr[Double] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
+  var label: js.UndefOr[String | js.Function | NumericTextBoxLabel] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
+  
   var restrictDecimals: js.UndefOr[Boolean] = js.undefined
+  
   var round: js.UndefOr[Boolean] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
+  
+  var selectOnFocus: js.UndefOr[Boolean] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
+  
   var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.undefined
+  
   var spinners: js.UndefOr[Boolean] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
+  
   var upArrowText: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object NumericTextBoxOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ NumericTextBoxChangeEvent => Callback = null,
-    culture: String = null,
-    decimals: Int | Double = null,
-    downArrowText: String = null,
-    factor: Int | Double = null,
-    format: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    name: String = null,
-    placeholder: String = null,
-    restrictDecimals: js.UndefOr[Boolean] = js.undefined,
-    round: js.UndefOr[Boolean] = js.undefined,
-    spin: /* e */ NumericTextBoxSpinEvent => Callback = null,
-    spinners: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
-    upArrowText: String = null,
-    value: Int | Double = null
-  ): NumericTextBoxOptions = {
+  
+  inline def apply(): NumericTextBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.NumericTextBoxChangeEvent) => change(t0).runNow()))
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (downArrowText != null) __obj.updateDynamic("downArrowText")(downArrowText.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictDecimals)) __obj.updateDynamic("restrictDecimals")(restrictDecimals.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.NumericTextBoxSpinEvent) => spin(t0).runNow()))
-    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (upArrowText != null) __obj.updateDynamic("upArrowText")(upArrowText.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericTextBoxOptions]
   }
+  
+  extension [Self <: NumericTextBoxOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ NumericTextBoxChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ NumericTextBoxChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setDownArrowText(value: String): Self = StObject.set(x, "downArrowText", value.asInstanceOf[js.Any])
+    
+    inline def setDownArrowTextUndefined: Self = StObject.set(x, "downArrowText", js.undefined)
+    
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLabel(value: String | js.Function | NumericTextBoxLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setRestrictDecimals(value: Boolean): Self = StObject.set(x, "restrictDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictDecimalsUndefined: Self = StObject.set(x, "restrictDecimals", js.undefined)
+    
+    inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
+    inline def setSelectOnFocus(value: Boolean): Self = StObject.set(x, "selectOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnFocusUndefined: Self = StObject.set(x, "selectOnFocus", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSpin(value: /* e */ NumericTextBoxSpinEvent => Callback): Self = StObject.set(x, "spin", js.Any.fromFunction1((t0: /* e */ NumericTextBoxSpinEvent) => value(t0).runNow()))
+    
+    inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+    
+    inline def setSpinners(value: Boolean): Self = StObject.set(x, "spinners", value.asInstanceOf[js.Any])
+    
+    inline def setSpinnersUndefined: Self = StObject.set(x, "spinners", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setUpArrowText(value: String): Self = StObject.set(x, "upArrowText", value.asInstanceOf[js.Any])
+    
+    inline def setUpArrowTextUndefined: Self = StObject.set(x, "upArrowText", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

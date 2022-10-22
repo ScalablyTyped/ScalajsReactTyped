@@ -4,154 +4,226 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.senchaTouch.Ext.Array
 import typingsJapgolly.senchaTouch.Ext.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IComponent extends IContainer {
+trait IComponent
+  extends StObject
+     with IContainer {
+  
   /** [Config Option] (Boolean) */
   var autoSize: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var fitSurface: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns the value of autoSize
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getAutoSize: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of background
-  		* @returns Object
-  		*/
-  var getBackground: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getBackground: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of cls
-  		* @returns String
-  		*/
+    * @returns String
+    */
   @JSName("getCls")
   var getCls_IComponent: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of fitSurface
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getFitSurface: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of gradients
-  		* @returns Object[]
-  		*/
+    * @returns Object[]
+    */
   var getGradients: js.UndefOr[js.Function0[Array]] = js.undefined
+  
   /** [Method] Returns the value of resizeHandler
-  		* @returns Function
-  		*/
-  var getResizeHandler: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Function
+    */
+  var getResizeHandler: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of sprites
-  		* @returns Object
-  		*/
-  var getSprites: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getSprites: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Get a surface by the given id or create one if it doesn t exist
-  		* @param id String
-  		* @returns Ext.draw.Surface
-  		*/
+    * @param id String
+    * @returns Ext.draw.Surface
+    */
   var getSurface: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], ISurface]] = js.undefined
+  
   /** [Method] Returns the value of viewBox
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getViewBox: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Config Option] (Object[]) */
   var gradients: js.UndefOr[Array] = js.undefined
+  
   /** [Method] Place water mark after resize  */
   var onPlaceWatermark: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Render all the surfaces in the component  */
   var renderFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Function) */
-  var resizeHandler: js.UndefOr[js.Any] = js.undefined
+  var resizeHandler: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Sets the value of autoSize
-  		* @param autoSize Boolean The new value.
-  		*/
+    * @param autoSize Boolean The new value.
+    */
   var setAutoSize: js.UndefOr[js.Function1[/* autoSize */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of background
-  		* @param background Object The new value.
-  		*/
-  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param background Object The new value.
+    */
+  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of cls
-  		* @param cls String The new value.
-  		*/
+    * @param cls String The new value.
+    */
   @JSName("setCls")
   var setCls_IComponent: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of fitSurface
-  		* @param fitSurface Boolean The new value.
-  		*/
+    * @param fitSurface Boolean The new value.
+    */
   var setFitSurface: js.UndefOr[js.Function1[/* fitSurface */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of gradients
-  		* @param gradients Object[] The new value.
-  		*/
+    * @param gradients Object[] The new value.
+    */
   var setGradients: js.UndefOr[js.Function1[/* gradients */ js.UndefOr[Array], Unit]] = js.undefined
+  
   /** [Method] Sets the value of resizeHandler
-  		* @param resizeHandler Function The new value.
-  		*/
-  var setResizeHandler: js.UndefOr[js.Function1[/* resizeHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param resizeHandler Function The new value.
+    */
+  var setResizeHandler: js.UndefOr[js.Function1[/* resizeHandler */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of sprites
-  		* @param sprites Object The new value.
-  		*/
-  var setSprites: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param sprites Object The new value.
+    */
+  var setSprites: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of viewBox
-  		* @param viewBox Boolean The new value.
-  		*/
+    * @param viewBox Boolean The new value.
+    */
   var setViewBox: js.UndefOr[js.Function1[/* viewBox */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var viewBox: js.UndefOr[Boolean] = js.undefined
 }
-
 object IComponent {
-  @scala.inline
-  def apply(
-    IContainer: IContainer = null,
-    autoSize: js.UndefOr[Boolean] = js.undefined,
-    fitSurface: js.UndefOr[Boolean] = js.undefined,
-    getAutoSize: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getBackground: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getCls: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getFitSurface: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getGradients: js.UndefOr[CallbackTo[Array]] = js.undefined,
-    getResizeHandler: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getSprites: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getSurface: /* id */ js.UndefOr[String] => CallbackTo[ISurface] = null,
-    getViewBox: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    gradients: Array = null,
-    onPlaceWatermark: js.UndefOr[Callback] = js.undefined,
-    renderFrame: js.UndefOr[Callback] = js.undefined,
-    resizeHandler: js.Any = null,
-    setAutoSize: /* autoSize */ js.UndefOr[Boolean] => Callback = null,
-    setBackground: /* background */ js.UndefOr[js.Any] => Callback = null,
-    setCls: /* cls */ js.UndefOr[String] => Callback = null,
-    setFitSurface: /* fitSurface */ js.UndefOr[Boolean] => Callback = null,
-    setGradients: /* gradients */ js.UndefOr[Array] => Callback = null,
-    setResizeHandler: /* resizeHandler */ js.UndefOr[js.Any] => Callback = null,
-    setSprites: /* sprites */ js.UndefOr[js.Any] => Callback = null,
-    setViewBox: /* viewBox */ js.UndefOr[Boolean] => Callback = null,
-    viewBox: js.UndefOr[Boolean] = js.undefined
-  ): IComponent = {
+  
+  inline def apply(): IComponent = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitSurface)) __obj.updateDynamic("fitSurface")(fitSurface.asInstanceOf[js.Any])
-    getAutoSize.foreach(p => __obj.updateDynamic("getAutoSize")(p.toJsFn))
-    getBackground.foreach(p => __obj.updateDynamic("getBackground")(p.toJsFn))
-    getCls.foreach(p => __obj.updateDynamic("getCls")(p.toJsFn))
-    getFitSurface.foreach(p => __obj.updateDynamic("getFitSurface")(p.toJsFn))
-    getGradients.foreach(p => __obj.updateDynamic("getGradients")(p.toJsFn))
-    getResizeHandler.foreach(p => __obj.updateDynamic("getResizeHandler")(p.toJsFn))
-    getSprites.foreach(p => __obj.updateDynamic("getSprites")(p.toJsFn))
-    if (getSurface != null) __obj.updateDynamic("getSurface")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => getSurface(t0).runNow()))
-    getViewBox.foreach(p => __obj.updateDynamic("getViewBox")(p.toJsFn))
-    if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
-    onPlaceWatermark.foreach(p => __obj.updateDynamic("onPlaceWatermark")(p.toJsFn))
-    renderFrame.foreach(p => __obj.updateDynamic("renderFrame")(p.toJsFn))
-    if (resizeHandler != null) __obj.updateDynamic("resizeHandler")(resizeHandler.asInstanceOf[js.Any])
-    if (setAutoSize != null) __obj.updateDynamic("setAutoSize")(js.Any.fromFunction1((t0: /* autoSize */ js.UndefOr[scala.Boolean]) => setAutoSize(t0).runNow()))
-    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1((t0: /* background */ js.UndefOr[js.Any]) => setBackground(t0).runNow()))
-    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1((t0: /* cls */ js.UndefOr[java.lang.String]) => setCls(t0).runNow()))
-    if (setFitSurface != null) __obj.updateDynamic("setFitSurface")(js.Any.fromFunction1((t0: /* fitSurface */ js.UndefOr[scala.Boolean]) => setFitSurface(t0).runNow()))
-    if (setGradients != null) __obj.updateDynamic("setGradients")(js.Any.fromFunction1((t0: /* gradients */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.Array]) => setGradients(t0).runNow()))
-    if (setResizeHandler != null) __obj.updateDynamic("setResizeHandler")(js.Any.fromFunction1((t0: /* resizeHandler */ js.UndefOr[js.Any]) => setResizeHandler(t0).runNow()))
-    if (setSprites != null) __obj.updateDynamic("setSprites")(js.Any.fromFunction1((t0: /* sprites */ js.UndefOr[js.Any]) => setSprites(t0).runNow()))
-    if (setViewBox != null) __obj.updateDynamic("setViewBox")(js.Any.fromFunction1((t0: /* viewBox */ js.UndefOr[scala.Boolean]) => setViewBox(t0).runNow()))
-    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
+  
+  extension [Self <: IComponent](x: Self) {
+    
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+    
+    inline def setFitSurface(value: Boolean): Self = StObject.set(x, "fitSurface", value.asInstanceOf[js.Any])
+    
+    inline def setFitSurfaceUndefined: Self = StObject.set(x, "fitSurface", js.undefined)
+    
+    inline def setGetAutoSize(value: CallbackTo[Boolean]): Self = StObject.set(x, "getAutoSize", value.toJsFn)
+    
+    inline def setGetAutoSizeUndefined: Self = StObject.set(x, "getAutoSize", js.undefined)
+    
+    inline def setGetBackground(value: CallbackTo[Any]): Self = StObject.set(x, "getBackground", value.toJsFn)
+    
+    inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
+    
+    inline def setGetCls(value: CallbackTo[String]): Self = StObject.set(x, "getCls", value.toJsFn)
+    
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    
+    inline def setGetFitSurface(value: CallbackTo[Boolean]): Self = StObject.set(x, "getFitSurface", value.toJsFn)
+    
+    inline def setGetFitSurfaceUndefined: Self = StObject.set(x, "getFitSurface", js.undefined)
+    
+    inline def setGetGradients(value: CallbackTo[Array]): Self = StObject.set(x, "getGradients", value.toJsFn)
+    
+    inline def setGetGradientsUndefined: Self = StObject.set(x, "getGradients", js.undefined)
+    
+    inline def setGetResizeHandler(value: CallbackTo[Any]): Self = StObject.set(x, "getResizeHandler", value.toJsFn)
+    
+    inline def setGetResizeHandlerUndefined: Self = StObject.set(x, "getResizeHandler", js.undefined)
+    
+    inline def setGetSprites(value: CallbackTo[Any]): Self = StObject.set(x, "getSprites", value.toJsFn)
+    
+    inline def setGetSpritesUndefined: Self = StObject.set(x, "getSprites", js.undefined)
+    
+    inline def setGetSurface(value: /* id */ js.UndefOr[String] => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction1(value))
+    
+    inline def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
+    
+    inline def setGetViewBox(value: CallbackTo[Boolean]): Self = StObject.set(x, "getViewBox", value.toJsFn)
+    
+    inline def setGetViewBoxUndefined: Self = StObject.set(x, "getViewBox", js.undefined)
+    
+    inline def setGradients(value: Array): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
+    
+    inline def setGradientsUndefined: Self = StObject.set(x, "gradients", js.undefined)
+    
+    inline def setOnPlaceWatermark(value: Callback): Self = StObject.set(x, "onPlaceWatermark", value.toJsFn)
+    
+    inline def setOnPlaceWatermarkUndefined: Self = StObject.set(x, "onPlaceWatermark", js.undefined)
+    
+    inline def setRenderFrame(value: Callback): Self = StObject.set(x, "renderFrame", value.toJsFn)
+    
+    inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
+    
+    inline def setResizeHandler(value: Any): Self = StObject.set(x, "resizeHandler", value.asInstanceOf[js.Any])
+    
+    inline def setResizeHandlerUndefined: Self = StObject.set(x, "resizeHandler", js.undefined)
+    
+    inline def setSetAutoSize(value: /* autoSize */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setAutoSize", js.Any.fromFunction1((t0: /* autoSize */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetAutoSizeUndefined: Self = StObject.set(x, "setAutoSize", js.undefined)
+    
+    inline def setSetBackground(value: /* background */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setBackground", js.Any.fromFunction1((t0: /* background */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
+    
+    inline def setSetCls(value: /* cls */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setCls", js.Any.fromFunction1((t0: /* cls */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    
+    inline def setSetFitSurface(value: /* fitSurface */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setFitSurface", js.Any.fromFunction1((t0: /* fitSurface */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetFitSurfaceUndefined: Self = StObject.set(x, "setFitSurface", js.undefined)
+    
+    inline def setSetGradients(value: /* gradients */ js.UndefOr[Array] => Callback): Self = StObject.set(x, "setGradients", js.Any.fromFunction1((t0: /* gradients */ js.UndefOr[Array]) => value(t0).runNow()))
+    
+    inline def setSetGradientsUndefined: Self = StObject.set(x, "setGradients", js.undefined)
+    
+    inline def setSetResizeHandler(value: /* resizeHandler */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setResizeHandler", js.Any.fromFunction1((t0: /* resizeHandler */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetResizeHandlerUndefined: Self = StObject.set(x, "setResizeHandler", js.undefined)
+    
+    inline def setSetSprites(value: /* sprites */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setSprites", js.Any.fromFunction1((t0: /* sprites */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetSpritesUndefined: Self = StObject.set(x, "setSprites", js.undefined)
+    
+    inline def setSetViewBox(value: /* viewBox */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setViewBox", js.Any.fromFunction1((t0: /* viewBox */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetViewBoxUndefined: Self = StObject.set(x, "setViewBox", js.undefined)
+    
+    inline def setViewBox(value: Boolean): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+  }
 }
-

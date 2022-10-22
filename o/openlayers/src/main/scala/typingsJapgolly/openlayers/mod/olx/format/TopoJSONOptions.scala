@@ -1,20 +1,25 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TopoJSONOptions extends js.Object {
+trait TopoJSONOptions extends StObject {
+  
   var defaultDataProjection: ProjectionLike
 }
-
 object TopoJSONOptions {
-  @scala.inline
-  def apply(defaultDataProjection: ProjectionLike = null): TopoJSONOptions = {
+  
+  inline def apply(): TopoJSONOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultDataProjection != null) __obj.updateDynamic("defaultDataProjection")(defaultDataProjection.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopoJSONOptions]
   }
+  
+  extension [Self <: TopoJSONOptions](x: Self) {
+    
+    inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
+  }
 }
-

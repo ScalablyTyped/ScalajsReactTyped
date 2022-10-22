@@ -1,44 +1,47 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.12.0: introduced
   */
 @JSImport("mendixmodelsdk", "pages.NanoflowSource")
 @js.native
-class NanoflowSource protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.NanoflowSource {
+open class NanoflowSource protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.NanoflowSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.NanoflowSource")
-@js.native
-object NanoflowSource extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object NanoflowSource {
+  
+  @JSImport("mendixmodelsdk", "pages.NanoflowSource")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new NanoflowSource instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.pagesMod.pages.NanoflowSource = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource]
+  
   /**
     * Creates and returns a new NanoflowSource instance in the SDK and on the server.
     * The new NanoflowSource will be automatically stored in the 'dataSource' property
@@ -47,7 +50,9 @@ object NanoflowSource extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.12.0 to 8.2.0
     */
-  def createIn(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.EntityWidget): typingsJapgolly.mendixmodelsdk.pagesMod.pages.NanoflowSource = js.native
+  /* static member */
+  inline def createIn(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EntityWidget): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource]
+  
   /**
     * Creates and returns a new NanoflowSource instance in the SDK and on the server.
     * The new NanoflowSource will be automatically stored in the 'dataSource' property
@@ -56,7 +61,9 @@ object NanoflowSource extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.12.0 and higher
     */
-  def createInEntityWidgetUnderDataSource(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.EntityWidget): typingsJapgolly.mendixmodelsdk.pagesMod.pages.NanoflowSource = js.native
+  /* static member */
+  inline def createInEntityWidgetUnderDataSource(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EntityWidget): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource]
+  
   /**
     * Creates and returns a new NanoflowSource instance in the SDK and on the server.
     * The new NanoflowSource will be automatically stored in the 'dataSource' property
@@ -65,6 +72,18 @@ object NanoflowSource extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.3.0 and higher
     */
-  def createInWidgetValueUnderDataSource(container: WidgetValue): typingsJapgolly.mendixmodelsdk.pagesMod.pages.NanoflowSource = js.native
+  /* static member */
+  inline def createInWidgetValueUnderDataSource(container: WidgetValue): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NanoflowSource]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NanoflowSource.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NanoflowSource.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

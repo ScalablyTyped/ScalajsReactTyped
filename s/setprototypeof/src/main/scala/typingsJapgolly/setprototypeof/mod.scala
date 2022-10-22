@@ -1,13 +1,15 @@
 package typingsJapgolly.setprototypeof
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("setprototypeof", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(o: js.Any): js.Any = js.native
-  def apply(o: js.Any, proto: js.Object): js.Any = js.native
+object mod {
+  
+  inline def apply(o: Any): Any = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(o: Any, proto: js.Object): Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("setprototypeof", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

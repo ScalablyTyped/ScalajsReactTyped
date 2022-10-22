@@ -1,16 +1,13 @@
 package typingsJapgolly.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transformer
-  extends TransformCallback
-     with _AcceptedPlugin {
-  var postcssPlugin: js.UndefOr[String] = js.native
-  var postcssVersion: js.UndefOr[String] = js.native
-  /* InferMemberOverrides */
-  override def apply(T0: /* root */ Root_, T1: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
+trait Transformer extends TransformCallback {
+  
+  var postcssPlugin: String = js.native
+  
+  var postcssVersion: String = js.native
 }
-

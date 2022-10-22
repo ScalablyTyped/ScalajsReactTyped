@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-inappbrowser
 
-Typings are for version 3.2.0
+Typings are for version 5.0.0
 
 ## Library description:
 Cordova InAppBrowser Plugin
@@ -11,14 +11,11 @@ Cordova InAppBrowser Plugin
 | Full name          | cordova-plugin-inappbrowser |
 | Keywords           | cordova, in, app, browser, inappbrowser, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-osx, cordova-windows |
 | # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 1773931 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 189605.33333333334 |
+| # stars            | 1061.0 |
 
 ## Links
-- [Homepage](https://github.com/apache/cordova-plugin-inappbrowser#readme)
-- [Bugs](https://github.com/apache/cordova-plugin-inappbrowser/issues)
-- [Repository](https://github.com/apache/cordova-plugin-inappbrowser)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-inappbrowser)
     
 

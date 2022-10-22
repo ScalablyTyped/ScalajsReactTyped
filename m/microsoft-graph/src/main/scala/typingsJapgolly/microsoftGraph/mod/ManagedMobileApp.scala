@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedMobileApp extends Entity {
+trait ManagedMobileApp
+  extends StObject
+     with Entity {
+  
   // The identifier for an app with it's operating system type.
-  var mobileAppIdentifier: js.UndefOr[MobileAppIdentifier] = js.undefined
+  var mobileAppIdentifier: js.UndefOr[NullableOption[MobileAppIdentifier]] = js.undefined
+  
   // Version of the entity.
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ManagedMobileApp {
-  @scala.inline
-  def apply(id: String = null, mobileAppIdentifier: MobileAppIdentifier = null, version: String = null): ManagedMobileApp = {
+  
+  inline def apply(): ManagedMobileApp = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedMobileApp]
   }
+  
+  extension [Self <: ManagedMobileApp](x: Self) {
+    
+    inline def setMobileAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = StObject.set(x, "mobileAppIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppIdentifierNull: Self = StObject.set(x, "mobileAppIdentifier", null)
+    
+    inline def setMobileAppIdentifierUndefined: Self = StObject.set(x, "mobileAppIdentifier", js.undefined)
+    
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

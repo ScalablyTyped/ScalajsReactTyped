@@ -1,43 +1,23 @@
 package typingsJapgolly.lokijs
 
-import typingsJapgolly.lokijs.lokijsBooleans.`false`
-import typingsJapgolly.lokijs.lokijsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.lokijs.AnonDelimited
-  - typingsJapgolly.lokijs.AnonDelimiter
+  - typingsJapgolly.lokijs.anon.Delimited
+  - typingsJapgolly.lokijs.anon.Delimiter
 */
-trait DeserializeOptions extends js.Object
-
+trait DeserializeOptions extends StObject
 object DeserializeOptions {
-  @scala.inline
-  def AnonDelimited(
-    delimited: `false`,
-    delimiter: String = null,
-    partition: Int | Double = null,
-    partitioned: js.UndefOr[Boolean] = js.undefined
-  ): DeserializeOptions = {
-    val __obj = js.Dynamic.literal(delimited = delimited.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DeserializeOptions]
+  
+  inline def Delimited(): typingsJapgolly.lokijs.anon.Delimited = {
+    val __obj = js.Dynamic.literal(delimited = false)
+    __obj.asInstanceOf[typingsJapgolly.lokijs.anon.Delimited]
   }
-  @scala.inline
-  def AnonDelimiter(
-    delimiter: String,
-    delimited: `true` = null,
-    partition: Int | Double = null,
-    partitioned: js.UndefOr[Boolean] = js.undefined
-  ): DeserializeOptions = {
+  
+  inline def Delimiter(delimiter: String): typingsJapgolly.lokijs.anon.Delimiter = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
-    if (delimited != null) __obj.updateDynamic("delimited")(delimited.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DeserializeOptions]
+    __obj.asInstanceOf[typingsJapgolly.lokijs.anon.Delimiter]
   }
 }
-

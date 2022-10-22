@@ -1,25 +1,27 @@
 package typingsJapgolly.idyllCompiler
 
 import typingsJapgolly.idyllCompiler.mod.PropType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idyllCompilerStrings {
-  @js.native
-  sealed trait expression extends PropType
   
   @js.native
-  sealed trait value extends PropType
+  sealed trait expression
+    extends StObject
+       with PropType
+  inline def expression: expression = "expression".asInstanceOf[expression]
   
   @js.native
-  sealed trait variable extends PropType
+  sealed trait value
+    extends StObject
+       with PropType
+  inline def value: value = "value".asInstanceOf[value]
   
-  @scala.inline
-  def expression: expression = "expression".asInstanceOf[expression]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def variable: variable = "variable".asInstanceOf[variable]
+  @js.native
+  sealed trait variable
+    extends StObject
+       with PropType
+  inline def variable: variable = "variable".asInstanceOf[variable]
 }
-

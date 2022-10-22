@@ -10,10 +10,10 @@ Compressible Content-Type / mime checking
 | ------------------ | :-------------: |
 | Full name          | compressible |
 | Keywords           | compress, gzip, mime, content-type |
-| # releases         | 5 |
-| # dependents       | 105 |
-| # downloads        | 319323226 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6704602E7 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/compressible#readme)

@@ -1,30 +1,40 @@
 package typingsJapgolly.johnnyFive.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThermometerOption extends js.Object {
+trait ThermometerOption extends StObject {
+  
   var controller: js.UndefOr[String] = js.undefined
+  
   var freq: js.UndefOr[Double] = js.undefined
+  
   var pin: String | Double
+  
   var toCelsius: js.UndefOr[js.Function1[/* val */ Double, Double]] = js.undefined
 }
-
 object ThermometerOption {
-  @scala.inline
-  def apply(
-    pin: String | Double,
-    controller: String = null,
-    freq: Int | Double = null,
-    toCelsius: /* val */ Double => CallbackTo[Double] = null
-  ): ThermometerOption = {
+  
+  inline def apply(pin: String | Double): ThermometerOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
-    if (toCelsius != null) __obj.updateDynamic("toCelsius")(js.Any.fromFunction1((t0: /* val */ scala.Double) => toCelsius(t0).runNow()))
     __obj.asInstanceOf[ThermometerOption]
   }
+  
+  extension [Self <: ThermometerOption](x: Self) {
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+    
+    inline def setPin(value: String | Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    
+    inline def setToCelsius(value: /* val */ Double => Double): Self = StObject.set(x, "toCelsius", js.Any.fromFunction1(value))
+    
+    inline def setToCelsiusUndefined: Self = StObject.set(x, "toCelsius", js.undefined)
+  }
 }
-

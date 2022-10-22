@@ -10,9 +10,9 @@ ace
 | Full name          | ace |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 50 |
-| # downloads        | 45483 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 10589.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ace)

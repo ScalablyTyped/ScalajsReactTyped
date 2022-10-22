@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tabTabMod.TabProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.tabTabMod.TabTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Tab", JSImport.Namespace)
-@js.native
-object tabMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TabProps, ComponentState, js.Any] {
-    def this(props: TabProps) = this()
-    def this(props: TabProps, context: js.Any) = this()
-  }
+object tabMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/components/tabs/)
+    *
+    * API:
+    *
+    * - [Tab API](https://mui.com/api/tab/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/Tab", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TabProps]]
+  val default: ExtendButtonBase[TabTypeMap[js.Object, div]] = js.native
   
+  type _To = ExtendButtonBase[TabTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tabMod.foo` */
+  override def _to: ExtendButtonBase[TabTypeMap[js.Object, div]] = default
 }
-

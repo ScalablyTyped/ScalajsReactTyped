@@ -1,14 +1,16 @@
 package typingsJapgolly.reactDisplayName
 
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-display-name", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(Component: String): String = js.native
-  def default(Component: ComponentType[_]): String = js.native
+object mod {
+  
+  @JSImport("react-display-name", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(Component: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(Component: ComponentType[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

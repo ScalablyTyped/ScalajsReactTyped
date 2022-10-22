@@ -1,21 +1,22 @@
 package typingsJapgolly.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "ControlContainer")
+/* note: abstract class */ @JSImport("@angular/forms", "ControlContainer")
 @js.native
-abstract class ControlContainer () extends AbstractControlDirective {
+open class ControlContainer () extends AbstractControlDirective {
+  
   /**
     * @description
     * The top-level form directive for the control.
     */
-  val formDirective: Form | Null = js.native
+  def formDirective: Form | Null = js.native
+  
   /**
     * @description
     * The name for the control
     */
-  var name: String = js.native
+  var name: String | Double | Null = js.native
 }
-

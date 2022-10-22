@@ -1,31 +1,43 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnterAction extends js.Object {
+trait EnterAction extends StObject {
+  
   /**
-  		 * Describes text to be appended after the new line and after the indentation.
-  		 */
+    * Describes text to be appended after the new line and after the indentation.
+    */
   var appendText: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * Describe what to do with the indentation.
-  		 */
+    * Describe what to do with the indentation.
+    */
   var indentAction: IndentAction
+  
   /**
-  		 * Describes the number of characters to remove from the new line's indentation.
-  		 */
+    * Describes the number of characters to remove from the new line's indentation.
+    */
   var removeText: js.UndefOr[Double] = js.undefined
 }
-
 object EnterAction {
-  @scala.inline
-  def apply(indentAction: IndentAction, appendText: String = null, removeText: Int | Double = null): EnterAction = {
+  
+  inline def apply(indentAction: IndentAction): EnterAction = {
     val __obj = js.Dynamic.literal(indentAction = indentAction.asInstanceOf[js.Any])
-    if (appendText != null) __obj.updateDynamic("appendText")(appendText.asInstanceOf[js.Any])
-    if (removeText != null) __obj.updateDynamic("removeText")(removeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterAction]
   }
+  
+  extension [Self <: EnterAction](x: Self) {
+    
+    inline def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
+    
+    inline def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
+    
+    inline def setIndentAction(value: IndentAction): Self = StObject.set(x, "indentAction", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveText(value: Double): Self = StObject.set(x, "removeText", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveTextUndefined: Self = StObject.set(x, "removeText", js.undefined)
+  }
 }
-

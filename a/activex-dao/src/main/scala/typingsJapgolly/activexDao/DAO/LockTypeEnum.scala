@@ -1,31 +1,27 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`3`
-import typingsJapgolly.activexDao.activexDaoNumbers.`5`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`3`
+import typingsJapgolly.activexDao.activexDaoInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`3`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`5`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`3`
+  - typingsJapgolly.activexDao.activexDaoInts.`5`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
 */
-trait LockTypeEnum extends js.Object
-
+trait LockTypeEnum extends StObject
 object LockTypeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbOptimistic: `3` = this.cast(3)
-  @scala.inline
-  def dbOptimisticBatch: `5` = this.cast(5)
-  @scala.inline
-  def dbOptimisticValue: `1` = this.cast(1)
-  @scala.inline
-  def dbPessimistic: `2` = this.cast(2)
+  
+  inline def dbOptimistic: `3` = 3.asInstanceOf[`3`]
+  
+  inline def dbOptimisticBatch: `5` = 5.asInstanceOf[`5`]
+  
+  inline def dbOptimisticValue: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbPessimistic: `2` = 2.asInstanceOf[`2`]
 }
-

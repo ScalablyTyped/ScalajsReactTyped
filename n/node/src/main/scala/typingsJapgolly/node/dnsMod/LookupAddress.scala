@@ -1,20 +1,26 @@
 package typingsJapgolly.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LookupAddress extends js.Object {
+trait LookupAddress extends StObject {
+  
   var address: String
+  
   var family: Double
 }
-
 object LookupAddress {
-  @scala.inline
-  def apply(address: String, family: Double): LookupAddress = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
   
+  inline def apply(address: String, family: Double): LookupAddress = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupAddress]
   }
+  
+  extension [Self <: LookupAddress](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+  }
 }
-

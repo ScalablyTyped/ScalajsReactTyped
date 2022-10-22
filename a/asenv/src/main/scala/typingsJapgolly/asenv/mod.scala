@@ -1,17 +1,24 @@
 package typingsJapgolly.asenv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asenv", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getEnv(): String = js.native
-  def isDevelopment(): Boolean = js.native
-  def isProduction(): Boolean = js.native
-  def isTest(): Boolean = js.native
-  def setEnv(env: String): Unit = js.native
-  def unlessProduction(handle: js.Function0[_]): js.Any = js.native
+object mod {
+  
+  @JSImport("asenv", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getEnv(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[String]
+  
+  inline def isDevelopment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopment")().asInstanceOf[Boolean]
+  
+  inline def isProduction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProduction")().asInstanceOf[Boolean]
+  
+  inline def isTest(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTest")().asInstanceOf[Boolean]
+  
+  inline def setEnv(env: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def unlessProduction(handle: js.Function0[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

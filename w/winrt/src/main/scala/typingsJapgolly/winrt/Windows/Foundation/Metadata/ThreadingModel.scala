@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThreadingModel extends js.Object
-
+sealed trait ThreadingModel extends StObject
 @JSGlobal("Windows.Foundation.Metadata.ThreadingModel")
 @js.native
-object ThreadingModel extends js.Object {
-  @js.native
-  sealed trait both extends ThreadingModel
+object ThreadingModel extends StObject {
   
   @js.native
-  sealed trait invalidThreading extends ThreadingModel
+  sealed trait both
+    extends StObject
+       with ThreadingModel
   
   @js.native
-  sealed trait mTA extends ThreadingModel
+  sealed trait invalidThreading
+    extends StObject
+       with ThreadingModel
   
   @js.native
-  sealed trait sTA extends ThreadingModel
+  sealed trait mTA
+    extends StObject
+       with ThreadingModel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ThreadingModel with Double] = js.native
-  /* 2 */ @js.native
-  object both extends TopLevel[both with Double]
-  
-  /* 3 */ @js.native
-  object invalidThreading extends TopLevel[invalidThreading with Double]
-  
-  /* 1 */ @js.native
-  object mTA extends TopLevel[mTA with Double]
-  
-  /* 0 */ @js.native
-  object sTA extends TopLevel[sTA with Double]
-  
+  @js.native
+  sealed trait sTA
+    extends StObject
+       with ThreadingModel
 }
-

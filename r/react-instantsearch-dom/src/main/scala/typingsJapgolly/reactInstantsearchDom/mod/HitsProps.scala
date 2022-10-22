@@ -1,21 +1,26 @@
 package typingsJapgolly.reactInstantsearchDom.mod
 
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactInstantsearchDom.AnonHit
+import typingsJapgolly.reactInstantsearchDom.anon.Hit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HitsProps[T] extends js.Object {
-  var hitComponent: js.UndefOr[ComponentType[AnonHit[T]]] = js.undefined
+trait HitsProps[T] extends StObject {
+  
+  var hitComponent: js.UndefOr[ComponentType[Hit[T]]] = js.undefined
 }
-
 object HitsProps {
-  @scala.inline
-  def apply[T](hitComponent: ComponentType[AnonHit[T]] = null): HitsProps[T] = {
+  
+  inline def apply[T](): HitsProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (hitComponent != null) __obj.updateDynamic("hitComponent")(hitComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitsProps[T]]
   }
+  
+  extension [Self <: HitsProps[?], T](x: Self & HitsProps[T]) {
+    
+    inline def setHitComponent(value: ComponentType[Hit[T]]): Self = StObject.set(x, "hitComponent", value.asInstanceOf[js.Any])
+    
+    inline def setHitComponentUndefined: Self = StObject.set(x, "hitComponent", js.undefined)
+  }
 }
-

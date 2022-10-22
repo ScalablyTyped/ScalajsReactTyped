@@ -1,59 +1,55 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`6`
 */
-trait OlSaveAsType extends js.Object
-
+trait OlSaveAsType extends StObject
 object OlSaveAsType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olDoc: `4` = this.cast(4)
-  @scala.inline
-  def olHTML: `5` = this.cast(5)
-  @scala.inline
-  def olICal: `8` = this.cast(8)
-  @scala.inline
-  def olMHTML: `10` = this.cast(10)
-  @scala.inline
-  def olMSG: `3` = this.cast(3)
-  @scala.inline
-  def olMSGUnicode: `9` = this.cast(9)
-  @scala.inline
-  def olRTF: `1` = this.cast(1)
-  @scala.inline
-  def olTXT: `0` = this.cast(0)
-  @scala.inline
-  def olTemplate: `2` = this.cast(2)
-  @scala.inline
-  def olVCal: `7` = this.cast(7)
-  @scala.inline
-  def olVCard: `6` = this.cast(6)
+  
+  inline def olDoc: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olHTML: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olICal: `8` = 8.asInstanceOf[`8`]
+  
+  inline def olMHTML: `10` = 10.asInstanceOf[`10`]
+  
+  inline def olMSG: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olMSGUnicode: `9` = 9.asInstanceOf[`9`]
+  
+  inline def olRTF: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olTXT: `0` = 0.asInstanceOf[`0`]
+  
+  inline def olTemplate: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olVCal: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olVCard: `6` = 6.asInstanceOf[`6`]
 }
-

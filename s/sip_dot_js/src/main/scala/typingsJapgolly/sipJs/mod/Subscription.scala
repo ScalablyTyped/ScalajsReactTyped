@@ -1,29 +1,19 @@
 package typingsJapgolly.sipJs.mod
 
-import typingsJapgolly.sipJs.libSubscriptionMod.SubscriptionOptions
+import typingsJapgolly.sipJs.libApiSubscriptionOptionsMod.SubscriptionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Subscription")
+/* note: abstract class */ @JSImport("sip.js", "Subscription")
 @js.native
-class Subscription protected ()
-  extends typingsJapgolly.sipJs.libSubscriptionMod.Subscription {
+open class Subscription protected ()
+  extends typingsJapgolly.sipJs.libApiMod.Subscription {
   /**
     * Constructor.
-    * @param ua User agent.
-    * @param target Subscription target.
-    * @param event Subscription event.
-    * @param options Options bucket.
+    * @param userAgent - User agent. See {@link UserAgent} for details.
+    * @internal
     */
-  def this(ua: typingsJapgolly.sipJs.uAMod.UA, target: String, event: String) = this()
-  def this(ua: typingsJapgolly.sipJs.uAMod.UA, target: typingsJapgolly.sipJs.coreMod.URI, event: String) = this()
-  def this(ua: typingsJapgolly.sipJs.uAMod.UA, target: String, event: String, options: SubscriptionOptions) = this()
-  def this(
-    ua: typingsJapgolly.sipJs.uAMod.UA,
-    target: typingsJapgolly.sipJs.coreMod.URI,
-    event: String,
-    options: SubscriptionOptions
-  ) = this()
+  /* protected */ def this(userAgent: typingsJapgolly.sipJs.libApiUserAgentMod.UserAgent) = this()
+  /* protected */ def this(userAgent: typingsJapgolly.sipJs.libApiUserAgentMod.UserAgent, options: SubscriptionOptions) = this()
 }
-

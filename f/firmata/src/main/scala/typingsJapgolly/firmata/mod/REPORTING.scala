@@ -1,23 +1,19 @@
 package typingsJapgolly.firmata.mod
 
-import typingsJapgolly.firmata.firmataNumbers.`0`
-import typingsJapgolly.firmata.firmataNumbers.`1`
+import typingsJapgolly.firmata.firmataInts.`0`
+import typingsJapgolly.firmata.firmataInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.firmata.firmataNumbers.`1`
-  - typingsJapgolly.firmata.firmataNumbers.`0`
+  - typingsJapgolly.firmata.firmataInts.`1`
+  - typingsJapgolly.firmata.firmataInts.`0`
 */
-trait REPORTING extends js.Object
-
+trait REPORTING extends StObject
 object REPORTING {
-  @scala.inline
-  def OFF: `0` = this.cast(0)
-  @scala.inline
-  def ON: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def OFF: `0` = 0.asInstanceOf[`0`]
+  
+  inline def ON: `1` = 1.asInstanceOf[`1`]
 }
-

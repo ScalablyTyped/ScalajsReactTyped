@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionChangingEventUIParam extends js.Object {
+trait SelectionChangingEventUIParam extends StObject {
+  
   /**
-  	 * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.
-  	 */
-  var currentItems: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.
+    */
+  var currentItems: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to array of all items that will be selected after the selection finish. That can be null.
-  	 */
-  var items: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to array of all items that will be selected after the selection finish. That can be null.
+    */
+  var items: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to igCombo.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to igCombo.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object SelectionChangingEventUIParam {
-  @scala.inline
-  def apply(currentItems: js.Any = null, items: js.Any = null, owner: js.Any = null): SelectionChangingEventUIParam = {
+  
+  inline def apply(): SelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentItems != null) __obj.updateDynamic("currentItems")(currentItems.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangingEventUIParam]
   }
+  
+  extension [Self <: SelectionChangingEventUIParam](x: Self) {
+    
+    inline def setCurrentItems(value: Any): Self = StObject.set(x, "currentItems", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentItemsUndefined: Self = StObject.set(x, "currentItems", js.undefined)
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

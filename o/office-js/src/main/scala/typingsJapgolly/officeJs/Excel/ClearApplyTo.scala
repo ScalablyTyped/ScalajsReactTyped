@@ -1,70 +1,65 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClearApplyTo extends js.Object
-
+sealed trait ClearApplyTo extends StObject
 /**
-  * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
+  * @remarks
+  * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ClearApplyTo")
 @js.native
-object ClearApplyTo extends js.Object {
-  @js.native
-  sealed trait all extends ClearApplyTo
+object ClearApplyTo extends StObject {
   
   /**
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
+  @js.native
+  sealed trait all
+    extends StObject
+       with ClearApplyTo
+  
+  /**
     * Clears the contents of the range.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
-  sealed trait contents extends ClearApplyTo
+  sealed trait contents
+    extends StObject
+       with ClearApplyTo
   
   /**
-    *
     * Clears all formatting for the range.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
-  sealed trait formats extends ClearApplyTo
+  sealed trait formats
+    extends StObject
+       with ClearApplyTo
   
   /**
-    *
     * Clears all hyperlinks, but leaves all content and formatting intact.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait hyperlinks extends ClearApplyTo
+  sealed trait hyperlinks
+    extends StObject
+       with ClearApplyTo
   
   /**
-    *
     * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait removeHyperlinks extends ClearApplyTo
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ClearApplyTo with String] = js.native
-  /* "All" */ @js.native
-  object all extends TopLevel[all with String]
-  
-  /* "Contents" */ @js.native
-  object contents extends TopLevel[contents with String]
-  
-  /* "Formats" */ @js.native
-  object formats extends TopLevel[formats with String]
-  
-  /* "Hyperlinks" */ @js.native
-  object hyperlinks extends TopLevel[hyperlinks with String]
-  
-  /* "RemoveHyperlinks" */ @js.native
-  object removeHyperlinks extends TopLevel[removeHyperlinks with String]
-  
+  sealed trait removeHyperlinks
+    extends StObject
+       with ClearApplyTo
 }
-

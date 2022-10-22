@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-process-errors
 
-Typings are for version 4.1
+Typings are for version 10.1.1
 
 ## Library description:
 Show some ❤️ to process errors
@@ -9,14 +9,14 @@ Show some ❤️ to process errors
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | log-process-errors |
-| Keywords           | process, error-handling, error-handler, error, handling, handler, exception, promise, warnings, logging, uncaught, uncaught-exceptions, uncaughtException, unhandledRejection, rejectionHandled, multipleResolves, debugging, testing, test |
-| # releases         | 65 |
-| # dependents       | 8 |
-| # downloads        | 200760 |
-| # stars            | 0 |
+| Keywords           | code-quality, debugging, error, error-handler, error-handling, exception, handler, handling, javascript, library, logging, monitoring, nodejs, process, promise, test, testing, typescript, uncaught, uncaught-exceptions |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 370790.0 |
+| # stars            | 451.0 |
 
 ## Links
-- [Homepage](https://git.io/fhSGY)
+- [Homepage](https://www.github.com/ehmicky/log-process-errors)
 - [Bugs](https://github.com/ehmicky/log-process-errors/issues)
 - [Repository](https://github.com/ehmicky/log-process-errors)
 - [Npm](https://www.npmjs.com/package/log-process-errors)
@@ -24,7 +24,7 @@ Show some ❤️ to process errors
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

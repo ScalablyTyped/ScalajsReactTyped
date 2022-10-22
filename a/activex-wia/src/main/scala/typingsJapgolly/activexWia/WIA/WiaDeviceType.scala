@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWia.WIA
 
-import typingsJapgolly.activexWia.activexWiaNumbers.`0`
-import typingsJapgolly.activexWia.activexWiaNumbers.`1`
-import typingsJapgolly.activexWia.activexWiaNumbers.`2`
-import typingsJapgolly.activexWia.activexWiaNumbers.`3`
+import typingsJapgolly.activexWia.activexWiaInts.`0`
+import typingsJapgolly.activexWia.activexWiaInts.`1`
+import typingsJapgolly.activexWia.activexWiaInts.`2`
+import typingsJapgolly.activexWia.activexWiaInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The WiaDeviceType enumeration specifies the type of device attached to a user's computer. Use the Type property on the DeviceInfo object or the Device
   * object to obtain these values from the device.
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWia.activexWiaNumbers.`2`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`1`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`0`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`3`
+  - typingsJapgolly.activexWia.activexWiaInts.`2`
+  - typingsJapgolly.activexWia.activexWiaInts.`1`
+  - typingsJapgolly.activexWia.activexWiaInts.`0`
+  - typingsJapgolly.activexWia.activexWiaInts.`3`
 */
-trait WiaDeviceType extends js.Object
-
+trait WiaDeviceType extends StObject
 object WiaDeviceType {
-  @scala.inline
-  def CameraDeviceType: `2` = this.cast(2)
-  @scala.inline
-  def ScannerDeviceType: `1` = this.cast(1)
-  @scala.inline
-  def UnspecifiedDeviceType: `0` = this.cast(0)
-  @scala.inline
-  def VideoDeviceType: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CameraDeviceType: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ScannerDeviceType: `1` = 1.asInstanceOf[`1`]
+  
+  inline def UnspecifiedDeviceType: `0` = 0.asInstanceOf[`0`]
+  
+  inline def VideoDeviceType: `3` = 3.asInstanceOf[`3`]
 }
-

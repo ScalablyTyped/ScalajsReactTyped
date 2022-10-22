@@ -1,71 +1,69 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextEditorCursorStyle extends js.Object
-
+sealed trait TextEditorCursorStyle extends StObject
 @JSImport("vscode", "TextEditorCursorStyle")
 @js.native
-object TextEditorCursorStyle extends js.Object {
-  /**
-  		 * Render the cursor as a block filled.
-  		 */
-  @js.native
-  sealed trait Block extends TextEditorCursorStyle
-  
-  /**
-  		 * Render the cursor as a block outlined.
-  		 */
-  @js.native
-  sealed trait BlockOutline extends TextEditorCursorStyle
-  
-  /**
-  		 * Render the cursor as a vertical thick line.
-  		 */
-  @js.native
-  sealed trait Line extends TextEditorCursorStyle
-  
-  /**
-  		 * Render the cursor as a vertical thin line.
-  		 */
-  @js.native
-  sealed trait LineThin extends TextEditorCursorStyle
-  
-  /**
-  		 * Render the cursor as a thick horizontal line.
-  		 */
-  @js.native
-  sealed trait Underline extends TextEditorCursorStyle
-  
-  /**
-  		 * Render the cursor as a thin horizontal line.
-  		 */
-  @js.native
-  sealed trait UnderlineThin extends TextEditorCursorStyle
+object TextEditorCursorStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextEditorCursorStyle with Double] = js.native
-  /* 2 */ @js.native
-  object Block extends TopLevel[Block with Double]
+  def apply(value: Double): js.UndefOr[TextEditorCursorStyle & Double] = js.native
   
-  /* 5 */ @js.native
-  object BlockOutline extends TopLevel[BlockOutline with Double]
+  /**
+    * Render the cursor as a block filled.
+    */
+  @js.native
+  sealed trait Block
+    extends StObject
+       with TextEditorCursorStyle
+  /* 2 */ val Block: typingsJapgolly.vscode.mod.TextEditorCursorStyle.Block & Double = js.native
   
-  /* 1 */ @js.native
-  object Line extends TopLevel[Line with Double]
+  /**
+    * Render the cursor as a block outlined.
+    */
+  @js.native
+  sealed trait BlockOutline
+    extends StObject
+       with TextEditorCursorStyle
+  /* 5 */ val BlockOutline: typingsJapgolly.vscode.mod.TextEditorCursorStyle.BlockOutline & Double = js.native
   
-  /* 4 */ @js.native
-  object LineThin extends TopLevel[LineThin with Double]
+  /**
+    * Render the cursor as a vertical thick line.
+    */
+  @js.native
+  sealed trait Line
+    extends StObject
+       with TextEditorCursorStyle
+  /* 1 */ val Line: typingsJapgolly.vscode.mod.TextEditorCursorStyle.Line & Double = js.native
   
-  /* 3 */ @js.native
-  object Underline extends TopLevel[Underline with Double]
+  /**
+    * Render the cursor as a vertical thin line.
+    */
+  @js.native
+  sealed trait LineThin
+    extends StObject
+       with TextEditorCursorStyle
+  /* 4 */ val LineThin: typingsJapgolly.vscode.mod.TextEditorCursorStyle.LineThin & Double = js.native
   
-  /* 6 */ @js.native
-  object UnderlineThin extends TopLevel[UnderlineThin with Double]
+  /**
+    * Render the cursor as a thick horizontal line.
+    */
+  @js.native
+  sealed trait Underline
+    extends StObject
+       with TextEditorCursorStyle
+  /* 3 */ val Underline: typingsJapgolly.vscode.mod.TextEditorCursorStyle.Underline & Double = js.native
   
+  /**
+    * Render the cursor as a thin horizontal line.
+    */
+  @js.native
+  sealed trait UnderlineThin
+    extends StObject
+       with TextEditorCursorStyle
+  /* 6 */ val UnderlineThin: typingsJapgolly.vscode.mod.TextEditorCursorStyle.UnderlineThin & Double = js.native
 }
-

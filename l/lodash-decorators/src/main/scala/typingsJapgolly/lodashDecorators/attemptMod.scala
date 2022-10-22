@@ -1,16 +1,27 @@
 package typingsJapgolly.lodashDecorators
 
-import typingsJapgolly.lodashDecorators.commonMod.BiTypedMethodDecorator
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.lodashDecorators.factoryCommonMod.BiTypedMethodDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/attempt", JSImport.Namespace)
-@js.native
-object attemptMod extends js.Object {
-  @JSName("Attempt")
-  val Attempt_ : BiTypedMethodDecorator = js.native
-  val attempt: BiTypedMethodDecorator = js.native
+object attemptMod extends Shortcut {
+  
+  @JSImport("lodash-decorators/attempt", JSImport.Default)
+  @js.native
   val default: BiTypedMethodDecorator = js.native
+  
+  @JSImport("lodash-decorators/attempt", "Attempt")
+  @js.native
+  val Attempt_ : BiTypedMethodDecorator = js.native
+  
+  @JSImport("lodash-decorators/attempt", "attempt")
+  @js.native
+  val attempt: BiTypedMethodDecorator = js.native
+  
+  type _To = BiTypedMethodDecorator
+  
+  /* This means you don't have to write `default`, but can instead just say `attemptMod.foo` */
+  override def _to: BiTypedMethodDecorator = default
 }
-

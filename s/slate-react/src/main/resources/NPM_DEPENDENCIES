@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "slate-react" : "0.83.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "slate-react" : "0.83.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,23 +1,31 @@
 package typingsJapgolly.jimpPluginCover
 
-import typingsJapgolly.jimpCore.etcMod.ImageCallback
+import typingsJapgolly.jimpCore.typesEtcMod.ImageCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/plugin-cover", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@jimp/plugin-cover", JSImport.Namespace)
   @js.native
-  trait Cover extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def default(): Cover = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Cover]
+  
+  @js.native
+  trait Cover extends StObject {
+    
     def cover(w: Double, h: Double): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double, cb: ImageCallback[this.type]): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double, mode: String): this.type = js.native
     def cover(w: Double, h: Double, alignBits: Double, mode: String, cb: ImageCallback[this.type]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Double, mode: Unit, cb: ImageCallback[this.type]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, cb: ImageCallback[this.type]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: String): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: String, cb: ImageCallback[this.type]): this.type = js.native
+    def cover(w: Double, h: Double, alignBits: Unit, mode: Unit, cb: ImageCallback[this.type]): this.type = js.native
     def cover(w: Double, h: Double, cb: ImageCallback[this.type]): this.type = js.native
   }
-  
-  def default(): Cover = js.native
 }
-

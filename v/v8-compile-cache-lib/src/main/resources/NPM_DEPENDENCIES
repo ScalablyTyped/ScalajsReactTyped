@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "v8-compile-cache-lib" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "v8-compile-cache-lib" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

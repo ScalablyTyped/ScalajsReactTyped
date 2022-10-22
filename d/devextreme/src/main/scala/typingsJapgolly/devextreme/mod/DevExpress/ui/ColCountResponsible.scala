@@ -1,29 +1,54 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColCountResponsible extends js.Object {
-  /** The count of columns for a large screen size. */
+trait ColCountResponsible extends StObject {
+  
+  /**
+    * The count of columns for a large screen size.
+    */
   var lg: js.UndefOr[Double] = js.undefined
-  /** The count of columns for a middle-sized screen. */
+  
+  /**
+    * The count of columns for a middle-sized screen.
+    */
   var md: js.UndefOr[Double] = js.undefined
-  /** The count of columns for a small-sized screen. */
+  
+  /**
+    * The count of columns for a small-sized screen.
+    */
   var sm: js.UndefOr[Double] = js.undefined
-  /** The count of columns for an extra small-sized screen. */
+  
+  /**
+    * The count of columns for an extra small-sized screen.
+    */
   var xs: js.UndefOr[Double] = js.undefined
 }
-
 object ColCountResponsible {
-  @scala.inline
-  def apply(lg: Int | Double = null, md: Int | Double = null, sm: Int | Double = null, xs: Int | Double = null): ColCountResponsible = {
+  
+  inline def apply(): ColCountResponsible = {
     val __obj = js.Dynamic.literal()
-    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColCountResponsible]
   }
+  
+  extension [Self <: ColCountResponsible](x: Self) {
+    
+    inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+    
+    inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+    
+    inline def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    
+    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+    
+    inline def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+    
+    inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+    
+    inline def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    
+    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+  }
 }
-

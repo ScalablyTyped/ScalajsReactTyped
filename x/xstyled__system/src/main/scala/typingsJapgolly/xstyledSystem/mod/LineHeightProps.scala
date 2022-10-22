@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.LineHeightProperty
+import typingsJapgolly.csstype.mod.Property.LineHeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineHeightProps[TLength] extends js.Object {
-  val lineHeight: js.UndefOr[ResponsiveValue[LineHeightProperty[TLength]]] = js.undefined
+trait LineHeightProps[TLength] extends StObject {
+  
+  val lineHeight: js.UndefOr[ResponsiveValue[LineHeight[TLength]]] = js.undefined
 }
-
 object LineHeightProps {
-  @scala.inline
-  def apply[TLength](lineHeight: ResponsiveValue[LineHeightProperty[TLength]] = null): LineHeightProps[TLength] = {
+  
+  inline def apply[TLength](): LineHeightProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHeightProps[TLength]]
   }
+  
+  extension [Self <: LineHeightProps[?], TLength](x: Self & LineHeightProps[TLength]) {
+    
+    inline def setLineHeight(value: ResponsiveValue[LineHeight[TLength]]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setLineHeightVarargs(value: LineHeight[TLength]*): Self = StObject.set(x, "lineHeight", js.Array(value*))
+  }
 }
-

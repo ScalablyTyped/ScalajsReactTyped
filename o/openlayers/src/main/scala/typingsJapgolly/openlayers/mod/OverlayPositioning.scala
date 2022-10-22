@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.openlayers.openlayersStrings.`bottom-left`
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.openlayers.openlayersStrings.`top-center`
   - typingsJapgolly.openlayers.openlayersStrings.`top-right`
 */
-trait OverlayPositioning extends js.Object
-
+trait OverlayPositioning extends StObject
 object OverlayPositioning {
-  @scala.inline
-  def `bottom-center`: typingsJapgolly.openlayers.openlayersStrings.`bottom-center` = this.cast("bottom-center")
-  @scala.inline
-  def `bottom-left`: typingsJapgolly.openlayers.openlayersStrings.`bottom-left` = this.cast("bottom-left")
-  @scala.inline
-  def `bottom-right`: typingsJapgolly.openlayers.openlayersStrings.`bottom-right` = this.cast("bottom-right")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `center-center`: typingsJapgolly.openlayers.openlayersStrings.`center-center` = this.cast("center-center")
-  @scala.inline
-  def `center-left`: typingsJapgolly.openlayers.openlayersStrings.`center-left` = this.cast("center-left")
-  @scala.inline
-  def `center-right`: typingsJapgolly.openlayers.openlayersStrings.`center-right` = this.cast("center-right")
-  @scala.inline
-  def `top-center`: typingsJapgolly.openlayers.openlayersStrings.`top-center` = this.cast("top-center")
-  @scala.inline
-  def `top-left`: typingsJapgolly.openlayers.openlayersStrings.`top-left` = this.cast("top-left")
-  @scala.inline
-  def `top-right`: typingsJapgolly.openlayers.openlayersStrings.`top-right` = this.cast("top-right")
+  
+  inline def `bottom-center`: typingsJapgolly.openlayers.openlayersStrings.`bottom-center` = "bottom-center".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`bottom-center`]
+  
+  inline def `bottom-left`: typingsJapgolly.openlayers.openlayersStrings.`bottom-left` = "bottom-left".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`bottom-left`]
+  
+  inline def `bottom-right`: typingsJapgolly.openlayers.openlayersStrings.`bottom-right` = "bottom-right".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`bottom-right`]
+  
+  inline def `center-center`: typingsJapgolly.openlayers.openlayersStrings.`center-center` = "center-center".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`center-center`]
+  
+  inline def `center-left`: typingsJapgolly.openlayers.openlayersStrings.`center-left` = "center-left".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`center-left`]
+  
+  inline def `center-right`: typingsJapgolly.openlayers.openlayersStrings.`center-right` = "center-right".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`center-right`]
+  
+  inline def `top-center`: typingsJapgolly.openlayers.openlayersStrings.`top-center` = "top-center".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`top-center`]
+  
+  inline def `top-left`: typingsJapgolly.openlayers.openlayersStrings.`top-left` = "top-left".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`top-left`]
+  
+  inline def `top-right`: typingsJapgolly.openlayers.openlayersStrings.`top-right` = "top-right".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.`top-right`]
 }
-

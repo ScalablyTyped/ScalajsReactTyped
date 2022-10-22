@@ -3,22 +3,35 @@ package typingsJapgolly.reactNativeCalendars.mod
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkedDateCustomStyles extends js.Object {
+trait MarkedDateCustomStyles extends StObject {
+  
   var container: StyleProp[ViewStyle]
+  
   var text: StyleProp[TextStyle]
 }
-
 object MarkedDateCustomStyles {
-  @scala.inline
-  def apply(container: StyleProp[ViewStyle] = null, text: StyleProp[TextStyle] = null): MarkedDateCustomStyles = {
+  
+  inline def apply(): MarkedDateCustomStyles = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkedDateCustomStyles]
   }
+  
+  extension [Self <: MarkedDateCustomStyles](x: Self) {
+    
+    inline def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setText(value: StyleProp[TextStyle]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

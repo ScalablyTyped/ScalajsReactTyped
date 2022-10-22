@@ -1,44 +1,55 @@
 package typingsJapgolly.weixinApp.wx
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.weixinApp.AnonErrMsg
+import typingsJapgolly.weixinApp.anon.ErrMsg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigateToMiniProgramOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   var appId: String
-   // 包括 encrypt_card_id, outer_str, biz三个字段，须从 step3 中获得的链接中获取参数
+  
+  // 包括 encrypt_card_id, outer_str, biz三个字段，须从 step3 中获得的链接中获取参数
   var envVersion: js.UndefOr[String] = js.undefined
-   // 打开的页面路径，如果为空则打开首页
-  var extraData: js.UndefOr[js.Any] = js.undefined
-   // 要打开的小程序 appId
+  
+  // 打开的页面路径，如果为空则打开首页
+  var extraData: js.UndefOr[Any] = js.undefined
+  
+  // 要打开的小程序 appId
   var path: js.UndefOr[String] = js.undefined
-   // 要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版） ，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。默认值 release
+  
+  // 要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版） ，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版。默认值 release
   @JSName("success")
-  var success_NavigateToMiniProgramOptions: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  var success_NavigateToMiniProgramOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
 }
-
 object NavigateToMiniProgramOptions {
-  @scala.inline
-  def apply(
-    appId: String,
-    complete: /* res */ js.Any => Callback = null,
-    envVersion: String = null,
-    extraData: js.Any = null,
-    fail: js.Any => Callback = null,
-    path: String = null,
-    success: /* res */ AnonErrMsg => Callback = null
-  ): NavigateToMiniProgramOptions = {
+  
+  inline def apply(appId: String): NavigateToMiniProgramOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion.asInstanceOf[js.Any])
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.weixinApp.AnonErrMsg) => success(t0).runNow()))
     __obj.asInstanceOf[NavigateToMiniProgramOptions]
   }
+  
+  extension [Self <: NavigateToMiniProgramOptions](x: Self) {
+    
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setEnvVersion(value: String): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
+    
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSuccess(value: /* res */ ErrMsg => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ ErrMsg) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

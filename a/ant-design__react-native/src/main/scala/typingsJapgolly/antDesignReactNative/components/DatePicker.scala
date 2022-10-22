@@ -1,168 +1,123 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.AnonDatePickerLocale
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.anon.DatePickerLocale
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.date
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.datetime
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.month
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.time
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.year
-import typingsJapgolly.antDesignReactNative.datePickerMod.DatePickerProps
-import typingsJapgolly.antDesignReactNative.datePickerMod.default
-import typingsJapgolly.antDesignReactNative.pickerStyleMod.PickerStyle
+import typingsJapgolly.antDesignReactNative.libDatePickerMod.DatePickerProps
+import typingsJapgolly.antDesignReactNative.libPickerStyleMod.PickerStyle
 import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DatePicker {
-  def apply(
-    date: js.Any = null,
-    defaultDate: js.Date = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dismissText: VdomNode = null,
-    extra: String = null,
-    format: String | (js.Function1[/* value */ js.Date, String]) = null,
-    formatDay: (/* day */ Double, /* date */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    formatMonth: (/* month */ Double, /* date */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    itemStyle: StyleProp[ViewStyle] = null,
-    locale: AnonDatePickerLocale = null,
-    maxDate: js.Date = null,
-    minDate: js.Date = null,
-    minuteStep: Int | Double = null,
-    mode: datetime | date | year | month | time = null,
-    okText: VdomNode = null,
-    onChange: /* value */ js.Date => Callback = null,
-    onDateChange: /* date */ js.Any => Callback = null,
-    onDismiss: js.UndefOr[Callback] = js.undefined,
-    onScrollChange: (/* date */ js.Any, /* vals */ js.Any, /* index */ Double) => Callback = null,
-    onValueChange: (/* vals */ js.Any, /* index */ Double) => Callback = null,
-    rootNativeProps: js.Object = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[PickerStyle] = null,
-    title: VdomNode = null,
-    triggerTypes: String = null,
-    use12Hours: js.UndefOr[Boolean] = js.undefined,
-    value: js.Date = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DatePickerProps, default, Unit, DatePickerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.rawNode.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatDay != null) __obj.updateDynamic("formatDay")(js.Any.fromFunction2((t0: /* day */ scala.Double, t1: /* date */ js.UndefOr[js.Any]) => formatDay(t0, t1).runNow()))
-    if (formatMonth != null) __obj.updateDynamic("formatMonth")(js.Any.fromFunction2((t0: /* month */ scala.Double, t1: /* date */ js.UndefOr[js.Any]) => formatMonth(t0, t1).runNow()))
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (okText != null) __obj.updateDynamic("okText")(okText.rawNode.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ js.Date) => onChange(t0).runNow()))
-    if (onDateChange != null) __obj.updateDynamic("onDateChange")(js.Any.fromFunction1((t0: /* date */ js.Any) => onDateChange(t0).runNow()))
-    onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction3((t0: /* date */ js.Any, t1: /* vals */ js.Any, t2: /* index */ scala.Double) => onScrollChange(t0, t1, t2).runNow()))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction2((t0: /* vals */ js.Any, t1: /* index */ scala.Double) => onValueChange(t0, t1).runNow()))
-    if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (triggerTypes != null) __obj.updateDynamic("triggerTypes")(triggerTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.datePickerMod.DatePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.datePickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.datePickerMod.DatePickerProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/date-picker", JSImport.Default)
+  @JSImport("@ant-design/react-native", "DatePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
-}
-
-object Datepicker {
-  def apply(
-    date: js.Any = null,
-    defaultDate: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    formatDay: (/* day */ Double, /* date */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    formatMonth: (/* month */ Double, /* date */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    itemStyle: StyleProp[ViewStyle] = null,
-    locale: js.Any = null,
-    maxDate: js.Any = null,
-    minDate: js.Any = null,
-    minuteStep: Int | Double = null,
-    mode: String = null,
-    onDateChange: /* date */ js.Any => Callback = null,
-    onScrollChange: (/* date */ js.Any, /* vals */ js.Any, /* index */ Double) => Callback = null,
-    onValueChange: (/* vals */ js.Any, /* index */ Double) => Callback = null,
-    rootNativeProps: js.Object = null,
-    style: StyleProp[ViewStyle] = null,
-    use12Hours: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.antDesignReactNative.datePickerPropsMod.DatePickerProps, 
-    typingsJapgolly.antDesignReactNative.datePickerDatepickerMod.default, 
-    Unit, 
-    typingsJapgolly.antDesignReactNative.datePickerPropsMod.DatePickerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
-  
-      if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (formatDay != null) __obj.updateDynamic("formatDay")(js.Any.fromFunction2((t0: /* day */ scala.Double, t1: /* date */ js.UndefOr[js.Any]) => formatDay(t0, t1).runNow()))
-    if (formatMonth != null) __obj.updateDynamic("formatMonth")(js.Any.fromFunction2((t0: /* month */ scala.Double, t1: /* date */ js.UndefOr[js.Any]) => formatMonth(t0, t1).runNow()))
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onDateChange != null) __obj.updateDynamic("onDateChange")(js.Any.fromFunction1((t0: /* date */ js.Any) => onDateChange(t0).runNow()))
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction3((t0: /* date */ js.Any, t1: /* vals */ js.Any, t2: /* index */ scala.Double) => onScrollChange(t0, t1, t2).runNow()))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction2((t0: /* vals */ js.Any, t1: /* index */ scala.Double) => onValueChange(t0, t1).runNow()))
-    if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.datePickerPropsMod.DatePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.datePickerDatepickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.datePickerPropsMod.DatePickerProps])(children: _*)
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.DatePicker] {
+    
+    inline def date(value: Any): this.type = set("date", value.asInstanceOf[js.Any])
+    
+    inline def defaultDate(value: js.Date): this.type = set("defaultDate", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def dismissText(value: VdomNode): this.type = set("dismissText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def dismissTextNull: this.type = set("dismissText", null)
+    
+    inline def dismissTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("dismissText", js.Array(value*))
+    
+    inline def dismissTextVdomElement(value: VdomElement): this.type = set("dismissText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def extra(value: String): this.type = set("extra", value.asInstanceOf[js.Any])
+    
+    inline def format(value: String | (js.Function1[/* value */ js.Date, String])): this.type = set("format", value.asInstanceOf[js.Any])
+    
+    inline def formatDay(value: (/* day */ Double, /* date */ js.UndefOr[Any]) => Any): this.type = set("formatDay", js.Any.fromFunction2(value))
+    
+    inline def formatFunction1(value: /* value */ js.Date => String): this.type = set("format", js.Any.fromFunction1(value))
+    
+    inline def formatMonth(value: (/* month */ Double, /* date */ js.UndefOr[Any]) => Any): this.type = set("formatMonth", js.Any.fromFunction2(value))
+    
+    inline def itemStyle(value: StyleProp[TextStyle]): this.type = set("itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def itemStyleNull: this.type = set("itemStyle", null)
+    
+    inline def locale(value: DatePickerLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def maxDate(value: js.Date): this.type = set("maxDate", value.asInstanceOf[js.Any])
+    
+    inline def minDate(value: js.Date): this.type = set("minDate", value.asInstanceOf[js.Any])
+    
+    inline def minuteStep(value: Double): this.type = set("minuteStep", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: datetime | date | year | month | time): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def okText(value: VdomNode): this.type = set("okText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def okTextNull: this.type = set("okText", null)
+    
+    inline def okTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("okText", js.Array(value*))
+    
+    inline def okTextVdomElement(value: VdomElement): this.type = set("okText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* value */ js.Date => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ js.Date) => value(t0).runNow()))
+    
+    inline def onDateChange(value: /* date */ Any => Callback): this.type = set("onDateChange", js.Any.fromFunction1((t0: /* date */ Any) => value(t0).runNow()))
+    
+    inline def onDismiss(value: Callback): this.type = set("onDismiss", value.toJsFn)
+    
+    inline def onOk(value: Callback): this.type = set("onOk", value.toJsFn)
+    
+    inline def onScrollChange(value: (/* date */ Any, /* vals */ Any, /* index */ Double) => Callback): this.type = set("onScrollChange", js.Any.fromFunction3((t0: /* date */ Any, t1: /* vals */ Any, t2: /* index */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onValueChange(value: (/* vals */ Any, /* index */ Double) => Callback): this.type = set("onValueChange", js.Any.fromFunction2((t0: /* vals */ Any, t1: /* index */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def rootNativeProps(value: js.Object): this.type = set("rootNativeProps", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[PickerStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def triggerTypes(value: String): this.type = set("triggerTypes", value.asInstanceOf[js.Any])
+    
+    inline def use12Hours(value: Boolean): this.type = set("use12Hours", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Date): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
   }
-  @JSImport("@ant-design/react-native/lib/date-picker/datepicker", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  implicit def make(companion: DatePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DatePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

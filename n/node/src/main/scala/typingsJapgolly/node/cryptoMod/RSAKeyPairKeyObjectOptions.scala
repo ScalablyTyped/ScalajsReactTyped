@@ -1,26 +1,35 @@
 package typingsJapgolly.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RSAKeyPairKeyObjectOptions extends js.Object {
+trait RSAKeyPairKeyObjectOptions extends StObject {
+  
   /**
     * Key size in bits
     */
   var modulusLength: Double
+  
   /**
+    * Public exponent
     * @default 0x10001
     */
   var publicExponent: js.UndefOr[Double] = js.undefined
 }
-
 object RSAKeyPairKeyObjectOptions {
-  @scala.inline
-  def apply(modulusLength: Double, publicExponent: Int | Double = null): RSAKeyPairKeyObjectOptions = {
+  
+  inline def apply(modulusLength: Double): RSAKeyPairKeyObjectOptions = {
     val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any])
-    if (publicExponent != null) __obj.updateDynamic("publicExponent")(publicExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAKeyPairKeyObjectOptions]
   }
+  
+  extension [Self <: RSAKeyPairKeyObjectOptions](x: Self) {
+    
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+    
+    inline def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
+    
+    inline def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
+  }
 }
-

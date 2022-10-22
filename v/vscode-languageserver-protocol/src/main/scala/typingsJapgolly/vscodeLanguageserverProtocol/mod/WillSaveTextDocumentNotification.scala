@@ -1,14 +1,25 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.WillSaveTextDocumentParams
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashwillSave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification")
-@js.native
-object WillSaveTextDocumentNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[WillSaveTextDocumentParams, TextDocumentRegistrationOptions] = js.native
+object WillSaveTextDocumentNotification {
+  
+  @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.method")
+  @js.native
+  val method: textDocumentSlashwillSave = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "WillSaveTextDocumentNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[
+    WillSaveTextDocumentParams, 
+    typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
+  ] = js.native
 }
-

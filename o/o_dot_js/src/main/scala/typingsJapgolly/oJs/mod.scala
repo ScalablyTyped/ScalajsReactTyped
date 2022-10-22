@@ -1,51 +1,61 @@
 package typingsJapgolly.oJs
 
-import org.scalajs.dom.experimental.RequestInit
-import org.scalajs.dom.experimental.URL
-import typingsJapgolly.oJs.odataConfigMod.OdataConfig
-import typingsJapgolly.oJs.odataQueryMod.OdataQuery
+import org.scalajs.dom.RequestInit
+import org.scalajs.dom.URL
+import typingsJapgolly.oJs.anon.PartialOdataConfig
+import typingsJapgolly.oJs.distTypesOdataConfigMod.OdataConfig
+import typingsJapgolly.oJs.distTypesOdataQueryMod.OdataQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("o.js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("o.js", JSImport.Namespace)
   @js.native
-  class OBatch protected ()
-    extends typingsJapgolly.oJs.obatchMod.OBatch {
-    def this(resources: js.Array[typingsJapgolly.oJs.orequestMod.ORequest], config: OdataConfig) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("o.js", "OBatch")
+  @js.native
+  open class OBatch protected ()
+    extends typingsJapgolly.oJs.distTypesObatchMod.OBatch {
+    def this(resources: js.Array[typingsJapgolly.oJs.distTypesOrequestMod.ORequest], config: OdataConfig) = this()
     def this(
-      resources: js.Array[typingsJapgolly.oJs.orequestMod.ORequest],
+      resources: js.Array[typingsJapgolly.oJs.distTypesOrequestMod.ORequest],
       config: OdataConfig,
       query: OdataQuery
     ) = this()
     def this(
-      resources: js.Array[typingsJapgolly.oJs.orequestMod.ORequest],
+      resources: js.Array[typingsJapgolly.oJs.distTypesOrequestMod.ORequest],
+      config: OdataConfig,
+      query: Unit,
+      changeset: Boolean
+    ) = this()
+    def this(
+      resources: js.Array[typingsJapgolly.oJs.distTypesOrequestMod.ORequest],
       config: OdataConfig,
       query: OdataQuery,
       changeset: Boolean
     ) = this()
   }
   
+  @JSImport("o.js", "OHandler")
   @js.native
-  class OHandler protected ()
-    extends typingsJapgolly.oJs.ohandlerMod.OHandler {
+  open class OHandler protected ()
+    extends typingsJapgolly.oJs.distTypesOhandlerMod.OHandler {
     def this(config: OdataConfig) = this()
   }
   
+  @JSImport("o.js", "ORequest")
   @js.native
-  class ORequest protected ()
-    extends typingsJapgolly.oJs.orequestMod.ORequest {
+  open class ORequest protected ()
+    extends typingsJapgolly.oJs.distTypesOrequestMod.ORequest {
     def this(url: String, config: RequestInit) = this()
     def this(url: URL, config: RequestInit) = this()
   }
   
-  def o(rootUrl: String): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: js.Any): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
-  def o(rootUrl: String, config: OdataConfig): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
-  def o(rootUrl: typingsJapgolly.std.URL): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
-  def o(rootUrl: typingsJapgolly.std.URL, config: js.Any): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
-  def o(rootUrl: typingsJapgolly.std.URL, config: OdataConfig): typingsJapgolly.oJs.ohandlerMod.OHandler = js.native
+  inline def o(rootUrl: String): typingsJapgolly.oJs.distTypesOhandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.oJs.distTypesOhandlerMod.OHandler]
+  inline def o(rootUrl: String, config: PartialOdataConfig): typingsJapgolly.oJs.distTypesOhandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.oJs.distTypesOhandlerMod.OHandler]
+  inline def o(rootUrl: URL): typingsJapgolly.oJs.distTypesOhandlerMod.OHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.oJs.distTypesOhandlerMod.OHandler]
+  inline def o(rootUrl: URL, config: PartialOdataConfig): typingsJapgolly.oJs.distTypesOhandlerMod.OHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("o")(rootUrl.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.oJs.distTypesOhandlerMod.OHandler]
 }
-

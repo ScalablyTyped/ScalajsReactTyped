@@ -1,51 +1,84 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListPageable extends js.Object {
+trait TreeListPageable extends StObject {
+  
   var alwaysVisible: js.UndefOr[Boolean] = js.undefined
+  
   var buttonCount: js.UndefOr[Double] = js.undefined
+  
   var info: js.UndefOr[Boolean] = js.undefined
+  
   var input: js.UndefOr[Boolean] = js.undefined
+  
   var messages: js.UndefOr[TreeListPageableMessages] = js.undefined
+  
   var numeric: js.UndefOr[Boolean] = js.undefined
+  
   var pageSize: js.UndefOr[Double] = js.undefined
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
+  
+  var pageSizes: js.UndefOr[Boolean | Any] = js.undefined
+  
   var previousNext: js.UndefOr[Boolean] = js.undefined
+  
   var refresh: js.UndefOr[Boolean] = js.undefined
+  
   var responsive: js.UndefOr[Boolean] = js.undefined
 }
-
 object TreeListPageable {
-  @scala.inline
-  def apply(
-    alwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    buttonCount: Int | Double = null,
-    info: js.UndefOr[Boolean] = js.undefined,
-    input: js.UndefOr[Boolean] = js.undefined,
-    messages: TreeListPageableMessages = null,
-    numeric: js.UndefOr[Boolean] = js.undefined,
-    pageSize: Int | Double = null,
-    pageSizes: Boolean | js.Any = null,
-    previousNext: js.UndefOr[Boolean] = js.undefined,
-    refresh: js.UndefOr[Boolean] = js.undefined,
-    responsive: js.UndefOr[Boolean] = js.undefined
-  ): TreeListPageable = {
+  
+  inline def apply(): TreeListPageable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
-    if (buttonCount != null) __obj.updateDynamic("buttonCount")(buttonCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListPageable]
   }
+  
+  extension [Self <: TreeListPageable](x: Self) {
+    
+    inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
+    
+    inline def setButtonCount(value: Double): Self = StObject.set(x, "buttonCount", value.asInstanceOf[js.Any])
+    
+    inline def setButtonCountUndefined: Self = StObject.set(x, "buttonCount", js.undefined)
+    
+    inline def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    
+    inline def setInput(value: Boolean): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setMessages(value: TreeListPageableMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageSizes(value: Boolean | Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
+    
+    inline def setPreviousNext(value: Boolean): Self = StObject.set(x, "previousNext", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousNextUndefined: Self = StObject.set(x, "previousNext", js.undefined)
+    
+    inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    
+    inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+  }
 }
-

@@ -1,39 +1,132 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.MouseEvent
-  * @classdesc MouseEvent object that is passed to events 'mousemove', 'mouseup', 'mousedown' and 'mousewheel'.
-  * @description Create an new MouseEvent.
-  * @param {pc.Mouse} mouse - The Mouse device that is firing this event.
-  * @param {MouseEvent} event - The original browser event that fired.
-  * @property {number} x The x co-ordinate of the mouse pointer relative to the element pc.Mouse is attached to.
-  * @property {number} y The y co-ordinate of the mouse pointer relative to the element pc.Mouse is attached to.
-  * @property {number} dx The change in x co-ordinate since the last mouse event.
-  * @property {number} dy The change in y co-ordinate since the last mouse event.
-  * @property {number} button The mouse button associated with this event. Can be:
-  *
-  * * {@link pc.MOUSEBUTTON_LEFT}
-  * * {@link pc.MOUSEBUTTON_MIDDLE}
-  * * {@link pc.MOUSEBUTTON_RIGHT}
-  *
-  * @property {number} wheelDelta A value representing the amount the mouse wheel has moved, only
-  * valid for {@link mousewheel} events.
-  * @property {Element} element The element that the mouse was fired from.
-  * @property {boolean} ctrlKey True if the ctrl key was pressed when this event was fired.
-  * @property {boolean} shiftKey True if the shift key was pressed when this event was fired.
-  * @property {boolean} altKey True if the alt key was pressed when this event was fired.
-  * @property {boolean} metaKey True if the meta key was pressed when this event was fired.
-  * @property {MouseEvent} event The original browser event.
+  * MouseEvent object that is passed to events 'mousemove', 'mouseup', 'mousedown' and 'mousewheel'.
   */
 @JSImport("playcanvas", "MouseEvent")
 @js.native
-class MouseEvent protected ()
-  extends typingsJapgolly.playcanvas.pc.MouseEvent {
-  def this(mouse: typingsJapgolly.playcanvas.pc.Mouse, event: typingsJapgolly.playcanvas.pc.MouseEvent) = this()
+open class MouseEvent protected ()
+  extends StObject
+     with MouseEvent1 {
+  /**
+    * Create a new MouseEvent instance.
+    *
+    * @param {Mouse} mouse - The Mouse device that is firing this event.
+    * @param {globalThis.MouseEvent} event - The original browser event that fired.
+    */
+  def this(
+    mouse: Mouse,
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.MouseEvent */ Any
+  ) = this()
+  
+  /**
+    * True if the alt key was pressed when this event was fired.
+    *
+    * @type {boolean}
+    */
+  /* CompleteClass */
+  var altKey: Boolean = js.native
+  
+  /**
+    * The mouse button associated with this event. Can be:
+    *
+    * - {@link MOUSEBUTTON_LEFT}
+    * - {@link MOUSEBUTTON_MIDDLE}
+    * - {@link MOUSEBUTTON_RIGHT}
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var button: Double = js.native
+  
+  /* CompleteClass */
+  var buttons: js.Array[Boolean] = js.native
+  
+  /**
+    * True if the ctrl key was pressed when this event was fired.
+    *
+    * @type {boolean}
+    */
+  /* CompleteClass */
+  var ctrlKey: Boolean = js.native
+  
+  /**
+    * The change in x coordinate since the last mouse event.
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var dx: Double = js.native
+  
+  /**
+    * The change in y coordinate since the last mouse event.
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var dy: Double = js.native
+  
+  /**
+    * The element that the mouse was fired from.
+    *
+    * @type {Element}
+    */
+  /* CompleteClass */
+  var element: Element = js.native
+  
+  /**
+    * The original browser event.
+    *
+    * @type {globalThis.MouseEvent}
+    */
+  /* CompleteClass */
+  var event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.MouseEvent */ Any = js.native
+  
+  /**
+    * True if the meta key was pressed when this event was fired.
+    *
+    * @type {boolean}
+    */
+  /* CompleteClass */
+  var metaKey: Boolean = js.native
+  
+  /**
+    * True if the shift key was pressed when this event was fired.
+    *
+    * @type {boolean}
+    */
+  /* CompleteClass */
+  var shiftKey: Boolean = js.native
+  
+  /**
+    * A value representing the amount the mouse wheel has moved, only valid for
+    * {@link mousewheel} events.
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var wheelDelta: Double = js.native
+  
+  /**
+    * The x coordinate of the mouse pointer relative to the element {@link Mouse} is
+    * attached to.
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /**
+    * The y coordinate of the mouse pointer relative to the element {@link Mouse} is
+    * attached to.
+    *
+    * @type {number}
+    */
+  /* CompleteClass */
+  var y: Double = js.native
 }
-

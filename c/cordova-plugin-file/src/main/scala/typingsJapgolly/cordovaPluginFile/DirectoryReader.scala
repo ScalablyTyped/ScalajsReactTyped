@@ -1,8 +1,8 @@
 package typingsJapgolly.cordovaPluginFile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface lets a user list files and directories in a directory. If there are
@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
   *     The entries produced by readEntries must not include the directory itself ["."] or its parent [".."].
   */
 @js.native
-trait DirectoryReader extends js.Object {
+trait DirectoryReader extends StObject {
+  
   /**
     * Read the next block of entries from this directory.
     * @param successCallback Called once per successful call to readEntries to deliver the next
@@ -29,4 +30,3 @@ trait DirectoryReader extends js.Object {
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
 }
-

@@ -1,18 +1,21 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.OutboundMessageStatus")
 @js.native
-object OutboundMessageStatus extends js.Object {
-  /* "processed" */ val Processed: typingsJapgolly.postmark.messageFilteringParametersMod.OutboundMessageStatus.Processed with String = js.native
-  /* "queued" */ val Queued: typingsJapgolly.postmark.messageFilteringParametersMod.OutboundMessageStatus.Queued with String = js.native
-  /* "sent" */ val Sent: typingsJapgolly.postmark.messageFilteringParametersMod.OutboundMessageStatus.Sent with String = js.native
+object OutboundMessageStatus extends StObject {
+  
   @JSBracketAccess
   def apply(value: String): js.UndefOr[
-    typingsJapgolly.postmark.messageFilteringParametersMod.OutboundMessageStatus with String
+    typingsJapgolly.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus & String
   ] = js.native
+  
+  /* "processed" */ val Processed: typingsJapgolly.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Processed & String = js.native
+  
+  /* "queued" */ val Queued: typingsJapgolly.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Queued & String = js.native
+  
+  /* "sent" */ val Sent: typingsJapgolly.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Sent & String = js.native
 }
-

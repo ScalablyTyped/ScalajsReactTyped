@@ -1,9 +1,8 @@
-package typingsJapgolly
+package typingsJapgolly.traceback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object traceback {
-  type TracebackStatic = js.Function0[js.Array[typingsJapgolly.traceback.Traceback_]]
-}
+
+type TracebackStatic = js.Function0[js.Array[Traceback]]

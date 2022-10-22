@@ -1,8 +1,8 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.estreeStrings.Equalssign
@@ -19,36 +19,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.estree.estreeStrings.`^Equalssign`
   - typingsJapgolly.estree.estreeStrings.AmpersandEqualssign
 */
-trait AssignmentOperator extends js.Object
-
+trait AssignmentOperator extends StObject
 object AssignmentOperator {
-  @scala.inline
-  def `-Equalssign`: typingsJapgolly.estree.estreeStrings.`-Equalssign` = this.cast("-=")
-  @scala.inline
-  def AmpersandEqualssign: typingsJapgolly.estree.estreeStrings.AmpersandEqualssign = this.cast("&=")
-  @scala.inline
-  def AsteriskAsteriskEqualssign: typingsJapgolly.estree.estreeStrings.AsteriskAsteriskEqualssign = this.cast("**=")
-  @scala.inline
-  def AsteriskEqualssign: typingsJapgolly.estree.estreeStrings.AsteriskEqualssign = this.cast("*=")
-  @scala.inline
-  def Equalssign: typingsJapgolly.estree.estreeStrings.Equalssign = this.cast("=")
-  @scala.inline
-  def GreaterthansignGreaterthansignEqualssign: typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign = this.cast(">>=")
-  @scala.inline
-  def GreaterthansignGreaterthansignGreaterthansignEqualssign: typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign = this.cast(">>>=")
-  @scala.inline
-  def LessthansignLessthansignEqualssign: typingsJapgolly.estree.estreeStrings.LessthansignLessthansignEqualssign = this.cast("<<=")
-  @scala.inline
-  def PercentsignEqualssign: typingsJapgolly.estree.estreeStrings.PercentsignEqualssign = this.cast("%=")
-  @scala.inline
-  def PlussignEqualssign: typingsJapgolly.estree.estreeStrings.PlussignEqualssign = this.cast("+=")
-  @scala.inline
-  def SlashEqualssign: typingsJapgolly.estree.estreeStrings.SlashEqualssign = this.cast("/=")
-  @scala.inline
-  def VerticallineEqualssign: typingsJapgolly.estree.estreeStrings.VerticallineEqualssign = this.cast("|=")
-  @scala.inline
-  def `^Equalssign`: typingsJapgolly.estree.estreeStrings.`^Equalssign` = this.cast("^=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `-Equalssign`: typingsJapgolly.estree.estreeStrings.`-Equalssign` = "-=".asInstanceOf[typingsJapgolly.estree.estreeStrings.`-Equalssign`]
+  
+  inline def AmpersandEqualssign: typingsJapgolly.estree.estreeStrings.AmpersandEqualssign = "&=".asInstanceOf[typingsJapgolly.estree.estreeStrings.AmpersandEqualssign]
+  
+  inline def AsteriskAsteriskEqualssign: typingsJapgolly.estree.estreeStrings.AsteriskAsteriskEqualssign = "**=".asInstanceOf[typingsJapgolly.estree.estreeStrings.AsteriskAsteriskEqualssign]
+  
+  inline def AsteriskEqualssign: typingsJapgolly.estree.estreeStrings.AsteriskEqualssign = "*=".asInstanceOf[typingsJapgolly.estree.estreeStrings.AsteriskEqualssign]
+  
+  inline def Equalssign: typingsJapgolly.estree.estreeStrings.Equalssign = "=".asInstanceOf[typingsJapgolly.estree.estreeStrings.Equalssign]
+  
+  inline def GreaterthansignGreaterthansignEqualssign: typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignEqualssign]
+  
+  inline def GreaterthansignGreaterthansignGreaterthansignEqualssign: typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[typingsJapgolly.estree.estreeStrings.GreaterthansignGreaterthansignGreaterthansignEqualssign]
+  
+  inline def LessthansignLessthansignEqualssign: typingsJapgolly.estree.estreeStrings.LessthansignLessthansignEqualssign = "<<=".asInstanceOf[typingsJapgolly.estree.estreeStrings.LessthansignLessthansignEqualssign]
+  
+  inline def PercentsignEqualssign: typingsJapgolly.estree.estreeStrings.PercentsignEqualssign = "%=".asInstanceOf[typingsJapgolly.estree.estreeStrings.PercentsignEqualssign]
+  
+  inline def PlussignEqualssign: typingsJapgolly.estree.estreeStrings.PlussignEqualssign = "+=".asInstanceOf[typingsJapgolly.estree.estreeStrings.PlussignEqualssign]
+  
+  inline def SlashEqualssign: typingsJapgolly.estree.estreeStrings.SlashEqualssign = "/=".asInstanceOf[typingsJapgolly.estree.estreeStrings.SlashEqualssign]
+  
+  inline def VerticallineEqualssign: typingsJapgolly.estree.estreeStrings.VerticallineEqualssign = "|=".asInstanceOf[typingsJapgolly.estree.estreeStrings.VerticallineEqualssign]
+  
+  inline def `^Equalssign`: typingsJapgolly.estree.estreeStrings.`^Equalssign` = "^=".asInstanceOf[typingsJapgolly.estree.estreeStrings.`^Equalssign`]
 }
-

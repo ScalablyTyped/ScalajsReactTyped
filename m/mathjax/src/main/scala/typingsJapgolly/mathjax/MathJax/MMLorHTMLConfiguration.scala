@@ -1,10 +1,11 @@
 package typingsJapgolly.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MMLorHTMLConfiguration extends js.Object {
+trait MMLorHTMLConfiguration extends StObject {
+  
   /*This lets you set the preferred renderer on a browser-by-browser basis. You set the browser to either "MML" or
     * "HTML" depending on whether you want to use the NativeMML or HTML-CSS output processor. Note that although
     * Opera and Safari do process some MathML natively, their support is not sufficient to handle the more
@@ -17,13 +18,17 @@ trait MMLorHTMLConfiguration extends js.Object {
     */
   var prefer: js.UndefOr[BrowserPreference] = js.undefined
 }
-
 object MMLorHTMLConfiguration {
-  @scala.inline
-  def apply(prefer: BrowserPreference = null): MMLorHTMLConfiguration = {
+  
+  inline def apply(): MMLorHTMLConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (prefer != null) __obj.updateDynamic("prefer")(prefer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MMLorHTMLConfiguration]
   }
+  
+  extension [Self <: MMLorHTMLConfiguration](x: Self) {
+    
+    inline def setPrefer(value: BrowserPreference): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
+    
+    inline def setPreferUndefined: Self = StObject.set(x, "prefer", js.undefined)
+  }
 }
-

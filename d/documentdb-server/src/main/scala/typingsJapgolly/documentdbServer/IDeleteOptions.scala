@@ -1,24 +1,29 @@
 package typingsJapgolly.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a delete operation. */
-trait IDeleteOptions extends js.Object {
+trait IDeleteOptions extends StObject {
+  
   /**
-  	 * The entity tag associated with the resource.
-  	 * This is matched with the persisted resource before deletion.
-  	 */
+    * The entity tag associated with the resource.
+    * This is matched with the persisted resource before deletion.
+    */
   var etag: js.UndefOr[String] = js.undefined
 }
-
 object IDeleteOptions {
-  @scala.inline
-  def apply(etag: String = null): IDeleteOptions = {
+  
+  inline def apply(): IDeleteOptions = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteOptions]
   }
+  
+  extension [Self <: IDeleteOptions](x: Self) {
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+  }
 }
-

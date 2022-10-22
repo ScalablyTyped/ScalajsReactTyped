@@ -1,59 +1,77 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistogramViewModelProperties extends js.Object {
+trait HistogramViewModelProperties extends StObject {
+  
   /**
-    * The statistical average of the data in the histogram. You would typically get this value from the `avg` property of SummaryStatisticsResult, which is the result of the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function.  When set, this value will render on the histogram with a symbol indicating it is the average.
+    * The statistical average of the data in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#average)
     */
   var average: js.UndefOr[Double] = js.undefined
+  
   /**
-    * An array of objects representing each bin in the histogram. This information is typically returned from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) function.
+    * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins)
     */
   var bins: js.UndefOr[js.Array[Bin]] = js.undefined
+  
   /**
-    * A function used to format labels. Overrides the default label formatter.
+    * A function used to format labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#labelFormatFunction)
     */
   var labelFormatFunction: js.UndefOr[LabelFormatter] = js.undefined
+  
   /**
-    * The maximum value or bound of the entire histogram. This should match the maximum bound of the last [bin](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins).
+    * The maximum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#max)
     */
   var max: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The minimum value or bound of the entire histogram. This should match the minimum bound of the first [bin](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins).
+    * The minimum value or bound of the entire histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#min)
     */
   var min: js.UndefOr[Double] = js.undefined
 }
-
 object HistogramViewModelProperties {
-  @scala.inline
-  def apply(
-    average: Int | Double = null,
-    bins: js.Array[Bin] = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => CallbackTo[String] = null,
-    max: Int | Double = null,
-    min: Int | Double = null
-  ): HistogramViewModelProperties = {
+  
+  inline def apply(): HistogramViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
-    if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3((t0: /* value */ scala.Double, t1: /* type */ js.UndefOr[java.lang.String], t2: /* index */ js.UndefOr[scala.Double]) => labelFormatFunction(t0, t1, t2).runNow()))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramViewModelProperties]
   }
+  
+  extension [Self <: HistogramViewModelProperties](x: Self) {
+    
+    inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    
+    inline def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    
+    inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+    
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value*))
+    
+    inline def setLabelFormatFunction(
+      value: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
+    
+    inline def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+  }
 }
-

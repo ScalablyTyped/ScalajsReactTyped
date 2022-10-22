@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartSeriesFormat.toJSON()`. */
-trait ChartSeriesFormatData extends js.Object {
+trait ChartSeriesFormatData extends StObject {
+  
   /**
+    * Represents line formatting.
     *
-    * Represents line formatting. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
-
 object ChartSeriesFormatData {
-  @scala.inline
-  def apply(line: ChartLineFormatData = null): ChartSeriesFormatData = {
+  
+  inline def apply(): ChartSeriesFormatData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesFormatData]
   }
+  
+  extension [Self <: ChartSeriesFormatData](x: Self) {
+    
+    inline def setLine(value: ChartLineFormatData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

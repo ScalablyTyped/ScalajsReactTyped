@@ -1,35 +1,33 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskExecutionMode extends js.Object
-
+sealed trait TaskExecutionMode extends StObject
 @JSImport("azdata", "TaskExecutionMode")
 @js.native
-object TaskExecutionMode extends js.Object {
-  @js.native
-  sealed trait execute extends TaskExecutionMode
-  
-  @js.native
-  sealed trait executeAndScript extends TaskExecutionMode
-  
-  @js.native
-  sealed trait script extends TaskExecutionMode
+object TaskExecutionMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TaskExecutionMode with Double] = js.native
-  /* 0 */ @js.native
-  object execute extends TopLevel[execute with Double]
+  def apply(value: Double): js.UndefOr[TaskExecutionMode & Double] = js.native
   
-  /* 2 */ @js.native
-  object executeAndScript extends TopLevel[executeAndScript with Double]
+  @js.native
+  sealed trait execute
+    extends StObject
+       with TaskExecutionMode
+  /* 0 */ val execute: typingsJapgolly.azdata.mod.TaskExecutionMode.execute & Double = js.native
   
-  /* 1 */ @js.native
-  object script extends TopLevel[script with Double]
+  @js.native
+  sealed trait executeAndScript
+    extends StObject
+       with TaskExecutionMode
+  /* 2 */ val executeAndScript: typingsJapgolly.azdata.mod.TaskExecutionMode.executeAndScript & Double = js.native
   
+  @js.native
+  sealed trait script
+    extends StObject
+       with TaskExecutionMode
+  /* 1 */ val script: typingsJapgolly.azdata.mod.TaskExecutionMode.script & Double = js.native
 }
-

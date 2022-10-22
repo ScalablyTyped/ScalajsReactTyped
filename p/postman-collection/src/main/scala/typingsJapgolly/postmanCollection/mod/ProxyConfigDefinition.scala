@@ -1,39 +1,45 @@
 package typingsJapgolly.postmanCollection.mod
 
-import typingsJapgolly.postmanCollection.AnonPattern
+import typingsJapgolly.postmanCollection.anon.Pattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProxyConfigDefinition extends PropertyDefinition {
+trait ProxyConfigDefinition
+  extends StObject
+     with PropertyDefinition {
+  
   var host: js.UndefOr[String] = js.undefined
-  var `match`: js.UndefOr[String | AnonPattern | UrlMatchPattern] = js.undefined
+  
+  var `match`: js.UndefOr[String | Pattern | UrlMatchPattern] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
+  
   var tunnel: js.UndefOr[Boolean] = js.undefined
 }
-
 object ProxyConfigDefinition {
-  @scala.inline
-  def apply(
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    id: String = null,
-    `match`: String | AnonPattern | UrlMatchPattern = null,
-    name: String = null,
-    port: Int | Double = null,
-    tunnel: js.UndefOr[Boolean] = js.undefined
-  ): ProxyConfigDefinition = {
+  
+  inline def apply(): ProxyConfigDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfigDefinition]
   }
+  
+  extension [Self <: ProxyConfigDefinition](x: Self) {
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setMatch(value: String | Pattern | UrlMatchPattern): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setTunnel(value: Boolean): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+  }
 }
-

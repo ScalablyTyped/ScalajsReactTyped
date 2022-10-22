@@ -1,16 +1,18 @@
 package typingsJapgolly.couchbase.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authenticator for using classic authentication.
   */
 @JSImport("couchbase", "ClassicAuthenticator")
 @js.native
-class ClassicAuthenticator protected () extends Authenticator {
+open class ClassicAuthenticator protected ()
+  extends StObject
+     with Authenticator {
   /**
     * Create a new instance of the ClassicAuthenticator class.
     * @param buckets Map of bucket names to passwords.
@@ -18,9 +20,10 @@ class ClassicAuthenticator protected () extends Authenticator {
     * @param password Cluster administration password.
     */
   def this(buckets: StringDictionary[String], username: String, password: String) = this()
+  
   /* CompleteClass */
-  override var password: String = js.native
+  var password: String = js.native
+  
   /* CompleteClass */
-  override var username: String = js.native
+  var username: String = js.native
 }
-

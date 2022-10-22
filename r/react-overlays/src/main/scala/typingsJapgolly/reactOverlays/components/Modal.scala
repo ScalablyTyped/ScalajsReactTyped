@@ -1,92 +1,102 @@
 package typingsJapgolly.reactOverlays.components
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactOverlays.modalManagerMod.^
-import typingsJapgolly.reactOverlays.modalMod.ModalProps
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.KeyboardEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.reactOverlays.anon.PreventScroll
+import typingsJapgolly.reactOverlays.esmModalManagerMod.default
+import typingsJapgolly.reactOverlays.esmModalMod.ModalHandle
+import typingsJapgolly.reactOverlays.esmModalMod.ModalProps
+import typingsJapgolly.reactOverlays.esmModalMod.ModalTransitionComponent
+import typingsJapgolly.reactOverlays.esmModalMod.RenderModalBackdropProps
+import typingsJapgolly.reactOverlays.esmModalMod.RenderModalDialogProps
+import typingsJapgolly.reactOverlays.esmUseWaitForDOMRefMod.DOMContainer
+import typingsJapgolly.reactOverlays.reactOverlaysBooleans.`false`
+import typingsJapgolly.reactOverlays.reactOverlaysBooleans.`true`
 import typingsJapgolly.reactOverlays.reactOverlaysStrings.static
-import typingsJapgolly.reactTransitionGroup.transitionMod.TransitionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Modal {
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backdrop: Boolean | static = null,
-    backdropTransition: ComponentType[TransitionProps] = null,
-    className: String = null,
-    container: Node | js.Function = null,
-    containerClassName: String = null,
-    enforceFocus: js.UndefOr[Boolean] = js.undefined,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    manager: ^ = null,
-    onBackdropClick: js.Function = null,
-    onEnter: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntered: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntering: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEscapeKeyDown: js.Function = null,
-    onExit: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExited: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExiting: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onHide: js.Function = null,
-    onRendered: js.Function = null,
-    onShow: js.Function = null,
-    renderBackdrop: /* props */ js.Any => CallbackTo[Node] = null,
-    renderDialog: /* props */ js.Any => CallbackTo[Node] = null,
-    restoreFocus: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    transition: ComponentType[TransitionProps] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ModalProps, typingsJapgolly.reactOverlays.mod.Modal, Unit, ModalProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (backdropTransition != null) __obj.updateDynamic("backdropTransition")(backdropTransition.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
-    if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEnter(t0).runNow()))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntered(t0).runNow()))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntering(t0).runNow()))
-    if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(onEscapeKeyDown.asInstanceOf[js.Any])
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExit(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExited(t0).runNow()))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExiting(t0).runNow()))
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
-    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
-    if (renderBackdrop != null) __obj.updateDynamic("renderBackdrop")(js.Any.fromFunction1((t0: /* props */ js.Any) => renderBackdrop(t0).runNow()))
-    if (renderDialog != null) __obj.updateDynamic("renderDialog")(js.Any.fromFunction1((t0: /* props */ js.Any) => renderDialog(t0).runNow()))
-    if (!js.isUndefined(restoreFocus)) __obj.updateDynamic("restoreFocus")(restoreFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOverlays.modalMod.ModalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOverlays.mod.Modal](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOverlays.modalMod.ModalProps])(children: _*)
-  }
-  @JSImport("react-overlays", "Modal")
+  @JSImport("react-overlays/esm", "Modal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[ModalHandle] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def backdrop(value: `true` | `false` | static): this.type = set("backdrop", value.asInstanceOf[js.Any])
+    
+    inline def backdropTransition(value: ModalTransitionComponent): this.type = set("backdropTransition", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def container(value: DOMContainer[HTMLElement]): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerCallbackTo(value: CallbackTo[HTMLElement | RefHandle[HTMLElement] | Null]): this.type = set("container", value.toJsFn)
+    
+    inline def containerClassName(value: String): this.type = set("containerClassName", value.asInstanceOf[js.Any])
+    
+    inline def containerNull: this.type = set("container", null)
+    
+    inline def enforceFocus(value: Boolean): this.type = set("enforceFocus", value.asInstanceOf[js.Any])
+    
+    inline def keyboard(value: Boolean): this.type = set("keyboard", value.asInstanceOf[js.Any])
+    
+    inline def manager(value: default): this.type = set("manager", value.asInstanceOf[js.Any])
+    
+    inline def onBackdropClick(value: /* e */ ReactEventFrom[Element] => Callback): this.type = set("onBackdropClick", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Element]) => value(t0).runNow()))
+    
+    inline def onEnter(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEnter", js.Any.fromFunction2(value))
+    
+    inline def onEntered(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEntered", js.Any.fromFunction2(value))
+    
+    inline def onEntering(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEntering", js.Any.fromFunction2(value))
+    
+    inline def onEscapeKeyDown(value: /* e */ KeyboardEvent => Callback): this.type = set("onEscapeKeyDown", js.Any.fromFunction1((t0: /* e */ KeyboardEvent) => value(t0).runNow()))
+    
+    inline def onExit(value: /* node */ HTMLElement => Any): this.type = set("onExit", js.Any.fromFunction1(value))
+    
+    inline def onExited(value: /* node */ HTMLElement => Any): this.type = set("onExited", js.Any.fromFunction1(value))
+    
+    inline def onExiting(value: /* node */ HTMLElement => Any): this.type = set("onExiting", js.Any.fromFunction1(value))
+    
+    inline def onHide(value: Callback): this.type = set("onHide", value.toJsFn)
+    
+    inline def onShow(value: Callback): this.type = set("onShow", value.toJsFn)
+    
+    inline def renderBackdrop(value: /* props */ RenderModalBackdropProps => Node): this.type = set("renderBackdrop", js.Any.fromFunction1(value))
+    
+    inline def renderDialog(value: /* props */ RenderModalDialogProps => Node): this.type = set("renderDialog", js.Any.fromFunction1(value))
+    
+    inline def restoreFocus(value: Boolean): this.type = set("restoreFocus", value.asInstanceOf[js.Any])
+    
+    inline def restoreFocusOptions(value: PreventScroll): this.type = set("restoreFocusOptions", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def transition(value: ModalTransitionComponent): this.type = set("transition", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Modal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ModalProps & RefAttributes[ModalHandle]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,13 +1,13 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.CadastralLayer")
 @js.native
-class CadastralLayer () extends LabelLayer {
-  def this(option: CadastralLayerOptions) = this()
+trait CadastralLayer
+  extends StObject
+     with Layer {
+  
   var name: String = js.native
 }
-

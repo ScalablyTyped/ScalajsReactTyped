@@ -1,18 +1,52 @@
 package typingsJapgolly.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("USBAlternateInterface")
-@js.native
-class USBAlternateInterface protected () extends js.Object {
-  def this(deviceInterface: USBInterface, alternateSetting: Double) = this()
-  val alternateSetting: Double = js.native
-  val endpoints: js.Array[USBEndpoint] = js.native
-  val interfaceClass: Double = js.native
-  val interfaceName: js.UndefOr[String] = js.native
-  val interfaceProtocol: Double = js.native
-  val interfaceSubclass: Double = js.native
+trait USBAlternateInterface extends StObject {
+  
+  val alternateSetting: Double
+  
+  val endpoints: js.Array[USBEndpoint]
+  
+  val interfaceClass: Double
+  
+  val interfaceName: js.UndefOr[String] = js.undefined
+  
+  val interfaceProtocol: Double
+  
+  val interfaceSubclass: Double
 }
-
+object USBAlternateInterface {
+  
+  inline def apply(
+    alternateSetting: Double,
+    endpoints: js.Array[USBEndpoint],
+    interfaceClass: Double,
+    interfaceProtocol: Double,
+    interfaceSubclass: Double
+  ): USBAlternateInterface = {
+    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], interfaceClass = interfaceClass.asInstanceOf[js.Any], interfaceProtocol = interfaceProtocol.asInstanceOf[js.Any], interfaceSubclass = interfaceSubclass.asInstanceOf[js.Any])
+    __obj.asInstanceOf[USBAlternateInterface]
+  }
+  
+  extension [Self <: USBAlternateInterface](x: Self) {
+    
+    inline def setAlternateSetting(value: Double): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
+    
+    inline def setEndpoints(value: js.Array[USBEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
+    
+    inline def setInterfaceClass(value: Double): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
+    
+    inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
+    
+    inline def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
+    
+    inline def setInterfaceProtocol(value: Double): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
+    
+    inline def setInterfaceSubclass(value: Double): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
+  }
+}

@@ -6,25 +6,14 @@ import typingsJapgolly.bootstrapToggle.bootstrapToggleStrings.enable
 import typingsJapgolly.bootstrapToggle.bootstrapToggleStrings.off
 import typingsJapgolly.bootstrapToggle.bootstrapToggleStrings.on
 import typingsJapgolly.bootstrapToggle.bootstrapToggleStrings.toggle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def bootstrapToggle(): JQuery = js.native
+  def bootstrapToggle(command: destroy | on | off | toggle | enable | disable): JQuery = js.native
   def bootstrapToggle(options: BootstrapToggleOptions): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_destroy(command: destroy): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_disable(command: disable): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_enable(command: enable): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_off(command: off): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_on(command: on): JQuery = js.native
-  @JSName("bootstrapToggle")
-  def bootstrapToggle_toggle(command: toggle): JQuery = js.native
 }
-

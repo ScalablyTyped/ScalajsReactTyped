@@ -1,19 +1,23 @@
 package typingsJapgolly.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Office.SharedWorkspaceFolder")
 @js.native
-class SharedWorkspaceFolder protected () extends js.Object {
-  val Application: js.Any = js.native
+trait SharedWorkspaceFolder extends StObject {
+  
+  val Application: Any = js.native
+  
   val Creator: Double = js.native
-  val FolderName: String = js.native
-  @JSName("Office.SharedWorkspaceFolder_typekey")
-  var OfficeDotSharedWorkspaceFolder_typekey: SharedWorkspaceFolder = js.native
-  val Parent: js.Any = js.native
+  
   def Delete(): Unit = js.native
   def Delete(DeleteEventIfFolderContainsFiles: Boolean): Unit = js.native
+  
+  val FolderName: String = js.native
+  
+  /* private */ @JSName("Office.SharedWorkspaceFolder_typekey")
+  var OfficeDotSharedWorkspaceFolder_typekey: SharedWorkspaceFolder = js.native
+  
+  val Parent: Any = js.native
 }
-

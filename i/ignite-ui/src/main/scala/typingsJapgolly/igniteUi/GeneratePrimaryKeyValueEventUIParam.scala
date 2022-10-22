@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeneratePrimaryKeyValueEventUIParam extends js.Object {
+trait GeneratePrimaryKeyValueEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to GridUpdating.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to GridUpdating.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the auto-generated primary key (the number of records in the data source + 1) or set a custom unique primary key for the new row.
-  	 */
-  var value: js.UndefOr[js.Any] = js.undefined
+    * Gets the auto-generated primary key (the number of records in the data source + 1) or set a custom unique primary key for the new row.
+    */
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object GeneratePrimaryKeyValueEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, value: js.Any = null): GeneratePrimaryKeyValueEventUIParam = {
+  
+  inline def apply(): GeneratePrimaryKeyValueEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratePrimaryKeyValueEventUIParam]
   }
+  
+  extension [Self <: GeneratePrimaryKeyValueEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

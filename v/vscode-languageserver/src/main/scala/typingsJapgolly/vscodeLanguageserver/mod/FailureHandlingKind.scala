@@ -1,32 +1,41 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "FailureHandlingKind")
-@js.native
-object FailureHandlingKind extends js.Object {
+object FailureHandlingKind {
+  
   /**
     * Applying the workspace change is simply aborted if one of the changes provided
     * fails. All operations executed before the failing operation stay executed.
     */
-  val Abort: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  @JSImport("vscode-languageserver", "FailureHandlingKind.Abort")
+  @js.native
+  val Abort: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
+  
   /**
     * If the workspace edit contains only textual file changes they are executed transactional.
     * If resource changes (create, rename or delete file) are part of the change the failure
-    * handling startegy is abort.
+    * handling strategy is abort.
     */
-  val TextOnlyTransactional: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  @JSImport("vscode-languageserver", "FailureHandlingKind.TextOnlyTransactional")
+  @js.native
+  val TextOnlyTransactional: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
+  
   /**
     * All operations are executed transactional. That means they either all
     * succeed or no changes at all are applied to the workspace.
     */
-  val Transactional: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  @JSImport("vscode-languageserver", "FailureHandlingKind.Transactional")
+  @js.native
+  val Transactional: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
+  
   /**
     * The client tries to undo the operations already executed. But there is no
-    * guaruntee that this is succeeding.
+    * guarantee that this is succeeding.
     */
-  val Undo: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.FailureHandlingKind = js.native
+  @JSImport("vscode-languageserver", "FailureHandlingKind.Undo")
+  @js.native
+  val Undo: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.FailureHandlingKind = js.native
 }
-

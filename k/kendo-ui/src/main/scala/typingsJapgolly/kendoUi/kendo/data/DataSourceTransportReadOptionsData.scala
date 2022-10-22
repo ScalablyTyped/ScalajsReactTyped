@@ -1,33 +1,52 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceTransportReadOptionsData extends js.Object {
+trait DataSourceTransportReadOptionsData extends StObject {
+  
   var filter: js.UndefOr[DataSourceFilters] = js.undefined
+  
   var group: js.UndefOr[js.Array[DataSourceGroupItem]] = js.undefined
+  
   var skip: js.UndefOr[Double] = js.undefined
+  
   var sort: js.UndefOr[js.Array[DataSourceSortItem]] = js.undefined
+  
   var take: js.UndefOr[Double] = js.undefined
 }
-
 object DataSourceTransportReadOptionsData {
-  @scala.inline
-  def apply(
-    filter: DataSourceFilters = null,
-    group: js.Array[DataSourceGroupItem] = null,
-    skip: Int | Double = null,
-    sort: js.Array[DataSourceSortItem] = null,
-    take: Int | Double = null
-  ): DataSourceTransportReadOptionsData = {
+  
+  inline def apply(): DataSourceTransportReadOptionsData = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportReadOptionsData]
   }
+  
+  extension [Self <: DataSourceTransportReadOptionsData](x: Self) {
+    
+    inline def setFilter(value: DataSourceFilters): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setGroup(value: js.Array[DataSourceGroupItem]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value*))
+    
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    
+    inline def setSort(value: js.Array[DataSourceSortItem]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: DataSourceSortItem*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+    
+    inline def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
+  }
 }
-

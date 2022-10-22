@@ -1,76 +1,77 @@
 package typingsJapgolly.jestMock
 
-import typingsJapgolly.jestMock.mod.MockFunctionMetadataType
-import typingsJapgolly.jestMock.mod.MockFunctionResultType
+import typingsJapgolly.jestMock.mod.MockMetadataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestMockStrings {
-  @js.native
-  sealed trait array extends MockFunctionMetadataType
   
   @js.native
-  sealed trait collection extends MockFunctionMetadataType
+  sealed trait array
+    extends StObject
+       with MockMetadataType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait constant extends MockFunctionMetadataType
+  sealed trait collection
+    extends StObject
+       with MockMetadataType
+  inline def collection: collection = "collection".asInstanceOf[collection]
   
   @js.native
-  sealed trait function extends MockFunctionMetadataType
+  sealed trait constant
+    extends StObject
+       with MockMetadataType
+  inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait function
+    extends StObject
+       with MockMetadataType
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait incomplete extends MockFunctionResultType
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait `null` extends MockFunctionMetadataType
+  sealed trait incomplete extends StObject
+  inline def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
   
   @js.native
-  sealed trait `object` extends MockFunctionMetadataType
+  sealed trait `null`
+    extends StObject
+       with MockMetadataType
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait regexp extends MockFunctionMetadataType
+  sealed trait `object`
+    extends StObject
+       with MockMetadataType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait `return` extends MockFunctionResultType
+  sealed trait regexp
+    extends StObject
+       with MockMetadataType
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait `return` extends StObject
+  inline def `return`: `return` = "return".asInstanceOf[`return`]
   
   @js.native
-  sealed trait `throw` extends MockFunctionResultType
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait undefined extends MockFunctionMetadataType
+  sealed trait `throw` extends StObject
+  inline def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def collection: collection = "collection".asInstanceOf[collection]
-  @scala.inline
-  def constant: constant = "constant".asInstanceOf[constant]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with MockMetadataType
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

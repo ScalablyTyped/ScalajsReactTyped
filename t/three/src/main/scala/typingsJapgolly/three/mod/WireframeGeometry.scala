@@ -1,14 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WireframeGeometry")
 @js.native
-class WireframeGeometry protected ()
-  extends typingsJapgolly.three.geometriesMod.WireframeGeometry {
-  def this(geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typingsJapgolly.three.geometryMod.Geometry) = this()
+open class WireframeGeometry[TBufferGeometry /* <: typingsJapgolly.three.srcCoreBufferGeometryMod.BufferGeometry */] ()
+  extends typingsJapgolly.three.srcThreeMod.WireframeGeometry[TBufferGeometry] {
+  def this(geometry: TBufferGeometry) = this()
 }
-

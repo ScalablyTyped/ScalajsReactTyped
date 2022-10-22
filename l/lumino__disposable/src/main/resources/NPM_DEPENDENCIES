@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lumino/disposable" : "1.10.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lumino/disposable" : "1.10.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

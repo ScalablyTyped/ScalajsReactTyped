@@ -1,20 +1,20 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "SpotLight")
 @js.native
-class SpotLight protected ()
-  extends typingsJapgolly.three.spotLightMod.SpotLight {
+open class SpotLight protected ()
+  extends typingsJapgolly.three.srcThreeMod.SpotLight {
   def this(
-    color: js.UndefOr[typingsJapgolly.three.colorMod.Color | Double | String],
+    color: js.UndefOr[ColorRepresentation],
     intensity: js.UndefOr[Double],
     distance: js.UndefOr[Double],
     angle: js.UndefOr[Double],
-    exponent: js.UndefOr[Double],
+    penumbra: js.UndefOr[Double],
     decay: js.UndefOr[Double]
   ) = this()
 }
-

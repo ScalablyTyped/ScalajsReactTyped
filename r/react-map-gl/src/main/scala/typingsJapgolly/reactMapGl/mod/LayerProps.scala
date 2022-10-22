@@ -10,45 +10,77 @@ import typingsJapgolly.mapboxGl.mod.HillshadePaint
 import typingsJapgolly.mapboxGl.mod.LinePaint
 import typingsJapgolly.mapboxGl.mod.RasterPaint
 import typingsJapgolly.mapboxGl.mod.SymbolPaint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerProps extends js.Object {
+trait LayerProps extends StObject {
+  
   var beforeId: js.UndefOr[String] = js.undefined
-  var filter: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var filter: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var layout: js.UndefOr[AnyLayout] = js.undefined
+  
   var maxzoom: js.UndefOr[Double] = js.undefined
+  
   var minzoom: js.UndefOr[Double] = js.undefined
+  
   var paint: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint
+  
   var source: js.UndefOr[String] = js.undefined
+  
   var `type`: String
 }
-
 object LayerProps {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     paint: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint,
-    `type`: String,
-    beforeId: String = null,
-    filter: js.Array[_] = null,
-    id: String = null,
-    layout: AnyLayout = null,
-    maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
-    source: String = null
+    `type`: String
   ): LayerProps = {
     val __obj = js.Dynamic.literal(paint = paint.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (beforeId != null) __obj.updateDynamic("beforeId")(beforeId.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerProps]
   }
+  
+  extension [Self <: LayerProps](x: Self) {
+    
+    inline def setBeforeId(value: String): Self = StObject.set(x, "beforeId", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeIdUndefined: Self = StObject.set(x, "beforeId", js.undefined)
+    
+    inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterVarargs(value: Any*): Self = StObject.set(x, "filter", js.Array(value*))
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLayout(value: AnyLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    
+    inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    
+    inline def setPaint(
+      value: BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint
+    ): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

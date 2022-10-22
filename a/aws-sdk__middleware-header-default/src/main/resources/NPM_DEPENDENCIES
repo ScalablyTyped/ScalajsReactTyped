@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/middleware-header-default" : "0.1.0-preview.1"
+      "@aws-sdk/middleware-header-default" : "3.110.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/middleware-header-default" : "0.1.0-preview.1"
+      "@aws-sdk/middleware-header-default" : "3.110.0"
     }
   ],
   "compile-devDependencies" : [

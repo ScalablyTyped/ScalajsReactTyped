@@ -1,35 +1,50 @@
 package typingsJapgolly.geometryDom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DOMPointInit extends js.Object {
+trait DOMPointInit extends StObject {
+  
   /**
     * w coordinate: 1
     */
   var w: js.UndefOr[Double] = js.undefined
+  
   /**
     * x coordinate: 0
     */
   var x: Double
+  
   /**
     * y coordinate: 0
     */
   var y: Double
+  
   /**
     * z coordinate: 0
     */
   var z: js.UndefOr[Double] = js.undefined
 }
-
 object DOMPointInit {
-  @scala.inline
-  def apply(x: Double, y: Double, w: Int | Double = null, z: Int | Double = null): DOMPointInit = {
+  
+  inline def apply(x: Double, y: Double): DOMPointInit = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMPointInit]
   }
+  
+  extension [Self <: DOMPointInit](x: Self) {
+    
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+  }
 }
-

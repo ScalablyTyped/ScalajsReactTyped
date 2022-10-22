@@ -1,13 +1,13 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.UpdateServerRequest")
 @js.native
-class UpdateServerRequest protected ()
-  extends typingsJapgolly.postmark.modelsMod.UpdateServerRequest {
+open class UpdateServerRequest protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.UpdateServerRequest {
   def this(
     Name: js.UndefOr[String],
     Color: js.UndefOr[String],
@@ -21,9 +21,11 @@ class UpdateServerRequest protected ()
     PostFirstOpenOnly: js.UndefOr[Boolean],
     InboundSpamThreshold: js.UndefOr[Double],
     TrackOpens: js.UndefOr[Boolean],
-    TrackLinks: js.UndefOr[typingsJapgolly.postmark.messageSupportingTypesMod.LinkTrackingOptions],
+    TrackLinks: js.UndefOr[
+        typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
+      ],
     IncludeBounceContentInHook: js.UndefOr[Boolean],
-    EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
+    EnableSmtpApiErrorHooks: js.UndefOr[Boolean],
+    InboundDomain: js.UndefOr[String]
   ) = this()
 }
-

@@ -1,19 +1,19 @@
 
 # Scala.js typings for xml-formatter
 
-Typings are for version 1.1
+Typings are for version 2.6.1
 
 ## Library description:
-Converts XML into a human readable format (pretty print) while respecting the xml:space attribute
+Converts a XML string into a human readable format (pretty print) while respecting the xml:space attribute
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xml-formatter |
-| Keywords           | xml, pretty-print, indent, parser, formatter, xml:space, preserve |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 535372 |
-| # stars            | 1 |
+| Keywords           | xml, pretty, print, pretty-print, indent, parser, formatter, xml:space, preserve |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 465214.6666666667 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/chrisbottin/xml-formatter#readme)
@@ -24,7 +24,7 @@ Converts XML into a human readable format (pretty print) while respecting the xm
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

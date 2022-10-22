@@ -1,16 +1,18 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BindParameter extends js.Object {
+trait BindParameter extends StObject {
+  
   /**
     * The direction of the bind. One of the Execute Bind Direction Constants.
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracledbconstantsbinddir
     */
   var dir: js.UndefOr[Double] = js.undefined
+  
   /**
     * The number of array elements to be allocated for a PL/SQL Collection INDEX BY associative
     * array OUT or IN OUT array bind variable. For IN binds, the value of maxArraySize is ignored.
@@ -18,6 +20,7 @@ trait BindParameter extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#plsqlindexbybinds
     */
   var maxArraySize: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum number of bytes that an OUT or IN OUT bind variable of type STRING or BUFFER can use to get data.
     *
@@ -27,6 +30,7 @@ trait BindParameter extends js.Object {
     * @default 200
     */
   var maxSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * The node-oracledb or JavaScript data type to be bound. One of the Node-oracledb Type Constants.
     *
@@ -34,28 +38,39 @@ trait BindParameter extends js.Object {
     * of the input data value. With OUT binds, the type defaults to oracledb.STRING whenever type is not specified.
     */
   var `type`: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * The input value or variable to be used for an IN or IN OUT bind variable.
     */
-  var `val`: js.UndefOr[js.Any] = js.undefined
+  var `val`: js.UndefOr[Any] = js.undefined
 }
-
 object BindParameter {
-  @scala.inline
-  def apply(
-    dir: Int | Double = null,
-    maxArraySize: Int | Double = null,
-    maxSize: Int | Double = null,
-    `type`: Double | String = null,
-    `val`: js.Any = null
-  ): BindParameter = {
+  
+  inline def apply(): BindParameter = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (maxArraySize != null) __obj.updateDynamic("maxArraySize")(maxArraySize.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindParameter]
   }
+  
+  extension [Self <: BindParameter](x: Self) {
+    
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setMaxArraySize(value: Double): Self = StObject.set(x, "maxArraySize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxArraySizeUndefined: Self = StObject.set(x, "maxArraySize", js.undefined)
+    
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    
+    inline def setType(value: Double | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    
+    inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+  }
 }
-

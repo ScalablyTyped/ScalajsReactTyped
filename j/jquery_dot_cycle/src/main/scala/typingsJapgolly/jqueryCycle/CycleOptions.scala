@@ -1,104 +1,137 @@
 package typingsJapgolly.jqueryCycle
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CycleOptions extends js.Object {
+trait CycleOptions extends StObject {
+  
   var activePagerClass: js.UndefOr[String] = js.undefined
-                                                                                                                  // class name used for the active pager link
+  
+  // class name used for the active pager link
   var after: js.UndefOr[
     js.Function4[
       /* currSlideElement */ Element, 
       /* nextSlideElement */ Element, 
-      /* options */ CycleOptions, 
+      /* options */ this.type, 
       /* forwardFlag */ Boolean, 
       Unit
     ]
   ] = js.undefined
-                           // transition callback (scope set to element that was shown):  function(currSlideElement, nextSlideElement, options, forwardFlag)
+  
+  // transition callback (scope set to element that was shown):  function(currSlideElement, nextSlideElement, options, forwardFlag)
   var allowPagerClickBubble: js.UndefOr[Boolean] = js.undefined
-                                                                                                               // allows or prevents click event on pager anchors from bubbling
-  var animIn: js.UndefOr[js.Any] = js.undefined
-                                                                                                                               // properties that define how the slide animates in
-  var animOut: js.UndefOr[js.Any] = js.undefined
-                                                                                                                              // properties that define how the slide animates out
+  
+  // allows or prevents click event on pager anchors from bubbling
+  var animIn: js.UndefOr[Any] = js.undefined
+  
+  // properties that define how the slide animates in
+  var animOut: js.UndefOr[Any] = js.undefined
+  
+  // properties that define how the slide animates out
   var aspect: js.UndefOr[Boolean] = js.undefined
-                                                                                                                              // preserve aspect ratio during fit resizing, cropping if necessary (must be used with fit option)
+  
+  // preserve aspect ratio during fit resizing, cropping if necessary (must be used with fit option)
   var autostop: js.UndefOr[Boolean] = js.undefined
-                                                                                                                            // true to end slideshow after X transitions (where X == slide count)
+  
+  // true to end slideshow after X transitions (where X == slide count)
   var autostopCount: js.UndefOr[Double] = js.undefined
-                                                                                                                     // number of transitions (optionally used with autostop to define X)
+  
+  // number of transitions (optionally used with autostop to define X)
   var backwards: js.UndefOr[Boolean] = js.undefined
-                                                                                                                           // true to start slideshow at last slide and move backwards through the stack
+  
+  // true to start slideshow at last slide and move backwards through the stack
   var before: js.UndefOr[
     js.Function4[
       /* currSlideElement */ Element, 
       /* nextSlideElement */ Element, 
-      /* options */ CycleOptions, 
+      /* options */ this.type, 
       /* forwardFlag */ Boolean, 
       Unit
     ]
   ] = js.undefined
-                           // transition callback (scope set to element to be shown):     function(currSlideElement, nextSlideElement, options, forwardFlag)
+  
+  // transition callback (scope set to element to be shown):     function(currSlideElement, nextSlideElement, options, forwardFlag)
   var center: js.UndefOr[Boolean] = js.undefined
-                                                                                                                              // set to true to have cycle add top/left margin to each slide (use with width and height options)
+  
+  // set to true to have cycle add top/left margin to each slide (use with width and height options)
   var cleartype: js.UndefOr[Boolean] = js.undefined
-                                                                                                                           // true if clearType corrections should be applied (for IE)
+  
+  // true if clearType corrections should be applied (for IE)
   var cleartypeNoBg: js.UndefOr[Boolean] = js.undefined
-                                                                                                                       // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+  
+  // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
   var containerResize: js.UndefOr[Boolean] = js.undefined
-                                                                                                                     // resize container to fit largest slide
+  
+  // resize container to fit largest slide
   var containerResizeHeight: js.UndefOr[Boolean] = js.undefined
-                                                                                                               // resize containers height to fit the largest slide but leave the width dynamic
+  
+  // resize containers height to fit the largest slide but leave the width dynamic
   var continuous: js.UndefOr[Boolean] = js.undefined
-                                                                                                                          // true to start next transition immediately after current one completes
-  var cssAfter: js.UndefOr[js.Any] = js.undefined
-                                                                                                                             // properties that defined the state of the slide after transitioning out
-  var cssBefore: js.UndefOr[js.Any] = js.undefined
-                                                                                                                            // properties that define the initial state of the slide before transitioning in
+  
+  // true to start next transition immediately after current one completes
+  var cssAfter: js.UndefOr[Any] = js.undefined
+  
+  // properties that defined the state of the slide after transitioning out
+  var cssBefore: js.UndefOr[Any] = js.undefined
+  
+  // properties that define the initial state of the slide before transitioning in
   var delay: js.UndefOr[Double] = js.undefined
-                                                                                                                             // additional delay (in ms) for first transition (hint: can be negative)
+  
+  // additional delay (in ms) for first transition (hint: can be negative)
   var easeIn: js.UndefOr[String] = js.undefined
-                                                                                                                            // easing for "in" transition
+  
+  // easing for "in" transition
   var easeOut: js.UndefOr[String] = js.undefined
-                                                                                                                           // easing for "out" transition
+  
+  // easing for "out" transition
   var easing: js.UndefOr[String] = js.undefined
-                                                                                                                            // easing method for both in and out transitions
-  var end: js.UndefOr[js.Function1[/* options */ CycleOptions, Unit]] = js.undefined
-                                                                                                      // callback invoked when the slideshow terminates (use with autostop or nowrap options): function(options)
+  
+  // easing method for both in and out transitions
+  var end: js.UndefOr[js.Function1[/* options */ this.type, Unit]] = js.undefined
+  
+  // callback invoked when the slideshow terminates (use with autostop or nowrap options): function(options)
   var fastOnEvent: js.UndefOr[Boolean] = js.undefined
-                                                                                                                         // force fast transitions when triggered manually (via pager or prev/next); value == time in ms
+  
+  // force fast transitions when triggered manually (via pager or prev/next); value == time in ms
   var fit: js.UndefOr[Boolean] = js.undefined
-                                                                                                                                 // force slides to fit container
+  
+  // force slides to fit container
   var fx: js.UndefOr[String] = js.undefined
-                                                                                                                                // name of transition effect (or comma separated names, ex: 'fade,scrollUp,shuffle')
+  
+  // name of transition effect (or comma separated names, ex: 'fade,scrollUp,shuffle')
   var fxFn: js.UndefOr[
     js.Function5[
       /* currSlideElement */ Element, 
       /* nextSlideElement */ Element, 
-      /* options */ CycleOptions, 
+      /* options */ this.type, 
       /* afterCalback */ js.Function, 
       /* forwardFlag */ Boolean, 
       Unit
     ]
   ] = js.undefined
-    // function used to control the transition: function(currSlideElement, nextSlideElement, options, afterCalback, forwardFlag)
-  var height: js.UndefOr[js.Any] = js.undefined
-                                                                                                                               // container height (if the 'fit' option is true, the slides will be set to this height as well)
+  
+  // function used to control the transition: function(currSlideElement, nextSlideElement, options, afterCalback, forwardFlag)
+  var height: js.UndefOr[Any] = js.undefined
+  
+  // container height (if the 'fit' option is true, the slides will be set to this height as well)
   var manualTrump: js.UndefOr[Boolean] = js.undefined
-                                                                                                                         // causes manual transition to stop an active transition instead of being ignored
+  
+  // causes manual transition to stop an active transition instead of being ignored
   var metaAttr: js.UndefOr[String] = js.undefined
-                                                                                                                          // data- attribute that holds the option data for the slideshow
-  var next: js.UndefOr[js.Any] = js.undefined
-                                                                                                                                 // element, jQuery object, or jQuery selector string for the element to use as event trigger for next slide
+  
+  // data- attribute that holds the option data for the slideshow
+  var next: js.UndefOr[Any] = js.undefined
+  
+  // element, jQuery object, or jQuery selector string for the element to use as event trigger for next slide
   var nowrap: js.UndefOr[Boolean] = js.undefined
-                                                                                                                              // true to prevent slideshow from wrapping
+  
+  // true to prevent slideshow from wrapping
   var onPagerEvent: js.UndefOr[js.Function2[/* zeroBasedSlideIndex */ Double, /* slideElement */ Element, Unit]] = js.undefined
-                                                                // callback fn for pager events: function(zeroBasedSlideIndex, slideElement)
+  
+  // callback fn for pager events: function(zeroBasedSlideIndex, slideElement)
   var onPrevNextEvent: js.UndefOr[
     js.Function3[
       /* isNext */ Boolean, 
@@ -107,192 +140,345 @@ trait CycleOptions extends js.Object {
       Unit
     ]
   ] = js.undefined
-                                               // callback fn for prev/next events: function(isNext, zeroBasedSlideIndex, slideElement)
-  var pager: js.UndefOr[js.Any] = js.undefined
-                                                                                                                                // element, jQuery object, or jQuery selector string for the element to use as pager container
+  
+  // callback fn for prev/next events: function(isNext, zeroBasedSlideIndex, slideElement)
+  var pager: js.UndefOr[Any] = js.undefined
+  
+  // element, jQuery object, or jQuery selector string for the element to use as pager container
   var pagerAnchorBuilder: js.UndefOr[js.Function2[/* index */ Double, /* DOMelement */ Element, String]] = js.undefined
-                                                                        // callback fn for building anchor links:  function(index, DOMelement)
+  
+  // callback fn for building anchor links:  function(index, DOMelement)
   var pagerEvent: js.UndefOr[String] = js.undefined
-                                                                                                                        // name of event which drives the pager navigation
+  
+  // name of event which drives the pager navigation
   var pause: js.UndefOr[Boolean] = js.undefined
-                                                                                                                               // true to enable "pause on hover"
+  
+  // true to enable "pause on hover"
   var pauseOnPagerHover: js.UndefOr[Boolean] = js.undefined
-                                                                                                                   // true to pause when hovering over pager link
-  var prev: js.UndefOr[js.Any] = js.undefined
-                                                                                                                                 // element, jQuery object, or jQuery selector string for the element to use as event trigger for previous slide
+  
+  // true to pause when hovering over pager link
+  var prev: js.UndefOr[Any] = js.undefined
+  
+  // element, jQuery object, or jQuery selector string for the element to use as event trigger for previous slide
   var prevNextEvent: js.UndefOr[String] = js.undefined
-                                                                                                                     // event which drives the manual transition to the previous or next slide
+  
+  // event which drives the manual transition to the previous or next slide
   var random: js.UndefOr[Boolean] = js.undefined
-                                                                                                                              // true for random, false for sequence (not applicable to shuffle fx)
+  
+  // true for random, false for sequence (not applicable to shuffle fx)
   var randomizeEffects: js.UndefOr[Boolean] = js.undefined
-                                                                                                                    // valid when multiple effects are used; true to make the effect sequence random
+  
+  // valid when multiple effects are used; true to make the effect sequence random
   var requeueOnImageNotLoaded: js.UndefOr[Boolean] = js.undefined
-                                                                                                             // requeue the slideshow if any image slides are not yet loaded
+  
+  // requeue the slideshow if any image slides are not yet loaded
   var requeueTimeout: js.UndefOr[Double] = js.undefined
-                                                                                                                    // ms delay for requeue
+  
+  // ms delay for requeue
   var rev: js.UndefOr[Boolean] = js.undefined
-                                                                                                                                 // causes animations to transition in reverse (for effects that support it such as scrollHorz/scrollVert/shuffle)
-  var shuffle: js.UndefOr[js.Any] = js.undefined
-                                                                                                                              // coords for shuffle animation, ex: { top:15, left: 200 }
+  
+  // causes animations to transition in reverse (for effects that support it such as scrollHorz/scrollVert/shuffle)
+  var shuffle: js.UndefOr[Any] = js.undefined
+  
+  // coords for shuffle animation, ex: { top:15, left: 200 }
   var skipInitializationCallbacks: js.UndefOr[Boolean] = js.undefined
-                                                                                                         // set to true to disable the first before/after callback that occurs prior to any transition
+  
+  // set to true to disable the first before/after callback that occurs prior to any transition
   var slideExpr: js.UndefOr[String] = js.undefined
-                                                                                                                         // expression for selecting slides (if something other than all children is required)
+  
+  // expression for selecting slides (if something other than all children is required)
   var slideResize: js.UndefOr[Boolean] = js.undefined
-                                                                                                                         // force slide width/height to fixed size before every transition
-  var speed: js.UndefOr[js.Any] = js.undefined
-                                                                                                                                // speed of the transition (any valid fx speed value)
-  var speedIn: js.UndefOr[js.Any] = js.undefined
-                                                                                                                              // speed of the 'in' transition
-  var speedOut: js.UndefOr[js.Any] = js.undefined
-                                                                                                                             // speed of the 'out' transition
+  
+  // force slide width/height to fixed size before every transition
+  var speed: js.UndefOr[Any] = js.undefined
+  
+  // speed of the transition (any valid fx speed value)
+  var speedIn: js.UndefOr[Any] = js.undefined
+  
+  // speed of the 'in' transition
+  var speedOut: js.UndefOr[Any] = js.undefined
+  
+  // speed of the 'out' transition
   var startingSlide: js.UndefOr[Double] = js.undefined
-                                                                                                                     // zero-based index of the first slide to be displayed
+  
+  // zero-based index of the first slide to be displayed
   var sync: js.UndefOr[Boolean] = js.undefined
-                                                                                                                                // true if in/out transitions should occur simultaneously
+  
+  // true if in/out transitions should occur simultaneously
   var timeout: js.UndefOr[Double] = js.undefined
-                                                                                                                           // milliseconds between slide transitions (0 to disable auto advance)
+  
+  // milliseconds between slide transitions (0 to disable auto advance)
   var timeoutFn: js.UndefOr[
     js.Function4[
       /* currSlideElement */ Element, 
       /* nextSlideElement */ Element, 
-      /* options */ CycleOptions, 
+      /* options */ this.type, 
       /* forwardFlag */ Boolean, 
       Unit
     ]
   ] = js.undefined
-                       // callback for determining per-slide timeout value:  function(currSlideElement, nextSlideElement, options, forwardFlag)
+  
+  // callback for determining per-slide timeout value:  function(currSlideElement, nextSlideElement, options, forwardFlag)
   var updateActivePagerLink: js.UndefOr[
-    js.Function3[/* pager */ js.Any, /* currSlide */ Double, /* clsName */ String, Unit]
+    js.Function3[/* pager */ Any, /* currSlide */ Double, /* clsName */ String, Unit]
   ] = js.undefined
-                                                           // callback fn invoked to update the active pager link (adds/removes activePagerClass style)
-  var width: js.UndefOr[js.Any] = js.undefined
+  
+  // callback fn invoked to update the active pager link (adds/removes activePagerClass style)
+  var width: js.UndefOr[Any] = js.undefined
 }
-
 object CycleOptions {
-  @scala.inline
-  def apply(
-    activePagerClass: String = null,
-    after: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* forwardFlag */ Boolean) => Callback = null,
-    allowPagerClickBubble: js.UndefOr[Boolean] = js.undefined,
-    animIn: js.Any = null,
-    animOut: js.Any = null,
-    aspect: js.UndefOr[Boolean] = js.undefined,
-    autostop: js.UndefOr[Boolean] = js.undefined,
-    autostopCount: Int | Double = null,
-    backwards: js.UndefOr[Boolean] = js.undefined,
-    before: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* forwardFlag */ Boolean) => Callback = null,
-    center: js.UndefOr[Boolean] = js.undefined,
-    cleartype: js.UndefOr[Boolean] = js.undefined,
-    cleartypeNoBg: js.UndefOr[Boolean] = js.undefined,
-    containerResize: js.UndefOr[Boolean] = js.undefined,
-    containerResizeHeight: js.UndefOr[Boolean] = js.undefined,
-    continuous: js.UndefOr[Boolean] = js.undefined,
-    cssAfter: js.Any = null,
-    cssBefore: js.Any = null,
-    delay: Int | Double = null,
-    easeIn: String = null,
-    easeOut: String = null,
-    easing: String = null,
-    end: /* options */ CycleOptions => Callback = null,
-    fastOnEvent: js.UndefOr[Boolean] = js.undefined,
-    fit: js.UndefOr[Boolean] = js.undefined,
-    fx: String = null,
-    fxFn: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* afterCalback */ js.Function, /* forwardFlag */ Boolean) => Callback = null,
-    height: js.Any = null,
-    manualTrump: js.UndefOr[Boolean] = js.undefined,
-    metaAttr: String = null,
-    next: js.Any = null,
-    nowrap: js.UndefOr[Boolean] = js.undefined,
-    onPagerEvent: (/* zeroBasedSlideIndex */ Double, /* slideElement */ Element) => Callback = null,
-    onPrevNextEvent: (/* isNext */ Boolean, /* zeroBasedSlideIndex */ Double, /* slideElement */ Element) => Callback = null,
-    pager: js.Any = null,
-    pagerAnchorBuilder: (/* index */ Double, /* DOMelement */ Element) => CallbackTo[String] = null,
-    pagerEvent: String = null,
-    pause: js.UndefOr[Boolean] = js.undefined,
-    pauseOnPagerHover: js.UndefOr[Boolean] = js.undefined,
-    prev: js.Any = null,
-    prevNextEvent: String = null,
-    random: js.UndefOr[Boolean] = js.undefined,
-    randomizeEffects: js.UndefOr[Boolean] = js.undefined,
-    requeueOnImageNotLoaded: js.UndefOr[Boolean] = js.undefined,
-    requeueTimeout: Int | Double = null,
-    rev: js.UndefOr[Boolean] = js.undefined,
-    shuffle: js.Any = null,
-    skipInitializationCallbacks: js.UndefOr[Boolean] = js.undefined,
-    slideExpr: String = null,
-    slideResize: js.UndefOr[Boolean] = js.undefined,
-    speed: js.Any = null,
-    speedIn: js.Any = null,
-    speedOut: js.Any = null,
-    startingSlide: Int | Double = null,
-    sync: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    timeoutFn: (/* currSlideElement */ Element, /* nextSlideElement */ Element, /* options */ CycleOptions, /* forwardFlag */ Boolean) => Callback = null,
-    updateActivePagerLink: (/* pager */ js.Any, /* currSlide */ Double, /* clsName */ String) => Callback = null,
-    width: js.Any = null
-  ): CycleOptions = {
+  
+  inline def apply(): CycleOptions = {
     val __obj = js.Dynamic.literal()
-    if (activePagerClass != null) __obj.updateDynamic("activePagerClass")(activePagerClass.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction4((t0: /* currSlideElement */ org.scalajs.dom.raw.Element, t1: /* nextSlideElement */ org.scalajs.dom.raw.Element, t2: /* options */ typingsJapgolly.jqueryCycle.CycleOptions, t3: /* forwardFlag */ scala.Boolean) => after(t0, t1, t2, t3).runNow()))
-    if (!js.isUndefined(allowPagerClickBubble)) __obj.updateDynamic("allowPagerClickBubble")(allowPagerClickBubble.asInstanceOf[js.Any])
-    if (animIn != null) __obj.updateDynamic("animIn")(animIn.asInstanceOf[js.Any])
-    if (animOut != null) __obj.updateDynamic("animOut")(animOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop.asInstanceOf[js.Any])
-    if (autostopCount != null) __obj.updateDynamic("autostopCount")(autostopCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction4((t0: /* currSlideElement */ org.scalajs.dom.raw.Element, t1: /* nextSlideElement */ org.scalajs.dom.raw.Element, t2: /* options */ typingsJapgolly.jqueryCycle.CycleOptions, t3: /* forwardFlag */ scala.Boolean) => before(t0, t1, t2, t3).runNow()))
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleartype)) __obj.updateDynamic("cleartype")(cleartype.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleartypeNoBg)) __obj.updateDynamic("cleartypeNoBg")(cleartypeNoBg.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerResize)) __obj.updateDynamic("containerResize")(containerResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerResizeHeight)) __obj.updateDynamic("containerResizeHeight")(containerResizeHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
-    if (cssAfter != null) __obj.updateDynamic("cssAfter")(cssAfter.asInstanceOf[js.Any])
-    if (cssBefore != null) __obj.updateDynamic("cssBefore")(cssBefore.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (easeIn != null) __obj.updateDynamic("easeIn")(easeIn.asInstanceOf[js.Any])
-    if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.jqueryCycle.CycleOptions) => end(t0).runNow()))
-    if (!js.isUndefined(fastOnEvent)) __obj.updateDynamic("fastOnEvent")(fastOnEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
-    if (fxFn != null) __obj.updateDynamic("fxFn")(js.Any.fromFunction5((t0: /* currSlideElement */ org.scalajs.dom.raw.Element, t1: /* nextSlideElement */ org.scalajs.dom.raw.Element, t2: /* options */ typingsJapgolly.jqueryCycle.CycleOptions, t3: /* afterCalback */ js.Function, t4: /* forwardFlag */ scala.Boolean) => fxFn(t0, t1, t2, t3, t4).runNow()))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualTrump)) __obj.updateDynamic("manualTrump")(manualTrump.asInstanceOf[js.Any])
-    if (metaAttr != null) __obj.updateDynamic("metaAttr")(metaAttr.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.asInstanceOf[js.Any])
-    if (onPagerEvent != null) __obj.updateDynamic("onPagerEvent")(js.Any.fromFunction2((t0: /* zeroBasedSlideIndex */ scala.Double, t1: /* slideElement */ org.scalajs.dom.raw.Element) => onPagerEvent(t0, t1).runNow()))
-    if (onPrevNextEvent != null) __obj.updateDynamic("onPrevNextEvent")(js.Any.fromFunction3((t0: /* isNext */ scala.Boolean, t1: /* zeroBasedSlideIndex */ scala.Double, t2: /* slideElement */ org.scalajs.dom.raw.Element) => onPrevNextEvent(t0, t1, t2).runNow()))
-    if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (pagerAnchorBuilder != null) __obj.updateDynamic("pagerAnchorBuilder")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* DOMelement */ org.scalajs.dom.raw.Element) => pagerAnchorBuilder(t0, t1).runNow()))
-    if (pagerEvent != null) __obj.updateDynamic("pagerEvent")(pagerEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnPagerHover)) __obj.updateDynamic("pauseOnPagerHover")(pauseOnPagerHover.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
-    if (prevNextEvent != null) __obj.updateDynamic("prevNextEvent")(prevNextEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomizeEffects)) __obj.updateDynamic("randomizeEffects")(randomizeEffects.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeueOnImageNotLoaded)) __obj.updateDynamic("requeueOnImageNotLoaded")(requeueOnImageNotLoaded.asInstanceOf[js.Any])
-    if (requeueTimeout != null) __obj.updateDynamic("requeueTimeout")(requeueTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rev)) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
-    if (shuffle != null) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInitializationCallbacks)) __obj.updateDynamic("skipInitializationCallbacks")(skipInitializationCallbacks.asInstanceOf[js.Any])
-    if (slideExpr != null) __obj.updateDynamic("slideExpr")(slideExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideResize)) __obj.updateDynamic("slideResize")(slideResize.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (speedIn != null) __obj.updateDynamic("speedIn")(speedIn.asInstanceOf[js.Any])
-    if (speedOut != null) __obj.updateDynamic("speedOut")(speedOut.asInstanceOf[js.Any])
-    if (startingSlide != null) __obj.updateDynamic("startingSlide")(startingSlide.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutFn != null) __obj.updateDynamic("timeoutFn")(js.Any.fromFunction4((t0: /* currSlideElement */ org.scalajs.dom.raw.Element, t1: /* nextSlideElement */ org.scalajs.dom.raw.Element, t2: /* options */ typingsJapgolly.jqueryCycle.CycleOptions, t3: /* forwardFlag */ scala.Boolean) => timeoutFn(t0, t1, t2, t3).runNow()))
-    if (updateActivePagerLink != null) __obj.updateDynamic("updateActivePagerLink")(js.Any.fromFunction3((t0: /* pager */ js.Any, t1: /* currSlide */ scala.Double, t2: /* clsName */ java.lang.String) => updateActivePagerLink(t0, t1, t2).runNow()))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CycleOptions]
   }
+  
+  extension [Self <: CycleOptions](x: Self) {
+    
+    inline def setActivePagerClass(value: String): Self = StObject.set(x, "activePagerClass", value.asInstanceOf[js.Any])
+    
+    inline def setActivePagerClassUndefined: Self = StObject.set(x, "activePagerClass", js.undefined)
+    
+    inline def setAfter(
+      value: (/* currSlideElement */ Element, /* nextSlideElement */ Element, CycleOptions, /* forwardFlag */ Boolean) => Callback
+    ): Self = StObject.set(x, "after", js.Any.fromFunction4((t0: /* currSlideElement */ Element, t1: /* nextSlideElement */ Element, t2: CycleOptions, t3: /* forwardFlag */ Boolean) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setAllowPagerClickBubble(value: Boolean): Self = StObject.set(x, "allowPagerClickBubble", value.asInstanceOf[js.Any])
+    
+    inline def setAllowPagerClickBubbleUndefined: Self = StObject.set(x, "allowPagerClickBubble", js.undefined)
+    
+    inline def setAnimIn(value: Any): Self = StObject.set(x, "animIn", value.asInstanceOf[js.Any])
+    
+    inline def setAnimInUndefined: Self = StObject.set(x, "animIn", js.undefined)
+    
+    inline def setAnimOut(value: Any): Self = StObject.set(x, "animOut", value.asInstanceOf[js.Any])
+    
+    inline def setAnimOutUndefined: Self = StObject.set(x, "animOut", js.undefined)
+    
+    inline def setAspect(value: Boolean): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+    
+    inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+    
+    inline def setAutostop(value: Boolean): Self = StObject.set(x, "autostop", value.asInstanceOf[js.Any])
+    
+    inline def setAutostopCount(value: Double): Self = StObject.set(x, "autostopCount", value.asInstanceOf[js.Any])
+    
+    inline def setAutostopCountUndefined: Self = StObject.set(x, "autostopCount", js.undefined)
+    
+    inline def setAutostopUndefined: Self = StObject.set(x, "autostop", js.undefined)
+    
+    inline def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
+    
+    inline def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
+    
+    inline def setBefore(
+      value: (/* currSlideElement */ Element, /* nextSlideElement */ Element, CycleOptions, /* forwardFlag */ Boolean) => Callback
+    ): Self = StObject.set(x, "before", js.Any.fromFunction4((t0: /* currSlideElement */ Element, t1: /* nextSlideElement */ Element, t2: CycleOptions, t3: /* forwardFlag */ Boolean) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setCleartype(value: Boolean): Self = StObject.set(x, "cleartype", value.asInstanceOf[js.Any])
+    
+    inline def setCleartypeNoBg(value: Boolean): Self = StObject.set(x, "cleartypeNoBg", value.asInstanceOf[js.Any])
+    
+    inline def setCleartypeNoBgUndefined: Self = StObject.set(x, "cleartypeNoBg", js.undefined)
+    
+    inline def setCleartypeUndefined: Self = StObject.set(x, "cleartype", js.undefined)
+    
+    inline def setContainerResize(value: Boolean): Self = StObject.set(x, "containerResize", value.asInstanceOf[js.Any])
+    
+    inline def setContainerResizeHeight(value: Boolean): Self = StObject.set(x, "containerResizeHeight", value.asInstanceOf[js.Any])
+    
+    inline def setContainerResizeHeightUndefined: Self = StObject.set(x, "containerResizeHeight", js.undefined)
+    
+    inline def setContainerResizeUndefined: Self = StObject.set(x, "containerResize", js.undefined)
+    
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    
+    inline def setCssAfter(value: Any): Self = StObject.set(x, "cssAfter", value.asInstanceOf[js.Any])
+    
+    inline def setCssAfterUndefined: Self = StObject.set(x, "cssAfter", js.undefined)
+    
+    inline def setCssBefore(value: Any): Self = StObject.set(x, "cssBefore", value.asInstanceOf[js.Any])
+    
+    inline def setCssBeforeUndefined: Self = StObject.set(x, "cssBefore", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
+    
+    inline def setEaseInUndefined: Self = StObject.set(x, "easeIn", js.undefined)
+    
+    inline def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
+    
+    inline def setEaseOutUndefined: Self = StObject.set(x, "easeOut", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEnd(value: CycleOptions => Callback): Self = StObject.set(x, "end", js.Any.fromFunction1((t0: CycleOptions) => value(t0).runNow()))
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setFastOnEvent(value: Boolean): Self = StObject.set(x, "fastOnEvent", value.asInstanceOf[js.Any])
+    
+    inline def setFastOnEventUndefined: Self = StObject.set(x, "fastOnEvent", js.undefined)
+    
+    inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    
+    inline def setFx(value: String): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+    
+    inline def setFxFn(
+      value: (/* currSlideElement */ Element, /* nextSlideElement */ Element, CycleOptions, /* afterCalback */ js.Function, /* forwardFlag */ Boolean) => Callback
+    ): Self = StObject.set(x, "fxFn", js.Any.fromFunction5((t0: /* currSlideElement */ Element, t1: /* nextSlideElement */ Element, t2: CycleOptions, t3: /* afterCalback */ js.Function, t4: /* forwardFlag */ Boolean) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setFxFnUndefined: Self = StObject.set(x, "fxFn", js.undefined)
+    
+    inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+    
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setManualTrump(value: Boolean): Self = StObject.set(x, "manualTrump", value.asInstanceOf[js.Any])
+    
+    inline def setManualTrumpUndefined: Self = StObject.set(x, "manualTrump", js.undefined)
+    
+    inline def setMetaAttr(value: String): Self = StObject.set(x, "metaAttr", value.asInstanceOf[js.Any])
+    
+    inline def setMetaAttrUndefined: Self = StObject.set(x, "metaAttr", js.undefined)
+    
+    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
+    inline def setNowrap(value: Boolean): Self = StObject.set(x, "nowrap", value.asInstanceOf[js.Any])
+    
+    inline def setNowrapUndefined: Self = StObject.set(x, "nowrap", js.undefined)
+    
+    inline def setOnPagerEvent(value: (/* zeroBasedSlideIndex */ Double, /* slideElement */ Element) => Callback): Self = StObject.set(x, "onPagerEvent", js.Any.fromFunction2((t0: /* zeroBasedSlideIndex */ Double, t1: /* slideElement */ Element) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPagerEventUndefined: Self = StObject.set(x, "onPagerEvent", js.undefined)
+    
+    inline def setOnPrevNextEvent(
+      value: (/* isNext */ Boolean, /* zeroBasedSlideIndex */ Double, /* slideElement */ Element) => Callback
+    ): Self = StObject.set(x, "onPrevNextEvent", js.Any.fromFunction3((t0: /* isNext */ Boolean, t1: /* zeroBasedSlideIndex */ Double, t2: /* slideElement */ Element) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnPrevNextEventUndefined: Self = StObject.set(x, "onPrevNextEvent", js.undefined)
+    
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    
+    inline def setPagerAnchorBuilder(value: (/* index */ Double, /* DOMelement */ Element) => String): Self = StObject.set(x, "pagerAnchorBuilder", js.Any.fromFunction2(value))
+    
+    inline def setPagerAnchorBuilderUndefined: Self = StObject.set(x, "pagerAnchorBuilder", js.undefined)
+    
+    inline def setPagerEvent(value: String): Self = StObject.set(x, "pagerEvent", value.asInstanceOf[js.Any])
+    
+    inline def setPagerEventUndefined: Self = StObject.set(x, "pagerEvent", js.undefined)
+    
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    
+    inline def setPause(value: Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    
+    inline def setPauseOnPagerHover(value: Boolean): Self = StObject.set(x, "pauseOnPagerHover", value.asInstanceOf[js.Any])
+    
+    inline def setPauseOnPagerHoverUndefined: Self = StObject.set(x, "pauseOnPagerHover", js.undefined)
+    
+    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+    
+    inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    
+    inline def setPrevNextEvent(value: String): Self = StObject.set(x, "prevNextEvent", value.asInstanceOf[js.Any])
+    
+    inline def setPrevNextEventUndefined: Self = StObject.set(x, "prevNextEvent", js.undefined)
+    
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    
+    inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    
+    inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+    
+    inline def setRandomizeEffects(value: Boolean): Self = StObject.set(x, "randomizeEffects", value.asInstanceOf[js.Any])
+    
+    inline def setRandomizeEffectsUndefined: Self = StObject.set(x, "randomizeEffects", js.undefined)
+    
+    inline def setRequeueOnImageNotLoaded(value: Boolean): Self = StObject.set(x, "requeueOnImageNotLoaded", value.asInstanceOf[js.Any])
+    
+    inline def setRequeueOnImageNotLoadedUndefined: Self = StObject.set(x, "requeueOnImageNotLoaded", js.undefined)
+    
+    inline def setRequeueTimeout(value: Double): Self = StObject.set(x, "requeueTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setRequeueTimeoutUndefined: Self = StObject.set(x, "requeueTimeout", js.undefined)
+    
+    inline def setRev(value: Boolean): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
+    inline def setShuffle(value: Any): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+    
+    inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+    
+    inline def setSkipInitializationCallbacks(value: Boolean): Self = StObject.set(x, "skipInitializationCallbacks", value.asInstanceOf[js.Any])
+    
+    inline def setSkipInitializationCallbacksUndefined: Self = StObject.set(x, "skipInitializationCallbacks", js.undefined)
+    
+    inline def setSlideExpr(value: String): Self = StObject.set(x, "slideExpr", value.asInstanceOf[js.Any])
+    
+    inline def setSlideExprUndefined: Self = StObject.set(x, "slideExpr", js.undefined)
+    
+    inline def setSlideResize(value: Boolean): Self = StObject.set(x, "slideResize", value.asInstanceOf[js.Any])
+    
+    inline def setSlideResizeUndefined: Self = StObject.set(x, "slideResize", js.undefined)
+    
+    inline def setSpeed(value: Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedIn(value: Any): Self = StObject.set(x, "speedIn", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedInUndefined: Self = StObject.set(x, "speedIn", js.undefined)
+    
+    inline def setSpeedOut(value: Any): Self = StObject.set(x, "speedOut", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedOutUndefined: Self = StObject.set(x, "speedOut", js.undefined)
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setStartingSlide(value: Double): Self = StObject.set(x, "startingSlide", value.asInstanceOf[js.Any])
+    
+    inline def setStartingSlideUndefined: Self = StObject.set(x, "startingSlide", js.undefined)
+    
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutFn(
+      value: (/* currSlideElement */ Element, /* nextSlideElement */ Element, CycleOptions, /* forwardFlag */ Boolean) => Callback
+    ): Self = StObject.set(x, "timeoutFn", js.Any.fromFunction4((t0: /* currSlideElement */ Element, t1: /* nextSlideElement */ Element, t2: CycleOptions, t3: /* forwardFlag */ Boolean) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setTimeoutFnUndefined: Self = StObject.set(x, "timeoutFn", js.undefined)
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUpdateActivePagerLink(value: (/* pager */ Any, /* currSlide */ Double, /* clsName */ String) => Callback): Self = StObject.set(x, "updateActivePagerLink", js.Any.fromFunction3((t0: /* pager */ Any, t1: /* currSlide */ Double, t2: /* clsName */ String) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setUpdateActivePagerLinkUndefined: Self = StObject.set(x, "updateActivePagerLink", js.undefined)
+    
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

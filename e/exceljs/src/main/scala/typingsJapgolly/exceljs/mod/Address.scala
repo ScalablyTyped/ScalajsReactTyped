@@ -1,16 +1,42 @@
 package typingsJapgolly.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Address extends js.Object {
+trait Address extends StObject {
+  
   @JSName("$col$row")
-  var DollarcolDollarrow: String = js.native
-  var address: String = js.native
-  var col: String = js.native
-  var row: String = js.native
-  var sheetName: js.UndefOr[String] = js.native
+  var DollarcolDollarrow: String
+  
+  var address: String
+  
+  var col: String
+  
+  var row: String
+  
+  var sheetName: js.UndefOr[String] = js.undefined
 }
-
+object Address {
+  
+  inline def apply(DollarcolDollarrow: String, address: String, col: String, row: String): Address = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    __obj.updateDynamic("$col$row")(DollarcolDollarrow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Address]
+  }
+  
+  extension [Self <: Address](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    
+    inline def setDollarcolDollarrow(value: String): Self = StObject.set(x, "$col$row", value.asInstanceOf[js.Any])
+    
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    
+    inline def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
+  }
+}

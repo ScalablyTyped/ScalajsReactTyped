@@ -2,16 +2,19 @@ package typingsJapgolly.lodashDecorators
 
 import typingsJapgolly.std.MethodDecorator
 import typingsJapgolly.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/partialRight", JSImport.Namespace)
-@js.native
-object partialRightMod extends js.Object {
-  @JSName("PartialRight")
-  def PartialRight_(partials: js.Any*): PropertyDecorator = js.native
-  def default(args: js.Any*): MethodDecorator with PropertyDecorator = js.native
-  def partialRight(partials: js.Any*): PropertyDecorator = js.native
+object partialRightMod {
+  
+  @JSImport("lodash-decorators/partialRight", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(args: Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MethodDecorator & PropertyDecorator]
+  
+  inline def PartialRight_(partials: Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PartialRight")(partials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[PropertyDecorator]
+  
+  inline def partialRight(partials: Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("partialRight")(partials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[PropertyDecorator]
 }
-

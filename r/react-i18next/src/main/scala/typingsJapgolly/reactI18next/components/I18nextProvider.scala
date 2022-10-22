@@ -1,42 +1,30 @@
 package typingsJapgolly.reactI18next.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.i18next.mod.i18n
 import typingsJapgolly.reactI18next.mod.I18nextProviderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object I18nextProvider {
-  def apply(
-    i18n: i18n,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    I18nextProviderProps, 
-    MountedWithRawType[I18nextProviderProps, js.Object, RawMounted[I18nextProviderProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactI18next.mod.I18nextProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactI18next.mod.I18nextProviderProps])(children: _*)
+  inline def apply(i18n: i18n): Builder = {
+    val __props = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[I18nextProviderProps]))
   }
+  
   @JSImport("react-i18next", "I18nextProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def defaultNS(value: String): this.type = set("defaultNS", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: I18nextProviderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanoramaOptions extends js.Object {
+trait PanoramaOptions extends StObject {
+  
   var albumsControl: js.UndefOr[Boolean] = js.undefined
+  
   var albumsControlOptions: js.UndefOr[AlbumsControlOptions] = js.undefined
+  
   var indoorSceneSwitchControl: js.UndefOr[Boolean] = js.undefined
+  
   var linksControl: js.UndefOr[Boolean] = js.undefined
+  
   var navigationControl: js.UndefOr[Boolean] = js.undefined
 }
-
 object PanoramaOptions {
-  @scala.inline
-  def apply(
-    albumsControl: js.UndefOr[Boolean] = js.undefined,
-    albumsControlOptions: AlbumsControlOptions = null,
-    indoorSceneSwitchControl: js.UndefOr[Boolean] = js.undefined,
-    linksControl: js.UndefOr[Boolean] = js.undefined,
-    navigationControl: js.UndefOr[Boolean] = js.undefined
-  ): PanoramaOptions = {
+  
+  inline def apply(): PanoramaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(albumsControl)) __obj.updateDynamic("albumsControl")(albumsControl.asInstanceOf[js.Any])
-    if (albumsControlOptions != null) __obj.updateDynamic("albumsControlOptions")(albumsControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(indoorSceneSwitchControl)) __obj.updateDynamic("indoorSceneSwitchControl")(indoorSceneSwitchControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(linksControl)) __obj.updateDynamic("linksControl")(linksControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationControl)) __obj.updateDynamic("navigationControl")(navigationControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaOptions]
   }
+  
+  extension [Self <: PanoramaOptions](x: Self) {
+    
+    inline def setAlbumsControl(value: Boolean): Self = StObject.set(x, "albumsControl", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumsControlOptions(value: AlbumsControlOptions): Self = StObject.set(x, "albumsControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumsControlOptionsUndefined: Self = StObject.set(x, "albumsControlOptions", js.undefined)
+    
+    inline def setAlbumsControlUndefined: Self = StObject.set(x, "albumsControl", js.undefined)
+    
+    inline def setIndoorSceneSwitchControl(value: Boolean): Self = StObject.set(x, "indoorSceneSwitchControl", value.asInstanceOf[js.Any])
+    
+    inline def setIndoorSceneSwitchControlUndefined: Self = StObject.set(x, "indoorSceneSwitchControl", js.undefined)
+    
+    inline def setLinksControl(value: Boolean): Self = StObject.set(x, "linksControl", value.asInstanceOf[js.Any])
+    
+    inline def setLinksControlUndefined: Self = StObject.set(x, "linksControl", js.undefined)
+    
+    inline def setNavigationControl(value: Boolean): Self = StObject.set(x, "navigationControl", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationControlUndefined: Self = StObject.set(x, "navigationControl", js.undefined)
+  }
 }
-

@@ -1,33 +1,42 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.asc
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.desc
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.asc_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.desc_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelatedRecordsInfoFieldOrderProperties extends js.Object {
+trait RelatedRecordsInfoFieldOrderProperties extends StObject {
+  
   /**
     * The attribute value of the field selected that will drive the sorting of related records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#field)
     */
   var field: js.UndefOr[String] = js.undefined
+  
   /**
     * Set the ascending or descending sort order of the returned related records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#order)
     */
-  var order: js.UndefOr[asc | desc] = js.undefined
+  var order: js.UndefOr[asc_ | desc_] = js.undefined
 }
-
 object RelatedRecordsInfoFieldOrderProperties {
-  @scala.inline
-  def apply(field: String = null, order: asc | desc = null): RelatedRecordsInfoFieldOrderProperties = {
+  
+  inline def apply(): RelatedRecordsInfoFieldOrderProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedRecordsInfoFieldOrderProperties]
   }
+  
+  extension [Self <: RelatedRecordsInfoFieldOrderProperties](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setOrder(value: asc_ | desc_): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+  }
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PublicKeyCredentialRpEntity extends PublicKeyCredentialEntity {
+trait PublicKeyCredentialRpEntity
+  extends StObject
+     with PublicKeyCredentialEntity {
+  
+  /* standard dom */
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object PublicKeyCredentialRpEntity {
-  @scala.inline
-  def apply(name: java.lang.String, icon: java.lang.String = null, id: java.lang.String = null): PublicKeyCredentialRpEntity = {
+  
+  inline def apply(name: java.lang.String): PublicKeyCredentialRpEntity = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialRpEntity]
   }
+  
+  extension [Self <: PublicKeyCredentialRpEntity](x: Self) {
+    
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+  }
 }
-

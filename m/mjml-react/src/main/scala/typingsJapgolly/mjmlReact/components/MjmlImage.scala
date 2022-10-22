@@ -1,85 +1,71 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.BorderProperty
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.Border
 import typingsJapgolly.mjmlReact.mod.ClassNameProps
 import typingsJapgolly.mjmlReact.mod.HrefProps
 import typingsJapgolly.mjmlReact.mod.MjmlImageProps
 import typingsJapgolly.mjmlReact.mod.PaddingProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlImage {
-  def apply(
-    align: String = null,
-    alt: String = null,
-    border: BorderProperty[String | Double] = null,
-    borderRadius: String | Double = null,
-    containerBackgroundColor: BackgroundColorProperty = null,
-    cssClass: String = null,
-    fluidOnMobile: String = null,
-    height: String | Double = null,
-    href: String = null,
-    padding: String | Double = null,
-    paddingBottom: String | Double = null,
-    paddingLeft: String | Double = null,
-    paddingRight: String | Double = null,
-    paddingTop: String | Double = null,
-    rel: String = null,
-    src: String = null,
-    srcset: String = null,
-    target: String = null,
-    title: String = null,
-    width: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    MjmlImageProps with PaddingProps with ClassNameProps with HrefProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlImage, 
-    Unit, 
-    MjmlImageProps with PaddingProps with ClassNameProps with HrefProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.MjmlImageProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.HrefProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlImage](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.MjmlImageProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.HrefProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlImage")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlImage] {
+    
+    inline def align(value: String): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def alt(value: String): this.type = set("alt", value.asInstanceOf[js.Any])
+    
+    inline def border(value: Border[String | Double]): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderRadius(value: String | Double): this.type = set("borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def containerBackgroundColor(value: BackgroundColor): this.type = set("containerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def fluidOnMobile(value: String): this.type = set("fluidOnMobile", value.asInstanceOf[js.Any])
+    
+    inline def height(value: String | Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def mjClass(value: String): this.type = set("mjClass", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: String | Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottom(value: String | Double): this.type = set("paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def paddingLeft(value: String | Double): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingRight(value: String | Double): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def paddingTop(value: String | Double): this.type = set("paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
+    inline def src(value: String): this.type = set("src", value.asInstanceOf[js.Any])
+    
+    inline def srcset(value: String): this.type = set("srcset", value.asInstanceOf[js.Any])
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def width(value: String | Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlImage.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlImageProps & PaddingProps & ClassNameProps & HrefProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

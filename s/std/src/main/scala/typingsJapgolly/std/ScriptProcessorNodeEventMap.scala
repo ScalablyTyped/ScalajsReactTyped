@@ -1,19 +1,23 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScriptProcessorNodeEventMap extends js.Object {
+trait ScriptProcessorNodeEventMap extends StObject {
+  
+  /* standard dom */
   var audioprocess: AudioProcessingEvent
 }
-
 object ScriptProcessorNodeEventMap {
-  @scala.inline
-  def apply(audioprocess: AudioProcessingEvent): ScriptProcessorNodeEventMap = {
-    val __obj = js.Dynamic.literal(audioprocess = audioprocess.asInstanceOf[js.Any])
   
+  inline def apply(audioprocess: AudioProcessingEvent): ScriptProcessorNodeEventMap = {
+    val __obj = js.Dynamic.literal(audioprocess = audioprocess.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptProcessorNodeEventMap]
   }
+  
+  extension [Self <: ScriptProcessorNodeEventMap](x: Self) {
+    
+    inline def setAudioprocess(value: AudioProcessingEvent): Self = StObject.set(x, "audioprocess", value.asInstanceOf[js.Any])
+  }
 }
-

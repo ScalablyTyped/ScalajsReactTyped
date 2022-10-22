@@ -1,7 +1,7 @@
 
 # Scala.js typings for raw-body
 
-Typings are for version 2.4.1
+Typings are for version 2.5.1
 
 ## Library description:
 Get and validate the raw body of a readable stream.
@@ -11,9 +11,9 @@ Get and validate the raw body of a readable stream.
 | Full name          | raw-body |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 564 |
-| # downloads        | 561577360 |
-| # stars            | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3372835166666667E8 |
+| # stars            | 327.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/raw-body#readme)

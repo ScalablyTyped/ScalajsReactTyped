@@ -10,10 +10,10 @@ Shuffle Array based on a Seed
 | ------------------ | :-------------: |
 | Full name          | shuffle-seed |
 | Keywords           | array, seed, shuffle, shuffle, seed, random |
-| # releases         | 1 |
-| # dependents       | 20 |
-| # downloads        | 2720849 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152807.66666666666 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/webcaetano/shuffle-seed#readme)

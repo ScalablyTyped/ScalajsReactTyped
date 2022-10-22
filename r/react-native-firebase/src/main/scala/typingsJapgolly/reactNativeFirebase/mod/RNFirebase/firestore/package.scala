@@ -1,12 +1,8 @@
-package typingsJapgolly.reactNativeFirebase.mod.RNFirebase
+package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object firestore {
-  type AnyJs = js.UndefOr[scala.Null | scala.Boolean | scala.Double | java.lang.String | js.Object]
-  type DocumentReference = typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore.DocumentReference_
-  type Query = typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore.Query_
-  type QuerySnapshot = typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore.QuerySnapshot_
-}
+
+type AnyJs = js.UndefOr[Null | Boolean | Double | String | js.Object]

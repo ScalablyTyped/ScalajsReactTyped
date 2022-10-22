@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasMaxPasswordFailedAttemptsResult extends js.Object
-
+sealed trait EasMaxPasswordFailedAttemptsResult extends StObject
 /** Represents the maximum number of password attempts results. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult")
 @js.native
-object EasMaxPasswordFailedAttemptsResult extends js.Object {
+object EasMaxPasswordFailedAttemptsResult extends StObject {
+  
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native
-  sealed trait canBeCompliant extends EasMaxPasswordFailedAttemptsResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** This computer is compliant to the policy. */
   @js.native
-  sealed trait compliant extends EasMaxPasswordFailedAttemptsResult
+  sealed trait compliant
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The policy value is not in a valid range. */
   @js.native
-  sealed trait invalidParameter extends EasMaxPasswordFailedAttemptsResult
+  sealed trait invalidParameter
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The policy is not set for evaluation. */
   @js.native
-  sealed trait notEvaluated extends EasMaxPasswordFailedAttemptsResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
   
   /** The requested policy is stricter than the computer policies. */
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasMaxPasswordFailedAttemptsResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasMaxPasswordFailedAttemptsResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 4 */ @js.native
-  object invalidParameter extends TopLevel[invalidParameter with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
-  
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasMaxPasswordFailedAttemptsResult
 }
-

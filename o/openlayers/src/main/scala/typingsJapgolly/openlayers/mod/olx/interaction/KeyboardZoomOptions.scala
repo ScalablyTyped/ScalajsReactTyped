@@ -1,30 +1,38 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.EventsConditionType
 import typingsJapgolly.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeyboardZoomOptions extends js.Object {
+trait KeyboardZoomOptions extends StObject {
+  
   var condition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var delta: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
 }
-
 object KeyboardZoomOptions {
-  @scala.inline
-  def apply(
-    condition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    delta: Int | Double = null,
-    duration: Int | Double = null
-  ): KeyboardZoomOptions = {
+  
+  inline def apply(): KeyboardZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => condition(t0).runNow()))
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardZoomOptions]
   }
+  
+  extension [Self <: KeyboardZoomOptions](x: Self) {
+    
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+  }
 }
-

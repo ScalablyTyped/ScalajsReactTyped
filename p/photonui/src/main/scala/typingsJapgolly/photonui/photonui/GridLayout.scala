@@ -1,15 +1,19 @@
 package typingsJapgolly.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("photonui.GridLayout")
 @js.native
-class GridLayout () extends Layout {
+trait GridLayout
+  extends StObject
+     with Layout {
+  
   var horizontalPadding: Double = js.native
+  
   var horizontalSpacing: Double = js.native
+  
   var verticalPadding: Double = js.native
+  
   var verticalSpacing: Double = js.native
 }
-

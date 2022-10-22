@@ -1,20 +1,25 @@
 package typingsJapgolly.vimeoPlayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeError extends Error {
+trait TypeError
+  extends StObject
+     with Error {
+  
   @JSName("name")
   var name_TypeError: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.TypeError
 }
-
 object TypeError {
-  @scala.inline
-  def apply(message: String, method: String, name: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.TypeError): TypeError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(message: String, method: String): TypeError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "TypeError")
     __obj.asInstanceOf[TypeError]
   }
+  
+  extension [Self <: TypeError](x: Self) {
+    
+    inline def setName(value: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.TypeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

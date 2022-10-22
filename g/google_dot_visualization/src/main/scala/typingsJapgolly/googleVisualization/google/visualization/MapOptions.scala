@@ -1,54 +1,91 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import typingsJapgolly.googleVisualization.AnonMapTypeId
+import typingsJapgolly.googleVisualization.anon.MapTypeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
+  
   var enableScrollWheel: js.UndefOr[Boolean] = js.undefined
+  
   var icons: js.UndefOr[js.Object] = js.undefined
+  
   var lineColor: js.UndefOr[String] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   var mapType: js.UndefOr[String] = js.undefined
-  var mapTypeIds: js.UndefOr[js.Array[_]] = js.undefined
-  var maps: AnonMapTypeId
+  
+  var mapTypeIds: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var maps: MapTypeId
+  
   var showInfoWindow: js.UndefOr[Boolean] = js.undefined
+  
   var showLine: js.UndefOr[Boolean] = js.undefined
+  
   var showTooltip: js.UndefOr[Boolean] = js.undefined
+  
   var useMapTypeControl: js.UndefOr[Boolean] = js.undefined
+  
   var zoomLevel: js.UndefOr[Double] = js.undefined
 }
-
 object MapOptions {
-  @scala.inline
-  def apply(
-    maps: AnonMapTypeId,
-    enableScrollWheel: js.UndefOr[Boolean] = js.undefined,
-    icons: js.Object = null,
-    lineColor: String = null,
-    lineWidth: Int | Double = null,
-    mapType: String = null,
-    mapTypeIds: js.Array[_] = null,
-    showInfoWindow: js.UndefOr[Boolean] = js.undefined,
-    showLine: js.UndefOr[Boolean] = js.undefined,
-    showTooltip: js.UndefOr[Boolean] = js.undefined,
-    useMapTypeControl: js.UndefOr[Boolean] = js.undefined,
-    zoomLevel: Int | Double = null
-  ): MapOptions = {
+  
+  inline def apply(maps: MapTypeId): MapOptions = {
     val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableScrollWheel)) __obj.updateDynamic("enableScrollWheel")(enableScrollWheel.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
-    if (mapTypeIds != null) __obj.updateDynamic("mapTypeIds")(mapTypeIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInfoWindow)) __obj.updateDynamic("showInfoWindow")(showInfoWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapTypeControl)) __obj.updateDynamic("useMapTypeControl")(useMapTypeControl.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
+  
+  extension [Self <: MapOptions](x: Self) {
+    
+    inline def setEnableScrollWheel(value: Boolean): Self = StObject.set(x, "enableScrollWheel", value.asInstanceOf[js.Any])
+    
+    inline def setEnableScrollWheelUndefined: Self = StObject.set(x, "enableScrollWheel", js.undefined)
+    
+    inline def setIcons(value: js.Object): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setMapType(value: String): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypeIds(value: js.Array[Any]): Self = StObject.set(x, "mapTypeIds", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypeIdsUndefined: Self = StObject.set(x, "mapTypeIds", js.undefined)
+    
+    inline def setMapTypeIdsVarargs(value: Any*): Self = StObject.set(x, "mapTypeIds", js.Array(value*))
+    
+    inline def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
+    
+    inline def setMaps(value: MapTypeId): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+    
+    inline def setShowInfoWindow(value: Boolean): Self = StObject.set(x, "showInfoWindow", value.asInstanceOf[js.Any])
+    
+    inline def setShowInfoWindowUndefined: Self = StObject.set(x, "showInfoWindow", js.undefined)
+    
+    inline def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
+    
+    inline def setShowLineUndefined: Self = StObject.set(x, "showLine", js.undefined)
+    
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+    
+    inline def setUseMapTypeControl(value: Boolean): Self = StObject.set(x, "useMapTypeControl", value.asInstanceOf[js.Any])
+    
+    inline def setUseMapTypeControlUndefined: Self = StObject.set(x, "useMapTypeControl", js.undefined)
+    
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    
+    inline def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
+  }
 }
-

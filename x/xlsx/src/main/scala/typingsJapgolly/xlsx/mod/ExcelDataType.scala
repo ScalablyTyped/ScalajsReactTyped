@@ -1,8 +1,8 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.xlsx.xlsxStrings.b
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xlsx.xlsxStrings.d
   - typingsJapgolly.xlsx.xlsxStrings.z
 */
-trait ExcelDataType extends js.Object
-
+trait ExcelDataType extends StObject
 object ExcelDataType {
-  @scala.inline
-  def b: typingsJapgolly.xlsx.xlsxStrings.b = this.cast("b")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def d: typingsJapgolly.xlsx.xlsxStrings.d = this.cast("d")
-  @scala.inline
-  def e: typingsJapgolly.xlsx.xlsxStrings.e = this.cast("e")
-  @scala.inline
-  def n: typingsJapgolly.xlsx.xlsxStrings.n = this.cast("n")
-  @scala.inline
-  def s: typingsJapgolly.xlsx.xlsxStrings.s = this.cast("s")
-  @scala.inline
-  def z: typingsJapgolly.xlsx.xlsxStrings.z = this.cast("z")
+  
+  inline def b: typingsJapgolly.xlsx.xlsxStrings.b = "b".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.b]
+  
+  inline def d: typingsJapgolly.xlsx.xlsxStrings.d = "d".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.d]
+  
+  inline def e: typingsJapgolly.xlsx.xlsxStrings.e = "e".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.e]
+  
+  inline def n: typingsJapgolly.xlsx.xlsxStrings.n = "n".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.n]
+  
+  inline def s: typingsJapgolly.xlsx.xlsxStrings.s = "s".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.s]
+  
+  inline def z: typingsJapgolly.xlsx.xlsxStrings.z = "z".asInstanceOf[typingsJapgolly.xlsx.xlsxStrings.z]
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PromptOptions extends js.Object {
+trait PromptOptions extends StObject {
+  
   var messages: js.UndefOr[PromptMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object PromptOptions {
-  @scala.inline
-  def apply(messages: PromptMessages = null, name: String = null): PromptOptions = {
+  
+  inline def apply(): PromptOptions = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
+  
+  extension [Self <: PromptOptions](x: Self) {
+    
+    inline def setMessages(value: PromptMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

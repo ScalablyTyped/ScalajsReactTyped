@@ -10,10 +10,10 @@ A port-in-progress of the Compass vertical rhythm library
 | ------------------ | :-------------: |
 | Full name          | compass-vertical-rhythm |
 | Keywords           | sass, compass, vertical-rhythm, css, typography |
-| # releases         | 5 |
-| # dependents       | 19 |
-| # downloads        | 2007291 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 124837.33333333333 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/vertical-rhythm)

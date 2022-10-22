@@ -1,9 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.ArrayParamUriParamcritica
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IssuerAltName ASN.1 structure class
@@ -33,11 +34,37 @@ import scala.scalajs.js.annotation._
   *   array: [{uri: 'http://aaa.com/'}, {uri: 'http://bbb.com/'}]
   * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.IssuerAltName")
-@js.native
-class IssuerAltName () extends Extension {
-  def this(params: ArrayParamUriParamcritica) = this()
-  def getExtnValueHex(): String = js.native
-  def setNameArray(paramsArray: js.Array[UriParam]): Unit = js.native
+trait IssuerAltName
+  extends StObject
+     with Extension {
+  
+  def getExtnValueHex(): String
+  
+  def setNameArray(paramsArray: js.Array[UriParam]): Unit
 }
-
+object IssuerAltName {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getExtnValueHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setNameArray: js.Array[UriParam] => Callback
+  ): IssuerAltName = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getExtnValueHex = getExtnValueHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setNameArray = js.Any.fromFunction1((t0: js.Array[UriParam]) => setNameArray(t0).runNow()), params = null)
+    __obj.asInstanceOf[IssuerAltName]
+  }
+  
+  extension [Self <: IssuerAltName](x: Self) {
+    
+    inline def setGetExtnValueHex(value: CallbackTo[String]): Self = StObject.set(x, "getExtnValueHex", value.toJsFn)
+    
+    inline def setSetNameArray(value: js.Array[UriParam] => Callback): Self = StObject.set(x, "setNameArray", js.Any.fromFunction1((t0: js.Array[UriParam]) => value(t0).runNow()))
+  }
+}

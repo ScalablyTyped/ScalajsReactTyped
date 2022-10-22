@@ -1,21 +1,25 @@
 package typingsJapgolly.mirrorx.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Actions_
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[Any] {
+  
   var routing: routeActions
 }
-
 object Actions_ {
-  @scala.inline
-  def apply(routing: routeActions, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Actions_ = {
+  
+  inline def apply(routing: routeActions): Actions_ = {
     val __obj = js.Dynamic.literal(routing = routing.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Actions_]
   }
+  
+  extension [Self <: Actions_](x: Self) {
+    
+    inline def setRouting(value: routeActions): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+  }
 }
-

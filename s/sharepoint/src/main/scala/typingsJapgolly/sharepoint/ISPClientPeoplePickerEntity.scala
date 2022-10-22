@@ -1,52 +1,82 @@
 package typingsJapgolly.sharepoint
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.sharepoint.anon.Department
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
 trait ISPClientPeoplePickerEntity
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[Any] {
+  
   var Description: js.UndefOr[String] = js.undefined
+  
   var DisplayText: js.UndefOr[String] = js.undefined
+  
   var DomainText: js.UndefOr[String] = js.undefined
-  var EntityData: js.UndefOr[AnonDepartment] = js.undefined
+  
+  var EntityData: js.UndefOr[Department] = js.undefined
+  
   var EntityType: js.UndefOr[String] = js.undefined
+  
   var IsResolved: js.UndefOr[Boolean] = js.undefined
+  
   var Key: js.UndefOr[String] = js.undefined
+  
   var MultipleMatches: js.Array[ISPClientPeoplePickerEntity]
+  
   var ProviderDisplayName: js.UndefOr[String] = js.undefined
+  
   var ProviderName: js.UndefOr[String] = js.undefined
 }
-
 object ISPClientPeoplePickerEntity {
-  @scala.inline
-  def apply(
-    MultipleMatches: js.Array[ISPClientPeoplePickerEntity],
-    Description: String = null,
-    DisplayText: String = null,
-    DomainText: String = null,
-    EntityData: AnonDepartment = null,
-    EntityType: String = null,
-    IsResolved: js.UndefOr[Boolean] = js.undefined,
-    Key: String = null,
-    ProviderDisplayName: String = null,
-    ProviderName: String = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
-  ): ISPClientPeoplePickerEntity = {
+  
+  inline def apply(MultipleMatches: js.Array[ISPClientPeoplePickerEntity]): ISPClientPeoplePickerEntity = {
     val __obj = js.Dynamic.literal(MultipleMatches = MultipleMatches.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DisplayText != null) __obj.updateDynamic("DisplayText")(DisplayText.asInstanceOf[js.Any])
-    if (DomainText != null) __obj.updateDynamic("DomainText")(DomainText.asInstanceOf[js.Any])
-    if (EntityData != null) __obj.updateDynamic("EntityData")(EntityData.asInstanceOf[js.Any])
-    if (EntityType != null) __obj.updateDynamic("EntityType")(EntityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsResolved)) __obj.updateDynamic("IsResolved")(IsResolved.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (ProviderDisplayName != null) __obj.updateDynamic("ProviderDisplayName")(ProviderDisplayName.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ISPClientPeoplePickerEntity]
   }
+  
+  extension [Self <: ISPClientPeoplePickerEntity](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setDisplayText(value: String): Self = StObject.set(x, "DisplayText", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayTextUndefined: Self = StObject.set(x, "DisplayText", js.undefined)
+    
+    inline def setDomainText(value: String): Self = StObject.set(x, "DomainText", value.asInstanceOf[js.Any])
+    
+    inline def setDomainTextUndefined: Self = StObject.set(x, "DomainText", js.undefined)
+    
+    inline def setEntityData(value: Department): Self = StObject.set(x, "EntityData", value.asInstanceOf[js.Any])
+    
+    inline def setEntityDataUndefined: Self = StObject.set(x, "EntityData", js.undefined)
+    
+    inline def setEntityType(value: String): Self = StObject.set(x, "EntityType", value.asInstanceOf[js.Any])
+    
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
+    
+    inline def setIsResolved(value: Boolean): Self = StObject.set(x, "IsResolved", value.asInstanceOf[js.Any])
+    
+    inline def setIsResolvedUndefined: Self = StObject.set(x, "IsResolved", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    
+    inline def setMultipleMatches(value: js.Array[ISPClientPeoplePickerEntity]): Self = StObject.set(x, "MultipleMatches", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleMatchesVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "MultipleMatches", js.Array(value*))
+    
+    inline def setProviderDisplayName(value: String): Self = StObject.set(x, "ProviderDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setProviderDisplayNameUndefined: Self = StObject.set(x, "ProviderDisplayName", js.undefined)
+    
+    inline def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    
+    inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+  }
 }
-

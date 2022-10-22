@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-spinners
 
-Typings are for version 1.3
+Typings are for version 2.7.0
 
 ## Library description:
 Spinners for use in the terminal
@@ -10,10 +10,10 @@ Spinners for use in the terminal
 | ------------------ | :-------------: |
 | Full name          | cli-spinners |
 | Keywords           | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle, json |
-| # releases         | 7 |
-| # dependents       | 233 |
-| # downloads        | 132383911 |
-| # stars            | 22 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7297706E7 |
+| # stars            | 1994.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/cli-spinners#readme)
@@ -24,7 +24,7 @@ Spinners for use in the terminal
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

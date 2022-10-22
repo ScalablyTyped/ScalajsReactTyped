@@ -3,21 +3,21 @@
 
 
 ## Library description:
-Locutus other languages' stadard libraries to JavaScript for fun and educational purposes
+Locutus other languages' standard libraries to JavaScript for fun and educational purposes
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | locutus |
 | Keywords           | php, golang, c, ruby, python, js, locutus |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 3627731 |
-| # stars            | 5 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1214921.6666666667 |
+| # stars            | 3641.0 |
 
 ## Links
-- [Homepage](http://locutus.io)
-- [Bugs](https://github.com/kvz/locutus/issues)
-- [Repository](https://github.com/kvz/locutus)
+- [Homepage](https://locutus.io)
+- [Bugs](https://github.com/locutusjs/locutus/issues)
+- [Repository](https://github.com/locutusjs/locutus)
 - [Npm](https://www.npmjs.com/package/locutus)
     
 

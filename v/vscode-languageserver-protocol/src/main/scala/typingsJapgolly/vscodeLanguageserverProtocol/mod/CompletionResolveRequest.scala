@@ -1,17 +1,27 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.completionItemSlashresolve
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "CompletionResolveRequest")
-@js.native
-object CompletionResolveRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
+object CompletionResolveRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.method")
+  @js.native
+  val method: completionItemSlashresolve = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem, 
     typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem, 
+    scala.Nothing, 
     Unit, 
     Unit
   ] = js.native
 }
-

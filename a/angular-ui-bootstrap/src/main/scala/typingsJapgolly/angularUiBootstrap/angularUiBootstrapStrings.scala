@@ -1,30 +1,31 @@
 package typingsJapgolly.angularUiBootstrap
 
 import typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap.DatepickerMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularUiBootstrapStrings {
-  @js.native
-  sealed trait day extends DatepickerMode
   
   @js.native
-  sealed trait month extends DatepickerMode
+  sealed trait day
+    extends StObject
+       with DatepickerMode
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait uiDotbootstrap extends js.Object
+  sealed trait month
+    extends StObject
+       with DatepickerMode
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait year extends DatepickerMode
+  sealed trait uiDotbootstrap extends StObject
+  inline def uiDotbootstrap: uiDotbootstrap = "ui.bootstrap".asInstanceOf[uiDotbootstrap]
   
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def uiDotbootstrap: uiDotbootstrap = "ui.bootstrap".asInstanceOf[uiDotbootstrap]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  @js.native
+  sealed trait year
+    extends StObject
+       with DatepickerMode
+  inline def year: year = "year".asInstanceOf[year]
 }
-

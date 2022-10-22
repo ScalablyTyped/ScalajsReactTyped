@@ -1,21 +1,17 @@
 package typingsJapgolly.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.live
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.ended
 */
-trait MediaStreamTrackState extends js.Object
-
+trait MediaStreamTrackState extends StObject
 object MediaStreamTrackState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ended: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.ended = this.cast("ended")
-  @scala.inline
-  def live: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.live = this.cast("live")
+  
+  inline def ended: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.ended = "ended".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.ended]
+  
+  inline def live: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.live = "live".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.live]
 }
-

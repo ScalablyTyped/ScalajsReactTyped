@@ -1,19 +1,18 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGridOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxDataGrid")
+@JSImport("devextreme", "default.ui.dxDataGrid")
 @js.native
-class dxDataGrid protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxDataGridOptions) = this()
-  def this(element: Element, options: dxDataGridOptions) = this()
+open class dxDataGrid[TRowData, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid[TRowData, TKey] {
+  
+  /**
+    * Sets focus on the UI component.
+    */
+  /* InferMemberOverrides */
+  override def focus(): Unit = js.native
 }
-

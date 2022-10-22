@@ -1,21 +1,30 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlideEffect extends js.Object {
+trait SlideEffect extends StObject {
+  
   var direction: js.UndefOr[String] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
 }
-
 object SlideEffect {
-  @scala.inline
-  def apply(direction: String = null, distance: Int | Double = null): SlideEffect = {
+  
+  inline def apply(): SlideEffect = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEffect]
   }
+  
+  extension [Self <: SlideEffect](x: Self) {
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+  }
 }
-

@@ -1,16 +1,22 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.media.PlayRequest")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PlayRequest
-  */
-class PlayRequest () extends js.Object {
-  var customData: js.Object = js.native
+trait PlayRequest extends StObject {
+  
+  var customData: js.Object
 }
-
+object PlayRequest {
+  
+  inline def apply(customData: js.Object): PlayRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayRequest]
+  }
+  
+  extension [Self <: PlayRequest](x: Self) {
+    
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+  }
+}

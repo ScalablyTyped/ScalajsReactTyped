@@ -1,21 +1,31 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiValueLegacyExtendedProperty extends Entity {
+trait MultiValueLegacyExtendedProperty
+  extends StObject
+     with Entity {
+  
   // A collection of property values.
-  var value: js.UndefOr[js.Array[String]] = js.undefined
+  var value: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
-
 object MultiValueLegacyExtendedProperty {
-  @scala.inline
-  def apply(id: String = null, value: js.Array[String] = null): MultiValueLegacyExtendedProperty = {
+  
+  inline def apply(): MultiValueLegacyExtendedProperty = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiValueLegacyExtendedProperty]
   }
+  
+  extension [Self <: MultiValueLegacyExtendedProperty](x: Self) {
+    
+    inline def setValue(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
+  }
 }
-

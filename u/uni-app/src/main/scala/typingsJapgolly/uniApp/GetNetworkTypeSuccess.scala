@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetNetworkTypeSuccess extends js.Object {
+trait GetNetworkTypeSuccess extends StObject {
+  
   /**
     * 网络类型
     */
   var networkType: js.UndefOr[String] = js.undefined
 }
-
 object GetNetworkTypeSuccess {
-  @scala.inline
-  def apply(networkType: String = null): GetNetworkTypeSuccess = {
+  
+  inline def apply(): GetNetworkTypeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (networkType != null) __obj.updateDynamic("networkType")(networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccess]
   }
+  
+  extension [Self <: GetNetworkTypeSuccess](x: Self) {
+    
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
+  }
 }
-

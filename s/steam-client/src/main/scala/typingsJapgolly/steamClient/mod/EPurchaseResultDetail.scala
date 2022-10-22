@@ -1,425 +1,423 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EPurchaseResultDetail extends js.Object
-
+sealed trait EPurchaseResultDetail extends StObject
 @JSImport("steam-client", "EPurchaseResultDetail")
 @js.native
-object EPurchaseResultDetail extends js.Object {
-  @js.native
-  sealed trait AVSFailure extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait AccountLocked extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait AcctIsBlocked extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait AcctNotVerified extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait AlreadyPurchased extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait BadActivationCode extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait BillingAgreementAlreadyExists extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait BillingAgreementCancelled extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait BundleTypeCannotBeGifted extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CanceledByNewTransaction extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CancelledByUser extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CannotGiftShippedGoods extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CannotRedeemCodeFromClient extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CannotShipInternationally extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CannotShipToCountry extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CannotShipToPOBox extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CartValueTooHigh extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait ContactSupport extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait CreditCardBinMismatchesType extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait DelayedCompletion extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait DoesNotOwnRequiredApp extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait DuplicateActivationCode extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait EmailNotValidated extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait ExceededSteamLimit extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait ExpiredCard extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait ExpiredCoupon extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait FailCurrencyTransProvider extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait FailedCyberCafe extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait ForceCanceledPending extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait FraudCheckFailed extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait HungTransactionCancelled extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InsufficientFunds extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InsufficientInventory extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidAccount extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidCoupon extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidData extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidPackage extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidPaymentMethod extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidShippingAddress extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait InvalidTaxAddress extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait MustLoginPS3AppForPurchase extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait NeedsPreApproval extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait NoCachedPaymentMethod extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait NoDetail extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait NoWallet extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait OtherAbortableInProgress extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait OthersInProgress extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait OverlappingPackagesInCart extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait OverlappingPackagesInPendingTransaction extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait OwnsExcludedApp extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait POSACodeNotActivated extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait PaypalInternalError extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait PhysicalProductLimitExceeded extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait PreApprovalDenied extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait PurchaseAmountNoSupportedByProvider extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait PurchaseCannotBeReplayed extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait RateLimited extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait RegionNotSupported extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait RestrictedCountry extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait StoreBillingCountryMismatch extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait Timeout extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait TransactionExpired extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait UnknownGlobalCollectError extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait UseOtherFunctionSource extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait UseOtherPaymentMethod extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait WalletCurrencyMismatch extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait WouldExceedMaxWallet extends EPurchaseResultDetail
-  
-  @js.native
-  sealed trait WrongPrice extends EPurchaseResultDetail
+object EPurchaseResultDetail extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EPurchaseResultDetail with Double] = js.native
-  /* 1 */ @js.native
-  object AVSFailure extends TopLevel[AVSFailure with Double]
-  
-  /* 44 */ @js.native
-  object AccountLocked extends TopLevel[AccountLocked with Double]
-  
-  /* 20 */ @js.native
-  object AcctIsBlocked extends TopLevel[AcctIsBlocked with Double]
-  
-  /* 21 */ @js.native
-  object AcctNotVerified extends TopLevel[AcctNotVerified with Double]
-  
-  /* 9 */ @js.native
-  object AlreadyPurchased extends TopLevel[AlreadyPurchased with Double]
-  
-  /* 14 */ @js.native
-  object BadActivationCode extends TopLevel[BadActivationCode with Double]
-  
-  /* 57 */ @js.native
-  object BillingAgreementAlreadyExists extends TopLevel[BillingAgreementAlreadyExists with Double]
-  
-  /* 41 */ @js.native
-  object BillingAgreementCancelled extends TopLevel[BillingAgreementCancelled with Double]
-  
-  /* 67 */ @js.native
-  object BundleTypeCannotBeGifted extends TopLevel[BundleTypeCannotBeGifted with Double]
-  
-  /* 25 */ @js.native
-  object CanceledByNewTransaction extends TopLevel[CanceledByNewTransaction with Double]
-  
-  /* 12 */ @js.native
-  object CancelledByUser extends TopLevel[CancelledByUser with Double]
-  
-  /* 39 */ @js.native
-  object CannotGiftShippedGoods extends TopLevel[CannotGiftShippedGoods with Double]
-  
-  /* 50 */ @js.native
-  object CannotRedeemCodeFromClient extends TopLevel[CannotRedeemCodeFromClient with Double]
-  
-  /* 40 */ @js.native
-  object CannotShipInternationally extends TopLevel[CannotShipInternationally with Double]
-  
-  /* 59 */ @js.native
-  object CannotShipToCountry extends TopLevel[CannotShipToCountry with Double]
-  
-  /* 37 */ @js.native
-  object CannotShipToPOBox extends TopLevel[CannotShipToPOBox with Double]
-  
-  /* 56 */ @js.native
-  object CartValueTooHigh extends TopLevel[CartValueTooHigh with Double]
-  
-  /* 3 */ @js.native
-  object ContactSupport extends TopLevel[ContactSupport with Double]
-  
-  /* 55 */ @js.native
-  object CreditCardBinMismatchesType extends TopLevel[CreditCardBinMismatchesType with Double]
-  
-  /* 66 */ @js.native
-  object DelayedCompletion extends TopLevel[DelayedCompletion with Double]
-  
-  /* 24 */ @js.native
-  object DoesNotOwnRequiredApp extends TopLevel[DoesNotOwnRequiredApp with Double]
-  
-  /* 15 */ @js.native
-  object DuplicateActivationCode extends TopLevel[DuplicateActivationCode with Double]
-  
-  /* 32 */ @js.native
-  object EmailNotValidated extends TopLevel[EmailNotValidated with Double]
-  
-  /* 46 */ @js.native
-  object ExceededSteamLimit extends TopLevel[ExceededSteamLimit with Double]
-  
-  /* 33 */ @js.native
-  object ExpiredCard extends TopLevel[ExpiredCard with Double]
-  
-  /* 43 */ @js.native
-  object ExpiredCoupon extends TopLevel[ExpiredCoupon with Double]
-  
-  /* 27 */ @js.native
-  object FailCurrencyTransProvider extends TopLevel[FailCurrencyTransProvider with Double]
-  
-  /* 28 */ @js.native
-  object FailedCyberCafe extends TopLevel[FailedCyberCafe with Double]
-  
-  /* 26 */ @js.native
-  object ForceCanceledPending extends TopLevel[ForceCanceledPending with Double]
-  
-  /* 11 */ @js.native
-  object FraudCheckFailed extends TopLevel[FraudCheckFailed with Double]
-  
-  /* 60 */ @js.native
-  object HungTransactionCancelled extends TopLevel[HungTransactionCancelled with Double]
-  
-  /* 2 */ @js.native
-  object InsufficientFunds extends TopLevel[InsufficientFunds with Double]
-  
-  /* 38 */ @js.native
-  object InsufficientInventory extends TopLevel[InsufficientInventory with Double]
-  
-  /* 22 */ @js.native
-  object InvalidAccount extends TopLevel[InvalidAccount with Double]
-  
-  /* 42 */ @js.native
-  object InvalidCoupon extends TopLevel[InvalidCoupon with Double]
-  
-  /* 7 */ @js.native
-  object InvalidData extends TopLevel[InvalidData with Double]
-  
-  /* 5 */ @js.native
-  object InvalidPackage extends TopLevel[InvalidPackage with Double]
-  
-  /* 6 */ @js.native
-  object InvalidPaymentMethod extends TopLevel[InvalidPaymentMethod with Double]
-  
-  /* 18 */ @js.native
-  object InvalidShippingAddress extends TopLevel[InvalidShippingAddress with Double]
-  
-  /* 63 */ @js.native
-  object InvalidTaxAddress extends TopLevel[InvalidTaxAddress with Double]
-  
-  /* 36 */ @js.native
-  object MustLoginPS3AppForPurchase extends TopLevel[MustLoginPS3AppForPurchase with Double]
-  
-  /* 29 */ @js.native
-  object NeedsPreApproval extends TopLevel[NeedsPreApproval with Double]
-  
-  /* 49 */ @js.native
-  object NoCachedPaymentMethod extends TopLevel[NoCachedPaymentMethod with Double]
-  
-  /* 0 */ @js.native
-  object NoDetail extends TopLevel[NoDetail with Double]
-  
-  /* 48 */ @js.native
-  object NoWallet extends TopLevel[NoWallet with Double]
-  
-  /* 45 */ @js.native
-  object OtherAbortableInProgress extends TopLevel[OtherAbortableInProgress with Double]
-  
-  /* 8 */ @js.native
-  object OthersInProgress extends TopLevel[OthersInProgress with Double]
-  
-  /* 47 */ @js.native
-  object OverlappingPackagesInCart extends TopLevel[OverlappingPackagesInCart with Double]
-  
-  /* 52 */ @js.native
-  object OverlappingPackagesInPendingTransaction extends TopLevel[OverlappingPackagesInPendingTransaction with Double]
-  
-  /* 54 */ @js.native
-  object OwnsExcludedApp extends TopLevel[OwnsExcludedApp with Double]
-  
-  /* 58 */ @js.native
-  object POSACodeNotActivated extends TopLevel[POSACodeNotActivated with Double]
-  
-  /* 61 */ @js.native
-  object PaypalInternalError extends TopLevel[PaypalInternalError with Double]
-  
-  /* 64 */ @js.native
-  object PhysicalProductLimitExceeded extends TopLevel[PhysicalProductLimitExceeded with Double]
-  
-  /* 30 */ @js.native
-  object PreApprovalDenied extends TopLevel[PreApprovalDenied with Double]
-  
-  /* 51 */ @js.native
-  object PurchaseAmountNoSupportedByProvider extends TopLevel[PurchaseAmountNoSupportedByProvider with Double]
-  
-  /* 65 */ @js.native
-  object PurchaseCannotBeReplayed extends TopLevel[PurchaseCannotBeReplayed with Double]
-  
-  /* 53 */ @js.native
-  object RateLimited extends TopLevel[RateLimited with Double]
-  
-  /* 19 */ @js.native
-  object RegionNotSupported extends TopLevel[RegionNotSupported with Double]
-  
-  /* 13 */ @js.native
-  object RestrictedCountry extends TopLevel[RestrictedCountry with Double]
-  
-  /* 23 */ @js.native
-  object StoreBillingCountryMismatch extends TopLevel[StoreBillingCountryMismatch with Double]
-  
-  /* 4 */ @js.native
-  object Timeout extends TopLevel[Timeout with Double]
-  
-  /* 34 */ @js.native
-  object TransactionExpired extends TopLevel[TransactionExpired with Double]
-  
-  /* 62 */ @js.native
-  object UnknownGlobalCollectError extends TopLevel[UnknownGlobalCollectError with Double]
-  
-  /* 17 */ @js.native
-  object UseOtherFunctionSource extends TopLevel[UseOtherFunctionSource with Double]
-  
-  /* 16 */ @js.native
-  object UseOtherPaymentMethod extends TopLevel[UseOtherPaymentMethod with Double]
-  
-  /* 31 */ @js.native
-  object WalletCurrencyMismatch extends TopLevel[WalletCurrencyMismatch with Double]
-  
-  /* 35 */ @js.native
-  object WouldExceedMaxWallet extends TopLevel[WouldExceedMaxWallet with Double]
-  
-  /* 10 */ @js.native
-  object WrongPrice extends TopLevel[WrongPrice with Double]
-  
+  def apply(value: Double): js.UndefOr[EPurchaseResultDetail & Double] = js.native
+  
+  @js.native
+  sealed trait AVSFailure
+    extends StObject
+       with EPurchaseResultDetail
+  /* 1 */ val AVSFailure: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.AVSFailure & Double = js.native
+  
+  @js.native
+  sealed trait AccountLocked
+    extends StObject
+       with EPurchaseResultDetail
+  /* 44 */ val AccountLocked: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.AccountLocked & Double = js.native
+  
+  @js.native
+  sealed trait AcctIsBlocked
+    extends StObject
+       with EPurchaseResultDetail
+  /* 20 */ val AcctIsBlocked: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.AcctIsBlocked & Double = js.native
+  
+  @js.native
+  sealed trait AcctNotVerified
+    extends StObject
+       with EPurchaseResultDetail
+  /* 21 */ val AcctNotVerified: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.AcctNotVerified & Double = js.native
+  
+  @js.native
+  sealed trait AlreadyPurchased
+    extends StObject
+       with EPurchaseResultDetail
+  /* 9 */ val AlreadyPurchased: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.AlreadyPurchased & Double = js.native
+  
+  @js.native
+  sealed trait BadActivationCode
+    extends StObject
+       with EPurchaseResultDetail
+  /* 14 */ val BadActivationCode: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.BadActivationCode & Double = js.native
+  
+  @js.native
+  sealed trait BillingAgreementAlreadyExists
+    extends StObject
+       with EPurchaseResultDetail
+  /* 57 */ val BillingAgreementAlreadyExists: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.BillingAgreementAlreadyExists & Double = js.native
+  
+  @js.native
+  sealed trait BillingAgreementCancelled
+    extends StObject
+       with EPurchaseResultDetail
+  /* 41 */ val BillingAgreementCancelled: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.BillingAgreementCancelled & Double = js.native
+  
+  @js.native
+  sealed trait BundleTypeCannotBeGifted
+    extends StObject
+       with EPurchaseResultDetail
+  /* 67 */ val BundleTypeCannotBeGifted: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.BundleTypeCannotBeGifted & Double = js.native
+  
+  @js.native
+  sealed trait CanceledByNewTransaction
+    extends StObject
+       with EPurchaseResultDetail
+  /* 25 */ val CanceledByNewTransaction: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CanceledByNewTransaction & Double = js.native
+  
+  @js.native
+  sealed trait CancelledByUser
+    extends StObject
+       with EPurchaseResultDetail
+  /* 12 */ val CancelledByUser: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CancelledByUser & Double = js.native
+  
+  @js.native
+  sealed trait CannotGiftShippedGoods
+    extends StObject
+       with EPurchaseResultDetail
+  /* 39 */ val CannotGiftShippedGoods: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CannotGiftShippedGoods & Double = js.native
+  
+  @js.native
+  sealed trait CannotRedeemCodeFromClient
+    extends StObject
+       with EPurchaseResultDetail
+  /* 50 */ val CannotRedeemCodeFromClient: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CannotRedeemCodeFromClient & Double = js.native
+  
+  @js.native
+  sealed trait CannotShipInternationally
+    extends StObject
+       with EPurchaseResultDetail
+  /* 40 */ val CannotShipInternationally: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CannotShipInternationally & Double = js.native
+  
+  @js.native
+  sealed trait CannotShipToCountry
+    extends StObject
+       with EPurchaseResultDetail
+  /* 59 */ val CannotShipToCountry: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CannotShipToCountry & Double = js.native
+  
+  @js.native
+  sealed trait CannotShipToPOBox
+    extends StObject
+       with EPurchaseResultDetail
+  /* 37 */ val CannotShipToPOBox: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CannotShipToPOBox & Double = js.native
+  
+  @js.native
+  sealed trait CartValueTooHigh
+    extends StObject
+       with EPurchaseResultDetail
+  /* 56 */ val CartValueTooHigh: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CartValueTooHigh & Double = js.native
+  
+  @js.native
+  sealed trait ContactSupport
+    extends StObject
+       with EPurchaseResultDetail
+  /* 3 */ val ContactSupport: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.ContactSupport & Double = js.native
+  
+  @js.native
+  sealed trait CreditCardBinMismatchesType
+    extends StObject
+       with EPurchaseResultDetail
+  /* 55 */ val CreditCardBinMismatchesType: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.CreditCardBinMismatchesType & Double = js.native
+  
+  @js.native
+  sealed trait DelayedCompletion
+    extends StObject
+       with EPurchaseResultDetail
+  /* 66 */ val DelayedCompletion: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.DelayedCompletion & Double = js.native
+  
+  @js.native
+  sealed trait DoesNotOwnRequiredApp
+    extends StObject
+       with EPurchaseResultDetail
+  /* 24 */ val DoesNotOwnRequiredApp: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.DoesNotOwnRequiredApp & Double = js.native
+  
+  @js.native
+  sealed trait DuplicateActivationCode
+    extends StObject
+       with EPurchaseResultDetail
+  /* 15 */ val DuplicateActivationCode: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.DuplicateActivationCode & Double = js.native
+  
+  @js.native
+  sealed trait EmailNotValidated
+    extends StObject
+       with EPurchaseResultDetail
+  /* 32 */ val EmailNotValidated: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.EmailNotValidated & Double = js.native
+  
+  @js.native
+  sealed trait ExceededSteamLimit
+    extends StObject
+       with EPurchaseResultDetail
+  /* 46 */ val ExceededSteamLimit: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.ExceededSteamLimit & Double = js.native
+  
+  @js.native
+  sealed trait ExpiredCard
+    extends StObject
+       with EPurchaseResultDetail
+  /* 33 */ val ExpiredCard: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.ExpiredCard & Double = js.native
+  
+  @js.native
+  sealed trait ExpiredCoupon
+    extends StObject
+       with EPurchaseResultDetail
+  /* 43 */ val ExpiredCoupon: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.ExpiredCoupon & Double = js.native
+  
+  @js.native
+  sealed trait FailCurrencyTransProvider
+    extends StObject
+       with EPurchaseResultDetail
+  /* 27 */ val FailCurrencyTransProvider: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.FailCurrencyTransProvider & Double = js.native
+  
+  @js.native
+  sealed trait FailedCyberCafe
+    extends StObject
+       with EPurchaseResultDetail
+  /* 28 */ val FailedCyberCafe: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.FailedCyberCafe & Double = js.native
+  
+  @js.native
+  sealed trait ForceCanceledPending
+    extends StObject
+       with EPurchaseResultDetail
+  /* 26 */ val ForceCanceledPending: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.ForceCanceledPending & Double = js.native
+  
+  @js.native
+  sealed trait FraudCheckFailed
+    extends StObject
+       with EPurchaseResultDetail
+  /* 11 */ val FraudCheckFailed: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.FraudCheckFailed & Double = js.native
+  
+  @js.native
+  sealed trait HungTransactionCancelled
+    extends StObject
+       with EPurchaseResultDetail
+  /* 60 */ val HungTransactionCancelled: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.HungTransactionCancelled & Double = js.native
+  
+  @js.native
+  sealed trait InsufficientFunds
+    extends StObject
+       with EPurchaseResultDetail
+  /* 2 */ val InsufficientFunds: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InsufficientFunds & Double = js.native
+  
+  @js.native
+  sealed trait InsufficientInventory
+    extends StObject
+       with EPurchaseResultDetail
+  /* 38 */ val InsufficientInventory: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InsufficientInventory & Double = js.native
+  
+  @js.native
+  sealed trait InvalidAccount
+    extends StObject
+       with EPurchaseResultDetail
+  /* 22 */ val InvalidAccount: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidAccount & Double = js.native
+  
+  @js.native
+  sealed trait InvalidCoupon
+    extends StObject
+       with EPurchaseResultDetail
+  /* 42 */ val InvalidCoupon: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidCoupon & Double = js.native
+  
+  @js.native
+  sealed trait InvalidData
+    extends StObject
+       with EPurchaseResultDetail
+  /* 7 */ val InvalidData: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidData & Double = js.native
+  
+  @js.native
+  sealed trait InvalidPackage
+    extends StObject
+       with EPurchaseResultDetail
+  /* 5 */ val InvalidPackage: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidPackage & Double = js.native
+  
+  @js.native
+  sealed trait InvalidPaymentMethod
+    extends StObject
+       with EPurchaseResultDetail
+  /* 6 */ val InvalidPaymentMethod: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidPaymentMethod & Double = js.native
+  
+  @js.native
+  sealed trait InvalidShippingAddress
+    extends StObject
+       with EPurchaseResultDetail
+  /* 18 */ val InvalidShippingAddress: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidShippingAddress & Double = js.native
+  
+  @js.native
+  sealed trait InvalidTaxAddress
+    extends StObject
+       with EPurchaseResultDetail
+  /* 63 */ val InvalidTaxAddress: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.InvalidTaxAddress & Double = js.native
+  
+  @js.native
+  sealed trait MustLoginPS3AppForPurchase
+    extends StObject
+       with EPurchaseResultDetail
+  /* 36 */ val MustLoginPS3AppForPurchase: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.MustLoginPS3AppForPurchase & Double = js.native
+  
+  @js.native
+  sealed trait NeedsPreApproval
+    extends StObject
+       with EPurchaseResultDetail
+  /* 29 */ val NeedsPreApproval: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.NeedsPreApproval & Double = js.native
+  
+  @js.native
+  sealed trait NoCachedPaymentMethod
+    extends StObject
+       with EPurchaseResultDetail
+  /* 49 */ val NoCachedPaymentMethod: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.NoCachedPaymentMethod & Double = js.native
+  
+  @js.native
+  sealed trait NoDetail
+    extends StObject
+       with EPurchaseResultDetail
+  /* 0 */ val NoDetail: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.NoDetail & Double = js.native
+  
+  @js.native
+  sealed trait NoWallet
+    extends StObject
+       with EPurchaseResultDetail
+  /* 48 */ val NoWallet: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.NoWallet & Double = js.native
+  
+  @js.native
+  sealed trait OtherAbortableInProgress
+    extends StObject
+       with EPurchaseResultDetail
+  /* 45 */ val OtherAbortableInProgress: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.OtherAbortableInProgress & Double = js.native
+  
+  @js.native
+  sealed trait OthersInProgress
+    extends StObject
+       with EPurchaseResultDetail
+  /* 8 */ val OthersInProgress: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.OthersInProgress & Double = js.native
+  
+  @js.native
+  sealed trait OverlappingPackagesInCart
+    extends StObject
+       with EPurchaseResultDetail
+  /* 47 */ val OverlappingPackagesInCart: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.OverlappingPackagesInCart & Double = js.native
+  
+  @js.native
+  sealed trait OverlappingPackagesInPendingTransaction
+    extends StObject
+       with EPurchaseResultDetail
+  /* 52 */ val OverlappingPackagesInPendingTransaction: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.OverlappingPackagesInPendingTransaction & Double = js.native
+  
+  @js.native
+  sealed trait OwnsExcludedApp
+    extends StObject
+       with EPurchaseResultDetail
+  /* 54 */ val OwnsExcludedApp: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.OwnsExcludedApp & Double = js.native
+  
+  @js.native
+  sealed trait POSACodeNotActivated
+    extends StObject
+       with EPurchaseResultDetail
+  /* 58 */ val POSACodeNotActivated: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.POSACodeNotActivated & Double = js.native
+  
+  @js.native
+  sealed trait PaypalInternalError
+    extends StObject
+       with EPurchaseResultDetail
+  /* 61 */ val PaypalInternalError: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.PaypalInternalError & Double = js.native
+  
+  @js.native
+  sealed trait PhysicalProductLimitExceeded
+    extends StObject
+       with EPurchaseResultDetail
+  /* 64 */ val PhysicalProductLimitExceeded: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.PhysicalProductLimitExceeded & Double = js.native
+  
+  @js.native
+  sealed trait PreApprovalDenied
+    extends StObject
+       with EPurchaseResultDetail
+  /* 30 */ val PreApprovalDenied: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.PreApprovalDenied & Double = js.native
+  
+  @js.native
+  sealed trait PurchaseAmountNoSupportedByProvider
+    extends StObject
+       with EPurchaseResultDetail
+  /* 51 */ val PurchaseAmountNoSupportedByProvider: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.PurchaseAmountNoSupportedByProvider & Double = js.native
+  
+  @js.native
+  sealed trait PurchaseCannotBeReplayed
+    extends StObject
+       with EPurchaseResultDetail
+  /* 65 */ val PurchaseCannotBeReplayed: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.PurchaseCannotBeReplayed & Double = js.native
+  
+  @js.native
+  sealed trait RateLimited
+    extends StObject
+       with EPurchaseResultDetail
+  /* 53 */ val RateLimited: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.RateLimited & Double = js.native
+  
+  @js.native
+  sealed trait RegionNotSupported
+    extends StObject
+       with EPurchaseResultDetail
+  /* 19 */ val RegionNotSupported: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.RegionNotSupported & Double = js.native
+  
+  @js.native
+  sealed trait RestrictedCountry
+    extends StObject
+       with EPurchaseResultDetail
+  /* 13 */ val RestrictedCountry: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.RestrictedCountry & Double = js.native
+  
+  @js.native
+  sealed trait StoreBillingCountryMismatch
+    extends StObject
+       with EPurchaseResultDetail
+  /* 23 */ val StoreBillingCountryMismatch: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.StoreBillingCountryMismatch & Double = js.native
+  
+  @js.native
+  sealed trait Timeout
+    extends StObject
+       with EPurchaseResultDetail
+  /* 4 */ val Timeout: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.Timeout & Double = js.native
+  
+  @js.native
+  sealed trait TransactionExpired
+    extends StObject
+       with EPurchaseResultDetail
+  /* 34 */ val TransactionExpired: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.TransactionExpired & Double = js.native
+  
+  @js.native
+  sealed trait UnknownGlobalCollectError
+    extends StObject
+       with EPurchaseResultDetail
+  /* 62 */ val UnknownGlobalCollectError: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.UnknownGlobalCollectError & Double = js.native
+  
+  @js.native
+  sealed trait UseOtherFunctionSource
+    extends StObject
+       with EPurchaseResultDetail
+  /* 17 */ val UseOtherFunctionSource: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.UseOtherFunctionSource & Double = js.native
+  
+  @js.native
+  sealed trait UseOtherPaymentMethod
+    extends StObject
+       with EPurchaseResultDetail
+  /* 16 */ val UseOtherPaymentMethod: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.UseOtherPaymentMethod & Double = js.native
+  
+  @js.native
+  sealed trait WalletCurrencyMismatch
+    extends StObject
+       with EPurchaseResultDetail
+  /* 31 */ val WalletCurrencyMismatch: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.WalletCurrencyMismatch & Double = js.native
+  
+  @js.native
+  sealed trait WouldExceedMaxWallet
+    extends StObject
+       with EPurchaseResultDetail
+  /* 35 */ val WouldExceedMaxWallet: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.WouldExceedMaxWallet & Double = js.native
+  
+  @js.native
+  sealed trait WrongPrice
+    extends StObject
+       with EPurchaseResultDetail
+  /* 10 */ val WrongPrice: typingsJapgolly.steamClient.mod.EPurchaseResultDetail.WrongPrice & Double = js.native
 }
-

@@ -1,29 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommsOperation extends Entity {
-  var clientContext: js.UndefOr[String] = js.undefined
-  var resultInfo: js.UndefOr[ResultInfo] = js.undefined
+trait CommsOperation
+  extends StObject
+     with Entity {
+  
+  // Unique Client Context string. Max limit is 256 chars.
+  var clientContext: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The result information. Read-only.
+  var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.undefined
+  
+  // Possible values are: notStarted, running, completed, failed. Read-only.
   var status: js.UndefOr[OperationStatus] = js.undefined
 }
-
 object CommsOperation {
-  @scala.inline
-  def apply(
-    clientContext: String = null,
-    id: String = null,
-    resultInfo: ResultInfo = null,
-    status: OperationStatus = null
-  ): CommsOperation = {
+  
+  inline def apply(): CommsOperation = {
     val __obj = js.Dynamic.literal()
-    if (clientContext != null) __obj.updateDynamic("clientContext")(clientContext.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (resultInfo != null) __obj.updateDynamic("resultInfo")(resultInfo.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommsOperation]
   }
+  
+  extension [Self <: CommsOperation](x: Self) {
+    
+    inline def setClientContext(value: NullableOption[String]): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
+    
+    inline def setClientContextNull: Self = StObject.set(x, "clientContext", null)
+    
+    inline def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
+    
+    inline def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
+    
+    inline def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
+    
+    inline def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
+    
+    inline def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
 }
-

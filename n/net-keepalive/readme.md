@@ -1,7 +1,7 @@
 
 # Scala.js typings for net-keepalive
 
-Typings are for version 0.4
+Typings are for version 3.0.0
 
 ## Library description:
 Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, TCP_KEEPCNT
@@ -10,13 +10,13 @@ Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, T
 | ------------------ | :-------------: |
 | Full name          | net-keepalive |
 | Keywords           | ffi, setsockopt, getsockopt, ref, net, keep-alive, keepalive, keep alive, keep, alive, tcp |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 31612 |
-| # stars            | 2 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 41312.0 |
+| # stars            | 30.0 |
 
 ## Links
-- [Homepage](https://github.com/hertzg/node-net-keepalive)
+- [Homepage](https://hertzg.github.io/node-net-keepalive/)
 - [Bugs](https://github.com/hertzg/node-net-keepalive/issues)
 - [Repository](https://github.com/hertzg/node-net-keepalive)
 - [Npm](https://www.npmjs.com/package/net-keepalive)
@@ -24,7 +24,7 @@ Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, T
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

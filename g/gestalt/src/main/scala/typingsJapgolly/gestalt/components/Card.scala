@@ -1,46 +1,45 @@
 package typingsJapgolly.gestalt.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gestalt.AnonEventSyntheticEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.anon.EventSyntheticEvent
 import typingsJapgolly.gestalt.mod.CardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    image: VdomNode = null,
-    onMouseEnter: /* args */ AnonEventSyntheticEvent => Callback = null,
-    onMouseLeave: /* args */ AnonEventSyntheticEvent => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CardProps, typingsJapgolly.gestalt.mod.Card, Unit, CardProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.rawNode.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.gestalt.AnonEventSyntheticEvent) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.gestalt.AnonEventSyntheticEvent) => onMouseLeave(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.CardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Card](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.CardProps])(children: _*)
-  }
   @JSImport("gestalt", "Card")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def image(value: VdomNode): this.type = set("image", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def imageNull: this.type = set("image", null)
+    
+    inline def imageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("image", js.Array(value*))
+    
+    inline def imageVdomElement(value: VdomElement): this.type = set("image", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onMouseEnter(value: /* args */ EventSyntheticEvent => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: /* args */ EventSyntheticEvent) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: /* args */ EventSyntheticEvent => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: /* args */ EventSyntheticEvent) => value(t0).runNow()))
+  }
+  
+  implicit def make(companion: Card.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

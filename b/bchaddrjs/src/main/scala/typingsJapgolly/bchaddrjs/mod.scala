@@ -1,53 +1,93 @@
 package typingsJapgolly.bchaddrjs
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bchaddrjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class InvalidAddressError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+object mod {
   
-  def detectAddressFormat(address: String): String = js.native
-  def detectAddressNetwork(address: String): String = js.native
-  def detectAddressType(address: String): String = js.native
-  def isBitpayAddress(address: String): Boolean = js.native
-  def isCashAddress(address: String): Boolean = js.native
-  def isLegacyAddress(address: String): Boolean = js.native
-  def isMainnetAddress(address: String): Boolean = js.native
-  def isP2PKHAddress(address: String): Boolean = js.native
-  def isP2SHAddress(address: String): Boolean = js.native
-  def isTestnetAddress(address: String): Boolean = js.native
-  def isValidAddress(input: js.Any): Boolean = js.native
-  def toBitpayAddress(address: String): String = js.native
-  def toCashAddress(address: String): String = js.native
-  def toLegacyAddress(address: String): String = js.native
+  @JSImport("bchaddrjs", JSImport.Namespace)
   @js.native
-  object Format extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object Format {
+    
+    @JSImport("bchaddrjs", "Format.Bitpay")
+    @js.native
     val Bitpay: String = js.native
+    
+    @JSImport("bchaddrjs", "Format.Cashaddr")
+    @js.native
     val Cashaddr: String = js.native
+    
+    @JSImport("bchaddrjs", "Format.Legacy")
+    @js.native
     val Legacy: String = js.native
   }
   
+  @JSImport("bchaddrjs", "InvalidAddressError")
   @js.native
-  object Network extends js.Object {
+  open class InvalidAddressError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  object Network {
+    
+    @JSImport("bchaddrjs", "Network.Mainnet")
+    @js.native
     val Mainnet: String = js.native
+    
+    @JSImport("bchaddrjs", "Network.Testnet")
+    @js.native
     val Testnet: String = js.native
   }
   
-  @js.native
-  object Type extends js.Object {
+  object Type {
+    
+    @JSImport("bchaddrjs", "Type.P2PKH")
+    @js.native
     val P2PKH: String = js.native
+    
+    @JSImport("bchaddrjs", "Type.P2SH")
+    @js.native
     val P2SH: String = js.native
   }
   
+  inline def detectAddressFormat(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAddressFormat")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def detectAddressNetwork(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAddressNetwork")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def detectAddressType(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAddressType")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def isBitpayAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBitpayAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isCashAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCashAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isLegacyAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isMainnetAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMainnetAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isP2PKHAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isP2PKHAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isP2SHAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isP2SHAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isTestnetAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTestnetAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isValidAddress(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAddress")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def toBitpayAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBitpayAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def toCashAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCashAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def toLegacyAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLegacyAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

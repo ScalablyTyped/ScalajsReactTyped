@@ -6,58 +6,75 @@ import typingsJapgolly.extjs.Ext.IXTemplate
 import typingsJapgolly.extjs.Ext.data.IAbstractStore
 import typingsJapgolly.extjs.Ext.data.IModel
 import typingsJapgolly.extjs.Ext.data.IStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.extjs.Ext.IClass because Already inherited
 - typingsJapgolly.extjs.Ext.IBase because Already inherited
-- typingsJapgolly.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IComboBox extends IPicker {
+- typingsJapgolly.extjs.Ext.util.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IComboBox
+  extends StObject
+     with IPicker {
+  
   /** [Method] A method called when the filtering caused by the doQuery call is complete and the store has been either filtered loca
-  		* @param queryPlan Object An object containing details about the query was executed.
-  		*/
-  var afterQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param queryPlan Object An object containing details about the query was executed.
+    */
+  var afterQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var allQuery: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var anyMatch: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var autoSelect: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Template method to do any pre blur processing  */
   @JSName("beforeBlur")
   var beforeBlur_IComboBox: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] A method which may modify aspects of how the store is to be filtered if queryMode is local  of loaded if queryMod
-  		* @param queryPlan Object An object containing details about the query to be executed.
-  		*/
-  var beforeQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param queryPlan Object An object containing details about the query to be executed.
+    */
+  var beforeQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Template method before a field is reset  */
   @JSName("beforeReset")
   var beforeReset_IComboBox: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Binds a store to this instance
-  		* @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
-  		*/
-  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
+    */
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Binds listeners for this component to the store
-  		* @param store Ext.data.AbstractStore The store to bind to
-  		*/
+    * @param store Ext.data.AbstractStore The store to bind to
+    */
   var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Clears any value currently set in the ComboBox  */
   var clearValue: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Object) */
-  var defaultListConfig: js.UndefOr[js.Any] = js.undefined
+  var defaultListConfig: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var delimiter: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var displayField: js.UndefOr[String] = js.undefined
+  
   /** [Method] Executes a query to filter the dropdown list
-  		* @param queryString String The string to use to filter available items by matching against the configured valueField.
-  		* @param forceAll Boolean true to force the query to execute even if there are currently fewer characters in the field than the minimum specified by the minChars config option. It also clears any filter previously saved in the current store.
-  		* @param rawQuery Boolean Pass as true if the raw typed value is being used as the query string. This causes the resulting store load to leave the raw value undisturbed.
-  		* @returns Boolean true if the query was permitted to run, false if it was cancelled by a beforequery handler.
-  		*/
+    * @param queryString String The string to use to filter available items by matching against the configured valueField.
+    * @param forceAll Boolean true to force the query to execute even if there are currently fewer characters in the field than the minimum specified by the minChars config option. It also clears any filter previously saved in the current store.
+    * @param rawQuery Boolean Pass as true if the raw typed value is being used as the query string. This causes the resulting store load to leave the raw value undisturbed.
+    * @returns Boolean true if the query was permitted to run, false if it was cancelled by a beforequery handler.
+    */
   var doQuery: js.UndefOr[
     js.Function3[
       /* queryString */ js.UndefOr[String], 
@@ -66,213 +83,350 @@ import scala.scalajs.js.annotation._
       Boolean
     ]
   ] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var enableRegEx: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Ext.XTemplate) */
   var fieldSubTpl: js.UndefOr[IXTemplate] = js.undefined
+  
   /** [Method] Finds the record by searching for a specific field value combination
-  		* @param field String The name of the field to test.
-  		* @param value Object The value to match the field against.
-  		* @returns Ext.data.Model The matched record or false.
-  		*/
+    * @param field String The name of the field to test.
+    * @param value Object The value to match the field against.
+    * @returns Ext.data.Model The matched record or false.
+    */
   var findRecord: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], IModel]
+    js.Function2[/* field */ js.UndefOr[String], /* value */ js.UndefOr[Any], IModel]
   ] = js.undefined
+  
   /** [Method] Finds the record by searching values in the displayField
-  		* @param value Object The value to match the field against.
-  		* @returns Ext.data.Model The matched record or false.
-  		*/
-  var findRecordByDisplay: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], IModel]] = js.undefined
+    * @param value Object The value to match the field against.
+    * @returns Ext.data.Model The matched record or false.
+    */
+  var findRecordByDisplay: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], IModel]] = js.undefined
+  
   /** [Method] Finds the record by searching values in the valueField
-  		* @param value Object The value to match the field against.
-  		* @returns Ext.data.Model The matched record or false.
-  		*/
-  var findRecordByValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], IModel]] = js.undefined
+    * @param value Object The value to match the field against.
+    * @returns Ext.data.Model The matched record or false.
+    */
+  var findRecordByValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], IModel]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var forceSelection: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns the store associated with this ComboBox
-  		* @returns Ext.data.Store The store
-  		*/
+    * @returns Ext.data.Store The store
+    */
   var getStore: js.UndefOr[js.Function0[IAbstractStore | IStore]] = js.undefined
+  
   /** [Method] Gets the listeners to bind to a new store
-  		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
-  		*/
-  var getStoreListeners: js.UndefOr[js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _])] = js.undefined
+    * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
+    */
+  var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
+  
   /** [Method] Returns the value that would be included in a standard form submit for this field
-  		* @returns String The value to be submitted, or null.
-  		*/
+    * @returns String The value to be submitted, or null.
+    */
   @JSName("getSubmitValue")
   var getSubmitValue_IComboBox: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the current data value of the field
-  		* @returns Object value The field value
-  		*/
+    * @returns Object value The field value
+    */
   @JSName("getValue")
-  var getValue_IComboBox: js.UndefOr[js.Function0[_]] = js.undefined
+  var getValue_IComboBox: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var growToLongestValue: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var hiddenName: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var lastQuery: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Object) */
-  var listConfig: js.UndefOr[js.Any] = js.undefined
+  var listConfig: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Number) */
   var minChars: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var multiSelect: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Template method it is called when a new store is bound to the current instance
-  		* @param store Object
-  		* @param initial Object
-  		*/
-  var onBindStore: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean], Unit]
-  ] = js.undefined
+    * @param store Object
+    * @param initial Object
+    */
+  var onBindStore: js.UndefOr[js.Function2[js.UndefOr[Any | IAbstractStore], js.UndefOr[Any | Boolean], Unit]] = js.undefined
+  
   /** [Method] Template method it is called when an existing store is unbound from the current instance
-  		* @param store Object
-  		*/
+    * @param store Object
+    */
   var onUnbindStore: js.UndefOr[
-    (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+    (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
   ] = js.undefined
+  
   /** [Config Option] (Number) */
   var pageSize: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var queryCaching: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Number) */
   var queryDelay: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var queryMode: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var queryParam: js.UndefOr[String] = js.undefined
+  
   /** [Method] Selects an item by a Model or by a key value
-  		* @param r Object
-  		*/
-  var select: js.UndefOr[js.Function1[/* r */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param r Object
+    */
+  var select: js.UndefOr[js.Function1[/* r */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var selectOnTab: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Ext.data.Store/String/Array) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var transform: js.UndefOr[js.Any] = js.undefined
+  var transform: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var triggerAction: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var typeAhead: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Number) */
   var typeAheadDelay: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Unbinds listeners from this component to the store
-  		* @param store Ext.data.AbstractStore The store to unbind from
-  		*/
+    * @param store Ext.data.AbstractStore The store to unbind from
+    */
   var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[IAbstractStore], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var valueField: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var valueNotFoundText: js.UndefOr[String] = js.undefined
 }
-
 object IComboBox {
-  @scala.inline
-  def apply(
-    IPicker: IPicker = null,
-    afterQuery: /* queryPlan */ js.UndefOr[js.Any] => Callback = null,
-    allQuery: String = null,
-    anyMatch: js.UndefOr[Boolean] = js.undefined,
-    autoSelect: js.UndefOr[Boolean] = js.undefined,
-    beforeBlur: js.UndefOr[Callback] = js.undefined,
-    beforeQuery: /* queryPlan */ js.UndefOr[js.Any] => Callback = null,
-    beforeReset: js.UndefOr[Callback] = js.undefined,
-    bindStore: js.UndefOr[js.Any] => Callback = null,
-    bindStoreListeners: js.UndefOr[IAbstractStore] => Callback = null,
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    clearValue: js.UndefOr[Callback] = js.undefined,
-    defaultListConfig: js.Any = null,
-    delimiter: String = null,
-    displayField: String = null,
-    doQuery: (/* queryString */ js.UndefOr[String], /* forceAll */ js.UndefOr[Boolean], /* rawQuery */ js.UndefOr[Boolean]) => CallbackTo[Boolean] = null,
-    enableRegEx: js.UndefOr[Boolean] = js.undefined,
-    fieldSubTpl: IXTemplate = null,
-    findRecord: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => CallbackTo[IModel] = null,
-    findRecordByDisplay: /* value */ js.UndefOr[js.Any] => CallbackTo[IModel] = null,
-    findRecordByValue: /* value */ js.UndefOr[js.Any] => CallbackTo[IModel] = null,
-    forceSelection: js.UndefOr[Boolean] = js.undefined,
-    getStore: js.UndefOr[CallbackTo[IAbstractStore | IStore]] = js.undefined,
-    getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
-    getSubmitValue: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getValue: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    growToLongestValue: js.UndefOr[Boolean] = js.undefined,
-    hiddenName: String = null,
-    lastQuery: String = null,
-    listConfig: js.Any = null,
-    minChars: Int | Double = null,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
-    onBindStore: (js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean]) => Callback = null,
-    onUnbindStore: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) = null,
-    pageSize: Int | Double = null,
-    queryCaching: js.UndefOr[Boolean] = js.undefined,
-    queryDelay: Int | Double = null,
-    queryMode: String = null,
-    queryParam: String = null,
-    select: /* r */ js.UndefOr[js.Any] => Callback = null,
-    selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    store: js.Any = null,
-    transform: js.Any = null,
-    triggerAction: String = null,
-    typeAhead: js.UndefOr[Boolean] = js.undefined,
-    typeAheadDelay: Int | Double = null,
-    unbindStoreListeners: js.UndefOr[IAbstractStore] => Callback = null,
-    valueField: String = null,
-    valueNotFoundText: String = null
-  ): IComboBox = {
+  
+  inline def apply(): IComboBox = {
     val __obj = js.Dynamic.literal()
-    if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)
-    if (afterQuery != null) __obj.updateDynamic("afterQuery")(js.Any.fromFunction1((t0: /* queryPlan */ js.UndefOr[js.Any]) => afterQuery(t0).runNow()))
-    if (allQuery != null) __obj.updateDynamic("allQuery")(allQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
-    beforeBlur.foreach(p => __obj.updateDynamic("beforeBlur")(p.toJsFn))
-    if (beforeQuery != null) __obj.updateDynamic("beforeQuery")(js.Any.fromFunction1((t0: /* queryPlan */ js.UndefOr[js.Any]) => beforeQuery(t0).runNow()))
-    beforeReset.foreach(p => __obj.updateDynamic("beforeReset")(p.toJsFn))
-    if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1((t0: js.UndefOr[js.Any]) => bindStore(t0).runNow()))
-    if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1((t0: js.UndefOr[typingsJapgolly.extjs.Ext.data.IAbstractStore]) => bindStoreListeners(t0).runNow()))
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    clearValue.foreach(p => __obj.updateDynamic("clearValue")(p.toJsFn))
-    if (defaultListConfig != null) __obj.updateDynamic("defaultListConfig")(defaultListConfig.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
-    if (doQuery != null) __obj.updateDynamic("doQuery")(js.Any.fromFunction3((t0: /* queryString */ js.UndefOr[java.lang.String], t1: /* forceAll */ js.UndefOr[scala.Boolean], t2: /* rawQuery */ js.UndefOr[scala.Boolean]) => doQuery(t0, t1, t2).runNow()))
-    if (!js.isUndefined(enableRegEx)) __obj.updateDynamic("enableRegEx")(enableRegEx.asInstanceOf[js.Any])
-    if (fieldSubTpl != null) __obj.updateDynamic("fieldSubTpl")(fieldSubTpl.asInstanceOf[js.Any])
-    if (findRecord != null) __obj.updateDynamic("findRecord")(js.Any.fromFunction2((t0: /* field */ js.UndefOr[java.lang.String], t1: /* value */ js.UndefOr[js.Any]) => findRecord(t0, t1).runNow()))
-    if (findRecordByDisplay != null) __obj.updateDynamic("findRecordByDisplay")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => findRecordByDisplay(t0).runNow()))
-    if (findRecordByValue != null) __obj.updateDynamic("findRecordByValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => findRecordByValue(t0).runNow()))
-    if (!js.isUndefined(forceSelection)) __obj.updateDynamic("forceSelection")(forceSelection.asInstanceOf[js.Any])
-    getStore.foreach(p => __obj.updateDynamic("getStore")(p.toJsFn))
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners.asInstanceOf[js.Any])
-    getSubmitValue.foreach(p => __obj.updateDynamic("getSubmitValue")(p.toJsFn))
-    getValue.foreach(p => __obj.updateDynamic("getValue")(p.toJsFn))
-    if (!js.isUndefined(growToLongestValue)) __obj.updateDynamic("growToLongestValue")(growToLongestValue.asInstanceOf[js.Any])
-    if (hiddenName != null) __obj.updateDynamic("hiddenName")(hiddenName.asInstanceOf[js.Any])
-    if (lastQuery != null) __obj.updateDynamic("lastQuery")(lastQuery.asInstanceOf[js.Any])
-    if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig.asInstanceOf[js.Any])
-    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
-    if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2((t0: js.UndefOr[js.Any | typingsJapgolly.extjs.Ext.data.IAbstractStore], t1: js.UndefOr[js.Any | scala.Boolean]) => onBindStore(t0, t1).runNow()))
-    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(onUnbindStore.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryCaching)) __obj.updateDynamic("queryCaching")(queryCaching.asInstanceOf[js.Any])
-    if (queryDelay != null) __obj.updateDynamic("queryDelay")(queryDelay.asInstanceOf[js.Any])
-    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode.asInstanceOf[js.Any])
-    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1((t0: /* r */ js.UndefOr[js.Any]) => select(t0).runNow()))
-    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (triggerAction != null) __obj.updateDynamic("triggerAction")(triggerAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeAhead)) __obj.updateDynamic("typeAhead")(typeAhead.asInstanceOf[js.Any])
-    if (typeAheadDelay != null) __obj.updateDynamic("typeAheadDelay")(typeAheadDelay.asInstanceOf[js.Any])
-    if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1((t0: js.UndefOr[typingsJapgolly.extjs.Ext.data.IAbstractStore]) => unbindStoreListeners(t0).runNow()))
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (valueNotFoundText != null) __obj.updateDynamic("valueNotFoundText")(valueNotFoundText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComboBox]
   }
+  
+  extension [Self <: IComboBox](x: Self) {
+    
+    inline def setAfterQuery(value: /* queryPlan */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1((t0: /* queryPlan */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterQueryUndefined: Self = StObject.set(x, "afterQuery", js.undefined)
+    
+    inline def setAllQuery(value: String): Self = StObject.set(x, "allQuery", value.asInstanceOf[js.Any])
+    
+    inline def setAllQueryUndefined: Self = StObject.set(x, "allQuery", js.undefined)
+    
+    inline def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
+    
+    inline def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
+    
+    inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
+    
+    inline def setBeforeBlur(value: Callback): Self = StObject.set(x, "beforeBlur", value.toJsFn)
+    
+    inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
+    
+    inline def setBeforeQuery(value: /* queryPlan */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "beforeQuery", js.Any.fromFunction1((t0: /* queryPlan */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBeforeQueryUndefined: Self = StObject.set(x, "beforeQuery", js.undefined)
+    
+    inline def setBeforeReset(value: Callback): Self = StObject.set(x, "beforeReset", value.toJsFn)
+    
+    inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
+    
+    inline def setBindStore(value: js.UndefOr[Any] => Callback): Self = StObject.set(x, "bindStore", js.Any.fromFunction1((t0: js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Callback): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1((t0: js.UndefOr[IAbstractStore]) => value(t0).runNow()))
+    
+    inline def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
+    
+    inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
+    
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    
+    inline def setClearValue(value: Callback): Self = StObject.set(x, "clearValue", value.toJsFn)
+    
+    inline def setClearValueUndefined: Self = StObject.set(x, "clearValue", js.undefined)
+    
+    inline def setDefaultListConfig(value: Any): Self = StObject.set(x, "defaultListConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultListConfigUndefined: Self = StObject.set(x, "defaultListConfig", js.undefined)
+    
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    
+    inline def setDoQuery(
+      value: (/* queryString */ js.UndefOr[String], /* forceAll */ js.UndefOr[Boolean], /* rawQuery */ js.UndefOr[Boolean]) => Boolean
+    ): Self = StObject.set(x, "doQuery", js.Any.fromFunction3(value))
+    
+    inline def setDoQueryUndefined: Self = StObject.set(x, "doQuery", js.undefined)
+    
+    inline def setEnableRegEx(value: Boolean): Self = StObject.set(x, "enableRegEx", value.asInstanceOf[js.Any])
+    
+    inline def setEnableRegExUndefined: Self = StObject.set(x, "enableRegEx", js.undefined)
+    
+    inline def setFieldSubTpl(value: IXTemplate): Self = StObject.set(x, "fieldSubTpl", value.asInstanceOf[js.Any])
+    
+    inline def setFieldSubTplUndefined: Self = StObject.set(x, "fieldSubTpl", js.undefined)
+    
+    inline def setFindRecord(value: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => IModel): Self = StObject.set(x, "findRecord", js.Any.fromFunction2(value))
+    
+    inline def setFindRecordByDisplay(value: /* value */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "findRecordByDisplay", js.Any.fromFunction1(value))
+    
+    inline def setFindRecordByDisplayUndefined: Self = StObject.set(x, "findRecordByDisplay", js.undefined)
+    
+    inline def setFindRecordByValue(value: /* value */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "findRecordByValue", js.Any.fromFunction1(value))
+    
+    inline def setFindRecordByValueUndefined: Self = StObject.set(x, "findRecordByValue", js.undefined)
+    
+    inline def setFindRecordUndefined: Self = StObject.set(x, "findRecord", js.undefined)
+    
+    inline def setForceSelection(value: Boolean): Self = StObject.set(x, "forceSelection", value.asInstanceOf[js.Any])
+    
+    inline def setForceSelectionUndefined: Self = StObject.set(x, "forceSelection", js.undefined)
+    
+    inline def setGetStore(value: CallbackTo[IAbstractStore | IStore]): Self = StObject.set(x, "getStore", value.toJsFn)
+    
+    inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+    
+    inline def setGetStoreListenersCallbackTo(value: CallbackTo[Any]): Self = StObject.set(x, "getStoreListeners", value.toJsFn)
+    
+    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    
+    inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
+    
+    inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
+    
+    inline def setGetSubmitValue(value: CallbackTo[String]): Self = StObject.set(x, "getSubmitValue", value.toJsFn)
+    
+    inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
+    
+    inline def setGetValue(value: CallbackTo[Any]): Self = StObject.set(x, "getValue", value.toJsFn)
+    
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    
+    inline def setGrowToLongestValue(value: Boolean): Self = StObject.set(x, "growToLongestValue", value.asInstanceOf[js.Any])
+    
+    inline def setGrowToLongestValueUndefined: Self = StObject.set(x, "growToLongestValue", js.undefined)
+    
+    inline def setHiddenName(value: String): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
+    
+    inline def setLastQuery(value: String): Self = StObject.set(x, "lastQuery", value.asInstanceOf[js.Any])
+    
+    inline def setLastQueryUndefined: Self = StObject.set(x, "lastQuery", js.undefined)
+    
+    inline def setListConfig(value: Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
+    
+    inline def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
+    
+    inline def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
+    
+    inline def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
+    
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    
+    inline def setOnBindStore(value: (js.UndefOr[Any | IAbstractStore], js.UndefOr[Any | Boolean]) => Callback): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2((t0: js.UndefOr[Any | IAbstractStore], t1: js.UndefOr[Any | Boolean]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
+    
+    inline def setOnUnbindStore(
+      value: (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+    ): Self = StObject.set(x, "onUnbindStore", value.asInstanceOf[js.Any])
+    
+    inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1((t0: /* store */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setOnUnbindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Callback): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2((t0: /* store */ js.UndefOr[IAbstractStore], t1: /* initial */ js.UndefOr[Boolean]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setQueryCaching(value: Boolean): Self = StObject.set(x, "queryCaching", value.asInstanceOf[js.Any])
+    
+    inline def setQueryCachingUndefined: Self = StObject.set(x, "queryCaching", js.undefined)
+    
+    inline def setQueryDelay(value: Double): Self = StObject.set(x, "queryDelay", value.asInstanceOf[js.Any])
+    
+    inline def setQueryDelayUndefined: Self = StObject.set(x, "queryDelay", js.undefined)
+    
+    inline def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
+    
+    inline def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
+    
+    inline def setQueryParam(value: String): Self = StObject.set(x, "queryParam", value.asInstanceOf[js.Any])
+    
+    inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
+    
+    inline def setSelect(value: /* r */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "select", js.Any.fromFunction1((t0: /* r */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnTabUndefined: Self = StObject.set(x, "selectOnTab", js.undefined)
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    
+    inline def setTransform(value: Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setTriggerAction(value: String): Self = StObject.set(x, "triggerAction", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerActionUndefined: Self = StObject.set(x, "triggerAction", js.undefined)
+    
+    inline def setTypeAhead(value: Boolean): Self = StObject.set(x, "typeAhead", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAheadDelay(value: Double): Self = StObject.set(x, "typeAheadDelay", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAheadDelayUndefined: Self = StObject.set(x, "typeAheadDelay", js.undefined)
+    
+    inline def setTypeAheadUndefined: Self = StObject.set(x, "typeAhead", js.undefined)
+    
+    inline def setUnbindStoreListeners(value: js.UndefOr[IAbstractStore] => Callback): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1((t0: js.UndefOr[IAbstractStore]) => value(t0).runNow()))
+    
+    inline def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
+    
+    inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    
+    inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+    
+    inline def setValueNotFoundText(value: String): Self = StObject.set(x, "valueNotFoundText", value.asInstanceOf[js.Any])
+    
+    inline def setValueNotFoundTextUndefined: Self = StObject.set(x, "valueNotFoundText", js.undefined)
+  }
 }
-

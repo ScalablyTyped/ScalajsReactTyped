@@ -1,21 +1,8 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/drilldown-menu.html#javascript-reference
-trait Drilldown extends js.Object {
-  def destroy(): Unit
-}
-
-object Drilldown {
-  @scala.inline
-  def apply(destroy: Callback): Drilldown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.asInstanceOf[Drilldown]
-  }
-}
-
+// https://get.foundation/sites/docs/drilldown-menu.html#javascript-reference
+trait Drilldown extends StObject

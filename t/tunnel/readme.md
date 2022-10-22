@@ -10,10 +10,10 @@ Node HTTP/HTTPS Agents for tunneling proxies
 | ------------------ | :-------------: |
 | Full name          | tunnel |
 | Keywords           | http, https, agent, proxy, tunnel |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 16855627 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6484395666666666E7 |
+| # stars            | 493.0 |
 
 ## Links
 - [Homepage](https://github.com/koichik/node-tunnel/)

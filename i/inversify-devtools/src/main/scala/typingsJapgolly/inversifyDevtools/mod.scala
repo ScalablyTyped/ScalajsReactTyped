@@ -1,20 +1,23 @@
 package typingsJapgolly.inversifyDevtools
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-devtools", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("inversify-devtools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(container: String): ConnectKernel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any]).asInstanceOf[ConnectKernel]
+  
   @js.native
   trait ConnectKernel
     extends js.Function {
+    
     def apply(
-      kernel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ js.Any
+      kernel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ Any
     ): Unit = js.native
   }
-  
-  def default(container: String): ConnectKernel = js.native
 }
-

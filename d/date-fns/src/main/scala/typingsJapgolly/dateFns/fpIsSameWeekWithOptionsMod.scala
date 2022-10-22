@@ -1,16 +1,22 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.dateFns.anon.LocaleWeekStartsOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/isSameWeekWithOptions", JSImport.Namespace)
-@js.native
-object fpIsSameWeekWithOptionsMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn3[AnonLocaleWeekStartsOn, Date | Double, Date | Double, Boolean]]
+object fpIsSameWeekWithOptionsMod {
   
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/isSameWeekWithOptions", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn3[LocaleWeekStartsOn, js.Date | Double, js.Date | Double, Boolean] = js.native
+    
+    type _To = CurriedFn3[LocaleWeekStartsOn, js.Date | Double, js.Date | Double, Boolean]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn3[LocaleWeekStartsOn, js.Date | Double, js.Date | Double, Boolean] = ^
+  }
 }
-

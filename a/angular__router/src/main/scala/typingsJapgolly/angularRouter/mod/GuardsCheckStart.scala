@@ -1,12 +1,13 @@
 package typingsJapgolly.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "GuardsCheckStart")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "GuardsCheckStart")
 @js.native
-class GuardsCheckStart protected () extends RouterEvent {
+open class GuardsCheckStart protected () extends RouterEvent {
   def this(
     /** @docsNotRequired */
   id: Double,
@@ -17,9 +18,12 @@ class GuardsCheckStart protected () extends RouterEvent {
     /** @docsNotRequired */
   state: RouterStateSnapshot
   ) = this()
+  
   /** @docsNotRequired */
   var state: RouterStateSnapshot = js.native
+  
+  val `type`: String | Double = js.native
+  
   /** @docsNotRequired */
   var urlAfterRedirects: String = js.native
 }
-

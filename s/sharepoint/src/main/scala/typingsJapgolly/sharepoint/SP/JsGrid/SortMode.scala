@@ -1,37 +1,29 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortMode extends js.Object
-
+sealed trait SortMode extends StObject
 @JSGlobal("SP.JsGrid.SortMode")
 @js.native
-object SortMode extends js.Object {
-   // 1,
-  @js.native
-  sealed trait Ascending extends SortMode
-  
-   // -1,
-  @js.native
-  sealed trait Descending extends SortMode
+object SortMode extends StObject {
   
   @js.native
-  sealed trait None extends SortMode
+  sealed trait Ascending
+    extends StObject
+       with SortMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortMode with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
+  // 1,
+  @js.native
+  sealed trait Descending
+    extends StObject
+       with SortMode
   
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
+  // -1,
+  @js.native
+  sealed trait None
+    extends StObject
+       with SortMode
 }
-

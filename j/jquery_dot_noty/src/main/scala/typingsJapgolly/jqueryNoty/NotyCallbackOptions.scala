@@ -1,33 +1,48 @@
 package typingsJapgolly.jqueryNoty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotyCallbackOptions extends js.Object {
+trait NotyCallbackOptions extends StObject {
+  
   var afterClose: js.UndefOr[js.Function] = js.undefined
+  
   var afterShow: js.UndefOr[js.Function] = js.undefined
+  
   var onClose: js.UndefOr[js.Function] = js.undefined
+  
   var onCloseClick: js.UndefOr[js.Function] = js.undefined
+  
   var onShow: js.UndefOr[js.Function] = js.undefined
 }
-
 object NotyCallbackOptions {
-  @scala.inline
-  def apply(
-    afterClose: js.Function = null,
-    afterShow: js.Function = null,
-    onClose: js.Function = null,
-    onCloseClick: js.Function = null,
-    onShow: js.Function = null
-  ): NotyCallbackOptions = {
+  
+  inline def apply(): NotyCallbackOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose.asInstanceOf[js.Any])
-    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
-    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(onCloseClick.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotyCallbackOptions]
   }
+  
+  extension [Self <: NotyCallbackOptions](x: Self) {
+    
+    inline def setAfterClose(value: js.Function): Self = StObject.set(x, "afterClose", value.asInstanceOf[js.Any])
+    
+    inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+    
+    inline def setAfterShow(value: js.Function): Self = StObject.set(x, "afterShow", value.asInstanceOf[js.Any])
+    
+    inline def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
+    
+    inline def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    
+    inline def setOnCloseClick(value: js.Function): Self = StObject.set(x, "onCloseClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnCloseClickUndefined: Self = StObject.set(x, "onCloseClick", js.undefined)
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnShow(value: js.Function): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+  }
 }
-

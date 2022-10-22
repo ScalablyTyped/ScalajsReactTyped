@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HandleOwnerProperties extends js.Object {
+trait HandleOwnerProperties extends StObject {
+  
   /**
     * Handle registry to help manage `handles`.
     *
@@ -12,13 +13,17 @@ trait HandleOwnerProperties extends js.Object {
     */
   var handles: js.UndefOr[HandlesProperties] = js.undefined
 }
-
 object HandleOwnerProperties {
-  @scala.inline
-  def apply(handles: HandlesProperties = null): HandleOwnerProperties = {
+  
+  inline def apply(): HandleOwnerProperties = {
     val __obj = js.Dynamic.literal()
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleOwnerProperties]
   }
+  
+  extension [Self <: HandleOwnerProperties](x: Self) {
+    
+    inline def setHandles(value: HandlesProperties): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+  }
 }
-

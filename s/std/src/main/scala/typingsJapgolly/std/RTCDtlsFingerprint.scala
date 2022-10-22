@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCDtlsFingerprint extends js.Object {
+trait RTCDtlsFingerprint extends StObject {
+  
+  /* standard dom */
   var algorithm: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RTCDtlsFingerprint {
-  @scala.inline
-  def apply(algorithm: java.lang.String = null, value: java.lang.String = null): RTCDtlsFingerprint = {
+  
+  inline def apply(): RTCDtlsFingerprint = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDtlsFingerprint]
   }
+  
+  extension [Self <: RTCDtlsFingerprint](x: Self) {
+    
+    inline def setAlgorithm(value: java.lang.String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    
+    inline def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

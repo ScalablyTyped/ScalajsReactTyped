@@ -1,0 +1,35 @@
+package typingsJapgolly.wechatMiniprogram.WechatMiniprogram
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait OnVoIPVideoMembersChangedCallbackResult extends StObject {
+  
+  /** 错误码 */
+  var errCode: Double
+  
+  /** 调用结果 */
+  var errMsg: String
+  
+  /** 开启视频的成员名单 */
+  var openIdList: js.Array[String]
+}
+object OnVoIPVideoMembersChangedCallbackResult {
+  
+  inline def apply(errCode: Double, errMsg: String, openIdList: js.Array[String]): OnVoIPVideoMembersChangedCallbackResult = {
+    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], openIdList = openIdList.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnVoIPVideoMembersChangedCallbackResult]
+  }
+  
+  extension [Self <: OnVoIPVideoMembersChangedCallbackResult](x: Self) {
+    
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    
+    inline def setOpenIdList(value: js.Array[String]): Self = StObject.set(x, "openIdList", value.asInstanceOf[js.Any])
+    
+    inline def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value*))
+  }
+}

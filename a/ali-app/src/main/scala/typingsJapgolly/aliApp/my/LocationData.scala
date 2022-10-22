@@ -1,89 +1,126 @@
 package typingsJapgolly.aliApp.my
 
-import typingsJapgolly.aliApp.AnonAddress
-import typingsJapgolly.aliApp.AnonNumber
+import typingsJapgolly.aliApp.anon.Address
+import typingsJapgolly.aliApp.anon.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 位置 https://docs.alipay.com/mini/api/location
-trait LocationData extends js.Object {
+trait LocationData extends StObject {
+  
   /** 精确度，单位m */
   var accuracy: String
+  
   /**
-  		 * 城市(type>0生效)
-  		 */
+    * 城市(type>0生效)
+    */
   var city: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 城市级别的地区代码(type>0生效)
-  		 */
+    * 城市级别的地区代码(type>0生效)
+    */
   var cityAdcode: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 国家(type>0生效)
-  		 */
+    * 国家(type>0生效)
+    */
   var country: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 国家编号 (type>0生效)
-  		 */
+    * 国家编号 (type>0生效)
+    */
   var countryCode: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 区县(type>0生效)
-  		 */
+    * 区县(type>0生效)
+    */
   var district: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 区县级别的地区代码(type>0生效)
-  		 */
+    * 区县级别的地区代码(type>0生效)
+    */
   var districtAdcode: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 水平精确度，单位m
-  		 */
+    * 水平精确度，单位m
+    */
   var horizontalAccuracy: String
+  
   /** 纬度 */
   var latitude: String
+  
   /** 经度 */
   var longitude: String
+  
   /**
-  		 * 需要POI级别逆地理的才会有的字段, 定位点附近的 POI 信息，结构是：{ name, address } （type > 2生效）
-  		 */
-  var pois: js.UndefOr[js.Array[AnonAddress]] = js.undefined
+    * 需要POI级别逆地理的才会有的字段, 定位点附近的 POI 信息，结构是：{ name, address } （type > 2生效）
+    */
+  var pois: js.UndefOr[js.Array[Address]] = js.undefined
+  
   /**
-  		 * 省份(type>0生效)
-  		 */
+    * 省份(type>0生效)
+    */
   var province: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 需要街道级别逆地理的才会有的字段,街道门牌信息，结构是：{ street, number } (type > 1生效)
-  		 */
-  var streetNumber: js.UndefOr[AnonNumber] = js.undefined
+    * 需要街道级别逆地理的才会有的字段,街道门牌信息，结构是：{ street, number } (type > 1生效)
+    */
+  var streetNumber: js.UndefOr[Number] = js.undefined
 }
-
 object LocationData {
-  @scala.inline
-  def apply(
-    accuracy: String,
-    horizontalAccuracy: String,
-    latitude: String,
-    longitude: String,
-    city: String = null,
-    cityAdcode: String = null,
-    country: String = null,
-    countryCode: String = null,
-    district: String = null,
-    districtAdcode: String = null,
-    pois: js.Array[AnonAddress] = null,
-    province: String = null,
-    streetNumber: AnonNumber = null
-  ): LocationData = {
+  
+  inline def apply(accuracy: String, horizontalAccuracy: String, latitude: String, longitude: String): LocationData = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], horizontalAccuracy = horizontalAccuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (cityAdcode != null) __obj.updateDynamic("cityAdcode")(cityAdcode.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
-    if (districtAdcode != null) __obj.updateDynamic("districtAdcode")(districtAdcode.asInstanceOf[js.Any])
-    if (pois != null) __obj.updateDynamic("pois")(pois.asInstanceOf[js.Any])
-    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
-    if (streetNumber != null) __obj.updateDynamic("streetNumber")(streetNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationData]
   }
+  
+  extension [Self <: LocationData](x: Self) {
+    
+    inline def setAccuracy(value: String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCityAdcode(value: String): Self = StObject.set(x, "cityAdcode", value.asInstanceOf[js.Any])
+    
+    inline def setCityAdcodeUndefined: Self = StObject.set(x, "cityAdcode", js.undefined)
+    
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    
+    inline def setDistrictAdcode(value: String): Self = StObject.set(x, "districtAdcode", value.asInstanceOf[js.Any])
+    
+    inline def setDistrictAdcodeUndefined: Self = StObject.set(x, "districtAdcode", js.undefined)
+    
+    inline def setDistrictUndefined: Self = StObject.set(x, "district", js.undefined)
+    
+    inline def setHorizontalAccuracy(value: String): Self = StObject.set(x, "horizontalAccuracy", value.asInstanceOf[js.Any])
+    
+    inline def setLatitude(value: String): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitude(value: String): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    
+    inline def setPois(value: js.Array[Address]): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
+    
+    inline def setPoisUndefined: Self = StObject.set(x, "pois", js.undefined)
+    
+    inline def setPoisVarargs(value: Address*): Self = StObject.set(x, "pois", js.Array(value*))
+    
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    
+    inline def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
+    
+    inline def setStreetNumber(value: Number): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
+    
+    inline def setStreetNumberUndefined: Self = StObject.set(x, "streetNumber", js.undefined)
+  }
 }
-

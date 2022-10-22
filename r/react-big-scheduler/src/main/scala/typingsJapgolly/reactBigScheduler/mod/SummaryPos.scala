@@ -1,53 +1,51 @@
 package typingsJapgolly.reactBigScheduler.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SummaryPos extends js.Object
-
+sealed trait SummaryPos extends StObject
 @JSImport("react-big-scheduler", "SummaryPos")
 @js.native
-object SummaryPos extends js.Object {
-  @js.native
-  sealed trait Bottom extends SummaryPos
-  
-  @js.native
-  sealed trait BottomLeft extends SummaryPos
-  
-  @js.native
-  sealed trait BottomRight extends SummaryPos
-  
-  @js.native
-  sealed trait Top extends SummaryPos
-  
-  @js.native
-  sealed trait TopLeft extends SummaryPos
-  
-  @js.native
-  sealed trait TopRight extends SummaryPos
+object SummaryPos extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SummaryPos with Double] = js.native
-  /* 3 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
+  def apply(value: Double): js.UndefOr[SummaryPos & Double] = js.native
   
-  /* 5 */ @js.native
-  object BottomLeft extends TopLevel[BottomLeft with Double]
+  @js.native
+  sealed trait Bottom
+    extends StObject
+       with SummaryPos
+  /* 3 */ val Bottom: typingsJapgolly.reactBigScheduler.mod.SummaryPos.Bottom & Double = js.native
   
-  /* 4 */ @js.native
-  object BottomRight extends TopLevel[BottomRight with Double]
+  @js.native
+  sealed trait BottomLeft
+    extends StObject
+       with SummaryPos
+  /* 5 */ val BottomLeft: typingsJapgolly.reactBigScheduler.mod.SummaryPos.BottomLeft & Double = js.native
   
-  /* 0 */ @js.native
-  object Top extends TopLevel[Top with Double]
+  @js.native
+  sealed trait BottomRight
+    extends StObject
+       with SummaryPos
+  /* 4 */ val BottomRight: typingsJapgolly.reactBigScheduler.mod.SummaryPos.BottomRight & Double = js.native
   
-  /* 2 */ @js.native
-  object TopLeft extends TopLevel[TopLeft with Double]
+  @js.native
+  sealed trait Top
+    extends StObject
+       with SummaryPos
+  /* 0 */ val Top: typingsJapgolly.reactBigScheduler.mod.SummaryPos.Top & Double = js.native
   
-  /* 1 */ @js.native
-  object TopRight extends TopLevel[TopRight with Double]
+  @js.native
+  sealed trait TopLeft
+    extends StObject
+       with SummaryPos
+  /* 2 */ val TopLeft: typingsJapgolly.reactBigScheduler.mod.SummaryPos.TopLeft & Double = js.native
   
+  @js.native
+  sealed trait TopRight
+    extends StObject
+       with SummaryPos
+  /* 1 */ val TopRight: typingsJapgolly.reactBigScheduler.mod.SummaryPos.TopRight & Double = js.native
 }
-

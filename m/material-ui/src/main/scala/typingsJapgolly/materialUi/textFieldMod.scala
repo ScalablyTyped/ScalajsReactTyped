@@ -1,19 +1,17 @@
 package typingsJapgolly.materialUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/TextField", JSImport.Namespace)
-@js.native
-object textFieldMod extends js.Object {
-  @js.native
-  class TextField ()
-    extends typingsJapgolly.materialUi.MaterialUI.TextField
+object textFieldMod {
   
+  @JSImport("material-ui/TextField", JSImport.Default)
   @js.native
-  class default ()
-    extends typingsJapgolly.materialUi.MaterialUI.TextField
+  open class default () extends TextField
   
+  @JSImport("material-ui/TextField", "TextField")
+  @js.native
+  open class TextField ()
+    extends typingsJapgolly.materialUi.MaterialUI.TextField
 }
-

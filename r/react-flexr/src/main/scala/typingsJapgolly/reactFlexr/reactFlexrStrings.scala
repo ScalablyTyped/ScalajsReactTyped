@@ -1,55 +1,53 @@
 package typingsJapgolly.reactFlexr
 
 import typingsJapgolly.reactFlexr.ReactFlexr.ErgonomicType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFlexrStrings {
-  @js.native
-  sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait desk extends ErgonomicType
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait lap extends ErgonomicType
+  sealed trait desk
+    extends StObject
+       with ErgonomicType
+  inline def desk: desk = "desk".asInstanceOf[desk]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait lap
+    extends StObject
+       with ErgonomicType
+  inline def lap: lap = "lap".asInstanceOf[lap]
   
   @js.native
-  sealed trait palm extends ErgonomicType
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait portable extends ErgonomicType
+  sealed trait palm
+    extends StObject
+       with ErgonomicType
+  inline def palm: palm = "palm".asInstanceOf[palm]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait portable
+    extends StObject
+       with ErgonomicType
+  inline def portable: portable = "portable".asInstanceOf[portable]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def desk: desk = "desk".asInstanceOf[desk]
-  @scala.inline
-  def lap: lap = "lap".asInstanceOf[lap]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def palm: palm = "palm".asInstanceOf[palm]
-  @scala.inline
-  def portable: portable = "portable".asInstanceOf[portable]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
 }
-

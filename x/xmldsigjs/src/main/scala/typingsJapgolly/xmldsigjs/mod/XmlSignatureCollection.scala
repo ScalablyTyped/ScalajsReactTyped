@@ -1,11 +1,12 @@
 package typingsJapgolly.xmldsigjs.mod
 
-import typingsJapgolly.xmlCore.mod.XmlCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs", "XmlSignatureCollection")
+/* note: abstract class */ @JSImport("xmldsigjs", "XmlSignatureCollection")
 @js.native
-abstract class XmlSignatureCollection[I /* <: typingsJapgolly.xmldsigjs.xmlObjectMod.XmlSignatureObject */] () extends XmlCollection[I]
-
+open class XmlSignatureCollection[I /* <: typingsJapgolly.xmldsigjs.buildTypesXmlXmlObjectMod.XmlSignatureObject */] ()
+  extends typingsJapgolly.xmldsigjs.buildTypesXmlMod.XmlSignatureCollection[I] {
+  def this(properties: js.Object) = this()
+}

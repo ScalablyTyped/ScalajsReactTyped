@@ -1,15 +1,15 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to start the mail merge process and download the resulting document containing the merged information.
   */
-@JSGlobal("MailMergeAndDownloadCommand")
 @js.native
-class MailMergeAndDownloadCommand () extends js.Object {
+trait MailMergeAndDownloadCommand extends StObject {
+  
   /**
     * Executes the MailMergeAndDownloadCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param fileExtension A string value specifying the file extension of the resulting document.
@@ -19,9 +19,9 @@ class MailMergeAndDownloadCommand () extends js.Object {
   def execute(fileExtension: String, settings: MailMergeSettings): Boolean = js.native
   def execute(fileExtension: DocumentFormat): Boolean = js.native
   def execute(fileExtension: DocumentFormat, settings: MailMergeSettings): Boolean = js.native
+  
   /**
     * Gets information about the command's state.
     */
   def getState(): CommandState[MailMergeSettings] = js.native
 }
-

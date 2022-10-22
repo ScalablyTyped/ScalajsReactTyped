@@ -1,24 +1,14 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
-import typingsJapgolly.vscodeJsonrpc.messagesMod.Message
-import typingsJapgolly.vscodeJsonrpc.messagesMod.ResponseMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionStrategy extends js.Object {
-  var cancelUndispatched: js.UndefOr[
-    js.Function2[
-      /* message */ Message, 
-      /* next */ js.Function1[/* message */ Message, js.UndefOr[ResponseMessage]], 
-      js.UndefOr[ResponseMessage]
-    ]
-  ] = js.undefined
+object ConnectionStrategy {
+  
+  @JSImport("vscode-jsonrpc", "ConnectionStrategy")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean]
 }
-
-@JSImport("vscode-jsonrpc", "ConnectionStrategy")
-@js.native
-object ConnectionStrategy extends js.Object {
-  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = js.native
-}
-

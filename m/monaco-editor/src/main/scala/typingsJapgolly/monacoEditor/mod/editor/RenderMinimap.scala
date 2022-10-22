@@ -1,47 +1,33 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RenderMinimap extends js.Object
-
+sealed trait RenderMinimap extends StObject
 @JSImport("monaco-editor", "editor.RenderMinimap")
 @js.native
-object RenderMinimap extends js.Object {
-  @js.native
-  sealed trait Large extends RenderMinimap
-  
-  @js.native
-  sealed trait LargeBlocks extends RenderMinimap
-  
-  @js.native
-  sealed trait None extends RenderMinimap
-  
-  @js.native
-  sealed trait Small extends RenderMinimap
-  
-  @js.native
-  sealed trait SmallBlocks extends RenderMinimap
+object RenderMinimap extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RenderMinimap with Double] = js.native
-  /* 2 */ @js.native
-  object Large extends TopLevel[Large with Double]
+  def apply(value: Double): js.UndefOr[RenderMinimap & Double] = js.native
   
-  /* 4 */ @js.native
-  object LargeBlocks extends TopLevel[LargeBlocks with Double]
+  @js.native
+  sealed trait Blocks
+    extends StObject
+       with RenderMinimap
+  /* 2 */ val Blocks: typingsJapgolly.monacoEditor.mod.editor.RenderMinimap.Blocks & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with RenderMinimap
+  /* 0 */ val None: typingsJapgolly.monacoEditor.mod.editor.RenderMinimap.None & Double = js.native
   
-  /* 1 */ @js.native
-  object Small extends TopLevel[Small with Double]
-  
-  /* 3 */ @js.native
-  object SmallBlocks extends TopLevel[SmallBlocks with Double]
-  
+  @js.native
+  sealed trait Text
+    extends StObject
+       with RenderMinimap
+  /* 1 */ val Text: typingsJapgolly.monacoEditor.mod.editor.RenderMinimap.Text & Double = js.native
 }
-

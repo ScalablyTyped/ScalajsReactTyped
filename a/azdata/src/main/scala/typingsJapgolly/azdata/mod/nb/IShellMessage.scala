@@ -1,26 +1,26 @@
 package typingsJapgolly.azdata.mod.nb
 
 import typingsJapgolly.azdata.azdataStrings.shell
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IShellMessage extends IMessage {
+trait IShellMessage
+  extends StObject
+     with IMessage {
+  
   var channel: shell
 }
-
 object IShellMessage {
-  @scala.inline
-  def apply(
-    channel: shell,
-    content: js.Any,
-    header: IHeader,
-    parent_header: IHeader | js.Object,
-    `type`: Channel
-  ): IShellMessage = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+  
+  inline def apply(content: Any, `type`: Channel): IShellMessage = {
+    val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShellMessage]
   }
+  
+  extension [Self <: IShellMessage](x: Self) {
+    
+    inline def setChannel(value: shell): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+  }
 }
-

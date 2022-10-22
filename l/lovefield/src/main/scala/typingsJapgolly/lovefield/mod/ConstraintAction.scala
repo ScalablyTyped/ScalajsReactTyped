@@ -1,29 +1,27 @@
 package typingsJapgolly.lovefield.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConstraintAction extends js.Object
-
+sealed trait ConstraintAction extends StObject
 @JSImport("lovefield", "ConstraintAction")
 @js.native
-object ConstraintAction extends js.Object {
-  @js.native
-  sealed trait CASCADE extends ConstraintAction
-  
-  @js.native
-  sealed trait RESTRICT extends ConstraintAction
+object ConstraintAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConstraintAction with Double] = js.native
-  /* 1 */ @js.native
-  object CASCADE extends TopLevel[CASCADE with Double]
+  def apply(value: Double): js.UndefOr[ConstraintAction & Double] = js.native
   
-  /* 0 */ @js.native
-  object RESTRICT extends TopLevel[RESTRICT with Double]
+  @js.native
+  sealed trait CASCADE
+    extends StObject
+       with ConstraintAction
+  /* 1 */ val CASCADE: typingsJapgolly.lovefield.mod.ConstraintAction.CASCADE & Double = js.native
   
+  @js.native
+  sealed trait RESTRICT
+    extends StObject
+       with ConstraintAction
+  /* 0 */ val RESTRICT: typingsJapgolly.lovefield.mod.ConstraintAction.RESTRICT & Double = js.native
 }
-

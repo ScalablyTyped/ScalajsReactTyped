@@ -1,43 +1,30 @@
 package typingsJapgolly.storybookTheming.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.emotionCore.mod.GlobalProps
-import typingsJapgolly.emotionCore.mod.InterpolationWithTheme
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
+import typingsJapgolly.storybookTheming.anon.Styles
+import typingsJapgolly.storybookTheming.mod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Global {
-  def apply[Theme](
-    styles: InterpolationWithTheme[Theme] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    GlobalProps[Theme], 
-    MountedWithRawType[GlobalProps[Theme], js.Object, RawMounted[GlobalProps[Theme], js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.emotionCore.mod.GlobalProps[Theme], 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.emotionCore.mod.GlobalProps[Theme]])(children: _*)
-  }
   @JSImport("@storybook/theming", "Global")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def styles(value: Interpolation[Theme]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesNull: this.type = set("styles", null)
+  }
+  
+  implicit def make(companion: Global.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Styles): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

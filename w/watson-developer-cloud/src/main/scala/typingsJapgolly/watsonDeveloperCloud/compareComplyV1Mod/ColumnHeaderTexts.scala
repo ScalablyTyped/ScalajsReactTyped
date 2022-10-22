@@ -1,21 +1,26 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An array of values, each being the `text` value of a column header that is applicable to the current cell. */
-trait ColumnHeaderTexts extends js.Object {
+trait ColumnHeaderTexts extends StObject {
+  
   /** The `text` value of a column header. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object ColumnHeaderTexts {
-  @scala.inline
-  def apply(text: String = null): ColumnHeaderTexts = {
+  
+  inline def apply(): ColumnHeaderTexts = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHeaderTexts]
   }
+  
+  extension [Self <: ColumnHeaderTexts](x: Self) {
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

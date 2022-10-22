@@ -1,53 +1,42 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WeekOfMonth extends js.Object
-
+sealed trait WeekOfMonth extends StObject
 @JSGlobal("DevExpress.AspNetCore.WeekOfMonth")
 @js.native
-object WeekOfMonth extends js.Object {
-  @js.native
-  sealed trait First extends WeekOfMonth
+object WeekOfMonth extends StObject {
   
   @js.native
-  sealed trait Fourth extends WeekOfMonth
+  sealed trait First
+    extends StObject
+       with WeekOfMonth
   
   @js.native
-  sealed trait Last extends WeekOfMonth
+  sealed trait Fourth
+    extends StObject
+       with WeekOfMonth
   
   @js.native
-  sealed trait None extends WeekOfMonth
+  sealed trait Last
+    extends StObject
+       with WeekOfMonth
   
   @js.native
-  sealed trait Second extends WeekOfMonth
+  sealed trait None
+    extends StObject
+       with WeekOfMonth
   
   @js.native
-  sealed trait Third extends WeekOfMonth
+  sealed trait Second
+    extends StObject
+       with WeekOfMonth
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WeekOfMonth with Double] = js.native
-  /* 1 */ @js.native
-  object First extends TopLevel[First with Double]
-  
-  /* 4 */ @js.native
-  object Fourth extends TopLevel[Fourth with Double]
-  
-  /* 5 */ @js.native
-  object Last extends TopLevel[Last with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object Second extends TopLevel[Second with Double]
-  
-  /* 3 */ @js.native
-  object Third extends TopLevel[Third with Double]
-  
+  @js.native
+  sealed trait Third
+    extends StObject
+       with WeekOfMonth
 }
-

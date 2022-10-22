@@ -1,7 +1,7 @@
 
 # Scala.js typings for event-hooks-webpack-plugin
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Execute JavaScript on any available Webpack event hook
@@ -10,10 +10,10 @@ Execute JavaScript on any available Webpack event hook
 | ------------------ | :-------------: |
 | Full name          | event-hooks-webpack-plugin |
 | Keywords           | event, hook, webpack, plugin |
-| # releases         | 9 |
-| # dependents       | 6 |
-| # downloads        | 168622 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 71490.33333333333 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/cascornelissen/event-hooks-webpack-plugin#readme)

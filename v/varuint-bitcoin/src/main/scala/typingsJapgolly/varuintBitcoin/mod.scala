@@ -1,30 +1,43 @@
 package typingsJapgolly.varuintBitcoin
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("varuint-bitcoin", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("varuint-bitcoin", JSImport.Namespace)
   @js.native
-  trait Decode_ extends js.Object {
-    var bytes: Double = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("varuint-bitcoin", "decode")
+  @js.native
+  val decode: Decode_ = js.native
+  
+  @JSImport("varuint-bitcoin", "encode")
+  @js.native
+  val encode: Encode_ = js.native
+  
+  inline def encodingLength(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("encodingLength")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @js.native
+  trait Decode_ extends StObject {
+    
     def apply(buffer: Buffer): Double = js.native
     def apply(buffer: Buffer, offset: Double): Double = js.native
+    
+    var bytes: Double = js.native
   }
   
   @js.native
-  trait Encode_ extends js.Object {
-    var bytes: Double = js.native
+  trait Encode_ extends StObject {
+    
     def apply(num: Double): Buffer = js.native
+    def apply(num: Double, buffer: Unit, offset: Double): Buffer = js.native
     def apply(num: Double, buffer: Buffer): Buffer = js.native
     def apply(num: Double, buffer: Buffer, offset: Double): Buffer = js.native
+    
+    var bytes: Double = js.native
   }
-  
-  val decode: Decode_ = js.native
-  val encode: Encode_ = js.native
-  def encodingLength(num: Double): Double = js.native
 }
-

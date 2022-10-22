@@ -1,21 +1,22 @@
 package typingsJapgolly.xmldsigjs.mod
 
-import typingsJapgolly.xmldsigjs.rsaKeyMod.RsaPSSSignParams
+import typingsJapgolly.xmldsigjs.buildTypesXmlKeyInfosRsaKeyMod.RsaPSSSignParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "PssAlgorithmParams")
 @js.native
-class PssAlgorithmParams ()
-  extends typingsJapgolly.xmldsigjs.keyInfosMod.PssAlgorithmParams {
+open class PssAlgorithmParams ()
+  extends typingsJapgolly.xmldsigjs.buildTypesXmlKeyInfosMod.PssAlgorithmParams {
   def this(algorithm: RsaPSSSignParams) = this()
 }
-
 /* static members */
-@JSImport("xmldsigjs", "PssAlgorithmParams")
-@js.native
-object PssAlgorithmParams extends js.Object {
-  def FromAlgorithm(algorithm: RsaPSSSignParams): typingsJapgolly.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
+object PssAlgorithmParams {
+  
+  @JSImport("xmldsigjs", "PssAlgorithmParams")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def FromAlgorithm(algorithm: RsaPSSSignParams): typingsJapgolly.xmldsigjs.buildTypesXmlKeyInfosRsaKeyMod.PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.xmldsigjs.buildTypesXmlKeyInfosRsaKeyMod.PssAlgorithmParams]
 }
-

@@ -1,12 +1,11 @@
 package typingsJapgolly.resolveGlobal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("resolve-global", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
   	Resolve the path of a globally installed module.
   	@param moduleId - What you would use in `require()`.
@@ -19,12 +18,16 @@ object mod extends js.Object {
   	//=> '/usr/local/lib/node_modules/cat-names'
   	```
   	*/
-  def apply(moduleId: String): String = js.native
+  inline def apply(moduleId: String): String = ^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("resolve-global", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   	Resolve the path of a globally installed module.
   	@param moduleId - What you would use in `require()`.
   	@returns The resolved path. Returns `undefined` instead of throwing if the module can't be found.
   	*/
-  def silent(moduleId: String): js.UndefOr[String] = js.native
+  inline def silent(moduleId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("silent")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }
-

@@ -1,33 +1,46 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RangeSelectorButtonPositionOptions extends js.Object {
+trait RangeSelectorButtonPositionOptions extends StObject {
+  
   /**
     * (Highstock, Gantt) The alignment of the input box. Allowed properties are
     * `left`, `center`, `right`.
     */
   var align: js.UndefOr[AlignValue] = js.undefined
+  
   /**
     * (Highstock, Gantt) X offset of the button row.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) Y offset of the button row.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object RangeSelectorButtonPositionOptions {
-  @scala.inline
-  def apply(align: AlignValue = null, x: Int | Double = null, y: Int | Double = null): RangeSelectorButtonPositionOptions = {
+  
+  inline def apply(): RangeSelectorButtonPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectorButtonPositionOptions]
   }
+  
+  extension [Self <: RangeSelectorButtonPositionOptions](x: Self) {
+    
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

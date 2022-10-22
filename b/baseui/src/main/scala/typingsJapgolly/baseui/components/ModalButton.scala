@@ -1,94 +1,59 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLButtonElement
-import typingsJapgolly.baseui.ButtonPropsautoFocusboole
-import typingsJapgolly.baseui.baseuiStrings.button
-import typingsJapgolly.baseui.baseuiStrings.compact
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.large_
-import typingsJapgolly.baseui.baseuiStrings.mini
-import typingsJapgolly.baseui.baseuiStrings.minimal
-import typingsJapgolly.baseui.baseuiStrings.pill
-import typingsJapgolly.baseui.baseuiStrings.primary
-import typingsJapgolly.baseui.baseuiStrings.reset
-import typingsJapgolly.baseui.baseuiStrings.round
-import typingsJapgolly.baseui.baseuiStrings.secondary
-import typingsJapgolly.baseui.baseuiStrings.square
-import typingsJapgolly.baseui.baseuiStrings.submit
-import typingsJapgolly.baseui.baseuiStrings.tertiary
-import typingsJapgolly.baseui.buttonMod.ButtonOverrides
-import typingsJapgolly.baseui.buttonMod.ButtonProps
-import typingsJapgolly.styletronReact.mod.StyleProp
-import typingsJapgolly.styletronReact.mod.StyletronBase
+import org.scalajs.dom.HTMLButtonElement
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.baseui.anon.`16`
+import typingsJapgolly.baseui.baseuiStrings.$colors
+import typingsJapgolly.baseui.baseuiStrings.$disabled
+import typingsJapgolly.baseui.baseuiStrings.$isFocusVisible
+import typingsJapgolly.baseui.baseuiStrings.$isLoading
+import typingsJapgolly.baseui.baseuiStrings.$isSelected
+import typingsJapgolly.baseui.baseuiStrings.$kind
+import typingsJapgolly.baseui.baseuiStrings.$shape
+import typingsJapgolly.baseui.baseuiStrings.$size
+import typingsJapgolly.baseui.baseuiStrings.`type`
+import typingsJapgolly.baseui.baseuiStrings.children
+import typingsJapgolly.baseui.baseuiStrings.colors
+import typingsJapgolly.baseui.baseuiStrings.disabled
+import typingsJapgolly.baseui.baseuiStrings.endEnhancer
+import typingsJapgolly.baseui.baseuiStrings.isLoading
+import typingsJapgolly.baseui.baseuiStrings.isSelected
+import typingsJapgolly.baseui.baseuiStrings.kind
+import typingsJapgolly.baseui.baseuiStrings.onClick
+import typingsJapgolly.baseui.baseuiStrings.overrides
+import typingsJapgolly.baseui.baseuiStrings.shape
+import typingsJapgolly.baseui.baseuiStrings.size
+import typingsJapgolly.baseui.baseuiStrings.startEnhancer
+import typingsJapgolly.baseui.buttonTypesMod.ButtonProps
+import typingsJapgolly.baseui.buttonTypesMod.SharedStyleProps
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.std.Omit
+import typingsJapgolly.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Couldn't find props for (typingsJapgolly.std.Pick[
+typingsJapgolly.baseui.buttonTypesMod.ButtonProps & typingsJapgolly.baseui.buttonTypesMod.SharedStyleProps & (typingsJapgolly.std.Omit[
+  scala.Any, 
+  typingsJapgolly.baseui.baseuiStrings.$colors | typingsJapgolly.baseui.baseuiStrings.$kind | typingsJapgolly.baseui.baseuiStrings.$isSelected | typingsJapgolly.baseui.baseuiStrings.$shape | typingsJapgolly.baseui.baseuiStrings.$size | typingsJapgolly.baseui.baseuiStrings.$isLoading | typingsJapgolly.baseui.baseuiStrings.$disabled | typingsJapgolly.baseui.baseuiStrings.$isFocusVisible | typingsJapgolly.baseui.baseuiStrings.children | typingsJapgolly.baseui.baseuiStrings.colors | typingsJapgolly.baseui.baseuiStrings.disabled | typingsJapgolly.baseui.baseuiStrings.endEnhancer | typingsJapgolly.baseui.baseuiStrings.isLoading | typingsJapgolly.baseui.baseuiStrings.isSelected | typingsJapgolly.baseui.baseuiStrings.kind | typingsJapgolly.baseui.baseuiStrings.onClick | typingsJapgolly.baseui.baseuiStrings.overrides | typingsJapgolly.baseui.baseuiStrings.shape | typingsJapgolly.baseui.baseuiStrings.size | typingsJapgolly.baseui.baseuiStrings.startEnhancer | typingsJapgolly.baseui.baseuiStrings.`type`
+]) & typingsJapgolly.baseui.anon.`16`, 
+java.lang.String | scala.Double | js.Symbol]) & typingsJapgolly.react.mod.RefAttributes[org.scalajs.dom.HTMLButtonElement] because: IArray(Could't extract props from scala.Any because couldn't resolve ClassTree.) */
 object ModalButton {
+  
   def apply(
-    $as: StyletronBase = null,
-    $style: StyleProp[ButtonProps] = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    endEnhancer: VdomNode = null,
-    href: String = null,
-    isLoading: js.UndefOr[Boolean] = js.undefined,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    kind: primary | secondary | tertiary | minimal = null,
-    onClick: /* event */ ReactMouseEventFrom[HTMLButtonElement] => CallbackTo[js.Any] = null,
-    overrides: ButtonOverrides = null,
-    shape: default_ | pill | round | square = null,
-    size: compact | default_ | large_ | mini = null,
-    startEnhancer: VdomNode = null,
-    target: String = null,
-    `type`: submit | reset | button = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ButtonPropsautoFocusboole, 
-    typingsJapgolly.baseui.modalMod.ModalButton, 
-    Unit, 
-    ButtonPropsautoFocusboole
-  ] = {
-    val __obj = js.Dynamic.literal()
+    p: (Pick[
+      ButtonProps & SharedStyleProps & (Omit[
+        Any, 
+        $colors | $kind | $isSelected | $shape | $size | $isLoading | $disabled | $isFocusVisible | children | colors | disabled | endEnhancer | isLoading | isSelected | kind | onClick | overrides | shape | size | startEnhancer | `type`
+      ]) & `16`, 
+      String | Double | js.Symbol
+    ]) & RefAttributes[HTMLButtonElement]
+  ): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-      if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
-    if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.rawNode.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLButtonElement]) => onClick(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startEnhancer != null) __obj.updateDynamic("startEnhancer")(startEnhancer.rawNode.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.ButtonPropsautoFocusboole, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.modalMod.ModalButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.ButtonPropsautoFocusboole])(children: _*)
-  }
   @JSImport("baseui/modal", "ModalButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ModalButton.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
 }
-

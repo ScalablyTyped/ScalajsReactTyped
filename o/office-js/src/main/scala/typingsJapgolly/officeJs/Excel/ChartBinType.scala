@@ -1,47 +1,54 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartBinType extends js.Object
-
+sealed trait ChartBinType extends StObject
 /**
+  * Specifies the bin type of a histogram chart or pareto chart series.
   *
-  * Specifies the bin's type of a histogram chart or pareto chart series.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBinType")
 @js.native
-object ChartBinType extends js.Object {
+object ChartBinType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait auto extends ChartBinType
+  sealed trait auto
+    extends StObject
+       with ChartBinType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait binCount extends ChartBinType
+  sealed trait binCount
+    extends StObject
+       with ChartBinType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait binWidth extends ChartBinType
+  sealed trait binWidth
+    extends StObject
+       with ChartBinType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait category extends ChartBinType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartBinType with String] = js.native
-  /* "Auto" */ @js.native
-  object auto extends TopLevel[auto with String]
-  
-  /* "BinCount" */ @js.native
-  object binCount extends TopLevel[binCount with String]
-  
-  /* "BinWidth" */ @js.native
-  object binWidth extends TopLevel[binWidth with String]
-  
-  /* "Category" */ @js.native
-  object category extends TopLevel[category with String]
-  
+  sealed trait category
+    extends StObject
+       with ChartBinType
 }
-

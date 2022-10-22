@@ -1,27 +1,40 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** List of document attributes. */
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
+  
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
   var location: js.UndefOr[Location] = js.undefined
+  
   /** The text associated with the attribute. */
   var text: js.UndefOr[String] = js.undefined
+  
   /** The type of attribute. */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object Attribute {
-  @scala.inline
-  def apply(location: Location = null, text: String = null, `type`: String = null): Attribute = {
+  
+  inline def apply(): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
+  
+  extension [Self <: Attribute](x: Self) {
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

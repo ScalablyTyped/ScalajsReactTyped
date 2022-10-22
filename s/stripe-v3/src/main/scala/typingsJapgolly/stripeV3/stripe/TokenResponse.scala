@@ -1,21 +1,30 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TokenResponse extends js.Object {
+trait TokenResponse extends StObject {
+  
   var error: js.UndefOr[Error] = js.undefined
+  
   var token: js.UndefOr[Token] = js.undefined
 }
-
 object TokenResponse {
-  @scala.inline
-  def apply(error: Error = null, token: Token = null): TokenResponse = {
+  
+  inline def apply(): TokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResponse]
   }
+  
+  extension [Self <: TokenResponse](x: Self) {
+    
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+  }
 }
-

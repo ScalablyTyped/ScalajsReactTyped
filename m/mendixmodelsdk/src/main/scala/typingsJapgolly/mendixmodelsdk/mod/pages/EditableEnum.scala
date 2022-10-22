@@ -1,20 +1,37 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.EditableEnum")
 @js.native
-class EditableEnum ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.EditableEnum
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.EditableEnum")
-@js.native
-object EditableEnum extends js.Object {
-  var Always: typingsJapgolly.mendixmodelsdk.pagesMod.pages.EditableEnum = js.native
-  var Conditional: typingsJapgolly.mendixmodelsdk.pagesMod.pages.EditableEnum = js.native
-  var Never: typingsJapgolly.mendixmodelsdk.pagesMod.pages.EditableEnum = js.native
+open class EditableEnum protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.EditableEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object EditableEnum {
+  
+  @JSImport("mendixmodelsdk", "pages.EditableEnum")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.EditableEnum.Always")
+  @js.native
+  def Always: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum = js.native
+  inline def Always_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.EditableEnum.Conditional")
+  @js.native
+  def Conditional: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum = js.native
+  inline def Conditional_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Conditional")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.EditableEnum.Never")
+  @js.native
+  def Never: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum = js.native
+  inline def Never_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.EditableEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Never")(x.asInstanceOf[js.Any])
+}

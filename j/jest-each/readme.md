@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-each
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 ## Library description:
 Parameterised tests for Jest
@@ -10,10 +10,10 @@ Parameterised tests for Jest
 | ------------------ | :-------------: |
 | Full name          | jest-each |
 | Keywords           | jest, parameterised, test, each |
-| # releases         | 37 |
-| # dependents       | 12 |
-| # downloads        | 182864313 |
-| # stars            | 0 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 7.491866966666667E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

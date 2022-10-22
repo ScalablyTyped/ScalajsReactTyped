@@ -9,15 +9,12 @@ Turn Buffer instances into "pointers"
 | ------------------ | :-------------: |
 | Full name          | ref |
 | Keywords           | native, buffer, extensions, c++, pointer, reference, dereference, type, int, long, float, double, byte, 64 |
-| # releases         | 1 |
-| # dependents       | 247 |
-| # downloads        | 2683185 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 61256.0 |
+| # stars            | 415.0 |
 
 ## Links
-- [Homepage](https://github.com/TooTallNate/ref#readme)
-- [Bugs](https://github.com/TooTallNate/ref/issues)
-- [Repository](https://github.com/TooTallNate/ref)
 - [Npm](https://www.npmjs.com/package/ref)
     
 

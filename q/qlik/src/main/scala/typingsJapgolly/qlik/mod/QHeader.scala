@@ -1,35 +1,47 @@
 package typingsJapgolly.qlik.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.qlik.qlikStrings.A
 import typingsJapgolly.qlik.qlikStrings.B
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QHeader extends js.Object {
+trait QHeader extends StObject {
+  
   var col: Double
+  
   var errorCode: js.UndefOr[Double] = js.undefined
+  
   var errorMessage: js.UndefOr[Double] = js.undefined
+  
   var isOrderedBy: Boolean
+  
+  def orderBy(): Unit
+  
   var qCardinal: js.UndefOr[Double] = js.undefined
+  
   var qFallbackTitle: String
+  
   var qMax: js.UndefOr[Double] = js.undefined
+  
   // field?: Field
   var qMin: js.UndefOr[Double] = js.undefined
+  
   var qReverseSort: Boolean
+  
   var qSortIndicator: A | B
+  
   var qStateCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
-  def orderBy(): Unit
+  
   def reverseOrder(): Unit
-  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[_]
+  
+  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[Any]
 }
-
 object QHeader {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     col: Double,
     isOrderedBy: Boolean,
     orderBy: Callback,
@@ -37,25 +49,52 @@ object QHeader {
     qReverseSort: Boolean,
     qSortIndicator: A | B,
     reverseOrder: Callback,
-    selectRange: (Double, Double, Boolean, Boolean) => CallbackTo[js.Promise[js.Any]],
-    errorCode: Int | Double = null,
-    errorMessage: Int | Double = null,
-    qCardinal: Int | Double = null,
-    qMax: Int | Double = null,
-    qMin: Int | Double = null,
-    qStateCounts: StringDictionary[Double] = null
+    selectRange: (Double, Double, Boolean, Boolean) => js.Promise[Any]
   ): QHeader = {
-    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any])
-    __obj.updateDynamic("orderBy")(orderBy.toJsFn)
-    __obj.updateDynamic("reverseOrder")(reverseOrder.toJsFn)
-    __obj.updateDynamic("selectRange")(js.Any.fromFunction4((t0: scala.Double, t1: scala.Double, t2: scala.Boolean, t3: scala.Boolean) => selectRange(t0, t1, t2, t3).runNow()))
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (qCardinal != null) __obj.updateDynamic("qCardinal")(qCardinal.asInstanceOf[js.Any])
-    if (qMax != null) __obj.updateDynamic("qMax")(qMax.asInstanceOf[js.Any])
-    if (qMin != null) __obj.updateDynamic("qMin")(qMin.asInstanceOf[js.Any])
-    if (qStateCounts != null) __obj.updateDynamic("qStateCounts")(qStateCounts.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], orderBy = orderBy.toJsFn, qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = reverseOrder.toJsFn, selectRange = js.Any.fromFunction4(selectRange))
     __obj.asInstanceOf[QHeader]
   }
+  
+  extension [Self <: QHeader](x: Self) {
+    
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    
+    inline def setErrorMessage(value: Double): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    
+    inline def setIsOrderedBy(value: Boolean): Self = StObject.set(x, "isOrderedBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderBy(value: Callback): Self = StObject.set(x, "orderBy", value.toJsFn)
+    
+    inline def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
+    
+    inline def setQCardinalUndefined: Self = StObject.set(x, "qCardinal", js.undefined)
+    
+    inline def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
+    
+    inline def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
+    
+    inline def setQMaxUndefined: Self = StObject.set(x, "qMax", js.undefined)
+    
+    inline def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
+    
+    inline def setQMinUndefined: Self = StObject.set(x, "qMin", js.undefined)
+    
+    inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
+    
+    inline def setQSortIndicator(value: A | B): Self = StObject.set(x, "qSortIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setQStateCounts(value: StringDictionary[Double]): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
+    
+    inline def setQStateCountsUndefined: Self = StObject.set(x, "qStateCounts", js.undefined)
+    
+    inline def setReverseOrder(value: Callback): Self = StObject.set(x, "reverseOrder", value.toJsFn)
+    
+    inline def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[Any]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
+  }
 }
-

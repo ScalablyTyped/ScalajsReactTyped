@@ -1,7 +1,7 @@
 
 # Scala.js typings for make-error
 
-Typings are for version 1.3.5
+Typings are for version 1.3.6
 
 ## Library description:
 Make your own error types!
@@ -10,15 +10,12 @@ Make your own error types!
 | ------------------ | :-------------: |
 | Full name          | make-error |
 | Keywords           | create, custom, derive, error, errors, extend, extending, extension, factory, inherit, make, subclass |
-| # releases         | 4 |
-| # dependents       | 109 |
-| # downloads        | 149091316 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4800327333333336E7 |
+| # stars            | 63.0 |
 
 ## Links
-- [Homepage](https://github.com/JsCommunity/make-error)
-- [Bugs](https://github.com/JsCommunity/make-error/issues)
-- [Repository](https://github.com/JsCommunity/make-error)
 - [Npm](https://www.npmjs.com/package/make-error)
     
 

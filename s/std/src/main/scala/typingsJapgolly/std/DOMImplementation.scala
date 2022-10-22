@@ -1,34 +1,36 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object providing methods which are not dependent on any particular document. Such an object is returned by the Document.implementation property. */
 @js.native
-trait DOMImplementation extends js.Object {
-  def createDocument(): Document_ = js.native
-  def createDocument(namespaceURI: java.lang.String): Document_ = js.native
-  def createDocument(namespaceURI: java.lang.String, qualifiedName: java.lang.String): Document_ = js.native
+trait DOMImplementation extends StObject {
+  
+  /* standard dom */
+  def createDocument(): XMLDocument = js.native
+  def createDocument(namespace: java.lang.String): XMLDocument = js.native
+  def createDocument(namespace: java.lang.String, qualifiedName: java.lang.String): XMLDocument = js.native
   def createDocument(
-    namespaceURI: java.lang.String,
+    namespace: java.lang.String,
     qualifiedName: java.lang.String,
-    doctype: org.scalajs.dom.raw.DocumentType
-  ): Document_ = js.native
-  def createDocument(namespaceURI: java.lang.String, qualifiedName: Null, doctype: org.scalajs.dom.raw.DocumentType): Document_ = js.native
-  def createDocument(namespaceURI: Null, qualifiedName: java.lang.String): Document_ = js.native
-  def createDocument(namespaceURI: Null, qualifiedName: java.lang.String, doctype: org.scalajs.dom.raw.DocumentType): Document_ = js.native
-  def createDocument(namespaceURI: Null, qualifiedName: Null, doctype: org.scalajs.dom.raw.DocumentType): Document_ = js.native
-  def createDocumentType(qualifiedName: java.lang.String, publicId: java.lang.String, systemId: java.lang.String): org.scalajs.dom.raw.DocumentType = js.native
-  def createHTMLDocument(): Document_ = js.native
-  def createHTMLDocument(title: java.lang.String): Document_ = js.native
+    doctype: org.scalajs.dom.DocumentType
+  ): XMLDocument = js.native
+  def createDocument(namespace: java.lang.String, qualifiedName: Null, doctype: org.scalajs.dom.DocumentType): XMLDocument = js.native
+  def createDocument(namespace: Null, qualifiedName: java.lang.String): XMLDocument = js.native
+  def createDocument(namespace: Null, qualifiedName: java.lang.String, doctype: org.scalajs.dom.DocumentType): XMLDocument = js.native
+  def createDocument(namespace: Null, qualifiedName: Null, doctype: org.scalajs.dom.DocumentType): XMLDocument = js.native
+  
+  /* standard dom */
+  def createDocumentType(qualifiedName: java.lang.String, publicId: java.lang.String, systemId: java.lang.String): org.scalajs.dom.DocumentType = js.native
+  
+  /* standard dom */
+  def createHTMLDocument(): org.scalajs.dom.Document = js.native
+  def createHTMLDocument(title: java.lang.String): org.scalajs.dom.Document = js.native
+  
   /** @deprecated */
-  def hasFeature(args: js.Any*): `true` = js.native
+  /* standard dom */
+  def hasFeature(args: Any*): `true` = js.native
 }
-
-@JSGlobal("DOMImplementation")
-@js.native
-object DOMImplementation extends Instantiable0[DOMImplementation]
-

@@ -1,30 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConvolverOptions extends AudioNodeOptions {
-  var buffer: js.UndefOr[org.scalajs.dom.raw.AudioBuffer | Null] = js.undefined
+trait ConvolverOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
+  var buffer: js.UndefOr[org.scalajs.dom.AudioBuffer | Null] = js.undefined
+  
+  /* standard dom */
   var disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object ConvolverOptions {
-  @scala.inline
-  def apply(
-    buffer: org.scalajs.dom.raw.AudioBuffer = null,
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
-  ): ConvolverOptions = {
+  
+  inline def apply(): ConvolverOptions = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvolverOptions]
   }
+  
+  extension [Self <: ConvolverOptions](x: Self) {
+    
+    inline def setBuffer(value: org.scalajs.dom.AudioBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferNull: Self = StObject.set(x, "buffer", null)
+    
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    
+    inline def setDisableNormalization(value: scala.Boolean): Self = StObject.set(x, "disableNormalization", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNormalizationUndefined: Self = StObject.set(x, "disableNormalization", js.undefined)
+  }
 }
-

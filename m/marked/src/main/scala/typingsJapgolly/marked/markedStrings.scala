@@ -1,104 +1,116 @@
 package typingsJapgolly.marked
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markedStrings {
-  @js.native
-  sealed trait blockquote_end extends js.Object
   
   @js.native
-  sealed trait blockquote_start extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait blockquote extends StObject
+  inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait heading extends js.Object
+  sealed trait br extends StObject
+  inline def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait hr extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait indented extends js.Object
+  sealed trait codespan extends StObject
+  inline def codespan: codespan = "codespan".asInstanceOf[codespan]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait `def` extends StObject
+  inline def `def`: `def` = "def".asInstanceOf[`def`]
   
   @js.native
-  sealed trait list_end extends js.Object
+  sealed trait del extends StObject
+  inline def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait list_item_end extends js.Object
+  sealed trait em extends StObject
+  inline def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait list_item_start extends js.Object
+  sealed trait escape extends StObject
+  inline def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
-  sealed trait list_start extends js.Object
+  sealed trait heading extends StObject
+  inline def heading: heading = "heading".asInstanceOf[heading]
   
   @js.native
-  sealed trait loose_item_start extends js.Object
+  sealed trait hr extends StObject
+  inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait html extends StObject
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait space extends js.Object
+  sealed trait indented extends StObject
+  inline def indented: indented = "indented".asInstanceOf[indented]
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
-  @scala.inline
-  def blockquote_end: blockquote_end = "blockquote_end".asInstanceOf[blockquote_end]
-  @scala.inline
-  def blockquote_start: blockquote_start = "blockquote_start".asInstanceOf[blockquote_start]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def heading: heading = "heading".asInstanceOf[heading]
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def indented: indented = "indented".asInstanceOf[indented]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def list_end: list_end = "list_end".asInstanceOf[list_end]
-  @scala.inline
-  def list_item_end: list_item_end = "list_item_end".asInstanceOf[list_item_end]
-  @scala.inline
-  def list_item_start: list_item_start = "list_item_start".asInstanceOf[list_item_start]
-  @scala.inline
-  def list_start: list_start = "list_start".asInstanceOf[list_start]
-  @scala.inline
-  def loose_item_start: loose_item_start = "loose_item_start".asInstanceOf[loose_item_start]
-  @scala.inline
-  def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
+  
+  @js.native
+  sealed trait list_item extends StObject
+  inline def list_item: list_item = "list_item".asInstanceOf[list_item]
+  
+  @js.native
+  sealed trait paragraph extends StObject
+  inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait space extends StObject
+  inline def space: space = "space".asInstanceOf[space]
+  
+  @js.native
+  sealed trait strong extends StObject
+  inline def strong: strong = "strong".asInstanceOf[strong]
+  
+  @js.native
+  sealed trait table extends StObject
+  inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }
-

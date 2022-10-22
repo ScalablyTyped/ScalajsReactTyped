@@ -1,14 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
-import typingsJapgolly.gitlab.baseServiceMod.BaseServiceOptions
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "MergeRequestNotes")
 @js.native
-class MergeRequestNotes ()
-  extends typingsJapgolly.gitlab.servicesMod.MergeRequestNotes {
+open class MergeRequestNotes protected ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.MergeRequestNotes {
   def this(options: BaseServiceOptions) = this()
 }
-

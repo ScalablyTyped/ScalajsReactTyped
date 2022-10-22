@@ -1,28 +1,40 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceAppManagement extends Entity {
+trait DeviceAppManagement
+  extends StObject
+     with Entity {
+  
   // Android managed app policies.
-  var androidManagedAppProtections: js.UndefOr[js.Array[AndroidManagedAppProtection]] = js.undefined
+  var androidManagedAppProtections: js.UndefOr[NullableOption[js.Array[AndroidManagedAppProtection]]] = js.undefined
+  
   // Default managed app policies.
-  var defaultManagedAppProtections: js.UndefOr[js.Array[DefaultManagedAppProtection]] = js.undefined
+  var defaultManagedAppProtections: js.UndefOr[NullableOption[js.Array[DefaultManagedAppProtection]]] = js.undefined
+  
   // iOS managed app policies.
-  var iosManagedAppProtections: js.UndefOr[js.Array[IosManagedAppProtection]] = js.undefined
+  var iosManagedAppProtections: js.UndefOr[NullableOption[js.Array[IosManagedAppProtection]]] = js.undefined
+  
   // Whether the account is enabled for syncing applications from the Microsoft Store for Business.
   var isEnabledForMicrosoftStoreForBusiness: js.UndefOr[Boolean] = js.undefined
+  
   // Managed app policies.
-  var managedAppPolicies: js.UndefOr[js.Array[ManagedAppPolicy]] = js.undefined
+  var managedAppPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.undefined
+  
   // The managed app registrations.
-  var managedAppRegistrations: js.UndefOr[js.Array[ManagedAppRegistration]] = js.undefined
+  var managedAppRegistrations: js.UndefOr[NullableOption[js.Array[ManagedAppRegistration]]] = js.undefined
+  
   // The managed app statuses.
-  var managedAppStatuses: js.UndefOr[js.Array[ManagedAppStatus]] = js.undefined
+  var managedAppStatuses: js.UndefOr[NullableOption[js.Array[ManagedAppStatus]]] = js.undefined
+  
   // The Managed eBook.
-  var managedEBooks: js.UndefOr[js.Array[ManagedEBook]] = js.undefined
+  var managedEBooks: js.UndefOr[NullableOption[js.Array[ManagedEBook]]] = js.undefined
+  
   // Windows information protection for apps running on devices which are MDM enrolled.
-  var mdmWindowsInformationProtectionPolicies: js.UndefOr[js.Array[MdmWindowsInformationProtectionPolicy]] = js.undefined
+  var mdmWindowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]] = js.undefined
+  
   /**
     * The locale information used to sync applications from the Microsoft Store for Business. Cultures that are specific to a
     * country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is
@@ -30,69 +42,169 @@ trait DeviceAppManagement extends Entity {
     * &amp;lt;country/regioncode2&amp;gt; is an uppercase two-letter code derived from ISO 3166. For example, en-US for
     * English (United States) is a specific culture.
     */
-  var microsoftStoreForBusinessLanguage: js.UndefOr[String] = js.undefined
+  var microsoftStoreForBusinessLanguage: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The last time an application sync from the Microsoft Store for Business was completed.
   var microsoftStoreForBusinessLastCompletedApplicationSyncTime: js.UndefOr[String] = js.undefined
+  
   // The last time the apps from the Microsoft Store for Business were synced successfully for the account.
   var microsoftStoreForBusinessLastSuccessfulSyncDateTime: js.UndefOr[String] = js.undefined
+  
   // The mobile app categories.
-  var mobileAppCategories: js.UndefOr[js.Array[MobileAppCategory]] = js.undefined
+  var mobileAppCategories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.undefined
+  
   // The Managed Device Mobile Application Configurations.
-  var mobileAppConfigurations: js.UndefOr[js.Array[ManagedDeviceMobileAppConfiguration]] = js.undefined
+  var mobileAppConfigurations: js.UndefOr[NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]] = js.undefined
+  
   // The mobile apps.
-  var mobileApps: js.UndefOr[js.Array[MobileApp]] = js.undefined
+  var mobileApps: js.UndefOr[NullableOption[js.Array[MobileApp]]] = js.undefined
+  
   // Targeted managed app configurations.
-  var targetedManagedAppConfigurations: js.UndefOr[js.Array[TargetedManagedAppConfiguration]] = js.undefined
+  var targetedManagedAppConfigurations: js.UndefOr[NullableOption[js.Array[TargetedManagedAppConfiguration]]] = js.undefined
+  
   // List of Vpp tokens for this organization.
-  var vppTokens: js.UndefOr[js.Array[VppToken]] = js.undefined
+  var vppTokens: js.UndefOr[NullableOption[js.Array[VppToken]]] = js.undefined
+  
   // Windows information protection for apps running on devices which are not MDM enrolled.
-  var windowsInformationProtectionPolicies: js.UndefOr[js.Array[WindowsInformationProtectionPolicy]] = js.undefined
+  var windowsInformationProtectionPolicies: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionPolicy]]] = js.undefined
 }
-
 object DeviceAppManagement {
-  @scala.inline
-  def apply(
-    androidManagedAppProtections: js.Array[AndroidManagedAppProtection] = null,
-    defaultManagedAppProtections: js.Array[DefaultManagedAppProtection] = null,
-    id: String = null,
-    iosManagedAppProtections: js.Array[IosManagedAppProtection] = null,
-    isEnabledForMicrosoftStoreForBusiness: js.UndefOr[Boolean] = js.undefined,
-    managedAppPolicies: js.Array[ManagedAppPolicy] = null,
-    managedAppRegistrations: js.Array[ManagedAppRegistration] = null,
-    managedAppStatuses: js.Array[ManagedAppStatus] = null,
-    managedEBooks: js.Array[ManagedEBook] = null,
-    mdmWindowsInformationProtectionPolicies: js.Array[MdmWindowsInformationProtectionPolicy] = null,
-    microsoftStoreForBusinessLanguage: String = null,
-    microsoftStoreForBusinessLastCompletedApplicationSyncTime: String = null,
-    microsoftStoreForBusinessLastSuccessfulSyncDateTime: String = null,
-    mobileAppCategories: js.Array[MobileAppCategory] = null,
-    mobileAppConfigurations: js.Array[ManagedDeviceMobileAppConfiguration] = null,
-    mobileApps: js.Array[MobileApp] = null,
-    targetedManagedAppConfigurations: js.Array[TargetedManagedAppConfiguration] = null,
-    vppTokens: js.Array[VppToken] = null,
-    windowsInformationProtectionPolicies: js.Array[WindowsInformationProtectionPolicy] = null
-  ): DeviceAppManagement = {
+  
+  inline def apply(): DeviceAppManagement = {
     val __obj = js.Dynamic.literal()
-    if (androidManagedAppProtections != null) __obj.updateDynamic("androidManagedAppProtections")(androidManagedAppProtections.asInstanceOf[js.Any])
-    if (defaultManagedAppProtections != null) __obj.updateDynamic("defaultManagedAppProtections")(defaultManagedAppProtections.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (iosManagedAppProtections != null) __obj.updateDynamic("iosManagedAppProtections")(iosManagedAppProtections.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabledForMicrosoftStoreForBusiness)) __obj.updateDynamic("isEnabledForMicrosoftStoreForBusiness")(isEnabledForMicrosoftStoreForBusiness.asInstanceOf[js.Any])
-    if (managedAppPolicies != null) __obj.updateDynamic("managedAppPolicies")(managedAppPolicies.asInstanceOf[js.Any])
-    if (managedAppRegistrations != null) __obj.updateDynamic("managedAppRegistrations")(managedAppRegistrations.asInstanceOf[js.Any])
-    if (managedAppStatuses != null) __obj.updateDynamic("managedAppStatuses")(managedAppStatuses.asInstanceOf[js.Any])
-    if (managedEBooks != null) __obj.updateDynamic("managedEBooks")(managedEBooks.asInstanceOf[js.Any])
-    if (mdmWindowsInformationProtectionPolicies != null) __obj.updateDynamic("mdmWindowsInformationProtectionPolicies")(mdmWindowsInformationProtectionPolicies.asInstanceOf[js.Any])
-    if (microsoftStoreForBusinessLanguage != null) __obj.updateDynamic("microsoftStoreForBusinessLanguage")(microsoftStoreForBusinessLanguage.asInstanceOf[js.Any])
-    if (microsoftStoreForBusinessLastCompletedApplicationSyncTime != null) __obj.updateDynamic("microsoftStoreForBusinessLastCompletedApplicationSyncTime")(microsoftStoreForBusinessLastCompletedApplicationSyncTime.asInstanceOf[js.Any])
-    if (microsoftStoreForBusinessLastSuccessfulSyncDateTime != null) __obj.updateDynamic("microsoftStoreForBusinessLastSuccessfulSyncDateTime")(microsoftStoreForBusinessLastSuccessfulSyncDateTime.asInstanceOf[js.Any])
-    if (mobileAppCategories != null) __obj.updateDynamic("mobileAppCategories")(mobileAppCategories.asInstanceOf[js.Any])
-    if (mobileAppConfigurations != null) __obj.updateDynamic("mobileAppConfigurations")(mobileAppConfigurations.asInstanceOf[js.Any])
-    if (mobileApps != null) __obj.updateDynamic("mobileApps")(mobileApps.asInstanceOf[js.Any])
-    if (targetedManagedAppConfigurations != null) __obj.updateDynamic("targetedManagedAppConfigurations")(targetedManagedAppConfigurations.asInstanceOf[js.Any])
-    if (vppTokens != null) __obj.updateDynamic("vppTokens")(vppTokens.asInstanceOf[js.Any])
-    if (windowsInformationProtectionPolicies != null) __obj.updateDynamic("windowsInformationProtectionPolicies")(windowsInformationProtectionPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceAppManagement]
   }
+  
+  extension [Self <: DeviceAppManagement](x: Self) {
+    
+    inline def setAndroidManagedAppProtections(value: NullableOption[js.Array[AndroidManagedAppProtection]]): Self = StObject.set(x, "androidManagedAppProtections", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidManagedAppProtectionsNull: Self = StObject.set(x, "androidManagedAppProtections", null)
+    
+    inline def setAndroidManagedAppProtectionsUndefined: Self = StObject.set(x, "androidManagedAppProtections", js.undefined)
+    
+    inline def setAndroidManagedAppProtectionsVarargs(value: AndroidManagedAppProtection*): Self = StObject.set(x, "androidManagedAppProtections", js.Array(value*))
+    
+    inline def setDefaultManagedAppProtections(value: NullableOption[js.Array[DefaultManagedAppProtection]]): Self = StObject.set(x, "defaultManagedAppProtections", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultManagedAppProtectionsNull: Self = StObject.set(x, "defaultManagedAppProtections", null)
+    
+    inline def setDefaultManagedAppProtectionsUndefined: Self = StObject.set(x, "defaultManagedAppProtections", js.undefined)
+    
+    inline def setDefaultManagedAppProtectionsVarargs(value: DefaultManagedAppProtection*): Self = StObject.set(x, "defaultManagedAppProtections", js.Array(value*))
+    
+    inline def setIosManagedAppProtections(value: NullableOption[js.Array[IosManagedAppProtection]]): Self = StObject.set(x, "iosManagedAppProtections", value.asInstanceOf[js.Any])
+    
+    inline def setIosManagedAppProtectionsNull: Self = StObject.set(x, "iosManagedAppProtections", null)
+    
+    inline def setIosManagedAppProtectionsUndefined: Self = StObject.set(x, "iosManagedAppProtections", js.undefined)
+    
+    inline def setIosManagedAppProtectionsVarargs(value: IosManagedAppProtection*): Self = StObject.set(x, "iosManagedAppProtections", js.Array(value*))
+    
+    inline def setIsEnabledForMicrosoftStoreForBusiness(value: Boolean): Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", value.asInstanceOf[js.Any])
+    
+    inline def setIsEnabledForMicrosoftStoreForBusinessUndefined: Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", js.undefined)
+    
+    inline def setManagedAppPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "managedAppPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAppPoliciesNull: Self = StObject.set(x, "managedAppPolicies", null)
+    
+    inline def setManagedAppPoliciesUndefined: Self = StObject.set(x, "managedAppPolicies", js.undefined)
+    
+    inline def setManagedAppPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "managedAppPolicies", js.Array(value*))
+    
+    inline def setManagedAppRegistrations(value: NullableOption[js.Array[ManagedAppRegistration]]): Self = StObject.set(x, "managedAppRegistrations", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAppRegistrationsNull: Self = StObject.set(x, "managedAppRegistrations", null)
+    
+    inline def setManagedAppRegistrationsUndefined: Self = StObject.set(x, "managedAppRegistrations", js.undefined)
+    
+    inline def setManagedAppRegistrationsVarargs(value: ManagedAppRegistration*): Self = StObject.set(x, "managedAppRegistrations", js.Array(value*))
+    
+    inline def setManagedAppStatuses(value: NullableOption[js.Array[ManagedAppStatus]]): Self = StObject.set(x, "managedAppStatuses", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAppStatusesNull: Self = StObject.set(x, "managedAppStatuses", null)
+    
+    inline def setManagedAppStatusesUndefined: Self = StObject.set(x, "managedAppStatuses", js.undefined)
+    
+    inline def setManagedAppStatusesVarargs(value: ManagedAppStatus*): Self = StObject.set(x, "managedAppStatuses", js.Array(value*))
+    
+    inline def setManagedEBooks(value: NullableOption[js.Array[ManagedEBook]]): Self = StObject.set(x, "managedEBooks", value.asInstanceOf[js.Any])
+    
+    inline def setManagedEBooksNull: Self = StObject.set(x, "managedEBooks", null)
+    
+    inline def setManagedEBooksUndefined: Self = StObject.set(x, "managedEBooks", js.undefined)
+    
+    inline def setManagedEBooksVarargs(value: ManagedEBook*): Self = StObject.set(x, "managedEBooks", js.Array(value*))
+    
+    inline def setMdmWindowsInformationProtectionPolicies(value: NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setMdmWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", null)
+    
+    inline def setMdmWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.undefined)
+    
+    inline def setMdmWindowsInformationProtectionPoliciesVarargs(value: MdmWindowsInformationProtectionPolicy*): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.Array(value*))
+    
+    inline def setMicrosoftStoreForBusinessLanguage(value: NullableOption[String]): Self = StObject.set(x, "microsoftStoreForBusinessLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosoftStoreForBusinessLanguageNull: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", null)
+    
+    inline def setMicrosoftStoreForBusinessLanguageUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", js.undefined)
+    
+    inline def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", js.undefined)
+    
+    inline def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", js.undefined)
+    
+    inline def setMobileAppCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "mobileAppCategories", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppCategoriesNull: Self = StObject.set(x, "mobileAppCategories", null)
+    
+    inline def setMobileAppCategoriesUndefined: Self = StObject.set(x, "mobileAppCategories", js.undefined)
+    
+    inline def setMobileAppCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "mobileAppCategories", js.Array(value*))
+    
+    inline def setMobileAppConfigurations(value: NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]): Self = StObject.set(x, "mobileAppConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppConfigurationsNull: Self = StObject.set(x, "mobileAppConfigurations", null)
+    
+    inline def setMobileAppConfigurationsUndefined: Self = StObject.set(x, "mobileAppConfigurations", js.undefined)
+    
+    inline def setMobileAppConfigurationsVarargs(value: ManagedDeviceMobileAppConfiguration*): Self = StObject.set(x, "mobileAppConfigurations", js.Array(value*))
+    
+    inline def setMobileApps(value: NullableOption[js.Array[MobileApp]]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppsNull: Self = StObject.set(x, "mobileApps", null)
+    
+    inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
+    
+    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value*))
+    
+    inline def setTargetedManagedAppConfigurations(value: NullableOption[js.Array[TargetedManagedAppConfiguration]]): Self = StObject.set(x, "targetedManagedAppConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setTargetedManagedAppConfigurationsNull: Self = StObject.set(x, "targetedManagedAppConfigurations", null)
+    
+    inline def setTargetedManagedAppConfigurationsUndefined: Self = StObject.set(x, "targetedManagedAppConfigurations", js.undefined)
+    
+    inline def setTargetedManagedAppConfigurationsVarargs(value: TargetedManagedAppConfiguration*): Self = StObject.set(x, "targetedManagedAppConfigurations", js.Array(value*))
+    
+    inline def setVppTokens(value: NullableOption[js.Array[VppToken]]): Self = StObject.set(x, "vppTokens", value.asInstanceOf[js.Any])
+    
+    inline def setVppTokensNull: Self = StObject.set(x, "vppTokens", null)
+    
+    inline def setVppTokensUndefined: Self = StObject.set(x, "vppTokens", js.undefined)
+    
+    inline def setVppTokensVarargs(value: VppToken*): Self = StObject.set(x, "vppTokens", js.Array(value*))
+    
+    inline def setWindowsInformationProtectionPolicies(value: NullableOption[js.Array[WindowsInformationProtectionPolicy]]): Self = StObject.set(x, "windowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "windowsInformationProtectionPolicies", null)
+    
+    inline def setWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "windowsInformationProtectionPolicies", js.undefined)
+    
+    inline def setWindowsInformationProtectionPoliciesVarargs(value: WindowsInformationProtectionPolicy*): Self = StObject.set(x, "windowsInformationProtectionPolicies", js.Array(value*))
+  }
 }
-

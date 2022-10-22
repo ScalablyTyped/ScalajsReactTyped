@@ -1,7 +1,7 @@
 
 # Scala.js typings for maquette
 
-Typings are for version 3.3.6
+Typings are for version 3.5.3
 
 ## Library description:
 Minimalistic Virtual DOM implementation with support for animated transitions.
@@ -10,10 +10,10 @@ Minimalistic Virtual DOM implementation with support for animated transitions.
 | ------------------ | :-------------: |
 | Full name          | maquette |
 | Keywords           | virtual, dom, animation, transitions |
-| # releases         | 9 |
-| # dependents       | 11 |
-| # downloads        | 47233 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 7445.0 |
+| # stars            | 734.0 |
 
 ## Links
 - [Homepage](https://maquettejs.org/)

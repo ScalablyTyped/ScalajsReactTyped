@@ -1,31 +1,27 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4114`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4114`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4114`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4114`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
 */
-trait XlAxisCrosses extends js.Object
-
+trait XlAxisCrosses extends StObject
 object XlAxisCrosses {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAxisCrossesAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlAxisCrossesCustom: `-4114` = this.cast(-4114)
-  @scala.inline
-  def xlAxisCrossesMaximum: `2` = this.cast(2)
-  @scala.inline
-  def xlAxisCrossesMinimum: `4` = this.cast(4)
+  
+  inline def xlAxisCrossesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlAxisCrossesCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
+  inline def xlAxisCrossesMaximum: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlAxisCrossesMinimum: `4` = 4.asInstanceOf[`4`]
 }
-

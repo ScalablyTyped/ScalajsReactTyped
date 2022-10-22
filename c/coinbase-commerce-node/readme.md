@@ -10,10 +10,10 @@ The Official Coinbase Commerce SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | coinbase-commerce-node |
 | Keywords           | API, bitcoin, coinbase, commerce, payments |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 21724 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14458.666666666666 |
+| # stars            | 127.0 |
 
 ## Links
 - [Homepage](https://github.com/coinbase/coinbase-commerce-node)

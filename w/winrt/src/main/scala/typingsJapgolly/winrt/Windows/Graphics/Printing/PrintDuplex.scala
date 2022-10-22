@@ -1,53 +1,42 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintDuplex extends js.Object
-
+sealed trait PrintDuplex extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintDuplex")
 @js.native
-object PrintDuplex extends js.Object {
-  @js.native
-  sealed trait default extends PrintDuplex
+object PrintDuplex extends StObject {
   
   @js.native
-  sealed trait notAvailable extends PrintDuplex
+  sealed trait default
+    extends StObject
+       with PrintDuplex
   
   @js.native
-  sealed trait oneSided extends PrintDuplex
+  sealed trait notAvailable
+    extends StObject
+       with PrintDuplex
   
   @js.native
-  sealed trait printerCustom extends PrintDuplex
+  sealed trait oneSided
+    extends StObject
+       with PrintDuplex
   
   @js.native
-  sealed trait twoSidedLongEdge extends PrintDuplex
+  sealed trait printerCustom
+    extends StObject
+       with PrintDuplex
   
   @js.native
-  sealed trait twoSidedShortEdge extends PrintDuplex
+  sealed trait twoSidedLongEdge
+    extends StObject
+       with PrintDuplex
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintDuplex with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 3 */ @js.native
-  object oneSided extends TopLevel[oneSided with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
-  /* 5 */ @js.native
-  object twoSidedLongEdge extends TopLevel[twoSidedLongEdge with Double]
-  
-  /* 4 */ @js.native
-  object twoSidedShortEdge extends TopLevel[twoSidedShortEdge with Double]
-  
+  @js.native
+  sealed trait twoSidedShortEdge
+    extends StObject
+       with PrintDuplex
 }
-

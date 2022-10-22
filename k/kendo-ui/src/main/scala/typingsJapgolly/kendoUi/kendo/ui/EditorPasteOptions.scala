@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorPasteOptions extends js.Object {
+trait EditorPasteOptions extends StObject {
+  
   var split: js.UndefOr[Boolean] = js.undefined
 }
-
 object EditorPasteOptions {
-  @scala.inline
-  def apply(split: js.UndefOr[Boolean] = js.undefined): EditorPasteOptions = {
+  
+  inline def apply(): EditorPasteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorPasteOptions]
   }
+  
+  extension [Self <: EditorPasteOptions](x: Self) {
+    
+    inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+  }
 }
-

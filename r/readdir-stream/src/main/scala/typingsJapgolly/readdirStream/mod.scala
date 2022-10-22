@@ -1,13 +1,15 @@
 package typingsJapgolly.readdirStream
 
 import typingsJapgolly.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("readdir-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(dir: String): ReadableStream = js.native
+object mod {
+  
+  inline def apply(dir: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  
+  @JSImport("readdir-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

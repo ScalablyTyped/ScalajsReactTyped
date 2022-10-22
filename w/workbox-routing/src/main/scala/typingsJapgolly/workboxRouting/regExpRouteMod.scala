@@ -1,21 +1,19 @@
 package typingsJapgolly.workboxRouting
 
-import typingsJapgolly.workboxRouting.httpmethodMod.HTTPMethod
-import typingsJapgolly.workboxRouting.routeHandlerMod.RouteHandler
 import typingsJapgolly.workboxRouting.routeMod.Route
+import typingsJapgolly.workboxRouting.typesHttpmethodMod.HTTPMethod
+import typingsJapgolly.workboxRouting.typesRouteHandlerMod.RouteHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-routing/RegExpRoute", JSImport.Namespace)
-@js.native
-object regExpRouteMod extends js.Object {
+object regExpRouteMod {
+  
+  @JSImport("workbox-routing/RegExpRoute", "RegExpRoute")
   @js.native
-  class RegExpRoute protected ()
+  open class RegExpRoute protected ()
     extends Route[js.Array[String]] {
     def this(regExp: js.RegExp, handler: RouteHandler) = this()
     def this(regExp: js.RegExp, handler: RouteHandler, method: HTTPMethod) = this()
   }
-  
 }
-

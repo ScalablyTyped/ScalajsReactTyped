@@ -1,23 +1,26 @@
 package typingsJapgolly.htmlToDraftjs
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.draftJs.mod.Draft.Model.Encoding.RawDraftEntity
+import typingsJapgolly.htmlToDraftjs.anon.ContentBlocks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("html-to-draftjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(text: String): AnonContentBlocks = js.native
-  def default(
+object mod {
+  
+  @JSImport("html-to-draftjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(text: String): ContentBlocks = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[ContentBlocks]
+  inline def default(
     text: String,
     customChunkRenderer: js.Function2[
       /* nodeName */ String, 
       /* node */ HTMLElement, 
-      js.UndefOr[RawDraftEntity[StringDictionary[_]]]
+      js.UndefOr[RawDraftEntity[StringDictionary[Any]]]
     ]
-  ): AnonContentBlocks = js.native
+  ): ContentBlocks = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], customChunkRenderer.asInstanceOf[js.Any])).asInstanceOf[ContentBlocks]
 }
-

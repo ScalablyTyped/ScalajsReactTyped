@@ -1,39 +1,44 @@
 package typingsJapgolly.css.mod
 
-import typingsJapgolly.css.AnonContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait KeyFrames
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
+  
   /** Array of nodes with the types keyframe and comment. */
   var keyframes: js.UndefOr[js.Array[KeyFrame | Comment]] = js.undefined
+  
   /** The name of the keyframes rule. */
   var name: js.UndefOr[String] = js.undefined
+  
   /** The vendor prefix in @keyframes, or undefined if there is none. */
   var vendor: js.UndefOr[String] = js.undefined
 }
-
 object KeyFrames {
-  @scala.inline
-  def apply(
-    keyframes: js.Array[KeyFrame | Comment] = null,
-    name: String = null,
-    parent: Node = null,
-    position: AnonContent = null,
-    `type`: String = null,
-    vendor: String = null
-  ): KeyFrames = {
+  
+  inline def apply(): KeyFrames = {
     val __obj = js.Dynamic.literal()
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyFrames]
   }
+  
+  extension [Self <: KeyFrames](x: Self) {
+    
+    inline def setKeyframes(value: js.Array[KeyFrame | Comment]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+    
+    inline def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
+    
+    inline def setKeyframesVarargs(value: (KeyFrame | Comment)*): Self = StObject.set(x, "keyframes", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+  }
 }
-

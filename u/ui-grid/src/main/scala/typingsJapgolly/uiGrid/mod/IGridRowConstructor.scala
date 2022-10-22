@@ -1,13 +1,14 @@
 package typingsJapgolly.uiGrid.mod
 
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IGridRowConstructor[TEntity]
-  extends /**
+  extends StObject
+     with /**
   * GridRow is the viewModel for one logical row on the grid.
   * A grid Row is not necessarily a one-to-one relation to gridOptions.data.
   * @param entity the array item from GridOptions.data
@@ -20,4 +21,3 @@ Instantiable3[
       /* reference */ IGridInstanceOf[TEntity], 
       IGridRowOf[TEntity]
     ]
-

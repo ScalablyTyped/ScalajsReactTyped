@@ -1,18 +1,24 @@
 package typingsJapgolly.thrift.mod.Thrift
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("thrift", "Thrift.TException")
 @js.native
-class TException protected () extends Error {
+open class TException protected ()
+  extends StObject
+     with Error {
   def this(message: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
+  
   def getMessage(): String = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var name: String = js.native
 }
-

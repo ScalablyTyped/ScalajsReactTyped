@@ -1,8 +1,8 @@
 package typingsJapgolly.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================界面操作================================*/
 /*=============================微信扫一扫================================*/
@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jweixin.jweixinStrings.qrCode
   - typingsJapgolly.jweixin.jweixinStrings.barCode
 */
-trait scanType extends js.Object
-
+trait scanType extends StObject
 object scanType {
-  @scala.inline
-  def barCode: typingsJapgolly.jweixin.jweixinStrings.barCode = this.cast("barCode")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def qrCode: typingsJapgolly.jweixin.jweixinStrings.qrCode = this.cast("qrCode")
+  
+  inline def barCode: typingsJapgolly.jweixin.jweixinStrings.barCode = "barCode".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.barCode]
+  
+  inline def qrCode: typingsJapgolly.jweixin.jweixinStrings.qrCode = "qrCode".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.qrCode]
 }
-

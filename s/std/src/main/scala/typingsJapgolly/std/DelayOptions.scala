@@ -1,30 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DelayOptions extends AudioNodeOptions {
+trait DelayOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var delayTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var maxDelayTime: js.UndefOr[Double] = js.undefined
 }
-
 object DelayOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    delayTime: Int | Double = null,
-    maxDelayTime: Int | Double = null
-  ): DelayOptions = {
+  
+  inline def apply(): DelayOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (delayTime != null) __obj.updateDynamic("delayTime")(delayTime.asInstanceOf[js.Any])
-    if (maxDelayTime != null) __obj.updateDynamic("maxDelayTime")(maxDelayTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelayOptions]
   }
+  
+  extension [Self <: DelayOptions](x: Self) {
+    
+    inline def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
+    
+    inline def setDelayTimeUndefined: Self = StObject.set(x, "delayTime", js.undefined)
+    
+    inline def setMaxDelayTime(value: Double): Self = StObject.set(x, "maxDelayTime", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDelayTimeUndefined: Self = StObject.set(x, "maxDelayTime", js.undefined)
+  }
 }
-

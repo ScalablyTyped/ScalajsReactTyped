@@ -1,32 +1,57 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileSecurityState extends js.Object {
+trait FileSecurityState extends StObject {
+  
   // Complex type containing file hashes (cryptographic and location-sensitive).
-  var fileHash: js.UndefOr[FileHash] = js.undefined
+  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.undefined
+  
   // File name (without path).
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Full file path of the file/imageFile.
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a
     * percentage.
     */
-  var riskScore: js.UndefOr[String] = js.undefined
+  var riskScore: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object FileSecurityState {
-  @scala.inline
-  def apply(fileHash: FileHash = null, name: String = null, path: String = null, riskScore: String = null): FileSecurityState = {
+  
+  inline def apply(): FileSecurityState = {
     val __obj = js.Dynamic.literal()
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSecurityState]
   }
+  
+  extension [Self <: FileSecurityState](x: Self) {
+    
+    inline def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    
+    inline def setFileHashNull: Self = StObject.set(x, "fileHash", null)
+    
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathNull: Self = StObject.set(x, "path", null)
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
+    
+    inline def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
+    
+    inline def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
+  }
 }
-

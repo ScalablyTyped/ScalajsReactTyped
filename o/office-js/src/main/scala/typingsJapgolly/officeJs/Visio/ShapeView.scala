@@ -1,12 +1,12 @@
 package typingsJapgolly.officeJs.Visio
 
-import typingsJapgolly.officeJs.AnonExpand
 import typingsJapgolly.officeJs.OfficeExtension.ClientObject
 import typingsJapgolly.officeJs.OfficeExtension.ClientResult
 import typingsJapgolly.officeJs.OfficeExtension.UpdateOptions
 import typingsJapgolly.officeJs.Visio.Interfaces.ShapeViewData
 import typingsJapgolly.officeJs.Visio.Interfaces.ShapeViewLoadOptions
 import typingsJapgolly.officeJs.Visio.Interfaces.ShapeViewUpdateData
+import typingsJapgolly.officeJs.anon.Expand
 import typingsJapgolly.officeJs.officeJsStrings.Bottom
 import typingsJapgolly.officeJs.officeJsStrings.Center
 import typingsJapgolly.officeJs.officeJsStrings.Html
@@ -16,9 +16,9 @@ import typingsJapgolly.officeJs.officeJsStrings.Middle
 import typingsJapgolly.officeJs.officeJsStrings.Right
 import typingsJapgolly.officeJs.officeJsStrings.Text
 import typingsJapgolly.officeJs.officeJsStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -26,26 +26,18 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.ShapeView")
 @js.native
-class ShapeView () extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_ShapeView: RequestContext = js.native
-  /**
-    *
-    * Represents the highlight around the shape.
-    *
-    * [Api set:  1.1]
-    */
-  var highlight: Highlight = js.native
+trait ShapeView
+  extends StObject
+     with ClientObject {
+  
   /**
     *
     * Adds an overlay on top of the shape.
     *
     * [Api set:  1.1]
     *
-    * @param OverlayType An Overlay Type. Can be 'Text' or 'Image'.
+    * @param OverlayType An Overlay Type. Can be 'Text', 'Image' or 'Html'.
     * @param Content Content of Overlay.
     * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
     * @param OverlayVerticalAlignment Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
@@ -66,7 +58,7 @@ class ShapeView () extends ClientObject {
     *
     * [Api set:  1.1]
     *
-    * @param OverlayType An Overlay Type. Can be 'Text' or 'Image'.
+    * @param OverlayType An Overlay Type. Can be 'Text', 'Image' or 'Html'.
     * @param Content Content of Overlay.
     * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
     * @param OverlayVerticalAlignment Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
@@ -81,26 +73,30 @@ class ShapeView () extends ClientObject {
     Width: Double,
     Height: Double
   ): ClientResult[Double] = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ShapeView: RequestContext = js.native
+  
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
-    * @remarks
+    * Represents the highlight around the shape.
     *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * [Api set:  1.1]
+    */
+  var highlight: Highlight = js.native
+  
+  /**
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ShapeView = js.native
-  def load(option: String): ShapeView = js.native
-  def load(option: js.Array[String]): ShapeView = js.native
-  def load(option: AnonExpand): ShapeView = js.native
-  def load(option: ShapeViewLoadOptions): ShapeView = js.native
+  def load(options: ShapeViewLoadOptions): ShapeView = js.native
+  def load(propertyNamesAndPaths: Expand): ShapeView = js.native
+  def load(propertyNames: String): ShapeView = js.native
+  def load(propertyNames: js.Array[String]): ShapeView = js.native
+  
   /**
     *
     * Removes particular overlay or all overlays on the Shape.
@@ -110,6 +106,7 @@ class ShapeView () extends ClientObject {
     * @param OverlayId An Overlay Id. Removes the specific overlay id from the shape.
     */
   def removeOverlay(OverlayId: Double): Unit = js.native
+  
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -125,6 +122,12 @@ class ShapeView () extends ClientObject {
   def set(properties: ShapeViewUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ShapeView): Unit = js.native
+  
+  /**
+    * Set mock data
+    */
+  def setMockData(data: ShapeViewData): Unit = js.native
+  
   /**
     *
     * Shows particular overlay on the Shape.
@@ -135,10 +138,10 @@ class ShapeView () extends ClientObject {
     * @param show to show or hide
     */
   def showOverlay(overlayId: Double, show: Boolean): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ShapeViewData = js.native
 }
-

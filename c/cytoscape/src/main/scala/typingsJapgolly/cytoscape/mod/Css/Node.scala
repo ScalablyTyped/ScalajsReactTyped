@@ -1,30 +1,44 @@
 package typingsJapgolly.cytoscape.mod.Css
 
+import typingsJapgolly.cytoscape.cytoscapeStrings.`include-padding`
 import typingsJapgolly.cytoscape.cytoscapeStrings.`no-repeat`
 import typingsJapgolly.cytoscape.cytoscapeStrings.`repeat-x`
 import typingsJapgolly.cytoscape.cytoscapeStrings.`repeat-y`
+import typingsJapgolly.cytoscape.cytoscapeStrings.`use-credentials`
+import typingsJapgolly.cytoscape.cytoscapeStrings.anonymous
+import typingsJapgolly.cytoscape.cytoscapeStrings.anywhere
+import typingsJapgolly.cytoscape.cytoscapeStrings.auto
+import typingsJapgolly.cytoscape.cytoscapeStrings.autorotate
 import typingsJapgolly.cytoscape.cytoscapeStrings.bottom
 import typingsJapgolly.cytoscape.cytoscapeStrings.center
 import typingsJapgolly.cytoscape.cytoscapeStrings.clipped
 import typingsJapgolly.cytoscape.cytoscapeStrings.contain
 import typingsJapgolly.cytoscape.cytoscapeStrings.cover
-import typingsJapgolly.cytoscape.cytoscapeStrings.displayed
+import typingsJapgolly.cytoscape.cytoscapeStrings.element
 import typingsJapgolly.cytoscape.cytoscapeStrings.ellipsis
+import typingsJapgolly.cytoscape.cytoscapeStrings.hidden
+import typingsJapgolly.cytoscape.cytoscapeStrings.inner
+import typingsJapgolly.cytoscape.cytoscapeStrings.inside
 import typingsJapgolly.cytoscape.cytoscapeStrings.left
+import typingsJapgolly.cytoscape.cytoscapeStrings.manual
 import typingsJapgolly.cytoscape.cytoscapeStrings.no
 import typingsJapgolly.cytoscape.cytoscapeStrings.none
+import typingsJapgolly.cytoscape.cytoscapeStrings.orphan
+import typingsJapgolly.cytoscape.cytoscapeStrings.over
 import typingsJapgolly.cytoscape.cytoscapeStrings.rectangle
 import typingsJapgolly.cytoscape.cytoscapeStrings.repeat
 import typingsJapgolly.cytoscape.cytoscapeStrings.right
 import typingsJapgolly.cytoscape.cytoscapeStrings.roundrectangle
 import typingsJapgolly.cytoscape.cytoscapeStrings.top
 import typingsJapgolly.cytoscape.cytoscapeStrings.visible
+import typingsJapgolly.cytoscape.cytoscapeStrings.whitespace
 import typingsJapgolly.cytoscape.cytoscapeStrings.wrap
 import typingsJapgolly.cytoscape.cytoscapeStrings.yes
+import typingsJapgolly.cytoscape.mod.EdgeSingular
 import typingsJapgolly.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#style/node-body
@@ -36,21 +50,27 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Ghost> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.NodeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.PieChartBackground> */
-trait Node extends js.Object {
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.NodeSingular>> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.TransitionAnimation> */
+trait Node extends StObject {
+  
   /**
     * Blackens the node’s body for values from 0 to 1;
     * whitens the node’s body for values from 0 to -1.
     */
   var `background-blacken`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   /**
     * How background image clipping is handled;
     * may be node for clipped to node shape or none for no clipping.
     */
   var `background-clip`: js.UndefOr[PropertyValueNode[clipped | none]] = js.undefined
+  
   /**
     * The colour of the node’s body.
     */
   var `background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
+  
   /**
     * How the background image is fit to the node;
     * may be none for original size,
@@ -58,6 +78,7 @@ trait Node extends js.Object {
     * or cover to cover the node.
     */
   var `background-fit`: js.UndefOr[PropertyValueNode[none | contain | cover]] = js.undefined
+  
   /**
     * Specifies the height of the image.
     * A percent value (e.g. 50%) may be used to set the image
@@ -68,6 +89,15 @@ trait Node extends js.Object {
     * The auto value is used by default, which uses the height of the image.
     */
   var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * Changes whether the height is calculated relative to the height of the node or
+    * the height in addition to the padding; may be `inner` or `include-padding`.
+    *
+    * If not specified, `include-padding` is used by default.
+    */
+  var `background-height-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
+  
   /**
     * The URL that points to the image that should be used as the node’s background.
     * PNG, JPG, and SVG are supported formats.
@@ -75,29 +105,70 @@ trait Node extends js.Object {
     * thereby saving a HTTP request.
     */
   var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
+  /**
+    * Determines whether background image is within (`inside`)
+    * or over top of the node (`over`).
+    *
+    * The default is set to `inside`.
+    */
+  var `background-image-containment`: js.UndefOr[PropertyValueNode[inside | over]] = js.undefined
+  
+  /**
+    * All images are loaded with a crossorigin attribute which may be `anonymous` or
+    * `use-credentials`.
+    *
+    * The default is set to `anonymous`.
+    */
+  var `background-image-crossorigin`: js.UndefOr[PropertyValueNode[anonymous | `use-credentials`]] = js.undefined
+  
   /**
     * The opacity of the background image. [0 1]
     */
   var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
+  /**
+    * Determines whether background image is smoothed (`yes`, default) or not (`no`).
+    * This is only a hint, and the browser may or may not respect the
+    * value set for this property.
+    */
+  var `background-image-smoothing`: js.UndefOr[PropertyValueNode[yes | no]] = js.undefined
+  
+  /**
+    * The x offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * The y offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
   /**
     * The opacity level of the node’s background colour.
     */
   var `background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   /**
     * The x position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
   /**
     * The y position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
   /**
     * Whether to repeat the background image;
     * may be no-repeat, repeat-x, repeat-y, or repeat.
     */
   var `background-repeat`: js.UndefOr[PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]] = js.undefined
+  
   /**
     * Specifies the width of the image.
     * A percent value (e.g. 50%) may be used to set
@@ -108,283 +179,800 @@ trait Node extends js.Object {
     * The auto value is used by default, which uses the width of the image.
     */
   var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * Changes whether the width is calculated relative to the width of the node or
+    * the width in addition to the padding; may be inner or include-padding.
+    *
+    * If not specified, include-padding is used by default.
+    */
+  var `background-width-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
+  
   var backgroundColor: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
+  
   /**
     * The colour of the node’s border.
     */
   var `border-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
+  
   /**
     * The opacity of the node’s border.
     * A value between [0 1].
     */
   var `border-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   /**
     * The style of the node’s border.
     */
   var `border-style`: js.UndefOr[PropertyValueNode[LineStyle]] = js.undefined
+  
   /**
     * The size of the node’s border.
     */
   var `border-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * Specifies a padding size (e.g. 20) that expands the bounding box of the node in
+    * all directions. This allows for images to be drawn outside of the normal bounding
+    * box of the node when `background-clip` is none. This is useful for small decorations
+    * just outside of the node.
+    *
+    * `bounds-expansions` accepts 1 value (for all directions),
+    * 2 values, ([topAndBottom, leftAndRight]) or 4 values ([top, right, bottom, left]).
+    */
+  var `bounds-expansion`: js.UndefOr[
+    PropertyValueNode[
+      Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ]
+  ] = js.undefined
+  
   var color: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
+  
   /**
     * The CSS content field
     */
   var content: js.UndefOr[PropertyValueNode[String]] = js.undefined
-  var display: js.UndefOr[PropertyValue[NodeSingular, none | displayed]] = js.undefined
+  
+  var display: js.UndefOr[PropertyValue[NodeSingular, none | element]] = js.undefined
+  
+  var events: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
+  
   var `font-family`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
   var `font-size`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
+  
   var `font-style`: js.UndefOr[PropertyValue[NodeSingular, FontStyle]] = js.undefined
+  
   var `font-weight`: js.UndefOr[PropertyValue[NodeSingular, FontWeight]] = js.undefined
+  
   var ghost: js.UndefOr[PropertyValueNode[yes | no]] = js.undefined
+  
   var `ghost-offset-x`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   var `ghost-offset-y`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   var `ghost-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   /**
     * The height of the node’s body.
     * This property can take on the special value label
     * so the height is automatically based on the node’s label.
     */
   var height: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
   var label: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
+  var `line-height`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `min-zoomed-font-size`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var opacity: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `overlay-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
+  
   var `overlay-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
+  
   var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
+  
   var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
   var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
   var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
   var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
   var `pie-i-background-color`: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
+  
   var `pie-i-background-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   var `pie-i-background-size`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
   var `pie-size`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  
   /**
     * The shape of the node’s body.
     */
   var shape: js.UndefOr[PropertyValueNode[NodeShape]] = js.undefined
+  
   var `shape-polygon-points`: js.UndefOr[PropertyValueNode[ShapePolygonPoints]] = js.undefined
+  
   var `source-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
   var `source-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `source-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `source-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
+  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
+  
   var `target-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
   var `target-text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `target-text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `target-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
+  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
+  
   var `text-background-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
+  
   var `text-background-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-background-padding`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
   var `text-background-shape`: js.UndefOr[PropertyValue[NodeSingular, rectangle | roundrectangle]] = js.undefined
+  
   var `text-border-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
+  
   var `text-border-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-border-style`: js.UndefOr[PropertyValue[NodeSingular, LineStyle]] = js.undefined
+  
   var `text-border-width`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-events`: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
+  
   var `text-halign`: js.UndefOr[PropertyValue[NodeSingular, left | center | right]] = js.undefined
+  
+  var `text-justification`: js.UndefOr[PropertyValue[NodeSingular, auto | left | center | right]] = js.undefined
+  
   var `text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-max-width`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
   var `text-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-outline-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
+  
   var `text-outline-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
   var `text-outline-width`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
-  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `text-shadow-blur`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `text-shadow-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
-  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  var `text-shadow-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
+  var `text-overflow-wrap`: js.UndefOr[PropertyValue[NodeSingular, whitespace | anywhere]] = js.undefined
+  
+  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
+  
   var `text-transform`: js.UndefOr[PropertyValue[NodeSingular, TextTranformation]] = js.undefined
+  
   var `text-valign`: js.UndefOr[PropertyValue[NodeSingular, top | center | bottom]] = js.undefined
+  
   var `text-wrap`: js.UndefOr[PropertyValue[NodeSingular, none | wrap | ellipsis]] = js.undefined
-  var visibility: js.UndefOr[PropertyValue[NodeSingular, none | visible]] = js.undefined
+  
+  var `transition-delay`: js.UndefOr[Double] = js.undefined
+  
+  var `transition-duration`: js.UndefOr[Double] = js.undefined
+  
+  var `transition-property`: js.UndefOr[String] = js.undefined
+  
+  var `transition-timing-function`: js.UndefOr[TransitionTimingFunction] = js.undefined
+  
+  var visibility: js.UndefOr[PropertyValue[NodeSingular, hidden | visible]] = js.undefined
+  
   /**
     * The width of the node’s body.
     * This property can take on the special value label
     * so the width is automatically based on the node’s label.
     */
   var width: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  var `z-compound-depth`: js.UndefOr[PropertyValue[NodeSingular, auto | top | bottom | orphan]] = js.undefined
+  
   var `z-index`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
+  var `z-index-compare`: js.UndefOr[PropertyValue[NodeSingular, auto | manual]] = js.undefined
 }
-
 object Node {
-  @scala.inline
-  def apply(
-    `background-blacken`: PropertyValueNode[Double] = null,
-    `background-clip`: PropertyValueNode[clipped | none] = null,
-    `background-color`: PropertyValueNode[Colour] = null,
-    `background-fit`: PropertyValueNode[none | contain | cover] = null,
-    `background-height`: PropertyValueNode[Double | String] = null,
-    `background-image`: PropertyValueNode[String] = null,
-    `background-image-opacity`: PropertyValueNode[Double] = null,
-    `background-opacity`: PropertyValueNode[Double] = null,
-    `background-position-x`: PropertyValueNode[Double | String] = null,
-    `background-position-y`: PropertyValueNode[Double | String] = null,
-    `background-repeat`: PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat] = null,
-    `background-width`: PropertyValueNode[Double | String] = null,
-    backgroundColor: PropertyValueNode[Colour] = null,
-    `border-color`: PropertyValueNode[Colour] = null,
-    `border-opacity`: PropertyValueNode[Double] = null,
-    `border-style`: PropertyValueNode[LineStyle] = null,
-    `border-width`: PropertyValueNode[Double | String] = null,
-    color: PropertyValue[NodeSingular, Colour] = null,
-    content: PropertyValueNode[String] = null,
-    display: PropertyValue[NodeSingular, none | displayed] = null,
-    `font-family`: PropertyValue[NodeSingular, String] = null,
-    `font-size`: PropertyValue[NodeSingular, Double | String] = null,
-    `font-style`: PropertyValue[NodeSingular, FontStyle] = null,
-    `font-weight`: PropertyValue[NodeSingular, FontWeight] = null,
-    ghost: PropertyValueNode[yes | no] = null,
-    `ghost-offset-x`: PropertyValueNode[Double] = null,
-    `ghost-offset-y`: PropertyValueNode[Double] = null,
-    `ghost-opacity`: PropertyValueNode[Double] = null,
-    height: PropertyValueNode[Double | String] = null,
-    label: PropertyValue[NodeSingular, String] = null,
-    `min-zoomed-font-size`: PropertyValue[NodeSingular, Double] = null,
-    opacity: PropertyValue[NodeSingular, Double] = null,
-    `overlay-color`: PropertyValueEdge[Colour] = null,
-    `overlay-opacity`: PropertyValueEdge[Double] = null,
-    `overlay-padding`: PropertyValueEdge[Double | String] = null,
-    `padding-bottom`: PropertyValueNode[String] = null,
-    `padding-left`: PropertyValueNode[String] = null,
-    `padding-right`: PropertyValueNode[String] = null,
-    `padding-top`: PropertyValueNode[String] = null,
-    `pie-i-background-color`: PropertyValueNode[Colour] = null,
-    `pie-i-background-opacity`: PropertyValueNode[Double] = null,
-    `pie-i-background-size`: PropertyValueNode[Double] = null,
-    `pie-size`: PropertyValueNode[String] = null,
-    shape: PropertyValueNode[NodeShape] = null,
-    `shape-polygon-points`: PropertyValueNode[ShapePolygonPoints] = null,
-    `source-label`: PropertyValue[NodeSingular, String] = null,
-    `source-text-margin-x`: PropertyValue[NodeSingular, Double] = null,
-    `source-text-margin-y`: PropertyValue[NodeSingular, Double] = null,
-    `source-text-offset`: PropertyValue[NodeSingular, Double] = null,
-    `source-text-rotation`: PropertyValue[NodeSingular, Double] = null,
-    `target-label`: PropertyValue[NodeSingular, String] = null,
-    `target-text-margin-x`: PropertyValue[NodeSingular, Double] = null,
-    `target-text-margin-y`: PropertyValue[NodeSingular, Double] = null,
-    `target-text-offset`: PropertyValue[NodeSingular, Double] = null,
-    `target-text-rotation`: PropertyValue[NodeSingular, Double] = null,
-    `text-background-color`: PropertyValue[NodeSingular, Colour] = null,
-    `text-background-opacity`: PropertyValue[NodeSingular, Double] = null,
-    `text-background-padding`: PropertyValue[NodeSingular, String] = null,
-    `text-background-shape`: PropertyValue[NodeSingular, rectangle | roundrectangle] = null,
-    `text-border-color`: PropertyValue[NodeSingular, Colour] = null,
-    `text-border-opacity`: PropertyValue[NodeSingular, Double] = null,
-    `text-border-style`: PropertyValue[NodeSingular, LineStyle] = null,
-    `text-border-width`: PropertyValue[NodeSingular, Double] = null,
-    `text-events`: PropertyValue[NodeSingular, yes | no] = null,
-    `text-halign`: PropertyValue[NodeSingular, left | center | right] = null,
-    `text-margin-x`: PropertyValue[NodeSingular, Double] = null,
-    `text-margin-y`: PropertyValue[NodeSingular, Double] = null,
-    `text-max-width`: PropertyValue[NodeSingular, String] = null,
-    `text-opacity`: PropertyValue[NodeSingular, Double] = null,
-    `text-outline-color`: PropertyValue[NodeSingular, Colour] = null,
-    `text-outline-opacity`: PropertyValue[NodeSingular, Double] = null,
-    `text-outline-width`: PropertyValue[NodeSingular, Double | String] = null,
-    `text-rotation`: PropertyValue[NodeSingular, Double] = null,
-    `text-shadow-blur`: PropertyValue[NodeSingular, Double] = null,
-    `text-shadow-color`: PropertyValue[NodeSingular, Colour] = null,
-    `text-shadow-offset-x`: PropertyValue[NodeSingular, Double] = null,
-    `text-shadow-offset-y`: PropertyValue[NodeSingular, Double] = null,
-    `text-shadow-opacity`: PropertyValue[NodeSingular, Double] = null,
-    `text-transform`: PropertyValue[NodeSingular, TextTranformation] = null,
-    `text-valign`: PropertyValue[NodeSingular, top | center | bottom] = null,
-    `text-wrap`: PropertyValue[NodeSingular, none | wrap | ellipsis] = null,
-    visibility: PropertyValue[NodeSingular, none | visible] = null,
-    width: PropertyValueNode[Double | String] = null,
-    `z-index`: PropertyValue[NodeSingular, Double] = null
-  ): Node = {
+  
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal()
-    if (`background-blacken` != null) __obj.updateDynamic("background-blacken")(`background-blacken`.asInstanceOf[js.Any])
-    if (`background-clip` != null) __obj.updateDynamic("background-clip")(`background-clip`.asInstanceOf[js.Any])
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`background-fit` != null) __obj.updateDynamic("background-fit")(`background-fit`.asInstanceOf[js.Any])
-    if (`background-height` != null) __obj.updateDynamic("background-height")(`background-height`.asInstanceOf[js.Any])
-    if (`background-image` != null) __obj.updateDynamic("background-image")(`background-image`.asInstanceOf[js.Any])
-    if (`background-image-opacity` != null) __obj.updateDynamic("background-image-opacity")(`background-image-opacity`.asInstanceOf[js.Any])
-    if (`background-opacity` != null) __obj.updateDynamic("background-opacity")(`background-opacity`.asInstanceOf[js.Any])
-    if (`background-position-x` != null) __obj.updateDynamic("background-position-x")(`background-position-x`.asInstanceOf[js.Any])
-    if (`background-position-y` != null) __obj.updateDynamic("background-position-y")(`background-position-y`.asInstanceOf[js.Any])
-    if (`background-repeat` != null) __obj.updateDynamic("background-repeat")(`background-repeat`.asInstanceOf[js.Any])
-    if (`background-width` != null) __obj.updateDynamic("background-width")(`background-width`.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
-    if (`border-opacity` != null) __obj.updateDynamic("border-opacity")(`border-opacity`.asInstanceOf[js.Any])
-    if (`border-style` != null) __obj.updateDynamic("border-style")(`border-style`.asInstanceOf[js.Any])
-    if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
-    if (`font-size` != null) __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
-    if (`font-style` != null) __obj.updateDynamic("font-style")(`font-style`.asInstanceOf[js.Any])
-    if (`font-weight` != null) __obj.updateDynamic("font-weight")(`font-weight`.asInstanceOf[js.Any])
-    if (ghost != null) __obj.updateDynamic("ghost")(ghost.asInstanceOf[js.Any])
-    if (`ghost-offset-x` != null) __obj.updateDynamic("ghost-offset-x")(`ghost-offset-x`.asInstanceOf[js.Any])
-    if (`ghost-offset-y` != null) __obj.updateDynamic("ghost-offset-y")(`ghost-offset-y`.asInstanceOf[js.Any])
-    if (`ghost-opacity` != null) __obj.updateDynamic("ghost-opacity")(`ghost-opacity`.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (`min-zoomed-font-size` != null) __obj.updateDynamic("min-zoomed-font-size")(`min-zoomed-font-size`.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (`overlay-color` != null) __obj.updateDynamic("overlay-color")(`overlay-color`.asInstanceOf[js.Any])
-    if (`overlay-opacity` != null) __obj.updateDynamic("overlay-opacity")(`overlay-opacity`.asInstanceOf[js.Any])
-    if (`overlay-padding` != null) __obj.updateDynamic("overlay-padding")(`overlay-padding`.asInstanceOf[js.Any])
-    if (`padding-bottom` != null) __obj.updateDynamic("padding-bottom")(`padding-bottom`.asInstanceOf[js.Any])
-    if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
-    if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
-    if (`padding-top` != null) __obj.updateDynamic("padding-top")(`padding-top`.asInstanceOf[js.Any])
-    if (`pie-i-background-color` != null) __obj.updateDynamic("pie-i-background-color")(`pie-i-background-color`.asInstanceOf[js.Any])
-    if (`pie-i-background-opacity` != null) __obj.updateDynamic("pie-i-background-opacity")(`pie-i-background-opacity`.asInstanceOf[js.Any])
-    if (`pie-i-background-size` != null) __obj.updateDynamic("pie-i-background-size")(`pie-i-background-size`.asInstanceOf[js.Any])
-    if (`pie-size` != null) __obj.updateDynamic("pie-size")(`pie-size`.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (`shape-polygon-points` != null) __obj.updateDynamic("shape-polygon-points")(`shape-polygon-points`.asInstanceOf[js.Any])
-    if (`source-label` != null) __obj.updateDynamic("source-label")(`source-label`.asInstanceOf[js.Any])
-    if (`source-text-margin-x` != null) __obj.updateDynamic("source-text-margin-x")(`source-text-margin-x`.asInstanceOf[js.Any])
-    if (`source-text-margin-y` != null) __obj.updateDynamic("source-text-margin-y")(`source-text-margin-y`.asInstanceOf[js.Any])
-    if (`source-text-offset` != null) __obj.updateDynamic("source-text-offset")(`source-text-offset`.asInstanceOf[js.Any])
-    if (`source-text-rotation` != null) __obj.updateDynamic("source-text-rotation")(`source-text-rotation`.asInstanceOf[js.Any])
-    if (`target-label` != null) __obj.updateDynamic("target-label")(`target-label`.asInstanceOf[js.Any])
-    if (`target-text-margin-x` != null) __obj.updateDynamic("target-text-margin-x")(`target-text-margin-x`.asInstanceOf[js.Any])
-    if (`target-text-margin-y` != null) __obj.updateDynamic("target-text-margin-y")(`target-text-margin-y`.asInstanceOf[js.Any])
-    if (`target-text-offset` != null) __obj.updateDynamic("target-text-offset")(`target-text-offset`.asInstanceOf[js.Any])
-    if (`target-text-rotation` != null) __obj.updateDynamic("target-text-rotation")(`target-text-rotation`.asInstanceOf[js.Any])
-    if (`text-background-color` != null) __obj.updateDynamic("text-background-color")(`text-background-color`.asInstanceOf[js.Any])
-    if (`text-background-opacity` != null) __obj.updateDynamic("text-background-opacity")(`text-background-opacity`.asInstanceOf[js.Any])
-    if (`text-background-padding` != null) __obj.updateDynamic("text-background-padding")(`text-background-padding`.asInstanceOf[js.Any])
-    if (`text-background-shape` != null) __obj.updateDynamic("text-background-shape")(`text-background-shape`.asInstanceOf[js.Any])
-    if (`text-border-color` != null) __obj.updateDynamic("text-border-color")(`text-border-color`.asInstanceOf[js.Any])
-    if (`text-border-opacity` != null) __obj.updateDynamic("text-border-opacity")(`text-border-opacity`.asInstanceOf[js.Any])
-    if (`text-border-style` != null) __obj.updateDynamic("text-border-style")(`text-border-style`.asInstanceOf[js.Any])
-    if (`text-border-width` != null) __obj.updateDynamic("text-border-width")(`text-border-width`.asInstanceOf[js.Any])
-    if (`text-events` != null) __obj.updateDynamic("text-events")(`text-events`.asInstanceOf[js.Any])
-    if (`text-halign` != null) __obj.updateDynamic("text-halign")(`text-halign`.asInstanceOf[js.Any])
-    if (`text-margin-x` != null) __obj.updateDynamic("text-margin-x")(`text-margin-x`.asInstanceOf[js.Any])
-    if (`text-margin-y` != null) __obj.updateDynamic("text-margin-y")(`text-margin-y`.asInstanceOf[js.Any])
-    if (`text-max-width` != null) __obj.updateDynamic("text-max-width")(`text-max-width`.asInstanceOf[js.Any])
-    if (`text-opacity` != null) __obj.updateDynamic("text-opacity")(`text-opacity`.asInstanceOf[js.Any])
-    if (`text-outline-color` != null) __obj.updateDynamic("text-outline-color")(`text-outline-color`.asInstanceOf[js.Any])
-    if (`text-outline-opacity` != null) __obj.updateDynamic("text-outline-opacity")(`text-outline-opacity`.asInstanceOf[js.Any])
-    if (`text-outline-width` != null) __obj.updateDynamic("text-outline-width")(`text-outline-width`.asInstanceOf[js.Any])
-    if (`text-rotation` != null) __obj.updateDynamic("text-rotation")(`text-rotation`.asInstanceOf[js.Any])
-    if (`text-shadow-blur` != null) __obj.updateDynamic("text-shadow-blur")(`text-shadow-blur`.asInstanceOf[js.Any])
-    if (`text-shadow-color` != null) __obj.updateDynamic("text-shadow-color")(`text-shadow-color`.asInstanceOf[js.Any])
-    if (`text-shadow-offset-x` != null) __obj.updateDynamic("text-shadow-offset-x")(`text-shadow-offset-x`.asInstanceOf[js.Any])
-    if (`text-shadow-offset-y` != null) __obj.updateDynamic("text-shadow-offset-y")(`text-shadow-offset-y`.asInstanceOf[js.Any])
-    if (`text-shadow-opacity` != null) __obj.updateDynamic("text-shadow-opacity")(`text-shadow-opacity`.asInstanceOf[js.Any])
-    if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
-    if (`text-valign` != null) __obj.updateDynamic("text-valign")(`text-valign`.asInstanceOf[js.Any])
-    if (`text-wrap` != null) __obj.updateDynamic("text-wrap")(`text-wrap`.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (`z-index` != null) __obj.updateDynamic("z-index")(`z-index`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  
+  extension [Self <: Node](x: Self) {
+    
+    inline def `setBackground-blacken`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-blacken", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-blackenFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-blacken", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-blackenUndefined`: Self = StObject.set(x, "background-blacken", js.undefined)
+    
+    inline def `setBackground-clip`(value: PropertyValueNode[clipped | none]): Self = StObject.set(x, "background-clip", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-clipFunction1`(value: NodeSingular => clipped | none): Self = StObject.set(x, "background-clip", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-clipUndefined`: Self = StObject.set(x, "background-clip", js.undefined)
+    
+    inline def `setBackground-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "background-color", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    
+    inline def `setBackground-fit`(value: PropertyValueNode[none | contain | cover]): Self = StObject.set(x, "background-fit", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-fitFunction1`(value: NodeSingular => none | contain | cover): Self = StObject.set(x, "background-fit", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-fitUndefined`: Self = StObject.set(x, "background-fit", js.undefined)
+    
+    inline def `setBackground-height`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-height", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-height-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-height-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-height-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-height-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-height-relative-toUndefined`: Self = StObject.set(x, "background-height-relative-to", js.undefined)
+    
+    inline def `setBackground-heightFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-height", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-heightUndefined`: Self = StObject.set(x, "background-height", js.undefined)
+    
+    inline def `setBackground-image`(value: PropertyValueNode[String]): Self = StObject.set(x, "background-image", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containment`(value: PropertyValueNode[inside | over]): Self = StObject.set(x, "background-image-containment", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containmentFunction1`(value: NodeSingular => inside | over): Self = StObject.set(x, "background-image-containment", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-containmentUndefined`: Self = StObject.set(x, "background-image-containment", js.undefined)
+    
+    inline def `setBackground-image-crossorigin`(value: PropertyValueNode[anonymous | `use-credentials`]): Self = StObject.set(x, "background-image-crossorigin", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-crossoriginFunction1`(value: NodeSingular => anonymous | `use-credentials`): Self = StObject.set(x, "background-image-crossorigin", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-crossoriginUndefined`: Self = StObject.set(x, "background-image-crossorigin", js.undefined)
+    
+    inline def `setBackground-image-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-image-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-image-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-opacityUndefined`: Self = StObject.set(x, "background-image-opacity", js.undefined)
+    
+    inline def `setBackground-image-smoothing`(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "background-image-smoothing", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-smoothingFunction1`(value: NodeSingular => yes | no): Self = StObject.set(x, "background-image-smoothing", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-smoothingUndefined`: Self = StObject.set(x, "background-image-smoothing", js.undefined)
+    
+    inline def `setBackground-imageFunction1`(value: NodeSingular => String): Self = StObject.set(x, "background-image", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-imageUndefined`: Self = StObject.set(x, "background-image", js.undefined)
+    
+    inline def `setBackground-offset-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-x", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-xFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-x", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-xUndefined`: Self = StObject.set(x, "background-offset-x", js.undefined)
+    
+    inline def `setBackground-offset-y`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-y", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-yFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-y", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-yUndefined`: Self = StObject.set(x, "background-offset-y", js.undefined)
+    
+    inline def `setBackground-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "background-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-opacityUndefined`: Self = StObject.set(x, "background-opacity", js.undefined)
+    
+    inline def `setBackground-position-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-position-x", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-position-xFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-position-x", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-position-xUndefined`: Self = StObject.set(x, "background-position-x", js.undefined)
+    
+    inline def `setBackground-position-y`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-position-y", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-position-yFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-position-y", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-position-yUndefined`: Self = StObject.set(x, "background-position-y", js.undefined)
+    
+    inline def `setBackground-repeat`(value: PropertyValueNode[`no-repeat` | `repeat-x` | `repeat-y` | repeat]): Self = StObject.set(x, "background-repeat", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-repeatFunction1`(value: NodeSingular => `no-repeat` | `repeat-x` | `repeat-y` | repeat): Self = StObject.set(x, "background-repeat", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-repeatUndefined`: Self = StObject.set(x, "background-repeat", js.undefined)
+    
+    inline def `setBackground-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-width", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-width-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-width-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-width-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-width-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-width-relative-toUndefined`: Self = StObject.set(x, "background-width-relative-to", js.undefined)
+    
+    inline def `setBackground-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-width", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-widthUndefined`: Self = StObject.set(x, "background-width", js.undefined)
+    
+    inline def setBackgroundColor(value: PropertyValueNode[Colour]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorFunction1(value: NodeSingular => Colour): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def `setBorder-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "border-color", js.Any.fromFunction1(value))
+    
+    inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
+    
+    inline def `setBorder-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "border-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "border-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setBorder-opacityUndefined`: Self = StObject.set(x, "border-opacity", js.undefined)
+    
+    inline def `setBorder-style`(value: PropertyValueNode[LineStyle]): Self = StObject.set(x, "border-style", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-styleFunction1`(value: NodeSingular => LineStyle): Self = StObject.set(x, "border-style", js.Any.fromFunction1(value))
+    
+    inline def `setBorder-styleUndefined`: Self = StObject.set(x, "border-style", js.undefined)
+    
+    inline def `setBorder-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "border-width", js.Any.fromFunction1(value))
+    
+    inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
+    
+    inline def `setBounds-expansion`(
+      value: PropertyValueNode[
+          Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+        ]
+    ): Self = StObject.set(x, "bounds-expansion", value.asInstanceOf[js.Any])
+    
+    inline def `setBounds-expansionFunction1`(
+      value: NodeSingular => Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ): Self = StObject.set(x, "bounds-expansion", js.Any.fromFunction1(value))
+    
+    inline def `setBounds-expansionUndefined`: Self = StObject.set(x, "bounds-expansion", js.undefined)
+    
+    inline def setColor(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorFunction1(value: NodeSingular => Colour): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setContent(value: PropertyValueNode[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentFunction1(value: NodeSingular => String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setDisplay(value: PropertyValue[NodeSingular, none | element]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFunction1(value: NodeSingular => none | element): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setEvents(value: PropertyValue[NodeSingular, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsFunction1(value: NodeSingular => yes | no): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def `setFont-family`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "font-family", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-familyFunction1`(value: NodeSingular => String): Self = StObject.set(x, "font-family", js.Any.fromFunction1(value))
+    
+    inline def `setFont-familyUndefined`: Self = StObject.set(x, "font-family", js.undefined)
+    
+    inline def `setFont-size`(value: PropertyValue[NodeSingular, Double | String]): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-sizeFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "font-size", js.Any.fromFunction1(value))
+    
+    inline def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
+    
+    inline def `setFont-style`(value: PropertyValue[NodeSingular, FontStyle]): Self = StObject.set(x, "font-style", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-styleFunction1`(value: NodeSingular => FontStyle): Self = StObject.set(x, "font-style", js.Any.fromFunction1(value))
+    
+    inline def `setFont-styleUndefined`: Self = StObject.set(x, "font-style", js.undefined)
+    
+    inline def `setFont-weight`(value: PropertyValue[NodeSingular, FontWeight]): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-weightFunction1`(value: NodeSingular => FontWeight): Self = StObject.set(x, "font-weight", js.Any.fromFunction1(value))
+    
+    inline def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
+    
+    inline def setGhost(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+    
+    inline def `setGhost-offset-x`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-x", value.asInstanceOf[js.Any])
+    
+    inline def `setGhost-offset-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-x", js.Any.fromFunction1(value))
+    
+    inline def `setGhost-offset-xUndefined`: Self = StObject.set(x, "ghost-offset-x", js.undefined)
+    
+    inline def `setGhost-offset-y`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-offset-y", value.asInstanceOf[js.Any])
+    
+    inline def `setGhost-offset-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-offset-y", js.Any.fromFunction1(value))
+    
+    inline def `setGhost-offset-yUndefined`: Self = StObject.set(x, "ghost-offset-y", js.undefined)
+    
+    inline def `setGhost-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "ghost-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setGhost-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "ghost-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setGhost-opacityUndefined`: Self = StObject.set(x, "ghost-opacity", js.undefined)
+    
+    inline def setGhostFunction1(value: NodeSingular => yes | no): Self = StObject.set(x, "ghost", js.Any.fromFunction1(value))
+    
+    inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
+    
+    inline def setHeight(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightFunction1(value: NodeSingular => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction1(value))
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLabel(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelFunction1(value: NodeSingular => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def `setLine-height`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-heightFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "line-height", js.Any.fromFunction1(value))
+    
+    inline def `setLine-heightUndefined`: Self = StObject.set(x, "line-height", js.undefined)
+    
+    inline def `setMin-zoomed-font-size`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "min-zoomed-font-size", value.asInstanceOf[js.Any])
+    
+    inline def `setMin-zoomed-font-sizeFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "min-zoomed-font-size", js.Any.fromFunction1(value))
+    
+    inline def `setMin-zoomed-font-sizeUndefined`: Self = StObject.set(x, "min-zoomed-font-size", js.undefined)
+    
+    inline def setOpacity(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityFunction1(value: NodeSingular => Double): Self = StObject.set(x, "opacity", js.Any.fromFunction1(value))
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "overlay-color", value.asInstanceOf[js.Any])
+    
+    inline def `setOverlay-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "overlay-color", js.Any.fromFunction1(value))
+    
+    inline def `setOverlay-colorUndefined`: Self = StObject.set(x, "overlay-color", js.undefined)
+    
+    inline def `setOverlay-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "overlay-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setOverlay-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "overlay-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setOverlay-opacityUndefined`: Self = StObject.set(x, "overlay-opacity", js.undefined)
+    
+    inline def `setOverlay-padding`(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "overlay-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setOverlay-paddingFunction1`(value: EdgeSingular => Double | String): Self = StObject.set(x, "overlay-padding", js.Any.fromFunction1(value))
+    
+    inline def `setOverlay-paddingUndefined`: Self = StObject.set(x, "overlay-padding", js.undefined)
+    
+    inline def `setPadding-bottom`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-bottom", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-bottomFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-bottom", js.Any.fromFunction1(value))
+    
+    inline def `setPadding-bottomUndefined`: Self = StObject.set(x, "padding-bottom", js.undefined)
+    
+    inline def `setPadding-left`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-leftFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-left", js.Any.fromFunction1(value))
+    
+    inline def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
+    
+    inline def `setPadding-right`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-rightFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-right", js.Any.fromFunction1(value))
+    
+    inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
+    
+    inline def `setPadding-top`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-top", value.asInstanceOf[js.Any])
+    
+    inline def `setPadding-topFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-top", js.Any.fromFunction1(value))
+    
+    inline def `setPadding-topUndefined`: Self = StObject.set(x, "padding-top", js.undefined)
+    
+    inline def `setPie-i-background-color`(value: PropertyValueNode[Colour]): Self = StObject.set(x, "pie-i-background-color", value.asInstanceOf[js.Any])
+    
+    inline def `setPie-i-background-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "pie-i-background-color", js.Any.fromFunction1(value))
+    
+    inline def `setPie-i-background-colorUndefined`: Self = StObject.set(x, "pie-i-background-color", js.undefined)
+    
+    inline def `setPie-i-background-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setPie-i-background-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setPie-i-background-opacityUndefined`: Self = StObject.set(x, "pie-i-background-opacity", js.undefined)
+    
+    inline def `setPie-i-background-size`(value: PropertyValueNode[Double]): Self = StObject.set(x, "pie-i-background-size", value.asInstanceOf[js.Any])
+    
+    inline def `setPie-i-background-sizeFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "pie-i-background-size", js.Any.fromFunction1(value))
+    
+    inline def `setPie-i-background-sizeUndefined`: Self = StObject.set(x, "pie-i-background-size", js.undefined)
+    
+    inline def `setPie-size`(value: PropertyValueNode[String]): Self = StObject.set(x, "pie-size", value.asInstanceOf[js.Any])
+    
+    inline def `setPie-sizeFunction1`(value: NodeSingular => String): Self = StObject.set(x, "pie-size", js.Any.fromFunction1(value))
+    
+    inline def `setPie-sizeUndefined`: Self = StObject.set(x, "pie-size", js.undefined)
+    
+    inline def setShape(value: PropertyValueNode[NodeShape]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def `setShape-polygon-points`(value: PropertyValueNode[ShapePolygonPoints]): Self = StObject.set(x, "shape-polygon-points", value.asInstanceOf[js.Any])
+    
+    inline def `setShape-polygon-pointsFunction1`(value: NodeSingular => ShapePolygonPoints): Self = StObject.set(x, "shape-polygon-points", js.Any.fromFunction1(value))
+    
+    inline def `setShape-polygon-pointsUndefined`: Self = StObject.set(x, "shape-polygon-points", js.undefined)
+    
+    inline def setShapeFunction1(value: NodeSingular => NodeShape): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def `setSource-label`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "source-label", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-labelFunction1`(value: NodeSingular => String): Self = StObject.set(x, "source-label", js.Any.fromFunction1(value))
+    
+    inline def `setSource-labelUndefined`: Self = StObject.set(x, "source-label", js.undefined)
+    
+    inline def `setSource-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-margin-x", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-text-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-margin-x", js.Any.fromFunction1(value))
+    
+    inline def `setSource-text-margin-xUndefined`: Self = StObject.set(x, "source-text-margin-x", js.undefined)
+    
+    inline def `setSource-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-margin-y", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-text-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-margin-y", js.Any.fromFunction1(value))
+    
+    inline def `setSource-text-margin-yUndefined`: Self = StObject.set(x, "source-text-margin-y", js.undefined)
+    
+    inline def `setSource-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-offset", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-text-offsetFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-offset", js.Any.fromFunction1(value))
+    
+    inline def `setSource-text-offsetUndefined`: Self = StObject.set(x, "source-text-offset", js.undefined)
+    
+    inline def `setSource-text-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
+    
+    inline def `setSource-text-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
+    
+    inline def `setSource-text-rotationUndefined`: Self = StObject.set(x, "source-text-rotation", js.undefined)
+    
+    inline def `setTarget-label`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "target-label", value.asInstanceOf[js.Any])
+    
+    inline def `setTarget-labelFunction1`(value: NodeSingular => String): Self = StObject.set(x, "target-label", js.Any.fromFunction1(value))
+    
+    inline def `setTarget-labelUndefined`: Self = StObject.set(x, "target-label", js.undefined)
+    
+    inline def `setTarget-text-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-margin-x", value.asInstanceOf[js.Any])
+    
+    inline def `setTarget-text-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-margin-x", js.Any.fromFunction1(value))
+    
+    inline def `setTarget-text-margin-xUndefined`: Self = StObject.set(x, "target-text-margin-x", js.undefined)
+    
+    inline def `setTarget-text-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-margin-y", value.asInstanceOf[js.Any])
+    
+    inline def `setTarget-text-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-margin-y", js.Any.fromFunction1(value))
+    
+    inline def `setTarget-text-margin-yUndefined`: Self = StObject.set(x, "target-text-margin-y", js.undefined)
+    
+    inline def `setTarget-text-offset`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-offset", value.asInstanceOf[js.Any])
+    
+    inline def `setTarget-text-offsetFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-offset", js.Any.fromFunction1(value))
+    
+    inline def `setTarget-text-offsetUndefined`: Self = StObject.set(x, "target-text-offset", js.undefined)
+    
+    inline def `setTarget-text-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
+    
+    inline def `setTarget-text-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
+    
+    inline def `setTarget-text-rotationUndefined`: Self = StObject.set(x, "target-text-rotation", js.undefined)
+    
+    inline def `setText-background-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-background-color", value.asInstanceOf[js.Any])
+    
+    inline def `setText-background-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-background-color", js.Any.fromFunction1(value))
+    
+    inline def `setText-background-colorUndefined`: Self = StObject.set(x, "text-background-color", js.undefined)
+    
+    inline def `setText-background-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-background-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setText-background-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-background-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setText-background-opacityUndefined`: Self = StObject.set(x, "text-background-opacity", js.undefined)
+    
+    inline def `setText-background-padding`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "text-background-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setText-background-paddingFunction1`(value: NodeSingular => String): Self = StObject.set(x, "text-background-padding", js.Any.fromFunction1(value))
+    
+    inline def `setText-background-paddingUndefined`: Self = StObject.set(x, "text-background-padding", js.undefined)
+    
+    inline def `setText-background-shape`(value: PropertyValue[NodeSingular, rectangle | roundrectangle]): Self = StObject.set(x, "text-background-shape", value.asInstanceOf[js.Any])
+    
+    inline def `setText-background-shapeFunction1`(value: NodeSingular => rectangle | roundrectangle): Self = StObject.set(x, "text-background-shape", js.Any.fromFunction1(value))
+    
+    inline def `setText-background-shapeUndefined`: Self = StObject.set(x, "text-background-shape", js.undefined)
+    
+    inline def `setText-border-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-border-color", value.asInstanceOf[js.Any])
+    
+    inline def `setText-border-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-border-color", js.Any.fromFunction1(value))
+    
+    inline def `setText-border-colorUndefined`: Self = StObject.set(x, "text-border-color", js.undefined)
+    
+    inline def `setText-border-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-border-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setText-border-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-border-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setText-border-opacityUndefined`: Self = StObject.set(x, "text-border-opacity", js.undefined)
+    
+    inline def `setText-border-style`(value: PropertyValue[NodeSingular, LineStyle]): Self = StObject.set(x, "text-border-style", value.asInstanceOf[js.Any])
+    
+    inline def `setText-border-styleFunction1`(value: NodeSingular => LineStyle): Self = StObject.set(x, "text-border-style", js.Any.fromFunction1(value))
+    
+    inline def `setText-border-styleUndefined`: Self = StObject.set(x, "text-border-style", js.undefined)
+    
+    inline def `setText-border-width`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-border-width", value.asInstanceOf[js.Any])
+    
+    inline def `setText-border-widthFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-border-width", js.Any.fromFunction1(value))
+    
+    inline def `setText-border-widthUndefined`: Self = StObject.set(x, "text-border-width", js.undefined)
+    
+    inline def `setText-events`(value: PropertyValue[NodeSingular, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
+    
+    inline def `setText-eventsFunction1`(value: NodeSingular => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
+    
+    inline def `setText-eventsUndefined`: Self = StObject.set(x, "text-events", js.undefined)
+    
+    inline def `setText-halign`(value: PropertyValue[NodeSingular, left | center | right]): Self = StObject.set(x, "text-halign", value.asInstanceOf[js.Any])
+    
+    inline def `setText-halignFunction1`(value: NodeSingular => left | center | right): Self = StObject.set(x, "text-halign", js.Any.fromFunction1(value))
+    
+    inline def `setText-halignUndefined`: Self = StObject.set(x, "text-halign", js.undefined)
+    
+    inline def `setText-justification`(value: PropertyValue[NodeSingular, auto | left | center | right]): Self = StObject.set(x, "text-justification", value.asInstanceOf[js.Any])
+    
+    inline def `setText-justificationFunction1`(value: NodeSingular => auto | left | center | right): Self = StObject.set(x, "text-justification", js.Any.fromFunction1(value))
+    
+    inline def `setText-justificationUndefined`: Self = StObject.set(x, "text-justification", js.undefined)
+    
+    inline def `setText-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-margin-x", value.asInstanceOf[js.Any])
+    
+    inline def `setText-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-margin-x", js.Any.fromFunction1(value))
+    
+    inline def `setText-margin-xUndefined`: Self = StObject.set(x, "text-margin-x", js.undefined)
+    
+    inline def `setText-margin-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-margin-y", value.asInstanceOf[js.Any])
+    
+    inline def `setText-margin-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-margin-y", js.Any.fromFunction1(value))
+    
+    inline def `setText-margin-yUndefined`: Self = StObject.set(x, "text-margin-y", js.undefined)
+    
+    inline def `setText-max-width`(value: PropertyValue[NodeSingular, String]): Self = StObject.set(x, "text-max-width", value.asInstanceOf[js.Any])
+    
+    inline def `setText-max-widthFunction1`(value: NodeSingular => String): Self = StObject.set(x, "text-max-width", js.Any.fromFunction1(value))
+    
+    inline def `setText-max-widthUndefined`: Self = StObject.set(x, "text-max-width", js.undefined)
+    
+    inline def `setText-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setText-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setText-opacityUndefined`: Self = StObject.set(x, "text-opacity", js.undefined)
+    
+    inline def `setText-outline-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-outline-color", value.asInstanceOf[js.Any])
+    
+    inline def `setText-outline-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-outline-color", js.Any.fromFunction1(value))
+    
+    inline def `setText-outline-colorUndefined`: Self = StObject.set(x, "text-outline-color", js.undefined)
+    
+    inline def `setText-outline-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-outline-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setText-outline-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-outline-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setText-outline-opacityUndefined`: Self = StObject.set(x, "text-outline-opacity", js.undefined)
+    
+    inline def `setText-outline-width`(value: PropertyValue[NodeSingular, Double | String]): Self = StObject.set(x, "text-outline-width", value.asInstanceOf[js.Any])
+    
+    inline def `setText-outline-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "text-outline-width", js.Any.fromFunction1(value))
+    
+    inline def `setText-outline-widthUndefined`: Self = StObject.set(x, "text-outline-width", js.undefined)
+    
+    inline def `setText-overflow-wrap`(value: PropertyValue[NodeSingular, whitespace | anywhere]): Self = StObject.set(x, "text-overflow-wrap", value.asInstanceOf[js.Any])
+    
+    inline def `setText-overflow-wrapFunction1`(value: NodeSingular => whitespace | anywhere): Self = StObject.set(x, "text-overflow-wrap", js.Any.fromFunction1(value))
+    
+    inline def `setText-overflow-wrapUndefined`: Self = StObject.set(x, "text-overflow-wrap", js.undefined)
+    
+    inline def `setText-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    
+    inline def `setText-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
+    
+    inline def `setText-rotationUndefined`: Self = StObject.set(x, "text-rotation", js.undefined)
+    
+    inline def `setText-transform`(value: PropertyValue[NodeSingular, TextTranformation]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
+    
+    inline def `setText-transformFunction1`(value: NodeSingular => TextTranformation): Self = StObject.set(x, "text-transform", js.Any.fromFunction1(value))
+    
+    inline def `setText-transformUndefined`: Self = StObject.set(x, "text-transform", js.undefined)
+    
+    inline def `setText-valign`(value: PropertyValue[NodeSingular, top | center | bottom]): Self = StObject.set(x, "text-valign", value.asInstanceOf[js.Any])
+    
+    inline def `setText-valignFunction1`(value: NodeSingular => top | center | bottom): Self = StObject.set(x, "text-valign", js.Any.fromFunction1(value))
+    
+    inline def `setText-valignUndefined`: Self = StObject.set(x, "text-valign", js.undefined)
+    
+    inline def `setText-wrap`(value: PropertyValue[NodeSingular, none | wrap | ellipsis]): Self = StObject.set(x, "text-wrap", value.asInstanceOf[js.Any])
+    
+    inline def `setText-wrapFunction1`(value: NodeSingular => none | wrap | ellipsis): Self = StObject.set(x, "text-wrap", js.Any.fromFunction1(value))
+    
+    inline def `setText-wrapUndefined`: Self = StObject.set(x, "text-wrap", js.undefined)
+    
+    inline def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-delayUndefined`: Self = StObject.set(x, "transition-delay", js.undefined)
+    
+    inline def `setTransition-duration`(value: Double): Self = StObject.set(x, "transition-duration", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-durationUndefined`: Self = StObject.set(x, "transition-duration", js.undefined)
+    
+    inline def `setTransition-property`(value: String): Self = StObject.set(x, "transition-property", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-propertyUndefined`: Self = StObject.set(x, "transition-property", js.undefined)
+    
+    inline def `setTransition-timing-function`(value: TransitionTimingFunction): Self = StObject.set(x, "transition-timing-function", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-timing-functionUndefined`: Self = StObject.set(x, "transition-timing-function", js.undefined)
+    
+    inline def setVisibility(value: PropertyValue[NodeSingular, hidden | visible]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityFunction1(value: NodeSingular => hidden | visible): Self = StObject.set(x, "visibility", js.Any.fromFunction1(value))
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    
+    inline def setWidth(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthFunction1(value: NodeSingular => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def `setZ-compound-depth`(value: PropertyValue[NodeSingular, auto | top | bottom | orphan]): Self = StObject.set(x, "z-compound-depth", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-compound-depthFunction1`(value: NodeSingular => auto | top | bottom | orphan): Self = StObject.set(x, "z-compound-depth", js.Any.fromFunction1(value))
+    
+    inline def `setZ-compound-depthUndefined`: Self = StObject.set(x, "z-compound-depth", js.undefined)
+    
+    inline def `setZ-index`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compare`(value: PropertyValue[NodeSingular, auto | manual]): Self = StObject.set(x, "z-index-compare", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compareFunction1`(value: NodeSingular => auto | manual): Self = StObject.set(x, "z-index-compare", js.Any.fromFunction1(value))
+    
+    inline def `setZ-index-compareUndefined`: Self = StObject.set(x, "z-index-compare", js.undefined)
+    
+    inline def `setZ-indexFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
+    
+    inline def `setZ-indexUndefined`: Self = StObject.set(x, "z-index", js.undefined)
+  }
 }
-

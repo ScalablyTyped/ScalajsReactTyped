@@ -1,12 +1,12 @@
 package typingsJapgolly.vis.mod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpenClusterOptions extends js.Object {
+trait OpenClusterOptions extends StObject {
+  
   /**
     * A function that can be used to manually position the nodes after the cluster is opened.
     * The containedNodesPositions contain the positions of the nodes in the cluster at the
@@ -21,13 +21,15 @@ trait OpenClusterOptions extends js.Object {
     */
   def releaseFunction(clusterPosition: Position, containedNodesPositions: StringDictionary[Position]): StringDictionary[Position]
 }
-
 object OpenClusterOptions {
-  @scala.inline
-  def apply(releaseFunction: (Position, StringDictionary[Position]) => CallbackTo[StringDictionary[Position]]): OpenClusterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("releaseFunction")(js.Any.fromFunction2((t0: typingsJapgolly.vis.mod.Position, t1: org.scalablytyped.runtime.StringDictionary[typingsJapgolly.vis.mod.Position]) => releaseFunction(t0, t1).runNow()))
+  
+  inline def apply(releaseFunction: (Position, StringDictionary[Position]) => StringDictionary[Position]): OpenClusterOptions = {
+    val __obj = js.Dynamic.literal(releaseFunction = js.Any.fromFunction2(releaseFunction))
     __obj.asInstanceOf[OpenClusterOptions]
   }
+  
+  extension [Self <: OpenClusterOptions](x: Self) {
+    
+    inline def setReleaseFunction(value: (Position, StringDictionary[Position]) => StringDictionary[Position]): Self = StObject.set(x, "releaseFunction", js.Any.fromFunction2(value))
+  }
 }
-

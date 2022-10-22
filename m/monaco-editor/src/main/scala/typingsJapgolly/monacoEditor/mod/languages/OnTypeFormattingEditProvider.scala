@@ -1,15 +1,16 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnTypeFormattingEditProvider extends js.Object {
+trait OnTypeFormattingEditProvider extends StObject {
+  
   var autoFormatTriggerCharacters: js.Array[String]
+  
   /**
     * Provide formatting edits after a character has been typed.
     *
@@ -25,16 +26,24 @@ trait OnTypeFormattingEditProvider extends js.Object {
     token: CancellationToken
   ): ProviderResult[js.Array[TextEdit]]
 }
-
 object OnTypeFormattingEditProvider {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     autoFormatTriggerCharacters: js.Array[String],
-    provideOnTypeFormattingEdits: (ITextModel, Position, String, FormattingOptions, CancellationToken) => CallbackTo[ProviderResult[js.Array[TextEdit]]]
+    provideOnTypeFormattingEdits: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): OnTypeFormattingEditProvider = {
-    val __obj = js.Dynamic.literal(autoFormatTriggerCharacters = autoFormatTriggerCharacters.asInstanceOf[js.Any])
-    __obj.updateDynamic("provideOnTypeFormattingEdits")(js.Any.fromFunction5((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Position, t2: java.lang.String, t3: typingsJapgolly.monacoEditor.mod.languages.FormattingOptions, t4: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideOnTypeFormattingEdits(t0, t1, t2, t3, t4).runNow()))
+    val __obj = js.Dynamic.literal(autoFormatTriggerCharacters = autoFormatTriggerCharacters.asInstanceOf[js.Any], provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
+  
+  extension [Self <: OnTypeFormattingEditProvider](x: Self) {
+    
+    inline def setAutoFormatTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "autoFormatTriggerCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFormatTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "autoFormatTriggerCharacters", js.Array(value*))
+    
+    inline def setProvideOnTypeFormattingEdits(
+      value: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
+    ): Self = StObject.set(x, "provideOnTypeFormattingEdits", js.Any.fromFunction5(value))
+  }
 }
-

@@ -1,23 +1,29 @@
 package typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about something that went wrong. */
-trait WarningInfo extends js.Object {
+trait WarningInfo extends StObject {
+  
   /** Information about the error. */
   var description: String
+  
   /** Codified warning string, such as `limit_reached`. */
   var warning_id: String
 }
-
 object WarningInfo {
-  @scala.inline
-  def apply(description: String, warning_id: String): WarningInfo = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], warning_id = warning_id.asInstanceOf[js.Any])
   
+  inline def apply(description: String, warning_id: String): WarningInfo = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], warning_id = warning_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WarningInfo]
   }
+  
+  extension [Self <: WarningInfo](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setWarning_id(value: String): Self = StObject.set(x, "warning_id", value.asInstanceOf[js.Any])
+  }
 }
-

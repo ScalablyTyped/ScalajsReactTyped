@@ -1,34 +1,37 @@
 package typingsJapgolly.yui
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.yui.Y.IConfig
 import typingsJapgolly.yui.YUITest.IAssert
 import typingsJapgolly.yui.YUITest.YUITestStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YUI extends js.Object {
+trait YUI extends StObject {
+  
   var Assert: IAssert = js.native
+  
   var Test: YUITestStatic = js.native
-  def add(name: String, fn: js.Function2[/* Y */ this.type, /* name */ String, _], version: String): YUI = js.native
+  
+  def add(name: String, fn: js.Function2[/* Y */ this.type, /* name */ String, Any], version: String): YUI = js.native
   def add(
     name: String,
-    fn: js.Function2[/* Y */ this.type, /* name */ String, _],
+    fn: js.Function2[/* Y */ this.type, /* name */ String, Any],
     version: String,
     details: IConfig
   ): YUI = js.native
-  def mix(receiver: js.Function, supplier: js.Function): js.Any = js.native
-  def mix(receiver: js.Function, supplier: js.Function, overwrite: Boolean): js.Any = js.native
-  def mix(receiver: js.Function, supplier: js.Function, overwrite: Boolean, whitelist: js.Array[String]): js.Any = js.native
+  
+  def mix(receiver: js.Function, supplier: js.Function): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Function, overwrite: Boolean): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Function, overwrite: Boolean, whitelist: js.Array[String]): Any = js.native
   def mix(
     receiver: js.Function,
     supplier: js.Function,
     overwrite: Boolean,
     whitelist: js.Array[String],
     mode: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def mix(
     receiver: js.Function,
     supplier: js.Function,
@@ -36,18 +39,84 @@ trait YUI extends js.Object {
     whitelist: js.Array[String],
     mode: Double,
     merge: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Function, overwrite: Boolean, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Function, overwrite: Unit, whitelist: js.Array[String]): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Function, overwrite: Unit, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
   //Function|Object|YUI
-  def mix(receiver: js.Function, supplier: js.Object): js.Any = js.native
-  def mix(receiver: js.Function, supplier: js.Object, overwrite: Boolean): js.Any = js.native
-  def mix(receiver: js.Function, supplier: js.Object, overwrite: Boolean, whitelist: js.Array[String]): js.Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object, overwrite: Boolean): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object, overwrite: Boolean, whitelist: js.Array[String]): Any = js.native
   def mix(
     receiver: js.Function,
     supplier: js.Object,
     overwrite: Boolean,
     whitelist: js.Array[String],
     mode: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def mix(
     receiver: js.Function,
     supplier: js.Object,
@@ -55,18 +124,84 @@ trait YUI extends js.Object {
     whitelist: js.Array[String],
     mode: Double,
     merge: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object, overwrite: Boolean, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object, overwrite: Unit, whitelist: js.Array[String]): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Function, supplier: js.Object, overwrite: Unit, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Function,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
   //Function|Object|YUI
-  def mix(receiver: js.Object, supplier: js.Function): js.Any = js.native
-  def mix(receiver: js.Object, supplier: js.Function, overwrite: Boolean): js.Any = js.native
-  def mix(receiver: js.Object, supplier: js.Function, overwrite: Boolean, whitelist: js.Array[String]): js.Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function, overwrite: Boolean): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function, overwrite: Boolean, whitelist: js.Array[String]): Any = js.native
   def mix(
     receiver: js.Object,
     supplier: js.Function,
     overwrite: Boolean,
     whitelist: js.Array[String],
     mode: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def mix(
     receiver: js.Object,
     supplier: js.Function,
@@ -74,18 +209,84 @@ trait YUI extends js.Object {
     whitelist: js.Array[String],
     mode: Double,
     merge: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function, overwrite: Boolean, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function, overwrite: Unit, whitelist: js.Array[String]): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Function, overwrite: Unit, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Function,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
   //Function|Object|YUI
-  def mix(receiver: js.Object, supplier: js.Object): js.Any = js.native
-  def mix(receiver: js.Object, supplier: js.Object, overwrite: Boolean): js.Any = js.native
-  def mix(receiver: js.Object, supplier: js.Object, overwrite: Boolean, whitelist: js.Array[String]): js.Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object, overwrite: Boolean): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object, overwrite: Boolean, whitelist: js.Array[String]): Any = js.native
   def mix(
     receiver: js.Object,
     supplier: js.Object,
     overwrite: Boolean,
     whitelist: js.Array[String],
     mode: Double
-  ): js.Any = js.native
+  ): Any = js.native
   def mix(
     receiver: js.Object,
     supplier: js.Object,
@@ -93,10 +294,71 @@ trait YUI extends js.Object {
     whitelist: js.Array[String],
     mode: Double,
     merge: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object, overwrite: Boolean, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Boolean,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object, overwrite: Unit, whitelist: js.Array[String]): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: js.Array[String],
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
+  def mix(receiver: js.Object, supplier: js.Object, overwrite: Unit, whitelist: Unit, mode: Double): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Double,
+    merge: Boolean
+  ): Any = js.native
+  def mix(
+    receiver: js.Object,
+    supplier: js.Object,
+    overwrite: Unit,
+    whitelist: Unit,
+    mode: Unit,
+    merge: Boolean
+  ): Any = js.native
 }
-
-@JSGlobal("YUI")
-@js.native
-object YUI extends TopLevel[YUI]
-

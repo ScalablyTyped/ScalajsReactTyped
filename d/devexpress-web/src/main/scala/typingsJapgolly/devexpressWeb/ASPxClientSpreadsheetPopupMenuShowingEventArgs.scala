@@ -1,28 +1,41 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.PopupMenuShowing event.
   */
-@JSGlobal("ASPxClientSpreadsheetPopupMenuShowingEventArgs")
-@js.native
-class ASPxClientSpreadsheetPopupMenuShowingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpreadsheetPopupMenuShowingEventArgs class with the specified settings.
-    * @param menuItems Provides access to the context menu's item collection.
-    * @param menuType Specifies the currently displayed context menu's type.
-    */
-  def this(menuItems: js.Any, menuType: js.Any) = this()
+trait ASPxClientSpreadsheetPopupMenuShowingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Provides access to a collection of menu items in the context menu being invoked.
     */
-  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection = js.native
+  var menuItems: ASPxClientSpreadsheetPopupMenuItemCollection
+  
   /**
     * Gets the currently displayed context menu's type.
     */
-  var menuType: ASPxClientSpreadsheetPopupMenuType = js.native
+  var menuType: ASPxClientSpreadsheetPopupMenuType
 }
-
+object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    menuItems: ASPxClientSpreadsheetPopupMenuItemCollection,
+    menuType: ASPxClientSpreadsheetPopupMenuType
+  ): ASPxClientSpreadsheetPopupMenuShowingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], menuItems = menuItems.asInstanceOf[js.Any], menuType = menuType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuShowingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSpreadsheetPopupMenuShowingEventArgs](x: Self) {
+    
+    inline def setMenuItems(value: ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+    
+    inline def setMenuType(value: ASPxClientSpreadsheetPopupMenuType): Self = StObject.set(x, "menuType", value.asInstanceOf[js.Any])
+  }
+}

@@ -10,10 +10,10 @@ An elegant, accessible toggle component for React. Also a glorified checkbox.
 | ------------------ | :-------------: |
 | Full name          | react-toggle |
 | Keywords           | toggle, component, react, react-component |
-| # releases         | 3 |
-| # dependents       | 73 |
-| # downloads        | 3170390 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 513445.6666666667 |
+| # stars            | 907.0 |
 
 ## Links
 - [Homepage](https://github.com/aaronshaf/react-toggle)

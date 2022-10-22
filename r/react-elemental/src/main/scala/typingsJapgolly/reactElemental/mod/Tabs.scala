@@ -1,12 +1,18 @@
 package typingsJapgolly.reactElemental.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-elemental", "Tabs")
 @js.native
-class Tabs ()
-  extends Component[TabsProps, js.Object, js.Any]
-
+open class Tabs protected ()
+  extends Component[TabsProps, js.Object, Any] {
+  def this(props: TabsProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: TabsProps, context: Any) = this()
+}

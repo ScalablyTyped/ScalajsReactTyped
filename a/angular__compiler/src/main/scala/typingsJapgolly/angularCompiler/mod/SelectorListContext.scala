@@ -1,13 +1,15 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "SelectorListContext")
 @js.native
-class SelectorListContext protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.SelectorListContext {
-  def this(selectors: js.Array[typingsJapgolly.angularCompiler.selectorMod.CssSelector]) = this()
+open class SelectorListContext protected () extends StObject {
+  def this(selectors: js.Array[CssSelector]) = this()
+  
+  var alreadyMatched: Boolean = js.native
+  
+  var selectors: js.Array[CssSelector] = js.native
 }
-

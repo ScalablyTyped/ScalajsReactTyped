@@ -4,66 +4,95 @@ import typingsJapgolly.joi.joiStrings.NFC
 import typingsJapgolly.joi.joiStrings.NFD
 import typingsJapgolly.joi.joiStrings.NFKC
 import typingsJapgolly.joi.joiStrings.NFKD
-import typingsJapgolly.std.RegExp
+import typingsJapgolly.joi.joiStrings.lower
+import typingsJapgolly.joi.joiStrings.upper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.joi.mod._SchemaLike because Already inherited
-- typingsJapgolly.joi.mod._Schema because Already inherited */ @js.native
-trait StringSchema extends AnySchema {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.joi.mod.Schema because Already inherited */ @js.native
+trait StringSchema[TSchema]
+  extends StObject
+     with AnySchema[TSchema] {
+  
   /**
     * Requires the string value to only contain a-z, A-Z, and 0-9.
     */
   def alphanum(): this.type = js.native
+  
   /**
     * Requires the string value to be a valid base64 string; does not check the decoded value.
-    * @param options - optional settings: The unicode normalization options to use. Valid values: NFC [default], NFD, NFKC, NFKD
     */
   def base64(): this.type = js.native
   def base64(options: Base64Options): this.type = js.native
+  
   /**
-    * Requires the number to be a credit card number (Using Lunh Algorithm).
+    * Sets the required string case.
+    */
+  def `case`(direction: upper | lower): this.type = js.native
+  
+  /**
+    * Requires the number to be a credit card number (Using Luhn Algorithm).
     */
   def creditCard(): this.type = js.native
+  
   /**
     * Requires the string value to be a valid data URI string.
     */
   def dataUri(): this.type = js.native
   def dataUri(options: DataUriOptions): this.type = js.native
+  
+  /**
+    * Requires the string value to be a valid domain.
+    */
+  def domain(): this.type = js.native
+  def domain(options: DomainOptions): this.type = js.native
+  
   /**
     * Requires the string value to be a valid email address.
     */
   def email(): this.type = js.native
   def email(options: EmailOptions): this.type = js.native
+  
   /**
     * Requires the string value to be a valid GUID.
     */
   def guid(): this.type = js.native
   def guid(options: GuidOptions): this.type = js.native
+  
   /**
     * Requires the string value to be a valid hexadecimal string.
     */
   def hex(): this.type = js.native
   def hex(options: HexOptions): this.type = js.native
+  
   /**
     * Requires the string value to be a valid hostname as per RFC1123.
     */
   def hostname(): this.type = js.native
+  
   /**
     * Allows the value to match any whitelist of blacklist item in a case insensitive comparison.
     */
   def insensitive(): this.type = js.native
+  
   /**
     * Requires the string value to be a valid ip address.
     */
   def ip(): this.type = js.native
   def ip(options: IpOptions): this.type = js.native
+  
   /**
     * Requires the string value to be in valid ISO 8601 date format.
     */
   def isoDate(): this.type = js.native
+  
+  /**
+    * Requires the string value to be in valid ISO 8601 duration format.
+    */
+  def isoDuration(): this.type = js.native
+  
   /**
     * Specifies the exact string length required
     * @param limit - the required string length. It can also be a reference to another field.
@@ -73,10 +102,12 @@ trait StringSchema extends AnySchema {
   def length(limit: Double, encoding: String): this.type = js.native
   def length(limit: Reference): this.type = js.native
   def length(limit: Reference, encoding: String): this.type = js.native
+  
   /**
     * Requires the string value to be all lowercase. If the validation convert option is on (enabled by default), the string will be forced to lowercase.
     */
   def lowercase(): this.type = js.native
+  
   /**
     * Specifies the maximum number of string characters.
     * @param limit - the maximum number of string characters allowed. It can also be a reference to another field.
@@ -86,6 +117,7 @@ trait StringSchema extends AnySchema {
   def max(limit: Double, encoding: String): this.type = js.native
   def max(limit: Reference): this.type = js.native
   def max(limit: Reference, encoding: String): this.type = js.native
+  
   /**
     * Specifies the minimum number string characters.
     * @param limit - the minimum number of string characters required. It can also be a reference to another field.
@@ -95,19 +127,27 @@ trait StringSchema extends AnySchema {
   def min(limit: Double, encoding: String): this.type = js.native
   def min(limit: Reference): this.type = js.native
   def min(limit: Reference, encoding: String): this.type = js.native
+  
   /**
     * Requires the string value to be in a unicode normalized form. If the validation convert option is on (enabled by default), the string will be normalized.
-    * @param form - The unicode normalization form to use. Valid values: NFC [default], NFD, NFKC, NFKD
+    * @param [form='NFC'] - The unicode normalization form to use. Valid values: NFC [default], NFD, NFKC, NFKD
     */
   def normalize(): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFC(form: NFC): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFD(form: NFD): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFKC(form: NFKC): this.type = js.native
-  @JSName("normalize")
-  def normalize_NFKD(form: NFKD): this.type = js.native
+  def normalize(form: NFC | NFD | NFKC | NFKD): this.type = js.native
+  
+  /**
+    * Defines a regular expression rule.
+    * @param pattern - a regular expression object the string value must match against.
+    * @param options - optional, can be:
+    *   Name for patterns (useful with multiple patterns). Defaults to 'required'.
+    *   An optional configuration object with the following supported properties:
+    *     name - optional pattern name.
+    *     invert - optional boolean flag. Defaults to false behavior. If specified as true, the provided pattern will be disallowed instead of required.
+    */
+  def pattern(pattern: js.RegExp): this.type = js.native
+  def pattern(pattern: js.RegExp, options: String): this.type = js.native
+  def pattern(pattern: js.RegExp, options: StringRegexOptions): this.type = js.native
+  
   /**
     * Defines a regular expression rule.
     * @param pattern - a regular expression object the string value must match against.
@@ -120,40 +160,48 @@ trait StringSchema extends AnySchema {
   def regex(pattern: js.RegExp): this.type = js.native
   def regex(pattern: js.RegExp, options: String): this.type = js.native
   def regex(pattern: js.RegExp, options: StringRegexOptions): this.type = js.native
+  
   def replace(pattern: String, replacement: String): this.type = js.native
   /**
     * Replace characters matching the given pattern with the specified replacement string where:
     * @param pattern - a regular expression object to match against, or a string of which all occurrences will be replaced.
     * @param replacement - the string that will replace the pattern.
     */
-  def replace(pattern: RegExp, replacement: String): this.type = js.native
+  def replace(pattern: js.RegExp, replacement: String): this.type = js.native
+  
   /**
     * Requires the string value to only contain a-z, A-Z, 0-9, and underscore _.
     */
   def token(): this.type = js.native
+  
   /**
     * Requires the string value to contain no whitespace before or after. If the validation convert option is on (enabled by default), the string will be trimmed.
+    * @param [enabled=true] - optional parameter defaulting to true which allows you to reset the behavior of trim by providing a falsy value.
     */
   def trim(): this.type = js.native
+  def trim(enabled: Any): this.type = js.native
+  
   /**
     * Specifies whether the string.max() limit should be used as a truncation.
-    * @param enabled - optional parameter defaulting to true which allows you to reset the behavior of truncate by providing a falsy value.
+    * @param [enabled=true] - optional parameter defaulting to true which allows you to reset the behavior of truncate by providing a falsy value.
     */
   def truncate(): this.type = js.native
   def truncate(enabled: Boolean): this.type = js.native
+  
   /**
     * Requires the string value to be all uppercase. If the validation convert option is on (enabled by default), the string will be forced to uppercase.
     */
   def uppercase(): this.type = js.native
+  
   /**
     * Requires the string value to be a valid RFC 3986 URI.
     */
   def uri(): this.type = js.native
   def uri(options: UriOptions): this.type = js.native
+  
   /**
-    * Alias for `guid` -- Requires the string value to be a valid GUID
+    * Requires the string value to be a valid GUID.
     */
   def uuid(): this.type = js.native
   def uuid(options: GuidOptions): this.type = js.native
 }
-

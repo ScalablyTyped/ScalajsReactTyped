@@ -11,9 +11,9 @@ Template tag that takes out unwanted newlines
 | Full name          | deline |
 | Keywords           | deline, tag, es6, multi-line, string |
 | # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 355525 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 21346.666666666668 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/deline#readme)

@@ -10,10 +10,10 @@ WePY bindings for Redux
 | ------------------ | :-------------: |
 | Full name          | wepy-redux |
 | Keywords           | wepy-redux, wepy, redux, connect |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 20257 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 239.66666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/wepy-redux)

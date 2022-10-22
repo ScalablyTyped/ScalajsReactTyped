@@ -1,109 +1,118 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.TableLoadingOption
-import typingsJapgolly.blueprintjsTable.gridMod.Grid
-import typingsJapgolly.blueprintjsTable.tableQuadrantMod.QuadrantType
-import typingsJapgolly.blueprintjsTable.tableQuadrantStackMod.ITableQuadrantStackProps
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmCommonGridMod.Grid
+import typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
+import typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantStackMod.ITableQuadrantStackProps
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.TableLoadingOption
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableQuadrantStack {
-  def apply(
+  
+  inline def apply(
+    bodyRenderer: (QuadrantType, js.UndefOr[Boolean | Unit], js.UndefOr[Boolean]) => js.UndefOr[Element],
+    didHeadersMount: Boolean,
     grid: Grid,
-    bodyRenderer: (QuadrantType, js.UndefOr[Boolean], js.UndefOr[Boolean]) => CallbackTo[Element],
-    bodyRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    className: String = null,
-    columnHeaderCellRenderer: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => CallbackTo[Element] = null,
-    columnHeaderRef: /* ref */ HTMLElement | Null => Callback = null,
-    enableColumnInteractionBar: js.UndefOr[Boolean] = js.undefined,
-    enableRowHeader: js.UndefOr[Boolean] = js.undefined,
-    handleColumnResizeGuide: /* verticalGuides */ js.Array[Double] => Callback = null,
-    handleColumnsReordering: /* verticalGuides */ js.Array[Double] => Callback = null,
-    handleRowResizeGuide: /* horizontalGuides */ js.Array[Double] => Callback = null,
-    handleRowsReordering: /* horizontalGuides */ js.Array[Double] => Callback = null,
-    isHorizontalScrollDisabled: js.UndefOr[Boolean] = js.undefined,
-    isVerticalScrollDisabled: js.UndefOr[Boolean] = js.undefined,
-    loadingOptions: js.Array[TableLoadingOption] = null,
-    menuRenderer: /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit] => CallbackTo[Element] = null,
-    numColumns: Int | Double = null,
-    numFrozenColumns: Int | Double = null,
-    numFrozenRows: Int | Double = null,
-    numRows: Int | Double = null,
-    onScroll: ReactEventFrom[HTMLElement] => Callback = null,
-    quadrantRef: /* ref */ HTMLElement | Null => Callback = null,
-    rowHeaderCellRenderer: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenRowsOnly */ js.UndefOr[Boolean]) => CallbackTo[Element] = null,
-    rowHeaderRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    scrollContainerRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    throttleScrolling: js.UndefOr[Boolean] = js.undefined,
-    viewSyncDelay: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITableQuadrantStackProps, 
-    typingsJapgolly.blueprintjsTable.tableQuadrantStackMod.TableQuadrantStack, 
-    Unit, 
-    ITableQuadrantStackProps
-  ] = {
-    val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("bodyRenderer")(js.Any.fromFunction3((t0: typingsJapgolly.blueprintjsTable.tableQuadrantMod.QuadrantType, t1: js.UndefOr[scala.Boolean], t2: js.UndefOr[scala.Boolean]) => bodyRenderer(t0, t1, t2).runNow()))
-    if (bodyRef != null) __obj.updateDynamic("bodyRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => bodyRef(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnHeaderCellRenderer != null) __obj.updateDynamic("columnHeaderCellRenderer")(js.Any.fromFunction4((t0: /* refHandler */ js.Function1[/* ref */ org.scalajs.dom.raw.HTMLElement, scala.Unit], t1: /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[scala.Double], scala.Unit], t2: /* reorderingHandler */ js.Function3[
-  /* oldIndex */ scala.Double, 
-  /* newIndex */ scala.Double, 
-  /* length */ scala.Double, 
-  scala.Unit], t3: /* showFrozenColumnsOnly */ js.UndefOr[scala.Boolean]) => columnHeaderCellRenderer(t0, t1, t2, t3).runNow()))
-    if (columnHeaderRef != null) __obj.updateDynamic("columnHeaderRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => columnHeaderRef(t0).runNow()))
-    if (!js.isUndefined(enableColumnInteractionBar)) __obj.updateDynamic("enableColumnInteractionBar")(enableColumnInteractionBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowHeader)) __obj.updateDynamic("enableRowHeader")(enableRowHeader.asInstanceOf[js.Any])
-    if (handleColumnResizeGuide != null) __obj.updateDynamic("handleColumnResizeGuide")(js.Any.fromFunction1((t0: /* verticalGuides */ js.Array[scala.Double]) => handleColumnResizeGuide(t0).runNow()))
-    if (handleColumnsReordering != null) __obj.updateDynamic("handleColumnsReordering")(js.Any.fromFunction1((t0: /* verticalGuides */ js.Array[scala.Double]) => handleColumnsReordering(t0).runNow()))
-    if (handleRowResizeGuide != null) __obj.updateDynamic("handleRowResizeGuide")(js.Any.fromFunction1((t0: /* horizontalGuides */ js.Array[scala.Double]) => handleRowResizeGuide(t0).runNow()))
-    if (handleRowsReordering != null) __obj.updateDynamic("handleRowsReordering")(js.Any.fromFunction1((t0: /* horizontalGuides */ js.Array[scala.Double]) => handleRowsReordering(t0).runNow()))
-    if (!js.isUndefined(isHorizontalScrollDisabled)) __obj.updateDynamic("isHorizontalScrollDisabled")(isHorizontalScrollDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerticalScrollDisabled)) __obj.updateDynamic("isVerticalScrollDisabled")(isVerticalScrollDisabled.asInstanceOf[js.Any])
-    if (loadingOptions != null) __obj.updateDynamic("loadingOptions")(loadingOptions.asInstanceOf[js.Any])
-    if (menuRenderer != null) __obj.updateDynamic("menuRenderer")(js.Any.fromFunction1((t0: /* refHandler */ js.Function1[/* ref */ org.scalajs.dom.raw.HTMLElement, scala.Unit]) => menuRenderer(t0).runNow()))
-    if (numColumns != null) __obj.updateDynamic("numColumns")(numColumns.asInstanceOf[js.Any])
-    if (numFrozenColumns != null) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.asInstanceOf[js.Any])
-    if (numFrozenRows != null) __obj.updateDynamic("numFrozenRows")(numFrozenRows.asInstanceOf[js.Any])
-    if (numRows != null) __obj.updateDynamic("numRows")(numRows.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onScroll(t0).runNow()))
-    if (quadrantRef != null) __obj.updateDynamic("quadrantRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => quadrantRef(t0).runNow()))
-    if (rowHeaderCellRenderer != null) __obj.updateDynamic("rowHeaderCellRenderer")(js.Any.fromFunction4((t0: /* refHandler */ js.Function1[/* ref */ org.scalajs.dom.raw.HTMLElement, scala.Unit], t1: /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[scala.Double], scala.Unit], t2: /* reorderingHandler */ js.Function3[
-  /* oldIndex */ scala.Double, 
-  /* newIndex */ scala.Double, 
-  /* length */ scala.Double, 
-  scala.Unit], t3: /* showFrozenRowsOnly */ js.UndefOr[scala.Boolean]) => rowHeaderCellRenderer(t0, t1, t2, t3).runNow()))
-    if (rowHeaderRef != null) __obj.updateDynamic("rowHeaderRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => rowHeaderRef(t0).runNow()))
-    if (scrollContainerRef != null) __obj.updateDynamic("scrollContainerRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => scrollContainerRef(t0).runNow()))
-    if (!js.isUndefined(throttleScrolling)) __obj.updateDynamic("throttleScrolling")(throttleScrolling.asInstanceOf[js.Any])
-    if (viewSyncDelay != null) __obj.updateDynamic("viewSyncDelay")(viewSyncDelay.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.tableQuadrantStackMod.ITableQuadrantStackProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.tableQuadrantStackMod.TableQuadrantStack](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.tableQuadrantStackMod.ITableQuadrantStackProps])(children: _*)
+    numFrozenColumns: Double,
+    numFrozenRows: Double
+  ): Builder = {
+    val __props = js.Dynamic.literal(bodyRenderer = js.Any.fromFunction3(bodyRenderer), didHeadersMount = didHeadersMount.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], numFrozenColumns = numFrozenColumns.asInstanceOf[js.Any], numFrozenRows = numFrozenRows.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITableQuadrantStackProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrantStack", "TableQuadrantStack")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantStackMod.TableQuadrantStack
+        ] {
+    
+    inline def bodyRef(value: Ref[HTMLDivElement]): this.type = set("bodyRef", value.asInstanceOf[js.Any])
+    
+    inline def bodyRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("bodyRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def bodyRefNull: this.type = set("bodyRef", null)
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def columnHeaderRef(value: Ref[HTMLDivElement]): this.type = set("columnHeaderRef", value.asInstanceOf[js.Any])
+    
+    inline def columnHeaderRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("columnHeaderRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def columnHeaderRefNull: this.type = set("columnHeaderRef", null)
+    
+    inline def columnHeaderRenderer(
+      value: (/* refHandler */ Ref[HTMLDivElement], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => js.UndefOr[Element]
+    ): this.type = set("columnHeaderRenderer", js.Any.fromFunction4(value))
+    
+    inline def enableColumnHeader(value: Boolean): this.type = set("enableColumnHeader", value.asInstanceOf[js.Any])
+    
+    inline def enableColumnInteractionBar(value: Boolean): this.type = set("enableColumnInteractionBar", value.asInstanceOf[js.Any])
+    
+    inline def enableRowHeader(value: Boolean): this.type = set("enableRowHeader", value.asInstanceOf[js.Any])
+    
+    inline def handleColumnResizeGuide(value: /* verticalGuides */ js.Array[Double] => Callback): this.type = set("handleColumnResizeGuide", js.Any.fromFunction1((t0: /* verticalGuides */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def handleColumnsReordering(value: /* verticalGuides */ js.Array[Double] => Callback): this.type = set("handleColumnsReordering", js.Any.fromFunction1((t0: /* verticalGuides */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def handleRowResizeGuide(value: /* horizontalGuides */ js.Array[Double] => Callback): this.type = set("handleRowResizeGuide", js.Any.fromFunction1((t0: /* horizontalGuides */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def handleRowsReordering(value: /* horizontalGuides */ js.Array[Double] => Callback): this.type = set("handleRowsReordering", js.Any.fromFunction1((t0: /* horizontalGuides */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def isHorizontalScrollDisabled(value: Boolean): this.type = set("isHorizontalScrollDisabled", value.asInstanceOf[js.Any])
+    
+    inline def isVerticalScrollDisabled(value: Boolean): this.type = set("isVerticalScrollDisabled", value.asInstanceOf[js.Any])
+    
+    inline def loadingOptions(value: js.Array[TableLoadingOption]): this.type = set("loadingOptions", value.asInstanceOf[js.Any])
+    
+    inline def loadingOptionsVarargs(value: TableLoadingOption*): this.type = set("loadingOptions", js.Array(value*))
+    
+    inline def menuRenderer(value: /* refHandler */ js.UndefOr[Ref[HTMLDivElement]] => Element): this.type = set("menuRenderer", js.Any.fromFunction1(value))
+    
+    inline def numColumns(value: Double): this.type = set("numColumns", value.asInstanceOf[js.Any])
+    
+    inline def numRows(value: Double): this.type = set("numRows", value.asInstanceOf[js.Any])
+    
+    inline def onScroll(value: ReactEventFrom[HTMLElement] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def quadrantRef(value: Ref[HTMLDivElement]): this.type = set("quadrantRef", value.asInstanceOf[js.Any])
+    
+    inline def quadrantRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("quadrantRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def quadrantRefNull: this.type = set("quadrantRef", null)
+    
+    inline def rowHeaderRef(value: Ref[HTMLDivElement]): this.type = set("rowHeaderRef", value.asInstanceOf[js.Any])
+    
+    inline def rowHeaderRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("rowHeaderRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def rowHeaderRefNull: this.type = set("rowHeaderRef", null)
+    
+    inline def rowHeaderRenderer(
+      value: (/* refHandler */ Ref[HTMLDivElement], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenRowsOnly */ js.UndefOr[Boolean]) => js.UndefOr[Element]
+    ): this.type = set("rowHeaderRenderer", js.Any.fromFunction4(value))
+    
+    inline def scrollContainerRef(value: Ref[HTMLDivElement]): this.type = set("scrollContainerRef", value.asInstanceOf[js.Any])
+    
+    inline def scrollContainerRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("scrollContainerRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def scrollContainerRefNull: this.type = set("scrollContainerRef", null)
+    
+    inline def throttleScrolling(value: Boolean): this.type = set("throttleScrolling", value.asInstanceOf[js.Any])
+    
+    inline def viewSyncDelay(value: Double): this.type = set("viewSyncDelay", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ITableQuadrantStackProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

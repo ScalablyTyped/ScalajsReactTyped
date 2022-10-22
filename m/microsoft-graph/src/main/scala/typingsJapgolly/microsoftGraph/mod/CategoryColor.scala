@@ -1,11 +1,12 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset0
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset1
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset2
@@ -31,64 +32,59 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset22
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset23
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset24
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
 */
-trait CategoryColor extends js.Object
-
+trait CategoryColor extends StObject
 object CategoryColor {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def preset0: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset0 = this.cast("preset0")
-  @scala.inline
-  def preset1: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset1 = this.cast("preset1")
-  @scala.inline
-  def preset10: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset10 = this.cast("preset10")
-  @scala.inline
-  def preset11: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset11 = this.cast("preset11")
-  @scala.inline
-  def preset12: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset12 = this.cast("preset12")
-  @scala.inline
-  def preset13: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset13 = this.cast("preset13")
-  @scala.inline
-  def preset14: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset14 = this.cast("preset14")
-  @scala.inline
-  def preset15: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset15 = this.cast("preset15")
-  @scala.inline
-  def preset16: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset16 = this.cast("preset16")
-  @scala.inline
-  def preset17: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset17 = this.cast("preset17")
-  @scala.inline
-  def preset18: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset18 = this.cast("preset18")
-  @scala.inline
-  def preset19: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset19 = this.cast("preset19")
-  @scala.inline
-  def preset2: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset2 = this.cast("preset2")
-  @scala.inline
-  def preset20: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset20 = this.cast("preset20")
-  @scala.inline
-  def preset21: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset21 = this.cast("preset21")
-  @scala.inline
-  def preset22: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset22 = this.cast("preset22")
-  @scala.inline
-  def preset23: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset23 = this.cast("preset23")
-  @scala.inline
-  def preset24: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset24 = this.cast("preset24")
-  @scala.inline
-  def preset3: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset3 = this.cast("preset3")
-  @scala.inline
-  def preset4: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset4 = this.cast("preset4")
-  @scala.inline
-  def preset5: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset5 = this.cast("preset5")
-  @scala.inline
-  def preset6: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset6 = this.cast("preset6")
-  @scala.inline
-  def preset7: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset7 = this.cast("preset7")
-  @scala.inline
-  def preset8: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset8 = this.cast("preset8")
-  @scala.inline
-  def preset9: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset9 = this.cast("preset9")
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def preset0: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset0 = "preset0".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset0]
+  
+  inline def preset1: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset1 = "preset1".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset1]
+  
+  inline def preset10: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset10 = "preset10".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset10]
+  
+  inline def preset11: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset11 = "preset11".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset11]
+  
+  inline def preset12: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset12 = "preset12".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset12]
+  
+  inline def preset13: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset13 = "preset13".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset13]
+  
+  inline def preset14: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset14 = "preset14".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset14]
+  
+  inline def preset15: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset15 = "preset15".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset15]
+  
+  inline def preset16: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset16 = "preset16".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset16]
+  
+  inline def preset17: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset17 = "preset17".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset17]
+  
+  inline def preset18: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset18 = "preset18".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset18]
+  
+  inline def preset19: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset19 = "preset19".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset19]
+  
+  inline def preset2: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset2 = "preset2".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset2]
+  
+  inline def preset20: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset20 = "preset20".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset20]
+  
+  inline def preset21: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset21 = "preset21".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset21]
+  
+  inline def preset22: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset22 = "preset22".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset22]
+  
+  inline def preset23: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset23 = "preset23".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset23]
+  
+  inline def preset24: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset24 = "preset24".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset24]
+  
+  inline def preset3: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset3 = "preset3".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset3]
+  
+  inline def preset4: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset4 = "preset4".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset4]
+  
+  inline def preset5: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset5 = "preset5".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset5]
+  
+  inline def preset6: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset6 = "preset6".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset6]
+  
+  inline def preset7: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset7 = "preset7".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset7]
+  
+  inline def preset8: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset8 = "preset8".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset8]
+  
+  inline def preset9: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset9 = "preset9".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preset9]
 }
-

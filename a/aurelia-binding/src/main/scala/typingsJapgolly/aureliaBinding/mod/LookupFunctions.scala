@@ -1,22 +1,26 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LookupFunctions extends js.Object {
-  def bindingBehaviors(name: String): js.Any
-  def valueConverters(name: String): js.Any
+trait LookupFunctions extends StObject {
+  
+  def bindingBehaviors(name: String): Any
+  
+  def valueConverters(name: String): Any
 }
-
 object LookupFunctions {
-  @scala.inline
-  def apply(bindingBehaviors: String => CallbackTo[js.Any], valueConverters: String => CallbackTo[js.Any]): LookupFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingBehaviors")(js.Any.fromFunction1((t0: java.lang.String) => bindingBehaviors(t0).runNow()))
-    __obj.updateDynamic("valueConverters")(js.Any.fromFunction1((t0: java.lang.String) => valueConverters(t0).runNow()))
+  
+  inline def apply(bindingBehaviors: String => Any, valueConverters: String => Any): LookupFunctions = {
+    val __obj = js.Dynamic.literal(bindingBehaviors = js.Any.fromFunction1(bindingBehaviors), valueConverters = js.Any.fromFunction1(valueConverters))
     __obj.asInstanceOf[LookupFunctions]
   }
+  
+  extension [Self <: LookupFunctions](x: Self) {
+    
+    inline def setBindingBehaviors(value: String => Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
+    
+    inline def setValueConverters(value: String => Any): Self = StObject.set(x, "valueConverters", js.Any.fromFunction1(value))
+  }
 }
-

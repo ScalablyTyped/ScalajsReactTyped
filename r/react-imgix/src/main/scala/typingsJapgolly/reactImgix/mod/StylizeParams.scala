@@ -1,39 +1,60 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StylizeParams extends js.Object {
+trait StylizeParams extends StObject {
+  
   var blur: js.UndefOr[ImgixParamType] = js.undefined
+  
   var duotone: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `duotone-alpha`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var htn: js.UndefOr[ImgixParamType] = js.undefined
+  
   var monochrome: js.UndefOr[ImgixParamType] = js.undefined
+  
   var px: js.UndefOr[ImgixParamType] = js.undefined
+  
   var sepia: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object StylizeParams {
-  @scala.inline
-  def apply(
-    blur: ImgixParamType = null,
-    duotone: ImgixParamType = null,
-    `duotone-alpha`: ImgixParamType = null,
-    htn: ImgixParamType = null,
-    monochrome: ImgixParamType = null,
-    px: ImgixParamType = null,
-    sepia: ImgixParamType = null
-  ): StylizeParams = {
+  
+  inline def apply(): StylizeParams = {
     val __obj = js.Dynamic.literal()
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (duotone != null) __obj.updateDynamic("duotone")(duotone.asInstanceOf[js.Any])
-    if (`duotone-alpha` != null) __obj.updateDynamic("duotone-alpha")(`duotone-alpha`.asInstanceOf[js.Any])
-    if (htn != null) __obj.updateDynamic("htn")(htn.asInstanceOf[js.Any])
-    if (monochrome != null) __obj.updateDynamic("monochrome")(monochrome.asInstanceOf[js.Any])
-    if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
-    if (sepia != null) __obj.updateDynamic("sepia")(sepia.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylizeParams]
   }
+  
+  extension [Self <: StylizeParams](x: Self) {
+    
+    inline def setBlur(value: ImgixParamType): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+    
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    
+    inline def setDuotone(value: ImgixParamType): Self = StObject.set(x, "duotone", value.asInstanceOf[js.Any])
+    
+    inline def `setDuotone-alpha`(value: ImgixParamType): Self = StObject.set(x, "duotone-alpha", value.asInstanceOf[js.Any])
+    
+    inline def `setDuotone-alphaUndefined`: Self = StObject.set(x, "duotone-alpha", js.undefined)
+    
+    inline def setDuotoneUndefined: Self = StObject.set(x, "duotone", js.undefined)
+    
+    inline def setHtn(value: ImgixParamType): Self = StObject.set(x, "htn", value.asInstanceOf[js.Any])
+    
+    inline def setHtnUndefined: Self = StObject.set(x, "htn", js.undefined)
+    
+    inline def setMonochrome(value: ImgixParamType): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+    
+    inline def setMonochromeUndefined: Self = StObject.set(x, "monochrome", js.undefined)
+    
+    inline def setPx(value: ImgixParamType): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    
+    inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
+    
+    inline def setSepia(value: ImgixParamType): Self = StObject.set(x, "sepia", value.asInstanceOf[js.Any])
+    
+    inline def setSepiaUndefined: Self = StObject.set(x, "sepia", js.undefined)
+  }
 }
-

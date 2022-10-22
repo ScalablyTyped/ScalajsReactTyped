@@ -1,52 +1,54 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.baseui.layerMod.LayerProps
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.layerTypesMod.LayerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Layer {
-  def apply(
-    host: HTMLElement = null,
-    index: Int | Double = null,
-    mountNode: HTMLElement = null,
-    onMount: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onUnmount: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    LayerProps, 
-    MountedWithRawType[LayerProps, js.Object, RawMounted[LayerProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    onMount.foreach(p => __obj.updateDynamic("onMount")(p.toJsFn))
-    onUnmount.foreach(p => __obj.updateDynamic("onUnmount")(p.toJsFn))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.layerMod.LayerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.layerMod.LayerProps])(children: _*)
-  }
   @JSImport("baseui/layer", "Layer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def host(value: HTMLElement): this.type = set("host", value.asInstanceOf[js.Any])
+    
+    inline def hostNull: this.type = set("host", null)
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def isHoverLayer(value: Boolean): this.type = set("isHoverLayer", value.asInstanceOf[js.Any])
+    
+    inline def mountNode(value: HTMLElement): this.type = set("mountNode", value.asInstanceOf[js.Any])
+    
+    inline def onDocumentClick(value: /* event */ MouseEvent => Any): this.type = set("onDocumentClick", js.Any.fromFunction1(value))
+    
+    inline def onEscape(value: CallbackTo[Any]): this.type = set("onEscape", value.toJsFn)
+    
+    inline def onKeyDown(value: /* event */ KeyboardEvent => Any): this.type = set("onKeyDown", js.Any.fromFunction1(value))
+    
+    inline def onKeyPress(value: /* event */ KeyboardEvent => Any): this.type = set("onKeyPress", js.Any.fromFunction1(value))
+    
+    inline def onKeyUp(value: /* event */ KeyboardEvent => Any): this.type = set("onKeyUp", js.Any.fromFunction1(value))
+    
+    inline def onMount(value: CallbackTo[Any]): this.type = set("onMount", value.toJsFn)
+    
+    inline def onUnmount(value: CallbackTo[Any]): this.type = set("onUnmount", value.toJsFn)
+    
+    inline def zIndex(value: Double): this.type = set("zIndex", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Layer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LayerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

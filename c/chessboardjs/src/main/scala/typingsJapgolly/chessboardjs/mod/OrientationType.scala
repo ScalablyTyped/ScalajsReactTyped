@@ -1,21 +1,17 @@
 package typingsJapgolly.chessboardjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chessboardjs.chessboardjsStrings.white
   - typingsJapgolly.chessboardjs.chessboardjsStrings.black
 */
-trait OrientationType extends js.Object
-
+trait OrientationType extends StObject
 object OrientationType {
-  @scala.inline
-  def black: typingsJapgolly.chessboardjs.chessboardjsStrings.black = this.cast("black")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def white: typingsJapgolly.chessboardjs.chessboardjsStrings.white = this.cast("white")
+  
+  inline def black: typingsJapgolly.chessboardjs.chessboardjsStrings.black = "black".asInstanceOf[typingsJapgolly.chessboardjs.chessboardjsStrings.black]
+  
+  inline def white: typingsJapgolly.chessboardjs.chessboardjsStrings.white = "white".asInstanceOf[typingsJapgolly.chessboardjs.chessboardjsStrings.white]
 }
-

@@ -10,9 +10,9 @@ Insanely lightweight module for converting times to milliseconds.
 | Full name          | milliseconds |
 | Keywords           | time, conversion, milliseconds |
 | # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 93777 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 31417.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/henrikjoreteg/milliseconds)

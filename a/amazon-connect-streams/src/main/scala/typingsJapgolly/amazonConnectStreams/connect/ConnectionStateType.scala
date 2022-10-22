@@ -1,47 +1,43 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConnectionStateType extends js.Object
-
+sealed trait ConnectionStateType extends StObject
+/** An enumeration listing the different states that a connection can have. */
 @JSGlobal("connect.ConnectionStateType")
 @js.native
-object ConnectionStateType extends js.Object {
+object ConnectionStateType extends StObject {
+  
+  /** The connection is connected to the contact. */
   @js.native
-  sealed trait CONNECTED extends ConnectionStateType
+  sealed trait CONNECTED
+    extends StObject
+       with ConnectionStateType
   
+  /** The connection is being initialized. */
   @js.native
-  sealed trait CONNECTING extends ConnectionStateType
+  sealed trait CONNECTING
+    extends StObject
+       with ConnectionStateType
   
+  /** The connection is no longer connected to the contact. */
   @js.native
-  sealed trait DISCONNECTED extends ConnectionStateType
+  sealed trait DISCONNECTED
+    extends StObject
+       with ConnectionStateType
   
+  /** The connection is connected but on hold. */
   @js.native
-  sealed trait HOLD extends ConnectionStateType
+  sealed trait HOLD
+    extends StObject
+       with ConnectionStateType
   
+  /** The connection has not yet been initialized. */
   @js.native
-  sealed trait INIT extends ConnectionStateType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConnectionStateType with String] = js.native
-  /* "connected" */ @js.native
-  object CONNECTED extends TopLevel[CONNECTED with String]
-  
-  /* "connecting" */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with String]
-  
-  /* "disconnected" */ @js.native
-  object DISCONNECTED extends TopLevel[DISCONNECTED with String]
-  
-  /* "hold" */ @js.native
-  object HOLD extends TopLevel[HOLD with String]
-  
-  /* "init" */ @js.native
-  object INIT extends TopLevel[INIT with String]
-  
+  sealed trait INIT
+    extends StObject
+       with ConnectionStateType
 }
-

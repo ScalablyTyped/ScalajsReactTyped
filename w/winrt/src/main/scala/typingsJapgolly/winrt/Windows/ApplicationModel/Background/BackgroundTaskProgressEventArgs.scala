@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs")
-@js.native
-class BackgroundTaskProgressEventArgs () extends IBackgroundTaskProgressEventArgs {
-  /* CompleteClass */
-  override var instanceId: String = js.native
-  /* CompleteClass */
-  override var progress: Double = js.native
+trait BackgroundTaskProgressEventArgs
+  extends StObject
+     with IBackgroundTaskProgressEventArgs
+object BackgroundTaskProgressEventArgs {
+  
+  inline def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
+    val __obj = js.Dynamic.literal(instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundTaskProgressEventArgs]
+  }
 }
-

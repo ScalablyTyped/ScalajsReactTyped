@@ -2,19 +2,40 @@ package typingsJapgolly.minappEnv.DB
 
 import typingsJapgolly.minappEnv.Array
 import typingsJapgolly.minappEnv.InternalSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DB.DatabaseUpdateCommand")
-@js.native
-class DatabaseUpdateCommand protected () extends js.Object {
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_]) = this()
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_], fieldName: String) = this()
-  def this(operator: UPDATE_COMMANDS_LITERAL, operands: Array[_], fieldName: InternalSymbol) = this()
-  var fieldName: String | InternalSymbol = js.native
-  var operands: Array[_] = js.native
-  var operator: UPDATE_COMMANDS_LITERAL = js.native
-  def _setFieldName(fieldName: String): DatabaseUpdateCommand = js.native
+trait DatabaseUpdateCommand extends StObject {
+  
+  def _setFieldName(fieldName: String): DatabaseUpdateCommand
+  
+  var fieldName: String | InternalSymbol
+  
+  var operands: Array[Any]
+  
+  var operator: UPDATE_COMMANDS_LITERAL
 }
-
+object DatabaseUpdateCommand {
+  
+  inline def apply(
+    _setFieldName: String => DatabaseUpdateCommand,
+    fieldName: String | InternalSymbol,
+    operands: Array[Any],
+    operator: UPDATE_COMMANDS_LITERAL
+  ): DatabaseUpdateCommand = {
+    val __obj = js.Dynamic.literal(_setFieldName = js.Any.fromFunction1(_setFieldName), fieldName = fieldName.asInstanceOf[js.Any], operands = operands.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatabaseUpdateCommand]
+  }
+  
+  extension [Self <: DatabaseUpdateCommand](x: Self) {
+    
+    inline def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    
+    inline def setOperands(value: Array[Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    
+    inline def setOperator(value: UPDATE_COMMANDS_LITERAL): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def set_setFieldName(value: String => DatabaseUpdateCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
+  }
+}

@@ -1,15 +1,17 @@
 package typingsJapgolly.globalthis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("globalthis/polyfill", JSImport.Namespace)
-@js.native
-object polyfillMod extends js.Object {
+object polyfillMod {
+  
   /**
     * Gets the `globalThis` object.
     */
-  def apply(): js.Any = js.native
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  
+  @JSImport("globalthis/polyfill", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

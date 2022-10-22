@@ -1,27 +1,40 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A value in a key-value pair. */
-trait Value extends js.Object {
+trait Value extends StObject {
+  
   /** The unique ID of the value in the table. */
   var cell_id: js.UndefOr[String] = js.undefined
+  
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
   var location: js.UndefOr[Location] = js.undefined
+  
   /** The text content of the table cell without HTML markup. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object Value {
-  @scala.inline
-  def apply(cell_id: String = null, location: Location = null, text: String = null): Value = {
+  
+  inline def apply(): Value = {
     val __obj = js.Dynamic.literal()
-    if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
+  
+  extension [Self <: Value](x: Self) {
+    
+    inline def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
+    
+    inline def setCell_idUndefined: Self = StObject.set(x, "cell_id", js.undefined)
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

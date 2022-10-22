@@ -4,82 +4,103 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-left`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-right`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.left
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.relative
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.right
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.left_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.relative_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.right_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait IconSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
+  
   /**
     * The positioning of the icon relative to the geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor)
-    *
     * @default center
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor)
     */
   var anchor: js.UndefOr[
-    center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative
+    center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative_
   ] = js.undefined
+  
   /**
-    * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) relative to the center of the icon. It is specified as a ratio of the icon's dimensions. For example, a value of `{ x: 0, y: 0 }` designates the center of the icon, while a value of `{ x: -0.5, y: -0.5 }` causes the top-left corner of the icon to coincide with the feature geometry.  This property only applies when [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) is set to `relative`.
+    * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) relative to the center of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
     */
   var anchorPosition: js.UndefOr[IconSymbol3DLayerAnchorPosition] = js.undefined
+  
   /**
-    * The material used to shade the icon. This property defines the icon's color.
+    * The material used to shade the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
     */
   var material: js.UndefOr[IconSymbol3DLayerMaterialProperties] = js.undefined
+  
   /**
-    * The outline of the icon. The color property of this object directly modifies the overall color of IconSymbol3DLayer defined with the `cross` or `x` primitive.
+    * The outline of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
   var outline: js.UndefOr[IconSymbol3DLayerOutlineProperties] = js.undefined
+  
   /**
-    * The shape (`primitive`) or image URL (`href`) used to visualize the features. If both properties are present, `href` takes precedence and `primitive` is ignored.
-    * > **Known Limitations**  Using this property to render an SVG path is not supported in IE11.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
+    * The shape (`primitive`) or image URL (`href`) used to visualize the features.
     *
     * @default { primitive: "circle" }
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     */
   var resource: js.UndefOr[IconSymbol3DLayerResource] = js.undefined
+  
   /**
-    * The size of the icon in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#size)
+    * The size of the icon in points.
     *
     * @default 12
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#size)
     */
   var size: js.UndefOr[Double | String] = js.undefined
 }
-
 object IconSymbol3DLayerProperties {
-  @scala.inline
-  def apply(
-    anchor: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative = null,
-    anchorPosition: IconSymbol3DLayerAnchorPosition = null,
-    material: IconSymbol3DLayerMaterialProperties = null,
-    outline: IconSymbol3DLayerOutlineProperties = null,
-    resource: IconSymbol3DLayerResource = null,
-    size: Double | String = null
-  ): IconSymbol3DLayerProperties = {
+  
+  inline def apply(): IconSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSymbol3DLayerProperties]
   }
+  
+  extension [Self <: IconSymbol3DLayerProperties](x: Self) {
+    
+    inline def setAnchor(
+      value: center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative_
+    ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorPosition(value: IconSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorPositionUndefined: Self = StObject.set(x, "anchorPosition", js.undefined)
+    
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
+    inline def setMaterial(value: IconSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
+    inline def setOutline(value: IconSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    inline def setResource(value: IconSymbol3DLayerResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

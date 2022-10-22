@@ -1,12 +1,12 @@
 package typingsJapgolly.oracleOraclejet.ojgaugeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.Anon9
-import typingsJapgolly.oracleOraclejet.AnonLabelAndValue
-import typingsJapgolly.oracleOraclejet.AnonSource
+import typingsJapgolly.oracleOraclejet.anon.LabelAndValue
+import typingsJapgolly.oracleOraclejet.anon.Source
+import typingsJapgolly.oracleOraclejet.anon.`11`
 import typingsJapgolly.oracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
-import typingsJapgolly.oracleOraclejet.oracleOraclejetNumbers.`0.5`
-import typingsJapgolly.oracleOraclejet.oracleOraclejetNumbers.`1`
+import typingsJapgolly.oracleOraclejet.oracleOraclejetDoubles.`0.5`
+import typingsJapgolly.oracleOraclejet.oracleOraclejetInts.`1`
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.auto
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.horizontal
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.meet
@@ -14,77 +14,136 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.none
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.off
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.on
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgauge.ojRatingGaugeSettableProperties> */
 trait ojRatingGaugeSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var changed: js.UndefOr[Boolean] = js.undefined
-  var changedState: js.UndefOr[AnonSource] = js.undefined
-  var hoverState: js.UndefOr[AnonSource] = js.undefined
+  
+  var changedState: js.UndefOr[Source] = js.undefined
+  
+  var hoverState: js.UndefOr[Source] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var orientation: js.UndefOr[vertical | horizontal] = js.undefined
+  
   var preserveAspectRatio: js.UndefOr[none | meet] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
-  var selectedState: js.UndefOr[AnonSource] = js.undefined
+  
+  var selectedState: js.UndefOr[Source] = js.undefined
+  
   var step: js.UndefOr[`0.5` | `1`] = js.undefined
+  
   var thresholds: js.UndefOr[js.Array[Threshold]] = js.undefined
-  var tooltip: js.UndefOr[Anon9] = js.undefined
+  
+  var tooltip: js.UndefOr[`11`] = js.undefined
+  
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var transientValue: js.UndefOr[Double] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
-  var unselectedState: js.UndefOr[AnonSource] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  
+  var transientValue: js.UndefOr[Double | Null] = js.undefined
+  
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
+  
+  var unselectedState: js.UndefOr[Source] = js.undefined
+  
+  var value: js.UndefOr[Double | Null] = js.undefined
+  
   var visualEffects: js.UndefOr[none | auto] = js.undefined
 }
-
 object ojRatingGaugeSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    changed: js.UndefOr[Boolean] = js.undefined,
-    changedState: AnonSource = null,
-    hoverState: AnonSource = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    orientation: vertical | horizontal = null,
-    preserveAspectRatio: none | meet = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    selectedState: AnonSource = null,
-    step: `0.5` | `1` = null,
-    thresholds: js.Array[Threshold] = null,
-    tooltip: Anon9 = null,
-    trackResize: on | off = null,
-    transientValue: Int | Double = null,
-    translations: AnonLabelAndValue = null,
-    unselectedState: AnonSource = null,
-    value: Int | Double = null,
-    visualEffects: none | auto = null
-  ): ojRatingGaugeSettablePropertiesLenient = {
+  
+  inline def apply(): ojRatingGaugeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
-    if (changedState != null) __obj.updateDynamic("changedState")(changedState.asInstanceOf[js.Any])
-    if (hoverState != null) __obj.updateDynamic("hoverState")(hoverState.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (selectedState != null) __obj.updateDynamic("selectedState")(selectedState.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (unselectedState != null) __obj.updateDynamic("unselectedState")(unselectedState.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visualEffects != null) __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRatingGaugeSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojRatingGaugeSettablePropertiesLenient](x: Self) {
+    
+    inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+    
+    inline def setChangedState(value: Source): Self = StObject.set(x, "changedState", value.asInstanceOf[js.Any])
+    
+    inline def setChangedStateUndefined: Self = StObject.set(x, "changedState", js.undefined)
+    
+    inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+    
+    inline def setHoverState(value: Source): Self = StObject.set(x, "hoverState", value.asInstanceOf[js.Any])
+    
+    inline def setHoverStateUndefined: Self = StObject.set(x, "hoverState", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPreserveAspectRatio(value: none | meet): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setSelectedState(value: Source): Self = StObject.set(x, "selectedState", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedStateUndefined: Self = StObject.set(x, "selectedState", js.undefined)
+    
+    inline def setStep(value: `0.5` | `1`): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setThresholds(value: js.Array[Threshold]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    
+    inline def setThresholdsVarargs(value: Threshold*): Self = StObject.set(x, "thresholds", js.Array(value*))
+    
+    inline def setTooltip(value: `11`): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+    
+    inline def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+    
+    inline def setTransientValueNull: Self = StObject.set(x, "transientValue", null)
+    
+    inline def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
+    
+    inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setUnselectedState(value: Source): Self = StObject.set(x, "unselectedState", value.asInstanceOf[js.Any])
+    
+    inline def setUnselectedStateUndefined: Self = StObject.set(x, "unselectedState", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVisualEffects(value: none | auto): Self = StObject.set(x, "visualEffects", value.asInstanceOf[js.Any])
+    
+    inline def setVisualEffectsUndefined: Self = StObject.set(x, "visualEffects", js.undefined)
+  }
 }
-

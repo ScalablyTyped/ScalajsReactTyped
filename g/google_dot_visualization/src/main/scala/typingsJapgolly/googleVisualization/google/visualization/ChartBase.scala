@@ -1,16 +1,17 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.visualization.ChartBase")
 @js.native
-abstract class ChartBase protected () extends js.Object {
-  def this(element: Element) = this()
+trait ChartBase extends StObject {
+  
   def getContainer(): Element = js.native
-  def getSelection(): js.Array[VisualizationSelectionArray] = js.native
-  def setSelection(selection: js.Array[VisualizationSelectionArray]): Unit = js.native
+  
+  def getSelection(): js.Array[ChartSelection] = js.native
+  
+  def setSelection(): Unit = js.native
+  def setSelection(selection: js.Array[ChartSelection]): Unit = js.native
 }
-

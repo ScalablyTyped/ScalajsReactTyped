@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileExtensionsValidatingEventUIParam extends js.Object {
+trait FileExtensionsValidatingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the file extension.
-  	 */
+    * Gets the file extension.
+    */
   var fileExtension: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the full file name.
-  	 */
+    * Gets the full file name.
+    */
   var fileName: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the the igUpload widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the the igUpload widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object FileExtensionsValidatingEventUIParam {
-  @scala.inline
-  def apply(fileExtension: String = null, fileName: String = null, owner: js.Any = null): FileExtensionsValidatingEventUIParam = {
+  
+  inline def apply(): FileExtensionsValidatingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileExtensionsValidatingEventUIParam]
   }
+  
+  extension [Self <: FileExtensionsValidatingEventUIParam](x: Self) {
+    
+    inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+    
+    inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

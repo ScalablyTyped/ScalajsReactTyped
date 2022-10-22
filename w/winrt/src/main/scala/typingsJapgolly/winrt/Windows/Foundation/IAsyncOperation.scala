@@ -1,12 +1,14 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import typingsJapgolly.winrt.AnonGetResults
+import typingsJapgolly.winrt.anon.GetResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAsyncOperation[TResult] extends IPromise[TResult] {
-  var operation: AnonGetResults[TResult] = js.native
+trait IAsyncOperation[TResult]
+  extends StObject
+     with IPromise[TResult] {
+  
+  var operation: GetResults[TResult] = js.native
 }
-

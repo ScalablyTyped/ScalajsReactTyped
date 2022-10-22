@@ -1,21 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Activation.LaunchActivatedEventArgs")
-@js.native
-class LaunchActivatedEventArgs () extends ILaunchActivatedEventArgs {
-  /* CompleteClass */
-  override var arguments: String = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var tileId: String = js.native
+trait LaunchActivatedEventArgs
+  extends StObject
+     with ILaunchActivatedEventArgs
+object LaunchActivatedEventArgs {
+  
+  inline def apply(
+    arguments: String,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    tileId: String
+  ): LaunchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], tileId = tileId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LaunchActivatedEventArgs]
+  }
 }
-

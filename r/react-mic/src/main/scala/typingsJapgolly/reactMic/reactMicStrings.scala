@@ -1,19 +1,24 @@
 package typingsJapgolly.reactMic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMicStrings {
-  @js.native
-  sealed trait frequencyBars extends js.Object
   
   @js.native
-  sealed trait sinewave extends js.Object
+  sealed trait audioSlashwav extends StObject
+  inline def audioSlashwav: audioSlashwav = "audio/wav".asInstanceOf[audioSlashwav]
   
-  @scala.inline
-  def frequencyBars: frequencyBars = "frequencyBars".asInstanceOf[frequencyBars]
-  @scala.inline
-  def sinewave: sinewave = "sinewave".asInstanceOf[sinewave]
+  @js.native
+  sealed trait audioSlashwebm extends StObject
+  inline def audioSlashwebm: audioSlashwebm = "audio/webm".asInstanceOf[audioSlashwebm]
+  
+  @js.native
+  sealed trait frequencyBars extends StObject
+  inline def frequencyBars: frequencyBars = "frequencyBars".asInstanceOf[frequencyBars]
+  
+  @js.native
+  sealed trait sinewave extends StObject
+  inline def sinewave: sinewave = "sinewave".asInstanceOf[sinewave]
 }
-

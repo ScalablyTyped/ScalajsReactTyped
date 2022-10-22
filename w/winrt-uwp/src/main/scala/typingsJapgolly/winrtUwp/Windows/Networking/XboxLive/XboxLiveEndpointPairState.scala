@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.XboxLive
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait XboxLiveEndpointPairState extends js.Object
-
+sealed trait XboxLiveEndpointPairState extends StObject
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairState")
 @js.native
-object XboxLiveEndpointPairState extends js.Object {
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @js.native
-  sealed trait creatingInbound extends XboxLiveEndpointPairState
+object XboxLiveEndpointPairState extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait creatingOutbound extends XboxLiveEndpointPairState
+  sealed trait creatingInbound
+    extends StObject
+       with XboxLiveEndpointPairState
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait deleted extends XboxLiveEndpointPairState
+  sealed trait creatingOutbound
+    extends StObject
+       with XboxLiveEndpointPairState
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait deletingLocally extends XboxLiveEndpointPairState
+  sealed trait deleted
+    extends StObject
+       with XboxLiveEndpointPairState
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait invalid extends XboxLiveEndpointPairState
+  sealed trait deletingLocally
+    extends StObject
+       with XboxLiveEndpointPairState
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait ready extends XboxLiveEndpointPairState
+  sealed trait invalid
+    extends StObject
+       with XboxLiveEndpointPairState
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait remoteEndpointTerminating extends XboxLiveEndpointPairState
+  sealed trait ready
+    extends StObject
+       with XboxLiveEndpointPairState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XboxLiveEndpointPairState with Double] = js.native
-  /* 2 */ @js.native
-  object creatingInbound extends TopLevel[creatingInbound with Double]
-  
-  /* 1 */ @js.native
-  object creatingOutbound extends TopLevel[creatingOutbound with Double]
-  
-  /* 6 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 4 */ @js.native
-  object deletingLocally extends TopLevel[deletingLocally with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 3 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
-  /* 5 */ @js.native
-  object remoteEndpointTerminating extends TopLevel[remoteEndpointTerminating with Double]
-  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @js.native
+  sealed trait remoteEndpointTerminating
+    extends StObject
+       with XboxLiveEndpointPairState
 }
-

@@ -1,19 +1,19 @@
 
 # Scala.js typings for hibp
 
-Typings are for version 8.0.0
+Typings are for version 11.1.0
 
 ## Library description:
-A Promise-based API for querying the 'Have I been pwned?' service.
+A Promise-based client for the 'Have I been pwned?' service.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | hibp |
-| Keywords           | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
-| # releases         | 22 |
-| # dependents       | 5 |
-| # downloads        | 52594 |
-| # stars            | 1 |
+| Keywords           | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords, client |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 25221.333333333332 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://wkovacs64.github.io/hibp)

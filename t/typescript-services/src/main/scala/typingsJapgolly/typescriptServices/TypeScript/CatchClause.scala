@@ -1,16 +1,62 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.CatchClause")
-@js.native
-class CatchClause protected () extends AST {
-  def this(identifier: Identifier, typeAnnotation: TypeAnnotation, block: Block) = this()
-  var block: Block = js.native
-  var identifier: Identifier = js.native
-  var typeAnnotation: TypeAnnotation = js.native
-  def structuralEquals(ast: CatchClause, includingPosition: Boolean): Boolean = js.native
+trait CatchClause
+  extends StObject
+     with AST {
+  
+  var block: Block
+  
+  var identifier: Identifier
+  
+  def structuralEquals(ast: CatchClause, includingPosition: Boolean): Boolean
+  
+  var typeAnnotation: TypeAnnotation
 }
-
+object CatchClause {
+  
+  inline def apply(
+    _astID: Any,
+    _end: Double,
+    _postComments: Any,
+    _preComments: Any,
+    _start: Double,
+    _trailingTriviaWidth: Double,
+    block: Block,
+    end: CallbackTo[Double],
+    fileName: CallbackTo[String],
+    identifier: Identifier,
+    isExpression: CallbackTo[Boolean],
+    kind: CallbackTo[SyntaxKind],
+    parent: AST,
+    postComments: CallbackTo[js.Array[Comment]],
+    preComments: CallbackTo[js.Array[Comment]],
+    setPostComments: js.Array[Comment] => Callback,
+    setPreComments: js.Array[Comment] => Callback,
+    start: CallbackTo[Double],
+    structuralEquals: (CatchClause, Boolean) => Boolean,
+    syntaxID: CallbackTo[Double],
+    trailingTriviaWidth: CallbackTo[Double],
+    typeAnnotation: TypeAnnotation,
+    width: CallbackTo[Double]
+  ): CatchClause = {
+    val __obj = js.Dynamic.literal(_astID = _astID.asInstanceOf[js.Any], _end = _end.asInstanceOf[js.Any], _postComments = _postComments.asInstanceOf[js.Any], _preComments = _preComments.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], _trailingTriviaWidth = _trailingTriviaWidth.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], end = end.toJsFn, fileName = fileName.toJsFn, identifier = identifier.asInstanceOf[js.Any], isExpression = isExpression.toJsFn, kind = kind.toJsFn, parent = parent.asInstanceOf[js.Any], postComments = postComments.toJsFn, preComments = preComments.toJsFn, setPostComments = js.Any.fromFunction1((t0: js.Array[Comment]) => setPostComments(t0).runNow()), setPreComments = js.Any.fromFunction1((t0: js.Array[Comment]) => setPreComments(t0).runNow()), start = start.toJsFn, structuralEquals = js.Any.fromFunction2(structuralEquals), syntaxID = syntaxID.toJsFn, trailingTriviaWidth = trailingTriviaWidth.toJsFn, typeAnnotation = typeAnnotation.asInstanceOf[js.Any], width = width.toJsFn)
+    __obj.asInstanceOf[CatchClause]
+  }
+  
+  extension [Self <: CatchClause](x: Self) {
+    
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+  }
+}

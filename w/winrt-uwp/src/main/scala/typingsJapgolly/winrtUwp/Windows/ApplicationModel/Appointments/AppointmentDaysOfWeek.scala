@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentDaysOfWeek extends js.Object
-
+sealed trait AppointmentDaysOfWeek extends StObject
 /** Specifies the days of the week on which an appointment occurs. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek")
 @js.native
-object AppointmentDaysOfWeek extends js.Object {
+object AppointmentDaysOfWeek extends StObject {
+  
   /** The appointment occurs on Friday. */
   @js.native
-  sealed trait friday extends AppointmentDaysOfWeek
+  sealed trait friday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Monday. */
   @js.native
-  sealed trait monday extends AppointmentDaysOfWeek
+  sealed trait monday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment doesn't occur on any days of the week. */
   @js.native
-  sealed trait none extends AppointmentDaysOfWeek
+  sealed trait none
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Saturday. */
   @js.native
-  sealed trait saturday extends AppointmentDaysOfWeek
+  sealed trait saturday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Sunday. */
   @js.native
-  sealed trait sunday extends AppointmentDaysOfWeek
+  sealed trait sunday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Thursday. */
   @js.native
-  sealed trait thursday extends AppointmentDaysOfWeek
+  sealed trait thursday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Tuesday. */
   @js.native
-  sealed trait tuesday extends AppointmentDaysOfWeek
+  sealed trait tuesday
+    extends StObject
+       with AppointmentDaysOfWeek
   
   /** The appointment occurs on Wednesday. */
   @js.native
-  sealed trait wednesday extends AppointmentDaysOfWeek
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentDaysOfWeek with Double] = js.native
-  /* 6 */ @js.native
-  object friday extends TopLevel[friday with Double]
-  
-  /* 2 */ @js.native
-  object monday extends TopLevel[monday with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 7 */ @js.native
-  object saturday extends TopLevel[saturday with Double]
-  
-  /* 1 */ @js.native
-  object sunday extends TopLevel[sunday with Double]
-  
-  /* 5 */ @js.native
-  object thursday extends TopLevel[thursday with Double]
-  
-  /* 3 */ @js.native
-  object tuesday extends TopLevel[tuesday with Double]
-  
-  /* 4 */ @js.native
-  object wednesday extends TopLevel[wednesday with Double]
-  
+  sealed trait wednesday
+    extends StObject
+       with AppointmentDaysOfWeek
 }
-

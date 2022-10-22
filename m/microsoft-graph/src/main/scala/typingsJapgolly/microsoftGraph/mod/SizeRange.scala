@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeRange extends js.Object {
+trait SizeRange extends StObject {
+  
   // The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  var maximumSize: js.UndefOr[Double] = js.undefined
+  var maximumSize: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  var minimumSize: js.UndefOr[Double] = js.undefined
+  var minimumSize: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object SizeRange {
-  @scala.inline
-  def apply(maximumSize: Int | Double = null, minimumSize: Int | Double = null): SizeRange = {
+  
+  inline def apply(): SizeRange = {
     val __obj = js.Dynamic.literal()
-    if (maximumSize != null) __obj.updateDynamic("maximumSize")(maximumSize.asInstanceOf[js.Any])
-    if (minimumSize != null) __obj.updateDynamic("minimumSize")(minimumSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeRange]
   }
+  
+  extension [Self <: SizeRange](x: Self) {
+    
+    inline def setMaximumSize(value: NullableOption[Double]): Self = StObject.set(x, "maximumSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumSizeNull: Self = StObject.set(x, "maximumSize", null)
+    
+    inline def setMaximumSizeUndefined: Self = StObject.set(x, "maximumSize", js.undefined)
+    
+    inline def setMinimumSize(value: NullableOption[Double]): Self = StObject.set(x, "minimumSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumSizeNull: Self = StObject.set(x, "minimumSize", null)
+    
+    inline def setMinimumSizeUndefined: Self = StObject.set(x, "minimumSize", js.undefined)
+  }
 }
-

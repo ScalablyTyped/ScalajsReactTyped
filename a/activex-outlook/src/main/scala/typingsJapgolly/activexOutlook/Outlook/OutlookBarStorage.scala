@@ -1,18 +1,51 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.OutlookBarStorage")
-@js.native
-class OutlookBarStorage protected () extends js.Object {
-  val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val Groups: OutlookBarGroups = js.native
-  @JSName("Outlook.OutlookBarStorage_typekey")
-  var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
+trait OutlookBarStorage extends StObject {
+  
+  val Application: typingsJapgolly.activexOutlook.Outlook.Application
+  
+  val Class: OlObjectClass
+  
+  val Groups: OutlookBarGroups
+  
+  /* private */ @JSName("Outlook.OutlookBarStorage_typekey")
+  var OutlookDotOutlookBarStorage_typekey: OutlookBarStorage
+  
+  val Parent: Any
+  
+  val Session: NameSpace
 }
-
+object OutlookBarStorage {
+  
+  inline def apply(
+    Application: Application,
+    Class: OlObjectClass,
+    Groups: OutlookBarGroups,
+    OutlookDotOutlookBarStorage_typekey: OutlookBarStorage,
+    Parent: Any,
+    Session: NameSpace
+  ): OutlookBarStorage = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Groups = Groups.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OutlookBarStorage_typekey")(OutlookDotOutlookBarStorage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutlookBarStorage]
+  }
+  
+  extension [Self <: OutlookBarStorage](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    
+    inline def setGroups(value: OutlookBarGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    
+    inline def setOutlookDotOutlookBarStorage_typekey(value: OutlookBarStorage): Self = StObject.set(x, "Outlook.OutlookBarStorage_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+  }
+}

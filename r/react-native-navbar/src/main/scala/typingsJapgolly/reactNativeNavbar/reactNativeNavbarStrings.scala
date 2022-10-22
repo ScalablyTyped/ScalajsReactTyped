@@ -1,54 +1,44 @@
 package typingsJapgolly.reactNativeNavbar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeNavbarStrings {
-  @js.native
-  sealed trait clip extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait clip extends StObject
+  inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait `light-content` extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait `light-content` extends StObject
+  inline def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait tail extends js.Object
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
-  @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def tail: tail = "tail".asInstanceOf[tail]
+  @js.native
+  sealed trait tail extends StObject
+  inline def tail: tail = "tail".asInstanceOf[tail]
 }
-

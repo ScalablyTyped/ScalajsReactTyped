@@ -1,21 +1,26 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IObjectTypesAdmin extends js.Object {
+trait IObjectTypesAdmin extends StObject {
+  
   val Count: Double
+  
   def Item(Index: Double): IObjectTypeAdmin
 }
-
 object IObjectTypesAdmin {
-  @scala.inline
-  def apply(Count: Double, Item: Double => CallbackTo[IObjectTypeAdmin]): IObjectTypesAdmin = {
-    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any])
-    __obj.updateDynamic("Item")(js.Any.fromFunction1((t0: scala.Double) => Item(t0).runNow()))
+  
+  inline def apply(Count: Double, Item: Double => IObjectTypeAdmin): IObjectTypesAdmin = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IObjectTypesAdmin]
   }
+  
+  extension [Self <: IObjectTypesAdmin](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Double => IObjectTypeAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+  }
 }
-

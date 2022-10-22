@@ -1,84 +1,104 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridScrollSettings
-  extends /**
-	 * Option for IgGridScrollSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Sets gets the modifier for how long the inertia last on touch devices.
-  	 *
-  	 */
+    * Sets gets the modifier for how long the inertia last on touch devices.
+    *
+    */
   var inertiaDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets the modifier for how much the inertia scrolls on touch devices. Note: Value set to 0 would disable touch movements. Value set to -1 would invert them.
-  	 *
-  	 */
+    * Sets gets the modifier for how much the inertia scrolls on touch devices. Note: Value set to 0 would disable touch movements. Value set to -1 would invert them.
+    *
+    */
   var inertiaStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets current horizontal position.
-  	 *
-  	 */
+    * Sets gets current horizontal position.
+    *
+    */
   var scrollLeft: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets current vertical position.
-  	 *
-  	 */
+    * Sets gets current vertical position.
+    *
+    */
   var scrollTop: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets if smoother scrolling with small intertia should be used when using the mouse wheel.
-  	 *
-  	 */
+    * Sets gets if smoother scrolling with small intertia should be used when using the mouse wheel.
+    *
+    */
   var smoothing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
-  	 *
-  	 */
+    * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
+    *
+    */
   var smoothingDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
-  	 *
-  	 */
+    * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
+    *
+    */
   var smoothingStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets the step of the default scrolling behavior when using the mouse wheel.
-  	 *
-  	 */
+    * Sets gets the step of the default scrolling behavior when using the mouse wheel.
+    *
+    */
   var wheelStep: js.UndefOr[Double] = js.undefined
 }
-
 object IgGridScrollSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridScrollSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    inertiaDuration: Int | Double = null,
-    inertiaStep: Int | Double = null,
-    scrollLeft: Int | Double = null,
-    scrollTop: Int | Double = null,
-    smoothing: js.UndefOr[Boolean] = js.undefined,
-    smoothingDuration: Int | Double = null,
-    smoothingStep: Int | Double = null,
-    wheelStep: Int | Double = null
-  ): IgGridScrollSettings = {
+  
+  inline def apply(): IgGridScrollSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
-    if (inertiaStep != null) __obj.updateDynamic("inertiaStep")(inertiaStep.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing.asInstanceOf[js.Any])
-    if (smoothingDuration != null) __obj.updateDynamic("smoothingDuration")(smoothingDuration.asInstanceOf[js.Any])
-    if (smoothingStep != null) __obj.updateDynamic("smoothingStep")(smoothingStep.asInstanceOf[js.Any])
-    if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridScrollSettings]
   }
+  
+  extension [Self <: IgGridScrollSettings](x: Self) {
+    
+    inline def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
+    
+    inline def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
+    
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    
+    inline def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
+    
+    inline def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
+    
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    
+    inline def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
+    
+    inline def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
+  }
 }
-

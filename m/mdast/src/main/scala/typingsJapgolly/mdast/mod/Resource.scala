@@ -1,20 +1,30 @@
 package typingsJapgolly.mdast.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Resource extends js.Object {
-  var title: js.UndefOr[String] = js.undefined
+trait Resource extends StObject {
+  
+  var title: js.UndefOr[String | Null] = js.undefined
+  
   var url: String
 }
-
 object Resource {
-  @scala.inline
-  def apply(url: String, title: String = null): Resource = {
+  
+  inline def apply(url: String): Resource = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
+  
+  extension [Self <: Resource](x: Self) {
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

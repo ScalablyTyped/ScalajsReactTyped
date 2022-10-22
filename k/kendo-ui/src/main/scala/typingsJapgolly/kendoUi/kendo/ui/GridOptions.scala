@@ -5,199 +5,413 @@ import typingsJapgolly.kendoUi.kendo.data.DataSource
 import typingsJapgolly.kendoUi.kendoUiStrings.`inline`
 import typingsJapgolly.kendoUi.kendoUiStrings.incell
 import typingsJapgolly.kendoUi.kendoUiStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridOptions extends js.Object {
+trait GridOptions extends StObject {
+  
   var allowCopy: js.UndefOr[Boolean | GridAllowCopy] = js.undefined
+  
   var altRowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
+  
   var beforeEdit: js.UndefOr[js.Function1[/* e */ GridBeforeEditEvent, Unit]] = js.undefined
+  
   var cancel: js.UndefOr[js.Function1[/* e */ GridCancelEvent, Unit]] = js.undefined
+  
   var cellClose: js.UndefOr[js.Function1[/* e */ GridCellCloseEvent, Unit]] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ GridChangeEvent, Unit]] = js.undefined
+  
   var columnHide: js.UndefOr[js.Function1[/* e */ GridColumnHideEvent, Unit]] = js.undefined
+  
   var columnLock: js.UndefOr[js.Function1[/* e */ GridColumnLockEvent, Unit]] = js.undefined
+  
   var columnMenu: js.UndefOr[Boolean | GridColumnMenu] = js.undefined
+  
   var columnMenuInit: js.UndefOr[js.Function1[/* e */ GridColumnMenuInitEvent, Unit]] = js.undefined
+  
   var columnMenuOpen: js.UndefOr[js.Function1[/* e */ GridColumnMenuOpenEvent, Unit]] = js.undefined
+  
   var columnReorder: js.UndefOr[js.Function1[/* e */ GridColumnReorderEvent, Unit]] = js.undefined
+  
   var columnResize: js.UndefOr[js.Function1[/* e */ GridColumnResizeEvent, Unit]] = js.undefined
+  
   var columnResizeHandleWidth: js.UndefOr[Double] = js.undefined
+  
   var columnShow: js.UndefOr[js.Function1[/* e */ GridColumnShowEvent, Unit]] = js.undefined
+  
+  var columnStick: js.UndefOr[js.Function1[/* e */ GridColumnStickEvent, Unit]] = js.undefined
+  
   var columnUnlock: js.UndefOr[js.Function1[/* e */ GridColumnUnlockEvent, Unit]] = js.undefined
+  
+  var columnUnstick: js.UndefOr[js.Function1[/* e */ GridColumnUnstickEvent, Unit]] = js.undefined
+  
   var columns: js.UndefOr[js.Array[GridColumn]] = js.undefined
+  
   var dataBinding: js.UndefOr[js.Function1[/* e */ GridDataBindingEvent, Unit]] = js.undefined
+  
   var dataBound: js.UndefOr[js.Function1[/* e */ GridDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var detailCollapse: js.UndefOr[js.Function1[/* e */ GridDetailCollapseEvent, Unit]] = js.undefined
+  
   var detailExpand: js.UndefOr[js.Function1[/* e */ GridDetailExpandEvent, Unit]] = js.undefined
+  
   var detailInit: js.UndefOr[js.Function1[/* e */ GridDetailInitEvent, Unit]] = js.undefined
+  
   var detailTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var edit: js.UndefOr[js.Function1[/* e */ GridEditEvent, Unit]] = js.undefined
+  
   var editable: js.UndefOr[Boolean | `inline` | incell | popup | GridEditable] = js.undefined
+  
+  var encodeTitles: js.UndefOr[Boolean] = js.undefined
+  
   var excel: js.UndefOr[GridExcel] = js.undefined
+  
   var excelExport: js.UndefOr[js.Function1[/* e */ GridExcelExportEvent, Unit]] = js.undefined
+  
   var filter: js.UndefOr[js.Function1[/* e */ GridFilterEvent, Unit]] = js.undefined
+  
   var filterMenuInit: js.UndefOr[js.Function1[/* e */ GridFilterMenuInitEvent, Unit]] = js.undefined
+  
   var filterMenuOpen: js.UndefOr[js.Function1[/* e */ GridFilterMenuOpenEvent, Unit]] = js.undefined
+  
   var filterable: js.UndefOr[Boolean | GridFilterable] = js.undefined
+  
   var group: js.UndefOr[js.Function1[/* e */ GridGroupEvent, Unit]] = js.undefined
+  
   var groupCollapse: js.UndefOr[js.Function1[/* e */ GridGroupCollapseEvent, Unit]] = js.undefined
+  
   var groupExpand: js.UndefOr[js.Function1[/* e */ GridGroupExpandEvent, Unit]] = js.undefined
+  
   var groupable: js.UndefOr[Boolean | GridGroupable] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
+  var loaderType: js.UndefOr[String] = js.undefined
+  
   var messages: js.UndefOr[GridMessages] = js.undefined
+  
   var mobile: js.UndefOr[Boolean | String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var navigate: js.UndefOr[js.Function1[/* e */ GridNavigateEvent, Unit]] = js.undefined
+  
   var noRecords: js.UndefOr[Boolean | GridNoRecords] = js.undefined
+  
   var page: js.UndefOr[js.Function1[/* e */ GridPageEvent, Unit]] = js.undefined
+  
   var pageable: js.UndefOr[Boolean | GridPageable] = js.undefined
+  
   var pdf: js.UndefOr[GridPdf] = js.undefined
+  
   var pdfExport: js.UndefOr[js.Function1[/* e */ GridPdfExportEvent, Unit]] = js.undefined
+  
   var persistSelection: js.UndefOr[Boolean] = js.undefined
+  
   var remove: js.UndefOr[js.Function1[/* e */ GridRemoveEvent, Unit]] = js.undefined
+  
   var reorderable: js.UndefOr[Boolean] = js.undefined
+  
   var resizable: js.UndefOr[Boolean] = js.undefined
+  
   var rowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var save: js.UndefOr[js.Function1[/* e */ GridSaveEvent, Unit]] = js.undefined
+  
   var saveChanges: js.UndefOr[js.Function1[/* e */ GridSaveChangesEvent, Unit]] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean | GridScrollable] = js.undefined
+  
+  var search: js.UndefOr[GridSearch] = js.undefined
+  
   var selectable: js.UndefOr[Boolean | String] = js.undefined
+  
   var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, Unit]] = js.undefined
+  
   var sortable: js.UndefOr[Boolean | GridSortable] = js.undefined
+  
   var toolbar: js.UndefOr[String | js.Function | (js.Array[String | GridToolbarItem])] = js.undefined
 }
-
 object GridOptions {
-  @scala.inline
-  def apply(
-    allowCopy: Boolean | GridAllowCopy = null,
-    altRowTemplate: String | js.Function = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    beforeEdit: /* e */ GridBeforeEditEvent => Callback = null,
-    cancel: /* e */ GridCancelEvent => Callback = null,
-    cellClose: /* e */ GridCellCloseEvent => Callback = null,
-    change: /* e */ GridChangeEvent => Callback = null,
-    columnHide: /* e */ GridColumnHideEvent => Callback = null,
-    columnLock: /* e */ GridColumnLockEvent => Callback = null,
-    columnMenu: Boolean | GridColumnMenu = null,
-    columnMenuInit: /* e */ GridColumnMenuInitEvent => Callback = null,
-    columnMenuOpen: /* e */ GridColumnMenuOpenEvent => Callback = null,
-    columnReorder: /* e */ GridColumnReorderEvent => Callback = null,
-    columnResize: /* e */ GridColumnResizeEvent => Callback = null,
-    columnResizeHandleWidth: Int | Double = null,
-    columnShow: /* e */ GridColumnShowEvent => Callback = null,
-    columnUnlock: /* e */ GridColumnUnlockEvent => Callback = null,
-    columns: js.Array[GridColumn] = null,
-    dataBinding: /* e */ GridDataBindingEvent => Callback = null,
-    dataBound: /* e */ GridDataBoundEvent => Callback = null,
-    dataSource: js.Any | DataSource = null,
-    detailCollapse: /* e */ GridDetailCollapseEvent => Callback = null,
-    detailExpand: /* e */ GridDetailExpandEvent => Callback = null,
-    detailInit: /* e */ GridDetailInitEvent => Callback = null,
-    detailTemplate: String | js.Function = null,
-    edit: /* e */ GridEditEvent => Callback = null,
-    editable: Boolean | `inline` | incell | popup | GridEditable = null,
-    excel: GridExcel = null,
-    excelExport: /* e */ GridExcelExportEvent => Callback = null,
-    filter: /* e */ GridFilterEvent => Callback = null,
-    filterMenuInit: /* e */ GridFilterMenuInitEvent => Callback = null,
-    filterMenuOpen: /* e */ GridFilterMenuOpenEvent => Callback = null,
-    filterable: Boolean | GridFilterable = null,
-    group: /* e */ GridGroupEvent => Callback = null,
-    groupCollapse: /* e */ GridGroupCollapseEvent => Callback = null,
-    groupExpand: /* e */ GridGroupExpandEvent => Callback = null,
-    groupable: Boolean | GridGroupable = null,
-    height: Double | String = null,
-    messages: GridMessages = null,
-    mobile: Boolean | String = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    navigate: /* e */ GridNavigateEvent => Callback = null,
-    noRecords: Boolean | GridNoRecords = null,
-    page: /* e */ GridPageEvent => Callback = null,
-    pageable: Boolean | GridPageable = null,
-    pdf: GridPdf = null,
-    pdfExport: /* e */ GridPdfExportEvent => Callback = null,
-    persistSelection: js.UndefOr[Boolean] = js.undefined,
-    remove: /* e */ GridRemoveEvent => Callback = null,
-    reorderable: js.UndefOr[Boolean] = js.undefined,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    rowTemplate: String | js.Function = null,
-    save: /* e */ GridSaveEvent => Callback = null,
-    saveChanges: /* e */ GridSaveChangesEvent => Callback = null,
-    scrollable: Boolean | GridScrollable = null,
-    selectable: Boolean | String = null,
-    sort: /* e */ GridSortEvent => Callback = null,
-    sortable: Boolean | GridSortable = null,
-    toolbar: String | js.Function | (js.Array[String | GridToolbarItem]) = null
-  ): GridOptions = {
+  
+  inline def apply(): GridOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowCopy != null) __obj.updateDynamic("allowCopy")(allowCopy.asInstanceOf[js.Any])
-    if (altRowTemplate != null) __obj.updateDynamic("altRowTemplate")(altRowTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridBeforeEditEvent) => beforeEdit(t0).runNow()))
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridCancelEvent) => cancel(t0).runNow()))
-    if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridCellCloseEvent) => cellClose(t0).runNow()))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridChangeEvent) => change(t0).runNow()))
-    if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnHideEvent) => columnHide(t0).runNow()))
-    if (columnLock != null) __obj.updateDynamic("columnLock")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnLockEvent) => columnLock(t0).runNow()))
-    if (columnMenu != null) __obj.updateDynamic("columnMenu")(columnMenu.asInstanceOf[js.Any])
-    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnMenuInitEvent) => columnMenuInit(t0).runNow()))
-    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnMenuOpenEvent) => columnMenuOpen(t0).runNow()))
-    if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnReorderEvent) => columnReorder(t0).runNow()))
-    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnResizeEvent) => columnResize(t0).runNow()))
-    if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
-    if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnShowEvent) => columnShow(t0).runNow()))
-    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridColumnUnlockEvent) => columnUnlock(t0).runNow()))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridDataBindingEvent) => dataBinding(t0).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridDataBoundEvent) => dataBound(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (detailCollapse != null) __obj.updateDynamic("detailCollapse")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridDetailCollapseEvent) => detailCollapse(t0).runNow()))
-    if (detailExpand != null) __obj.updateDynamic("detailExpand")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridDetailExpandEvent) => detailExpand(t0).runNow()))
-    if (detailInit != null) __obj.updateDynamic("detailInit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridDetailInitEvent) => detailInit(t0).runNow()))
-    if (detailTemplate != null) __obj.updateDynamic("detailTemplate")(detailTemplate.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridEditEvent) => edit(t0).runNow()))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
-    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridExcelExportEvent) => excelExport(t0).runNow()))
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridFilterEvent) => filter(t0).runNow()))
-    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridFilterMenuInitEvent) => filterMenuInit(t0).runNow()))
-    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridFilterMenuOpenEvent) => filterMenuOpen(t0).runNow()))
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridGroupEvent) => group(t0).runNow()))
-    if (groupCollapse != null) __obj.updateDynamic("groupCollapse")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridGroupCollapseEvent) => groupCollapse(t0).runNow()))
-    if (groupExpand != null) __obj.updateDynamic("groupExpand")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridGroupExpandEvent) => groupExpand(t0).runNow()))
-    if (groupable != null) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridNavigateEvent) => navigate(t0).runNow()))
-    if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridPageEvent) => page(t0).runNow()))
-    if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridPdfExportEvent) => pdfExport(t0).runNow()))
-    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridRemoveEvent) => remove(t0).runNow()))
-    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridSaveEvent) => save(t0).runNow()))
-    if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridSaveChangesEvent) => saveChanges(t0).runNow()))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GridSortEvent) => sort(t0).runNow()))
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions]
   }
+  
+  extension [Self <: GridOptions](x: Self) {
+    
+    inline def setAllowCopy(value: Boolean | GridAllowCopy): Self = StObject.set(x, "allowCopy", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCopyUndefined: Self = StObject.set(x, "allowCopy", js.undefined)
+    
+    inline def setAltRowTemplate(value: String | js.Function): Self = StObject.set(x, "altRowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAltRowTemplateUndefined: Self = StObject.set(x, "altRowTemplate", js.undefined)
+    
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    
+    inline def setBeforeEdit(value: /* e */ GridBeforeEditEvent => Callback): Self = StObject.set(x, "beforeEdit", js.Any.fromFunction1((t0: /* e */ GridBeforeEditEvent) => value(t0).runNow()))
+    
+    inline def setBeforeEditUndefined: Self = StObject.set(x, "beforeEdit", js.undefined)
+    
+    inline def setCancel(value: /* e */ GridCancelEvent => Callback): Self = StObject.set(x, "cancel", js.Any.fromFunction1((t0: /* e */ GridCancelEvent) => value(t0).runNow()))
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setCellClose(value: /* e */ GridCellCloseEvent => Callback): Self = StObject.set(x, "cellClose", js.Any.fromFunction1((t0: /* e */ GridCellCloseEvent) => value(t0).runNow()))
+    
+    inline def setCellCloseUndefined: Self = StObject.set(x, "cellClose", js.undefined)
+    
+    inline def setChange(value: /* e */ GridChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ GridChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setColumnHide(value: /* e */ GridColumnHideEvent => Callback): Self = StObject.set(x, "columnHide", js.Any.fromFunction1((t0: /* e */ GridColumnHideEvent) => value(t0).runNow()))
+    
+    inline def setColumnHideUndefined: Self = StObject.set(x, "columnHide", js.undefined)
+    
+    inline def setColumnLock(value: /* e */ GridColumnLockEvent => Callback): Self = StObject.set(x, "columnLock", js.Any.fromFunction1((t0: /* e */ GridColumnLockEvent) => value(t0).runNow()))
+    
+    inline def setColumnLockUndefined: Self = StObject.set(x, "columnLock", js.undefined)
+    
+    inline def setColumnMenu(value: Boolean | GridColumnMenu): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
+    
+    inline def setColumnMenuInit(value: /* e */ GridColumnMenuInitEvent => Callback): Self = StObject.set(x, "columnMenuInit", js.Any.fromFunction1((t0: /* e */ GridColumnMenuInitEvent) => value(t0).runNow()))
+    
+    inline def setColumnMenuInitUndefined: Self = StObject.set(x, "columnMenuInit", js.undefined)
+    
+    inline def setColumnMenuOpen(value: /* e */ GridColumnMenuOpenEvent => Callback): Self = StObject.set(x, "columnMenuOpen", js.Any.fromFunction1((t0: /* e */ GridColumnMenuOpenEvent) => value(t0).runNow()))
+    
+    inline def setColumnMenuOpenUndefined: Self = StObject.set(x, "columnMenuOpen", js.undefined)
+    
+    inline def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
+    
+    inline def setColumnReorder(value: /* e */ GridColumnReorderEvent => Callback): Self = StObject.set(x, "columnReorder", js.Any.fromFunction1((t0: /* e */ GridColumnReorderEvent) => value(t0).runNow()))
+    
+    inline def setColumnReorderUndefined: Self = StObject.set(x, "columnReorder", js.undefined)
+    
+    inline def setColumnResize(value: /* e */ GridColumnResizeEvent => Callback): Self = StObject.set(x, "columnResize", js.Any.fromFunction1((t0: /* e */ GridColumnResizeEvent) => value(t0).runNow()))
+    
+    inline def setColumnResizeHandleWidth(value: Double): Self = StObject.set(x, "columnResizeHandleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnResizeHandleWidthUndefined: Self = StObject.set(x, "columnResizeHandleWidth", js.undefined)
+    
+    inline def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
+    
+    inline def setColumnShow(value: /* e */ GridColumnShowEvent => Callback): Self = StObject.set(x, "columnShow", js.Any.fromFunction1((t0: /* e */ GridColumnShowEvent) => value(t0).runNow()))
+    
+    inline def setColumnShowUndefined: Self = StObject.set(x, "columnShow", js.undefined)
+    
+    inline def setColumnStick(value: /* e */ GridColumnStickEvent => Callback): Self = StObject.set(x, "columnStick", js.Any.fromFunction1((t0: /* e */ GridColumnStickEvent) => value(t0).runNow()))
+    
+    inline def setColumnStickUndefined: Self = StObject.set(x, "columnStick", js.undefined)
+    
+    inline def setColumnUnlock(value: /* e */ GridColumnUnlockEvent => Callback): Self = StObject.set(x, "columnUnlock", js.Any.fromFunction1((t0: /* e */ GridColumnUnlockEvent) => value(t0).runNow()))
+    
+    inline def setColumnUnlockUndefined: Self = StObject.set(x, "columnUnlock", js.undefined)
+    
+    inline def setColumnUnstick(value: /* e */ GridColumnUnstickEvent => Callback): Self = StObject.set(x, "columnUnstick", js.Any.fromFunction1((t0: /* e */ GridColumnUnstickEvent) => value(t0).runNow()))
+    
+    inline def setColumnUnstickUndefined: Self = StObject.set(x, "columnUnstick", js.undefined)
+    
+    inline def setColumns(value: js.Array[GridColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: GridColumn*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setDataBinding(value: /* e */ GridDataBindingEvent => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1((t0: /* e */ GridDataBindingEvent) => value(t0).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: /* e */ GridDataBoundEvent => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction1((t0: /* e */ GridDataBoundEvent) => value(t0).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDetailCollapse(value: /* e */ GridDetailCollapseEvent => Callback): Self = StObject.set(x, "detailCollapse", js.Any.fromFunction1((t0: /* e */ GridDetailCollapseEvent) => value(t0).runNow()))
+    
+    inline def setDetailCollapseUndefined: Self = StObject.set(x, "detailCollapse", js.undefined)
+    
+    inline def setDetailExpand(value: /* e */ GridDetailExpandEvent => Callback): Self = StObject.set(x, "detailExpand", js.Any.fromFunction1((t0: /* e */ GridDetailExpandEvent) => value(t0).runNow()))
+    
+    inline def setDetailExpandUndefined: Self = StObject.set(x, "detailExpand", js.undefined)
+    
+    inline def setDetailInit(value: /* e */ GridDetailInitEvent => Callback): Self = StObject.set(x, "detailInit", js.Any.fromFunction1((t0: /* e */ GridDetailInitEvent) => value(t0).runNow()))
+    
+    inline def setDetailInitUndefined: Self = StObject.set(x, "detailInit", js.undefined)
+    
+    inline def setDetailTemplate(value: String | js.Function): Self = StObject.set(x, "detailTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setDetailTemplateUndefined: Self = StObject.set(x, "detailTemplate", js.undefined)
+    
+    inline def setEdit(value: /* e */ GridEditEvent => Callback): Self = StObject.set(x, "edit", js.Any.fromFunction1((t0: /* e */ GridEditEvent) => value(t0).runNow()))
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setEditable(value: Boolean | `inline` | incell | popup | GridEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEncodeTitles(value: Boolean): Self = StObject.set(x, "encodeTitles", value.asInstanceOf[js.Any])
+    
+    inline def setEncodeTitlesUndefined: Self = StObject.set(x, "encodeTitles", js.undefined)
+    
+    inline def setExcel(value: GridExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    
+    inline def setExcelExport(value: /* e */ GridExcelExportEvent => Callback): Self = StObject.set(x, "excelExport", js.Any.fromFunction1((t0: /* e */ GridExcelExportEvent) => value(t0).runNow()))
+    
+    inline def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
+    
+    inline def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
+    
+    inline def setFilter(value: /* e */ GridFilterEvent => Callback): Self = StObject.set(x, "filter", js.Any.fromFunction1((t0: /* e */ GridFilterEvent) => value(t0).runNow()))
+    
+    inline def setFilterMenuInit(value: /* e */ GridFilterMenuInitEvent => Callback): Self = StObject.set(x, "filterMenuInit", js.Any.fromFunction1((t0: /* e */ GridFilterMenuInitEvent) => value(t0).runNow()))
+    
+    inline def setFilterMenuInitUndefined: Self = StObject.set(x, "filterMenuInit", js.undefined)
+    
+    inline def setFilterMenuOpen(value: /* e */ GridFilterMenuOpenEvent => Callback): Self = StObject.set(x, "filterMenuOpen", js.Any.fromFunction1((t0: /* e */ GridFilterMenuOpenEvent) => value(t0).runNow()))
+    
+    inline def setFilterMenuOpenUndefined: Self = StObject.set(x, "filterMenuOpen", js.undefined)
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterable(value: Boolean | GridFilterable): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setGroup(value: /* e */ GridGroupEvent => Callback): Self = StObject.set(x, "group", js.Any.fromFunction1((t0: /* e */ GridGroupEvent) => value(t0).runNow()))
+    
+    inline def setGroupCollapse(value: /* e */ GridGroupCollapseEvent => Callback): Self = StObject.set(x, "groupCollapse", js.Any.fromFunction1((t0: /* e */ GridGroupCollapseEvent) => value(t0).runNow()))
+    
+    inline def setGroupCollapseUndefined: Self = StObject.set(x, "groupCollapse", js.undefined)
+    
+    inline def setGroupExpand(value: /* e */ GridGroupExpandEvent => Callback): Self = StObject.set(x, "groupExpand", js.Any.fromFunction1((t0: /* e */ GridGroupExpandEvent) => value(t0).runNow()))
+    
+    inline def setGroupExpandUndefined: Self = StObject.set(x, "groupExpand", js.undefined)
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setGroupable(value: Boolean | GridGroupable): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
+    
+    inline def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLoaderType(value: String): Self = StObject.set(x, "loaderType", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderTypeUndefined: Self = StObject.set(x, "loaderType", js.undefined)
+    
+    inline def setMessages(value: GridMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMobile(value: Boolean | String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    
+    inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setNavigate(value: /* e */ GridNavigateEvent => Callback): Self = StObject.set(x, "navigate", js.Any.fromFunction1((t0: /* e */ GridNavigateEvent) => value(t0).runNow()))
+    
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    
+    inline def setNoRecords(value: Boolean | GridNoRecords): Self = StObject.set(x, "noRecords", value.asInstanceOf[js.Any])
+    
+    inline def setNoRecordsUndefined: Self = StObject.set(x, "noRecords", js.undefined)
+    
+    inline def setPage(value: /* e */ GridPageEvent => Callback): Self = StObject.set(x, "page", js.Any.fromFunction1((t0: /* e */ GridPageEvent) => value(t0).runNow()))
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPageable(value: Boolean | GridPageable): Self = StObject.set(x, "pageable", value.asInstanceOf[js.Any])
+    
+    inline def setPageableUndefined: Self = StObject.set(x, "pageable", js.undefined)
+    
+    inline def setPdf(value: GridPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    
+    inline def setPdfExport(value: /* e */ GridPdfExportEvent => Callback): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1((t0: /* e */ GridPdfExportEvent) => value(t0).runNow()))
+    
+    inline def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
+    
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    
+    inline def setPersistSelection(value: Boolean): Self = StObject.set(x, "persistSelection", value.asInstanceOf[js.Any])
+    
+    inline def setPersistSelectionUndefined: Self = StObject.set(x, "persistSelection", js.undefined)
+    
+    inline def setRemove(value: /* e */ GridRemoveEvent => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: /* e */ GridRemoveEvent) => value(t0).runNow()))
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+    
+    inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
+    
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setRowTemplate(value: String | js.Function): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
+    
+    inline def setSave(value: /* e */ GridSaveEvent => Callback): Self = StObject.set(x, "save", js.Any.fromFunction1((t0: /* e */ GridSaveEvent) => value(t0).runNow()))
+    
+    inline def setSaveChanges(value: /* e */ GridSaveChangesEvent => Callback): Self = StObject.set(x, "saveChanges", js.Any.fromFunction1((t0: /* e */ GridSaveChangesEvent) => value(t0).runNow()))
+    
+    inline def setSaveChangesUndefined: Self = StObject.set(x, "saveChanges", js.undefined)
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setScrollable(value: Boolean | GridScrollable): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSearch(value: GridSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setSort(value: /* e */ GridSortEvent => Callback): Self = StObject.set(x, "sort", js.Any.fromFunction1((t0: /* e */ GridSortEvent) => value(t0).runNow()))
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortable(value: Boolean | GridSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    
+    inline def setToolbar(value: String | js.Function | (js.Array[String | GridToolbarItem])): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setToolbarVarargs(value: (String | GridToolbarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
+  }
 }
-

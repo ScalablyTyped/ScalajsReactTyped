@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "docx-templates" : "4.9.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "docx-templates" : "4.9.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

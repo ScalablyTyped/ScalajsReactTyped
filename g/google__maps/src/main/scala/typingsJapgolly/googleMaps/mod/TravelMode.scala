@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.driving
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.bicycling
   - typingsJapgolly.googleMaps.googleMapsStrings.transit
 */
-trait TravelMode extends js.Object
-
+trait TravelMode extends StObject
 object TravelMode {
-  @scala.inline
-  def bicycling: typingsJapgolly.googleMaps.googleMapsStrings.bicycling = this.cast("bicycling")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def driving: typingsJapgolly.googleMaps.googleMapsStrings.driving = this.cast("driving")
-  @scala.inline
-  def transit: typingsJapgolly.googleMaps.googleMapsStrings.transit = this.cast("transit")
-  @scala.inline
-  def walking: typingsJapgolly.googleMaps.googleMapsStrings.walking = this.cast("walking")
+  
+  inline def bicycling: typingsJapgolly.googleMaps.googleMapsStrings.bicycling = "bicycling".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.bicycling]
+  
+  inline def driving: typingsJapgolly.googleMaps.googleMapsStrings.driving = "driving".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.driving]
+  
+  inline def transit: typingsJapgolly.googleMaps.googleMapsStrings.transit = "transit".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.transit]
+  
+  inline def walking: typingsJapgolly.googleMaps.googleMapsStrings.walking = "walking".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.walking]
 }
-

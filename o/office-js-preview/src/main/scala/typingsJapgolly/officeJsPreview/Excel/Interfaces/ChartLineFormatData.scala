@@ -12,49 +12,60 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Grey50
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Grey75
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.RoundDot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartLineFormat.toJSON()`. */
-trait ChartLineFormatData extends js.Object {
+trait ChartLineFormatData extends StObject {
+  
   /**
-    *
     * HTML color code representing the color of lines in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
+    * Represents the line style. See `Excel.ChartLineStyle` for details.
     *
-    * Represents the line style. See Excel.ChartLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lineStyle: js.UndefOr[
     ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot
   ] = js.undefined
+  
   /**
-    *
     * Represents weight of the line, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object ChartLineFormatData {
-  @scala.inline
-  def apply(
-    color: String = null,
-    lineStyle: ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot = null,
-    weight: Int | Double = null
-  ): ChartLineFormatData = {
+  
+  inline def apply(): ChartLineFormatData = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLineFormatData]
   }
+  
+  extension [Self <: ChartLineFormatData](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLineStyle(
+      value: ChartLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Grey25 | Grey50 | Grey75 | Automatic | RoundDot
+    ): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

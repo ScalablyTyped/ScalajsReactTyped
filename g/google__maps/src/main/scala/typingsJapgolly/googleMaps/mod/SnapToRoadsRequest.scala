@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SnapToRoadsRequest extends js.Object {
+trait SnapToRoadsRequest extends StObject {
+  
   /**
     * Whether to interpolate a path to include all points forming the full road-geometry.
     * When true, additional interpolated points will also be returned, resulting in a path that smoothly follows
@@ -14,6 +15,7 @@ trait SnapToRoadsRequest extends js.Object {
     * @default false
     */
   var interpolate: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The path to be snapped. The `path` parameter accepts a list of latitude/longitude pairs.
     * Latitude and longitude values should be separated by commas. Coordinates should be separated by the pipe character: `"|"`.
@@ -27,13 +29,21 @@ trait SnapToRoadsRequest extends js.Object {
     */
   var path: js.Array[LatLng]
 }
-
 object SnapToRoadsRequest {
-  @scala.inline
-  def apply(path: js.Array[LatLng], interpolate: js.UndefOr[Boolean] = js.undefined): SnapToRoadsRequest = {
+  
+  inline def apply(path: js.Array[LatLng]): SnapToRoadsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolate)) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapToRoadsRequest]
   }
+  
+  extension [Self <: SnapToRoadsRequest](x: Self) {
+    
+    inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    
+    inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+    
+    inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value*))
+  }
 }
-

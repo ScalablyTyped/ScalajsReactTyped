@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.Menus.DropDownMenuProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/DropDownMenu", JSImport.Namespace)
-@js.native
-object dropDownMenuMod extends js.Object {
-  @js.native
-  class DropDownMenu ()
-    extends Component[DropDownMenuProps, js.Object, js.Any]
+object dropDownMenuMod {
   
+  @JSImport("material-ui/DropDownMenu", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropDownMenuProps, js.Object, js.Any]
+  open class default () extends DropDownMenu
   
+  @JSImport("material-ui/DropDownMenu", "DropDownMenu")
+  @js.native
+  open class DropDownMenu ()
+    extends Component[DropDownMenuProps, js.Object, Any]
 }
-

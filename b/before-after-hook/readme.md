@@ -1,7 +1,7 @@
 
 # Scala.js typings for before-after-hook
 
-Typings are for version 2.1.0
+Typings are for version 3.0.2
 
 ## Library description:
 asynchronous before/error/after hooks for internal functionality
@@ -10,10 +10,10 @@ asynchronous before/error/after hooks for internal functionality
 | ------------------ | :-------------: |
 | Full name          | before-after-hook |
 | Keywords           | hook, hooks, api |
-| # releases         | 11 |
-| # dependents       | 16 |
-| # downloads        | 41627364 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9753712333333332E7 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/gr2m/before-after-hook#readme)

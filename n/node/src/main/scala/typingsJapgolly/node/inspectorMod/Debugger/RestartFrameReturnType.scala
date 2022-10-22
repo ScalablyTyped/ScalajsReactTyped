@@ -2,37 +2,47 @@ package typingsJapgolly.node.inspectorMod.Debugger
 
 import typingsJapgolly.node.inspectorMod.Runtime.StackTrace
 import typingsJapgolly.node.inspectorMod.Runtime.StackTraceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RestartFrameReturnType extends js.Object {
+trait RestartFrameReturnType extends StObject {
+  
   /**
     * Async stack trace, if any.
     */
   var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
+  
   /**
     * Async stack trace, if any.
     * @experimental
     */
   var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
+  
   /**
     * New stack trace.
     */
   var callFrames: js.Array[CallFrame]
 }
-
 object RestartFrameReturnType {
-  @scala.inline
-  def apply(
-    callFrames: js.Array[CallFrame],
-    asyncStackTrace: StackTrace = null,
-    asyncStackTraceId: StackTraceId = null
-  ): RestartFrameReturnType = {
+  
+  inline def apply(callFrames: js.Array[CallFrame]): RestartFrameReturnType = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any])
-    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace.asInstanceOf[js.Any])
-    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartFrameReturnType]
   }
+  
+  extension [Self <: RestartFrameReturnType](x: Self) {
+    
+    inline def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
+    
+    inline def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
+    
+    inline def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
+    
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value*))
+  }
 }
-

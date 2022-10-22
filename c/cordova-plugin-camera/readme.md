@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-camera
 
-Typings are for version 4.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Cordova Camera Plugin
@@ -10,10 +10,10 @@ Cordova Camera Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-camera |
 | Keywords           | cordova, camera, ecosystem:cordova, cordova-android, cordova-ios, cordova-browser, cordova-windows, cordova-osx |
-| # releases         | 3 |
-| # dependents       | 29 |
-| # downloads        | 1379800 |
-| # stars            | 25 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 110333.33333333333 |
+| # stars            | 925.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-camera#readme)

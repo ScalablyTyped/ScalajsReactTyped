@@ -3,50 +3,47 @@ package typingsJapgolly.xrm.Xrm
 import typingsJapgolly.xrm.Xrm.Attributes.Attribute
 import typingsJapgolly.xrm.Xrm.Collection.MatchingDelegate
 import typingsJapgolly.xrm.Xrm.Controls.Control
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for formContext
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext External Link: getFormContext (Client API reference)}
   */
 @js.native
-trait FormContext extends js.Object {
+trait FormContext extends StObject {
+  
   /**
     * Provides methods to work with the form.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data External Link: formContext.data (Client API reference)}
     */
   var data: Data = js.native
-  /**
-    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
-    */
-  var ui: Ui = js.native
+  
   /**
     * Gets all attributes.
     * @returns An array of attributes.
     */
-  def getAttribute(): js.Array[Attribute] = js.native
+  def getAttribute(): js.Array[Attribute[Any]] = js.native
   /**
     * Gets an attribute matching attributeName.
     * @param attributeName Name of the attribute.
     * @returns The attribute.
     */
-  def getAttribute(attributeName: String): Attribute = js.native
+  def getAttribute(attributeName: String): Attribute[Any] = js.native
   /**
     * Gets an attribute.
     * @param delegateFunction A matching delegate function
     * @returns An array of attribute.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  def getAttribute(delegateFunction: MatchingDelegate[Attribute]): js.Array[Attribute] = js.native
+  def getAttribute(delegateFunction: MatchingDelegate[Attribute[Any]]): js.Array[Attribute[Any]] = js.native
   /**
     * Gets an attribute by index.
     * @param index The attribute index.
     * @returns The attribute.
     */
-  def getAttribute(index: Double): Attribute = js.native
+  def getAttribute(index: Double): Attribute[Any] = js.native
   /**
     * Gets an attribute matching attributeName.
     * @param T An Attribute type.
@@ -54,7 +51,8 @@ trait FormContext extends js.Object {
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_Attribute_T[T /* <: Attribute */](attributeName: String): T = js.native
+  def getAttribute_T_T[T /* <: Attribute[Any] */](attributeName: String): T = js.native
+  
   /**
     * Gets all controls.
     * @returns An array of controls.
@@ -86,7 +84,7 @@ trait FormContext extends js.Object {
     * @returns The control.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](controlName: String): T = js.native
+  def getControl_T_T[T /* <: Control */](controlName: String): T = js.native
   /**
     * Gets a control by index.
     * @param T A Control type
@@ -94,6 +92,11 @@ trait FormContext extends js.Object {
     * @returns The control.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  def getControl_T_T[T /* <: Control */](index: Double): T = js.native
+  
+  /**
+    * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
+    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
+    */
+  var ui: Ui = js.native
 }
-

@@ -17,11 +17,12 @@ import typingsJapgolly.googleMaps.googleMapsStrings.scope
 import typingsJapgolly.googleMaps.googleMapsStrings.textquery
 import typingsJapgolly.googleMaps.googleMapsStrings.types
 import typingsJapgolly.googleMaps.googleMapsStrings.vicinity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FindPlaceRequest extends js.Object {
+trait FindPlaceRequest extends StObject {
+  
   /**
     * The fields specifying the types of place data to return.
     *
@@ -32,38 +33,56 @@ trait FindPlaceRequest extends js.Object {
       icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed
     ]
   ] = js.undefined
+  
   /** The text input specifying which place to search for (for example, a name, address, or phone number). */
   var input: String
+  
   /** The type of input. This can be one of either `textquery` or `phonenumber`. */
   var inputtype: textquery | phonenumber
+  
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Searches are also biased to the selected language; results in the selected language may be given a higher ranking
     */
   var language: js.UndefOr[Language] = js.undefined
+  
   /**
     * Prefer results in a specified area, by specifying either a radius plus lat/lng, or two lat/lng pairs representing
     * the points of a rectangle. If this parameter is not specified, the API uses IP address biasing by default.
     */
   var locationbias: js.UndefOr[String] = js.undefined
 }
-
 object FindPlaceRequest {
-  @scala.inline
-  def apply(
-    input: String,
-    inputtype: textquery | phonenumber,
-    fields: js.Array[
-      icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed
-    ] = null,
-    language: Language = null,
-    locationbias: String = null
-  ): FindPlaceRequest = {
+  
+  inline def apply(input: String, inputtype: textquery | phonenumber): FindPlaceRequest = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], inputtype = inputtype.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locationbias != null) __obj.updateDynamic("locationbias")(locationbias.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceRequest]
   }
+  
+  extension [Self <: FindPlaceRequest](x: Self) {
+    
+    inline def setFields(
+      value: js.Array[
+          icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed
+        ]
+    ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(
+      value: (icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed)*
+    ): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setInputtype(value: textquery | phonenumber): Self = StObject.set(x, "inputtype", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocationbias(value: String): Self = StObject.set(x, "locationbias", value.asInstanceOf[js.Any])
+    
+    inline def setLocationbiasUndefined: Self = StObject.set(x, "locationbias", js.undefined)
+  }
 }
-

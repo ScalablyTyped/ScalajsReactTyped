@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，免流量操作参数
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
-trait PlusStreamFreetrafficOptions extends js.Object {
+trait PlusStreamFreetrafficOptions extends StObject {
+  
   /**
     * 验证码
     * 免流量绑定设备使用的验证码。
@@ -18,6 +19,7 @@ trait PlusStreamFreetrafficOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   var code: js.UndefOr[String] = js.undefined
+  
   /**
     * 电话号码
     * 免流量请求验证码、绑定设备使用的电话号码。
@@ -26,14 +28,21 @@ trait PlusStreamFreetrafficOptions extends js.Object {
     */
   var phone: js.UndefOr[String] = js.undefined
 }
-
 object PlusStreamFreetrafficOptions {
-  @scala.inline
-  def apply(code: String = null, phone: String = null): PlusStreamFreetrafficOptions = {
+  
+  inline def apply(): PlusStreamFreetrafficOptions = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamFreetrafficOptions]
   }
+  
+  extension [Self <: PlusStreamFreetrafficOptions](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+  }
 }
-

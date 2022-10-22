@@ -1,25 +1,27 @@
 package typingsJapgolly.nivoAnnotations
 
-import typingsJapgolly.nivoAnnotations.mod.AnnotationType
+import typingsJapgolly.nivoAnnotations.distTypesTypesMod.AnnotationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoAnnotationsStrings {
-  @js.native
-  sealed trait circle extends AnnotationType
   
   @js.native
-  sealed trait dot extends AnnotationType
+  sealed trait circle
+    extends StObject
+       with AnnotationType
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait rect extends AnnotationType
+  sealed trait dot
+    extends StObject
+       with AnnotationType
+  inline def dot: dot = "dot".asInstanceOf[dot]
   
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
+  @js.native
+  sealed trait rect
+    extends StObject
+       with AnnotationType
+  inline def rect: rect = "rect".asInstanceOf[rect]
 }
-

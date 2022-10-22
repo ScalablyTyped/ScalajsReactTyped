@@ -1,30 +1,25 @@
 package typingsJapgolly.easeljs.createjs
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
+import org.scalajs.dom.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.BitmapCache")
 @js.native
-class BitmapCache () extends js.Object {
+trait BitmapCache extends StObject {
+  
   // properties
   var cacheID: Double = js.native
+  
   def define(target: DisplayObject, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def define(target: DisplayObject, x: Double, y: Double, width: Double, height: Double, scale: Double): Unit = js.native
+  
   def draw(ctx: CanvasRenderingContext2D): Boolean = js.native
+  
   def getCacheDataURL(): String = js.native
+  
   def release(): Unit = js.native
+  
   def update(): Unit = js.native
   def update(compositeOperation: String): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("createjs.BitmapCache")
-@js.native
-object BitmapCache extends js.Object {
-  // methods
-  def getFilterBounds(target: DisplayObject): Rectangle = js.native
-  def getFilterBounds(target: DisplayObject, output: Rectangle): Rectangle = js.native
-}
-

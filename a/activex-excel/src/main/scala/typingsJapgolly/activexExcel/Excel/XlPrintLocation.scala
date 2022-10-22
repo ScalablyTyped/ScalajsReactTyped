@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`16`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4142`
+import typingsJapgolly.activexExcel.activexExcelInts.`16`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`16`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`16`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4142`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlPrintLocation extends js.Object
-
+trait XlPrintLocation extends StObject
 object XlPrintLocation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlPrintInPlace: `16` = this.cast(16)
-  @scala.inline
-  def xlPrintNoComments: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlPrintSheetEnd: `1` = this.cast(1)
+  
+  inline def xlPrintInPlace: `16` = 16.asInstanceOf[`16`]
+  
+  inline def xlPrintNoComments: `-4142` = -4142.asInstanceOf[`-4142`]
+  
+  inline def xlPrintSheetEnd: `1` = 1.asInstanceOf[`1`]
 }
-

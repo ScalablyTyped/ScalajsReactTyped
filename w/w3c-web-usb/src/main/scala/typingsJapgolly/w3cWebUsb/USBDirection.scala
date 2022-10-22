@@ -1,21 +1,17 @@
 package typingsJapgolly.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.in
   - typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.out
 */
-trait USBDirection extends js.Object
-
+trait USBDirection extends StObject
 object USBDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def in: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.in = this.cast("in")
-  @scala.inline
-  def out: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.out = this.cast("out")
+  
+  inline def in: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.in = "in".asInstanceOf[typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.in]
+  
+  inline def out: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.out = "out".asInstanceOf[typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.out]
 }
-

@@ -4,47 +4,58 @@ import typingsJapgolly.officeJsPreview.Excel.SortField
 import typingsJapgolly.officeJsPreview.Excel.SortMethod
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.PinYin
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.StrokeCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableSort.toJSON()`. */
-trait TableSortData extends js.Object {
+trait TableSortData extends StObject {
+  
   /**
+    * Specifies the current conditions used to last sort the table.
     *
-    * Represents the current conditions used to last sort the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var fields: js.UndefOr[js.Array[SortField]] = js.undefined
+  
   /**
+    * Specifies if the casing impacts the last sort of the table.
     *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the Chinese character ordering method last used to sort the table.
     *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var method: js.UndefOr[SortMethod | PinYin | StrokeCount] = js.undefined
 }
-
 object TableSortData {
-  @scala.inline
-  def apply(
-    fields: js.Array[SortField] = null,
-    matchCase: js.UndefOr[Boolean] = js.undefined,
-    method: SortMethod | PinYin | StrokeCount = null
-  ): TableSortData = {
+  
+  inline def apply(): TableSortData = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortData]
   }
+  
+  extension [Self <: TableSortData](x: Self) {
+    
+    inline def setFields(value: js.Array[SortField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: SortField*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    
+    inline def setMethod(value: SortMethod | PinYin | StrokeCount): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+  }
 }
-

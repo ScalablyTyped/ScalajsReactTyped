@@ -1,10 +1,13 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultipointProperties extends GeometryProperties {
+trait MultipointProperties
+  extends StObject
+     with GeometryProperties {
+  
   /**
     * An array of points.
     *
@@ -12,21 +15,19 @@ trait MultipointProperties extends GeometryProperties {
     */
   var points: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
 }
-
 object MultipointProperties {
-  @scala.inline
-  def apply(
-    hasM: js.UndefOr[Boolean] = js.undefined,
-    hasZ: js.UndefOr[Boolean] = js.undefined,
-    points: js.Array[js.Array[Double]] = null,
-    spatialReference: SpatialReferenceProperties = null
-  ): MultipointProperties = {
+  
+  inline def apply(): MultipointProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipointProperties]
   }
+  
+  extension [Self <: MultipointProperties](x: Self) {
+    
+    inline def setPoints(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    
+    inline def setPointsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "points", js.Array(value*))
+  }
 }
-

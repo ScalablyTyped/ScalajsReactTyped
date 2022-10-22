@@ -1,141 +1,167 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.all
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.popup
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IdentifyParameters
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * Resolution of the current map view in dots per inch.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#dpi)
-    *
     * @default 96
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#dpi)
     */
   var dpi: Double = js.native
+  
   /**
-    * The geometry used to select features during the Identify operation. The type of the geometry is specified by [Geometry.type](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#type). The most common geometry used with Identify is a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
+    * Specify the geodatabase version to search.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#geometry)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#gdbVersion)
+    */
+  var gdbVersion: String = js.native
+  
+  /**
+    * The geometry used to select features during the Identify operation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#geometry)
     */
   var geometry: Geometry_ = js.native
+  
   /**
     * Specify the number of decimal places for the geometries returned by the task.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#geometryPrecision)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#geometryPrecision)
     */
   var geometryPrecision: Double = js.native
+  
   /**
     * Height of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) in pixels.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#height)
-    *
     * @default 400
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#height)
     */
   var height: Double = js.native
+  
   /**
-    * The layers on which to perform the identify operation. The layers are specified as a comma-separated list of layer IDs.
+    * The layers on which to perform the identify operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#layerIds)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#layerIds)
     */
   var layerIds: js.Array[Double] = js.native
+  
   /**
     * Specifies which layers to use when using Identify.
     *
-    * Possible values | Description
-    * --------------- | -----------
-    * top | Only the top-most visible layer on the service is identified.
-    * visible | All visible layers on the service are identified.
-    * all | All layers on the service are identified, even if they are not visible. If your service has many layers, a request using this option will not perform well. A visible layer means you can see it in the map at the current extent.  If a layer is turned off or not in range based on its scale dependency settings, it cannot be identified.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#layerOption)
-    *
     * @default top
-    */
-  var layerOption: top | visible | all = js.native
-  /**
-    * The Extent or bounding box of the current map view. The `mapExtent` property is assumed to be in the spatial reference of the map unless [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#spatialReference) has been specified.  The values for [mapExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#mapExtent), [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#height), [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#width), and [dpi](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#dpi) are used to determine the current map scale. Once the scale is known, the map service can exclude layers based on their scale dependency settings. The map service is not performing a spatial intersection based on the provided extent. These properties are also used to calculate the search distance on the map based on the tolerance in screen pixels.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#mapExtent)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#layerOption)
+    */
+  var layerOption: top_ | visible | all | popup = js.native
+  
+  /**
+    * The Extent or bounding box of the current map view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#mapExtent)
     */
   var mapExtent: Extent = js.native
+  
   /**
-    * The maximum allowable offset used for generalizing geometries returned by the identify operation. The offset is in the units of the [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#spatialReference). If a [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#spatialReference) is not defined the spatial reference of the view is used.
+    * The maximum allowable offset used for generalizing geometries returned by the identify operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#maxAllowableOffset)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#maxAllowableOffset)
     */
   var maxAllowableOffset: Double = js.native
+  
   /**
-    * If `true`, field names will be returned instead of field aliases. Requires ArcGIS Server service 10.5 or greater.
+    * If `true`, field names will be returned instead of field aliases.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnFieldName)
+    * @default true
     *
-    * @default false
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#returnFieldName)
     */
   var returnFieldName: Boolean = js.native
+  
   /**
     * If `true`, the result set includes the geometry associated with each result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnGeometry)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#returnGeometry)
     */
   var returnGeometry: Boolean = js.native
+  
   /**
     * When `true`, indicates that M values will be returned.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnM)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#returnM)
     */
   var returnM: Boolean = js.native
+  
   /**
-    * If `true`, the values in the result will not be formatted i.e. numbers will returned as is and dates will be returned as epoch values. Requires ArcGIS Server service 10.5 or greater.
+    * If `true`, the values in the result will not be formatted i.e.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnUnformattedValues)
+    * @default true
     *
-    * @default false
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#returnUnformattedValues)
     */
   var returnUnformattedValues: Boolean = js.native
+  
   /**
-    * When `true`, indicates that Z values will be returned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#returnZ)
+    * When `true`, indicates that z-values will be returned.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#returnZ)
     */
   var returnZ: Boolean = js.native
+  
   /**
-    * The spatial reference of the input and output geometries as well as of the [mapExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#mapExtent). If the spatial reference is not specified, the geometry and the extent are assumed to be in the spatial reference of the view, and the output geometries will also be in the spatial reference of the view.
+    * The spatial reference of the input and output geometries as well as of the [mapExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#mapExtent).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#spatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#spatialReference)
     */
   var spatialReference: SpatialReference = js.native
+  
+  /**
+    * An [Collection](esri-core-Collection.html) of [Sublayer](esri-layers-support-Sublayer.html) objects used to change the layer ordering and/or rendering, or redefine the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#sublayers)
+    */
+  var sublayers: js.Array[Sublayer] = js.native
+  
+  /**
+    * Specify the time extent used by identify.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#timeExtent)
+    */
+  var timeExtent: TimeExtent = js.native
+  
   /**
     * The distance in screen pixels from the specified geometry within which the identify should be performed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#tolerance)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#tolerance)
     */
   var tolerance: Double = js.native
+  
   /**
     * Width of the current map view in pixels.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#width)
-    *
     * @default 400
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-IdentifyParameters.html#width)
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.IdentifyParameters")
-@js.native
-object IdentifyParameters extends TopLevel[IdentifyParametersConstructor]
-

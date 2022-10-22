@@ -1,30 +1,46 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagnosticRelatedInformation extends js.Object {
+trait DiagnosticRelatedInformation extends StObject {
+  
   /**
     * The location of this related diagnostic information.
     */
   var location: Location
+  
   /**
     * The message of this related diagnostic information.
     */
   var message: String
 }
-
-@JSImport("vscode-languageserver-types", "DiagnosticRelatedInformation")
-@js.native
-object DiagnosticRelatedInformation extends js.Object {
+object DiagnosticRelatedInformation {
+  
+  inline def apply(location: Location, message: String): DiagnosticRelatedInformation = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DiagnosticRelatedInformation]
+  }
+  
+  @JSImport("vscode-languageserver-types", "DiagnosticRelatedInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DiagnosticRelatedInformation literal.
     */
-  def create(location: Location, message: String): DiagnosticRelatedInformation = js.native
+  inline def create(location: Location, message: String): DiagnosticRelatedInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(location.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[DiagnosticRelatedInformation]
+  
   /**
     * Checks whether the given literal conforms to the [DiagnosticRelatedInformation](#DiagnosticRelatedInformation) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DiagnosticRelatedInformation */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DiagnosticRelatedInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DiagnosticRelatedInformation */ Boolean]
+  
+  extension [Self <: DiagnosticRelatedInformation](x: Self) {
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

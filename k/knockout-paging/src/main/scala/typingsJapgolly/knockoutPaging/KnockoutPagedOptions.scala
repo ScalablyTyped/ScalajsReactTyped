@@ -1,23 +1,36 @@
 package typingsJapgolly.knockoutPaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutPagedOptions extends js.Object {
+trait KnockoutPagedOptions extends StObject {
+  
   var pageGenerator: js.UndefOr[String] = js.undefined
+  
   var pageNumber: js.UndefOr[Double] = js.undefined
+  
   var pageSize: js.UndefOr[Double] = js.undefined
 }
-
 object KnockoutPagedOptions {
-  @scala.inline
-  def apply(pageGenerator: String = null, pageNumber: Int | Double = null, pageSize: Int | Double = null): KnockoutPagedOptions = {
+  
+  inline def apply(): KnockoutPagedOptions = {
     val __obj = js.Dynamic.literal()
-    if (pageGenerator != null) __obj.updateDynamic("pageGenerator")(pageGenerator.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutPagedOptions]
   }
+  
+  extension [Self <: KnockoutPagedOptions](x: Self) {
+    
+    inline def setPageGenerator(value: String): Self = StObject.set(x, "pageGenerator", value.asInstanceOf[js.Any])
+    
+    inline def setPageGeneratorUndefined: Self = StObject.set(x, "pageGenerator", js.undefined)
+    
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+  }
 }
-

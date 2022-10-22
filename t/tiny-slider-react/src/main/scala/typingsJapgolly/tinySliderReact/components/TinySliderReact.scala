@@ -1,58 +1,47 @@
 package typingsJapgolly.tinySliderReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.tinySliderReact.mod.TinySliderInfo
 import typingsJapgolly.tinySliderReact.mod.TinySliderProps
 import typingsJapgolly.tinySliderReact.mod.TinySliderSettings
 import typingsJapgolly.tinySliderReact.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TinySliderReact {
-  def apply(
-    onClick: (/* slideClicked */ Double, /* info */ String, /* event */ Event_) => Callback = null,
-    onIndexChanged: /* info */ TinySliderInfo => Callback = null,
-    onTouchEnd: /* info */ TinySliderInfo => Callback = null,
-    onTouchMove: /* info */ TinySliderInfo => Callback = null,
-    onTouchStart: /* info */ TinySliderInfo => Callback = null,
-    onTransitionEnd: /* info */ TinySliderInfo => Callback = null,
-    onTransitionStart: /* info */ TinySliderInfo => Callback = null,
-    settings: TinySliderSettings = null,
-    startIndex: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TinySliderProps, default, Unit, TinySliderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3((t0: /* slideClicked */ scala.Double, t1: /* info */ java.lang.String, t2: /* event */ typingsJapgolly.std.Event_) => onClick(t0, t1, t2).runNow()))
-    if (onIndexChanged != null) __obj.updateDynamic("onIndexChanged")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onIndexChanged(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onTouchStart(t0).runNow()))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onTransitionEnd(t0).runNow()))
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.tinySliderReact.mod.TinySliderInfo) => onTransitionStart(t0).runNow()))
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.tinySliderReact.mod.TinySliderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.tinySliderReact.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.tinySliderReact.mod.TinySliderProps])(children: _*)
-  }
   @JSImport("tiny-slider-react", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def onClick(value: (/* slideClicked */ Double, /* info */ String, /* event */ Event) => Callback): this.type = set("onClick", js.Any.fromFunction3((t0: /* slideClicked */ Double, t1: /* info */ String, t2: /* event */ Event) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onIndexChanged(value: /* info */ TinySliderInfo => Callback): this.type = set("onIndexChanged", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: /* info */ TinySliderInfo => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: /* info */ TinySliderInfo => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: /* info */ TinySliderInfo => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def onTransitionEnd(value: /* info */ TinySliderInfo => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def onTransitionStart(value: /* info */ TinySliderInfo => Callback): this.type = set("onTransitionStart", js.Any.fromFunction1((t0: /* info */ TinySliderInfo) => value(t0).runNow()))
+    
+    inline def settings(value: TinySliderSettings): this.type = set("settings", value.asInstanceOf[js.Any])
+    
+    inline def startIndex(value: Double): this.type = set("startIndex", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TinySliderReact.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TinySliderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

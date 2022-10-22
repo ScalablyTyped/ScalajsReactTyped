@@ -1,21 +1,30 @@
 package typingsJapgolly.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableTextLabelsFilter extends js.Object {
+trait MUIDataTableTextLabelsFilter extends StObject {
+  
   var all: String
+  
   var reset: String
+  
   var title: String
 }
-
 object MUIDataTableTextLabelsFilter {
-  @scala.inline
-  def apply(all: String, reset: String, title: String): MUIDataTableTextLabelsFilter = {
-    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
+  inline def apply(all: String, reset: String, title: String): MUIDataTableTextLabelsFilter = {
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableTextLabelsFilter]
   }
+  
+  extension [Self <: MUIDataTableTextLabelsFilter](x: Self) {
+    
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

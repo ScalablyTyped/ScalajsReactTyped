@@ -1,92 +1,182 @@
 package typingsJapgolly.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.dockerode.AnonEndpointsConfig
+import org.scalajs.dom.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContainerCreateOptions extends js.Object {
+trait ContainerCreateOptions extends StObject {
+  
   var AttachStderr: js.UndefOr[Boolean] = js.undefined
+  
   var AttachStdin: js.UndefOr[Boolean] = js.undefined
+  
   var AttachStdout: js.UndefOr[Boolean] = js.undefined
+  
   var Cmd: js.UndefOr[js.Array[String]] = js.undefined
+  
   var Domainname: js.UndefOr[String] = js.undefined
+  
   var Entrypoint: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var Env: js.UndefOr[js.Array[String]] = js.undefined
+  
   var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.undefined
+  
+  var Healthcheck: js.UndefOr[HealthConfig] = js.undefined
+  
   var HostConfig: js.UndefOr[typingsJapgolly.dockerode.mod.HostConfig] = js.undefined
+  
   var Hostname: js.UndefOr[String] = js.undefined
+  
   var Image: js.UndefOr[String] = js.undefined
+  
   var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var MacAddress: js.UndefOr[Boolean] = js.undefined
+  
   var NetworkDisabled: js.UndefOr[Boolean] = js.undefined
-  var NetworkingConfig: js.UndefOr[AnonEndpointsConfig] = js.undefined
+  
+  var NetworkingConfig: js.UndefOr[typingsJapgolly.dockerode.anon.EndpointsConfig] = js.undefined
+  
   var OpenStdin: js.UndefOr[Boolean] = js.undefined
+  
   var StdinOnce: js.UndefOr[Boolean] = js.undefined
+  
   var StopSignal: js.UndefOr[String] = js.undefined
+  
   var StopTimeout: js.UndefOr[Double] = js.undefined
+  
   var Tty: js.UndefOr[Boolean] = js.undefined
+  
   var User: js.UndefOr[String] = js.undefined
+  
   var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.undefined
+  
   var WorkingDir: js.UndefOr[String] = js.undefined
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ContainerCreateOptions {
-  @scala.inline
-  def apply(
-    AttachStderr: js.UndefOr[Boolean] = js.undefined,
-    AttachStdin: js.UndefOr[Boolean] = js.undefined,
-    AttachStdout: js.UndefOr[Boolean] = js.undefined,
-    Cmd: js.Array[String] = null,
-    Domainname: String = null,
-    Entrypoint: String | js.Array[String] = null,
-    Env: js.Array[String] = null,
-    ExposedPorts: StringDictionary[js.Object] = null,
-    HostConfig: HostConfig = null,
-    Hostname: String = null,
-    Image: String = null,
-    Labels: StringDictionary[String] = null,
-    MacAddress: js.UndefOr[Boolean] = js.undefined,
-    NetworkDisabled: js.UndefOr[Boolean] = js.undefined,
-    NetworkingConfig: AnonEndpointsConfig = null,
-    OpenStdin: js.UndefOr[Boolean] = js.undefined,
-    StdinOnce: js.UndefOr[Boolean] = js.undefined,
-    StopSignal: String = null,
-    StopTimeout: Int | Double = null,
-    Tty: js.UndefOr[Boolean] = js.undefined,
-    User: String = null,
-    Volumes: StringDictionary[js.Object] = null,
-    WorkingDir: String = null,
-    name: String = null
-  ): ContainerCreateOptions = {
+  
+  inline def apply(): ContainerCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AttachStderr)) __obj.updateDynamic("AttachStderr")(AttachStderr.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttachStdin)) __obj.updateDynamic("AttachStdin")(AttachStdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttachStdout)) __obj.updateDynamic("AttachStdout")(AttachStdout.asInstanceOf[js.Any])
-    if (Cmd != null) __obj.updateDynamic("Cmd")(Cmd.asInstanceOf[js.Any])
-    if (Domainname != null) __obj.updateDynamic("Domainname")(Domainname.asInstanceOf[js.Any])
-    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint.asInstanceOf[js.Any])
-    if (Env != null) __obj.updateDynamic("Env")(Env.asInstanceOf[js.Any])
-    if (ExposedPorts != null) __obj.updateDynamic("ExposedPorts")(ExposedPorts.asInstanceOf[js.Any])
-    if (HostConfig != null) __obj.updateDynamic("HostConfig")(HostConfig.asInstanceOf[js.Any])
-    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
-    if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(MacAddress)) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(NetworkDisabled)) __obj.updateDynamic("NetworkDisabled")(NetworkDisabled.asInstanceOf[js.Any])
-    if (NetworkingConfig != null) __obj.updateDynamic("NetworkingConfig")(NetworkingConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(OpenStdin)) __obj.updateDynamic("OpenStdin")(OpenStdin.asInstanceOf[js.Any])
-    if (!js.isUndefined(StdinOnce)) __obj.updateDynamic("StdinOnce")(StdinOnce.asInstanceOf[js.Any])
-    if (StopSignal != null) __obj.updateDynamic("StopSignal")(StopSignal.asInstanceOf[js.Any])
-    if (StopTimeout != null) __obj.updateDynamic("StopTimeout")(StopTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(Tty)) __obj.updateDynamic("Tty")(Tty.asInstanceOf[js.Any])
-    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
-    if (Volumes != null) __obj.updateDynamic("Volumes")(Volumes.asInstanceOf[js.Any])
-    if (WorkingDir != null) __obj.updateDynamic("WorkingDir")(WorkingDir.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerCreateOptions]
   }
+  
+  extension [Self <: ContainerCreateOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
+    
+    inline def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
+    
+    inline def setAttachStderrUndefined: Self = StObject.set(x, "AttachStderr", js.undefined)
+    
+    inline def setAttachStdin(value: Boolean): Self = StObject.set(x, "AttachStdin", value.asInstanceOf[js.Any])
+    
+    inline def setAttachStdinUndefined: Self = StObject.set(x, "AttachStdin", js.undefined)
+    
+    inline def setAttachStdout(value: Boolean): Self = StObject.set(x, "AttachStdout", value.asInstanceOf[js.Any])
+    
+    inline def setAttachStdoutUndefined: Self = StObject.set(x, "AttachStdout", js.undefined)
+    
+    inline def setCmd(value: js.Array[String]): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
+    
+    inline def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
+    
+    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value*))
+    
+    inline def setDomainname(value: String): Self = StObject.set(x, "Domainname", value.asInstanceOf[js.Any])
+    
+    inline def setDomainnameUndefined: Self = StObject.set(x, "Domainname", js.undefined)
+    
+    inline def setEntrypoint(value: String | js.Array[String]): Self = StObject.set(x, "Entrypoint", value.asInstanceOf[js.Any])
+    
+    inline def setEntrypointUndefined: Self = StObject.set(x, "Entrypoint", js.undefined)
+    
+    inline def setEntrypointVarargs(value: String*): Self = StObject.set(x, "Entrypoint", js.Array(value*))
+    
+    inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
+    
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
+    
+    inline def setExposedPorts(value: StringDictionary[js.Object]): Self = StObject.set(x, "ExposedPorts", value.asInstanceOf[js.Any])
+    
+    inline def setExposedPortsUndefined: Self = StObject.set(x, "ExposedPorts", js.undefined)
+    
+    inline def setHealthcheck(value: HealthConfig): Self = StObject.set(x, "Healthcheck", value.asInstanceOf[js.Any])
+    
+    inline def setHealthcheckUndefined: Self = StObject.set(x, "Healthcheck", js.undefined)
+    
+    inline def setHostConfig(value: HostConfig): Self = StObject.set(x, "HostConfig", value.asInstanceOf[js.Any])
+    
+    inline def setHostConfigUndefined: Self = StObject.set(x, "HostConfig", js.undefined)
+    
+    inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
+    
+    inline def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
+    
+    inline def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
+    
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    
+    inline def setMacAddress(value: Boolean): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    
+    inline def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNetworkDisabled(value: Boolean): Self = StObject.set(x, "NetworkDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkDisabledUndefined: Self = StObject.set(x, "NetworkDisabled", js.undefined)
+    
+    inline def setNetworkingConfig(value: typingsJapgolly.dockerode.anon.EndpointsConfig): Self = StObject.set(x, "NetworkingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkingConfigUndefined: Self = StObject.set(x, "NetworkingConfig", js.undefined)
+    
+    inline def setOpenStdin(value: Boolean): Self = StObject.set(x, "OpenStdin", value.asInstanceOf[js.Any])
+    
+    inline def setOpenStdinUndefined: Self = StObject.set(x, "OpenStdin", js.undefined)
+    
+    inline def setStdinOnce(value: Boolean): Self = StObject.set(x, "StdinOnce", value.asInstanceOf[js.Any])
+    
+    inline def setStdinOnceUndefined: Self = StObject.set(x, "StdinOnce", js.undefined)
+    
+    inline def setStopSignal(value: String): Self = StObject.set(x, "StopSignal", value.asInstanceOf[js.Any])
+    
+    inline def setStopSignalUndefined: Self = StObject.set(x, "StopSignal", js.undefined)
+    
+    inline def setStopTimeout(value: Double): Self = StObject.set(x, "StopTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setStopTimeoutUndefined: Self = StObject.set(x, "StopTimeout", js.undefined)
+    
+    inline def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
+    
+    inline def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
+    
+    inline def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    
+    inline def setVolumes(value: StringDictionary[js.Object]): Self = StObject.set(x, "Volumes", value.asInstanceOf[js.Any])
+    
+    inline def setVolumesUndefined: Self = StObject.set(x, "Volumes", js.undefined)
+    
+    inline def setWorkingDir(value: String): Self = StObject.set(x, "WorkingDir", value.asInstanceOf[js.Any])
+    
+    inline def setWorkingDirUndefined: Self = StObject.set(x, "WorkingDir", js.undefined)
+  }
 }
-

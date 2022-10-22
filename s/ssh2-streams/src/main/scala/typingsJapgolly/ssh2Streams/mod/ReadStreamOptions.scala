@@ -1,40 +1,61 @@
 package typingsJapgolly.ssh2Streams.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadStreamOptions extends js.Object {
+trait ReadStreamOptions extends StObject {
+  
   var autoClose: js.UndefOr[Boolean] = js.undefined
+  
   var encoding: js.UndefOr[String] = js.undefined
+  
   var end: js.UndefOr[Double] = js.undefined
+  
   var flags: js.UndefOr[String] = js.undefined
+  
   var handle: js.UndefOr[Buffer] = js.undefined
+  
   var mode: js.UndefOr[Double] = js.undefined
+  
   var start: js.UndefOr[Double] = js.undefined
 }
-
 object ReadStreamOptions {
-  @scala.inline
-  def apply(
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    end: Int | Double = null,
-    flags: String = null,
-    handle: Buffer = null,
-    mode: Int | Double = null,
-    start: Int | Double = null
-  ): ReadStreamOptions = {
+  
+  inline def apply(): ReadStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadStreamOptions]
   }
+  
+  extension [Self <: ReadStreamOptions](x: Self) {
+    
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    
+    inline def setHandle(value: Buffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

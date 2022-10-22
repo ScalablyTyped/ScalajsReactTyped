@@ -1,12 +1,19 @@
 package typingsJapgolly.chaiOequal
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.chai.Chai_.ChaiPlugin
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.chai.Chai.ChaiPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("chai-oequal", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[ChaiPlugin]
-
+object mod extends Shortcut {
+  
+  @JSImport("chai-oequal", JSImport.Namespace)
+  @js.native
+  val ^ : ChaiPlugin = js.native
+  
+  type _To = ChaiPlugin
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: ChaiPlugin = ^
+}

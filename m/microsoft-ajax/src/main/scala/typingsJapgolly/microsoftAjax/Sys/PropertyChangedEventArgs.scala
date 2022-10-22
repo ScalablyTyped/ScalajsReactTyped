@@ -1,23 +1,18 @@
 package typingsJapgolly.microsoftAjax.Sys
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by the propertyChanged event to indicate which property has changed.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310957(v=vs.100).aspx}
   */
-@JSGlobal("Sys.PropertyChangedEventArgs")
-@js.native
-class PropertyChangedEventArgs protected () extends EventArgs {
-  //#region Constructors
-  /**
-    * Initializes a new instance of the PropertyChangedEventArgs class.
-    * @param propertyName
-    *           The name of the property that changed.
-    */
-  def this(propertyName: String) = this()
+trait PropertyChangedEventArgs
+  extends StObject
+     with EventArgs {
+  
   //#endregion
   //#region Methods
   /**
@@ -25,6 +20,17 @@ class PropertyChangedEventArgs protected () extends EventArgs {
     * Use the propertyName property to determine the name of the property that changed.
     * @return A string that contains the name of the property that changed.
     */
-  def propertyName(): String = js.native
+  def propertyName(): String
 }
-
+object PropertyChangedEventArgs {
+  
+  inline def apply(Empty: EventArgs, propertyName: CallbackTo[String]): PropertyChangedEventArgs = {
+    val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], propertyName = propertyName.toJsFn)
+    __obj.asInstanceOf[PropertyChangedEventArgs]
+  }
+  
+  extension [Self <: PropertyChangedEventArgs](x: Self) {
+    
+    inline def setPropertyName(value: CallbackTo[String]): Self = StObject.set(x, "propertyName", value.toJsFn)
+  }
+}

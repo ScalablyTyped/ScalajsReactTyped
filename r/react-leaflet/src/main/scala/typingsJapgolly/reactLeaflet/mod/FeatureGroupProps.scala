@@ -1,86 +1,126 @@
 package typingsJapgolly.reactLeaflet.mod
 
-import japgolly.scalajs.react.Callback
 import typingsJapgolly.leaflet.mod.FillRule
-import typingsJapgolly.leaflet.mod.LayerEvent
-import typingsJapgolly.leaflet.mod.LeafletMouseEvent
 import typingsJapgolly.leaflet.mod.LineCapShape
 import typingsJapgolly.leaflet.mod.LineJoinShape
-import typingsJapgolly.leaflet.mod.PathOptions
 import typingsJapgolly.leaflet.mod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typingsJapgolly.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait FeatureGroupProps
-  extends PathOptions
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.leaflet.mod.LayerOptions because var conflicts: attribution, pane. Inlined 
+- typingsJapgolly.leaflet.mod.InteractiveLayerOptions because var conflicts: attribution, pane. Inlined bubblingMouseEvents, interactive
+- typingsJapgolly.leaflet.mod.PathOptions because var conflicts: attribution, pane. Inlined lineCap, fillOpacity, stroke, lineJoin, fillColor, dashOffset, color, renderer, fillRule, fill, className, dashArray, opacity, weight */ trait FeatureGroupProps
+  extends StObject
+     with MapLayerProps
      with FeatureGroupEvents {
-  var children: js.UndefOr[Children] = js.undefined
-  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  var bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined
+  
+  var className: js.UndefOr[String] = js.undefined
+  
+  var color: js.UndefOr[String] = js.undefined
+  
+  var dashArray: js.UndefOr[String | js.Array[Double]] = js.undefined
+  
+  var dashOffset: js.UndefOr[String] = js.undefined
+  
+  var fill: js.UndefOr[Boolean] = js.undefined
+  
+  var fillColor: js.UndefOr[String] = js.undefined
+  
+  var fillOpacity: js.UndefOr[Double] = js.undefined
+  
+  var fillRule: js.UndefOr[FillRule] = js.undefined
+  
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
+  var lineCap: js.UndefOr[LineCapShape] = js.undefined
+  
+  var lineJoin: js.UndefOr[LineJoinShape] = js.undefined
+  
+  var opacity: js.UndefOr[Double] = js.undefined
+  
+  var renderer: js.UndefOr[Renderer] = js.undefined
+  
+  var stroke: js.UndefOr[Boolean] = js.undefined
+  
+  var weight: js.UndefOr[Double] = js.undefined
 }
-
 object FeatureGroupProps {
-  @scala.inline
-  def apply(
-    attribution: String = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    children: Children = null,
-    className: String = null,
-    color: String = null,
-    dashArray: String | js.Array[Double] = null,
-    dashOffset: String = null,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    fillColor: String = null,
-    fillOpacity: Int | Double = null,
-    fillRule: FillRule = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    lineCap: LineCapShape = null,
-    lineJoin: LineJoinShape = null,
-    onclick: /* event */ LeafletMouseEvent => Callback = null,
-    oncontextmenu: /* event */ LeafletMouseEvent => Callback = null,
-    ondblclick: /* event */ LeafletMouseEvent => Callback = null,
-    onlayeradd: /* event */ LayerEvent => Callback = null,
-    onlayerremove: /* event */ LayerEvent => Callback = null,
-    onmouseout: /* event */ LeafletMouseEvent => Callback = null,
-    onmouseover: /* event */ LeafletMouseEvent => Callback = null,
-    opacity: Int | Double = null,
-    pane: String = null,
-    renderer: Renderer = null,
-    stroke: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
-  ): FeatureGroupProps = {
+  
+  inline def apply(): FeatureGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
-    if (dashOffset != null) __obj.updateDynamic("dashOffset")(dashOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onclick(t0).runNow()))
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => oncontextmenu(t0).runNow()))
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => ondblclick(t0).runNow()))
-    if (onlayeradd != null) __obj.updateDynamic("onlayeradd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LayerEvent) => onlayeradd(t0).runNow()))
-    if (onlayerremove != null) __obj.updateDynamic("onlayerremove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LayerEvent) => onlayerremove(t0).runNow()))
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onmouseout(t0).runNow()))
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onmouseover(t0).runNow()))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureGroupProps]
   }
+  
+  extension [Self <: FeatureGroupProps](x: Self) {
+    
+    inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
+    
+    inline def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashArray(value: String | js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
+    
+    inline def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
+    
+    inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value*))
+    
+    inline def setDashOffset(value: String): Self = StObject.set(x, "dashOffset", value.asInstanceOf[js.Any])
+    
+    inline def setDashOffsetUndefined: Self = StObject.set(x, "dashOffset", js.undefined)
+    
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setFillRule(value: FillRule): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    
+    inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
+    inline def setLineCap(value: LineCapShape): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    
+    inline def setLineJoin(value: LineJoinShape): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    inline def setStroke(value: Boolean): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

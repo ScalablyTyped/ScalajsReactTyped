@@ -4,16 +4,16 @@
 Typings are for version 0.14
 
 ## Library description:
-Serves JSON files through REST routes.
+Get a full fake REST API with zero coding in less than 30 seconds
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | json-server |
 | Keywords           | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
-| # releases         | 8 |
-| # dependents       | 130 |
-| # downloads        | 5048365 |
-| # stars            | 181 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 857967.0 |
+| # stars            | 63243.0 |
 
 ## Links
 - [Homepage](https://github.com/typicode/json-server)

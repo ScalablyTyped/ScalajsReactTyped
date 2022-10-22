@@ -1,20 +1,28 @@
 package typingsJapgolly.nodal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISchema extends js.Object {
+trait ISchema extends StObject {
+  
   var columns: js.Array[IColumn]
+  
   var table: String
 }
-
 object ISchema {
-  @scala.inline
-  def apply(columns: js.Array[IColumn], table: String): ISchema = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
   
+  inline def apply(columns: js.Array[IColumn], table: String): ISchema = {
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]
   }
+  
+  extension [Self <: ISchema](x: Self) {
+    
+    inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+  }
 }
-

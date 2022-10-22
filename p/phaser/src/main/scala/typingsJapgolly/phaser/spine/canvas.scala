@@ -1,47 +1,99 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import org.scalajs.dom.raw.HTMLImageElement
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.canvas")
-@js.native
-object canvas extends js.Object {
-  @js.native
-  class AssetManager ()
-    extends typingsJapgolly.phaser.spine.AssetManager {
-    def this(pathPrefix: String) = this()
+object canvas {
+  
+  type AssetManager = typingsJapgolly.phaser.spine.AssetManager
+  
+  trait CanvasTexture
+    extends StObject
+       with Texture
+  object CanvasTexture {
+    
+    inline def apply(
+      _image: HTMLImageElement,
+      dispose: Callback,
+      getImage: CallbackTo[HTMLImageElement],
+      setFilters: (TextureFilter, TextureFilter) => Callback,
+      setWraps: (TextureWrap, TextureWrap) => Callback
+    ): CanvasTexture = {
+      val __obj = js.Dynamic.literal(_image = _image.asInstanceOf[js.Any], dispose = dispose.toJsFn, getImage = getImage.toJsFn, setFilters = js.Any.fromFunction2((t0: TextureFilter, t1: TextureFilter) => (setFilters(t0, t1)).runNow()), setWraps = js.Any.fromFunction2((t0: TextureWrap, t1: TextureWrap) => (setWraps(t0, t1)).runNow()))
+      __obj.asInstanceOf[CanvasTexture]
+    }
   }
   
-  @js.native
-  class CanvasTexture protected () extends Texture {
-    def this(image: HTMLImageElement) = this()
+  trait SkeletonRenderer extends StObject {
+    
+    /* private */ var computeMeshVertices: Any
+    
+    /* private */ var computeRegionVertices: Any
+    
+    /* private */ var ctx: Any
+    
+    var debugRendering: Boolean
+    
+    def draw(skeleton: Skeleton): Unit
+    
+    /* private */ var drawImages: Any
+    
+    /* private */ var drawTriangle: Any
+    
+    /* private */ var drawTriangles: Any
+    
+    /* private */ var tempColor: Any
+    
+    var triangleRendering: Boolean
+    
+    /* private */ var vertices: Any
   }
-  
-  @js.native
-  class SkeletonRenderer protected () extends js.Object {
-    def this(context: CanvasRenderingContext2D) = this()
-    var computeMeshVertices: js.Any = js.native
-    var computeRegionVertices: js.Any = js.native
-    var ctx: js.Any = js.native
-    var debugRendering: Boolean = js.native
-    var drawImages: js.Any = js.native
-    var drawTriangle: js.Any = js.native
-    var drawTriangles: js.Any = js.native
-    var tempColor: js.Any = js.native
-    var triangleRendering: Boolean = js.native
-    var vertices: js.Any = js.native
-    def draw(skeleton: Skeleton): Unit = js.native
+  object SkeletonRenderer {
+    
+    inline def apply(
+      computeMeshVertices: Any,
+      computeRegionVertices: Any,
+      ctx: Any,
+      debugRendering: Boolean,
+      draw: Skeleton => Callback,
+      drawImages: Any,
+      drawTriangle: Any,
+      drawTriangles: Any,
+      tempColor: Any,
+      triangleRendering: Boolean,
+      vertices: Any
+    ): SkeletonRenderer = {
+      val __obj = js.Dynamic.literal(computeMeshVertices = computeMeshVertices.asInstanceOf[js.Any], computeRegionVertices = computeRegionVertices.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], debugRendering = debugRendering.asInstanceOf[js.Any], draw = js.Any.fromFunction1((t0: Skeleton) => draw(t0).runNow()), drawImages = drawImages.asInstanceOf[js.Any], drawTriangle = drawTriangle.asInstanceOf[js.Any], drawTriangles = drawTriangles.asInstanceOf[js.Any], tempColor = tempColor.asInstanceOf[js.Any], triangleRendering = triangleRendering.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SkeletonRenderer]
+    }
+    
+    extension [Self <: SkeletonRenderer](x: Self) {
+      
+      inline def setComputeMeshVertices(value: Any): Self = StObject.set(x, "computeMeshVertices", value.asInstanceOf[js.Any])
+      
+      inline def setComputeRegionVertices(value: Any): Self = StObject.set(x, "computeRegionVertices", value.asInstanceOf[js.Any])
+      
+      inline def setCtx(value: Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      
+      inline def setDebugRendering(value: Boolean): Self = StObject.set(x, "debugRendering", value.asInstanceOf[js.Any])
+      
+      inline def setDraw(value: Skeleton => Callback): Self = StObject.set(x, "draw", js.Any.fromFunction1((t0: Skeleton) => value(t0).runNow()))
+      
+      inline def setDrawImages(value: Any): Self = StObject.set(x, "drawImages", value.asInstanceOf[js.Any])
+      
+      inline def setDrawTriangle(value: Any): Self = StObject.set(x, "drawTriangle", value.asInstanceOf[js.Any])
+      
+      inline def setDrawTriangles(value: Any): Self = StObject.set(x, "drawTriangles", value.asInstanceOf[js.Any])
+      
+      inline def setTempColor(value: Any): Self = StObject.set(x, "tempColor", value.asInstanceOf[js.Any])
+      
+      inline def setTriangleRendering(value: Boolean): Self = StObject.set(x, "triangleRendering", value.asInstanceOf[js.Any])
+      
+      inline def setVertices(value: Any): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    }
   }
-  
-  /* static members */
-  @js.native
-  object SkeletonRenderer extends js.Object {
-    var QUAD_TRIANGLES: js.Array[Double] = js.native
-    var VERTEX_SIZE: Double = js.native
-  }
-  
 }
-

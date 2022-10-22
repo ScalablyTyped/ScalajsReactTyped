@@ -1,130 +1,118 @@
-package typingsJapgolly.chrome.chrome
+package typingsJapgolly.chrome.chrome.fileSystemProvider
 
+import typingsJapgolly.chrome.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object fileSystemProvider {
-  type DirectoryPathRecursiveRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.DirectoryPathRecursiveRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type DirectoryPathRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.DirectoryPathRequestedEventOptions, 
-      /* successCallback */ js.Function2[
-        /* entries */ js.Array[typingsJapgolly.chrome.chrome.fileSystemProvider.EntryMetadata], 
-        /* hasMore */ scala.Boolean, 
-        scala.Unit
-      ], 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type EntryPathRecursiveRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.EntryPathRecursiveRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type FilePathLengthRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.FilePathLengthRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type FilePathRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.FilePathRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type MetadataRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.MetadataRequestedEventOptions, 
-      /* successCallback */ js.Function1[
-        /* metadata */ typingsJapgolly.chrome.chrome.fileSystemProvider.EntryMetadata, 
-        scala.Unit
-      ], 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OpenFileRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.OpenFileRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OpenedFileIoRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.OpenedFileIoRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OpenedFileOffsetRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.OpenedFileOffsetRequestedEventOptions, 
-      /* successCallback */ js.Function2[
-        /* data */ scala.scalajs.js.typedarray.ArrayBuffer, 
-        /* hasMore */ scala.Boolean, 
-        scala.Unit
-      ], 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OpenedFileRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.OpenedFileRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OperationRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.OperationRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type OptionlessRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function2[
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type RequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.RequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type SourceTargetPathRequestedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* options */ typingsJapgolly.chrome.chrome.fileSystemProvider.SourceTargetPathRequestedEventOptions, 
-      /* successCallback */ js.Function, 
-      /* errorCallback */ js.Function1[/* error */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-}
+
+type DirectoryPathRecursiveRequestedEvent = Event[
+js.Function3[
+  /* options */ DirectoryPathRecursiveRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type DirectoryPathRequestedEvent = Event[
+js.Function3[
+  /* options */ DirectoryPathRequestedEventOptions, 
+  /* successCallback */ js.Function2[/* entries */ js.Array[EntryMetadata], /* hasMore */ Boolean, Unit], 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type EntryPathRecursiveRequestedEvent = Event[
+js.Function3[
+  /* options */ EntryPathRecursiveRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type FilePathLengthRequestedEvent = Event[
+js.Function3[
+  /* options */ FilePathLengthRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type FilePathRequestedEvent = Event[
+js.Function3[
+  /* options */ FilePathRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type MetadataRequestedEvent = Event[
+js.Function3[
+  /* options */ MetadataRequestedEventOptions, 
+  /* successCallback */ js.Function1[/* metadata */ EntryMetadata, Unit], 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OpenFileRequestedEvent = Event[
+js.Function3[
+  /* options */ OpenFileRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OpenedFileIoRequestedEvent = Event[
+js.Function3[
+  /* options */ OpenedFileIoRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OpenedFileOffsetRequestedEvent = Event[
+js.Function3[
+  /* options */ OpenedFileOffsetRequestedEventOptions, 
+  /* successCallback */ js.Function2[/* data */ js.typedarray.ArrayBuffer, /* hasMore */ Boolean, Unit], 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OpenedFileRequestedEvent = Event[
+js.Function3[
+  /* options */ OpenedFileRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OperationRequestedEvent = Event[
+js.Function3[
+  /* options */ OperationRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type OptionlessRequestedEvent = Event[
+js.Function2[
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type RequestedEvent = Event[
+js.Function3[
+  /* options */ RequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type SourceTargetPathRequestedEvent = Event[
+js.Function3[
+  /* options */ SourceTargetPathRequestedEventOptions, 
+  /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]

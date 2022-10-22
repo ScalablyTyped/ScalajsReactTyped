@@ -1,13 +1,13 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICommand extends js.Object {
+trait ICommand extends StObject {
+  
   /**
     * Compute the cursor state after the edit operations were applied.
     * @param model The model the command has executed on.
@@ -15,6 +15,7 @@ trait ICommand extends js.Object {
     * @return The cursor state after the command executed.
     */
   def computeCursorState(model: ITextModel, helper: ICursorStateComputerData): Selection
+  
   /**
     * Get the edit operations needed to execute this command.
     * @param model The model the command will execute on.
@@ -22,17 +23,20 @@ trait ICommand extends js.Object {
     */
   def getEditOperations(model: ITextModel, builder: IEditOperationBuilder): Unit
 }
-
 object ICommand {
-  @scala.inline
-  def apply(
-    computeCursorState: (ITextModel, ICursorStateComputerData) => CallbackTo[Selection],
+  
+  inline def apply(
+    computeCursorState: (ITextModel, ICursorStateComputerData) => Selection,
     getEditOperations: (ITextModel, IEditOperationBuilder) => Callback
   ): ICommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeCursorState")(js.Any.fromFunction2((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.editor.ICursorStateComputerData) => computeCursorState(t0, t1).runNow()))
-    __obj.updateDynamic("getEditOperations")(js.Any.fromFunction2((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.editor.IEditOperationBuilder) => getEditOperations(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(computeCursorState = js.Any.fromFunction2(computeCursorState), getEditOperations = js.Any.fromFunction2((t0: ITextModel, t1: IEditOperationBuilder) => (getEditOperations(t0, t1)).runNow()))
     __obj.asInstanceOf[ICommand]
   }
+  
+  extension [Self <: ICommand](x: Self) {
+    
+    inline def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = StObject.set(x, "computeCursorState", js.Any.fromFunction2(value))
+    
+    inline def setGetEditOperations(value: (ITextModel, IEditOperationBuilder) => Callback): Self = StObject.set(x, "getEditOperations", js.Any.fromFunction2((t0: ITextModel, t1: IEditOperationBuilder) => (value(t0, t1)).runNow()))
+  }
 }
-

@@ -1,61 +1,78 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Spinner //////////////////////////////////////////////////
-trait SpinnerOptions extends SpinnerEvents {
+trait SpinnerOptions
+  extends StObject
+     with SpinnerEvents {
+  
   var culture: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
-  var incremental: js.UndefOr[js.Any] = js.undefined
-   // boolean or ()
-  var max: js.UndefOr[js.Any] = js.undefined
-   // number or string
-  var min: js.UndefOr[js.Any] = js.undefined
-   // number or string
+  
+  var icons: js.UndefOr[Any] = js.undefined
+  
+  var incremental: js.UndefOr[Any] = js.undefined
+  
+  // boolean or ()
+  var max: js.UndefOr[Any] = js.undefined
+  
+  // number or string
+  var min: js.UndefOr[Any] = js.undefined
+  
+  // number or string
   var numberFormat: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[js.Any] = js.undefined
+  
+  var step: js.UndefOr[Any] = js.undefined
 }
-
 object SpinnerOptions {
-  @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, js.Object) => Callback = null,
-    create: (/* event */ JQueryEventObject, js.Object) => Callback = null,
-    culture: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icons: js.Any = null,
-    incremental: js.Any = null,
-    max: js.Any = null,
-    min: js.Any = null,
-    numberFormat: String = null,
-    page: Int | Double = null,
-    spin: (/* event */ JQueryEventObject, SpinnerUIParam) => Callback = null,
-    start: (/* event */ JQueryEventObject, js.Object) => Callback = null,
-    step: js.Any = null,
-    stop: (/* event */ JQueryEventObject, js.Object) => Callback = null
-  ): SpinnerOptions = {
+  
+  inline def apply(): SpinnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: js.Object) => change(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: js.Object) => create(t0, t1).runNow()))
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (incremental != null) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: typingsJapgolly.jqueryui.JQueryUI.SpinnerUIParam) => spin(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: js.Object) => start(t0, t1).runNow()))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: js.Object) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[SpinnerOptions]
   }
+  
+  extension [Self <: SpinnerOptions](x: Self) {
+    
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setIncremental(value: Any): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+    
+    inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
+    
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setStep(value: Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+  }
 }
-

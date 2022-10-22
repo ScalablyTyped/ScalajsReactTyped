@@ -1,44 +1,52 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodesInfoParams extends GenericParams {
+trait NodesInfoParams
+  extends StObject
+     with GenericParams {
+  
   var flatSettings: js.UndefOr[Boolean] = js.undefined
+  
   var human: js.UndefOr[Boolean] = js.undefined
+  
   var metric: js.UndefOr[NameList] = js.undefined
+  
   var nodeId: NameList
+  
   var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
-
 object NodesInfoParams {
-  @scala.inline
-  def apply(
-    nodeId: NameList,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    flatSettings: js.UndefOr[Boolean] = js.undefined,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    metric: NameList = null,
-    requestTimeout: Int | Double = null,
-    timeout: TimeSpan = null
-  ): NodesInfoParams = {
+  
+  inline def apply(nodeId: NameList): NodesInfoParams = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatSettings)) __obj.updateDynamic("flatSettings")(flatSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesInfoParams]
   }
+  
+  extension [Self <: NodesInfoParams](x: Self) {
+    
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    
+    inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    
+    inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
+    
+    inline def setMetric(value: NameList): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
+    
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
+    
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

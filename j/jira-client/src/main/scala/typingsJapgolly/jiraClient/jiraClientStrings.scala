@@ -1,34 +1,36 @@
 package typingsJapgolly.jiraClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jiraClientStrings {
-  @js.native
-  sealed trait active extends js.Object
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait future extends js.Object
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait future extends StObject
+  inline def future: future = "future".asInstanceOf[future]
   
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def future: future = "future".asInstanceOf[future]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
+  @js.native
+  sealed trait kanban extends StObject
+  inline def kanban: kanban = "kanban".asInstanceOf[kanban]
+  
+  @js.native
+  sealed trait scrum extends StObject
+  inline def scrum: scrum = "scrum".asInstanceOf[scrum]
+  
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
 }
-

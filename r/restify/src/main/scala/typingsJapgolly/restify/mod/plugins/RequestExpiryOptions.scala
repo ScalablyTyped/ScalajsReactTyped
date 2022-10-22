@@ -1,32 +1,45 @@
 package typingsJapgolly.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestExpiryOptions extends js.Object {
+trait RequestExpiryOptions extends StObject {
+  
   /**
     * Header name of the absolute time for request expiration
     */
   var absoluteHeader: js.UndefOr[String] = js.undefined
+  
   /**
     * Header name for the start time of the request
     */
   var startHeader: js.UndefOr[String] = js.undefined
+  
   /**
     * The header name for the time in milliseconds that should ellapse before the request is considered expired.
     */
   var timeoutHeader: js.UndefOr[String] = js.undefined
 }
-
 object RequestExpiryOptions {
-  @scala.inline
-  def apply(absoluteHeader: String = null, startHeader: String = null, timeoutHeader: String = null): RequestExpiryOptions = {
+  
+  inline def apply(): RequestExpiryOptions = {
     val __obj = js.Dynamic.literal()
-    if (absoluteHeader != null) __obj.updateDynamic("absoluteHeader")(absoluteHeader.asInstanceOf[js.Any])
-    if (startHeader != null) __obj.updateDynamic("startHeader")(startHeader.asInstanceOf[js.Any])
-    if (timeoutHeader != null) __obj.updateDynamic("timeoutHeader")(timeoutHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestExpiryOptions]
   }
+  
+  extension [Self <: RequestExpiryOptions](x: Self) {
+    
+    inline def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
+    
+    inline def setAbsoluteHeaderUndefined: Self = StObject.set(x, "absoluteHeader", js.undefined)
+    
+    inline def setStartHeader(value: String): Self = StObject.set(x, "startHeader", value.asInstanceOf[js.Any])
+    
+    inline def setStartHeaderUndefined: Self = StObject.set(x, "startHeader", js.undefined)
+    
+    inline def setTimeoutHeader(value: String): Self = StObject.set(x, "timeoutHeader", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutHeaderUndefined: Self = StObject.set(x, "timeoutHeader", js.undefined)
+  }
 }
-

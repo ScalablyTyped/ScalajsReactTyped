@@ -1,24 +1,31 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
 import typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.game
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InlineQueryResultGame
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
+  
   var game_short_name: String
+  
   var `type`: game
 }
-
 object InlineQueryResultGame {
-  @scala.inline
-  def apply(game_short_name: String, id: String, `type`: game, reply_markup: InlineKeyboardMarkup = null): InlineQueryResultGame = {
+  
+  inline def apply(game_short_name: String, id: String): InlineQueryResultGame = {
     val __obj = js.Dynamic.literal(game_short_name = game_short_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("game")
     __obj.asInstanceOf[InlineQueryResultGame]
   }
+  
+  extension [Self <: InlineQueryResultGame](x: Self) {
+    
+    inline def setGame_short_name(value: String): Self = StObject.set(x, "game_short_name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: game): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

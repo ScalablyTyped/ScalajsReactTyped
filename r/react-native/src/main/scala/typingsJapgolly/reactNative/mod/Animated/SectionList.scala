@@ -1,12 +1,19 @@
 package typingsJapgolly.reactNative.mod.Animated
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.react.mod.Component
+import typingsJapgolly.reactNative.mod.SectionListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "Animated.SectionList")
 @js.native
-object SectionList
-  extends TopLevel[AnimatedComponent[typingsJapgolly.reactNative.mod.SectionList[js.Any]]]
-
+open class SectionList[ItemT, SectionT] protected ()
+  extends Component[AnimatedProps[SectionListProps[ItemT, SectionT]], js.Object, Any] {
+  def this(props: AnimatedProps[SectionListProps[ItemT, SectionT]]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AnimatedProps[SectionListProps[ItemT, SectionT]], context: Any) = this()
+}

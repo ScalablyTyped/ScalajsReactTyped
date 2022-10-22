@@ -1,8 +1,8 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 界面-----动画
 /* Rewritten from type alias, can be one of: 
@@ -14,24 +14,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.weixinApp.weixinAppStrings.`step-start`
   - typingsJapgolly.weixinApp.weixinAppStrings.`step-end`
 */
-trait TimingFunction extends js.Object
-
+trait TimingFunction extends StObject
 object TimingFunction {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ease: typingsJapgolly.weixinApp.weixinAppStrings.ease = this.cast("ease")
-  @scala.inline
-  def `ease-in`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-in` = this.cast("ease-in")
-  @scala.inline
-  def `ease-in-out`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-in-out` = this.cast("ease-in-out")
-  @scala.inline
-  def `ease-out`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-out` = this.cast("ease-out")
-  @scala.inline
-  def linear: typingsJapgolly.weixinApp.weixinAppStrings.linear = this.cast("linear")
-  @scala.inline
-  def `step-end`: typingsJapgolly.weixinApp.weixinAppStrings.`step-end` = this.cast("step-end")
-  @scala.inline
-  def `step-start`: typingsJapgolly.weixinApp.weixinAppStrings.`step-start` = this.cast("step-start")
+  
+  inline def ease: typingsJapgolly.weixinApp.weixinAppStrings.ease = "ease".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.ease]
+  
+  inline def `ease-in`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-in` = "ease-in".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`ease-in`]
+  
+  inline def `ease-in-out`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`ease-in-out`]
+  
+  inline def `ease-out`: typingsJapgolly.weixinApp.weixinAppStrings.`ease-out` = "ease-out".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`ease-out`]
+  
+  inline def linear: typingsJapgolly.weixinApp.weixinAppStrings.linear = "linear".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.linear]
+  
+  inline def `step-end`: typingsJapgolly.weixinApp.weixinAppStrings.`step-end` = "step-end".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`step-end`]
+  
+  inline def `step-start`: typingsJapgolly.weixinApp.weixinAppStrings.`step-start` = "step-start".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`step-start`]
 }
-

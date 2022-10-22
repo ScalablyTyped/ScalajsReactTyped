@@ -1,35 +1,27 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapSchedulerGroupType extends js.Object
-
+sealed trait BootstrapSchedulerGroupType extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerGroupType")
 @js.native
-object BootstrapSchedulerGroupType extends js.Object {
-  @js.native
-  sealed trait Date extends BootstrapSchedulerGroupType
+object BootstrapSchedulerGroupType extends StObject {
   
   @js.native
-  sealed trait None extends BootstrapSchedulerGroupType
+  sealed trait Date
+    extends StObject
+       with BootstrapSchedulerGroupType
   
   @js.native
-  sealed trait Resource extends BootstrapSchedulerGroupType
+  sealed trait None
+    extends StObject
+       with BootstrapSchedulerGroupType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BootstrapSchedulerGroupType with String] = js.native
-  /* "Date" */ @js.native
-  object Date extends TopLevel[Date with String]
-  
-  /* "None" */ @js.native
-  object None extends TopLevel[None with String]
-  
-  /* "Resource" */ @js.native
-  object Resource extends TopLevel[Resource with String]
-  
+  @js.native
+  sealed trait Resource
+    extends StObject
+       with BootstrapSchedulerGroupType
 }
-

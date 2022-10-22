@@ -1,33 +1,16 @@
 package typingsJapgolly.treeChanges
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.treeChanges.distTypesMod.Data
+import typingsJapgolly.treeChanges.distTypesMod.TreeChanges
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tree-changes", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait ITreeChanges extends js.Object {
-    def changed(): Boolean = js.native
-    def changed(key: String): Boolean = js.native
-    def changed(key: Double): Boolean = js.native
-    def changedFrom(key: String, previous: TypeInput): Boolean = js.native
-    def changedFrom(key: String, previous: TypeInput, actual: TypeInput): Boolean = js.native
-    def changedFrom(key: Double, previous: TypeInput): Boolean = js.native
-    def changedFrom(key: Double, previous: TypeInput, actual: TypeInput): Boolean = js.native
-    def changedTo(key: String, actual: TypeInput): Boolean = js.native
-    def changedTo(key: Double, actual: TypeInput): Boolean = js.native
-    def decreased(key: String): Boolean = js.native
-    def decreased(key: Double): Boolean = js.native
-    def increased(key: String): Boolean = js.native
-    def increased(key: Double): Boolean = js.native
-  }
+object mod {
   
-  def default(data: IData, nextData: IData): ITreeChanges = js.native
-  type IData = IPlainObject | js.Array[IPlainObject]
-  type IPlainObject = StringDictionary[js.Any]
-  type TypeInput = String | Boolean | Double | IPlainObject | (js.Array[String | Boolean | Double | IPlainObject])
+  @JSImport("tree-changes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[P /* <: Data */, D /* <: Data */, K](previousData: P, data: D): TreeChanges[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(previousData.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[TreeChanges[K]]
 }
-

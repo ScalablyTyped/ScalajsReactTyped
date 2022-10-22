@@ -1,20 +1,22 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Runner[T /* <: js.Object */, U] extends js.Object {
+trait Runner[T /* <: js.Object */, U] extends StObject {
+  
   def run(options: T): js.Promise[U]
 }
-
 object Runner {
-  @scala.inline
-  def apply[T /* <: js.Object */, U](run: T => CallbackTo[js.Promise[U]]): Runner[T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(js.Any.fromFunction1((t0: T) => run(t0).runNow()))
+  
+  inline def apply[T /* <: js.Object */, U](run: T => js.Promise[U]): Runner[T, U] = {
+    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[Runner[T, U]]
   }
+  
+  extension [Self <: Runner[?, ?], T /* <: js.Object */, U](x: Self & (Runner[T, U])) {
+    
+    inline def setRun(value: T => js.Promise[U]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+  }
 }
-

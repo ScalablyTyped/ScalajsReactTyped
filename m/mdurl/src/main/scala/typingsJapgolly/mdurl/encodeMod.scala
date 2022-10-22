@@ -1,16 +1,25 @@
 package typingsJapgolly.mdurl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mdurl/encode", JSImport.Namespace)
-@js.native
-object encodeMod extends js.Object {
+object encodeMod {
+  
+  inline def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(str: String, exclude: String): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, exclude: String, keepEscaped: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any], keepEscaped.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, exclude: Unit, keepEscaped: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any], keepEscaped.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("mdurl/encode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("mdurl/encode", "componentChars")
+  @js.native
   val componentChars: String = js.native
+  
+  @JSImport("mdurl/encode", "defaultChars")
+  @js.native
   val defaultChars: String = js.native
-  def apply(str: String): String = js.native
-  def apply(str: String, exclude: String): String = js.native
-  def apply(str: String, exclude: String, keepEscaped: Boolean): String = js.native
 }
-

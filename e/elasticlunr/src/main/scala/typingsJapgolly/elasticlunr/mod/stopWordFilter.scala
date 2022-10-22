@@ -1,17 +1,18 @@
 package typingsJapgolly.elasticlunr.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("elasticlunr", "stopWordFilter")
-@js.native
-object stopWordFilter extends js.Object {
-  val label: String = js.native
-  def apply(token: String): String = js.native
-  @js.native
-  object stopWords extends /* key */ StringDictionary[Boolean]
+object stopWordFilter {
   
+  inline def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("elasticlunr", "stopWordFilter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("elasticlunr", "stopWordFilter.label")
+  @js.native
+  val label: String = js.native
 }
-

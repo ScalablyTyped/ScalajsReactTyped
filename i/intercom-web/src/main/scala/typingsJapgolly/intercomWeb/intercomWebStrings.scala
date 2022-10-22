@@ -1,75 +1,109 @@
 package typingsJapgolly.intercomWeb
 
-import typingsJapgolly.intercomWeb.Intercom_.IntercomCommand
+import typingsJapgolly.intercomWeb.Intercom.IntercomCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intercomWebStrings {
-  @js.native
-  sealed trait boot extends IntercomCommand
   
   @js.native
-  sealed trait getVisitorId extends IntercomCommand
+  sealed trait avatar extends StObject
+  inline def avatar: avatar = "avatar".asInstanceOf[avatar]
   
   @js.native
-  sealed trait hide extends IntercomCommand
+  sealed trait boot
+    extends StObject
+       with IntercomCommand
+  inline def boot: boot = "boot".asInstanceOf[boot]
   
   @js.native
-  sealed trait onActivatorClick extends IntercomCommand
+  sealed trait getVisitorId
+    extends StObject
+       with IntercomCommand
+  inline def getVisitorId: getVisitorId = "getVisitorId".asInstanceOf[getVisitorId]
   
   @js.native
-  sealed trait onHide extends IntercomCommand
+  sealed trait hide
+    extends StObject
+       with IntercomCommand
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait onShow extends IntercomCommand
+  sealed trait onActivatorClick
+    extends StObject
+       with IntercomCommand
+  inline def onActivatorClick: onActivatorClick = "onActivatorClick".asInstanceOf[onActivatorClick]
   
   @js.native
-  sealed trait onUnreadCountChange extends IntercomCommand
+  sealed trait onHide
+    extends StObject
+       with IntercomCommand
+  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
   
   @js.native
-  sealed trait show extends IntercomCommand
+  sealed trait onShow
+    extends StObject
+       with IntercomCommand
+  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
   
   @js.native
-  sealed trait showMessages extends IntercomCommand
+  sealed trait onUnreadCountChange
+    extends StObject
+       with IntercomCommand
+  inline def onUnreadCountChange: onUnreadCountChange = "onUnreadCountChange".asInstanceOf[onUnreadCountChange]
   
   @js.native
-  sealed trait showNewMessage extends IntercomCommand
+  sealed trait show
+    extends StObject
+       with IntercomCommand
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait shutdown extends IntercomCommand
+  sealed trait showArticle
+    extends StObject
+       with IntercomCommand
+  inline def showArticle: showArticle = "showArticle".asInstanceOf[showArticle]
   
   @js.native
-  sealed trait trackEvent extends IntercomCommand
+  sealed trait showMessages
+    extends StObject
+       with IntercomCommand
+  inline def showMessages: showMessages = "showMessages".asInstanceOf[showMessages]
   
   @js.native
-  sealed trait update extends IntercomCommand
+  sealed trait showNewMessage
+    extends StObject
+       with IntercomCommand
+  inline def showNewMessage: showNewMessage = "showNewMessage".asInstanceOf[showNewMessage]
   
-  @scala.inline
-  def boot: boot = "boot".asInstanceOf[boot]
-  @scala.inline
-  def getVisitorId: getVisitorId = "getVisitorId".asInstanceOf[getVisitorId]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def onActivatorClick: onActivatorClick = "onActivatorClick".asInstanceOf[onActivatorClick]
-  @scala.inline
-  def onHide: onHide = "onHide".asInstanceOf[onHide]
-  @scala.inline
-  def onShow: onShow = "onShow".asInstanceOf[onShow]
-  @scala.inline
-  def onUnreadCountChange: onUnreadCountChange = "onUnreadCountChange".asInstanceOf[onUnreadCountChange]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def showMessages: showMessages = "showMessages".asInstanceOf[showMessages]
-  @scala.inline
-  def showNewMessage: showNewMessage = "showNewMessage".asInstanceOf[showNewMessage]
-  @scala.inline
-  def shutdown: shutdown = "shutdown".asInstanceOf[shutdown]
-  @scala.inline
-  def trackEvent: trackEvent = "trackEvent".asInstanceOf[trackEvent]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  @js.native
+  sealed trait shutdown
+    extends StObject
+       with IntercomCommand
+  inline def shutdown: shutdown = "shutdown".asInstanceOf[shutdown]
+  
+  @js.native
+  sealed trait startSurvey
+    extends StObject
+       with IntercomCommand
+  inline def startSurvey: startSurvey = "startSurvey".asInstanceOf[startSurvey]
+  
+  @js.native
+  sealed trait startTour
+    extends StObject
+       with IntercomCommand
+  inline def startTour: startTour = "startTour".asInstanceOf[startTour]
+  
+  @js.native
+  sealed trait trackEvent
+    extends StObject
+       with IntercomCommand
+  inline def trackEvent: trackEvent = "trackEvent".asInstanceOf[trackEvent]
+  
+  @js.native
+  sealed trait update
+    extends StObject
+       with IntercomCommand
+  inline def update: update = "update".asInstanceOf[update]
 }
-

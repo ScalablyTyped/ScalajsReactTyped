@@ -1,14 +1,31 @@
 package typingsJapgolly.rcMentions.components
 
-import typingsJapgolly.rcMentions.mentionsMod.default
+import typingsJapgolly.rcMentions.esMentionsMod.MentionsProps
+import typingsJapgolly.rcMentions.esMentionsMod.MentionsRef
+import typingsJapgolly.rcMentions.esOptionMod.OptionProps
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Mentions extends SharedApply_MentionsProps2130728438[default] {
-  @JSImport("rc-mentions/lib/Mentions", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object Mentions {
   
+  object Option {
+    
+    @JSImport("rc-mentions/es/Mentions", "default.Option")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Option.type): SharedBuilder_OptionProps1642403849 = new SharedBuilder_OptionProps1642403849(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: OptionProps): SharedBuilder_OptionProps1642403849 = new SharedBuilder_OptionProps1642403849(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("rc-mentions/es/Mentions", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: Mentions.type): SharedBuilder_MentionsPropsRefAttributes89069021[MentionsRef] = new SharedBuilder_MentionsPropsRefAttributes89069021[MentionsRef](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MentionsProps & RefAttributes[MentionsRef]): SharedBuilder_MentionsPropsRefAttributes89069021[MentionsRef] = new SharedBuilder_MentionsPropsRefAttributes89069021[MentionsRef](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

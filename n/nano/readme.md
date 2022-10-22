@@ -1,7 +1,7 @@
 
 # Scala.js typings for nano
 
-Typings are for version 8.1.0
+Typings are for version 10.0.0
 
 ## Library description:
 The official CouchDB client for Node.js
@@ -11,9 +11,9 @@ The official CouchDB client for Node.js
 | Full name          | nano |
 | Keywords           | couchdb, data, request, json, nosql, micro, nano, database |
 | # releases         | 9 |
-| # dependents       | 259 |
-| # downloads        | 2545806 |
-| # stars            | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 240171.66666666666 |
+| # stars            | 543.0 |
 
 ## Links
 - [Homepage](http://github.com/apache/couchdb-nano)

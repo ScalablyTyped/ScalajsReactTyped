@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadFile extends js.Object {
-  var extension: js.UndefOr[String] = js.undefined
+trait UploadFile extends StObject {
+  
+  var `extension`: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
 }
-
 object UploadFile {
-  @scala.inline
-  def apply(extension: String = null, name: String = null, size: Int | Double = null): UploadFile = {
+  
+  inline def apply(): UploadFile = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFile]
   }
+  
+  extension [Self <: UploadFile](x: Self) {
+    
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

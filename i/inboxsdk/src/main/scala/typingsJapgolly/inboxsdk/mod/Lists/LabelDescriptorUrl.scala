@@ -1,32 +1,31 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LabelDescriptorUrl
-  extends LabelDescriptorBase
+  extends StObject
+     with LabelDescriptorBase
      with LabelDescriptor {
+  
   var iconClass: js.UndefOr[String] = js.undefined
+  
   var iconUrl: String
 }
-
 object LabelDescriptorUrl {
-  @scala.inline
-  def apply(
-    iconUrl: String,
-    title: String,
-    backgroundColor: String = null,
-    foregroundColor: String = null,
-    iconBackgroundColor: String = null,
-    iconClass: String = null
-  ): LabelDescriptorUrl = {
+  
+  inline def apply(iconUrl: String, title: String): LabelDescriptorUrl = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (iconBackgroundColor != null) __obj.updateDynamic("iconBackgroundColor")(iconBackgroundColor.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptorUrl]
   }
+  
+  extension [Self <: LabelDescriptorUrl](x: Self) {
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+  }
 }
-

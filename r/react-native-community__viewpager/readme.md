@@ -1,24 +1,24 @@
 
 # Scala.js typings for react-native-community__viewpager
 
-Typings are for version 1.1.7
+Typings are for version 5.0.11
 
 ## Library description:
-React Native ViewPager native view
+React Native wrapper for Android and iOS ViewPager
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/viewpager |
-| Keywords           | react-native, viewpager, view pager, tabs |
-| # releases         | 19 |
-| # dependents       | 24 |
-| # downloads        | 287361 |
-| # stars            | 0 |
+| Keywords           | react-native, ios, android |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 157376.33333333334 |
+| # stars            | 1666.0 |
 
 ## Links
-- [Homepage](https://github.com/react-native-community/react-native-viewpager#readme)
-- [Bugs](https://github.com/react-native-community/react-native-viewpager/issues)
-- [Repository](https://github.com/react-native-community/react-native-viewpager)
+- [Homepage](https://github.com/callstack/react-native-viewpager#readme)
+- [Bugs](https://github.com/callstack/react-native-viewpager/issues)
+- [Repository](https://github.com/callstack/react-native-viewpager)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fviewpager)
     
 

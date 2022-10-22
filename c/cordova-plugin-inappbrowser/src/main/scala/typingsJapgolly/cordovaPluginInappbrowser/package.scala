@@ -1,10 +1,10 @@
-package typingsJapgolly
+package typingsJapgolly.cordovaPluginInappbrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object cordovaPluginInappbrowser {
-  type InAppBrowserEventListener = js.Function1[/* evt */ typingsJapgolly.cordovaPluginInappbrowser.InAppBrowserEvent, scala.Unit]
-  type InAppBrowserEventListenerOrEventListenerObject = typingsJapgolly.cordovaPluginInappbrowser.InAppBrowserEventListener | typingsJapgolly.cordovaPluginInappbrowser.InAppBrowserEventListenerObject
-}
+
+type InAppBrowserEventListener = js.Function1[/* evt */ InAppBrowserEvent, Unit]
+
+type InAppBrowserEventListenerOrEventListenerObject = InAppBrowserEventListener | InAppBrowserEventListenerObject

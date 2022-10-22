@@ -1,22 +1,67 @@
 package typingsJapgolly.activexWord.Word
 
 import typingsJapgolly.activexOffice.Office.MsoReflectionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.ReflectionFormat")
-@js.native
-class ReflectionFormat protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  var Blur: Double = js.native
-  val Creator: Double = js.native
-  var Offset: Double = js.native
-  val Parent: js.Any = js.native
-  var Size: Double = js.native
-  var Transparency: Double = js.native
-  var Type: MsoReflectionType = js.native
-  @JSName("Word.ReflectionFormat_typekey")
-  var WordDotReflectionFormat_typekey: ReflectionFormat = js.native
+trait ReflectionFormat extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  var Blur: Double
+  
+  val Creator: Double
+  
+  var Offset: Double
+  
+  val Parent: Any
+  
+  var Size: Double
+  
+  var Transparency: Double
+  
+  var Type: MsoReflectionType
+  
+  /* private */ @JSName("Word.ReflectionFormat_typekey")
+  var WordDotReflectionFormat_typekey: ReflectionFormat
 }
-
+object ReflectionFormat {
+  
+  inline def apply(
+    Application: Application,
+    Blur: Double,
+    Creator: Double,
+    Offset: Double,
+    Parent: Any,
+    Size: Double,
+    Transparency: Double,
+    Type: MsoReflectionType,
+    WordDotReflectionFormat_typekey: ReflectionFormat
+  ): ReflectionFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Blur = Blur.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Offset = Offset.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Transparency = Transparency.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.ReflectionFormat_typekey")(WordDotReflectionFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReflectionFormat]
+  }
+  
+  extension [Self <: ReflectionFormat](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: MsoReflectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotReflectionFormat_typekey(value: ReflectionFormat): Self = StObject.set(x, "Word.ReflectionFormat_typekey", value.asInstanceOf[js.Any])
+  }
+}

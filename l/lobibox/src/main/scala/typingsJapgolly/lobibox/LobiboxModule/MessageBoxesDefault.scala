@@ -2,119 +2,205 @@ package typingsJapgolly.lobibox.LobiboxModule
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageBoxesDefault extends js.Object {
+trait MessageBoxesDefault extends StObject {
+  
   var baseClass: js.UndefOr[String] = js.undefined
+  
   // when messagebox remove method is called but before it is actually hidden
-  var beforeClose: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var beforeClose: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
+  
   var buttonsAlign: js.UndefOr[String] = js.undefined
-    // Height is automatically given calculated by width
+  
+  // Height is automatically given calculated by width
   var closeButton: js.UndefOr[Boolean] = js.undefined
-   // Position where buttons should be aligned
+  
+  // Position where buttons should be aligned
   var closeOnEsc: js.UndefOr[Boolean] = js.undefined
+  
   // after messagebox is hidden
-  var closed: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
-    // Make messagebox draggable
+  var closed: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
+  
+  // Make messagebox draggable
   var customBtnClass: js.UndefOr[String] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
-    // Close messagebox on Esc press
+  
+  // Close messagebox on Esc press
   var delayToRemove: js.UndefOr[Double] = js.undefined
-    // Show close button or not
+  
+  // Show close button or not
   var draggable: js.UndefOr[Boolean] = js.undefined
+  
   var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
+  
   var height: js.UndefOr[String] = js.undefined
+  
   // methods
   var hide: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   var hideClass: js.UndefOr[String] = js.undefined
+  
   var horizontalOffset: js.UndefOr[Double] = js.undefined
-   // Class for custom buttons
+  
+  // Class for custom buttons
   var modal: js.UndefOr[Boolean] = js.undefined
+  
   var msg: js.UndefOr[String] = js.undefined
+  
   // events
   // when messagebox show is called but before it is actually shown
-  var onShow: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
+  
   var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[Double], this.type]] = js.undefined
+  
   var setPosition: js.UndefOr[
     js.Function2[/* left */ js.UndefOr[Double | String], /* top */ js.UndefOr[Double], this.type]
   ] = js.undefined
+  
   var setSize: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], this.type]
   ] = js.undefined
+  
   var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], this.type]] = js.undefined
+  
   var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[Double], this.type]] = js.undefined
+  
   var show: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   var showClass: js.UndefOr[String] = js.undefined
+  
   // after messagebox is shown
-  var shown: js.UndefOr[js.Function1[/* lobibox */ js.Any, Unit]] = js.undefined
+  var shown: js.UndefOr[js.Function1[/* lobibox */ Any, Unit]] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object MessageBoxesDefault {
-  @scala.inline
-  def apply(
-    baseClass: String = null,
-    beforeClose: /* lobibox */ js.Any => Callback = null,
-    buttonsAlign: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    closed: /* lobibox */ js.Any => Callback = null,
-    customBtnClass: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    delayToRemove: Int | Double = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    getTitle: js.UndefOr[CallbackTo[String]] = js.undefined,
-    height: String = null,
-    hide: js.UndefOr[CallbackTo[MessageBoxesDefault]] = js.undefined,
-    hideClass: String = null,
-    horizontalOffset: Int | Double = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    msg: String = null,
-    onShow: /* lobibox */ js.Any => Callback = null,
-    setHeight: /* height */ js.UndefOr[Double] => CallbackTo[MessageBoxesDefault] = null,
-    setPosition: (/* left */ js.UndefOr[Double | String], /* top */ js.UndefOr[Double]) => CallbackTo[MessageBoxesDefault] = null,
-    setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => CallbackTo[MessageBoxesDefault] = null,
-    setTitle: /* title */ js.UndefOr[String] => CallbackTo[MessageBoxesDefault] = null,
-    setWidth: /* width */ js.UndefOr[Double] => CallbackTo[MessageBoxesDefault] = null,
-    show: js.UndefOr[CallbackTo[MessageBoxesDefault]] = js.undefined,
-    showClass: String = null,
-    shown: /* lobibox */ js.Any => Callback = null,
-    title: String = null,
-    width: Int | Double = null
-  ): MessageBoxesDefault = {
+  
+  inline def apply(): MessageBoxesDefault = {
     val __obj = js.Dynamic.literal()
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => beforeClose(t0).runNow()))
-    if (buttonsAlign != null) __obj.updateDynamic("buttonsAlign")(buttonsAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => closed(t0).runNow()))
-    if (customBtnClass != null) __obj.updateDynamic("customBtnClass")(customBtnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (delayToRemove != null) __obj.updateDynamic("delayToRemove")(delayToRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    getTitle.foreach(p => __obj.updateDynamic("getTitle")(p.toJsFn))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    hide.foreach(p => __obj.updateDynamic("hide")(p.toJsFn))
-    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => onShow(t0).runNow()))
-    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1((t0: /* height */ js.UndefOr[scala.Double]) => setHeight(t0).runNow()))
-    if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction2((t0: /* left */ js.UndefOr[scala.Double | java.lang.String], t1: /* top */ js.UndefOr[scala.Double]) => setPosition(t0, t1).runNow()))
-    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2((t0: /* width */ js.UndefOr[scala.Double], t1: /* height */ js.UndefOr[scala.Double]) => setSize(t0, t1).runNow()))
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: /* title */ js.UndefOr[java.lang.String]) => setTitle(t0).runNow()))
-    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1((t0: /* width */ js.UndefOr[scala.Double]) => setWidth(t0).runNow()))
-    show.foreach(p => __obj.updateDynamic("show")(p.toJsFn))
-    if (showClass != null) __obj.updateDynamic("showClass")(showClass.asInstanceOf[js.Any])
-    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => shown(t0).runNow()))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxesDefault]
   }
+  
+  extension [Self <: MessageBoxesDefault](x: Self) {
+    
+    inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+    
+    inline def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
+    
+    inline def setBeforeClose(value: /* lobibox */ Any => Callback): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1((t0: /* lobibox */ Any) => value(t0).runNow()))
+    
+    inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+    
+    inline def setButtonsAlign(value: String): Self = StObject.set(x, "buttonsAlign", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsAlignUndefined: Self = StObject.set(x, "buttonsAlign", js.undefined)
+    
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    
+    inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+    
+    inline def setClosed(value: /* lobibox */ Any => Callback): Self = StObject.set(x, "closed", js.Any.fromFunction1((t0: /* lobibox */ Any) => value(t0).runNow()))
+    
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    
+    inline def setCustomBtnClass(value: String): Self = StObject.set(x, "customBtnClass", value.asInstanceOf[js.Any])
+    
+    inline def setCustomBtnClassUndefined: Self = StObject.set(x, "customBtnClass", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setDelayToRemove(value: Double): Self = StObject.set(x, "delayToRemove", value.asInstanceOf[js.Any])
+    
+    inline def setDelayToRemoveUndefined: Self = StObject.set(x, "delayToRemove", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setGetTitle(value: CallbackTo[String]): Self = StObject.set(x, "getTitle", value.toJsFn)
+    
+    inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
+    
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHide(value: CallbackTo[MessageBoxesDefault]): Self = StObject.set(x, "hide", value.toJsFn)
+    
+    inline def setHideClass(value: String): Self = StObject.set(x, "hideClass", value.asInstanceOf[js.Any])
+    
+    inline def setHideClassUndefined: Self = StObject.set(x, "hideClass", js.undefined)
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
+    
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    
+    inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+    
+    inline def setOnShow(value: /* lobibox */ Any => Callback): Self = StObject.set(x, "onShow", js.Any.fromFunction1((t0: /* lobibox */ Any) => value(t0).runNow()))
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    
+    inline def setSetHeight(value: /* height */ js.UndefOr[Double] => MessageBoxesDefault): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    
+    inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
+    
+    inline def setSetPosition(
+      value: (/* left */ js.UndefOr[Double | String], /* top */ js.UndefOr[Double]) => MessageBoxesDefault
+    ): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
+    
+    inline def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
+    
+    inline def setSetSize(value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => MessageBoxesDefault): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+    
+    inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+    
+    inline def setSetTitle(value: /* title */ js.UndefOr[String] => MessageBoxesDefault): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    
+    inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+    
+    inline def setSetWidth(value: /* width */ js.UndefOr[Double] => MessageBoxesDefault): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    
+    inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
+    
+    inline def setShow(value: CallbackTo[MessageBoxesDefault]): Self = StObject.set(x, "show", value.toJsFn)
+    
+    inline def setShowClass(value: String): Self = StObject.set(x, "showClass", value.asInstanceOf[js.Any])
+    
+    inline def setShowClassUndefined: Self = StObject.set(x, "showClass", js.undefined)
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setShown(value: /* lobibox */ Any => Callback): Self = StObject.set(x, "shown", js.Any.fromFunction1((t0: /* lobibox */ Any) => value(t0).runNow()))
+    
+    inline def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

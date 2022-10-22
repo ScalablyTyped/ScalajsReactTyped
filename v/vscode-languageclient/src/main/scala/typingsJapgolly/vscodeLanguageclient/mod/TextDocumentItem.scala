@@ -1,13 +1,15 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "TextDocumentItem")
-@js.native
-object TextDocumentItem extends js.Object {
+object TextDocumentItem {
+  
+  @JSImport("vscode-languageclient", "TextDocumentItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new TextDocumentItem literal.
     * @param uri The document's uri.
@@ -15,10 +17,15 @@ object TextDocumentItem extends js.Object {
     * @param version The document's version number.
     * @param text The document's text.
     */
-  def create(uri: DocumentUri, languageId: String, version: Double, text: String): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentItem = js.native
+  inline def create(
+    uri: typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri,
+    languageId: String,
+    version: typingsJapgolly.vscodeLanguageserverTypes.mod.integer,
+    text: String
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentItem]
+  
   /**
     * Checks whether the given literal conforms to the [TextDocumentItem](#TextDocumentItem) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
 }
-

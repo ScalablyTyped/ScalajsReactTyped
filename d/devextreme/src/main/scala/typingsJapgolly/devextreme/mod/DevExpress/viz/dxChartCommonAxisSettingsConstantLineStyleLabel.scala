@@ -1,28 +1,46 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.inside
-import typingsJapgolly.devextreme.devextremeStrings.outside
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.RelativePosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartCommonAxisSettingsConstantLineStyleLabel extends js.Object {
-  /** Specifies font options for constant line labels. */
+trait dxChartCommonAxisSettingsConstantLineStyleLabel extends StObject {
+  
+  /**
+    * Specifies font properties for constant line labels.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the position of constant line labels on the chart plot. */
-  var position: js.UndefOr[inside | outside] = js.undefined
-  /** Makes constant line labels visible. */
+  
+  /**
+    * Specifies the position of constant line labels on the chart plot.
+    */
+  var position: js.UndefOr[RelativePosition] = js.undefined
+  
+  /**
+    * Makes constant line labels visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxChartCommonAxisSettingsConstantLineStyleLabel {
-  @scala.inline
-  def apply(font: Font = null, position: inside | outside = null, visible: js.UndefOr[Boolean] = js.undefined): dxChartCommonAxisSettingsConstantLineStyleLabel = {
+  
+  inline def apply(): dxChartCommonAxisSettingsConstantLineStyleLabel = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonAxisSettingsConstantLineStyleLabel]
   }
+  
+  extension [Self <: dxChartCommonAxisSettingsConstantLineStyleLabel](x: Self) {
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setPosition(value: RelativePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

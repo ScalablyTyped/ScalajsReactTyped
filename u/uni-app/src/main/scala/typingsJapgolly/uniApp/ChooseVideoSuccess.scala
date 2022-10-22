@@ -1,48 +1,63 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChooseVideoSuccess extends js.Object {
+trait ChooseVideoSuccess extends StObject {
+  
   /**
     * 选定视频的时间长度
     */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
     * 返回选定视频的长
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * 选定视频的数据量大小
     */
   var size: js.UndefOr[Double] = js.undefined
+  
   /**
     * 临时文件路径，下载后的文件会存储到一个临时文件
     */
   var tempFilePath: js.UndefOr[String] = js.undefined
+  
   /**
     * 返回选定视频的宽
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ChooseVideoSuccess {
-  @scala.inline
-  def apply(
-    duration: Int | Double = null,
-    height: Int | Double = null,
-    size: Int | Double = null,
-    tempFilePath: String = null,
-    width: Int | Double = null
-  ): ChooseVideoSuccess = {
+  
+  inline def apply(): ChooseVideoSuccess = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseVideoSuccess]
   }
+  
+  extension [Self <: ChooseVideoSuccess](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    
+    inline def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

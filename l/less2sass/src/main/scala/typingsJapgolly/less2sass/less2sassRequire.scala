@@ -1,12 +1,11 @@
 package typingsJapgolly.less2sass
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("less2sass", JSImport.Namespace)
 @js.native
-object less2sassRequire extends js.Object
-
+object less2sassRequire extends StObject

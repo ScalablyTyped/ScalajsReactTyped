@@ -1,51 +1,88 @@
 package typingsJapgolly.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateQuery extends js.Object {
+trait DateQuery extends StObject {
+  
   var after: js.UndefOr[String] = js.undefined
+  
   var after_equal: js.UndefOr[String] = js.undefined
+  
   var before: js.UndefOr[String] = js.undefined
+  
   var before_equal: js.UndefOr[String] = js.undefined
+  
   var between: js.UndefOr[js.Array[String]] = js.undefined
+  
   var current: js.UndefOr[String] = js.undefined
+  
   var equal: js.UndefOr[String] = js.undefined
+  
   var last: js.UndefOr[String] = js.undefined
+  
   var next: js.UndefOr[String] = js.undefined
+  
   var not_between: js.UndefOr[js.Array[String]] = js.undefined
+  
   var not_equal: js.UndefOr[String] = js.undefined
 }
-
 object DateQuery {
-  @scala.inline
-  def apply(
-    after: String = null,
-    after_equal: String = null,
-    before: String = null,
-    before_equal: String = null,
-    between: js.Array[String] = null,
-    current: String = null,
-    equal: String = null,
-    last: String = null,
-    next: String = null,
-    not_between: js.Array[String] = null,
-    not_equal: String = null
-  ): DateQuery = {
+  
+  inline def apply(): DateQuery = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (after_equal != null) __obj.updateDynamic("after_equal")(after_equal.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (before_equal != null) __obj.updateDynamic("before_equal")(before_equal.asInstanceOf[js.Any])
-    if (between != null) __obj.updateDynamic("between")(between.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (equal != null) __obj.updateDynamic("equal")(equal.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (not_between != null) __obj.updateDynamic("not_between")(not_between.asInstanceOf[js.Any])
-    if (not_equal != null) __obj.updateDynamic("not_equal")(not_equal.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateQuery]
   }
+  
+  extension [Self <: DateQuery](x: Self) {
+    
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setAfter_equal(value: String): Self = StObject.set(x, "after_equal", value.asInstanceOf[js.Any])
+    
+    inline def setAfter_equalUndefined: Self = StObject.set(x, "after_equal", js.undefined)
+    
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setBefore_equal(value: String): Self = StObject.set(x, "before_equal", value.asInstanceOf[js.Any])
+    
+    inline def setBefore_equalUndefined: Self = StObject.set(x, "before_equal", js.undefined)
+    
+    inline def setBetween(value: js.Array[String]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
+    
+    inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
+    
+    inline def setBetweenVarargs(value: String*): Self = StObject.set(x, "between", js.Array(value*))
+    
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    
+    inline def setEqual(value: String): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+    
+    inline def setEqualUndefined: Self = StObject.set(x, "equal", js.undefined)
+    
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
+    inline def setNot_between(value: js.Array[String]): Self = StObject.set(x, "not_between", value.asInstanceOf[js.Any])
+    
+    inline def setNot_betweenUndefined: Self = StObject.set(x, "not_between", js.undefined)
+    
+    inline def setNot_betweenVarargs(value: String*): Self = StObject.set(x, "not_between", js.Array(value*))
+    
+    inline def setNot_equal(value: String): Self = StObject.set(x, "not_equal", value.asInstanceOf[js.Any])
+    
+    inline def setNot_equalUndefined: Self = StObject.set(x, "not_equal", js.undefined)
+  }
 }
-

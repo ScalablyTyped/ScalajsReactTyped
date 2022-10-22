@@ -1,22 +1,27 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVehicleSpec extends js.Object {
+trait IVehicleSpec extends StObject {
+  
   /**
     * The unit of measurement of width, height, length. Can be one of the following values:
     * •	meter or m [default]
     * •	foot or ft
     */
   var dimensionUnit: js.UndefOr[String] = js.undefined
+  
   /** Indicates if the vehicle shall avoid crosswinds. */
   var vehicleAvoidCrossWind: js.UndefOr[Boolean] = js.undefined
+  
   /** Indicates if the route shall avoid the risk of grounding. */
   var vehicleAvoidGroundingRisk: js.UndefOr[Boolean] = js.undefined
+  
   /** The number of axles. */
   var vehicleAxles: js.UndefOr[Double] = js.undefined
+  
   /**
     * A comma separated and case-sensitive list of one or more hazardous materials for which the vehicle is transporting. Possible values and their aliases are:
     *
@@ -37,6 +42,7 @@ trait IVehicleSpec extends js.Object {
     * Example: "WH,R,Poison"
     */
   var vehicleHazardousMaterials: js.UndefOr[String] = js.undefined
+  
   /** 
     * A comma separated and case-sensitive list of one or more hazardous materials for which the vehicle has a permit. Possible values and their aliases are: 
     * 
@@ -56,22 +62,31 @@ trait IVehicleSpec extends js.Object {
     * Example: "C,Explosive,Corrosive" 
     */
   var vehicleHazardousPermits: js.UndefOr[String] = js.undefined
+  
   /** The height of the vehicle in the specified dimension units. */
   var vehicleHeight: js.UndefOr[Double] = js.undefined
+  
   /** The length of the vehicle in the specified dimension units. */
   var vehicleLength: js.UndefOr[Double] = js.undefined
+  
   /** The maximum gradient the vehicle can drive measured in degrees. */
   var vehicleMaxGradient: js.UndefOr[Boolean] = js.undefined
+  
   /** The minimum required radius for the vehicle to turn in the specified dimension units. */
   var vehicleMinTurnRadius: js.UndefOr[Double] = js.undefined
+  
   /** Indicates if the truck is pulling a semi-trailer. Semi-trailer restrictions are mostly used in North America. */
   var vehicleSemi: js.UndefOr[Boolean] = js.undefined
+  
   /** The number of trailers. */
   var vehicleTrailers: js.UndefOr[Double] = js.undefined
+  
   /** The weight of the vehicle in the specified weight units. */
   var vehicleWeight: js.UndefOr[Double] = js.undefined
+  
   /** The width of the vehicle in the specified dimension units. */
   var vehicleWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * The unit of measurement of weight. Can be one of the following values:
     * •	kilogram or kg [default]
@@ -79,43 +94,73 @@ trait IVehicleSpec extends js.Object {
     */
   var weightUnit: js.UndefOr[String] = js.undefined
 }
-
 object IVehicleSpec {
-  @scala.inline
-  def apply(
-    dimensionUnit: String = null,
-    vehicleAvoidCrossWind: js.UndefOr[Boolean] = js.undefined,
-    vehicleAvoidGroundingRisk: js.UndefOr[Boolean] = js.undefined,
-    vehicleAxles: Int | Double = null,
-    vehicleHazardousMaterials: String = null,
-    vehicleHazardousPermits: String = null,
-    vehicleHeight: Int | Double = null,
-    vehicleLength: Int | Double = null,
-    vehicleMaxGradient: js.UndefOr[Boolean] = js.undefined,
-    vehicleMinTurnRadius: Int | Double = null,
-    vehicleSemi: js.UndefOr[Boolean] = js.undefined,
-    vehicleTrailers: Int | Double = null,
-    vehicleWeight: Int | Double = null,
-    vehicleWidth: Int | Double = null,
-    weightUnit: String = null
-  ): IVehicleSpec = {
+  
+  inline def apply(): IVehicleSpec = {
     val __obj = js.Dynamic.literal()
-    if (dimensionUnit != null) __obj.updateDynamic("dimensionUnit")(dimensionUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleAvoidCrossWind)) __obj.updateDynamic("vehicleAvoidCrossWind")(vehicleAvoidCrossWind.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleAvoidGroundingRisk)) __obj.updateDynamic("vehicleAvoidGroundingRisk")(vehicleAvoidGroundingRisk.asInstanceOf[js.Any])
-    if (vehicleAxles != null) __obj.updateDynamic("vehicleAxles")(vehicleAxles.asInstanceOf[js.Any])
-    if (vehicleHazardousMaterials != null) __obj.updateDynamic("vehicleHazardousMaterials")(vehicleHazardousMaterials.asInstanceOf[js.Any])
-    if (vehicleHazardousPermits != null) __obj.updateDynamic("vehicleHazardousPermits")(vehicleHazardousPermits.asInstanceOf[js.Any])
-    if (vehicleHeight != null) __obj.updateDynamic("vehicleHeight")(vehicleHeight.asInstanceOf[js.Any])
-    if (vehicleLength != null) __obj.updateDynamic("vehicleLength")(vehicleLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleMaxGradient)) __obj.updateDynamic("vehicleMaxGradient")(vehicleMaxGradient.asInstanceOf[js.Any])
-    if (vehicleMinTurnRadius != null) __obj.updateDynamic("vehicleMinTurnRadius")(vehicleMinTurnRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleSemi)) __obj.updateDynamic("vehicleSemi")(vehicleSemi.asInstanceOf[js.Any])
-    if (vehicleTrailers != null) __obj.updateDynamic("vehicleTrailers")(vehicleTrailers.asInstanceOf[js.Any])
-    if (vehicleWeight != null) __obj.updateDynamic("vehicleWeight")(vehicleWeight.asInstanceOf[js.Any])
-    if (vehicleWidth != null) __obj.updateDynamic("vehicleWidth")(vehicleWidth.asInstanceOf[js.Any])
-    if (weightUnit != null) __obj.updateDynamic("weightUnit")(weightUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVehicleSpec]
   }
+  
+  extension [Self <: IVehicleSpec](x: Self) {
+    
+    inline def setDimensionUnit(value: String): Self = StObject.set(x, "dimensionUnit", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionUnitUndefined: Self = StObject.set(x, "dimensionUnit", js.undefined)
+    
+    inline def setVehicleAvoidCrossWind(value: Boolean): Self = StObject.set(x, "vehicleAvoidCrossWind", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleAvoidCrossWindUndefined: Self = StObject.set(x, "vehicleAvoidCrossWind", js.undefined)
+    
+    inline def setVehicleAvoidGroundingRisk(value: Boolean): Self = StObject.set(x, "vehicleAvoidGroundingRisk", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleAvoidGroundingRiskUndefined: Self = StObject.set(x, "vehicleAvoidGroundingRisk", js.undefined)
+    
+    inline def setVehicleAxles(value: Double): Self = StObject.set(x, "vehicleAxles", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleAxlesUndefined: Self = StObject.set(x, "vehicleAxles", js.undefined)
+    
+    inline def setVehicleHazardousMaterials(value: String): Self = StObject.set(x, "vehicleHazardousMaterials", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleHazardousMaterialsUndefined: Self = StObject.set(x, "vehicleHazardousMaterials", js.undefined)
+    
+    inline def setVehicleHazardousPermits(value: String): Self = StObject.set(x, "vehicleHazardousPermits", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleHazardousPermitsUndefined: Self = StObject.set(x, "vehicleHazardousPermits", js.undefined)
+    
+    inline def setVehicleHeight(value: Double): Self = StObject.set(x, "vehicleHeight", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleHeightUndefined: Self = StObject.set(x, "vehicleHeight", js.undefined)
+    
+    inline def setVehicleLength(value: Double): Self = StObject.set(x, "vehicleLength", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleLengthUndefined: Self = StObject.set(x, "vehicleLength", js.undefined)
+    
+    inline def setVehicleMaxGradient(value: Boolean): Self = StObject.set(x, "vehicleMaxGradient", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleMaxGradientUndefined: Self = StObject.set(x, "vehicleMaxGradient", js.undefined)
+    
+    inline def setVehicleMinTurnRadius(value: Double): Self = StObject.set(x, "vehicleMinTurnRadius", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleMinTurnRadiusUndefined: Self = StObject.set(x, "vehicleMinTurnRadius", js.undefined)
+    
+    inline def setVehicleSemi(value: Boolean): Self = StObject.set(x, "vehicleSemi", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleSemiUndefined: Self = StObject.set(x, "vehicleSemi", js.undefined)
+    
+    inline def setVehicleTrailers(value: Double): Self = StObject.set(x, "vehicleTrailers", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleTrailersUndefined: Self = StObject.set(x, "vehicleTrailers", js.undefined)
+    
+    inline def setVehicleWeight(value: Double): Self = StObject.set(x, "vehicleWeight", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleWeightUndefined: Self = StObject.set(x, "vehicleWeight", js.undefined)
+    
+    inline def setVehicleWidth(value: Double): Self = StObject.set(x, "vehicleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setVehicleWidthUndefined: Self = StObject.set(x, "vehicleWidth", js.undefined)
+    
+    inline def setWeightUnit(value: String): Self = StObject.set(x, "weightUnit", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUnitUndefined: Self = StObject.set(x, "weightUnit", js.undefined)
+  }
 }
-

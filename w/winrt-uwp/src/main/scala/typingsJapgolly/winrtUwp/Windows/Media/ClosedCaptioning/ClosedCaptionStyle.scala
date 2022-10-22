@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.Media.ClosedCaptioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClosedCaptionStyle extends js.Object
-
+sealed trait ClosedCaptionStyle extends StObject
 /** Specifies the style of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionStyle")
 @js.native
-object ClosedCaptionStyle extends js.Object {
-  /** Casual. */
-  @js.native
-  sealed trait casual extends ClosedCaptionStyle
-  
-  /** Cursive. */
-  @js.native
-  sealed trait cursive extends ClosedCaptionStyle
+object ClosedCaptionStyle extends StObject {
   
   /** The default style. */
   @js.native
-  sealed trait default extends ClosedCaptionStyle
+  sealed trait default
+    extends StObject
+       with ClosedCaptionStyle
+  
+  /** Casual. */
+  @js.native
+  sealed trait casual
+    extends StObject
+       with ClosedCaptionStyle
+  
+  /** Cursive. */
+  @js.native
+  sealed trait cursive
+    extends StObject
+       with ClosedCaptionStyle
   
   /** Monospaced with serifs. */
   @js.native
-  sealed trait monospacedWithSerifs extends ClosedCaptionStyle
+  sealed trait monospacedWithSerifs
+    extends StObject
+       with ClosedCaptionStyle
   
   /** Monospaced without serifs */
   @js.native
-  sealed trait monospacedWithoutSerifs extends ClosedCaptionStyle
+  sealed trait monospacedWithoutSerifs
+    extends StObject
+       with ClosedCaptionStyle
   
   /** Proportional with serifs. */
   @js.native
-  sealed trait proportionalWithSerifs extends ClosedCaptionStyle
+  sealed trait proportionalWithSerifs
+    extends StObject
+       with ClosedCaptionStyle
   
   /** Proportional without serifs. */
   @js.native
-  sealed trait proportionalWithoutSerifs extends ClosedCaptionStyle
+  sealed trait proportionalWithoutSerifs
+    extends StObject
+       with ClosedCaptionStyle
   
   /** Small capitals. */
   @js.native
-  sealed trait smallCapitals extends ClosedCaptionStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClosedCaptionStyle with Double] = js.native
-  /* 5 */ @js.native
-  object casual extends TopLevel[casual with Double]
-  
-  /* 6 */ @js.native
-  object cursive extends TopLevel[cursive with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object monospacedWithSerifs extends TopLevel[monospacedWithSerifs with Double]
-  
-  /* 3 */ @js.native
-  object monospacedWithoutSerifs extends TopLevel[monospacedWithoutSerifs with Double]
-  
-  /* 2 */ @js.native
-  object proportionalWithSerifs extends TopLevel[proportionalWithSerifs with Double]
-  
-  /* 4 */ @js.native
-  object proportionalWithoutSerifs extends TopLevel[proportionalWithoutSerifs with Double]
-  
-  /* 7 */ @js.native
-  object smallCapitals extends TopLevel[smallCapitals with Double]
-  
+  sealed trait smallCapitals
+    extends StObject
+       with ClosedCaptionStyle
 }
-

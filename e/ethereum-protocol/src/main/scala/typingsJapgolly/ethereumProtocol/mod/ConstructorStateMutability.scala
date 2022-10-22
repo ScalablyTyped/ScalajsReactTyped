@@ -1,21 +1,17 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.nonpayable
   - typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.payable
 */
-trait ConstructorStateMutability extends js.Object
-
+trait ConstructorStateMutability extends StObject
 object ConstructorStateMutability {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def nonpayable: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.nonpayable = this.cast("nonpayable")
-  @scala.inline
-  def payable: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.payable = this.cast("payable")
+  
+  inline def nonpayable: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.nonpayable = "nonpayable".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.nonpayable]
+  
+  inline def payable: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.payable = "payable".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.payable]
 }
-

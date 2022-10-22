@@ -1,41 +1,24 @@
 package typingsJapgolly.rmcCalendar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rmcCalendar.dataTypesMod.Models.Locale
-import typingsJapgolly.rmcCalendar.shortcutPanelMod.PropsType
-import typingsJapgolly.rmcCalendar.shortcutPanelMod.default
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.rmcCalendar.libCalendarShortcutPanelMod.PropsType
+import typingsJapgolly.rmcCalendar.libCalendarShortcutPanelMod.default
+import typingsJapgolly.rmcCalendar.libDateDataTypesMod.Models.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ShortcutPanel {
-  def apply(
-    locale: Locale,
-    onSelect: (js.UndefOr[js.Date], js.UndefOr[js.Date]) => Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PropsType, default, Unit, PropsType] = {
-    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: js.UndefOr[js.Date], t1: js.UndefOr[js.Date]) => onSelect(t0, t1).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcCalendar.shortcutPanelMod.PropsType, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rmcCalendar.shortcutPanelMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcCalendar.shortcutPanelMod.PropsType])(children: _*)
+  inline def apply(locale: Locale, onSelect: (js.UndefOr[js.Date | Unit], js.UndefOr[js.Date]) => Callback): Default[default] = {
+    val __props = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], onSelect = js.Any.fromFunction2((t0: js.UndefOr[js.Date | Unit], t1: js.UndefOr[js.Date]) => (onSelect(t0, t1)).runNow()))
+    new Default[default](js.Array(this.component, __props.asInstanceOf[PropsType]))
   }
+  
   @JSImport("rmc-calendar/lib/calendar/ShortcutPanel", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: PropsType): Default[default] = new Default[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

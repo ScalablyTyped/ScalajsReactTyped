@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridAllowCopy extends js.Object {
-  var delimeter: js.UndefOr[String | js.Any] = js.undefined
+trait GridAllowCopy extends StObject {
+  
+  var delimeter: js.UndefOr[String | Any] = js.undefined
 }
-
 object GridAllowCopy {
-  @scala.inline
-  def apply(delimeter: String | js.Any = null): GridAllowCopy = {
+  
+  inline def apply(): GridAllowCopy = {
     val __obj = js.Dynamic.literal()
-    if (delimeter != null) __obj.updateDynamic("delimeter")(delimeter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAllowCopy]
   }
+  
+  extension [Self <: GridAllowCopy](x: Self) {
+    
+    inline def setDelimeter(value: String | Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
+    
+    inline def setDelimeterUndefined: Self = StObject.set(x, "delimeter", js.undefined)
+  }
 }
-

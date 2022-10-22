@@ -1,86 +1,141 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLButtonElement
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLButtonElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.As
+import typingsJapgolly.baseui.baseuiStrings.$colors
+import typingsJapgolly.baseui.baseuiStrings.$disabled
+import typingsJapgolly.baseui.baseuiStrings.$isFocusVisible
+import typingsJapgolly.baseui.baseuiStrings.$isLoading
+import typingsJapgolly.baseui.baseuiStrings.$isSelected
+import typingsJapgolly.baseui.baseuiStrings.$kind
+import typingsJapgolly.baseui.baseuiStrings.$shape
+import typingsJapgolly.baseui.baseuiStrings.$size
+import typingsJapgolly.baseui.baseuiStrings.`type`
 import typingsJapgolly.baseui.baseuiStrings.button
+import typingsJapgolly.baseui.baseuiStrings.children
+import typingsJapgolly.baseui.baseuiStrings.circle
+import typingsJapgolly.baseui.baseuiStrings.colors
 import typingsJapgolly.baseui.baseuiStrings.compact
 import typingsJapgolly.baseui.baseuiStrings.default_
+import typingsJapgolly.baseui.baseuiStrings.disabled
+import typingsJapgolly.baseui.baseuiStrings.endEnhancer
+import typingsJapgolly.baseui.baseuiStrings.isLoading
+import typingsJapgolly.baseui.baseuiStrings.isSelected
+import typingsJapgolly.baseui.baseuiStrings.kind
 import typingsJapgolly.baseui.baseuiStrings.large_
 import typingsJapgolly.baseui.baseuiStrings.mini
-import typingsJapgolly.baseui.baseuiStrings.minimal
+import typingsJapgolly.baseui.baseuiStrings.onClick
+import typingsJapgolly.baseui.baseuiStrings.overrides
 import typingsJapgolly.baseui.baseuiStrings.pill
 import typingsJapgolly.baseui.baseuiStrings.primary
 import typingsJapgolly.baseui.baseuiStrings.reset
-import typingsJapgolly.baseui.baseuiStrings.round
+import typingsJapgolly.baseui.baseuiStrings.round_
 import typingsJapgolly.baseui.baseuiStrings.secondary
+import typingsJapgolly.baseui.baseuiStrings.shape
+import typingsJapgolly.baseui.baseuiStrings.size
 import typingsJapgolly.baseui.baseuiStrings.square
+import typingsJapgolly.baseui.baseuiStrings.startEnhancer
 import typingsJapgolly.baseui.baseuiStrings.submit
 import typingsJapgolly.baseui.baseuiStrings.tertiary
-import typingsJapgolly.baseui.buttonMod.ButtonOverrides
-import typingsJapgolly.baseui.buttonMod.ButtonProps
-import typingsJapgolly.styletronReact.mod.StyleProp
-import typingsJapgolly.styletronReact.mod.StyletronBase
+import typingsJapgolly.baseui.buttonTypesMod.ButtonOverrides
+import typingsJapgolly.baseui.buttonTypesMod.ButtonProps
+import typingsJapgolly.baseui.buttonTypesMod.CustomColors
+import typingsJapgolly.baseui.buttonTypesMod.SharedStyleProps
+import typingsJapgolly.react.mod.ComponentProps
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Button {
-  def apply(
-    $as: StyletronBase = null,
-    $style: StyleProp[ButtonProps] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    endEnhancer: VdomNode = null,
-    href: String = null,
-    isLoading: js.UndefOr[Boolean] = js.undefined,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    kind: primary | secondary | tertiary | minimal = null,
-    onClick: /* event */ ReactMouseEventFrom[HTMLButtonElement] => CallbackTo[js.Any] = null,
-    overrides: ButtonOverrides = null,
-    shape: default_ | pill | round | square = null,
-    size: compact | default_ | large_ | mini = null,
-    startEnhancer: VdomNode = null,
-    target: String = null,
-    `type`: submit | reset | button = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ButtonProps, typingsJapgolly.baseui.buttonMod.Button, Unit, ButtonProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
-    if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.rawNode.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLButtonElement]) => onClick(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startEnhancer != null) __obj.updateDynamic("startEnhancer")(startEnhancer.rawNode.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.buttonMod.ButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.buttonMod.Button](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.buttonMod.ButtonProps])(children: _*)
+  inline def apply[C /* <: ElementType */](): Builder[C] = {
+    val __props = js.Dynamic.literal()
+    new Builder[C](js.Array(this.component, __props.asInstanceOf[ButtonProps & SharedStyleProps & (Omit[
+    ComponentProps[C], 
+    children | colors | disabled | endEnhancer | isLoading | isSelected | kind | onClick | overrides | shape | size | startEnhancer | `type` | $colors | $kind | $isSelected | $shape | $size | $isLoading | $disabled | $isFocusVisible
+  ]) & As[C]]))
   }
+  
   @JSImport("baseui/button", "Button")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[C /* <: ElementType */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def $as(value: C): this.type = set("$as", value.asInstanceOf[js.Any])
+    
+    inline def $colors(value: CustomColors): this.type = set("$colors", value.asInstanceOf[js.Any])
+    
+    inline def $disabled(value: Boolean): this.type = set("$disabled", value.asInstanceOf[js.Any])
+    
+    inline def $isFocusVisible(value: Boolean): this.type = set("$isFocusVisible", value.asInstanceOf[js.Any])
+    
+    inline def $isLoading(value: Boolean): this.type = set("$isLoading", value.asInstanceOf[js.Any])
+    
+    inline def $isSelected(value: Boolean): this.type = set("$isSelected", value.asInstanceOf[js.Any])
+    
+    inline def $kind(value: primary | secondary | tertiary): this.type = set("$kind", value.asInstanceOf[js.Any])
+    
+    inline def $shape(value: default_ | pill | round_ | circle | square): this.type = set("$shape", value.asInstanceOf[js.Any])
+    
+    inline def $size(value: mini | default_ | compact | large_): this.type = set("$size", value.asInstanceOf[js.Any])
+    
+    inline def colors(value: CustomColors): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def endEnhancer(value: Node | ComponentType[Any]): this.type = set("endEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def endEnhancerNull: this.type = set("endEnhancer", null)
+    
+    inline def endEnhancerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("endEnhancer", js.Array(value*))
+    
+    inline def endEnhancerVdomElement(value: VdomElement): this.type = set("endEnhancer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def isLoading(value: Boolean): this.type = set("isLoading", value.asInstanceOf[js.Any])
+    
+    inline def isSelected(value: Boolean): this.type = set("isSelected", value.asInstanceOf[js.Any])
+    
+    inline def kind(value: primary | secondary | tertiary): this.type = set("kind", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* a */ ReactEventFrom[HTMLButtonElement] => Any): this.type = set("onClick", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: ButtonOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def shape(value: default_ | pill | round_ | circle | square): this.type = set("shape", value.asInstanceOf[js.Any])
+    
+    inline def size(value: mini | default_ | compact | large_): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def startEnhancer(value: Node | ComponentType[Any]): this.type = set("startEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def startEnhancerNull: this.type = set("startEnhancer", null)
+    
+    inline def startEnhancerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("startEnhancer", js.Array(value*))
+    
+    inline def startEnhancerVdomElement(value: VdomElement): this.type = set("startEnhancer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def `type`(value: submit | reset | button): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[C /* <: ElementType */](companion: Button.type): Builder[C] = new Builder[C](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[C /* <: ElementType */](
+    p: ButtonProps & SharedStyleProps & (Omit[
+      ComponentProps[C], 
+      children | colors | disabled | endEnhancer | isLoading | isSelected | kind | onClick | overrides | shape | size | startEnhancer | `type` | $colors | $kind | $isSelected | $shape | $size | $isLoading | $disabled | $isFocusVisible
+    ]) & As[C]
+  ): Builder[C] = new Builder[C](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

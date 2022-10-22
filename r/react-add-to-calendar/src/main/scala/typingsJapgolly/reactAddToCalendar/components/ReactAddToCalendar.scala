@@ -1,62 +1,55 @@
 package typingsJapgolly.reactAddToCalendar.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactAddToCalendar.mod.AddToCalendarEvent
 import typingsJapgolly.reactAddToCalendar.mod.AddToCalendarProps
 import typingsJapgolly.reactAddToCalendar.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactAddToCalendar {
-  def apply(
-    event: AddToCalendarEvent,
-    buttonClassClosed: String = null,
-    buttonClassOpen: String = null,
-    buttonIconClass: String = null,
-    buttonLabel: String = null,
-    buttonTemplate: js.Any = null,
-    buttonWrapperClass: String = null,
-    displayItemIcons: js.UndefOr[Boolean] = js.undefined,
-    dropdownClass: String = null,
-    listItems: js.Array[_] = null,
-    optionsOpen: js.UndefOr[Boolean] = js.undefined,
-    rootClass: String = null,
-    useFontAwesomeIcons: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AddToCalendarProps, default, Unit, AddToCalendarProps] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
-      if (buttonClassClosed != null) __obj.updateDynamic("buttonClassClosed")(buttonClassClosed.asInstanceOf[js.Any])
-    if (buttonClassOpen != null) __obj.updateDynamic("buttonClassOpen")(buttonClassOpen.asInstanceOf[js.Any])
-    if (buttonIconClass != null) __obj.updateDynamic("buttonIconClass")(buttonIconClass.asInstanceOf[js.Any])
-    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
-    if (buttonTemplate != null) __obj.updateDynamic("buttonTemplate")(buttonTemplate.asInstanceOf[js.Any])
-    if (buttonWrapperClass != null) __obj.updateDynamic("buttonWrapperClass")(buttonWrapperClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayItemIcons)) __obj.updateDynamic("displayItemIcons")(displayItemIcons.asInstanceOf[js.Any])
-    if (dropdownClass != null) __obj.updateDynamic("dropdownClass")(dropdownClass.asInstanceOf[js.Any])
-    if (listItems != null) __obj.updateDynamic("listItems")(listItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionsOpen)) __obj.updateDynamic("optionsOpen")(optionsOpen.asInstanceOf[js.Any])
-    if (rootClass != null) __obj.updateDynamic("rootClass")(rootClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFontAwesomeIcons)) __obj.updateDynamic("useFontAwesomeIcons")(useFontAwesomeIcons.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAddToCalendar.mod.AddToCalendarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAddToCalendar.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAddToCalendar.mod.AddToCalendarProps])(children: _*)
+  inline def apply(event: AddToCalendarEvent): Builder = {
+    val __props = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AddToCalendarProps]))
   }
+  
   @JSImport("react-add-to-calendar", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def buttonClassClosed(value: String): this.type = set("buttonClassClosed", value.asInstanceOf[js.Any])
+    
+    inline def buttonClassOpen(value: String): this.type = set("buttonClassOpen", value.asInstanceOf[js.Any])
+    
+    inline def buttonIconClass(value: String): this.type = set("buttonIconClass", value.asInstanceOf[js.Any])
+    
+    inline def buttonLabel(value: String): this.type = set("buttonLabel", value.asInstanceOf[js.Any])
+    
+    inline def buttonTemplate(value: Any): this.type = set("buttonTemplate", value.asInstanceOf[js.Any])
+    
+    inline def buttonWrapperClass(value: String): this.type = set("buttonWrapperClass", value.asInstanceOf[js.Any])
+    
+    inline def displayItemIcons(value: Boolean): this.type = set("displayItemIcons", value.asInstanceOf[js.Any])
+    
+    inline def dropdownClass(value: String): this.type = set("dropdownClass", value.asInstanceOf[js.Any])
+    
+    inline def listItems(value: js.Array[Any]): this.type = set("listItems", value.asInstanceOf[js.Any])
+    
+    inline def listItemsVarargs(value: Any*): this.type = set("listItems", js.Array(value*))
+    
+    inline def optionsOpen(value: Boolean): this.type = set("optionsOpen", value.asInstanceOf[js.Any])
+    
+    inline def rootClass(value: String): this.type = set("rootClass", value.asInstanceOf[js.Any])
+    
+    inline def useFontAwesomeIcons(value: Boolean): this.type = set("useFontAwesomeIcons", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AddToCalendarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

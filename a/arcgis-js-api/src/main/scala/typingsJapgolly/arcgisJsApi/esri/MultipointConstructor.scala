@@ -2,14 +2,20 @@ package typingsJapgolly.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MultipointConstructor
-  extends Instantiable0[Multipoint]
+  extends StObject
+     with /**
+  * An ordered collection of points.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html)
+  */
+Instantiable0[Multipoint]
      with Instantiable1[/* properties */ MultipointProperties, Multipoint] {
-  def fromJSON(json: js.Any): Multipoint = js.native
+  
+  def fromJSON(json: Any): Multipoint = js.native
 }
-

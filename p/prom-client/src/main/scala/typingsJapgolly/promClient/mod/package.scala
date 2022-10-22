@@ -1,19 +1,28 @@
-package typingsJapgolly.promClient
+package typingsJapgolly.promClient.mod
 
+import typingsJapgolly.promClient.mod.^
+import typingsJapgolly.std.Partial
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Histogram = typingsJapgolly.promClient.mod.Histogram_
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.promClient.mod.Counter
-    - typingsJapgolly.promClient.mod.Gauge
-    - typingsJapgolly.promClient.mod.Summary
-    - typingsJapgolly.promClient.mod.Histogram
-  */
-  type Metric_ = typingsJapgolly.promClient.mod._Metric_ | typingsJapgolly.promClient.mod.Summary | typingsJapgolly.promClient.mod.Histogram
-  type Pushgateway = typingsJapgolly.promClient.mod.Pushgateway_
-  type Summary = typingsJapgolly.promClient.mod.Summary_
-  type labelValues = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
-}
+
+inline def collectDefaultMetrics(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectDefaultMetrics")().asInstanceOf[Unit]
+inline def collectDefaultMetrics(config: DefaultMetricsCollectorConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectDefaultMetrics")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def contentType: String = ^.asInstanceOf[js.Dynamic].selectDynamic("contentType").asInstanceOf[String]
+
+inline def exponentialBuckets(start: Double, factor: Double, count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("exponentialBuckets")(start.asInstanceOf[js.Any], factor.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+
+inline def linearBuckets(start: Double, width: Double, count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("linearBuckets")(start.asInstanceOf[js.Any], width.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+
+inline def register: Registry = ^.asInstanceOf[js.Dynamic].selectDynamic("register").asInstanceOf[Registry]
+
+inline def validateMetricName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateMetricName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+type CollectFunction[T] = js.ThisFunction0[/* this */ T, Unit | js.Promise[Unit]]
+
+type Collector = js.Function0[Unit]
+
+type LabelValues[T /* <: String */] = Partial[Record[T, String | Double]]

@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TitleOption extends js.Object {
+trait TitleOption extends StObject {
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object TitleOption {
-  @scala.inline
-  def apply(style: String = null, text: String = null): TitleOption = {
+  
+  inline def apply(): TitleOption = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleOption]
   }
+  
+  extension [Self <: TitleOption](x: Self) {
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

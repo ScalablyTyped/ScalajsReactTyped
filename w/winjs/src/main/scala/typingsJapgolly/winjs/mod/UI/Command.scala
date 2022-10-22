@@ -1,24 +1,29 @@
 package typingsJapgolly.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a command to be displayed in an AppBar or ToolBar
   **/
 @JSImport("winjs", "UI.Command")
 @js.native
-class Command ()
-  extends typingsJapgolly.winjs.WinJS.UI.Command
-
-/* static members */
-@JSImport("winjs", "UI.Command")
-@js.native
-object Command extends js.Object {
+open class Command ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.UI.Command
+object Command {
+  
+  @JSImport("winjs", "UI.Command")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.Command.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

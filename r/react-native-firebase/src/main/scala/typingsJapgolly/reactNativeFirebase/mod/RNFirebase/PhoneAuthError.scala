@@ -1,24 +1,40 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PhoneAuthError extends js.Object {
+trait PhoneAuthError extends StObject {
+  
   var code: String | Null
+  
   var message: String | Null
+  
   var stack: String | Null
+  
   var verificationId: String
 }
-
 object PhoneAuthError {
-  @scala.inline
-  def apply(verificationId: String, code: String = null, message: String = null, stack: String = null): PhoneAuthError = {
-    val __obj = js.Dynamic.literal(verificationId = verificationId.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+  
+  inline def apply(verificationId: String): PhoneAuthError = {
+    val __obj = js.Dynamic.literal(verificationId = verificationId.asInstanceOf[js.Any], code = null, message = null, stack = null)
     __obj.asInstanceOf[PhoneAuthError]
   }
+  
+  extension [Self <: PhoneAuthError](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
+    
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackNull: Self = StObject.set(x, "stack", null)
+    
+    inline def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
+  }
 }
-

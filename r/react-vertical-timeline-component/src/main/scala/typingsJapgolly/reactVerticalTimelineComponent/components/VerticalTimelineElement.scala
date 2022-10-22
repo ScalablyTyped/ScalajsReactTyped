@@ -1,65 +1,69 @@
 package typingsJapgolly.reactVerticalTimelineComponent.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElementProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object VerticalTimelineElement {
-  def apply(
-    className: String = null,
-    contentArrowStyle: CSSProperties = null,
-    contentStyle: CSSProperties = null,
-    date: String = null,
-    icon: VdomNode = null,
-    iconOnClick: js.UndefOr[Callback] = js.undefined,
-    iconStyle: CSSProperties = null,
-    id: String = null,
-    position: String = null,
-    style: CSSProperties = null,
-    visibilitySensorProps: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    VerticalTimelineElementProps, 
-    typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElement, 
-    Unit, 
-    VerticalTimelineElementProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentArrowStyle != null) __obj.updateDynamic("contentArrowStyle")(contentArrowStyle.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
-    iconOnClick.foreach(p => __obj.updateDynamic("iconOnClick")(p.toJsFn))
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (visibilitySensorProps != null) __obj.updateDynamic("visibilitySensorProps")(visibilitySensorProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElementProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElement](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElementProps])(children: _*)
-  }
   @JSImport("react-vertical-timeline-component", "VerticalTimelineElement")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactVerticalTimelineComponent.mod.VerticalTimelineElement] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentArrowStyle(value: CSSProperties): this.type = set("contentArrowStyle", value.asInstanceOf[js.Any])
+    
+    inline def contentStyle(value: CSSProperties): this.type = set("contentStyle", value.asInstanceOf[js.Any])
+    
+    inline def date(value: String): this.type = set("date", value.asInstanceOf[js.Any])
+    
+    inline def dateClassName(value: String): this.type = set("dateClassName", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomNode): this.type = set("icon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def iconClassName(value: String): this.type = set("iconClassName", value.asInstanceOf[js.Any])
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconOnClick(value: Callback): this.type = set("iconOnClick", value.toJsFn)
+    
+    inline def iconStyle(value: CSSProperties): this.type = set("iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def intersectionObserverProps(value: Any): this.type = set("intersectionObserverProps", value.asInstanceOf[js.Any])
+    
+    inline def onTimelineElementClick(value: Callback): this.type = set("onTimelineElementClick", value.toJsFn)
+    
+    inline def position(value: String): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def textClassName(value: String): this.type = set("textClassName", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: VerticalTimelineElement.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: VerticalTimelineElementProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

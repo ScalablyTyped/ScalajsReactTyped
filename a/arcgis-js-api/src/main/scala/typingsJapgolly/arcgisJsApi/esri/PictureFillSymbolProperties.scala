@@ -1,94 +1,109 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`picture-fill`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`simple-fill`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PictureFillSymbolProperties extends FillSymbolProperties {
+trait PictureFillSymbolProperties
+  extends StObject
+     with FillSymbolProperties {
+  
   /**
-    * The height of the image in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#height)
+    * The height of the image in points.
     *
     * @default 12
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#height)
     */
   var height: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * The URL to the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
+  
   /**
-    * The width of the image in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#width)
+    * The width of the image in points.
     *
     * @default 12
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#width)
     */
   var width: js.UndefOr[Double | String] = js.undefined
+  
   /**
-    * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xoffset)
+    * The offset on the x-axis in points.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xoffset)
     */
   var xoffset: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * The scale factor on the x axis of the symbol.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xscale)
-    *
     * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xscale)
     */
   var xscale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The offset on the y-axis in pixels or points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yoffset)
+    * The offset on the y-axis in pixels or points.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yoffset)
     */
   var yoffset: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * The scale factor on the y axis of the symbol.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yscale)
-    *
     * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yscale)
     */
   var yscale: js.UndefOr[Double] = js.undefined
 }
-
 object PictureFillSymbolProperties {
-  @scala.inline
-  def apply(
-    color: Color_ | js.Array[Double] | String = null,
-    height: Double | String = null,
-    outline: SimpleLineSymbolProperties = null,
-    `type`: `simple-fill` | `picture-fill` = null,
-    url: String = null,
-    width: Double | String = null,
-    xoffset: Double | String = null,
-    xscale: Int | Double = null,
-    yoffset: Double | String = null,
-    yscale: Int | Double = null
-  ): PictureFillSymbolProperties = {
+  
+  inline def apply(): PictureFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (xscale != null) __obj.updateDynamic("xscale")(xscale.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
-    if (yscale != null) __obj.updateDynamic("yscale")(yscale.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureFillSymbolProperties]
   }
+  
+  extension [Self <: PictureFillSymbolProperties](x: Self) {
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    
+    inline def setXscale(value: Double): Self = StObject.set(x, "xscale", value.asInstanceOf[js.Any])
+    
+    inline def setXscaleUndefined: Self = StObject.set(x, "xscale", js.undefined)
+    
+    inline def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+    
+    inline def setYscale(value: Double): Self = StObject.set(x, "yscale", value.asInstanceOf[js.Any])
+    
+    inline def setYscaleUndefined: Self = StObject.set(x, "yscale", js.undefined)
+  }
 }
-

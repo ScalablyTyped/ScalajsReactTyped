@@ -1,14 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaStreamSource.Closed event. */
-@JSGlobal("Windows.Media.Core.MediaStreamSourceClosedEventArgs")
-@js.native
-abstract class MediaStreamSourceClosedEventArgs () extends js.Object {
+trait MediaStreamSourceClosedEventArgs extends StObject {
+  
   /** Gets the object that represents the notification that the MediaStreamSource has been closed. */
-  var request: MediaStreamSourceClosedRequest = js.native
+  var request: MediaStreamSourceClosedRequest
 }
-
+object MediaStreamSourceClosedEventArgs {
+  
+  inline def apply(request: MediaStreamSourceClosedRequest): MediaStreamSourceClosedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaStreamSourceClosedEventArgs]
+  }
+  
+  extension [Self <: MediaStreamSourceClosedEventArgs](x: Self) {
+    
+    inline def setRequest(value: MediaStreamSourceClosedRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+  }
+}

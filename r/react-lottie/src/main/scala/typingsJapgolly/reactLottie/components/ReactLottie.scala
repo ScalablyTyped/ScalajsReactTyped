@@ -1,65 +1,63 @@
 package typingsJapgolly.reactLottie.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactLottie.mod.EventListener
 import typingsJapgolly.reactLottie.mod.LottieProps
 import typingsJapgolly.reactLottie.mod.Options
 import typingsJapgolly.reactLottie.mod.default
 import typingsJapgolly.reactLottie.reactLottieStrings.animation
 import typingsJapgolly.reactLottie.reactLottieStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactLottie {
-  def apply(
-    options: Options,
-    ariaLabel: String | animation = null,
-    ariaRole: String | button = null,
-    direction: Int | Double = null,
-    eventListeners: js.Array[EventListener] = null,
-    height: Double | String = null,
-    isClickToPauseDisabled: js.UndefOr[Boolean] = js.undefined,
-    isPaused: js.UndefOr[Boolean] = js.undefined,
-    isStopped: js.UndefOr[Boolean] = js.undefined,
-    segments: js.Array[Double] = null,
-    speed: Int | Double = null,
-    title: String = null,
-    width: Double | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LottieProps, default, Unit, LottieProps] = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
   
-      if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (eventListeners != null) __obj.updateDynamic("eventListeners")(eventListeners.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClickToPauseDisabled)) __obj.updateDynamic("isClickToPauseDisabled")(isClickToPauseDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStopped)) __obj.updateDynamic("isStopped")(isStopped.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLottie.mod.LottieProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactLottie.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLottie.mod.LottieProps])(children: _*)
+  inline def apply(options: Options): Builder = {
+    val __props = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LottieProps]))
   }
+  
   @JSImport("react-lottie", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def ariaLabel(value: String | animation): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaRole(value: String | button): this.type = set("ariaRole", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: Double): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def eventListeners(value: js.Array[EventListener]): this.type = set("eventListeners", value.asInstanceOf[js.Any])
+    
+    inline def eventListenersVarargs(value: EventListener*): this.type = set("eventListeners", js.Array(value*))
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def isClickToPauseDisabled(value: Boolean): this.type = set("isClickToPauseDisabled", value.asInstanceOf[js.Any])
+    
+    inline def isPaused(value: Boolean): this.type = set("isPaused", value.asInstanceOf[js.Any])
+    
+    inline def isStopped(value: Boolean): this.type = set("isStopped", value.asInstanceOf[js.Any])
+    
+    inline def segments(value: js.Array[Double]): this.type = set("segments", value.asInstanceOf[js.Any])
+    
+    inline def segmentsVarargs(value: Double*): this.type = set("segments", js.Array(value*))
+    
+    inline def speed(value: Double): this.type = set("speed", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LottieProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

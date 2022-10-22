@@ -10,10 +10,10 @@ The lodash method `_.round` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.round |
 | Keywords           | lodash-modularized, round |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 633422 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 112718.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

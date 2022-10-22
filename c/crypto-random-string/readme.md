@@ -1,7 +1,7 @@
 
 # Scala.js typings for crypto-random-string
 
-Typings are for version 3.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Generate a cryptographically strong random string
@@ -10,10 +10,10 @@ Generate a cryptographically strong random string
 | ------------------ | :-------------: |
 | Full name          | crypto-random-string |
 | Keywords           | random, string, text, id, identifier, slug, salt, pin, crypto, strong, secure, hex, secret, protect |
-| # releases         | 3 |
-| # dependents       | 99 |
-| # downloads        | 218808419 |
-| # stars            | 6 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9739437333333336E7 |
+| # stars            | 505.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/crypto-random-string#readme)

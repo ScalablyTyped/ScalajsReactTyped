@@ -1,24 +1,37 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonBoundedBy
+import typingsJapgolly.yandexMaps.anon.FitMaxWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISearchControlParameters extends js.Object {
+trait ISearchControlParameters extends StObject {
+  
   var data: js.UndefOr[js.Object] = js.undefined
-  var options: js.UndefOr[AnonBoundedBy] = js.undefined
+  
+  var options: js.UndefOr[FitMaxWidth] = js.undefined
+  
   var state: js.UndefOr[js.Object] = js.undefined
 }
-
 object ISearchControlParameters {
-  @scala.inline
-  def apply(data: js.Object = null, options: AnonBoundedBy = null, state: js.Object = null): ISearchControlParameters = {
+  
+  inline def apply(): ISearchControlParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchControlParameters]
   }
+  
+  extension [Self <: ISearchControlParameters](x: Self) {
+    
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setOptions(value: FitMaxWidth): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setState(value: js.Object): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

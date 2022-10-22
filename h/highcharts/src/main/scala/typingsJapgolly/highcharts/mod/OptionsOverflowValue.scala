@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.allow
   - typingsJapgolly.highcharts.highchartsStrings.justify
 */
-trait OptionsOverflowValue extends js.Object
-
+trait OptionsOverflowValue extends StObject
 object OptionsOverflowValue {
-  @scala.inline
-  def allow: typingsJapgolly.highcharts.highchartsStrings.allow = this.cast("allow")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def justify: typingsJapgolly.highcharts.highchartsStrings.justify = this.cast("justify")
+  
+  inline def allow: typingsJapgolly.highcharts.highchartsStrings.allow = "allow".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.allow]
+  
+  inline def justify: typingsJapgolly.highcharts.highchartsStrings.justify = "justify".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.justify]
 }
-

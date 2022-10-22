@@ -1,52 +1,45 @@
 package typingsJapgolly.csvStringify
 
-import typingsJapgolly.csvStringify.es5Mod._RecordDelimiter
+import typingsJapgolly.csvStringify.mod._RecordDelimiter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csvStringifyStrings {
+  
   @js.native
   sealed trait ascii
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
+    extends StObject
+       with _RecordDelimiter
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
   sealed trait auto
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
+    extends StObject
+       with _RecordDelimiter
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait mac
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
+    extends StObject
+       with _RecordDelimiter
+  inline def mac: mac = "mac".asInstanceOf[mac]
   
   @js.native
   sealed trait unicode
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
+    extends StObject
+       with _RecordDelimiter
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
   
   @js.native
   sealed trait unix
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
+    extends StObject
+       with _RecordDelimiter
+  inline def unix: unix = "unix".asInstanceOf[unix]
   
   @js.native
   sealed trait windows
-    extends _RecordDelimiter
-       with typingsJapgolly.csvStringify.mod._RecordDelimiter
-  
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def mac: mac = "mac".asInstanceOf[mac]
-  @scala.inline
-  def unicode: unicode = "unicode".asInstanceOf[unicode]
-  @scala.inline
-  def unix: unix = "unix".asInstanceOf[unix]
-  @scala.inline
-  def windows: windows = "windows".asInstanceOf[windows]
+    extends StObject
+       with _RecordDelimiter
+  inline def windows: windows = "windows".asInstanceOf[windows]
 }
-

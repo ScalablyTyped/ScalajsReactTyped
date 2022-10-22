@@ -1,39 +1,36 @@
 package typingsJapgolly.queryString
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryStringStrings {
-  @js.native
-  sealed trait bracket extends js.Object
   
   @js.native
-  sealed trait comma extends js.Object
+  sealed trait bracket extends StObject
+  inline def bracket: bracket = "bracket".asInstanceOf[bracket]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait `bracket-separator` extends StObject
+  inline def `bracket-separator`: `bracket-separator` = "bracket-separator".asInstanceOf[`bracket-separator`]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait `colon-list-separator` extends StObject
+  inline def `colon-list-separator`: `colon-list-separator` = "colon-list-separator".asInstanceOf[`colon-list-separator`]
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait comma extends StObject
+  inline def comma: comma = "comma".asInstanceOf[comma]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
-  @scala.inline
-  def bracket: bracket = "bracket".asInstanceOf[bracket]
-  @scala.inline
-  def comma: comma = "comma".asInstanceOf[comma]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait separator extends StObject
+  inline def separator: separator = "separator".asInstanceOf[separator]
 }
-

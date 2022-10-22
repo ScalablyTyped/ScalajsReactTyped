@@ -1,13 +1,14 @@
 package typingsJapgolly.dbJs.DbJs
 
 import typingsJapgolly.std.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Query[T]
-  extends Promise[T]
+  extends StObject
+     with Promise[T]
      with KeyableQuery[T]
      with ExecutableQuery[T]
      with FilterableQuery[T]
@@ -17,4 +18,3 @@ trait Query[T]
      with LimitableQuery[T]
      with MappableQuery[T]
      with CountableQuery[T]
-

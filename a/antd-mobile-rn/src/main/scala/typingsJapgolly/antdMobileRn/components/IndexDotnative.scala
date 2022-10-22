@@ -1,14 +1,18 @@
 package typingsJapgolly.antdMobileRn.components
 
-import typingsJapgolly.antdMobileRn.tagIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.libTagIndexDotnativeMod.TagNativeProps
+import typingsJapgolly.antdMobileRn.libTagIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object IndexDotnative extends SharedApply_TagNativeProps1611108683[default] {
+object IndexDotnative {
+  
   @JSImport("antd-mobile-rn/lib/tag/index.native", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: IndexDotnative.type): SharedBuilder_TagNativeProps1231843534[default] = new SharedBuilder_TagNativeProps1231843534[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TagNativeProps): SharedBuilder_TagNativeProps1231843534[default] = new SharedBuilder_TagNativeProps1231843534[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

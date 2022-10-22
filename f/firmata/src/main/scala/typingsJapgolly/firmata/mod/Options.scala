@@ -1,37 +1,59 @@
 package typingsJapgolly.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/master/lib/firmata.js#L429-L451
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var analogPins: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var pins: js.UndefOr[js.Array[Pins]] = js.undefined
+  
   var reportVersionTimeout: js.UndefOr[Double] = js.undefined
+  
   var samplingInterval: js.UndefOr[Double] = js.undefined
+  
   var serialport: js.UndefOr[Options] = js.undefined
+  
   var skipCapabilities: js.UndefOr[Boolean] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    analogPins: js.Array[Double] = null,
-    pins: js.Array[Pins] = null,
-    reportVersionTimeout: Int | Double = null,
-    samplingInterval: Int | Double = null,
-    serialport: Options = null,
-    skipCapabilities: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (analogPins != null) __obj.updateDynamic("analogPins")(analogPins.asInstanceOf[js.Any])
-    if (pins != null) __obj.updateDynamic("pins")(pins.asInstanceOf[js.Any])
-    if (reportVersionTimeout != null) __obj.updateDynamic("reportVersionTimeout")(reportVersionTimeout.asInstanceOf[js.Any])
-    if (samplingInterval != null) __obj.updateDynamic("samplingInterval")(samplingInterval.asInstanceOf[js.Any])
-    if (serialport != null) __obj.updateDynamic("serialport")(serialport.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCapabilities)) __obj.updateDynamic("skipCapabilities")(skipCapabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setAnalogPins(value: js.Array[Double]): Self = StObject.set(x, "analogPins", value.asInstanceOf[js.Any])
+    
+    inline def setAnalogPinsUndefined: Self = StObject.set(x, "analogPins", js.undefined)
+    
+    inline def setAnalogPinsVarargs(value: Double*): Self = StObject.set(x, "analogPins", js.Array(value*))
+    
+    inline def setPins(value: js.Array[Pins]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    
+    inline def setPinsUndefined: Self = StObject.set(x, "pins", js.undefined)
+    
+    inline def setPinsVarargs(value: Pins*): Self = StObject.set(x, "pins", js.Array(value*))
+    
+    inline def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setReportVersionTimeoutUndefined: Self = StObject.set(x, "reportVersionTimeout", js.undefined)
+    
+    inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+    
+    inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+    
+    inline def setSerialport(value: Options): Self = StObject.set(x, "serialport", value.asInstanceOf[js.Any])
+    
+    inline def setSerialportUndefined: Self = StObject.set(x, "serialport", js.undefined)
+    
+    inline def setSkipCapabilities(value: Boolean): Self = StObject.set(x, "skipCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setSkipCapabilitiesUndefined: Self = StObject.set(x, "skipCapabilities", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-gettext
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A JavaScript implementation of gettext, a localization framework
@@ -11,9 +11,9 @@ A JavaScript implementation of gettext, a localization framework
 | Full name          | node-gettext |
 | Keywords           | i18n, l10n, internationalization, localization, translation, gettext |
 | # releases         | 1 |
-| # dependents       | 31 |
-| # downloads        | 1009056 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 474390.3333333333 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](http://github.com/alexanderwallin/node-gettext)

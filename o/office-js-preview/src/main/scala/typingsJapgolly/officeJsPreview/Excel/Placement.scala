@@ -1,56 +1,48 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Placement extends js.Object
-
+sealed trait Placement extends StObject
 /**
-  *
   * Specifies the way that an object is attached to its underlying cells.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.Placement")
 @js.native
-object Placement extends js.Object {
+object Placement extends StObject {
+  
   /**
-    *
     * The object is free floating.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait absolute extends Placement
+  sealed trait absolute
+    extends StObject
+       with Placement
   
   /**
-    *
     * The object is moved and sized with the cells.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait oneCell extends Placement
+  sealed trait oneCell
+    extends StObject
+       with Placement
   
   /**
-    *
     * The object is moved with the cells.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait twoCell extends Placement
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[Placement with String] = js.native
-  /* "Absolute" */ @js.native
-  object absolute extends TopLevel[absolute with String]
-  
-  /* "OneCell" */ @js.native
-  object oneCell extends TopLevel[oneCell with String]
-  
-  /* "TwoCell" */ @js.native
-  object twoCell extends TopLevel[twoCell with String]
-  
+  sealed trait twoCell
+    extends StObject
+       with Placement
 }
-

@@ -1,23 +1,29 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AdBuilderSpace extends js.Object {
+trait AdBuilderSpace extends StObject {
+  
   def expandedTextAdBuilder(): ExpandedTextAdBuilder[ExpandedTextAd]
+  
   def gmailImageAdBuilder(): GmailImageAdBuilder[GmailImageAd]
+  
   def gmailMultiProductAdBuilder(): GmailMultiProductAdBuilder[GmailMultiProductAd]
+  
   def gmailSinglePromotionAdBuilder(): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
+  
   def html5AdBuilder(): Html5AdBuilder[Html5Ad]
+  
   def imageAdBuilder(): ImageAdBuilder[ImageAd]
+  
   def responsiveDisplayAdBuilder(): ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]
 }
-
 object AdBuilderSpace {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     expandedTextAdBuilder: CallbackTo[ExpandedTextAdBuilder[ExpandedTextAd]],
     gmailImageAdBuilder: CallbackTo[GmailImageAdBuilder[GmailImageAd]],
     gmailMultiProductAdBuilder: CallbackTo[GmailMultiProductAdBuilder[GmailMultiProductAd]],
@@ -26,15 +32,24 @@ object AdBuilderSpace {
     imageAdBuilder: CallbackTo[ImageAdBuilder[ImageAd]],
     responsiveDisplayAdBuilder: CallbackTo[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   ): AdBuilderSpace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandedTextAdBuilder")(expandedTextAdBuilder.toJsFn)
-    __obj.updateDynamic("gmailImageAdBuilder")(gmailImageAdBuilder.toJsFn)
-    __obj.updateDynamic("gmailMultiProductAdBuilder")(gmailMultiProductAdBuilder.toJsFn)
-    __obj.updateDynamic("gmailSinglePromotionAdBuilder")(gmailSinglePromotionAdBuilder.toJsFn)
-    __obj.updateDynamic("html5AdBuilder")(html5AdBuilder.toJsFn)
-    __obj.updateDynamic("imageAdBuilder")(imageAdBuilder.toJsFn)
-    __obj.updateDynamic("responsiveDisplayAdBuilder")(responsiveDisplayAdBuilder.toJsFn)
+    val __obj = js.Dynamic.literal(expandedTextAdBuilder = expandedTextAdBuilder.toJsFn, gmailImageAdBuilder = gmailImageAdBuilder.toJsFn, gmailMultiProductAdBuilder = gmailMultiProductAdBuilder.toJsFn, gmailSinglePromotionAdBuilder = gmailSinglePromotionAdBuilder.toJsFn, html5AdBuilder = html5AdBuilder.toJsFn, imageAdBuilder = imageAdBuilder.toJsFn, responsiveDisplayAdBuilder = responsiveDisplayAdBuilder.toJsFn)
     __obj.asInstanceOf[AdBuilderSpace]
   }
+  
+  extension [Self <: AdBuilderSpace](x: Self) {
+    
+    inline def setExpandedTextAdBuilder(value: CallbackTo[ExpandedTextAdBuilder[ExpandedTextAd]]): Self = StObject.set(x, "expandedTextAdBuilder", value.toJsFn)
+    
+    inline def setGmailImageAdBuilder(value: CallbackTo[GmailImageAdBuilder[GmailImageAd]]): Self = StObject.set(x, "gmailImageAdBuilder", value.toJsFn)
+    
+    inline def setGmailMultiProductAdBuilder(value: CallbackTo[GmailMultiProductAdBuilder[GmailMultiProductAd]]): Self = StObject.set(x, "gmailMultiProductAdBuilder", value.toJsFn)
+    
+    inline def setGmailSinglePromotionAdBuilder(value: CallbackTo[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]): Self = StObject.set(x, "gmailSinglePromotionAdBuilder", value.toJsFn)
+    
+    inline def setHtml5AdBuilder(value: CallbackTo[Html5AdBuilder[Html5Ad]]): Self = StObject.set(x, "html5AdBuilder", value.toJsFn)
+    
+    inline def setImageAdBuilder(value: CallbackTo[ImageAdBuilder[ImageAd]]): Self = StObject.set(x, "imageAdBuilder", value.toJsFn)
+    
+    inline def setResponsiveDisplayAdBuilder(value: CallbackTo[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]): Self = StObject.set(x, "responsiveDisplayAdBuilder", value.toJsFn)
+  }
 }
-

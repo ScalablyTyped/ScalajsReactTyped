@@ -1,13 +1,16 @@
-package typingsJapgolly.ace
+package typingsJapgolly.ace.AceAjax
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.ace.anon.Args
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object AceAjax {
-  type CompletionCallback = js.Function2[
-    /* error */ js.Error, 
-    /* results */ js.Array[typingsJapgolly.ace.AceAjax.Completion], 
-    scala.Unit
-  ]
-}
+
+type CommandLike = EditorCommand | (js.Function1[/* editor */ Editor, Unit])
+
+type CommandMap = StringDictionary[EditorCommand]
+
+type CompletionCallback = js.Function2[/* error */ js.Error | Null, /* results */ js.Array[Completion], Unit]
+
+type execEventHandler = js.Function1[/* obj */ Args, Unit]

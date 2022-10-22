@@ -1,27 +1,23 @@
 package typingsJapgolly.zdog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.zdog.zdogNumbers.`1`
-  - typingsJapgolly.zdog.zdogNumbers.`2`
-  - typingsJapgolly.zdog.zdogNumbers.`3`
-  - typingsJapgolly.zdog.zdogNumbers.`4`
+  - typingsJapgolly.zdog.zdogInts.`1`
+  - typingsJapgolly.zdog.zdogInts.`2`
+  - typingsJapgolly.zdog.zdogInts.`3`
+  - typingsJapgolly.zdog.zdogInts.`4`
 */
-trait QuartersValue extends js.Object
-
+trait QuartersValue extends StObject
 object QuartersValue {
-  @scala.inline
-  def `1`: typingsJapgolly.zdog.zdogNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.zdog.zdogNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.zdog.zdogNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.zdog.zdogNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `1`: typingsJapgolly.zdog.zdogInts.`1` = 1.asInstanceOf[typingsJapgolly.zdog.zdogInts.`1`]
+  
+  inline def `2`: typingsJapgolly.zdog.zdogInts.`2` = 2.asInstanceOf[typingsJapgolly.zdog.zdogInts.`2`]
+  
+  inline def `3`: typingsJapgolly.zdog.zdogInts.`3` = 3.asInstanceOf[typingsJapgolly.zdog.zdogInts.`3`]
+  
+  inline def `4`: typingsJapgolly.zdog.zdogInts.`4` = 4.asInstanceOf[typingsJapgolly.zdog.zdogInts.`4`]
 }
-

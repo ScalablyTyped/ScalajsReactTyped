@@ -1,19 +1,19 @@
 
 # Scala.js typings for jaeger-client
 
-Typings are for version 3.15
+Typings are for version 3.18
 
 ## Library description:
-Jaeger binding for OpenTracing Node
+Jaeger binding for OpenTracing API for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jaeger-client |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 72 |
-| # downloads        | 2374082 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 791603.3333333334 |
+| # stars            | 548.0 |
 
 ## Links
 - [Homepage](https://github.com/jaegertracing/jaeger-client-node#readme)

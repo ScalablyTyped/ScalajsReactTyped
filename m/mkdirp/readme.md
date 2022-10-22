@@ -9,16 +9,16 @@ Recursively mkdir, like `mkdir -p`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | mkdirp |
-| Keywords           | mkdir, directory |
-| # releases         | 1 |
-| # dependents       | 15595 |
-| # downloads        | 632215816 |
-| # stars            | 345 |
+| Keywords           | mkdir, directory, make dir, make, dir, recursive, native |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5169797766666666E8 |
+| # stars            | 116.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-mkdirp#readme)
-- [Bugs](https://github.com/substack/node-mkdirp/issues)
-- [Repository](https://github.com/substack/node-mkdirp)
+- [Homepage](https://github.com/isaacs/node-mkdirp#readme)
+- [Bugs](https://github.com/isaacs/node-mkdirp/issues)
+- [Repository](https://github.com/isaacs/node-mkdirp)
 - [Npm](https://www.npmjs.com/package/mkdirp)
     
 

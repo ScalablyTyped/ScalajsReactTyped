@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebSceneUpdateFromOptionsThumbnailSize extends Object {
+trait WebSceneUpdateFromOptionsThumbnailSize
+  extends StObject
+     with Object {
+  
   /**
     * The height of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
   var height: Double
+  
   /**
     * The width of the thumbnail.
     *
@@ -21,20 +24,23 @@ trait WebSceneUpdateFromOptionsThumbnailSize extends Object {
     */
   var width: Double
 }
-
 object WebSceneUpdateFromOptionsThumbnailSize {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     height: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    propertyIsEnumerable: PropertyKey => Boolean,
     width: Double
   ): WebSceneUpdateFromOptionsThumbnailSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSceneUpdateFromOptionsThumbnailSize]
   }
+  
+  extension [Self <: WebSceneUpdateFromOptionsThumbnailSize](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

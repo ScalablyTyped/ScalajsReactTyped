@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.global
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.lineOfBusiness
 */
-trait ManagedAppAvailability extends js.Object
-
+trait ManagedAppAvailability extends StObject
 object ManagedAppAvailability {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def global: typingsJapgolly.microsoftGraph.microsoftGraphStrings.global = this.cast("global")
-  @scala.inline
-  def lineOfBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.lineOfBusiness = this.cast("lineOfBusiness")
+  
+  inline def global: typingsJapgolly.microsoftGraph.microsoftGraphStrings.global = "global".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.global]
+  
+  inline def lineOfBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.lineOfBusiness = "lineOfBusiness".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.lineOfBusiness]
 }
-

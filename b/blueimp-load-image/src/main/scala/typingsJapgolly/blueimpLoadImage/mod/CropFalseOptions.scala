@@ -1,20 +1,27 @@
 package typingsJapgolly.blueimpLoadImage.mod
 
 import typingsJapgolly.blueimpLoadImage.blueimpLoadImageBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CropFalseOptions extends CropOptions {
+trait CropFalseOptions
+  extends StObject
+     with CropOptions {
+  
   var crop: js.UndefOr[`false`] = js.undefined
 }
-
 object CropFalseOptions {
-  @scala.inline
-  def apply(crop: `false` = null): CropFalseOptions = {
+  
+  inline def apply(): CropFalseOptions = {
     val __obj = js.Dynamic.literal()
-    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropFalseOptions]
   }
+  
+  extension [Self <: CropFalseOptions](x: Self) {
+    
+    inline def setCrop(value: `false`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+  }
 }
-

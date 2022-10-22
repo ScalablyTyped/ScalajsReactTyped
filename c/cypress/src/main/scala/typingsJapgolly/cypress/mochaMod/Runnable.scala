@@ -1,10 +1,10 @@
 package typingsJapgolly.cypress.mochaMod
 
-import typingsJapgolly.cypress.Mocha_.AsyncFunc
-import typingsJapgolly.cypress.Mocha_.Func
+import typingsJapgolly.cypress.Mocha.AsyncFunc
+import typingsJapgolly.cypress.Mocha.Func
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runnable "error" event
 // #region Runnable untyped events
@@ -16,10 +16,10 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Runnable")
 @js.native
-class Runnable protected ()
-  extends typingsJapgolly.cypress.Mocha_.Runnable {
+open class Runnable protected ()
+  extends StObject
+     with typingsJapgolly.cypress.Mocha.Runnable {
   def this(title: String) = this()
   def this(title: String, fn: AsyncFunc) = this()
   def this(title: String, fn: Func) = this()
 }
-

@@ -1,34 +1,31 @@
 package typingsJapgolly.fridaGum
 
 import typingsJapgolly.fridaGum.fridaGumStrings.imm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Arm64ImmOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
+  
   var `type`: imm
-  var value: Int64_
+  
+  var value: Int64
 }
-
 object Arm64ImmOperand {
-  @scala.inline
-  def apply(
-    `type`: imm,
-    value: Int64_,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64ImmOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess, value: Int64): Arm64ImmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[Arm64ImmOperand]
   }
+  
+  extension [Self <: Arm64ImmOperand](x: Self) {
+    
+    inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

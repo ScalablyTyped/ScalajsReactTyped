@@ -1,79 +1,64 @@
 package typingsJapgolly.stringPixelWidth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringPixelWidthStrings {
-  @js.native
-  sealed trait `andale mono` extends js.Object
   
   @js.native
-  sealed trait arial extends js.Object
+  sealed trait `andale mono` extends StObject
+  inline def `andale mono`: `andale mono` = ("andale mono").asInstanceOf[`andale mono`]
   
   @js.native
-  sealed trait avenir extends js.Object
+  sealed trait arial extends StObject
+  inline def arial: arial = "arial".asInstanceOf[arial]
   
   @js.native
-  sealed trait `avenir next` extends js.Object
+  sealed trait avenir extends StObject
+  inline def avenir: avenir = "avenir".asInstanceOf[avenir]
   
   @js.native
-  sealed trait `comic sans ms` extends js.Object
+  sealed trait `avenir next` extends StObject
+  inline def `avenir next`: `avenir next` = ("avenir next").asInstanceOf[`avenir next`]
   
   @js.native
-  sealed trait `courier new` extends js.Object
+  sealed trait `comic sans ms` extends StObject
+  inline def `comic sans ms`: `comic sans ms` = ("comic sans ms").asInstanceOf[`comic sans ms`]
   
   @js.native
-  sealed trait georgia extends js.Object
+  sealed trait `courier new` extends StObject
+  inline def `courier new`: `courier new` = ("courier new").asInstanceOf[`courier new`]
   
   @js.native
-  sealed trait impact extends js.Object
+  sealed trait georgia extends StObject
+  inline def georgia: georgia = "georgia".asInstanceOf[georgia]
   
   @js.native
-  sealed trait `open sans` extends js.Object
+  sealed trait impact extends StObject
+  inline def impact: impact = "impact".asInstanceOf[impact]
   
   @js.native
-  sealed trait tahoma extends js.Object
+  sealed trait `open sans` extends StObject
+  inline def `open sans`: `open sans` = ("open sans").asInstanceOf[`open sans`]
   
   @js.native
-  sealed trait `times new roman` extends js.Object
+  sealed trait tahoma extends StObject
+  inline def tahoma: tahoma = "tahoma".asInstanceOf[tahoma]
   
   @js.native
-  sealed trait `trebuchet ms` extends js.Object
+  sealed trait `times new roman` extends StObject
+  inline def `times new roman`: `times new roman` = ("times new roman").asInstanceOf[`times new roman`]
   
   @js.native
-  sealed trait verdana extends js.Object
+  sealed trait `trebuchet ms` extends StObject
+  inline def `trebuchet ms`: `trebuchet ms` = ("trebuchet ms").asInstanceOf[`trebuchet ms`]
   
   @js.native
-  sealed trait webdings extends js.Object
+  sealed trait verdana extends StObject
+  inline def verdana: verdana = "verdana".asInstanceOf[verdana]
   
-  @scala.inline
-  def `andale mono`: `andale mono` = "andale mono".asInstanceOf[`andale mono`]
-  @scala.inline
-  def arial: arial = "arial".asInstanceOf[arial]
-  @scala.inline
-  def avenir: avenir = "avenir".asInstanceOf[avenir]
-  @scala.inline
-  def `avenir next`: `avenir next` = "avenir next".asInstanceOf[`avenir next`]
-  @scala.inline
-  def `comic sans ms`: `comic sans ms` = "comic sans ms".asInstanceOf[`comic sans ms`]
-  @scala.inline
-  def `courier new`: `courier new` = "courier new".asInstanceOf[`courier new`]
-  @scala.inline
-  def georgia: georgia = "georgia".asInstanceOf[georgia]
-  @scala.inline
-  def impact: impact = "impact".asInstanceOf[impact]
-  @scala.inline
-  def `open sans`: `open sans` = "open sans".asInstanceOf[`open sans`]
-  @scala.inline
-  def tahoma: tahoma = "tahoma".asInstanceOf[tahoma]
-  @scala.inline
-  def `times new roman`: `times new roman` = "times new roman".asInstanceOf[`times new roman`]
-  @scala.inline
-  def `trebuchet ms`: `trebuchet ms` = "trebuchet ms".asInstanceOf[`trebuchet ms`]
-  @scala.inline
-  def verdana: verdana = "verdana".asInstanceOf[verdana]
-  @scala.inline
-  def webdings: webdings = "webdings".asInstanceOf[webdings]
+  @js.native
+  sealed trait webdings extends StObject
+  inline def webdings: webdings = "webdings".asInstanceOf[webdings]
 }
-

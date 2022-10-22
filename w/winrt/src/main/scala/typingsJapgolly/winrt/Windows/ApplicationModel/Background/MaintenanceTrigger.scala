@@ -1,16 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.MaintenanceTrigger")
-@js.native
-class MaintenanceTrigger protected () extends IMaintenanceTrigger {
-  def this(freshnessTime: Double, oneShot: Boolean) = this()
-  /* CompleteClass */
-  override var freshnessTime: Double = js.native
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
+trait MaintenanceTrigger
+  extends StObject
+     with IMaintenanceTrigger
+object MaintenanceTrigger {
+  
+  inline def apply(freshnessTime: Double, oneShot: Boolean): MaintenanceTrigger = {
+    val __obj = js.Dynamic.literal(freshnessTime = freshnessTime.asInstanceOf[js.Any], oneShot = oneShot.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceTrigger]
+  }
 }
-

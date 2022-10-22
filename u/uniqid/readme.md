@@ -1,7 +1,7 @@
 
 # Scala.js typings for uniqid
 
-Typings are for version 4.1
+Typings are for version 5.3
 
 ## Library description:
 Unique ID Generator
@@ -10,10 +10,10 @@ Unique ID Generator
 | ------------------ | :-------------: |
 | Full name          | uniqid |
 | Keywords           | unique id, uniqid, unique identifier, hexatridecimal |
-| # releases         | 7 |
-| # dependents       | 333 |
-| # downloads        | 27899279 |
-| # stars            | 15 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2117864.0 |
+| # stars            | 572.0 |
 
 ## Links
 - [Homepage](http://github.com/adamhalasz/uniqid/)

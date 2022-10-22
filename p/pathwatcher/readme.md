@@ -11,9 +11,9 @@ Watch files and directories for changes
 | Full name          | pathwatcher |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 91616 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8130.0 |
+| # stars            | 94.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/node-pathwatcher)

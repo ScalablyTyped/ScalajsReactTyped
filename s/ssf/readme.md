@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssf
 
-Typings are for version 0.10.2
+Typings are for version 0.11.2
 
 ## Library description:
 Format data using ECMA-376 spreadsheet Format Codes
@@ -10,13 +10,13 @@ Format data using ECMA-376 spreadsheet Format Codes
 | ------------------ | :-------------: |
 | Full name          | ssf |
 | Keywords           | format, sprintf, spreadsheet |
-| # releases         | 2 |
-| # dependents       | 117 |
-| # downloads        | 17184643 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6114787.666666667 |
+| # stars            | 153.0 |
 
 ## Links
-- [Homepage](http://sheetjs.com/opensource)
+- [Homepage](http://sheetjs.com/)
 - [Bugs](https://github.com/SheetJS/ssf/issues)
 - [Repository](https://github.com/SheetJS/ssf)
 - [Npm](https://www.npmjs.com/package/ssf)

@@ -7,21 +7,41 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.expandedChanged
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.expandedChanging
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.nodeClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTreeView")
 @js.native
-class BootstrapTreeView () extends Control {
+trait BootstrapTreeView
+  extends StObject
+     with Control {
+  
   def collapseAll(): Unit = js.native
+  
   def expandAll(): Unit = js.native
+  
   def getNode(index: Double): BootstrapTreeViewNode | Null = js.native
+  
   def getNodeByName(name: String): BootstrapTreeViewNode | Null = js.native
+  
   def getNodeByText(text: String): BootstrapTreeViewNode | Null = js.native
+  
   def getNodeCount(): Double = js.native
+  
   def getRootNode(): BootstrapTreeViewNode | Null = js.native
+  
   def getSelectedNode(): BootstrapTreeViewNode | Null = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs | TreeViewNodeCancelEventArgs | TreeViewNodeClickEventArgs | TreeViewNodeEventArgs | TreeViewNodeProcessingModeEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")
@@ -75,6 +95,7 @@ class BootstrapTreeView () extends Control {
     eventName: nodeClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TreeViewNodeClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_beginCallback(
     eventName: beginCallback,
@@ -114,6 +135,7 @@ class BootstrapTreeView () extends Control {
     eventName: nodeClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TreeViewNodeClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_beginCallback(
     eventName: beginCallback,
@@ -153,6 +175,6 @@ class BootstrapTreeView () extends Control {
     eventName: nodeClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TreeViewNodeClickEventArgs], Unit]
   ): this.type = js.native
+  
   def setSelectedNode(node: BootstrapTreeViewNode): Unit = js.native
 }
-

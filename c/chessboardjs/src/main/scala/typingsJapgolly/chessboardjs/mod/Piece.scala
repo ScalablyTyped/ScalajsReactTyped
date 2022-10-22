@@ -1,89 +1,87 @@
 package typingsJapgolly.chessboardjs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Piece extends js.Object
-
+sealed trait Piece extends StObject
 @JSImport("chessboardjs", "Piece")
 @js.native
-object Piece extends js.Object {
-  @js.native
-  sealed trait bB extends Piece
-  
-  @js.native
-  sealed trait bK extends Piece
-  
-  @js.native
-  sealed trait bN extends Piece
-  
-  @js.native
-  sealed trait bP extends Piece
-  
-  @js.native
-  sealed trait bQ extends Piece
-  
-  @js.native
-  sealed trait bR extends Piece
-  
-  @js.native
-  sealed trait wB extends Piece
-  
-  @js.native
-  sealed trait wK extends Piece
-  
-  @js.native
-  sealed trait wN extends Piece
-  
-  @js.native
-  sealed trait wP extends Piece
-  
-  @js.native
-  sealed trait wQ extends Piece
-  
-  @js.native
-  sealed trait wR extends Piece
+object Piece extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Piece with String] = js.native
-  /* "bB" */ @js.native
-  object bB extends TopLevel[bB with String]
+  def apply(value: String): js.UndefOr[Piece & String] = js.native
   
-  /* "bK" */ @js.native
-  object bK extends TopLevel[bK with String]
+  @js.native
+  sealed trait bB
+    extends StObject
+       with Piece
+  /* "bB" */ val bB: typingsJapgolly.chessboardjs.mod.Piece.bB & String = js.native
   
-  /* "bN" */ @js.native
-  object bN extends TopLevel[bN with String]
+  @js.native
+  sealed trait bK
+    extends StObject
+       with Piece
+  /* "bK" */ val bK: typingsJapgolly.chessboardjs.mod.Piece.bK & String = js.native
   
-  /* "bP" */ @js.native
-  object bP extends TopLevel[bP with String]
+  @js.native
+  sealed trait bN
+    extends StObject
+       with Piece
+  /* "bN" */ val bN: typingsJapgolly.chessboardjs.mod.Piece.bN & String = js.native
   
-  /* "bQ" */ @js.native
-  object bQ extends TopLevel[bQ with String]
+  @js.native
+  sealed trait bP
+    extends StObject
+       with Piece
+  /* "bP" */ val bP: typingsJapgolly.chessboardjs.mod.Piece.bP & String = js.native
   
-  /* "bR" */ @js.native
-  object bR extends TopLevel[bR with String]
+  @js.native
+  sealed trait bQ
+    extends StObject
+       with Piece
+  /* "bQ" */ val bQ: typingsJapgolly.chessboardjs.mod.Piece.bQ & String = js.native
   
-  /* "wB" */ @js.native
-  object wB extends TopLevel[wB with String]
+  @js.native
+  sealed trait bR
+    extends StObject
+       with Piece
+  /* "bR" */ val bR: typingsJapgolly.chessboardjs.mod.Piece.bR & String = js.native
   
-  /* "wK" */ @js.native
-  object wK extends TopLevel[wK with String]
+  @js.native
+  sealed trait wB
+    extends StObject
+       with Piece
+  /* "wB" */ val wB: typingsJapgolly.chessboardjs.mod.Piece.wB & String = js.native
   
-  /* "wN" */ @js.native
-  object wN extends TopLevel[wN with String]
+  @js.native
+  sealed trait wK
+    extends StObject
+       with Piece
+  /* "wK" */ val wK: typingsJapgolly.chessboardjs.mod.Piece.wK & String = js.native
   
-  /* "wP" */ @js.native
-  object wP extends TopLevel[wP with String]
+  @js.native
+  sealed trait wN
+    extends StObject
+       with Piece
+  /* "wN" */ val wN: typingsJapgolly.chessboardjs.mod.Piece.wN & String = js.native
   
-  /* "wQ" */ @js.native
-  object wQ extends TopLevel[wQ with String]
+  @js.native
+  sealed trait wP
+    extends StObject
+       with Piece
+  /* "wP" */ val wP: typingsJapgolly.chessboardjs.mod.Piece.wP & String = js.native
   
-  /* "wR" */ @js.native
-  object wR extends TopLevel[wR with String]
+  @js.native
+  sealed trait wQ
+    extends StObject
+       with Piece
+  /* "wQ" */ val wQ: typingsJapgolly.chessboardjs.mod.Piece.wQ & String = js.native
   
+  @js.native
+  sealed trait wR
+    extends StObject
+       with Piece
+  /* "wR" */ val wR: typingsJapgolly.chessboardjs.mod.Piece.wR & String = js.native
 }
-

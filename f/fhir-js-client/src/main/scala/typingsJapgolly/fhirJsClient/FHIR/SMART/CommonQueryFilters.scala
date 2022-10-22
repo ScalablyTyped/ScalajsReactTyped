@@ -1,19 +1,22 @@
 package typingsJapgolly.fhirJsClient.FHIR.SMART
 
-import typingsJapgolly.fhirJsClient.AnonDictpropName
+import typingsJapgolly.fhirJsClient.anon.DictpropName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonQueryFilters extends js.Object {
+trait CommonQueryFilters extends StObject {
+  
   /**
     * Number of return records requested. The server is not bound to return the number requested, but cannot return more
     */
   var count: js.UndefOr[Double] = js.undefined
+  
   /**
     * Addition filters to be applied on the history query. The object will be converted into query string parameters.
     */
-  var params: js.UndefOr[AnonDictpropName] = js.undefined
+  var params: js.UndefOr[DictpropName] = js.undefined
+  
   /**
     * Only include resource versions that were created at or after the given instant in time
     *
@@ -24,15 +27,25 @@ trait CommonQueryFilters extends js.Object {
     */
   var since: js.UndefOr[String] = js.undefined
 }
-
 object CommonQueryFilters {
-  @scala.inline
-  def apply(count: Int | Double = null, params: AnonDictpropName = null, since: String = null): CommonQueryFilters = {
+  
+  inline def apply(): CommonQueryFilters = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonQueryFilters]
   }
+  
+  extension [Self <: CommonQueryFilters](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setParams(value: DictpropName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+  }
 }
-

@@ -1,30 +1,33 @@
 package typingsJapgolly.requestDebug
 
 import typingsJapgolly.requestDebug.mod.LogPhase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestDebugStrings {
-  @js.native
-  sealed trait auth extends LogPhase
   
   @js.native
-  sealed trait redirect extends LogPhase
+  sealed trait auth
+    extends StObject
+       with LogPhase
+  inline def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
-  sealed trait request extends LogPhase
+  sealed trait redirect
+    extends StObject
+       with LogPhase
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait response extends LogPhase
+  sealed trait request
+    extends StObject
+       with LogPhase
+  inline def request: request = "request".asInstanceOf[request]
   
-  @scala.inline
-  def auth: auth = "auth".asInstanceOf[auth]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
+  @js.native
+  sealed trait response
+    extends StObject
+       with LogPhase
+  inline def response: response = "response".asInstanceOf[response]
 }
-

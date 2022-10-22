@@ -1,14 +1,25 @@
 package typingsJapgolly.sharepoint.SP.JsGrid.EventArgs
 
 import typingsJapgolly.sharepoint.SP.JsGrid.IEventArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.JsGrid.EventArgs.OnRowEscape")
-@js.native
-class OnRowEscape protected () extends IEventArgs {
-  def this(recordKey: Double) = this()
-  var recordKey: Double = js.native
+trait OnRowEscape
+  extends StObject
+     with IEventArgs {
+  
+  var recordKey: Double
 }
-
+object OnRowEscape {
+  
+  inline def apply(recordKey: Double): OnRowEscape = {
+    val __obj = js.Dynamic.literal(recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnRowEscape]
+  }
+  
+  extension [Self <: OnRowEscape](x: Self) {
+    
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+  }
+}

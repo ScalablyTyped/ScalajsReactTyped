@@ -1,31 +1,31 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.ohlc
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxChart.ChartFinancialSeriesAggregationMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures data aggregation for the series. */
-trait dxChartSeriesTypesCandleStickSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
-  /** Specifies how to aggregate series points. */
+trait dxChartSeriesTypesCandleStickSeriesAggregation
+  extends StObject
+     with dxChartSeriesTypesCommonSeriesAggregation {
+  
+  /**
+    * Specifies how to aggregate series points.
+    */
   @JSName("method")
-  var method_dxChartSeriesTypesCandleStickSeriesAggregation: js.UndefOr[ohlc | custom] = js.undefined
+  var method_dxChartSeriesTypesCandleStickSeriesAggregation: js.UndefOr[ChartFinancialSeriesAggregationMethod] = js.undefined
 }
-
 object dxChartSeriesTypesCandleStickSeriesAggregation {
-  @scala.inline
-  def apply(
-    calculate: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => CallbackTo[js.Any | js.Array[js.Any]] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    method: ohlc | custom = null
-  ): dxChartSeriesTypesCandleStickSeriesAggregation = {
+  
+  inline def apply(): dxChartSeriesTypesCandleStickSeriesAggregation = {
     val __obj = js.Dynamic.literal()
-    if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction2((t0: /* aggregationInfo */ typingsJapgolly.devextreme.mod.DevExpress.viz.chartPointAggregationInfoObject, t1: /* series */ typingsJapgolly.devextreme.mod.DevExpress.viz.chartSeriesObject) => calculate(t0, t1).runNow()))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesCandleStickSeriesAggregation]
   }
+  
+  extension [Self <: dxChartSeriesTypesCandleStickSeriesAggregation](x: Self) {
+    
+    inline def setMethod(value: ChartFinancialSeriesAggregationMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+  }
 }
-

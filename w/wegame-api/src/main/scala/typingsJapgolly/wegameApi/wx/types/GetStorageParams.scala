@@ -1,31 +1,42 @@
 package typingsJapgolly.wegameApi.wx.types
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.wegameApi.AnonDataAny
+import typingsJapgolly.wegameApi.anon.DataAny
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetStorageParams extends js.Object {
+trait GetStorageParams extends StObject {
+  
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var key: String
-  var success: js.UndefOr[js.Function1[/* res */ AnonDataAny, Unit]] = js.undefined
+  
+  var success: js.UndefOr[js.Function1[/* res */ DataAny, Unit]] = js.undefined
 }
-
 object GetStorageParams {
-  @scala.inline
-  def apply(
-    key: String,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: js.UndefOr[Callback] = js.undefined,
-    success: /* res */ AnonDataAny => Callback = null
-  ): GetStorageParams = {
+  
+  inline def apply(key: String): GetStorageParams = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wegameApi.AnonDataAny) => success(t0).runNow()))
     __obj.asInstanceOf[GetStorageParams]
   }
+  
+  extension [Self <: GetStorageParams](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ DataAny => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ DataAny) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

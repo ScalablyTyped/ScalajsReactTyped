@@ -1,17 +1,18 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.map
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.map.Marker")
 @js.native
-class Marker () extends Observable_ {
-  def this(options: MarkerOptions) = this()
-  var options: MarkerOptions = js.native
+trait Marker
+  extends StObject
+     with Observable {
+  
   def location(): Location = js.native
-  def location(location: js.Any): Unit = js.native
+  def location(location: Any): Unit = js.native
   def location(location: Location): Unit = js.native
+  
+  var options: MarkerOptions = js.native
 }
-

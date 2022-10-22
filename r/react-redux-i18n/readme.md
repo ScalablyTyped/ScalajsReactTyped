@@ -9,15 +9,12 @@ A binding library for redux to react-i18nify
 | ------------------ | :-------------: |
 | Full name          | react-redux-i18n |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 433502 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 35277.0 |
+| # stars            | 195.0 |
 
 ## Links
-- [Homepage](https://github.com/zoover/react-redux-i18n#readme)
-- [Bugs](https://github.com/zoover/react-redux-i18n/issues)
-- [Repository](https://github.com/zoover/react-redux-i18n)
 - [Npm](https://www.npmjs.com/package/react-redux-i18n)
     
 

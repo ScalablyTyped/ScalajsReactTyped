@@ -2,27 +2,33 @@ package typingsJapgolly.waterline.mod
 
 import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Attributes extends /* index */ StringDictionary[Attribute] {
+trait Attributes
+  extends StObject
+     with /* index */ StringDictionary[Attribute] {
+  
   var toJSON: js.UndefOr[js.Function0[String]] = js.undefined
-  var toObject: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var toObject: js.UndefOr[js.Function0[Any]] = js.undefined
 }
-
 object Attributes {
-  @scala.inline
-  def apply(
-    StringDictionary: /* index */ StringDictionary[Attribute] = null,
-    toJSON: js.UndefOr[CallbackTo[String]] = js.undefined,
-    toObject: js.UndefOr[CallbackTo[js.Any]] = js.undefined
-  ): Attributes = {
+  
+  inline def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    toJSON.foreach(p => __obj.updateDynamic("toJSON")(p.toJsFn))
-    toObject.foreach(p => __obj.updateDynamic("toObject")(p.toJsFn))
     __obj.asInstanceOf[Attributes]
   }
+  
+  extension [Self <: Attributes](x: Self) {
+    
+    inline def setToJSON(value: CallbackTo[String]): Self = StObject.set(x, "toJSON", value.toJsFn)
+    
+    inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+    
+    inline def setToObject(value: CallbackTo[Any]): Self = StObject.set(x, "toObject", value.toJsFn)
+    
+    inline def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)
+  }
 }
-

@@ -1,41 +1,26 @@
 package typingsJapgolly.react.mod
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
 import typingsJapgolly.react.reactStrings.backwards
 import typingsJapgolly.react.reactStrings.forwards
-import typingsJapgolly.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps
   - typingsJapgolly.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps
 */
-trait SuspenseListProps extends js.Object
-
+trait SuspenseListProps extends StObject
 object SuspenseListProps {
-  @scala.inline
-  def DirectionalSuspenseListProps(
-    children: Element | js.Iterable[Element],
-    revealOrder: forwards | backwards,
-    tail: typingsJapgolly.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode = null
-  ): SuspenseListProps = {
+  
+  inline def DirectionalSuspenseListProps(children: Element | js.Iterable[Element], revealOrder: forwards | backwards): typingsJapgolly.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
-    if (tail != null) __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SuspenseListProps]
+    __obj.asInstanceOf[typingsJapgolly.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps]
   }
-  @scala.inline
-  def NonDirectionalSuspenseListProps(
-    children: Element | js.Iterable[Element],
-    revealOrder: Exclude[
-      typingsJapgolly.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder, 
-      forwards | backwards
-    ] = null
-  ): SuspenseListProps = {
+  
+  inline def NonDirectionalSuspenseListProps(children: Element | js.Iterable[Element]): typingsJapgolly.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (revealOrder != null) __obj.updateDynamic("revealOrder")(revealOrder.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SuspenseListProps]
+    __obj.asInstanceOf[typingsJapgolly.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps]
   }
 }
-

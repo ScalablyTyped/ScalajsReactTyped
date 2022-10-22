@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnCommandItem extends js.Object {
+trait GridColumnCommandItem extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var click: js.UndefOr[js.Function] = js.undefined
+  
   var iconClass: js.UndefOr[String | GridColumnCommandItemIconClass] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String | GridColumnCommandItemText] = js.undefined
+  
   var visible: js.UndefOr[js.Function] = js.undefined
 }
-
 object GridColumnCommandItem {
-  @scala.inline
-  def apply(
-    className: String = null,
-    click: js.Function = null,
-    iconClass: String | GridColumnCommandItemIconClass = null,
-    name: String = null,
-    template: String = null,
-    text: String | GridColumnCommandItemText = null,
-    visible: js.Function = null
-  ): GridColumnCommandItem = {
+  
+  inline def apply(): GridColumnCommandItem = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnCommandItem]
   }
+  
+  extension [Self <: GridColumnCommandItem](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setIconClass(value: String | GridColumnCommandItemIconClass): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setText(value: String | GridColumnCommandItemText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVisible(value: js.Function): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

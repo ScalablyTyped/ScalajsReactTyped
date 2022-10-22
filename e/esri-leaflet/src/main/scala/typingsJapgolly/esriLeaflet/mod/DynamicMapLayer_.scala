@@ -1,9 +1,9 @@
 package typingsJapgolly.esriLeaflet.mod
 
 import typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Render and visualize Map Services from ArcGIS Online and ArcGIS Server. `L.esri.DynamicMapLayer` also
@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("esri-leaflet", "DynamicMapLayer")
 @js.native
-class DynamicMapLayer_ protected ()
+open class DynamicMapLayer_ protected ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ {
   def this(options: DynamicMapLayerOptions) = this()
 }
-

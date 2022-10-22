@@ -2,163 +2,205 @@ package typingsJapgolly.reactBigCalendar.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.HTMLAttributes
-import typingsJapgolly.reactBigCalendar.AnonAction
-import typingsJapgolly.reactBigCalendar.AnonStart
-import typingsJapgolly.reactBigCalendar.AnonX
+import typingsJapgolly.reactBigCalendar.anon.Accessors
+import typingsJapgolly.reactBigCalendar.anon.ClassName
+import typingsJapgolly.reactBigCalendar.anon.End
+import typingsJapgolly.reactBigCalendar.anon.Style
+import typingsJapgolly.reactBigCalendar.anon.X
 import typingsJapgolly.reactBigCalendar.mod.CalendarProps
 import typingsJapgolly.reactBigCalendar.mod.Components_
+import typingsJapgolly.reactBigCalendar.mod.Culture
 import typingsJapgolly.reactBigCalendar.mod.DateLocalizer
 import typingsJapgolly.reactBigCalendar.mod.DayLayoutAlgorithm
+import typingsJapgolly.reactBigCalendar.mod.DayLayoutFunction
 import typingsJapgolly.reactBigCalendar.mod.Formats
 import typingsJapgolly.reactBigCalendar.mod.Messages
 import typingsJapgolly.reactBigCalendar.mod.NavigateAction
+import typingsJapgolly.reactBigCalendar.mod.SlotInfo
 import typingsJapgolly.reactBigCalendar.mod.View
 import typingsJapgolly.reactBigCalendar.mod.ViewsProps
 import typingsJapgolly.reactBigCalendar.mod.stringOrDate
 import typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Calendar {
-  def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](
-    localizer: DateLocalizer,
-    allDayAccessor: String | (js.Function1[TEvent, Boolean]) = null,
-    className: String = null,
-    components: Components_[TEvent] = null,
-    culture: String = null,
-    date: stringOrDate = null,
-    dayLayoutAlgorithm: DayLayoutAlgorithm = null,
-    dayPropGetter: (/* date */ js.Date, /* resourceId */ js.UndefOr[Double | String]) => CallbackTo[HTMLAttributes[HTMLDivElement]] = null,
-    defaultDate: js.Date = null,
-    defaultView: View = null,
-    drilldownView: View = null,
-    elementProps: HTMLAttributes[HTMLElement] = null,
-    endAccessor: String | (js.Function1[TEvent, js.Date]) = null,
-    eventPropGetter: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => CallbackTo[HTMLAttributes[HTMLDivElement]] = null,
-    events: js.Array[TEvent] = null,
-    formats: Formats = null,
-    getDrilldownView: (/* targetDate */ js.Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Callback = null,
-    getNow: js.UndefOr[CallbackTo[js.Date]] = js.undefined,
-    length: Int | Double = null,
-    longPressThreshold: Int | Double = null,
-    max: stringOrDate = null,
-    messages: Messages = null,
-    min: stringOrDate = null,
-    onDoubleClickEvent: (TEvent, /* e */ ReactEventFrom[HTMLElement]) => Callback = null,
-    onDrillDown: (/* date */ js.Date, /* view */ View) => Callback = null,
-    onNavigate: (/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction) => Callback = null,
-    onRangeChange: /* range */ js.Array[js.Date] | AnonStart => Callback = null,
-    onSelectEvent: (TEvent, /* e */ ReactEventFrom[HTMLElement]) => Callback = null,
-    onSelectSlot: /* slotInfo */ AnonAction => Callback = null,
-    onSelecting: /* range */ AnonStart => CallbackTo[js.UndefOr[Boolean | Null]] = null,
-    onShowMore: (/* events */ js.Array[TEvent], /* date */ js.Date) => Callback = null,
-    onView: /* view */ View => Callback = null,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    popupOffset: Double | AnonX = null,
-    resourceAccessor: String | (js.Function1[TEvent, _]) = null,
-    resourceIdAccessor: String | (js.Function1[TResource, _]) = null,
-    resourceTitleAccessor: String | (js.Function1[TResource, _]) = null,
-    resources: js.Array[TResource] = null,
-    rtl: js.UndefOr[Boolean] = js.undefined,
-    scrollToTime: js.Date = null,
-    selectable: Boolean | ignoreEvents = null,
-    selected: js.Any = null,
-    showMultiDayTimes: js.UndefOr[Boolean] = js.undefined,
-    slotGroupPropGetter: js.UndefOr[CallbackTo[HTMLAttributes[HTMLDivElement]]] = js.undefined,
-    slotPropGetter: (/* date */ js.Date, /* resourceId */ js.UndefOr[Double | String]) => CallbackTo[HTMLAttributes[HTMLDivElement]] = null,
-    startAccessor: String | (js.Function1[TEvent, js.Date]) = null,
-    step: Int | Double = null,
-    timeslots: Int | Double = null,
-    titleAccessor: String | (js.Function1[TEvent, String]) = null,
-    toolbar: js.UndefOr[Boolean] = js.undefined,
-    tooltipAccessor: String | (js.Function1[TEvent, String]) = null,
-    view: View = null,
-    views: ViewsProps = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    CalendarProps[TEvent, TResource], 
-    typingsJapgolly.reactBigCalendar.mod.Calendar[TEvent, TResource], 
-    Unit, 
-    CalendarProps[TEvent, TResource]
-  ] = {
-    val __obj = js.Dynamic.literal(localizer = localizer.asInstanceOf[js.Any])
   
-      if (allDayAccessor != null) __obj.updateDynamic("allDayAccessor")(allDayAccessor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dayLayoutAlgorithm != null) __obj.updateDynamic("dayLayoutAlgorithm")(dayLayoutAlgorithm.asInstanceOf[js.Any])
-    if (dayPropGetter != null) __obj.updateDynamic("dayPropGetter")(js.Any.fromFunction2((t0: /* date */ js.Date, t1: /* resourceId */ js.UndefOr[scala.Double | java.lang.String]) => dayPropGetter(t0, t1).runNow()))
-    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
-    if (drilldownView != null) __obj.updateDynamic("drilldownView")(drilldownView.asInstanceOf[js.Any])
-    if (elementProps != null) __obj.updateDynamic("elementProps")(elementProps.asInstanceOf[js.Any])
-    if (endAccessor != null) __obj.updateDynamic("endAccessor")(endAccessor.asInstanceOf[js.Any])
-    if (eventPropGetter != null) __obj.updateDynamic("eventPropGetter")(js.Any.fromFunction4((t0: TEvent, t1: /* start */ typingsJapgolly.reactBigCalendar.mod.stringOrDate, t2: /* end */ typingsJapgolly.reactBigCalendar.mod.stringOrDate, t3: /* isSelected */ scala.Boolean) => eventPropGetter(t0, t1, t2, t3).runNow()))
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (getDrilldownView != null) __obj.updateDynamic("getDrilldownView")(js.Any.fromFunction3((t0: /* targetDate */ js.Date, t1: /* currentViewName */ typingsJapgolly.reactBigCalendar.mod.View, t2: /* configuredViewNames */ js.Array[typingsJapgolly.reactBigCalendar.mod.View]) => getDrilldownView(t0, t1, t2).runNow()))
-    getNow.foreach(p => __obj.updateDynamic("getNow")(p.toJsFn))
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (longPressThreshold != null) __obj.updateDynamic("longPressThreshold")(longPressThreshold.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onDoubleClickEvent != null) __obj.updateDynamic("onDoubleClickEvent")(js.Any.fromFunction2((t0: TEvent, t1: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onDoubleClickEvent(t0, t1).runNow()))
-    if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(js.Any.fromFunction2((t0: /* date */ js.Date, t1: /* view */ typingsJapgolly.reactBigCalendar.mod.View) => onDrillDown(t0, t1).runNow()))
-    if (onNavigate != null) __obj.updateDynamic("onNavigate")(js.Any.fromFunction3((t0: /* newDate */ js.Date, t1: /* view */ typingsJapgolly.reactBigCalendar.mod.View, t2: /* action */ typingsJapgolly.reactBigCalendar.mod.NavigateAction) => onNavigate(t0, t1, t2).runNow()))
-    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(js.Any.fromFunction1((t0: /* range */ js.Array[js.Date] | typingsJapgolly.reactBigCalendar.AnonStart) => onRangeChange(t0).runNow()))
-    if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(js.Any.fromFunction2((t0: TEvent, t1: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onSelectEvent(t0, t1).runNow()))
-    if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(js.Any.fromFunction1((t0: /* slotInfo */ typingsJapgolly.reactBigCalendar.AnonAction) => onSelectSlot(t0).runNow()))
-    if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1((t0: /* range */ typingsJapgolly.reactBigCalendar.AnonStart) => onSelecting(t0).runNow()))
-    if (onShowMore != null) __obj.updateDynamic("onShowMore")(js.Any.fromFunction2((t0: /* events */ js.Array[TEvent], t1: /* date */ js.Date) => onShowMore(t0, t1).runNow()))
-    if (onView != null) __obj.updateDynamic("onView")(js.Any.fromFunction1((t0: /* view */ typingsJapgolly.reactBigCalendar.mod.View) => onView(t0).runNow()))
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
-    if (resourceAccessor != null) __obj.updateDynamic("resourceAccessor")(resourceAccessor.asInstanceOf[js.Any])
-    if (resourceIdAccessor != null) __obj.updateDynamic("resourceIdAccessor")(resourceIdAccessor.asInstanceOf[js.Any])
-    if (resourceTitleAccessor != null) __obj.updateDynamic("resourceTitleAccessor")(resourceTitleAccessor.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (scrollToTime != null) __obj.updateDynamic("scrollToTime")(scrollToTime.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes.asInstanceOf[js.Any])
-    slotGroupPropGetter.foreach(p => __obj.updateDynamic("slotGroupPropGetter")(p.toJsFn))
-    if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(js.Any.fromFunction2((t0: /* date */ js.Date, t1: /* resourceId */ js.UndefOr[scala.Double | java.lang.String]) => slotPropGetter(t0, t1).runNow()))
-    if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])
-    if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (tooltipAccessor != null) __obj.updateDynamic("tooltipAccessor")(tooltipAccessor.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBigCalendar.mod.CalendarProps[TEvent, TResource], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBigCalendar.mod.Calendar[TEvent, TResource]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBigCalendar.mod.CalendarProps[TEvent, TResource]])(children: _*)
+  inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](localizer: DateLocalizer): Builder[TEvent, TResource] = {
+    val __props = js.Dynamic.literal(localizer = localizer.asInstanceOf[js.Any])
+    new Builder[TEvent, TResource](js.Array(this.component, __props.asInstanceOf[CalendarProps[TEvent, TResource]]))
   }
+  
   @JSImport("react-big-calendar", "Calendar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[TEvent /* <: js.Object */, TResource /* <: js.Object */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBigCalendar.mod.Calendar[TEvent, TResource]] {
+    
+    inline def allDayAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])): this.type = set("allDayAccessor", value.asInstanceOf[js.Any])
+    
+    inline def allDayAccessorFunction1(value: TEvent => Boolean): this.type = set("allDayAccessor", js.Any.fromFunction1(value))
+    
+    inline def backgroundEvents(value: js.Array[TEvent]): this.type = set("backgroundEvents", value.asInstanceOf[js.Any])
+    
+    inline def backgroundEventsVarargs(value: TEvent*): this.type = set("backgroundEvents", js.Array(value*))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def components(value: Components_[TEvent, TResource]): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def culture(value: Culture): this.type = set("culture", value.asInstanceOf[js.Any])
+    
+    inline def date(value: stringOrDate): this.type = set("date", value.asInstanceOf[js.Any])
+    
+    inline def dayLayoutAlgorithm(value: DayLayoutAlgorithm | DayLayoutFunction[TEvent]): this.type = set("dayLayoutAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def dayLayoutAlgorithmFunction1(value: /* _ */ Accessors[TEvent] => js.Array[Style[TEvent]]): this.type = set("dayLayoutAlgorithm", js.Any.fromFunction1(value))
+    
+    inline def dayPropGetter(
+      value: (/* date */ js.Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement]
+    ): this.type = set("dayPropGetter", js.Any.fromFunction2(value))
+    
+    inline def defaultDate(value: stringOrDate): this.type = set("defaultDate", value.asInstanceOf[js.Any])
+    
+    inline def defaultView(value: View): this.type = set("defaultView", value.asInstanceOf[js.Any])
+    
+    inline def doShowMoreDrillDown(value: Boolean): this.type = set("doShowMoreDrillDown", value.asInstanceOf[js.Any])
+    
+    inline def drilldownView(value: View): this.type = set("drilldownView", value.asInstanceOf[js.Any])
+    
+    inline def drilldownViewNull: this.type = set("drilldownView", null)
+    
+    inline def elementProps(value: HTMLAttributes[HTMLElement]): this.type = set("elementProps", value.asInstanceOf[js.Any])
+    
+    inline def enableAutoScroll(value: Boolean): this.type = set("enableAutoScroll", value.asInstanceOf[js.Any])
+    
+    inline def endAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, js.Date])): this.type = set("endAccessor", value.asInstanceOf[js.Any])
+    
+    inline def endAccessorFunction1(value: TEvent => js.Date): this.type = set("endAccessor", js.Any.fromFunction1(value))
+    
+    inline def eventPropGetter(value: (TEvent, /* start */ js.Date, /* end */ js.Date, /* isSelected */ Boolean) => ClassName): this.type = set("eventPropGetter", js.Any.fromFunction4(value))
+    
+    inline def events(value: js.Array[TEvent]): this.type = set("events", value.asInstanceOf[js.Any])
+    
+    inline def eventsVarargs(value: TEvent*): this.type = set("events", js.Array(value*))
+    
+    inline def formats(value: Formats): this.type = set("formats", value.asInstanceOf[js.Any])
+    
+    inline def getDrilldownView(
+      value: (/* targetDate */ js.Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Callback
+    ): this.type = set("getDrilldownView", js.Any.fromFunction3((t0: /* targetDate */ js.Date, t1: /* currentViewName */ View, t2: /* configuredViewNames */ js.Array[View]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def getDrilldownViewNull: this.type = set("getDrilldownView", null)
+    
+    inline def getNow(value: CallbackTo[js.UndefOr[stringOrDate]]): this.type = set("getNow", value.toJsFn)
+    
+    inline def handleDragStart(value: TEvent => Callback): this.type = set("handleDragStart", js.Any.fromFunction1((t0: TEvent) => value(t0).runNow()))
+    
+    inline def length(value: Double): this.type = set("length", value.asInstanceOf[js.Any])
+    
+    inline def longPressThreshold(value: Double): this.type = set("longPressThreshold", value.asInstanceOf[js.Any])
+    
+    inline def max(value: js.Date): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def messages(value: Messages): this.type = set("messages", value.asInstanceOf[js.Any])
+    
+    inline def min(value: js.Date): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def onDoubleClickEvent(value: (TEvent, /* e */ ReactEventFrom[HTMLElement]) => Callback): this.type = set("onDoubleClickEvent", js.Any.fromFunction2((t0: TEvent, t1: /* e */ ReactEventFrom[HTMLElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onDrillDown(value: (/* date */ js.Date, /* view */ View) => Callback): this.type = set("onDrillDown", js.Any.fromFunction2((t0: /* date */ js.Date, t1: /* view */ View) => (value(t0, t1)).runNow()))
+    
+    inline def onKeyPressEvent(value: (TEvent, /* e */ ReactEventFrom[HTMLElement]) => Callback): this.type = set("onKeyPressEvent", js.Any.fromFunction2((t0: TEvent, t1: /* e */ ReactEventFrom[HTMLElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onNavigate(value: (/* newDate */ js.Date, /* view */ View, /* action */ NavigateAction) => Callback): this.type = set("onNavigate", js.Any.fromFunction3((t0: /* newDate */ js.Date, t1: /* view */ View, t2: /* action */ NavigateAction) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onRangeChange(value: (/* range */ js.Array[js.Date] | End, /* view */ js.UndefOr[View]) => js.UndefOr[Unit]): this.type = set("onRangeChange", js.Any.fromFunction2(value))
+    
+    inline def onSelectEvent(value: (TEvent, /* e */ ReactEventFrom[HTMLElement]) => Callback): this.type = set("onSelectEvent", js.Any.fromFunction2((t0: TEvent, t1: /* e */ ReactEventFrom[HTMLElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onSelectSlot(value: /* slotInfo */ SlotInfo => Callback): this.type = set("onSelectSlot", js.Any.fromFunction1((t0: /* slotInfo */ SlotInfo) => value(t0).runNow()))
+    
+    inline def onSelecting(value: /* range */ End => js.UndefOr[Boolean]): this.type = set("onSelecting", js.Any.fromFunction1(value))
+    
+    inline def onShowMore(value: (/* events */ js.Array[TEvent], /* date */ js.Date) => Callback): this.type = set("onShowMore", js.Any.fromFunction2((t0: /* events */ js.Array[TEvent], t1: /* date */ js.Date) => (value(t0, t1)).runNow()))
+    
+    inline def onView(value: /* view */ View => Callback): this.type = set("onView", js.Any.fromFunction1((t0: /* view */ View) => value(t0).runNow()))
+    
+    inline def popup(value: Boolean): this.type = set("popup", value.asInstanceOf[js.Any])
+    
+    inline def popupOffset(value: Double | X): this.type = set("popupOffset", value.asInstanceOf[js.Any])
+    
+    inline def resourceAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, Any])): this.type = set("resourceAccessor", value.asInstanceOf[js.Any])
+    
+    inline def resourceAccessorFunction1(value: TEvent => Any): this.type = set("resourceAccessor", js.Any.fromFunction1(value))
+    
+    inline def resourceIdAccessor(value: (/* keyof TResource */ String) | (js.Function1[TResource, Any])): this.type = set("resourceIdAccessor", value.asInstanceOf[js.Any])
+    
+    inline def resourceIdAccessorFunction1(value: TResource => Any): this.type = set("resourceIdAccessor", js.Any.fromFunction1(value))
+    
+    inline def resourceTitleAccessor(value: (/* keyof TResource */ String) | (js.Function1[TResource, Any])): this.type = set("resourceTitleAccessor", value.asInstanceOf[js.Any])
+    
+    inline def resourceTitleAccessorFunction1(value: TResource => Any): this.type = set("resourceTitleAccessor", js.Any.fromFunction1(value))
+    
+    inline def resources(value: js.Array[TResource]): this.type = set("resources", value.asInstanceOf[js.Any])
+    
+    inline def resourcesVarargs(value: TResource*): this.type = set("resources", js.Array(value*))
+    
+    inline def rtl(value: Boolean): this.type = set("rtl", value.asInstanceOf[js.Any])
+    
+    inline def scrollToTime(value: js.Date): this.type = set("scrollToTime", value.asInstanceOf[js.Any])
+    
+    inline def selectable(value: Boolean | ignoreEvents): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def selected(value: Any): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def showAllEvents(value: Boolean): this.type = set("showAllEvents", value.asInstanceOf[js.Any])
+    
+    inline def showMultiDayTimes(value: Boolean): this.type = set("showMultiDayTimes", value.asInstanceOf[js.Any])
+    
+    inline def slotGroupPropGetter(value: CallbackTo[HTMLAttributes[HTMLDivElement]]): this.type = set("slotGroupPropGetter", value.toJsFn)
+    
+    inline def slotPropGetter(
+      value: (/* date */ js.Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement]
+    ): this.type = set("slotPropGetter", js.Any.fromFunction2(value))
+    
+    inline def startAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, js.Date])): this.type = set("startAccessor", value.asInstanceOf[js.Any])
+    
+    inline def startAccessorFunction1(value: TEvent => js.Date): this.type = set("startAccessor", js.Any.fromFunction1(value))
+    
+    inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def timeslots(value: Double): this.type = set("timeslots", value.asInstanceOf[js.Any])
+    
+    inline def titleAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, String])): this.type = set("titleAccessor", value.asInstanceOf[js.Any])
+    
+    inline def titleAccessorFunction1(value: TEvent => String): this.type = set("titleAccessor", js.Any.fromFunction1(value))
+    
+    inline def toolbar(value: Boolean): this.type = set("toolbar", value.asInstanceOf[js.Any])
+    
+    inline def tooltipAccessor(value: (/* keyof TEvent */ String) | (js.Function1[TEvent, String])): this.type = set("tooltipAccessor", value.asInstanceOf[js.Any])
+    
+    inline def tooltipAccessorFunction1(value: TEvent => String): this.type = set("tooltipAccessor", js.Any.fromFunction1(value))
+    
+    inline def view(value: View): this.type = set("view", value.asInstanceOf[js.Any])
+    
+    inline def views(value: ViewsProps[TEvent, TResource]): this.type = set("views", value.asInstanceOf[js.Any])
+    
+    inline def viewsVarargs(value: View*): this.type = set("views", js.Array(value*))
+  }
+  
+  def withProps[TEvent /* <: js.Object */, TResource /* <: js.Object */](p: CalendarProps[TEvent, TResource]): Builder[TEvent, TResource] = new Builder[TEvent, TResource](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

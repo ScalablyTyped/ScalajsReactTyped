@@ -2,18 +2,20 @@ package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an immutable snapshot of a script at a specified time.Once acquired, the
   * snapshot is observably immutable. i.e. the same calls with the same parameters will return
   * the same values.
   */
-trait IScriptSnapshot extends js.Object {
+trait IScriptSnapshot extends StObject {
+  
   /** Releases all resources held by this script snapshot */
   var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * Gets the TextChangeRange that describe how the text changed between this text and
     * an older version.  This information is used by the incremental parser to determine
@@ -22,26 +24,34 @@ trait IScriptSnapshot extends js.Object {
     * not happen and the entire document will be re - parsed.
     */
   def getChangeRange(oldSnapshot: IScriptSnapshot): js.UndefOr[TextChangeRange]
+  
   /** Gets the length of this script snapshot. */
   def getLength(): Double
+  
   /** Gets a portion of the script snapshot specified by [start, end). */
   def getText(start: Double, end: Double): java.lang.String
 }
-
 object IScriptSnapshot {
-  @scala.inline
-  def apply(
-    getChangeRange: IScriptSnapshot => CallbackTo[js.UndefOr[TextChangeRange]],
+  
+  inline def apply(
+    getChangeRange: IScriptSnapshot => js.UndefOr[TextChangeRange],
     getLength: CallbackTo[Double],
-    getText: (Double, Double) => CallbackTo[java.lang.String],
-    dispose: js.UndefOr[Callback] = js.undefined
+    getText: (Double, Double) => java.lang.String
   ): IScriptSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChangeRange")(js.Any.fromFunction1((t0: typingsJapgolly.typescript.mod.IScriptSnapshot) => getChangeRange(t0).runNow()))
-    __obj.updateDynamic("getLength")(getLength.toJsFn)
-    __obj.updateDynamic("getText")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => getText(t0, t1).runNow()))
-    dispose.foreach(p => __obj.updateDynamic("dispose")(p.toJsFn))
+    val __obj = js.Dynamic.literal(getChangeRange = js.Any.fromFunction1(getChangeRange), getLength = getLength.toJsFn, getText = js.Any.fromFunction2(getText))
     __obj.asInstanceOf[IScriptSnapshot]
   }
+  
+  extension [Self <: IScriptSnapshot](x: Self) {
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+    
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    
+    inline def setGetChangeRange(value: IScriptSnapshot => js.UndefOr[TextChangeRange]): Self = StObject.set(x, "getChangeRange", js.Any.fromFunction1(value))
+    
+    inline def setGetLength(value: CallbackTo[Double]): Self = StObject.set(x, "getLength", value.toJsFn)
+    
+    inline def setGetText(value: (Double, Double) => java.lang.String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
+  }
 }
-

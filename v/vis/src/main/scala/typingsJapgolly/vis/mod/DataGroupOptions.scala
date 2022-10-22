@@ -1,37 +1,57 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataGroupOptions extends js.Object {
+trait DataGroupOptions extends StObject {
+  
   var drawPoints: js.UndefOr[Graph2dDrawPointsOption | js.Function0[Unit]] = js.undefined
-   // TODO
+  
+  // TODO
   var excludeFromLegend: js.UndefOr[Boolean] = js.undefined
+  
   var interpolation: js.UndefOr[Boolean | InterpolationOptions] = js.undefined
+  
   var shaded: js.UndefOr[Graph2dShadedOption] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var yAxisOrientation: js.UndefOr[RightLeftEnumType] = js.undefined
 }
-
 object DataGroupOptions {
-  @scala.inline
-  def apply(
-    drawPoints: Graph2dDrawPointsOption | js.Function0[Unit] = null,
-    excludeFromLegend: js.UndefOr[Boolean] = js.undefined,
-    interpolation: Boolean | InterpolationOptions = null,
-    shaded: Graph2dShadedOption = null,
-    style: String = null,
-    yAxisOrientation: RightLeftEnumType = null
-  ): DataGroupOptions = {
+  
+  inline def apply(): DataGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawPoints != null) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromLegend)) __obj.updateDynamic("excludeFromLegend")(excludeFromLegend.asInstanceOf[js.Any])
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
-    if (shaded != null) __obj.updateDynamic("shaded")(shaded.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (yAxisOrientation != null) __obj.updateDynamic("yAxisOrientation")(yAxisOrientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGroupOptions]
   }
+  
+  extension [Self <: DataGroupOptions](x: Self) {
+    
+    inline def setDrawPoints(value: Graph2dDrawPointsOption | js.Function0[Unit]): Self = StObject.set(x, "drawPoints", value.asInstanceOf[js.Any])
+    
+    inline def setDrawPointsCallback(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "drawPoints", value.toJsFn)
+    
+    inline def setDrawPointsUndefined: Self = StObject.set(x, "drawPoints", js.undefined)
+    
+    inline def setExcludeFromLegend(value: Boolean): Self = StObject.set(x, "excludeFromLegend", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeFromLegendUndefined: Self = StObject.set(x, "excludeFromLegend", js.undefined)
+    
+    inline def setInterpolation(value: Boolean | InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    
+    inline def setShaded(value: Graph2dShadedOption): Self = StObject.set(x, "shaded", value.asInstanceOf[js.Any])
+    
+    inline def setShadedUndefined: Self = StObject.set(x, "shaded", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setYAxisOrientation(value: RightLeftEnumType): Self = StObject.set(x, "yAxisOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisOrientationUndefined: Self = StObject.set(x, "yAxisOrientation", js.undefined)
+  }
 }
-

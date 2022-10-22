@@ -1,18 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.System.ShutdownManager")
-@js.native
-abstract class ShutdownManager () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.System.ShutdownManager")
-@js.native
-object ShutdownManager extends js.Object {
-  var beginShutdown: js.Any = js.native
-   /* unmapped type */ var cancelShutdown: js.Any = js.native
-}
-
+trait ShutdownManager extends StObject

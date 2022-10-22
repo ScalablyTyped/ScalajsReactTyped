@@ -1,22 +1,29 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.AnonCompact
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
+import typingsJapgolly.officeUiFabricReact.anon.Compact
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDotbaseMod.IGroupedListState
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "GroupedListBase")
 @js.native
-class GroupedListBase protected ()
+open class GroupedListBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libGroupedListMod.GroupedListBase {
   def this(props: IGroupedListProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "GroupedListBase")
-@js.native
-object GroupedListBase extends js.Object {
-  var defaultProps: AnonCompact = js.native
+object GroupedListBase {
+  
+  @JSImport("office-ui-fabric-react", "GroupedListBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "GroupedListBase.defaultProps")
+  @js.native
+  def defaultProps: Compact = js.native
+  inline def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  inline def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupedListState]
 }
-

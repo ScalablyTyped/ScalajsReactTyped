@@ -1,44 +1,39 @@
 package typingsJapgolly.reactCssCollapse.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCssCollapse.mod.Props
 import typingsJapgolly.reactCssCollapse.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCssCollapse {
-  def apply(
-    isOpen: Boolean,
-    className: String = null,
-    onRest: js.UndefOr[Callback] = js.undefined,
-    transition: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    onRest.foreach(p => __obj.updateDynamic("onRest")(p.toJsFn))
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCssCollapse.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCssCollapse.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCssCollapse.mod.Props])(children: _*)
+  inline def apply(isOpen: Boolean): Builder = {
+    val __props = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("react-css-collapse", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classNameNull: this.type = set("className", null)
+    
+    inline def onRest(value: Callback): this.type = set("onRest", value.toJsFn)
+    
+    inline def transition(value: String): this.type = set("transition", value.asInstanceOf[js.Any])
+    
+    inline def transitionNull: this.type = set("transition", null)
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

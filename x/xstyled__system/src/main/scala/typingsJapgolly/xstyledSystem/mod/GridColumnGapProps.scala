@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridColumnGapProperty
+import typingsJapgolly.csstype.mod.Property.GridColumnGap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnGapProps[TLength] extends js.Object {
-  val gridColumnGap: js.UndefOr[ResponsiveValue[GridColumnGapProperty[TLength]]] = js.undefined
+trait GridColumnGapProps[TLength] extends StObject {
+  
+  val gridColumnGap: js.UndefOr[ResponsiveValue[GridColumnGap[TLength]]] = js.undefined
 }
-
 object GridColumnGapProps {
-  @scala.inline
-  def apply[TLength](gridColumnGap: ResponsiveValue[GridColumnGapProperty[TLength]] = null): GridColumnGapProps[TLength] = {
+  
+  inline def apply[TLength](): GridColumnGapProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnGapProps[TLength]]
   }
+  
+  extension [Self <: GridColumnGapProps[?], TLength](x: Self & GridColumnGapProps[TLength]) {
+    
+    inline def setGridColumnGap(value: ResponsiveValue[GridColumnGap[TLength]]): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
+    
+    inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
+    
+    inline def setGridColumnGapVarargs(value: GridColumnGap[TLength]*): Self = StObject.set(x, "gridColumnGap", js.Array(value*))
+  }
 }
-

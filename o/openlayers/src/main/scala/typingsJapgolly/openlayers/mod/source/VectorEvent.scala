@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.Feature
 import typingsJapgolly.openlayers.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.VectorEvent")
 @js.native
-class VectorEvent protected () extends Event {
+open class VectorEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.source.Vector} instances are instances of this
@@ -27,10 +27,10 @@ class VectorEvent protected () extends Event {
     */
   def this(`type`: String) = this()
   def this(`type`: String, opt_feature: Feature) = this()
+  
   /**
     * The feature being added or removed.
     * @api stable
     */
   var feature: Feature = js.native
 }
-

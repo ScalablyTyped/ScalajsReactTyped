@@ -1,63 +1,59 @@
 package typingsJapgolly.jasmine.jasmine
 
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Env extends js.Object {
-  var currentSpec: Spec = js.native
-  var matchersClass: Matchers[_] = js.native
-  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = js.native
-  def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
+trait Env extends StObject {
+  
   def addReporter(reporter: CustomReporter): Unit = js.native
-  def addReporter(reporter: Reporter): Unit = js.native
-  def afterAll(afterAllFunction: ImplementationCallback): Unit = js.native
-  def afterAll(afterAllFunction: ImplementationCallback, timeout: Double): Unit = js.native
-  def afterEach(afterEachFunction: ImplementationCallback): Unit = js.native
-  def afterEach(afterEachFunction: ImplementationCallback, timeout: Double): Unit = js.native
+  
   def allowRespy(allow: Boolean): Unit = js.native
-  def beforeAll(beforeAllFunction: ImplementationCallback): Unit = js.native
-  def beforeAll(beforeAllFunction: ImplementationCallback, timeout: Double): Unit = js.native
-  // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
-  def beforeEach(beforeEachFunction: ImplementationCallback): Unit = js.native
-  def beforeEach(beforeEachFunction: ImplementationCallback, timeout: Double): Unit = js.native
+  
   def clearReporters(): Unit = js.native
-  def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
-  def compareRegExps_(a: js.RegExp, b: js.RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
-  def configure(configuration: EnvConfiguration): Unit = js.native
-  def contains_(haystack: js.Any, needle: js.Any): Boolean = js.native
-  def currentRunner(): Runner = js.native
-  def describe(description: String, specDefinitions: js.Function0[Unit]): Suite = js.native
-  def equals_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
-  def execute(): Unit = js.native
-  def it(description: String, func: js.Function0[Unit]): Spec = js.native
-  def nextSpecId(): Double = js.native
-  def provideFallbackReporter(reporter: Reporter): Unit = js.native
-  def randomTests(): Boolean = js.native
+  
+  def configuration(): Configuration = js.native
+  
+  def configure(configuration: Configuration): Unit = js.native
+  
+  /** @async */
+  def execute(): PromiseLike[JasmineDoneInfo] = js.native
+  def execute(runnablesToRun: js.Array[Suite]): PromiseLike[JasmineDoneInfo] = js.native
+  def execute(runnablesToRun: js.Array[Suite], onComplete: Func): Unit = js.native
+  def execute(runnablesToRun: Null, onComplete: Func): Unit = js.native
+  def execute(runnablesToRun: Unit, onComplete: Func): Unit = js.native
+  
+  def provideFallbackReporter(reporter: CustomReporter): Unit = js.native
+  
   /**
-    * @deprecated Use random option in {@link jasmine.Env.configure} instead.
+    * Sets a user-defined property that will be provided to reporters as
+    * part of the properties field of SpecResult.
+    * @since 3.6.0
     */
-  def randomizeTests(b: Boolean): Unit = js.native
+  def setSpecProperty(key: String, value: scala.Any): Unit = js.native
   /**
-    * @deprecated Use seed option in {@link jasmine.Env.configure} instead.
+    * Sets a user-defined property that will be provided to reporters as
+    * part of the properties field of SpecResult.
+    * @since 3.6.0
     */
-  def seed(seed: String): String | Double = js.native
-  def seed(seed: Double): String | Double = js.native
-  def specFilter(spec: Spec): Boolean = js.native
+  @JSName("setSpecProperty")
+  var setSpecProperty_Original: js.Function2[/* key */ String, /* value */ scala.Any, Unit] = js.native
+  
   /**
-    * @deprecated Use failFast option in {@link jasmine.Env.configure} instead.
+    * Sets a user-defined property that will be provided to reporters as
+    * part of the properties field of SuiteResult.
+    * @since 3.6.0
     */
-  def stopOnSpecFailure(value: Boolean): Unit = js.native
+  def setSuiteProperty(key: String, value: scala.Any): Unit = js.native
   /**
-    * @deprecated Use oneFailurePerSpec option in {@link jasmine.Env.configure} instead.
+    * Sets a user-defined property that will be provided to reporters as
+    * part of the properties field of SuiteResult.
+    * @since 3.6.0
     */
-  def throwOnExpectationFailure(value: Boolean): Unit = js.native
-  def throwingExpectationFailures(): Boolean = js.native
-  def version(): js.Any = js.native
-  def versionString(): String = js.native
-  def xdescribe(desc: String, specDefinitions: js.Function0[Unit]): XSuite = js.native
-  // iit(description: string, func: () => void): Spec; Not a part of jasmine. Angular team adds these
-  def xit(desc: String, func: js.Function0[Unit]): XSpec = js.native
+  @JSName("setSuiteProperty")
+  var setSuiteProperty_Original: js.Function2[/* key */ String, /* value */ scala.Any, Unit] = js.native
+  
+  def topSuite(): Suite = js.native
 }
-

@@ -1,23 +1,45 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceMotionEventRotationRateInit extends js.Object {
+trait DeviceMotionEventRotationRateInit extends StObject {
+  
+  /* standard dom */
   var alpha: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
   var beta: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
   var gamma: js.UndefOr[Double | Null] = js.undefined
 }
-
 object DeviceMotionEventRotationRateInit {
-  @scala.inline
-  def apply(alpha: Int | Double = null, beta: Int | Double = null, gamma: Int | Double = null): DeviceMotionEventRotationRateInit = {
+  
+  inline def apply(): DeviceMotionEventRotationRateInit = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMotionEventRotationRateInit]
   }
+  
+  extension [Self <: DeviceMotionEventRotationRateInit](x: Self) {
+    
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaNull: Self = StObject.set(x, "alpha", null)
+    
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    
+    inline def setBetaNull: Self = StObject.set(x, "beta", null)
+    
+    inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+    
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    
+    inline def setGammaNull: Self = StObject.set(x, "gamma", null)
+    
+    inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+  }
 }
-

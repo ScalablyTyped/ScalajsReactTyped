@@ -1,23 +1,38 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MotorPins extends js.Object {
+trait MotorPins extends StObject {
+  
   var brake: js.UndefOr[Double] = js.undefined
+  
   var cdir: js.UndefOr[Double] = js.undefined
+  
   var dir: Double
+  
   var pwm: Double
 }
-
 object MotorPins {
-  @scala.inline
-  def apply(dir: Double, pwm: Double, brake: Int | Double = null, cdir: Int | Double = null): MotorPins = {
+  
+  inline def apply(dir: Double, pwm: Double): MotorPins = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], pwm = pwm.asInstanceOf[js.Any])
-    if (brake != null) __obj.updateDynamic("brake")(brake.asInstanceOf[js.Any])
-    if (cdir != null) __obj.updateDynamic("cdir")(cdir.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorPins]
   }
+  
+  extension [Self <: MotorPins](x: Self) {
+    
+    inline def setBrake(value: Double): Self = StObject.set(x, "brake", value.asInstanceOf[js.Any])
+    
+    inline def setBrakeUndefined: Self = StObject.set(x, "brake", js.undefined)
+    
+    inline def setCdir(value: Double): Self = StObject.set(x, "cdir", value.asInstanceOf[js.Any])
+    
+    inline def setCdirUndefined: Self = StObject.set(x, "cdir", js.undefined)
+    
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setPwm(value: Double): Self = StObject.set(x, "pwm", value.asInstanceOf[js.Any])
+  }
 }
-

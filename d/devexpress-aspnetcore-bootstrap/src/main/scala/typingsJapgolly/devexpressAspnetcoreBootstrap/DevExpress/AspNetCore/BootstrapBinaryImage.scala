@@ -4,15 +4,19 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.callbackError
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.click
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.endCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapBinaryImage")
 @js.native
-class BootstrapBinaryImage () extends BootstrapClientEdit {
+trait BootstrapBinaryImage
+  extends StObject
+     with BootstrapClientEdit {
+  
   def clear(): Unit = js.native
+  
   def getUploadedFileName(): String = js.native
+  
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")
@@ -41,6 +45,7 @@ class BootstrapBinaryImage () extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_beginCallback(
     eventName: beginCallback,
@@ -61,6 +66,7 @@ class BootstrapBinaryImage () extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_beginCallback(
     eventName: beginCallback,
@@ -81,8 +87,9 @@ class BootstrapBinaryImage () extends BootstrapClientEdit {
     eventName: endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], Unit]
   ): this.type = js.native
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  
   def setSize(width: Double, height: Double): Unit = js.native
 }
-

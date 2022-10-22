@@ -1,46 +1,81 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceDetail extends js.Object {
+trait DeviceDetail extends StObject {
+  
   // Indicates the browser information of the used for signing in.
-  var browser: js.UndefOr[String] = js.undefined
+  var browser: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Refers to the UniqueID of the device used for signing in.
-  var deviceId: js.UndefOr[String] = js.undefined
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Refers to the name of the device used for signing in.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates whether the device is compliant.
-  var isCompliant: js.UndefOr[Boolean] = js.undefined
+  var isCompliant: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Indicates whether the device is managed.
-  var isManaged: js.UndefOr[Boolean] = js.undefined
+  var isManaged: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Indicates the operating system name and version used for signing in.
-  var operatingSystem: js.UndefOr[String] = js.undefined
+  var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Provides information about whether the signed-in device is Workplace Joined, AzureAD Joined, Domain Joined.
-  var trustType: js.UndefOr[String] = js.undefined
+  var trustType: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DeviceDetail {
-  @scala.inline
-  def apply(
-    browser: String = null,
-    deviceId: String = null,
-    displayName: String = null,
-    isCompliant: js.UndefOr[Boolean] = js.undefined,
-    isManaged: js.UndefOr[Boolean] = js.undefined,
-    operatingSystem: String = null,
-    trustType: String = null
-  ): DeviceDetail = {
+  
+  inline def apply(): DeviceDetail = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.asInstanceOf[js.Any])
-    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.asInstanceOf[js.Any])
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
-    if (trustType != null) __obj.updateDynamic("trustType")(trustType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDetail]
   }
+  
+  extension [Self <: DeviceDetail](x: Self) {
+    
+    inline def setBrowser(value: NullableOption[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserNull: Self = StObject.set(x, "browser", null)
+    
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    
+    inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setIsCompliant(value: NullableOption[Boolean]): Self = StObject.set(x, "isCompliant", value.asInstanceOf[js.Any])
+    
+    inline def setIsCompliantNull: Self = StObject.set(x, "isCompliant", null)
+    
+    inline def setIsCompliantUndefined: Self = StObject.set(x, "isCompliant", js.undefined)
+    
+    inline def setIsManaged(value: NullableOption[Boolean]): Self = StObject.set(x, "isManaged", value.asInstanceOf[js.Any])
+    
+    inline def setIsManagedNull: Self = StObject.set(x, "isManaged", null)
+    
+    inline def setIsManagedUndefined: Self = StObject.set(x, "isManaged", js.undefined)
+    
+    inline def setOperatingSystem(value: NullableOption[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    
+    inline def setOperatingSystemNull: Self = StObject.set(x, "operatingSystem", null)
+    
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    
+    inline def setTrustType(value: NullableOption[String]): Self = StObject.set(x, "trustType", value.asInstanceOf[js.Any])
+    
+    inline def setTrustTypeNull: Self = StObject.set(x, "trustType", null)
+    
+    inline def setTrustTypeUndefined: Self = StObject.set(x, "trustType", js.undefined)
+  }
 }
-

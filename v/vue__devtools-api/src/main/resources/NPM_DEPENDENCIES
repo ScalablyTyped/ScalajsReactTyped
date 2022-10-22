@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@vue/devtools-api" : "6.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@vue/devtools-api" : "6.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

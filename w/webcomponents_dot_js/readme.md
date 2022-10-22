@@ -10,13 +10,13 @@ webcomponents.js
 | ------------------ | :-------------: |
 | Full name          | webcomponents.js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 40 |
-| # downloads        | 1435441 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 65809.0 |
+| # stars            | 3868.0 |
 
 ## Links
-- [Homepage](https://github.com/webcomponents/webcomponentsjs#readme)
+- [Homepage](http://webcomponents.org)
 - [Bugs](https://github.com/webcomponents/webcomponentsjs/issues)
 - [Repository](https://github.com/webcomponents/webcomponentsjs)
 - [Npm](https://www.npmjs.com/package/webcomponents.js)

@@ -1,53 +1,57 @@
 package typingsJapgolly.mockAwsS3.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.awsSdk.converterMod.Converter.ConverterOptions
-import typingsJapgolly.awsSdk.documentClientMod.DocumentClient.DocumentClientOptions
-import typingsJapgolly.awsSdk.dynamodbMod.AttributeMap
-import typingsJapgolly.awsSdk.dynamodbMod.AttributeValue
-import typingsJapgolly.awsSdk.dynamodbMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeMap
+import typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeValue
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ClientConfiguration
+import typingsJapgolly.awsSdk.libDynamodbConverterMod.Converter.ConverterOptions
+import typingsJapgolly.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DocumentClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "DynamoDB")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class DynamoDB ()
+open class DynamoDB ()
   extends typingsJapgolly.awsSdk.mod.DynamoDB {
   def this(options: ClientConfiguration) = this()
 }
-
-@JSImport("mock-aws-s3", "DynamoDB")
-@js.native
-object DynamoDB extends js.Object {
-  @js.native
-  class Converter ()
-    extends typingsJapgolly.awsSdk.mod.DynamoDB.Converter
+object DynamoDB {
   
+  @JSImport("mock-aws-s3", "DynamoDB.Converter")
+  @js.native
+  open class Converter ()
+    extends typingsJapgolly.awsSdk.mod.DynamoDB.Converter
+  /* static members */
+  object Converter {
+    
+    @JSImport("mock-aws-s3", "DynamoDB.Converter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def input(data: Any): AttributeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(data.asInstanceOf[js.Any]).asInstanceOf[AttributeValue]
+    inline def input(data: Any, options: ConverterOptions): AttributeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("input")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AttributeValue]
+    
+    inline def marshall(data: StringDictionary[Any]): AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(data.asInstanceOf[js.Any]).asInstanceOf[AttributeMap]
+    inline def marshall(data: StringDictionary[Any], options: ConverterOptions): AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AttributeMap]
+    
+    inline def output(data: AttributeValue): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def output(data: AttributeValue, options: ConverterOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def unmarshall(data: AttributeMap): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(data.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  }
+  
+  @JSImport("mock-aws-s3", "DynamoDB.DocumentClient")
   @js.native
   /**
     * Creates a DynamoDB document client with a set of configuration options.
     */
-  class DocumentClient ()
+  open class DocumentClient ()
     extends typingsJapgolly.awsSdk.mod.DynamoDB.DocumentClient {
-    def this(options: DocumentClientOptions with ClientConfiguration) = this()
+    def this(options: DocumentClientOptions & ClientConfiguration) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Converter extends js.Object {
-    def input(data: js.Any): AttributeValue = js.native
-    def input(data: js.Any, options: ConverterOptions): AttributeValue = js.native
-    def marshall(data: StringDictionary[js.Any]): AttributeMap = js.native
-    def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = js.native
-    def output(data: AttributeValue): js.Any = js.native
-    def output(data: AttributeValue, options: ConverterOptions): js.Any = js.native
-    def unmarshall(data: AttributeMap): StringDictionary[js.Any] = js.native
-    def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = js.native
-  }
-  
 }
-

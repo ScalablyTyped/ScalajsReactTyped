@@ -1,32 +1,36 @@
 package typingsJapgolly.azdata.mod
 
 import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadingComponentBuilder extends ComponentBuilder[LoadingComponent] {
+trait LoadingComponentBuilder
+  extends StObject
+     with ComponentBuilder[LoadingComponent, LoadingComponentProperties] {
+  
   /**
-  		 * Set the component wrapped by the LoadingComponent
-  		 * @param component The component to wrap
-  		 */
+    * Set the component wrapped by the LoadingComponent
+    * @param component The component to wrap
+    */
   def withItem(component: Component): LoadingComponentBuilder
 }
-
 object LoadingComponentBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     component: CallbackTo[LoadingComponent],
-    withItem: Component => CallbackTo[LoadingComponentBuilder],
-    withProperties: js.Any => CallbackTo[ComponentBuilder[LoadingComponent]],
-    withValidation: js.Function1[LoadingComponent, Boolean] => CallbackTo[ComponentBuilder[LoadingComponent]]
+    withItem: Component => LoadingComponentBuilder,
+    withProperties: LoadingComponentProperties => ComponentBuilder[LoadingComponent, LoadingComponentProperties],
+    withProps: LoadingComponentProperties => ComponentBuilder[LoadingComponent, LoadingComponentProperties],
+    withValidation: js.Function1[LoadingComponent, Boolean | Thenable[Boolean]] => ComponentBuilder[LoadingComponent, LoadingComponentProperties]
   ): LoadingComponentBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component.toJsFn)
-    __obj.updateDynamic("withItem")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.Component) => withItem(t0).runNow()))
-    __obj.updateDynamic("withProperties")(js.Any.fromFunction1((t0: js.Any) => withProperties(t0).runNow()))
-    __obj.updateDynamic("withValidation")(js.Any.fromFunction1((t0: js.Function1[typingsJapgolly.azdata.mod.LoadingComponent, scala.Boolean]) => withValidation(t0).runNow()))
+    val __obj = js.Dynamic.literal(component = component.toJsFn, withItem = js.Any.fromFunction1(withItem), withProperties = js.Any.fromFunction1(withProperties), withProps = js.Any.fromFunction1(withProps), withValidation = js.Any.fromFunction1(withValidation))
     __obj.asInstanceOf[LoadingComponentBuilder]
   }
+  
+  extension [Self <: LoadingComponentBuilder](x: Self) {
+    
+    inline def setWithItem(value: Component => LoadingComponentBuilder): Self = StObject.set(x, "withItem", js.Any.fromFunction1(value))
+  }
 }
-

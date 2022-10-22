@@ -11,9 +11,9 @@ GRC's UHE PRNG in node (Ultra-High Entropy Pseudo-Random Number Generator by Gib
 | Full name          | random-seed |
 | Keywords           | random, number, generator, seed, uhe, prng |
 | # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 1214384 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 689792.3333333334 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/skratchdot/random-seed)

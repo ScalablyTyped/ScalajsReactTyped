@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DefaultColumnValue extends js.Object {
+trait DefaultColumnValue extends StObject {
+  
   // The formula used to compute the default value for this column.
-  var formula: js.UndefOr[String] = js.undefined
+  var formula: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The direct value to use as the default value for this column.
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DefaultColumnValue {
-  @scala.inline
-  def apply(formula: String = null, value: String = null): DefaultColumnValue = {
+  
+  inline def apply(): DefaultColumnValue = {
     val __obj = js.Dynamic.literal()
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultColumnValue]
   }
+  
+  extension [Self <: DefaultColumnValue](x: Self) {
+    
+    inline def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaNull: Self = StObject.set(x, "formula", null)
+    
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

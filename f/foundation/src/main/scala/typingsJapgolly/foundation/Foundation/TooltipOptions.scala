@@ -1,43 +1,68 @@
 package typingsJapgolly.foundation.Foundation
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TooltipOptions extends js.Object {
+trait TooltipOptions extends StObject {
+  
   var additional_inheritable_classes: js.UndefOr[js.Array[String]] = js.undefined
+  
   var append_to: js.UndefOr[String] = js.undefined
+  
   var disable_for_touch: js.UndefOr[Boolean] = js.undefined
+  
   var hover_delay: js.UndefOr[Double] = js.undefined
+  
   var show_on: js.UndefOr[String] = js.undefined
+  
   var tip_template: js.UndefOr[js.Function2[/* selector */ String, /* content */ String, String]] = js.undefined
+  
   var tooltip_class: js.UndefOr[String] = js.undefined
+  
   var touch_close_text: js.UndefOr[String] = js.undefined
 }
-
 object TooltipOptions {
-  @scala.inline
-  def apply(
-    additional_inheritable_classes: js.Array[String] = null,
-    append_to: String = null,
-    disable_for_touch: js.UndefOr[Boolean] = js.undefined,
-    hover_delay: Int | Double = null,
-    show_on: String = null,
-    tip_template: (/* selector */ String, /* content */ String) => CallbackTo[String] = null,
-    tooltip_class: String = null,
-    touch_close_text: String = null
-  ): TooltipOptions = {
+  
+  inline def apply(): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (additional_inheritable_classes != null) __obj.updateDynamic("additional_inheritable_classes")(additional_inheritable_classes.asInstanceOf[js.Any])
-    if (append_to != null) __obj.updateDynamic("append_to")(append_to.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_for_touch)) __obj.updateDynamic("disable_for_touch")(disable_for_touch.asInstanceOf[js.Any])
-    if (hover_delay != null) __obj.updateDynamic("hover_delay")(hover_delay.asInstanceOf[js.Any])
-    if (show_on != null) __obj.updateDynamic("show_on")(show_on.asInstanceOf[js.Any])
-    if (tip_template != null) __obj.updateDynamic("tip_template")(js.Any.fromFunction2((t0: /* selector */ java.lang.String, t1: /* content */ java.lang.String) => tip_template(t0, t1).runNow()))
-    if (tooltip_class != null) __obj.updateDynamic("tooltip_class")(tooltip_class.asInstanceOf[js.Any])
-    if (touch_close_text != null) __obj.updateDynamic("touch_close_text")(touch_close_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
+  
+  extension [Self <: TooltipOptions](x: Self) {
+    
+    inline def setAdditional_inheritable_classes(value: js.Array[String]): Self = StObject.set(x, "additional_inheritable_classes", value.asInstanceOf[js.Any])
+    
+    inline def setAdditional_inheritable_classesUndefined: Self = StObject.set(x, "additional_inheritable_classes", js.undefined)
+    
+    inline def setAdditional_inheritable_classesVarargs(value: String*): Self = StObject.set(x, "additional_inheritable_classes", js.Array(value*))
+    
+    inline def setAppend_to(value: String): Self = StObject.set(x, "append_to", value.asInstanceOf[js.Any])
+    
+    inline def setAppend_toUndefined: Self = StObject.set(x, "append_to", js.undefined)
+    
+    inline def setDisable_for_touch(value: Boolean): Self = StObject.set(x, "disable_for_touch", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_for_touchUndefined: Self = StObject.set(x, "disable_for_touch", js.undefined)
+    
+    inline def setHover_delay(value: Double): Self = StObject.set(x, "hover_delay", value.asInstanceOf[js.Any])
+    
+    inline def setHover_delayUndefined: Self = StObject.set(x, "hover_delay", js.undefined)
+    
+    inline def setShow_on(value: String): Self = StObject.set(x, "show_on", value.asInstanceOf[js.Any])
+    
+    inline def setShow_onUndefined: Self = StObject.set(x, "show_on", js.undefined)
+    
+    inline def setTip_template(value: (/* selector */ String, /* content */ String) => String): Self = StObject.set(x, "tip_template", js.Any.fromFunction2(value))
+    
+    inline def setTip_templateUndefined: Self = StObject.set(x, "tip_template", js.undefined)
+    
+    inline def setTooltip_class(value: String): Self = StObject.set(x, "tooltip_class", value.asInstanceOf[js.Any])
+    
+    inline def setTooltip_classUndefined: Self = StObject.set(x, "tooltip_class", js.undefined)
+    
+    inline def setTouch_close_text(value: String): Self = StObject.set(x, "touch_close_text", value.asInstanceOf[js.Any])
+    
+    inline def setTouch_close_textUndefined: Self = StObject.set(x, "touch_close_text", js.undefined)
+  }
 }
-

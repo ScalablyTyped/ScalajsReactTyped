@@ -1,22 +1,27 @@
 package typingsJapgolly.stylus.mod.Stylus.Nodes
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.stylus.AnonColumn
+import typingsJapgolly.stylus.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait String extends Node {
+trait String
+  extends StObject
+     with Node {
+  
   var prefixed: scala.Boolean
+  
   var quote: java.lang.String
+  
   var string: java.lang.String
+  
   var `val`: java.lang.String
 }
-
 object String {
-  @scala.inline
-  def apply(
-    coerce: Node => CallbackTo[Node],
+  
+  inline def apply(
+    coerce: Node => Node,
     column: Double,
     eval: CallbackTo[Node],
     filename: java.lang.String,
@@ -24,26 +29,29 @@ object String {
     hash: java.lang.String,
     lineno: Double,
     nodeName: java.lang.String,
-    operate: (java.lang.String, Node) => CallbackTo[Node],
+    operate: (java.lang.String, Node) => Node,
     prefixed: scala.Boolean,
     quote: java.lang.String,
-    shouldCoerce: java.lang.String => CallbackTo[scala.Boolean],
+    shouldCoerce: java.lang.String => scala.Boolean,
     string: java.lang.String,
     toBoolean: CallbackTo[Boolean],
     toExpression: CallbackTo[Expression],
-    toJSON: CallbackTo[AnonColumn],
+    toJSON: CallbackTo[Column],
     `val`: java.lang.String
   ): String = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], prefixed = prefixed.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-    __obj.updateDynamic("coerce")(js.Any.fromFunction1((t0: typingsJapgolly.stylus.mod.Stylus.Nodes.Node) => coerce(t0).runNow()))
-    __obj.updateDynamic("eval")(eval.toJsFn)
-    __obj.updateDynamic("operate")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.stylus.mod.Stylus.Nodes.Node) => operate(t0, t1).runNow()))
-    __obj.updateDynamic("shouldCoerce")(js.Any.fromFunction1((t0: java.lang.String) => shouldCoerce(t0).runNow()))
-    __obj.updateDynamic("toBoolean")(toBoolean.toJsFn)
-    __obj.updateDynamic("toExpression")(toExpression.toJsFn)
-    __obj.updateDynamic("toJSON")(toJSON.toJsFn)
+    val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), column = column.asInstanceOf[js.Any], eval = eval.toJsFn, filename = filename.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], operate = js.Any.fromFunction2(operate), prefixed = prefixed.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any], shouldCoerce = js.Any.fromFunction1(shouldCoerce), string = string.asInstanceOf[js.Any], toBoolean = toBoolean.toJsFn, toExpression = toExpression.toJsFn, toJSON = toJSON.toJsFn)
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[String]
   }
+  
+  extension [Self <: String](x: Self) {
+    
+    inline def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
+    
+    inline def setQuote(value: java.lang.String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,33 @@
 package typingsJapgolly.cssTree.mod
 
 import typingsJapgolly.cssTree.cssTreeStrings.String
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StringNode
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
+  
   @JSName("type")
   var type_StringNode: String
+  
   var value: java.lang.String
 }
-
 object StringNode {
-  @scala.inline
-  def apply(`type`: String, value: java.lang.String, loc: CssLocation = null): StringNode = {
+  
+  inline def apply(value: java.lang.String): StringNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("String")
     __obj.asInstanceOf[StringNode]
   }
+  
+  extension [Self <: StringNode](x: Self) {
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

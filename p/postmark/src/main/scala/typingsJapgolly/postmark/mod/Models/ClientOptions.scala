@@ -1,39 +1,59 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark", "Models.ClientOptions")
-@js.native
-object ClientOptions extends js.Object {
-  @js.native
-  class Configuration protected ()
-    extends typingsJapgolly.postmark.modelsMod.ClientOptions.Configuration {
-    def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
-  }
+object ClientOptions {
   
+  @JSImport("postmark", "Models.ClientOptions.AuthHeaderNames")
   @js.native
-  object DefaultHeaderNames extends js.Object {
-    /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN with String = js.native
-    /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN with String = js.native
+  object AuthHeaderNames extends StObject {
+    
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
-        typingsJapgolly.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames with String
+        typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.AuthHeaderNames & String
       ] = js.native
+    
+    /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.AuthHeaderNames.ACCOUNT_TOKEN & String = js.native
+    
+    /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.AuthHeaderNames.SERVER_TOKEN & String = js.native
   }
   
+  @JSImport("postmark", "Models.ClientOptions.Configuration")
   @js.native
-  object HttpMethod extends js.Object {
-    /* "DELETE" */ val DELETE: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.DELETE with String = js.native
-    /* "GET" */ val GET: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.GET with String = js.native
-    /* "HEAD" */ val HEAD: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.HEAD with String = js.native
-    /* "OPTIONS" */ val OPTIONS: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.OPTIONS with String = js.native
-    /* "POST" */ val POST: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.POST with String = js.native
-    /* "PUT" */ val PUT: typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod.PUT with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.postmark.clientOptionsMod.ClientOptions.HttpMethod with String] = js.native
+  open class Configuration ()
+    extends typingsJapgolly.postmark.distClientModelsMod.ClientOptions.Configuration {
+    def this(useHttps: Boolean) = this()
+    def this(useHttps: Boolean, requestHost: String) = this()
+    def this(useHttps: Unit, requestHost: String) = this()
+    def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
+    def this(useHttps: Boolean, requestHost: Unit, timeout: Double) = this()
+    def this(useHttps: Unit, requestHost: String, timeout: Double) = this()
+    def this(useHttps: Unit, requestHost: Unit, timeout: Double) = this()
   }
   
+  @JSImport("postmark", "Models.ClientOptions.HttpMethod")
+  @js.native
+  object HttpMethod extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod & String
+      ] = js.native
+    
+    /* "DELETE" */ val DELETE: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.DELETE & String = js.native
+    
+    /* "GET" */ val GET: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.GET & String = js.native
+    
+    /* "HEAD" */ val HEAD: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.HEAD & String = js.native
+    
+    /* "OPTIONS" */ val OPTIONS: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.OPTIONS & String = js.native
+    
+    /* "PATCH" */ val PATCH: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.PATCH & String = js.native
+    
+    /* "POST" */ val POST: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.POST & String = js.native
+    
+    /* "PUT" */ val PUT: typingsJapgolly.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.PUT & String = js.native
+  }
 }
-

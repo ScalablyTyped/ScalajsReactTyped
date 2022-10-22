@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeriodicUpdateRecurrence extends js.Object
-
+sealed trait PeriodicUpdateRecurrence extends StObject
 @JSGlobal("Windows.UI.Notifications.PeriodicUpdateRecurrence")
 @js.native
-object PeriodicUpdateRecurrence extends js.Object {
-  @js.native
-  sealed trait daily extends PeriodicUpdateRecurrence
+object PeriodicUpdateRecurrence extends StObject {
   
   @js.native
-  sealed trait halfHour extends PeriodicUpdateRecurrence
+  sealed trait daily
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   @js.native
-  sealed trait hour extends PeriodicUpdateRecurrence
+  sealed trait halfHour
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   @js.native
-  sealed trait sixHours extends PeriodicUpdateRecurrence
+  sealed trait hour
+    extends StObject
+       with PeriodicUpdateRecurrence
   
   @js.native
-  sealed trait twelveHours extends PeriodicUpdateRecurrence
+  sealed trait sixHours
+    extends StObject
+       with PeriodicUpdateRecurrence
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PeriodicUpdateRecurrence with Double] = js.native
-  /* 4 */ @js.native
-  object daily extends TopLevel[daily with Double]
-  
-  /* 0 */ @js.native
-  object halfHour extends TopLevel[halfHour with Double]
-  
-  /* 1 */ @js.native
-  object hour extends TopLevel[hour with Double]
-  
-  /* 2 */ @js.native
-  object sixHours extends TopLevel[sixHours with Double]
-  
-  /* 3 */ @js.native
-  object twelveHours extends TopLevel[twelveHours with Double]
-  
+  @js.native
+  sealed trait twelveHours
+    extends StObject
+       with PeriodicUpdateRecurrence
 }
-

@@ -1,58 +1,44 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.mjmlReact.mod.ClassNameProps
 import typingsJapgolly.mjmlReact.mod.HrefProps
 import typingsJapgolly.mjmlReact.mod.MjmlCarouselImageProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlCarouselImage {
-  def apply(
-    alt: String = null,
-    cssClass: String = null,
-    href: String = null,
-    rel: String = null,
-    src: String = null,
-    target: String = null,
-    thumbnailsSrc: String = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    MjmlCarouselImageProps with ClassNameProps with HrefProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlCarouselImage, 
-    Unit, 
-    MjmlCarouselImageProps with ClassNameProps with HrefProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (thumbnailsSrc != null) __obj.updateDynamic("thumbnailsSrc")(thumbnailsSrc.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.MjmlCarouselImageProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.HrefProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlCarouselImage](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.MjmlCarouselImageProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.HrefProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlCarouselImage")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlCarouselImage] {
+    
+    inline def alt(value: String): this.type = set("alt", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def mjClass(value: String): this.type = set("mjClass", value.asInstanceOf[js.Any])
+    
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
+    inline def src(value: String): this.type = set("src", value.asInstanceOf[js.Any])
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def thumbnailsSrc(value: String): this.type = set("thumbnailsSrc", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlCarouselImage.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlCarouselImageProps & ClassNameProps & HrefProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

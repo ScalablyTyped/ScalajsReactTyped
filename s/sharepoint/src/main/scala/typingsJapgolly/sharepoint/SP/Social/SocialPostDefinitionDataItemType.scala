@@ -1,55 +1,44 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialPostDefinitionDataItemType extends js.Object
-
+sealed trait SocialPostDefinitionDataItemType extends StObject
 /** Defines the type of item being specified in the SocialPostDefinitionDataItem.
   This type is only available in server-to-server calls. */
 @JSGlobal("SP.Social.SocialPostDefinitionDataItemType")
 @js.native
-object SocialPostDefinitionDataItemType extends js.Object {
-  @js.native
-  sealed trait document extends SocialPostDefinitionDataItemType
+object SocialPostDefinitionDataItemType extends StObject {
   
   @js.native
-  sealed trait link extends SocialPostDefinitionDataItemType
+  sealed trait document
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait site extends SocialPostDefinitionDataItemType
+  sealed trait link
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait tag extends SocialPostDefinitionDataItemType
+  sealed trait site
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait text extends SocialPostDefinitionDataItemType
+  sealed trait tag
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
   @js.native
-  sealed trait user extends SocialPostDefinitionDataItemType
+  sealed trait text
+    extends StObject
+       with SocialPostDefinitionDataItemType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialPostDefinitionDataItemType with Double] = js.native
-  /* 2 */ @js.native
-  object document extends TopLevel[document with Double]
-  
-  /* 5 */ @js.native
-  object link extends TopLevel[link with Double]
-  
-  /* 3 */ @js.native
-  object site extends TopLevel[site with Double]
-  
-  /* 4 */ @js.native
-  object tag extends TopLevel[tag with Double]
-  
-  /* 0 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 1 */ @js.native
-  object user extends TopLevel[user with Double]
-  
+  @js.native
+  sealed trait user
+    extends StObject
+       with SocialPostDefinitionDataItemType
 }
-

@@ -1,45 +1,79 @@
 package typingsJapgolly.reactSortableTree.mod
 
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactSortableTree.PartialListProps
 import typingsJapgolly.reactVirtualized.mod.Index
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThemeTreeProps extends js.Object {
+trait ThemeTreeProps[T] extends StObject {
+  
   var innerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var nodeContentRenderer: js.UndefOr[NodeRenderer] = js.undefined
-  var placeholderRenderer: js.UndefOr[PlaceholderRenderer] = js.undefined
-  var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.undefined
-  var rowHeight: js.UndefOr[(js.Function1[/* info */ Index, Double]) | Double] = js.undefined
+  
+  var nodeContentRenderer: js.UndefOr[NodeRenderer[T]] = js.undefined
+  
+  var placeholderRenderer: js.UndefOr[PlaceholderRenderer[T]] = js.undefined
+  
+  var reactVirtualizedListProps: js.UndefOr[
+    Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
+    ]
+  ] = js.undefined
+  
+  var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData[T] & Index, Double]) | Double] = js.undefined
+  
   var scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined
+  
   var slideRegionSize: js.UndefOr[Double] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object ThemeTreeProps {
-  @scala.inline
-  def apply(
-    innerStyle: CSSProperties = null,
-    nodeContentRenderer: NodeRenderer = null,
-    placeholderRenderer: PlaceholderRenderer = null,
-    reactVirtualizedListProps: PartialListProps = null,
-    rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
-    scaffoldBlockPxWidth: Int | Double = null,
-    slideRegionSize: Int | Double = null,
-    style: CSSProperties = null
-  ): ThemeTreeProps = {
+  
+  inline def apply[T](): ThemeTreeProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (innerStyle != null) __obj.updateDynamic("innerStyle")(innerStyle.asInstanceOf[js.Any])
-    if (nodeContentRenderer != null) __obj.updateDynamic("nodeContentRenderer")(nodeContentRenderer.asInstanceOf[js.Any])
-    if (placeholderRenderer != null) __obj.updateDynamic("placeholderRenderer")(placeholderRenderer.asInstanceOf[js.Any])
-    if (reactVirtualizedListProps != null) __obj.updateDynamic("reactVirtualizedListProps")(reactVirtualizedListProps.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (scaffoldBlockPxWidth != null) __obj.updateDynamic("scaffoldBlockPxWidth")(scaffoldBlockPxWidth.asInstanceOf[js.Any])
-    if (slideRegionSize != null) __obj.updateDynamic("slideRegionSize")(slideRegionSize.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ThemeTreeProps]
+    __obj.asInstanceOf[ThemeTreeProps[T]]
+  }
+  
+  extension [Self <: ThemeTreeProps[?], T](x: Self & ThemeTreeProps[T]) {
+    
+    inline def setInnerStyle(value: CSSProperties): Self = StObject.set(x, "innerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setInnerStyleUndefined: Self = StObject.set(x, "innerStyle", js.undefined)
+    
+    inline def setNodeContentRenderer(value: NodeRenderer[T]): Self = StObject.set(x, "nodeContentRenderer", value.asInstanceOf[js.Any])
+    
+    inline def setNodeContentRendererUndefined: Self = StObject.set(x, "nodeContentRenderer", js.undefined)
+    
+    inline def setPlaceholderRenderer(value: PlaceholderRenderer[T]): Self = StObject.set(x, "placeholderRenderer", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderRendererUndefined: Self = StObject.set(x, "placeholderRenderer", js.undefined)
+    
+    inline def setReactVirtualizedListProps(
+      value: Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
+        ]
+    ): Self = StObject.set(x, "reactVirtualizedListProps", value.asInstanceOf[js.Any])
+    
+    inline def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
+    
+    inline def setRowHeight(value: (js.Function1[/* info */ NodeData[T] & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightFunction1(value: /* info */ NodeData[T] & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    
+    inline def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setScaffoldBlockPxWidthUndefined: Self = StObject.set(x, "scaffoldBlockPxWidth", js.undefined)
+    
+    inline def setSlideRegionSize(value: Double): Self = StObject.set(x, "slideRegionSize", value.asInstanceOf[js.Any])
+    
+    inline def setSlideRegionSizeUndefined: Self = StObject.set(x, "slideRegionSize", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }
-

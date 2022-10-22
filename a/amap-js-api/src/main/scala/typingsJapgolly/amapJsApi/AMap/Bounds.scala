@@ -1,55 +1,69 @@
 package typingsJapgolly.amapJsApi.AMap
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.Bounds")
-@js.native
-/**
-  * 地物对象的经纬度矩形范围。
-  * @param coords 由西南角，东北角经纬度组成的数组，分别是[西南角经度， 西南角纬度，东北角经度，东北角纬度]
-  */
-class Bounds () extends js.Object {
-  def this(coords: js.Tuple4[Double, Double, Double, Double]) = this()
-  /**
-    * 地物对象的经纬度矩形范围。
-    * @param southWest 西南角经纬度
-    * @param northEast 东北角经纬度
-    */
-  def this(southWest: LocationValue, northEast: LocationValue) = this()
-  /**
-    * 地物对象的经纬度矩形范围。
-    * @param southWestLng 西南角经度
-    * @param southWestLat 西南角纬度
-    * @param northEastLng 东北角经度
-    * @param northEastLat 东北角纬度
-    */
-  def this(southWestLng: Double, southWestLat: Double, northEastLng: Double, northEastLat: Double) = this()
+trait Bounds extends StObject {
+  
   /**
     * 指定点坐标是否在矩形范围内
     * @param point 制定坐标
     */
-  def contains(point: LocationValue): Boolean = js.native
+  def contains(point: LocationValue): Boolean
+  
   /**
     * 获取当前Bounds的中心点经纬度坐标
     */
-  def getCenter(): LngLat = js.native
+  def getCenter(): LngLat
+  
   /**
     * 获取东北角坐标
     */
-  def getNorthEast(): LngLat = js.native
+  def getNorthEast(): LngLat
+  
   /**
     * 获取西北角坐标
     */
-  def getNorthWest(): LngLat = js.native
+  def getNorthWest(): LngLat
+  
   /**
     * 获取东南角坐标
     */
-  def getSouthEast(): LngLat = js.native
+  def getSouthEast(): LngLat
+  
   /**
     * 获取西南角坐标
     */
-  def getSouthWest(): LngLat = js.native
+  def getSouthWest(): LngLat
 }
-
+object Bounds {
+  
+  inline def apply(
+    contains: LocationValue => Boolean,
+    getCenter: CallbackTo[LngLat],
+    getNorthEast: CallbackTo[LngLat],
+    getNorthWest: CallbackTo[LngLat],
+    getSouthEast: CallbackTo[LngLat],
+    getSouthWest: CallbackTo[LngLat]
+  ): Bounds = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getCenter = getCenter.toJsFn, getNorthEast = getNorthEast.toJsFn, getNorthWest = getNorthWest.toJsFn, getSouthEast = getSouthEast.toJsFn, getSouthWest = getSouthWest.toJsFn)
+    __obj.asInstanceOf[Bounds]
+  }
+  
+  extension [Self <: Bounds](x: Self) {
+    
+    inline def setContains(value: LocationValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    
+    inline def setGetCenter(value: CallbackTo[LngLat]): Self = StObject.set(x, "getCenter", value.toJsFn)
+    
+    inline def setGetNorthEast(value: CallbackTo[LngLat]): Self = StObject.set(x, "getNorthEast", value.toJsFn)
+    
+    inline def setGetNorthWest(value: CallbackTo[LngLat]): Self = StObject.set(x, "getNorthWest", value.toJsFn)
+    
+    inline def setGetSouthEast(value: CallbackTo[LngLat]): Self = StObject.set(x, "getSouthEast", value.toJsFn)
+    
+    inline def setGetSouthWest(value: CallbackTo[LngLat]): Self = StObject.set(x, "getSouthWest", value.toJsFn)
+  }
+}

@@ -1,36 +1,58 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RoleAssignment extends Entity {
+trait RoleAssignment
+  extends StObject
+     with Entity {
+  
   // Description of the Role Assignment.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The display or friendly name of the role Assignment.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // List of ids of role scope member security groups. These are IDs from Azure Active Directory.
-  var resourceScopes: js.UndefOr[js.Array[String]] = js.undefined
+  var resourceScopes: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // Role definition this assignment is part of.
-  var roleDefinition: js.UndefOr[RoleDefinition] = js.undefined
+  var roleDefinition: js.UndefOr[NullableOption[RoleDefinition]] = js.undefined
 }
-
 object RoleAssignment {
-  @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    id: String = null,
-    resourceScopes: js.Array[String] = null,
-    roleDefinition: RoleDefinition = null
-  ): RoleAssignment = {
+  
+  inline def apply(): RoleAssignment = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (resourceScopes != null) __obj.updateDynamic("resourceScopes")(resourceScopes.asInstanceOf[js.Any])
-    if (roleDefinition != null) __obj.updateDynamic("roleDefinition")(roleDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleAssignment]
   }
+  
+  extension [Self <: RoleAssignment](x: Self) {
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setResourceScopes(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "resourceScopes", value.asInstanceOf[js.Any])
+    
+    inline def setResourceScopesNull: Self = StObject.set(x, "resourceScopes", null)
+    
+    inline def setResourceScopesUndefined: Self = StObject.set(x, "resourceScopes", js.undefined)
+    
+    inline def setResourceScopesVarargs(value: String*): Self = StObject.set(x, "resourceScopes", js.Array(value*))
+    
+    inline def setRoleDefinition(value: NullableOption[RoleDefinition]): Self = StObject.set(x, "roleDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setRoleDefinitionNull: Self = StObject.set(x, "roleDefinition", null)
+    
+    inline def setRoleDefinitionUndefined: Self = StObject.set(x, "roleDefinition", js.undefined)
+  }
 }
-

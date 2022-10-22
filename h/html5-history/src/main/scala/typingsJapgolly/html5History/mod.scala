@@ -1,22 +1,32 @@
 package typingsJapgolly.html5History
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("html5-history", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getCurrentIndex(): Double = js.native
-  def getHash(doc: js.Any): js.Any = js.native
-  def getState(): js.Any = js.native
-  def getState(friendly: js.Any): js.Any = js.native
-  def getState(friendly: js.Any, create: js.Any): js.Any = js.native
-  def getStateByIndex(index: Double): js.Any = js.native
-  def init(): Boolean = js.native
-  def init(options: js.Any): Boolean = js.native
-  def normalizeHash(hash: js.Any): js.Any = js.native
-  def setHash(hash: js.Any, queue: js.Any): Boolean = js.native
-  def unescapeHash(hash: js.Any): js.Any = js.native
+object mod {
+  
+  @JSImport("html5-history", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getCurrentIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentIndex")().asInstanceOf[Double]
+  
+  inline def getHash(doc: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHash")(doc.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def getState(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[Any]
+  inline def getState(friendly: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getState(friendly: Any, create: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any], create.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getState(friendly: Unit, create: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any], create.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def getStateByIndex(index: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateByIndex")(index.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
+  inline def init(options: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def normalizeHash(hash: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def setHash(hash: Any, queue: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setHash")(hash.asInstanceOf[js.Any], queue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def unescapeHash(hash: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

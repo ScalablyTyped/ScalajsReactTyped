@@ -1,26 +1,33 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tabsTabsMod.TabsProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseTypeMap
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.tabsTabsMod.TabsTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Tabs", JSImport.Namespace)
-@js.native
-object tabsMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TabsProps, ComponentState, js.Any] {
-    def this(props: TabsProps) = this()
-    def this(props: TabsProps, context: js.Any) = this()
-  }
+object tabsMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tabs](https://mui.com/components/tabs/)
+    *
+    * API:
+    *
+    * - [Tabs API](https://mui.com/api/tabs/)
+    */
+  @JSImport("@material-ui/core/Tabs", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TabsProps]]
+  val default: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]] = js.native
   
+  type _To = OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tabsMod.foo` */
+  override def _to: OverridableComponent[TabsTypeMap[js.Object, ExtendButtonBase[ButtonBaseTypeMap[js.Object, button]]]] = default
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-reference
 
-Typings are for version 1.1.4
+Typings are for version 3.0.0
 
 ## Library description:
 Determine whether an AST node is a reference
@@ -10,10 +10,10 @@ Determine whether an AST node is a reference
 | ------------------ | :-------------: |
 | Full name          | is-reference |
 | Keywords           | ast, javascript, estree, acorn |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 8968792 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7392952.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/is-reference#readme)

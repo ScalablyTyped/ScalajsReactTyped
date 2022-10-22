@@ -10,10 +10,10 @@ This library takes a Response object and determines whether it's cacheable based
 | ------------------ | :-------------: |
 | Full name          | workbox-cacheable-response |
 | Keywords           | workbox, workboxjs, service worker, sw, workbox-plugin |
-| # releases         | 39 |
-| # dependents       | 2 |
-| # downloads        | 56760858 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7697727666666668E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

@@ -1,0 +1,27 @@
+package typingsJapgolly.openpgp.anon
+
+import typingsJapgolly.openpgp.mod.key.User
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SelfCertification extends StObject {
+  
+  var selfCertification: typingsJapgolly.openpgp.mod.packet.Signature
+  
+  var user: User
+}
+object SelfCertification {
+  
+  inline def apply(selfCertification: typingsJapgolly.openpgp.mod.packet.Signature, user: User): SelfCertification = {
+    val __obj = js.Dynamic.literal(selfCertification = selfCertification.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelfCertification]
+  }
+  
+  extension [Self <: SelfCertification](x: Self) {
+    
+    inline def setSelfCertification(value: typingsJapgolly.openpgp.mod.packet.Signature): Self = StObject.set(x, "selfCertification", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
+}

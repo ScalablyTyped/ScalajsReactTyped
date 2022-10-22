@@ -1,21 +1,34 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Diagnostic extends js.Object {
-  var message: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+trait Diagnostic extends StObject {
+  
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object Diagnostic {
-  @scala.inline
-  def apply(message: String = null, url: String = null): Diagnostic = {
+  
+  inline def apply(): Diagnostic = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
+  
+  extension [Self <: Diagnostic](x: Self) {
+    
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

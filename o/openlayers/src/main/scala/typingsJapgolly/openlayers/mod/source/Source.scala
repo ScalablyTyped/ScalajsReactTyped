@@ -6,9 +6,9 @@ import typingsJapgolly.openlayers.mod.Object
 import typingsJapgolly.openlayers.mod.SourceSourceOptions
 import typingsJapgolly.openlayers.mod.olx.LogoOptions
 import typingsJapgolly.openlayers.mod.proj.Projection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Source")
 @js.native
-class Source protected () extends Object {
+open class Source protected () extends Object {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
@@ -36,35 +36,41 @@ class Source protected () extends Object {
     * @api stable
     */
   def this(options: SourceSourceOptions) = this()
+  
   /**
     * Get the attributions of the source.
     * @return Attributions.
     * @api stable
     */
   def getAttributions(): js.Array[Attribution] = js.native
+  
   /**
     * Get the logo of the source.
     * @return Logo.
     * @api stable
     */
   def getLogo(): String | LogoOptions = js.native
+  
   /**
     * Get the projection of the source.
     * @return Projection.
     * @api
     */
   def getProjection(): Projection = js.native
+  
   /**
     * Get the state of the source, see {@link ol.source.State} for possible states.
     * @return State.
     * @api
     */
   def getState(): State = js.native
+  
   /**
     * Refreshes the source and finally dispatches a 'change' event.
     * @api
     */
   def refresh(): Unit = js.native
+  
   /**
     * Set the attributions of the source.
     * @param attributions Attributions.
@@ -74,4 +80,3 @@ class Source protected () extends Object {
     */
   def setAttributions(attributions: AttributionLike): Unit = js.native
 }
-

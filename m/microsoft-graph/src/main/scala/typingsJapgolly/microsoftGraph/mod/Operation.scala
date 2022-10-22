@@ -1,32 +1,47 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Operation extends Entity {
+trait Operation
+  extends StObject
+     with Entity {
+  
   // The start time of the operation.
-  var createdDateTime: js.UndefOr[String] = js.undefined
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The time of the last action of the operation.
-  var lastActionDateTime: js.UndefOr[String] = js.undefined
+  var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The current status of the operation: notStarted, running, completed, failed
-  var status: js.UndefOr[OperationStatus] = js.undefined
+  var status: js.UndefOr[NullableOption[OperationStatus]] = js.undefined
 }
-
 object Operation {
-  @scala.inline
-  def apply(
-    createdDateTime: String = null,
-    id: String = null,
-    lastActionDateTime: String = null,
-    status: OperationStatus = null
-  ): Operation = {
+  
+  inline def apply(): Operation = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
+  
+  extension [Self <: Operation](x: Self) {
+    
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setLastActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastActionDateTimeNull: Self = StObject.set(x, "lastActionDateTime", null)
+    
+    inline def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
+    
+    inline def setStatus(value: NullableOption[OperationStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
 }
-

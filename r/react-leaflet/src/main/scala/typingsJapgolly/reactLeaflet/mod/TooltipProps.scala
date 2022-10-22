@@ -1,54 +1,58 @@
 package typingsJapgolly.reactLeaflet.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.leaflet.mod.Direction
-import typingsJapgolly.leaflet.mod.PointExpression
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.leaflet.mod.TooltipOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.leaflet.mod.DivOverlayOptions because Already inherited
-- typingsJapgolly.leaflet.mod.TooltipOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined direction, interactive, opacity, permanent, sticky */ trait TooltipProps extends DivOverlayProps {
-  var direction: js.UndefOr[Direction] = js.undefined
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var permanent: js.UndefOr[Boolean] = js.undefined
-  var sticky: js.UndefOr[Boolean] = js.undefined
+- typingsJapgolly.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typingsJapgolly.reactLeaflet.mod.DivOverlayProps because var conflicts: className, content, interactive, offset, pane. Inlined children, onClose, onOpen */ trait TooltipProps
+  extends StObject
+     with TooltipOptions {
+  
+  var children: Children
+  
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object TooltipProps {
-  @scala.inline
-  def apply(
-    children: Children = null,
-    className: String = null,
-    direction: Direction = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    offset: PointExpression = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onOpen: js.UndefOr[Callback] = js.undefined,
-    opacity: Int | Double = null,
-    pane: String = null,
-    permanent: js.UndefOr[Boolean] = js.undefined,
-    sticky: js.UndefOr[Boolean] = js.undefined,
-    zoomAnimation: js.UndefOr[Boolean] = js.undefined
-  ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onOpen.foreach(p => __obj.updateDynamic("onOpen")(p.toJsFn))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.asInstanceOf[js.Any])
+  
+  inline def apply(): TooltipProps = {
+    val __obj = js.Dynamic.literal(children = null)
     __obj.asInstanceOf[TooltipProps]
   }
+  
+  extension [Self <: TooltipProps](x: Self) {
+    
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenVarargs(value: (Element | Empty | JsNumber | Node | String)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    
+    inline def setOnClose(value: Callback): Self = StObject.set(x, "onClose", value.toJsFn)
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnOpen(value: Callback): Self = StObject.set(x, "onOpen", value.toJsFn)
+    
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+  }
 }
-

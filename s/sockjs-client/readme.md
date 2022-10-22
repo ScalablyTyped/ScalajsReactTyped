@@ -1,7 +1,7 @@
 
 # Scala.js typings for sockjs-client
 
-Typings are for version 1.1
+Typings are for version 1.5
 
 ## Library description:
 SockJS-client is a browser JavaScript library that provides a WebSocket-like object.
@@ -11,9 +11,9 @@ SockJS-client is a browser JavaScript library that provides a WebSocket-like obj
 | Full name          | sockjs-client |
 | Keywords           | websockets, websocket |
 | # releases         | 5 |
-| # dependents       | 427 |
-| # downloads        | 283687939 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4643198333333336E7 |
+| # stars            | 7961.0 |
 
 ## Links
 - [Homepage](http://sockjs.org)

@@ -1,25 +1,29 @@
 package typingsJapgolly.useDeepCompareEffect
 
-import typingsJapgolly.react.mod.DependencyList
-import typingsJapgolly.react.mod.EffectCallback
+import typingsJapgolly.std.Parameters
+import typingsJapgolly.std.ReturnType
+import typingsJapgolly.useDeepCompareEffect.anon.FnCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-deep-compare-effect", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(effect: EffectCallback): Unit = js.native
-    def apply(effect: EffectCallback, deps: DependencyList): Unit = js.native
-  }
+object mod {
   
+  @JSImport("use-deep-compare-effect", JSImport.Namespace)
   @js.native
-  object useDeepCompareEffectNoCheck extends js.Object {
-    def apply(effect: EffectCallback): Unit = js.native
-    def apply(effect: EffectCallback, deps: DependencyList): Unit = js.native
-  }
+  val ^ : js.Any = js.native
   
+  inline def default(callback: EffectCallback, dependencies: DependencyList): UseEffectReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[UseEffectReturn]
+  
+  inline def useDeepCompareEffectNoCheck(callback: EffectCallback, dependencies: DependencyList): UseEffectReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(callback.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[UseEffectReturn]
+  
+  inline def useDeepCompareMemoize[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareMemoize")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  type DependencyList = /* import warning: importer.ImportType#apply Failed type conversion: use-deep-compare-effect.use-deep-compare-effect.UseEffectParams[1] */ js.Any
+  
+  type EffectCallback = /* import warning: importer.ImportType#apply Failed type conversion: use-deep-compare-effect.use-deep-compare-effect.UseEffectParams[0] */ js.Any
+  
+  type UseEffectParams = Parameters[FnCall]
+  
+  type UseEffectReturn = ReturnType[FnCall]
 }
-

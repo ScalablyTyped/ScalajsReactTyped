@@ -1,26 +1,27 @@
 package typingsJapgolly.nodeZendesk.mod.Tickets
 
 import typingsJapgolly.nodeZendesk.mod.PaginablePayload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuditsListPayload extends PaginablePayload {
+trait AuditsListPayload
+  extends StObject
+     with PaginablePayload {
+  
   val audits: js.Array[Audit]
 }
-
 object AuditsListPayload {
-  @scala.inline
-  def apply(
-    audits: js.Array[Audit],
-    count: Double,
-    next_page: Int | Double = null,
-    previous_page: Int | Double = null
-  ): AuditsListPayload = {
-    val __obj = js.Dynamic.literal(audits = audits.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
-    if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
-    if (previous_page != null) __obj.updateDynamic("previous_page")(previous_page.asInstanceOf[js.Any])
+  
+  inline def apply(audits: js.Array[Audit], count: Double): AuditsListPayload = {
+    val __obj = js.Dynamic.literal(audits = audits.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[AuditsListPayload]
   }
+  
+  extension [Self <: AuditsListPayload](x: Self) {
+    
+    inline def setAudits(value: js.Array[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
+    
+    inline def setAuditsVarargs(value: Audit*): Self = StObject.set(x, "audits", js.Array(value*))
+  }
 }
-

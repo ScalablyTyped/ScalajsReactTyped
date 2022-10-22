@@ -1,21 +1,18 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.highchartsStrings.polygon_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.circle
-  - typingsJapgolly.highcharts.highchartsStrings.polygon
+  - typingsJapgolly.highcharts.highchartsStrings.polygon_
 */
-trait OptionsGridLineInterpolationValue extends js.Object
-
+trait OptionsGridLineInterpolationValue extends StObject
 object OptionsGridLineInterpolationValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def circle: typingsJapgolly.highcharts.highchartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def polygon: typingsJapgolly.highcharts.highchartsStrings.polygon = this.cast("polygon")
+  
+  inline def circle: typingsJapgolly.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.circle]
+  
+  inline def polygon: polygon_ = "polygon".asInstanceOf[polygon_]
 }
-

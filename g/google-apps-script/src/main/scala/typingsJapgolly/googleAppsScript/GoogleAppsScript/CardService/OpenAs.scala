@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpenAs extends js.Object
-
+sealed trait OpenAs extends StObject
 /**
   * An enum that specifies how to open a URL.
   *
@@ -20,20 +18,15 @@ sealed trait OpenAs extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Card_Service.OpenAs")
 @js.native
-object OpenAs extends js.Object {
-  @js.native
-  sealed trait FULL_SIZE extends OpenAs
+object OpenAs extends StObject {
   
   @js.native
-  sealed trait OVERLAY extends OpenAs
+  sealed trait FULL_SIZE
+    extends StObject
+       with OpenAs
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpenAs with Double] = js.native
-  /* 0 */ @js.native
-  object FULL_SIZE extends TopLevel[FULL_SIZE with Double]
-  
-  /* 1 */ @js.native
-  object OVERLAY extends TopLevel[OVERLAY with Double]
-  
+  @js.native
+  sealed trait OVERLAY
+    extends StObject
+       with OpenAs
 }
-

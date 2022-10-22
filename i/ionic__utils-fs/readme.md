@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-fs
 
-Typings are for version 2.0.9
+Typings are for version 3.1.6
 
 ## Library description:
 Filesystem utils for Node
@@ -10,10 +10,10 @@ Filesystem utils for Node
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-fs |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 10 |
-| # downloads        | 3024722 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 945491.0 |
+| # stars            | 1984.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

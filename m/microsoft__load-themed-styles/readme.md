@@ -1,7 +1,7 @@
 
 # Scala.js typings for microsoft__load-themed-styles
 
-Typings are for version 1.10.37
+Typings are for version 2.0.9
 
 ## Library description:
 Loads themed styles.
@@ -10,10 +10,10 @@ Loads themed styles.
 | ------------------ | :-------------: |
 | Full name          | @microsoft/load-themed-styles |
 | Keywords           | - |
-| # releases         | 206 |
-| # dependents       | 26 |
-| # downloads        | 2362309 |
-| # stars            | 1 |
+| # releases         | 192 |
+| # dependents       | 0.0 |
+| # downloads        | 659823.6666666666 |
+| # stars            | 4489.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/rushstack#readme)

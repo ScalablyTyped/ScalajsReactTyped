@@ -3,24 +3,6 @@
 
 Typings are for version 6.25
 
-## Library description:
-Turns an AST into code.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | babel-generator |
-| Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 472 |
-| # downloads        | 249514222 |
-| # stars            | 4 |
-
-## Links
-- [Homepage](https://babeljs.io/)
-- [Bugs](https://github.com/babel/babel/issues)
-- [Repository](https://github.com/babel/babel)
-- [Npm](https://www.npmjs.com/package/babel-generator)
-    
 
 
 ## Note

@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.Srch
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MessageLevel extends js.Object
-
+sealed trait MessageLevel extends StObject
 @JSGlobal("Srch.MessageLevel")
 @js.native
-object MessageLevel extends js.Object {
-  @js.native
-  sealed trait error extends MessageLevel
+object MessageLevel extends StObject {
   
   @js.native
-  sealed trait information extends MessageLevel
+  sealed trait error
+    extends StObject
+       with MessageLevel
   
   @js.native
-  sealed trait warning extends MessageLevel
+  sealed trait information
+    extends StObject
+       with MessageLevel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MessageLevel with Double] = js.native
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 0 */ @js.native
-  object information extends TopLevel[information with Double]
-  
-  /* 1 */ @js.native
-  object warning extends TopLevel[warning with Double]
-  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with MessageLevel
 }
-

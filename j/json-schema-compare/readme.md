@@ -10,10 +10,10 @@ Compare json schemas smarter.
 | ------------------ | :-------------: |
 | Full name          | json-schema-compare |
 | Keywords           | json, schema, jsonschema, json-schema, comparison |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 217409 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1111369.3333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/mokkabonna/json-schema-compare#readme)

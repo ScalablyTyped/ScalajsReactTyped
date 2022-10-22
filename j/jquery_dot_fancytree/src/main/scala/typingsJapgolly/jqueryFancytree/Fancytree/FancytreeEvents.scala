@@ -1,138 +1,224 @@
 package typingsJapgolly.jqueryFancytree.Fancytree
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The `this` context of any event function is set to tree's the HTMLDivElement  */
-trait FancytreeEvents extends js.Object {
+trait FancytreeEvents extends StObject {
+  
   /** 'data.node' was deactivated. */
   var activate: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Return false to prevent default processing */
   var beforeActivate: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** Return `false` to prevent default processing */
   var beforeExpand: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** Return `false` to prevent default processing */
   var beforeSelect: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** `data.node` lost keyboard focus */
   var blur: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.tree` lost keyboard focus */
   var blurTree: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` was clicked. `data.targetType` contains the region ("title", "expander", ...). Return `false` to prevent default processing, i.e. activating, etc. */
   var click: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** `data.node` was collapsed */
   var collapse: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Widget was created (called only once, even if re-initialized). */
   var create: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Allow tweaking and binding, after node was created for the first time (NOTE: this event is only available as callback, but not for bind()) */
   var createNode: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` was double-clicked. `data.targetType` contains the region ("title", "expander", ...). Return `false` to prevent default processing, i.e. expanding, etc. */
   var dblclick: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** `data.node` was deactivated */
   var deactivate: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` was expanded */
   var expand: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` received keyboard focus */
   var focus: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /**`data.tree` received keyboard focus */
   var focusTree: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Widget was (re-)initialized. */
   var init: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` received key. `event.which` contains the key. Return `false` to prevent default processing, i.e. navigation. Call `data.result = "preventNav";` to prevent navigation but still allow default handling inside embedded input controls. */
   var keydown: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** (currently unused) */
   var keypress: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` is a lazy node that is expanded for the first time. The new child data must be returned in the `data.result` property (see `source` option for available formats). */
   var lazyLoad: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Node data was loaded, i.e. `node.nodeLoadChildren()` finished */
   var loadChildren: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** A load error occured. Return `false` to prevent default processing. */
   var loadError: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Boolean]] = js.undefined
+  
   /** Allows to modify the ajax response. */
   var postProcess: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** `data.node` was removed (NOTE: this event is only available as callback, but not for bind()) */
   var removeNode: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** (used by table extension) */
   var renderColumns: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Allow tweaking after node state was rendered (NOTE: this event is only available as callback, but not for bind()) */
   var renderNode: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Allow replacing the `<span class='fancytree-title'>` markup (NOTE: this event is only available as callback, but not for bind()) */
   var renderTitle: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** ext-persist has expanded, selected, and activated the previous state */
   var restore: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
+  
   /** Enable RTL version, default is false */
   var rtl: js.UndefOr[Boolean] = js.undefined
+  
   /** `data.node` was selected */
   var select: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* data */ EventData, Unit]] = js.undefined
 }
-
 object FancytreeEvents {
-  @scala.inline
-  def apply(
-    activate: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    beforeActivate: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    beforeExpand: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    beforeSelect: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    blur: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    blurTree: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    click: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    collapse: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    createNode: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    dblclick: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    deactivate: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    expand: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    focus: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    focusTree: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    init: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    keydown: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    keypress: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    lazyLoad: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    loadChildren: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    loadError: (/* event */ JQueryEventObject, /* data */ EventData) => CallbackTo[Boolean] = null,
-    postProcess: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    removeNode: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    renderColumns: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    renderNode: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    renderTitle: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    restore: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null,
-    rtl: js.UndefOr[Boolean] = js.undefined,
-    select: (/* event */ JQueryEventObject, /* data */ EventData) => Callback = null
-  ): FancytreeEvents = {
+  
+  inline def apply(): FancytreeEvents = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => activate(t0, t1).runNow()))
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => beforeActivate(t0, t1).runNow()))
-    if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => beforeExpand(t0, t1).runNow()))
-    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => beforeSelect(t0, t1).runNow()))
-    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => blur(t0, t1).runNow()))
-    if (blurTree != null) __obj.updateDynamic("blurTree")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => blurTree(t0, t1).runNow()))
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => click(t0, t1).runNow()))
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => collapse(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => create(t0, t1).runNow()))
-    if (createNode != null) __obj.updateDynamic("createNode")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => createNode(t0, t1).runNow()))
-    if (dblclick != null) __obj.updateDynamic("dblclick")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => dblclick(t0, t1).runNow()))
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => deactivate(t0, t1).runNow()))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => expand(t0, t1).runNow()))
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => focus(t0, t1).runNow()))
-    if (focusTree != null) __obj.updateDynamic("focusTree")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => focusTree(t0, t1).runNow()))
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => init(t0, t1).runNow()))
-    if (keydown != null) __obj.updateDynamic("keydown")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => keydown(t0, t1).runNow()))
-    if (keypress != null) __obj.updateDynamic("keypress")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => keypress(t0, t1).runNow()))
-    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => lazyLoad(t0, t1).runNow()))
-    if (loadChildren != null) __obj.updateDynamic("loadChildren")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => loadChildren(t0, t1).runNow()))
-    if (loadError != null) __obj.updateDynamic("loadError")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => loadError(t0, t1).runNow()))
-    if (postProcess != null) __obj.updateDynamic("postProcess")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => postProcess(t0, t1).runNow()))
-    if (removeNode != null) __obj.updateDynamic("removeNode")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => removeNode(t0, t1).runNow()))
-    if (renderColumns != null) __obj.updateDynamic("renderColumns")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => renderColumns(t0, t1).runNow()))
-    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => renderNode(t0, t1).runNow()))
-    if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => renderTitle(t0, t1).runNow()))
-    if (restore != null) __obj.updateDynamic("restore")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => restore(t0, t1).runNow()))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* data */ typingsJapgolly.jqueryFancytree.Fancytree.EventData) => select(t0, t1).runNow()))
     __obj.asInstanceOf[FancytreeEvents]
   }
+  
+  extension [Self <: FancytreeEvents](x: Self) {
+    
+    inline def setActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "activate", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    
+    inline def setBeforeActivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
+    
+    inline def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
+    
+    inline def setBeforeExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeExpand", js.Any.fromFunction2(value))
+    
+    inline def setBeforeExpandUndefined: Self = StObject.set(x, "beforeExpand", js.undefined)
+    
+    inline def setBeforeSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "beforeSelect", js.Any.fromFunction2(value))
+    
+    inline def setBeforeSelectUndefined: Self = StObject.set(x, "beforeSelect", js.undefined)
+    
+    inline def setBlur(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "blur", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setBlurTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "blurTree", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setBlurTreeUndefined: Self = StObject.set(x, "blurTree", js.undefined)
+    
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    
+    inline def setClick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setCollapse(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "collapse", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "createNode", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setDblclick(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "dblclick", js.Any.fromFunction2(value))
+    
+    inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
+    
+    inline def setDeactivate(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "deactivate", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    
+    inline def setExpand(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "expand", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "focus", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setFocusTree(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "focusTree", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setFocusTreeUndefined: Self = StObject.set(x, "focusTree", js.undefined)
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setInit(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "init", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setKeydown(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "keydown", js.Any.fromFunction2(value))
+    
+    inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
+    
+    inline def setKeypress(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "keypress", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
+    
+    inline def setLazyLoad(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "lazyLoad", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
+    
+    inline def setLoadChildren(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "loadChildren", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setLoadChildrenUndefined: Self = StObject.set(x, "loadChildren", js.undefined)
+    
+    inline def setLoadError(value: (/* event */ JQueryEventObject, /* data */ EventData) => Boolean): Self = StObject.set(x, "loadError", js.Any.fromFunction2(value))
+    
+    inline def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
+    
+    inline def setPostProcess(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "postProcess", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
+    
+    inline def setRemoveNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "removeNode", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setRemoveNodeUndefined: Self = StObject.set(x, "removeNode", js.undefined)
+    
+    inline def setRenderColumns(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "renderColumns", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderColumnsUndefined: Self = StObject.set(x, "renderColumns", js.undefined)
+    
+    inline def setRenderNode(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "renderNode", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
+    
+    inline def setRenderTitle(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "renderTitle", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderTitleUndefined: Self = StObject.set(x, "renderTitle", js.undefined)
+    
+    inline def setRestore(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "restore", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
+    
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    
+    inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+    
+    inline def setSelect(value: (/* event */ JQueryEventObject, /* data */ EventData) => Callback): Self = StObject.set(x, "select", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* data */ EventData) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+  }
 }
-

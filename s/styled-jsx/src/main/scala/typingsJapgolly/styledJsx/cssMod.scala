@@ -1,15 +1,21 @@
 package typingsJapgolly.styledJsx
 
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.std.TemplateStringsArray
+import typingsJapgolly.styledJsx.anon.ClassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("styled-jsx/css", JSImport.Namespace)
-@js.native
-object cssMod extends js.Object {
-  def apply(chunks: TemplateStringsArray, args: js.Any*): String = js.native
-  def global(chunks: TemplateStringsArray, args: js.Any*): String = js.native
-  def resolve(chunks: TemplateStringsArray, args: js.Any*): AnonClassName = js.native
+object cssMod {
+  
+  inline def apply(chunks: TemplateStringsArray, args: Any*): Element = ^.asInstanceOf[js.Dynamic].apply(scala.List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
+  
+  @JSImport("styled-jsx/css", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def global(chunks: TemplateStringsArray, args: Any*): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("global")(scala.List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
+  
+  inline def resolve(chunks: TemplateStringsArray, args: Any*): ClassName = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(scala.List(chunks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassName]
 }
-

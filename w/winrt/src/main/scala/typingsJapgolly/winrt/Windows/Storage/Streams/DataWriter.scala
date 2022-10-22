@@ -1,18 +1,15 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
 import typingsJapgolly.winrt.Windows.Foundation.IClosable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Streams.DataWriter")
 @js.native
-class DataWriter ()
-  extends IDataWriter
+trait DataWriter
+  extends StObject
+     with IDataWriter
      with IClosable {
-  def this(outputStream: IOutputStream) = this()
-  /* CompleteClass */
-  override def close(): Unit = js.native
+  
   def dispose(): Unit = js.native
 }
-

@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProgressiveLoadStatusChangedEventUIParam extends js.Object {
+trait ProgressiveLoadStatusChangedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get reference to chart object.
-  	 */
-  var chart: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to chart object.
+    */
+  var chart: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get current status.
-  	 */
-  var currentStatus: js.UndefOr[js.Any] = js.undefined
+    * Used to get current status.
+    */
+  var currentStatus: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to current series object.
-  	 */
-  var series: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to current series object.
+    */
+  var series: js.UndefOr[Any] = js.undefined
 }
-
 object ProgressiveLoadStatusChangedEventUIParam {
-  @scala.inline
-  def apply(chart: js.Any = null, currentStatus: js.Any = null, series: js.Any = null): ProgressiveLoadStatusChangedEventUIParam = {
+  
+  inline def apply(): ProgressiveLoadStatusChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressiveLoadStatusChangedEventUIParam]
   }
+  
+  extension [Self <: ProgressiveLoadStatusChangedEventUIParam](x: Self) {
+    
+    inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    
+    inline def setCurrentStatus(value: Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
+    
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+  }
 }
-

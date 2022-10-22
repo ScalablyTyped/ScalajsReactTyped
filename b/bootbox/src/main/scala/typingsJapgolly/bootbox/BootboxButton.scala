@@ -1,28 +1,37 @@
 package typingsJapgolly.bootbox
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootboxButton extends js.Object {
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+trait BootboxButton extends StObject {
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
 }
-
 object BootboxButton {
-  @scala.inline
-  def apply(
-    callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    className: String = null,
-    label: String = null
-  ): BootboxButton = {
+  
+  inline def apply(): BootboxButton = {
     val __obj = js.Dynamic.literal()
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxButton]
   }
+  
+  extension [Self <: BootboxButton](x: Self) {
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

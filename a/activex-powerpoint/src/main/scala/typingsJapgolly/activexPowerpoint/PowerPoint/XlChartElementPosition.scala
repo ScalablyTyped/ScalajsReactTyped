@@ -1,23 +1,19 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4105`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4105`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4105`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4105`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
 */
-trait XlChartElementPosition extends js.Object
-
+trait XlChartElementPosition extends StObject
 object XlChartElementPosition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlChartElementPositionAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlChartElementPositionCustom: `-4114` = this.cast(-4114)
+  
+  inline def xlChartElementPositionAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlChartElementPositionCustom: `-4114` = -4114.asInstanceOf[`-4114`]
 }
-

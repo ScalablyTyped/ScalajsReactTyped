@@ -1,36 +1,30 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures the appearance adopted by the series when a user points to it. */
-trait dxChartSeriesTypesStepAreaSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
-  /** Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series. */
+trait dxChartSeriesTypesStepAreaSeriesHoverStyle
+  extends StObject
+     with dxChartSeriesTypesCommonSeriesHoverStyle {
+  
+  /**
+    * Configures the appearance adopted by the series border (in area-like series) or the series point border (in bar-like and bubble series) when a user points to the series.
+    */
   @JSName("border")
   var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.undefined
 }
-
 object dxChartSeriesTypesStepAreaSeriesHoverStyle {
-  @scala.inline
-  def apply(
-    border: dxChartSeriesTypesStepAreaSeriesHoverStyleBorder = null,
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    hatching: dxChartSeriesTypesCommonSeriesHoverStyleHatching = null,
-    width: Int | Double = null
-  ): dxChartSeriesTypesStepAreaSeriesHoverStyle = {
+  
+  inline def apply(): dxChartSeriesTypesStepAreaSeriesHoverStyle = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (hatching != null) __obj.updateDynamic("hatching")(hatching.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStepAreaSeriesHoverStyle]
   }
+  
+  extension [Self <: dxChartSeriesTypesStepAreaSeriesHoverStyle](x: Self) {
+    
+    inline def setBorder(value: dxChartSeriesTypesStepAreaSeriesHoverStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+  }
 }
-

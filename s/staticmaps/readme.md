@@ -1,19 +1,19 @@
 
 # Scala.js typings for staticmaps
 
-Typings are for version 1.1
+Typings are for version 1.5
 
 ## Library description:
-A node.js library for creating map images with polylines, markers and text.
+A Node.js library for creating map images with markers, polylines, polygons and text.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | staticmaps |
 | Keywords           | openstreetmap, osm, staticmaps, staticmap, map, maps |
-| # releases         | 27 |
-| # dependents       | 1 |
-| # downloads        | 15584 |
-| # stars            | 3 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 5527.333333333333 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/StephanGeorg/staticmaps#readme)

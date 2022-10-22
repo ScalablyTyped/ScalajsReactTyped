@@ -1,30 +1,38 @@
 package typingsJapgolly.gijgo.Types
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Checkbox
-trait CheckboxSettings extends js.Object {
+trait CheckboxSettings extends StObject {
+  
   //Events
-  var change: js.UndefOr[js.Function2[/* e */ js.Any, /* state */ String, _]] = js.undefined
+  var change: js.UndefOr[js.Function2[/* e */ Any, /* state */ String, Any]] = js.undefined
+  
   var iconsLibrary: js.UndefOr[String] = js.undefined
+  
   var uiLibrary: js.UndefOr[String] = js.undefined
 }
-
 object CheckboxSettings {
-  @scala.inline
-  def apply(
-    change: (/* e */ js.Any, /* state */ String) => CallbackTo[js.Any] = null,
-    iconsLibrary: String = null,
-    uiLibrary: String = null
-  ): CheckboxSettings = {
+  
+  inline def apply(): CheckboxSettings = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* e */ js.Any, t1: /* state */ java.lang.String) => change(t0, t1).runNow()))
-    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxSettings]
   }
+  
+  extension [Self <: CheckboxSettings](x: Self) {
+    
+    inline def setChange(value: (/* e */ Any, /* state */ String) => Any): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
+    
+    inline def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
+  }
 }
-

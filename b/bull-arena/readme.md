@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull-arena
 
-Typings are for version 2.6
+Typings are for version 3.0
 
 ## Library description:
 An interactive UI dashboard for Bee Queue
@@ -9,11 +9,11 @@ An interactive UI dashboard for Bee Queue
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bull-arena |
-| Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 13 |
-| # downloads        | 724635 |
-| # stars            | 0 |
+| Keywords           | bull-arena, bull, bee, bullmq |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 97426.33333333333 |
+| # stars            | 727.0 |
 
 ## Links
 - [Homepage](https://github.com/bee-queue/arena#readme)

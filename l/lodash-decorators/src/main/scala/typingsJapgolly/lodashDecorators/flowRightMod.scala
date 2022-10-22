@@ -1,17 +1,20 @@
 package typingsJapgolly.lodashDecorators
 
-import typingsJapgolly.lodashDecorators.commonMod.LodashDecorator
-import typingsJapgolly.lodashDecorators.commonMod.ResolvableFunction
+import typingsJapgolly.lodashDecorators.factoryCommonMod.LodashDecorator
+import typingsJapgolly.lodashDecorators.factoryCommonMod.ResolvableFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/flowRight", JSImport.Namespace)
-@js.native
-object flowRightMod extends js.Object {
-  @JSName("FlowRight")
-  def FlowRight_(fns: ResolvableFunction*): LodashDecorator = js.native
-  def default(args: js.Any*): LodashDecorator = js.native
-  def flowRight(fns: ResolvableFunction*): LodashDecorator = js.native
+object flowRightMod {
+  
+  @JSImport("lodash-decorators/flowRight", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(args: Any*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[LodashDecorator]
+  
+  inline def FlowRight_(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("FlowRight")(fns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[LodashDecorator]
+  
+  inline def flowRight(fns: ResolvableFunction*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flowRight")(fns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[LodashDecorator]
 }
-

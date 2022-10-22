@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataBindingEventUIParam extends js.Object {
+trait DataBindingEventUIParam extends StObject {
+  
   /**
-  	 * Used to obtain reference to instance of $.ig.DataSource.
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to instance of $.ig.DataSource.
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to chart widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to chart widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object DataBindingEventUIParam {
-  @scala.inline
-  def apply(dataSource: js.Any = null, owner: js.Any = null): DataBindingEventUIParam = {
+  
+  inline def apply(): DataBindingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBindingEventUIParam]
   }
+  
+  extension [Self <: DataBindingEventUIParam](x: Self) {
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

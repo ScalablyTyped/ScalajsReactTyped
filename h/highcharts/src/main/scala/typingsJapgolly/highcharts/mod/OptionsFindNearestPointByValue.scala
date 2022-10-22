@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.x
   - typingsJapgolly.highcharts.highchartsStrings.xy
 */
-trait OptionsFindNearestPointByValue extends js.Object
-
+trait OptionsFindNearestPointByValue extends StObject
 object OptionsFindNearestPointByValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def x: typingsJapgolly.highcharts.highchartsStrings.x = this.cast("x")
-  @scala.inline
-  def xy: typingsJapgolly.highcharts.highchartsStrings.xy = this.cast("xy")
+  
+  inline def x: typingsJapgolly.highcharts.highchartsStrings.x = "x".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.x]
+  
+  inline def xy: typingsJapgolly.highcharts.highchartsStrings.xy = "xy".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.xy]
 }
-

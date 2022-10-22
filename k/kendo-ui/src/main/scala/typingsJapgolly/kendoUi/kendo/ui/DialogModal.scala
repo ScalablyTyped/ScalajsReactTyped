@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogModal extends js.Object {
+trait DialogModal extends StObject {
+  
   var preventScroll: js.UndefOr[String] = js.undefined
 }
-
 object DialogModal {
-  @scala.inline
-  def apply(preventScroll: String = null): DialogModal = {
+  
+  inline def apply(): DialogModal = {
     val __obj = js.Dynamic.literal()
-    if (preventScroll != null) __obj.updateDynamic("preventScroll")(preventScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogModal]
   }
+  
+  extension [Self <: DialogModal](x: Self) {
+    
+    inline def setPreventScroll(value: String): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
+    
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
+  }
 }
-

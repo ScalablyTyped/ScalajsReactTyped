@@ -11,9 +11,9 @@ dom matchers for Jasmine
 | Full name          | jasmine_dom_matchers |
 | Keywords           | jasmine |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 129907 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4508.333333333333 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](http://github.com/charleshansen/jasmine_dom_matchers)

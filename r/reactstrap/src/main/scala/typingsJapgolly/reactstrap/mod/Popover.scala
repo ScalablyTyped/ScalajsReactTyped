@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.popoverMod.PopoverProps
+import typingsJapgolly.reactstrap.typesLibPopoverMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Popover")
 @js.native
-class Popover[T] ()
-  extends Component[PopoverProps, js.Object, js.Any]
-
+open class Popover () extends default

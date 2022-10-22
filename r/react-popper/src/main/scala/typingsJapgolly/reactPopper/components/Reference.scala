@@ -1,41 +1,37 @@
 package typingsJapgolly.reactPopper.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.Ref
 import typingsJapgolly.reactPopper.mod.ReferenceChildrenProps
 import typingsJapgolly.reactPopper.mod.ReferenceProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Reference {
-  def apply(
-    innerRef: Ref = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ReferenceChildrenProps => CallbackTo[Node]
-  ): UnmountedWithRoot[ReferenceProps, typingsJapgolly.reactPopper.mod.Reference, Unit, ReferenceProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reactPopper.mod.ReferenceChildrenProps) => children(t0).runNow()))
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPopper.mod.ReferenceProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactPopper.mod.Reference](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPopper.mod.ReferenceProps])
+  inline def apply(children: ReferenceChildrenProps => Node): Builder = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReferenceProps]))
   }
+  
   @JSImport("react-popper", "Reference")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactPopper.mod.Reference] {
+    
+    inline def innerRef(value: Ref[Any]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: Any | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+  }
+  
+  def withProps(p: ReferenceProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

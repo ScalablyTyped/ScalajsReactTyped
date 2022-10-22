@@ -1,20 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "activex-access"
-version := "14.0-dt-20200225Z-cdc4c4"
-scalaVersion := "2.13.1"
+version := "14.0-dt-20220705Z-ba4fe8"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "activex-adodb" % "6.1-dt-20200225Z-e89964",
-  "org.scalablytyped.japgolly" %%% "activex-dao" % "16.0-dt-20200225Z-e30784",
-  "org.scalablytyped.japgolly" %%% "activex-office" % "16.0-dt-20200225Z-8289c0",
-  "org.scalablytyped.japgolly" %%% "activex-outlook" % "14.0-dt-20200225Z-46571c",
-  "org.scalablytyped.japgolly" %%% "activex-stdole" % "2.0-dt-20200225Z-4aef11",
-  "org.scalablytyped.japgolly" %%% "activex-vbide" % "14.0-dt-20200225Z-c6095d",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "activex-adodb" % "6.1-dt-20220705Z-a827c7",
+  "org.scalablytyped.japgolly" %%% "activex-dao" % "16.0-dt-20220705Z-a2733a",
+  "org.scalablytyped.japgolly" %%% "activex-office" % "16.0-dt-20220705Z-1ceec7",
+  "org.scalablytyped.japgolly" %%% "activex-outlook" % "14.0-dt-20220705Z-1f55ac",
+  "org.scalablytyped.japgolly" %%% "activex-stdole" % "2.0-dt-20220705Z-74843a",
+  "org.scalablytyped.japgolly" %%% "activex-vbide" % "14.0-dt-20220705Z-eca1b0",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisGroup extends js.Object
-
+sealed trait ChartAxisGroup extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisGroup")
 @js.native
-object ChartAxisGroup extends js.Object {
+object ChartAxisGroup extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait primary extends ChartAxisGroup
+  sealed trait primary
+    extends StObject
+       with ChartAxisGroup
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait secondary extends ChartAxisGroup
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisGroup with String] = js.native
-  /* "Primary" */ @js.native
-  object primary extends TopLevel[primary with String]
-  
-  /* "Secondary" */ @js.native
-  object secondary extends TopLevel[secondary with String]
-  
+  sealed trait secondary
+    extends StObject
+       with ChartAxisGroup
 }
-

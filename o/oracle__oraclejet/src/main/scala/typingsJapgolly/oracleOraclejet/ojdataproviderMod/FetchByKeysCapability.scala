@@ -2,20 +2,23 @@ package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.iteration
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.lookup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchByKeysCapability[D] extends js.Object {
+trait FetchByKeysCapability[D] extends StObject {
+  
   var implementation: iteration | lookup
 }
-
 object FetchByKeysCapability {
-  @scala.inline
-  def apply[D](implementation: iteration | lookup): FetchByKeysCapability[D] = {
-    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any])
   
+  inline def apply[D](implementation: iteration | lookup): FetchByKeysCapability[D] = {
+    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchByKeysCapability[D]]
   }
+  
+  extension [Self <: FetchByKeysCapability[?], D](x: Self & FetchByKeysCapability[D]) {
+    
+    inline def setImplementation(value: iteration | lookup): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+  }
 }
-

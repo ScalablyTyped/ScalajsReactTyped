@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LimitOptions extends js.Object {
+trait LimitOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
 }
-
 object LimitOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null): LimitOptions = {
+  
+  inline def apply(): LimitOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitOptions]
   }
+  
+  extension [Self <: LimitOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+  }
 }
-

@@ -1,19 +1,21 @@
 package typingsJapgolly.repeating
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("repeating", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Repeat a string - fast
     *
     * @param count Times the 'string' should be repeated.
     * @param str String to repeat. Default: ' '
     */
-  def apply(count: Double): String = js.native
-  def apply(count: Double, str: String): String = js.native
+  inline def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(count: Double, str: String): String = (^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("repeating", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

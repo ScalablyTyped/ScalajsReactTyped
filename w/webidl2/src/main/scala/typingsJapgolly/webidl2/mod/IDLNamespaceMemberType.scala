@@ -1,51 +1,36 @@
 package typingsJapgolly.webidl2.mod
 
-import typingsJapgolly.webidl2.webidl2Strings.attribute
-import typingsJapgolly.webidl2.webidl2Strings.deleter
-import typingsJapgolly.webidl2.webidl2Strings.getter
-import typingsJapgolly.webidl2.webidl2Strings.operation
-import typingsJapgolly.webidl2.webidl2Strings.setter
-import typingsJapgolly.webidl2.webidl2Strings.static
-import typingsJapgolly.webidl2.webidl2Strings.stringifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webidl2.mod.OperationMemberType
   - typingsJapgolly.webidl2.mod.AttributeMemberType
+  - typingsJapgolly.webidl2.mod.OperationMemberType
 */
-trait IDLNamespaceMemberType extends js.Object
-
+trait IDLNamespaceMemberType extends StObject
 object IDLNamespaceMemberType {
-  @scala.inline
-  def OperationMemberType(
-    arguments: js.Array[Argument],
-    extAttrs: js.Array[ExtendedAttribute],
-    special: getter | setter | deleter | static | stringifier,
-    `type`: operation,
-    idlType: IDLTypeDescription = null,
-    name: String = null
-  ): IDLNamespaceMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (idlType != null) __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLNamespaceMemberType]
-  }
-  @scala.inline
-  def AttributeMemberType(
+  
+  inline def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     inherit: Boolean,
     name: String,
-    readonly: Boolean,
-    special: static | stringifier,
-    `type`: attribute
-  ): IDLNamespaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLNamespaceMemberType]
+    parent: InterfaceMixinType | InterfaceType | NamespaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.AttributeMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = null)
+    __obj.updateDynamic("type")("attribute")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.AttributeMemberType]
+  }
+  
+  inline def OperationMemberType(
+    arguments: js.Array[Argument],
+    extAttrs: js.Array[ExtendedAttribute],
+    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
+  ): typingsJapgolly.webidl2.mod.OperationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], idlType = null, name = null, special = null)
+    __obj.updateDynamic("type")("operation")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.OperationMemberType]
   }
 }
-

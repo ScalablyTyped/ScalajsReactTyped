@@ -1,29 +1,29 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonFill
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseChartLegendItem extends BaseLegendItem {
-  /** The series that the item represents on the legend. */
+trait BaseChartLegendItem
+  extends StObject
+     with BaseLegendItem {
+  
+  /**
+    * The series that the item represents on the legend.
+    */
   var series: js.UndefOr[baseSeriesObject] = js.undefined
 }
-
 object BaseChartLegendItem {
-  @scala.inline
-  def apply(
-    marker: AnonFill = null,
-    series: baseSeriesObject = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BaseChartLegendItem = {
+  
+  inline def apply(): BaseChartLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseChartLegendItem]
   }
+  
+  extension [Self <: BaseChartLegendItem](x: Self) {
+    
+    inline def setSeries(value: baseSeriesObject): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+  }
 }
-

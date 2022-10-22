@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.robomakerMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsRobomakerMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "RoboMaker")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class RoboMaker ()
-  extends typingsJapgolly.awsSdk.allMod.RoboMaker {
+open class RoboMaker ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.RoboMaker {
   def this(options: ClientConfiguration) = this()
 }
-

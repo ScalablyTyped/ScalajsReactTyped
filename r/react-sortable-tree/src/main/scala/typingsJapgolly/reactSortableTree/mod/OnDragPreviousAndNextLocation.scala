@@ -1,28 +1,37 @@
 package typingsJapgolly.reactSortableTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnDragPreviousAndNextLocation extends PreviousAndNextLocation {
-  var nextParent: TreeItem | Null
-  var prevParent: TreeItem | Null
+trait OnDragPreviousAndNextLocation[T]
+  extends StObject
+     with PreviousAndNextLocation {
+  
+  var nextParent: TreeItem[T] | Null
+  
+  var prevParent: TreeItem[T] | Null
 }
-
 object OnDragPreviousAndNextLocation {
-  @scala.inline
-  def apply(
+  
+  inline def apply[T](
     nextPath: NumberOrStringArray,
     nextTreeIndex: Double,
     prevPath: NumberOrStringArray,
-    prevTreeIndex: Double,
-    nextParent: TreeItem = null,
-    prevParent: TreeItem = null
-  ): OnDragPreviousAndNextLocation = {
-    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
-    if (nextParent != null) __obj.updateDynamic("nextParent")(nextParent.asInstanceOf[js.Any])
-    if (prevParent != null) __obj.updateDynamic("prevParent")(prevParent.asInstanceOf[js.Any])
-    __obj.asInstanceOf[OnDragPreviousAndNextLocation]
+    prevTreeIndex: Double
+  ): OnDragPreviousAndNextLocation[T] = {
+    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any], nextParent = null, prevParent = null)
+    __obj.asInstanceOf[OnDragPreviousAndNextLocation[T]]
+  }
+  
+  extension [Self <: OnDragPreviousAndNextLocation[?], T](x: Self & OnDragPreviousAndNextLocation[T]) {
+    
+    inline def setNextParent(value: TreeItem[T]): Self = StObject.set(x, "nextParent", value.asInstanceOf[js.Any])
+    
+    inline def setNextParentNull: Self = StObject.set(x, "nextParent", null)
+    
+    inline def setPrevParent(value: TreeItem[T]): Self = StObject.set(x, "prevParent", value.asInstanceOf[js.Any])
+    
+    inline def setPrevParentNull: Self = StObject.set(x, "prevParent", null)
   }
 }
-

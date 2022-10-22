@@ -1,33 +1,79 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.SingleContactResult
-  * @classdesc Object holding the result of a contact between two rigid bodies.
-  * @description Create a new SingleContactResult.
-  * @param {pc.Entity} a - The first entity involved in the contact.
-  * @param {pc.Entity} b - The second entity involved in the contact.
-  * @param {pc.ContactPoint} contactPoint - The contact point between the two entities.
-  * @property {pc.Entity} a The first entity involved in the contact.
-  * @property {pc.Entity} b The second entity involved in the contact.
-  * @property {pc.Vec3} localPointA The point on Entity A where the contact occurred, relative to A.
-  * @property {pc.Vec3} localPointB The point on Entity B where the contact occurred, relative to B.
-  * @property {pc.Vec3} pointA The point on Entity A where the contact occurred, in world space.
-  * @property {pc.Vec3} pointB The point on Entity B where the contact occurred, in world space.
-  * @property {pc.Vec3} normal The normal vector of the contact on Entity B, in world space.
+  * Object holding the result of a contact between two rigid bodies.
   */
 @JSImport("playcanvas", "SingleContactResult")
 @js.native
-class SingleContactResult protected ()
-  extends typingsJapgolly.playcanvas.pc.SingleContactResult {
-  def this(
-    a: typingsJapgolly.playcanvas.pc.Entity,
-    b: typingsJapgolly.playcanvas.pc.Entity,
-    contactPoint: typingsJapgolly.playcanvas.pc.ContactPoint
-  ) = this()
+open class SingleContactResult protected () extends StObject {
+  /**
+    * Create a new SingleContactResult instance.
+    *
+    * @param {Entity} a - The first entity involved in the contact.
+    * @param {Entity} b - The second entity involved in the contact.
+    * @param {ContactPoint} contactPoint - The contact point between the two entities.
+    * @hideconstructor
+    */
+  def this(a: Entity, b: Entity, contactPoint: ContactPoint, args: Any*) = this()
+  
+  /**
+    * The first entity involved in the contact.
+    *
+    * @type {Entity}
+    */
+  var a: Entity = js.native
+  
+  /**
+    * The second entity involved in the contact.
+    *
+    * @type {Entity}
+    */
+  var b: Entity = js.native
+  
+  /**
+    * The total accumulated impulse applied by the constraint solver during the last
+    * sub-step. Describes how hard two bodies collided.
+    *
+    * @type {number}
+    */
+  var impulse: Double = js.native
+  
+  /**
+    * The point on Entity A where the contact occurred, relative to A.
+    *
+    * @type {Vec3}
+    */
+  var localPointA: Vec3 = js.native
+  
+  /**
+    * The point on Entity B where the contact occurred, relative to B.
+    *
+    * @type {Vec3}
+    */
+  var localPointB: Vec3 = js.native
+  
+  /**
+    * The normal vector of the contact on Entity B, in world space.
+    *
+    * @type {Vec3}
+    */
+  var normal: Vec3 = js.native
+  
+  /**
+    * The point on Entity A where the contact occurred, in world space.
+    *
+    * @type {Vec3}
+    */
+  var pointA: Vec3 = js.native
+  
+  /**
+    * The point on Entity B where the contact occurred, in world space.
+    *
+    * @type {Vec3}
+    */
+  var pointB: Vec3 = js.native
 }
-

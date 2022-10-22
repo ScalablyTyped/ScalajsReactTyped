@@ -1,21 +1,44 @@
 package typingsJapgolly.authmosphere
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.authmosphere.getTokenInfoMod.GetTokenInfo
-import typingsJapgolly.authmosphere.loggerMod.Logger
-import typingsJapgolly.authmosphere.mockOptionsMod.MockOptions
-import typingsJapgolly.authmosphere.oauthconfigMod.OAuthConfig
-import typingsJapgolly.authmosphere.oauthconfigMod.TokenCacheOAuthConfig
-import typingsJapgolly.authmosphere.tokenCacheConfigMod.CacheConfig
-import typingsJapgolly.authmosphere.tokenCacheConfigMod.TokenCacheOptions
+import typingsJapgolly.authmosphere.libSrcTypesGetTokenInfoMod.GetTokenInfo
+import typingsJapgolly.authmosphere.libSrcTypesLoggerMod.Logger
+import typingsJapgolly.authmosphere.libSrcTypesMockOptionsMod.MockOptions
+import typingsJapgolly.authmosphere.libSrcTypesOauthconfigMod.OAuthConfig
+import typingsJapgolly.authmosphere.libSrcTypesOauthconfigMod.TokenCacheOAuthConfig
+import typingsJapgolly.authmosphere.libSrcTypesTokenCacheConfigMod.CacheConfig
+import typingsJapgolly.authmosphere.libSrcTypesTokenCacheConfigMod.TokenCacheOptions
+import typingsJapgolly.authmosphere.libSrcTypesTokenMod.Token
 import typingsJapgolly.nock.mod.Scope
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("authmosphere", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("authmosphere", "OAuthGrantType")
+  @js.native
+  object OAuthGrantType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typingsJapgolly.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType & String
+      ] = js.native
+    
+    /* "authorization_code" */ val AUTHORIZATION_CODE_GRANT: typingsJapgolly.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT & String = js.native
+    
+    /* "client_credentials" */ val CLIENT_CREDENTIALS_GRANT: typingsJapgolly.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT & String = js.native
+    
+    /* "password" */ val PASSWORD_CREDENTIALS_GRANT: typingsJapgolly.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT & String = js.native
+    
+    /* "refresh_token" */ val REFRESH_TOKEN_GRANT: typingsJapgolly.authmosphere.libSrcTypesOauthgranttypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT & String = js.native
+  }
+  
   /**
     * Class to request and cache tokens on client-side.
     *
@@ -30,9 +53,10 @@ object mod extends js.Object {
     *  });
     *
     */
+  @JSImport("authmosphere", "TokenCache")
   @js.native
-  class TokenCache protected ()
-    extends typingsJapgolly.authmosphere.tokenCacheMod.TokenCache {
+  open class TokenCache protected ()
+    extends typingsJapgolly.authmosphere.libSrcTokenCacheMod.TokenCache {
     /**
       * @param tokenConfig
       * @param oauthConfig
@@ -45,8 +69,49 @@ object mod extends js.Object {
     ) = this()
   }
   
-  val authenticationMiddleware: typingsJapgolly.authmosphere.expressToolingMod.authenticationMiddleware = js.native
+  @JSImport("authmosphere", "authenticationMiddleware")
+  @js.native
+  val authenticationMiddleware: typingsJapgolly.authmosphere.libSrcExpressToolingMod.authenticationMiddleware = js.native
+  
+  /**
+    * Removes generated tokens and mocked endpoints.
+    */
+  inline def cleanMock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanMock")().asInstanceOf[Unit]
+  
+  /**
+    * Returns URI to request authorization code with the given parameters.
+    *
+    * @param authorizationEndpoint - OAuth authorization endpoint
+    * @param redirectUri - absolute URI specifying the endpoint the authorization code is responded
+    * @param clientId - client id of requesting application
+    * @param queryParams - optional set of key-value pairs which will be added as query parameters to the request
+    * @returns {string}
+    */
+  inline def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createAuthCodeRequestUri(
+    authorizationEndpoint: String,
+    redirectUri: String,
+    clientId: String,
+    queryParams: StringDictionary[String]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuthCodeRequestUri")(authorizationEndpoint.asInstanceOf[js.Any], redirectUri.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("authmosphere", "defaultCacheConfig")
+  @js.native
   val defaultCacheConfig: CacheConfig = js.native
+  
+  /**
+    * Requests a token based on the given configuration (which specifies the grant type and corresponding parameters).
+    *
+    * Resolves with object of type `Token` (in case of success).
+    * Otherwise, rejects with error message.
+    *
+    * @param options - OAuthConfig
+    * @param logger - optional logger
+    * @returns {Promise<T>}
+    */
+  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
+  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
+  
   /**
     * Makes a request to the `tokenInfoUrl` to validate the given `accessToken`.
     * In case of success resolves with a token.
@@ -60,40 +125,10 @@ object mod extends js.Object {
     *
     * @returns { Promise<Token<T>> }
     */
-  val getTokenInfo: GetTokenInfo[js.Object] = js.native
-  val requireScopesMiddleware: typingsJapgolly.authmosphere.expressToolingMod.requireScopesMiddleware = js.native
-  /**
-    * Removes generated tokens and mocked endpoints.
-    */
-  def cleanMock(): Unit = js.native
-  /**
-    * Returns URI to request authorization code with the given parameters.
-    *
-    * @param authorizationEndpoint - OAuth authorization endpoint
-    * @param redirectUri - absolute URI specifying the endpoint the authorization code is responded
-    * @param clientId - client id of requesting application
-    * @param queryParams - optional set of key-value pairs which will be added as query parameters to the request
-    * @returns {string}
-    */
-  def createAuthCodeRequestUri(authorizationEndpoint: String, redirectUri: String, clientId: String): String = js.native
-  def createAuthCodeRequestUri(
-    authorizationEndpoint: String,
-    redirectUri: String,
-    clientId: String,
-    queryParams: StringDictionary[String]
-  ): String = js.native
-  /**
-    * Requests a token based on the given configuration (which specifies the grant type and corresponding parameters).
-    *
-    * Resolves with object of type `Token` (in case of success).
-    * Otherwise, rejects with error message.
-    *
-    * @param options - OAuthConfig
-    * @param logger - optional logger
-    * @returns {Promise<T>}
-    */
-  def getAccessToken(options: OAuthConfig): js.Promise[Token] = js.native
-  def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token] = js.native
+  @JSImport("authmosphere", "getTokenInfo")
+  @js.native
+  val getTokenInfo: GetTokenInfo[Record[String | Double | js.Symbol, Any]] = js.native
+  
   /**
     * Creates a __very basic__ mock of token endpoint as defined in [RFC 6749](https://tools.ietf.org/html/rfc6749).
     *
@@ -102,9 +137,11 @@ object mod extends js.Object {
     *
     * @throws on parse error of options.url
     */
-  def mockAccessTokenEndpoint(options: MockOptions): Scope = js.native
-  def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = js.native
-  def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: js.Object): Scope = js.native
+  inline def mockAccessTokenEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  
   /**
     * Creates a __very basic__ mock of a token validation endpoint.
     *
@@ -113,21 +150,16 @@ object mod extends js.Object {
     *
     * @throws on parse error of options.url
     */
-  def mockTokeninfoEndpoint(options: MockOptions): Scope = js.native
-  def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[AnonAccesstoken]): Scope = js.native
-  def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = js.native
-  def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: js.Object): Scope = js.native
-  def safeLogger(): Logger = js.native
-  def safeLogger(logger: Logger): Logger = js.native
-  @js.native
-  object OAuthGrantType extends js.Object {
-    /* "authorization_code" */ val AUTHORIZATION_CODE_GRANT: typingsJapgolly.authmosphere.oauthgranttypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT with String = js.native
-    /* "client_credentials" */ val CLIENT_CREDENTIALS_GRANT: typingsJapgolly.authmosphere.oauthgranttypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT with String = js.native
-    /* "password" */ val PASSWORD_CREDENTIALS_GRANT: typingsJapgolly.authmosphere.oauthgranttypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT with String = js.native
-    /* "refresh_token" */ val REFRESH_TOKEN_GRANT: typingsJapgolly.authmosphere.oauthgranttypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.authmosphere.oauthgranttypeMod.OAuthGrantType with String] = js.native
-  }
+  inline def mockTokeninfoEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String | Double | js.Symbol, Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  
+  @JSImport("authmosphere", "requireScopesMiddleware")
+  @js.native
+  val requireScopesMiddleware: typingsJapgolly.authmosphere.libSrcExpressToolingMod.requireScopesMiddleware = js.native
+  
+  inline def safeLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")().asInstanceOf[Logger]
+  inline def safeLogger(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
 }
-

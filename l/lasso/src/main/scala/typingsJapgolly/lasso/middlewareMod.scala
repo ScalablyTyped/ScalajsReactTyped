@@ -1,15 +1,42 @@
 package typingsJapgolly.lasso
 
 import typingsJapgolly.express.mod.RequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
+import typingsJapgolly.lasso.anon.Lasso
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lasso/middleware", JSImport.Namespace)
-@js.native
-object middlewareMod extends js.Object {
-  def serveStatic(): RequestHandler[ParamsDictionary] = js.native
-  def serveStatic(options: AnonLasso): RequestHandler[ParamsDictionary] = js.native
+object middlewareMod {
+  
+  @JSImport("lasso/middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def serveStatic(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def serveStatic(options: Lasso): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("serveStatic")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
 }
-

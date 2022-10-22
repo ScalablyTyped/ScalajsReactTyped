@@ -3,43 +3,55 @@ package typingsJapgolly.screeps
 import typingsJapgolly.screeps.screepsStrings.dashed
 import typingsJapgolly.screeps.screepsStrings.dotted
 import typingsJapgolly.screeps.screepsStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineStyle extends js.Object {
+trait LineStyle extends StObject {
+  
   /**
     * Line color in any web format, default is #ffffff(white).
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
     * Either undefined (solid line), dashed, or dotted.Default is undefined.
     */
   var lineStyle: js.UndefOr[dashed | dotted | solid] = js.undefined
+  
   /**
     * Opacity value, default is 0.5.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * Line width, default is 0.1.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object LineStyle {
-  @scala.inline
-  def apply(
-    color: String = null,
-    lineStyle: dashed | dotted | solid = null,
-    opacity: Int | Double = null,
-    width: Int | Double = null
-  ): LineStyle = {
+  
+  inline def apply(): LineStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineStyle]
   }
+  
+  extension [Self <: LineStyle](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLineStyle(value: dashed | dotted | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

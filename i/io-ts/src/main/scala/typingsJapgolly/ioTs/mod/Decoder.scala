@@ -1,27 +1,30 @@
 package typingsJapgolly.ioTs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Decoder[I, A] extends js.Object {
-  val name: String
+trait Decoder[I, A] extends StObject {
+  
   def decode(i: I): Validation[A]
+  
+  val name: String
+  
   def validate(i: I, context: Context): Validation[A]
 }
-
 object Decoder {
-  @scala.inline
-  def apply[I, A](
-    decode: I => CallbackTo[Validation[A]],
-    name: String,
-    validate: (I, Context) => CallbackTo[Validation[A]]
-  ): Decoder[I, A] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("decode")(js.Any.fromFunction1((t0: I) => decode(t0).runNow()))
-    __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: I, t1: typingsJapgolly.ioTs.mod.Context) => validate(t0, t1).runNow()))
+  
+  inline def apply[I, A](decode: I => Validation[A], name: String, validate: (I, Context) => Validation[A]): Decoder[I, A] = {
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), name = name.asInstanceOf[js.Any], validate = js.Any.fromFunction2(validate))
     __obj.asInstanceOf[Decoder[I, A]]
   }
+  
+  extension [Self <: Decoder[?, ?], I, A](x: Self & (Decoder[I, A])) {
+    
+    inline def setDecode(value: I => Validation[A]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setValidate(value: (I, Context) => Validation[A]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+  }
 }
-

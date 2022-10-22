@@ -1,19 +1,19 @@
 
 # Scala.js typings for gridstack
 
-Typings are for version 0.6.3
+Typings are for version 7.0.1
 
 ## Library description:
-gridstack.js is a jQuery plugin for widget layout
+TypeScript/JS lib for dashboard layout and creation, no external dependencies, with many wrappers (React, Angular, Vue, Ember, knockout...)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gridstack |
-| Keywords           | gridstack, grid, gridster, layout |
-| # releases         | 9 |
-| # dependents       | 8 |
-| # downloads        | 419929 |
-| # stars            | 1 |
+| Keywords           | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 274546.6666666667 |
+| # stars            | 4316.0 |
 
 ## Links
 - [Homepage](http://gridstack.github.io/gridstack.js/)

@@ -1,11 +1,12 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gain extends js.Object {
+trait Gain extends StObject {
+  
   /**
     *   Set the output level of the gain node.
     *   @param volume amplitude between 0 and 1.0
@@ -17,14 +18,18 @@ trait Gain extends js.Object {
   def amp(volume: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def amp(volume: Double, rampTime: Unit, timeFromNow: Double): Unit = js.native
+  
   /**
     *   Send output to a p5.sound or web audio object
     */
   def connect(unit: js.Object): Unit = js.native
+  
   /**
     *   Disconnect all output.
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Connect a source to the gain node.
     *   @param src p5.sound / Web Audio object with a
@@ -32,4 +37,3 @@ trait Gain extends js.Object {
     */
   def setInput(src: js.Object): Unit = js.native
 }
-

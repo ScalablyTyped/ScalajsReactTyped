@@ -9,15 +9,16 @@ Block serialization specification parser for WordPress posts.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-serialization-default-parser |
-| Keywords           | wordpress, block, parser |
-| # releases         | 18 |
-| # dependents       | 4 |
-| # downloads        | 159362 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, block, parser |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 115136.33333333333 |
+| # stars            | 8183.0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/block-serialization-default-parser/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-serialization-default-parser/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fblock-serialization-default-parser)
     
 

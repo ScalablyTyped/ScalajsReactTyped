@@ -1,27 +1,32 @@
 package typingsJapgolly.jqueryValidation
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jqueryValidation.JQueryValidation.ValidatorStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryStatic extends js.Object {
-  var validator: ValidatorStatic
+trait JQueryStatic extends StObject {
+  
   /**
     * Replaces {n} placeholders with arguments.
     *
     * @param template The string to format.
     */
   def format(template: String, arguments: String*): String
+  
+  var validator: ValidatorStatic
 }
-
 object JQueryStatic {
-  @scala.inline
-  def apply(format: (String, /* repeated */ String) => CallbackTo[String], validator: ValidatorStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal(validator = validator.asInstanceOf[js.Any])
-    __obj.updateDynamic("format")(js.Any.fromFunction2((t0: java.lang.String, t1: /* repeated */ java.lang.String) => format(t0, t1).runNow()))
+  
+  inline def apply(format: (String, /* repeated */ String) => String, validator: ValidatorStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), validator = validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setFormat(value: (String, /* repeated */ String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    
+    inline def setValidator(value: ValidatorStatic): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+  }
 }
-

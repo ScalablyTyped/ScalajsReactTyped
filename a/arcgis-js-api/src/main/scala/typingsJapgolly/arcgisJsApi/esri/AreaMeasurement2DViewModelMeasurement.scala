@@ -1,25 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AreaMeasurement2DViewModelMeasurement extends Object {
+trait AreaMeasurement2DViewModelMeasurement
+  extends StObject
+     with Object {
+  
   /**
     * The area (m²).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
   var area: Double
+  
   /**
     * Measurement area.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any
+  var geometry: Any
+  
   /**
     * The perimeter (m).
     *
@@ -27,21 +31,26 @@ trait AreaMeasurement2DViewModelMeasurement extends Object {
     */
   var perimeter: Double
 }
-
 object AreaMeasurement2DViewModelMeasurement {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     area: Double,
     constructor: js.Function,
-    geometry: js.Any,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    geometry: Any,
+    hasOwnProperty: PropertyKey => Boolean,
     perimeter: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): AreaMeasurement2DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], perimeter = perimeter.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), perimeter = perimeter.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurement]
   }
+  
+  extension [Self <: AreaMeasurement2DViewModelMeasurement](x: Self) {
+    
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    
+    inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setPerimeter(value: Double): Self = StObject.set(x, "perimeter", value.asInstanceOf[js.Any])
+  }
 }
-

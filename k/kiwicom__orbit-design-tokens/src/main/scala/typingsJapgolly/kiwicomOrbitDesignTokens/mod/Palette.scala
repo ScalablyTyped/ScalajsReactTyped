@@ -1,24 +1,32 @@
 package typingsJapgolly.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Palette extends js.Object {
+trait Palette extends StObject {
+  
   var blue: StatusColor
+  
   var cloud: CloudColor
+  
   var green: StatusColor
+  
   var ink: InkColor
+  
   var orange: StatusColor
+  
   var product: ProductColor
+  
   var red: StatusColor
+  
   var social: SocialColor
+  
   var white: WhiteColor
 }
-
 object Palette {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     blue: StatusColor,
     cloud: CloudColor,
     green: StatusColor,
@@ -30,8 +38,27 @@ object Palette {
     white: WhiteColor
   ): Palette = {
     val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], cloud = cloud.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], ink = ink.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], social = social.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Palette]
   }
+  
+  extension [Self <: Palette](x: Self) {
+    
+    inline def setBlue(value: StatusColor): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    
+    inline def setCloud(value: CloudColor): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
+    
+    inline def setGreen(value: StatusColor): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    
+    inline def setInk(value: InkColor): Self = StObject.set(x, "ink", value.asInstanceOf[js.Any])
+    
+    inline def setOrange(value: StatusColor): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+    
+    inline def setProduct(value: ProductColor): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    
+    inline def setRed(value: StatusColor): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    
+    inline def setSocial(value: SocialColor): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
+    
+    inline def setWhite(value: WhiteColor): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+  }
 }
-

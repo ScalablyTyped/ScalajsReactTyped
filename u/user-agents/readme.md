@@ -10,10 +10,10 @@ A JavaScript library for generating random user agents.
 | ------------------ | :-------------: |
 | Full name          | user-agents |
 | Keywords           | - |
-| # releases         | 528 |
-| # dependents       | 20 |
-| # downloads        | 762031 |
-| # stars            | 0 |
+| # releases         | 607 |
+| # dependents       | 0.0 |
+| # downloads        | 1744547.3333333333 |
+| # stars            | 699.0 |
 
 ## Links
 - [Homepage](https://github.com/intoli/user-agents#readme)

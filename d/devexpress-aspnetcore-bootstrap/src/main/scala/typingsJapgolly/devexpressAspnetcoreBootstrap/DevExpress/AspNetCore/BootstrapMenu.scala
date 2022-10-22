@@ -5,19 +5,35 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemMouseOut
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemMouseOver
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.popUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapMenu")
 @js.native
-class BootstrapMenu () extends Control {
+trait BootstrapMenu
+  extends StObject
+     with Control {
+  
   def getItem(index: Double): BootstrapMenuItem | Null = js.native
+  
   def getItemByName(name: String): BootstrapMenuItem | Null = js.native
+  
   def getItemCount(): Double = js.native
+  
   def getOrientation(): String = js.native
+  
   def getRootItem(): BootstrapMenuItem | Null = js.native
+  
   def getSelectedItem(): BootstrapMenuItem | Null = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[EventArgs | MenuItemClickEventArgs | MenuItemEventArgs | MenuItemMouseEventArgs], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_closeUp(eventName: closeUp): this.type = js.native
   @JSName("off")
@@ -53,6 +69,7 @@ class BootstrapMenu () extends Control {
     eventName: popUp,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[MenuItemEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_closeUp(
     eventName: closeUp,
@@ -78,6 +95,7 @@ class BootstrapMenu () extends Control {
     eventName: popUp,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[MenuItemEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_closeUp(
     eventName: closeUp,
@@ -103,7 +121,8 @@ class BootstrapMenu () extends Control {
     eventName: popUp,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[MenuItemEventArgs], Unit]
   ): this.type = js.native
+  
   def setOrientation(orientation: String): Unit = js.native
+  
   def setSelectedItem(item: BootstrapMenuItem): Unit = js.native
 }
-

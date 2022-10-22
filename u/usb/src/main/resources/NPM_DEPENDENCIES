@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "usb" : "2.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "usb" : "2.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

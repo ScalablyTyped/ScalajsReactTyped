@@ -1,13 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for objects that implement different client command functionalities.
   */
-@JSGlobal("CommandBase")
-@js.native
-class CommandBase () extends js.Object
-
+trait CommandBase extends StObject

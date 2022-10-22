@@ -1,19 +1,57 @@
 package typingsJapgolly.activexOffice.Office
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Office.TabStop2")
-@js.native
-class TabStop2 protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Creator: Double = js.native
-  @JSName("Office.TabStop2_typekey")
-  var OfficeDotTabStop2_typekey: TabStop2 = js.native
-  val Parent: js.Any = js.native
-  var Position: Double = js.native
-  var Type: MsoTabStopType = js.native
-  def Clear(): Unit = js.native
+trait TabStop2 extends StObject {
+  
+  val Application: Any
+  
+  def Clear(): Unit
+  
+  val Creator: Double
+  
+  /* private */ @JSName("Office.TabStop2_typekey")
+  var OfficeDotTabStop2_typekey: TabStop2
+  
+  val Parent: Any
+  
+  var Position: Double
+  
+  var Type: MsoTabStopType
 }
-
+object TabStop2 {
+  
+  inline def apply(
+    Application: Any,
+    Clear: Callback,
+    Creator: Double,
+    OfficeDotTabStop2_typekey: TabStop2,
+    Parent: Any,
+    Position: Double,
+    Type: MsoTabStopType
+  ): TabStop2 = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Clear = Clear.toJsFn, Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.TabStop2_typekey")(OfficeDotTabStop2_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabStop2]
+  }
+  
+  extension [Self <: TabStop2](x: Self) {
+    
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setClear(value: Callback): Self = StObject.set(x, "Clear", value.toJsFn)
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setOfficeDotTabStop2_typekey(value: TabStop2): Self = StObject.set(x, "Office.TabStop2_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: MsoTabStopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
+}

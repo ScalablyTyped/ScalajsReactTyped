@@ -1,66 +1,209 @@
 package typingsJapgolly.reactToastify
 
-import typingsJapgolly.reactToastify.mod.PositionOptions
-import typingsJapgolly.reactToastify.mod.TypeOptions
+import typingsJapgolly.reactToastify.distTypesMod.DraggableDirection
+import typingsJapgolly.reactToastify.distTypesMod.Theme
+import typingsJapgolly.reactToastify.distTypesMod.ToastItemStatus
+import typingsJapgolly.reactToastify.distTypesMod.ToastPosition
+import typingsJapgolly.reactToastify.distTypesMod.TypeOptions
+import typingsJapgolly.reactToastify.distUtilsConstantMod.Default
+import typingsJapgolly.reactToastify.distUtilsConstantMod.Direction
+import typingsJapgolly.reactToastify.distUtilsConstantMod.KeyOfPosition
+import typingsJapgolly.reactToastify.distUtilsConstantMod.KeyOfType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactToastifyStrings {
-  @js.native
-  sealed trait `bottom-center` extends PositionOptions
   
   @js.native
-  sealed trait `bottom-left` extends PositionOptions
+  sealed trait BOTTOM_CENTER
+    extends StObject
+       with KeyOfPosition
+  inline def BOTTOM_CENTER: BOTTOM_CENTER = "BOTTOM_CENTER".asInstanceOf[BOTTOM_CENTER]
   
   @js.native
-  sealed trait `bottom-right` extends PositionOptions
+  sealed trait BOTTOM_LEFT
+    extends StObject
+       with KeyOfPosition
+  inline def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
   
   @js.native
-  sealed trait default extends TypeOptions
+  sealed trait BOTTOM_RIGHT
+    extends StObject
+       with KeyOfPosition
+  inline def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
   
   @js.native
-  sealed trait error extends TypeOptions
+  sealed trait DEFAULT
+    extends StObject
+       with KeyOfType
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
-  sealed trait info extends TypeOptions
+  sealed trait ERROR
+    extends StObject
+       with KeyOfType
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait success extends TypeOptions
+  sealed trait INFO
+    extends StObject
+       with KeyOfType
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait `top-center` extends PositionOptions
+  sealed trait SUCCESS
+    extends StObject
+       with KeyOfType
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
-  sealed trait `top-left` extends PositionOptions
+  sealed trait TOP_CENTER
+    extends StObject
+       with KeyOfPosition
+  inline def TOP_CENTER: TOP_CENTER = "TOP_CENTER".asInstanceOf[TOP_CENTER]
   
   @js.native
-  sealed trait `top-right` extends PositionOptions
+  sealed trait TOP_LEFT
+    extends StObject
+       with KeyOfPosition
+  inline def TOP_LEFT: TOP_LEFT = "TOP_LEFT".asInstanceOf[TOP_LEFT]
   
   @js.native
-  sealed trait warning extends TypeOptions
+  sealed trait TOP_RIGHT
+    extends StObject
+       with KeyOfPosition
+  inline def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
   
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  @js.native
+  sealed trait Toastify
+    extends StObject
+       with Default
+  inline def Toastify: Toastify = "Toastify".asInstanceOf[Toastify]
+  
+  @js.native
+  sealed trait WARNING
+    extends StObject
+       with KeyOfType
+  inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  
+  @js.native
+  sealed trait added
+    extends StObject
+       with ToastItemStatus
+  inline def added: added = "added".asInstanceOf[added]
+  
+  @js.native
+  sealed trait `bottom-center`
+    extends StObject
+       with ToastPosition
+  inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  
+  @js.native
+  sealed trait `bottom-left`
+    extends StObject
+       with ToastPosition
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @js.native
+  sealed trait `bottom-right`
+    extends StObject
+       with ToastPosition
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @js.native
+  sealed trait colored
+    extends StObject
+       with Theme
+  inline def colored: colored = "colored".asInstanceOf[colored]
+  
+  @js.native
+  sealed trait d extends StObject
+  inline def d: d = "d".asInstanceOf[d]
+  
+  @js.native
+  sealed trait dark
+    extends StObject
+       with Theme
+  inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
+  sealed trait default_
+    extends StObject
+       with TypeOptions
+  inline def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @js.native
+  sealed trait error_
+    extends StObject
+       with TypeOptions
+  inline def error_ : error_ = "error".asInstanceOf[error_]
+  
+  @js.native
+  sealed trait info_
+    extends StObject
+       with TypeOptions
+  inline def info_ : info_ = "info".asInstanceOf[info_]
+  
+  @js.native
+  sealed trait light
+    extends StObject
+       with Theme
+  inline def light: light = "light".asInstanceOf[light]
+  
+  @js.native
+  sealed trait removed
+    extends StObject
+       with ToastItemStatus
+  inline def removed: removed = "removed".asInstanceOf[removed]
+  
+  @js.native
+  sealed trait success_
+    extends StObject
+       with TypeOptions
+  inline def success_ : success_ = "success".asInstanceOf[success_]
+  
+  @js.native
+  sealed trait `top-center`
+    extends StObject
+       with ToastPosition
+  inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  
+  @js.native
+  sealed trait `top-left`
+    extends StObject
+       with ToastPosition
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @js.native
+  sealed trait `top-right`
+    extends StObject
+       with ToastPosition
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @js.native
+  sealed trait updated
+    extends StObject
+       with ToastItemStatus
+  inline def updated: updated = "updated".asInstanceOf[updated]
+  
+  @js.native
+  sealed trait warning_
+    extends StObject
+       with TypeOptions
+  inline def warning_ : warning_ = "warning".asInstanceOf[warning_]
+  
+  @js.native
+  sealed trait x
+    extends StObject
+       with Direction
+       with DraggableDirection
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait y
+    extends StObject
+       with Direction
+       with DraggableDirection
+  inline def y: y = "y".asInstanceOf[y]
 }
-

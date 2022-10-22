@@ -1,11 +1,12 @@
 package typingsJapgolly.xEditable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Initializes editable with the specified options
     * @param options an object with options specific to the editable instance
@@ -17,7 +18,6 @@ trait JQuery extends js.Object {
     * @param params the parameters expected by the method
     */
   def editable(method: String): XEditable = js.native
-  def editable(method: String, params: js.Any): XEditable = js.native
-  def editable(options: js.Any): XEditable = js.native
+  def editable(method: String, params: Any): XEditable = js.native
+  def editable(options: Any): XEditable = js.native
 }
-

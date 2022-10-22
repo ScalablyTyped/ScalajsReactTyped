@@ -1,39 +1,35 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`5`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`5`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`5`
 */
-trait MFFolderDefType extends js.Object
-
+trait MFFolderDefType extends StObject
 object MFFolderDefType {
-  @scala.inline
-  def AnyFolder: `1` = this.cast(1)
-  @scala.inline
-  def PropertyFolder: `3` = this.cast(3)
-  @scala.inline
-  def SearchFolder: `5` = this.cast(5)
-  @scala.inline
-  def TraditionalFolder: `4` = this.cast(4)
-  @scala.inline
-  def Unknown: `0` = this.cast(0)
-  @scala.inline
-  def ViewFolder: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AnyFolder: `1` = 1.asInstanceOf[`1`]
+  
+  inline def PropertyFolder: `3` = 3.asInstanceOf[`3`]
+  
+  inline def SearchFolder: `5` = 5.asInstanceOf[`5`]
+  
+  inline def TraditionalFolder: `4` = 4.asInstanceOf[`4`]
+  
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
+  
+  inline def ViewFolder: `2` = 2.asInstanceOf[`2`]
 }
-

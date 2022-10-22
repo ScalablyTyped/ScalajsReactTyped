@@ -1,9 +1,9 @@
 package typingsJapgolly.agoraRtcSdk.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configurations of the media stream relay.
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   *
   * Use this interface to set the media stream relay when calling {@link startChannelMediaRelay} or {@link updateChannelMediaRelay}.
   */
-trait ChannelMediaRelayConfiguration extends js.Object {
+trait ChannelMediaRelayConfiguration extends StObject {
+  
   /**
     * Removes the destination channel.
     *
@@ -24,6 +25,7 @@ trait ChannelMediaRelayConfiguration extends js.Object {
     * ```
     */
   def removeDestChannelInfo(channelName: String): Unit
+  
   /**
     * Sets the information of the destination channel.
     *
@@ -43,10 +45,11 @@ trait ChannelMediaRelayConfiguration extends js.Object {
     *  channelName: "destChannel",
     *  uid: 123,
     *  token: "yourDestToken",
-    * })
+    * });
     * ```
     */
-  def setDestChannelInfo(channelName: String, destInfo: js.Any): Unit
+  def setDestChannelInfo(channelName: String, destInfo: Any): Unit
+  
   /**
     * Sets the information of the source channel.
     *
@@ -63,24 +66,28 @@ trait ChannelMediaRelayConfiguration extends js.Object {
     *  channelName: "srcChannel",
     *  uid: 123,
     *  token: "yourSrcToken",
-    * })
+    * });
     * ```
     */
-  def setSrcChannelInfo(srcInfo: js.Any): Unit
+  def setSrcChannelInfo(srcInfo: Any): Unit
 }
-
 object ChannelMediaRelayConfiguration {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     removeDestChannelInfo: String => Callback,
-    setDestChannelInfo: (String, js.Any) => Callback,
-    setSrcChannelInfo: js.Any => Callback
+    setDestChannelInfo: (String, Any) => Callback,
+    setSrcChannelInfo: Any => Callback
   ): ChannelMediaRelayConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeDestChannelInfo")(js.Any.fromFunction1((t0: java.lang.String) => removeDestChannelInfo(t0).runNow()))
-    __obj.updateDynamic("setDestChannelInfo")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => setDestChannelInfo(t0, t1).runNow()))
-    __obj.updateDynamic("setSrcChannelInfo")(js.Any.fromFunction1((t0: js.Any) => setSrcChannelInfo(t0).runNow()))
+    val __obj = js.Dynamic.literal(removeDestChannelInfo = js.Any.fromFunction1((t0: String) => removeDestChannelInfo(t0).runNow()), setDestChannelInfo = js.Any.fromFunction2((t0: String, t1: Any) => (setDestChannelInfo(t0, t1)).runNow()), setSrcChannelInfo = js.Any.fromFunction1((t0: Any) => setSrcChannelInfo(t0).runNow()))
     __obj.asInstanceOf[ChannelMediaRelayConfiguration]
   }
+  
+  extension [Self <: ChannelMediaRelayConfiguration](x: Self) {
+    
+    inline def setRemoveDestChannelInfo(value: String => Callback): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetDestChannelInfo(value: (String, Any) => Callback): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2((t0: String, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setSetSrcChannelInfo(value: Any => Callback): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

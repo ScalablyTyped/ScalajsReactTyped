@@ -1,40 +1,31 @@
 package typingsJapgolly.reactJson.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactJson.mod.JsonProperties
 import typingsJapgolly.reactJson.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactJson {
-  def apply(
-    value: js.Any,
-    onChange: /* value */ js.Any => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[JsonProperties, ^, Unit, JsonProperties] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ js.Any) => onChange(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactJson.mod.JsonProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactJson.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactJson.mod.JsonProperties])(children: _*)
+  inline def apply(value: Any): Builder = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[JsonProperties]))
   }
+  
   @JSImport("react-json", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def onChange(value: /* value */ Any => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+  }
+  
+  def withProps(p: JsonProperties): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.incoming
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.outgoing
 */
-trait CallDirection extends js.Object
-
+trait CallDirection extends StObject
 object CallDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def incoming: typingsJapgolly.microsoftGraph.microsoftGraphStrings.incoming = this.cast("incoming")
-  @scala.inline
-  def outgoing: typingsJapgolly.microsoftGraph.microsoftGraphStrings.outgoing = this.cast("outgoing")
+  
+  inline def incoming: typingsJapgolly.microsoftGraph.microsoftGraphStrings.incoming = "incoming".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.incoming]
+  
+  inline def outgoing: typingsJapgolly.microsoftGraph.microsoftGraphStrings.outgoing = "outgoing".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.outgoing]
 }
-

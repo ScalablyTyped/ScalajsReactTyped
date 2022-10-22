@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasDisallowConvenienceLogonResult extends js.Object
-
+sealed trait EasDisallowConvenienceLogonResult extends StObject
 /** Results of whether the logon can occur. These values are mapped against the HRESULT codes returned from the EAS policy engine. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult")
 @js.native
-object EasDisallowConvenienceLogonResult extends js.Object {
+object EasDisallowConvenienceLogonResult extends StObject {
+  
   /** This computer can be compliant by using the ApplyAsync method. */
   @js.native
-  sealed trait canBeCompliant extends EasDisallowConvenienceLogonResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
   /** This computer is compliant to the policy. */
   @js.native
-  sealed trait compliant extends EasDisallowConvenienceLogonResult
+  sealed trait compliant
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
   /** The policy is not set for evaluation. */
   @js.native
-  sealed trait notEvaluated extends EasDisallowConvenienceLogonResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
   /** The requested policy is stricter than the computer policies. */
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasDisallowConvenienceLogonResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasDisallowConvenienceLogonResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
-  
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasDisallowConvenienceLogonResult
 }
-

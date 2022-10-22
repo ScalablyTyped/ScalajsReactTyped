@@ -1,14 +1,17 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ArrayType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayTypeNode extends TypeNode {
-  var elementType: TypeNode = js.native
+trait ArrayTypeNode
+  extends StObject
+     with TypeNode {
+  
+  val elementType: TypeNode = js.native
+  
   @JSName("kind")
-  var kind_ArrayTypeNode: ArrayType = js.native
+  val kind_ArrayTypeNode: ArrayType = js.native
 }
-

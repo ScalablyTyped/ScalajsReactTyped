@@ -1,22 +1,36 @@
 package typingsJapgolly.remotedevSerialize
 
+import typingsJapgolly.remotedevSerialize.anon.Parse
+import typingsJapgolly.remotedevSerialize.anon.TypeofImmutable
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("remotedev-serialize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def immutable(immutable: TypeofImmutable): AnonParse = js.native
-  def immutable(immutable: TypeofImmutable, refs: Refs): AnonParse = js.native
-  def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer): AnonParse = js.native
-  def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer, customReviver: Reviver): AnonParse = js.native
-  type DefaultReplacer = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
-  type DefaultReviver = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
+object mod {
+  
+  @JSImport("remotedev-serialize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def immutable(immutable: TypeofImmutable): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any]).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Unit, customReplacer: Unit, customReviver: Reviver): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any], customReviver.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Unit, customReplacer: Replacer): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Unit, customReplacer: Replacer, customReviver: Reviver): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any], customReviver.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Refs): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Unit, customReviver: Reviver): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any], customReviver.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  inline def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer, customReviver: Reviver): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("immutable")(immutable.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], customReplacer.asInstanceOf[js.Any], customReviver.asInstanceOf[js.Any])).asInstanceOf[Parse]
+  
+  type DefaultReplacer = js.Function2[/* key */ String, /* value */ Any, Any]
+  
+  type DefaultReviver = js.Function2[/* key */ String, /* value */ Any, Any]
+  
   type Options = Record[String, Boolean]
-  type Refs = Record[String, js.Any]
-  type Replacer = js.Function3[/* key */ String, /* value */ js.Any, /* replacer */ DefaultReplacer, js.Any]
-  type Reviver = js.Function3[/* key */ String, /* value */ js.Any, /* reviver */ DefaultReviver, js.Any]
+  
+  type Refs = Record[String, Any]
+  
+  type Replacer = js.Function3[/* key */ String, /* value */ Any, /* replacer */ DefaultReplacer, Any]
+  
+  type Reviver = js.Function3[/* key */ String, /* value */ Any, /* reviver */ DefaultReviver, Any]
 }
-

@@ -1,30 +1,54 @@
 package typingsJapgolly.hexo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InstanceOptions extends js.Object {
+trait InstanceOptions extends StObject {
+  
   var config: js.UndefOr[String] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
+  
+  var draft: js.UndefOr[Boolean] = js.undefined
+  
+  var drafts: js.UndefOr[Boolean] = js.undefined
+  
   var safe: js.UndefOr[Boolean] = js.undefined
+  
   var silent: js.UndefOr[Boolean] = js.undefined
 }
-
 object InstanceOptions {
-  @scala.inline
-  def apply(
-    config: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    safe: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined
-  ): InstanceOptions = {
+  
+  inline def apply(): InstanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceOptions]
   }
+  
+  extension [Self <: InstanceOptions](x: Self) {
+    
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    
+    inline def setDrafts(value: Boolean): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
+    
+    inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
+    
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    
+    inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+  }
 }
-

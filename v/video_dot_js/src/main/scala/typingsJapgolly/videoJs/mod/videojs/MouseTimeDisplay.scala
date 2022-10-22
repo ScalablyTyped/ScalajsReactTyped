@@ -1,9 +1,9 @@
 package typingsJapgolly.videoJs.mod.videojs
 
-import org.scalajs.dom.raw.ClientRect
+import typingsJapgolly.std.ClientRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link MouseTimeDisplay} component tracks mouse movement over the
@@ -12,7 +12,10 @@ import scala.scalajs.js.annotation._
   * {@link ProgressControl}.
   */
 @js.native
-trait MouseTimeDisplay extends Component {
+trait MouseTimeDisplay
+  extends StObject
+     with Component {
+  
   /**
     * Enqueues updates to its own DOM as well as the DOM of its
     * {@link TimeTooltip} child.
@@ -26,4 +29,3 @@ trait MouseTimeDisplay extends Component {
     */
   def update(seekBarRect: ClientRect, seekBarPoint: Double): Unit = js.native
 }
-

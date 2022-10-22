@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GroupCollapsingEventUIParam extends js.Object {
+trait GroupCollapsingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column object for the current group that is collapsing.
-  	 */
-  var column: js.UndefOr[js.Any] = js.undefined
+    * Gets the column object for the current group that is collapsing.
+    */
+  var column: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Get a reference to the jQuery object for the column being collapsing (th).
-  	 */
+    * Get a reference to the jQuery object for the column being collapsing (th).
+    */
   var element: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the reference to the GridMultiColumnHeaders widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the reference to the GridMultiColumnHeaders widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object GroupCollapsingEventUIParam {
-  @scala.inline
-  def apply(column: js.Any = null, element: String = null, owner: js.Any = null): GroupCollapsingEventUIParam = {
+  
+  inline def apply(): GroupCollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupCollapsingEventUIParam]
   }
+  
+  extension [Self <: GroupCollapsingEventUIParam](x: Self) {
+    
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,14 +1,19 @@
 package typingsJapgolly.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NodeNavigator")
 @js.native
-class NodeNavigator protected ()
-  extends typingsJapgolly.grammarkdown.navigatorMod.NodeNavigator {
-  def this(other: typingsJapgolly.grammarkdown.navigatorMod.NodeNavigator) = this()
-  def this(sourceFile: typingsJapgolly.grammarkdown.nodesMod.SourceFile) = this()
+open class NodeNavigator protected ()
+  extends typingsJapgolly.grammarkdown.distNavigatorMod.NodeNavigator {
+  /**
+    * @param other A {@link NodeNavigator} whose position information is used to create this navigator.
+    */
+  def this(other: typingsJapgolly.grammarkdown.distNavigatorMod.NodeNavigator) = this()
+  /**
+    * @param sourceFile The {@link SourceFile} to use as the root of the navigator.
+    */
+  def this(sourceFile: typingsJapgolly.grammarkdown.distNodesMod.SourceFile) = this()
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat`
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`
 */
-trait ThemeTypeAdditionalBackgroundsTiling extends js.Object
-
+trait ThemeTypeAdditionalBackgroundsTiling extends StObject
 object ThemeTypeAdditionalBackgroundsTiling {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `no-repeat`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = this.cast("no-repeat")
-  @scala.inline
-  def repeat: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = this.cast("repeat")
-  @scala.inline
-  def `repeat-x`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = this.cast("repeat-x")
-  @scala.inline
-  def `repeat-y`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = this.cast("repeat-y")
+  
+  inline def `no-repeat`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat` = "no-repeat".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`no-repeat`]
+  
+  inline def repeat: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat = "repeat".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.repeat]
+  
+  inline def `repeat-x`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x` = "repeat-x".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-x`]
+  
+  inline def `repeat-y`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y` = "repeat-y".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`repeat-y`]
 }
-

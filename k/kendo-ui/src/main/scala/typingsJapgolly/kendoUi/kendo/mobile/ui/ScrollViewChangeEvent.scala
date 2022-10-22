@@ -2,32 +2,39 @@ package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollViewChangeEvent extends ScrollViewEvent {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait ScrollViewChangeEvent
+  extends StObject
+     with ScrollViewEvent {
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var element: js.UndefOr[JQuery] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
 }
-
 object ScrollViewChangeEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: ScrollView,
-    data: js.Any = null,
-    element: JQuery = null,
-    page: Int | Double = null
-  ): ScrollViewChangeEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: ScrollView): ScrollViewChangeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangeEvent]
   }
+  
+  extension [Self <: ScrollViewChangeEvent](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+  }
 }
-

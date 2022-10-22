@@ -1,55 +1,70 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeFormat.toJSON()`. */
-trait ConditionalRangeFormatData extends js.Object {
+trait ConditionalRangeFormatData extends StObject {
+  
   /**
+    * Collection of border objects that apply to the overall conditional format range.
     *
-    * Collection of border objects that apply to the overall conditional format range. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borders: js.UndefOr[js.Array[ConditionalRangeBorderData]] = js.undefined
+  
   /**
+    * Returns the fill object defined on the overall conditional format range.
     *
-    * Returns the fill object defined on the overall conditional format range. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fill: js.UndefOr[ConditionalRangeFillData] = js.undefined
+  
   /**
+    * Returns the font object defined on the overall conditional format range.
     *
-    * Returns the font object defined on the overall conditional format range. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var font: js.UndefOr[ConditionalRangeFontData] = js.undefined
+  
   /**
+    * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+    Cleared if `null` is passed in.
     *
-    * Represents Excel's number format code for the given range. Cleared if null is passed in.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var numberFormat: js.UndefOr[js.Any] = js.undefined
+  var numberFormat: js.UndefOr[Any] = js.undefined
 }
-
 object ConditionalRangeFormatData {
-  @scala.inline
-  def apply(
-    borders: js.Array[ConditionalRangeBorderData] = null,
-    fill: ConditionalRangeFillData = null,
-    font: ConditionalRangeFontData = null,
-    numberFormat: js.Any = null
-  ): ConditionalRangeFormatData = {
+  
+  inline def apply(): ConditionalRangeFormatData = {
     val __obj = js.Dynamic.literal()
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeFormatData]
   }
+  
+  extension [Self <: ConditionalRangeFormatData](x: Self) {
+    
+    inline def setBorders(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    
+    inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+    
+    inline def setBordersVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "borders", js.Array(value*))
+    
+    inline def setFill(value: ConditionalRangeFillData): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFont(value: ConditionalRangeFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setNumberFormat(value: Any): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+  }
 }
-

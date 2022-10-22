@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__element
 
-Typings are for version 2.4
+Typings are for version 4.17.0
 
 ## Library description:
 Element React module for WordPress.
@@ -9,21 +9,22 @@ Element React module for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/element |
-| Keywords           | wordpress, element, react |
-| # releases         | 32 |
-| # dependents       | 31 |
-| # downloads        | 358456 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, element, react |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 411453.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/element/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/element/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Felement)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

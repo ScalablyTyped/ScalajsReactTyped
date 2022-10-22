@@ -2,9 +2,10 @@ package typingsJapgolly.cytoscape.mod.Css
 
 import typingsJapgolly.cytoscape.cytoscapeStrings.`node-position`
 import typingsJapgolly.cytoscape.cytoscapeStrings.intersection
+import typingsJapgolly.cytoscape.mod.EdgeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Unbundled bezier edges
@@ -12,13 +13,15 @@ import scala.scalajs.js.annotation._
   *
   * http://js.cytoscape.org/#style/unbundled-bezier-edges
   */
-trait UnbundledBezierEdges extends js.Object {
+trait UnbundledBezierEdges extends StObject {
+  
   /**
     * A series of values that specify for each control point the
     * distance perpendicular to a line formed
     * from source to target, e.g. -20 20 - 20.
     */
-  var `control-point-distances`: PropertyValueEdge[String]
+  var `control-point-distances`: PropertyValueEdge[Double | js.Array[Double] | String]
+  
   /**
     * A series of values that weights control points along
     * a line from source to target, e.g. 0.25 0.5 0.75.
@@ -27,7 +30,8 @@ trait UnbundledBezierEdges extends js.Object {
     * 1 towards the target node
     * — but larger or smaller values can also be used.
     */
-  var `control-point-weights`: PropertyValueEdge[String]
+  var `control-point-weights`: PropertyValueEdge[Double | js.Array[Double] | String]
+  
   /**
     * With value intersection (default),
     * the line from source to target for "control-point-weights"
@@ -41,12 +45,11 @@ trait UnbundledBezierEdges extends js.Object {
     */
   var `edge-distances`: PropertyValueEdge[intersection | `node-position`]
 }
-
 object UnbundledBezierEdges {
-  @scala.inline
-  def apply(
-    `control-point-distances`: PropertyValueEdge[String],
-    `control-point-weights`: PropertyValueEdge[String],
+  
+  inline def apply(
+    `control-point-distances`: PropertyValueEdge[Double | js.Array[Double] | String],
+    `control-point-weights`: PropertyValueEdge[Double | js.Array[Double] | String],
     `edge-distances`: PropertyValueEdge[intersection | `node-position`]
   ): UnbundledBezierEdges = {
     val __obj = js.Dynamic.literal()
@@ -55,5 +58,23 @@ object UnbundledBezierEdges {
     __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnbundledBezierEdges]
   }
+  
+  extension [Self <: UnbundledBezierEdges](x: Self) {
+    
+    inline def `setControl-point-distances`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "control-point-distances", value.asInstanceOf[js.Any])
+    
+    inline def `setControl-point-distancesFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "control-point-distances", js.Any.fromFunction1(value))
+    
+    inline def `setControl-point-distancesVarargs`(value: Double*): Self = StObject.set(x, "control-point-distances", js.Array(value*))
+    
+    inline def `setControl-point-weights`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "control-point-weights", value.asInstanceOf[js.Any])
+    
+    inline def `setControl-point-weightsFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "control-point-weights", js.Any.fromFunction1(value))
+    
+    inline def `setControl-point-weightsVarargs`(value: Double*): Self = StObject.set(x, "control-point-weights", js.Array(value*))
+    
+    inline def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
+    
+    inline def `setEdge-distancesFunction1`(value: EdgeSingular => intersection | `node-position`): Self = StObject.set(x, "edge-distances", js.Any.fromFunction1(value))
+  }
 }
-

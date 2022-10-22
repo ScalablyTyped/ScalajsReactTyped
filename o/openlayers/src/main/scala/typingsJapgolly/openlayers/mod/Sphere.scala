@@ -1,13 +1,13 @@
 package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.openlayers.mod.geom.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Sphere")
 @js.native
-class Sphere protected () extends js.Object {
+open class Sphere protected () extends StObject {
   /**
     * @classdesc
     * Class to create objects that can be used with {@link
@@ -24,6 +24,7 @@ class Sphere protected () extends js.Object {
     * @api
     */
   def this(radius: Double) = this()
+  
   /**
     * Returns the geodesic area for a list of coordinates.
     *
@@ -39,6 +40,7 @@ class Sphere protected () extends js.Object {
     * @api
     */
   def geodesicArea(coordinates: js.Array[Coordinate_]): Double = js.native
+  
   /**
     * Returns the distance from c1 to c2 using the haversine formula.
     *
@@ -49,11 +51,13 @@ class Sphere protected () extends js.Object {
     */
   def haversineDistance(c1: Coordinate_, c2: Coordinate_): Double = js.native
 }
-
 /* static members */
-@JSImport("openlayers", "Sphere")
-@js.native
-object Sphere extends js.Object {
+object Sphere {
+  
+  @JSImport("openlayers", "Sphere")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get the spherical area of a geometry.  This is the area (in meters) assuming
     * that polygon edges are segments of great circles on a sphere.
@@ -64,8 +68,9 @@ object Sphere extends js.Object {
     * @return The spherical area (in square meters).
     * @api
     */
-  def getArea(geometry: Geometry): Double = js.native
-  def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
+  inline def getArea(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Get the spherical length of a geometry.  This length is the sum of the
     * great circle distances between coordinates.  For polygons, the length is
@@ -78,7 +83,6 @@ object Sphere extends js.Object {
     * @return The spherical length (in meters).
     * @api
     */
-  def getLength(geometry: Geometry): Double = js.native
-  def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
+  inline def getLength(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

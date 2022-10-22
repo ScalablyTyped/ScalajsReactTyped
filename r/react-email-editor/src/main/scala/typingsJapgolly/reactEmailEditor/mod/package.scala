@@ -1,19 +1,33 @@
-package typingsJapgolly.reactEmailEditor
+package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type EventCallback = js.Function1[/* data */ js.Object, scala.Unit]
-  type ExportHtmlCallback = js.Function1[/* data */ typingsJapgolly.reactEmailEditor.mod.HtmlExport, scala.Unit]
-  type FileUploadCallback = js.Function2[
-    /* file */ typingsJapgolly.reactEmailEditor.mod.FileInfo, 
-    /* done */ typingsJapgolly.reactEmailEditor.mod.FileUploadDoneCallback, 
-    scala.Unit
-  ]
-  type FileUploadDoneCallback = js.Function1[/* data */ typingsJapgolly.reactEmailEditor.mod.FileUploadDoneData, scala.Unit]
-  type SaveDesignCallback = js.Function1[/* data */ typingsJapgolly.reactEmailEditor.mod.Design, scala.Unit]
-  type StringList = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type ToolsConfig = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactEmailEditor.mod.ToolConfig]
-}
+
+type DisplayConditionCallback = js.Function2[
+/* data */ DisplayCondition | EmptyDisplayCondition, 
+/* done */ DisplayConditionDoneCallback, 
+Unit]
+
+type DisplayConditionDoneCallback = js.Function1[/* data */ DisplayCondition | Null, Unit]
+
+type EmptyDisplayCondition = js.Object
+
+type EventCallback = js.Function1[/* data */ js.Object, Unit]
+
+type ExportHtmlCallback = js.Function1[/* data */ HtmlExport, Unit]
+
+type FileUploadCallback = js.Function2[/* file */ FileInfo, /* done */ FileUploadDoneCallback, Unit]
+
+type FileUploadDoneCallback = js.Function1[/* data */ FileUploadDoneData, Unit]
+
+type SaveDesignCallback = js.Function1[/* data */ Design, Unit]
+
+type StringList = StringDictionary[String]
+
+type ToolsConfig = StringDictionary[ToolConfig]
+
+type Translations = Record[String, Record[String, String]]

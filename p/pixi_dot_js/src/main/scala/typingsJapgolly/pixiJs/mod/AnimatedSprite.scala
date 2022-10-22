@@ -1,70 +1,47 @@
 package typingsJapgolly.pixiJs.mod
 
-import typingsJapgolly.pixiJs.PIXI.AnimatedSprite.FrameObject
+import typingsJapgolly.pixiSpriteAnimated.mod.FrameObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An AnimatedSprite is a simple way to display an animation depicted by a list of textures.
-  *
-  * ```js
-  * let alienImages = ["image_sequence_01.png","image_sequence_02.png","image_sequence_03.png","image_sequence_04.png"];
-  * let textureArray = [];
-  *
-  * for (let i=0; i < 4; i++)
-  * {
-  *      let texture = PIXI.Texture.from(alienImages[i]);
-  *      textureArray.push(texture);
-  * };
-  *
-  * let animatedSprite = new PIXI.AnimatedSprite(textureArray);
-  * ```
-  *
-  * The more efficient and simpler way to create an animated sprite is using a {@link PIXI.Spritesheet}
-  * containing the animation definitions:
-  *
-  * ```js
-  * PIXI.Loader.shared.add("assets/spritesheet.json").load(setup);
-  *
-  * function setup() {
-  *   let sheet = PIXI.Loader.shared.resources["assets/spritesheet.json"].spritesheet;
-  *   animatedSprite = new PIXI.AnimatedSprite(sheet.animations["image_sequence"]);
-  *   ...
-  * }
-  * ```
-  *
-  * @class
-  * @extends PIXI.Sprite
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "AnimatedSprite")
 @js.native
-class AnimatedSprite protected ()
-  extends typingsJapgolly.pixiJs.PIXI.AnimatedSprite {
-  def this(textures: js.Array[FrameObject | typingsJapgolly.pixiJs.PIXI.Texture]) = this()
-  def this(textures: js.Array[FrameObject | typingsJapgolly.pixiJs.PIXI.Texture], autoUpdate: Boolean) = this()
+open class AnimatedSprite protected ()
+  extends typingsJapgolly.pixiSpriteAnimated.mod.AnimatedSprite {
+  /**
+    * @param textures - An array of {@link PIXI.Texture} or frame
+    *  objects that make up the animation.
+    * @param {boolean} [autoUpdate=true] - Whether to use PIXI.Ticker.shared to auto update animation time.
+    */
+  def this(textures: js.Array[
+        FrameObject | typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource]
+      ]) = this()
+  def this(
+    textures: js.Array[
+        FrameObject | typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource]
+      ],
+    autoUpdate: Boolean
+  ) = this()
 }
-
 /* static members */
-@JSImport("pixi.js", "AnimatedSprite")
-@js.native
-object AnimatedSprite extends js.Object {
+object AnimatedSprite {
+  
+  @JSImport("pixi.js", "AnimatedSprite")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * A short hand way of creating an AnimatedSprite from an array of frame ids.
-    *
-    * @static
-    * @param {string[]} frames - The array of frames ids the AnimatedSprite will use as its texture frames.
-    * @return {AnimatedSprite} The new animated sprite with the specified frames.
+    * @param frames - The array of frames ids the AnimatedSprite will use as its texture frames.
+    * @returns - The new animated sprite with the specified frames.
     */
-  def fromFrames(frames: js.Array[String]): typingsJapgolly.pixiJs.PIXI.AnimatedSprite = js.native
+  inline def fromFrames(frames: js.Array[String]): typingsJapgolly.pixiSpriteAnimated.mod.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiSpriteAnimated.mod.AnimatedSprite]
+  
   /**
     * A short hand way of creating an AnimatedSprite from an array of image ids.
-    *
-    * @static
-    * @param {string[]} images - The array of image urls the AnimatedSprite will use as its texture frames.
-    * @return {AnimatedSprite} The new animate sprite with the specified images as frames.
+    * @param images - The array of image urls the AnimatedSprite will use as its texture frames.
+    * @returns The new animate sprite with the specified images as frames.
     */
-  def fromImages(images: js.Array[String]): typingsJapgolly.pixiJs.PIXI.AnimatedSprite = js.native
+  inline def fromImages(images: js.Array[String]): typingsJapgolly.pixiSpriteAnimated.mod.AnimatedSprite = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImages")(images.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiSpriteAnimated.mod.AnimatedSprite]
 }
-

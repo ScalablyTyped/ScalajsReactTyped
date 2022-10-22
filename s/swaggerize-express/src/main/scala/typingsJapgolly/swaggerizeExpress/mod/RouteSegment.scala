@@ -2,26 +2,34 @@ package typingsJapgolly.swaggerizeExpress.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.express.mod.RequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RouteSegment
-  extends /* urlSegment */ StringDictionary[
-      RouteSegment | RequestHandler[ParamsDictionary] | js.Array[RequestHandler[ParamsDictionary]]
+  extends StObject
+     with /* urlSegment */ StringDictionary[
+      RouteSegment | (RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]) | (js.Array[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ])
     ]
-
 object RouteSegment {
-  @scala.inline
-  def apply(
-    StringDictionary: /* urlSegment */ StringDictionary[
-      RouteSegment | RequestHandler[ParamsDictionary] | js.Array[RequestHandler[ParamsDictionary]]
-    ] = null
-  ): RouteSegment = {
+  
+  inline def apply(): RouteSegment = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RouteSegment]
   }
 }
-

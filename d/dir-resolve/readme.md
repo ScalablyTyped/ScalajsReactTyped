@@ -11,9 +11,9 @@ Extension for require.resolve which will resolve directories as well as files
 | Full name          | dir-resolve |
 | Keywords           | require, resolve, directory |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 9593 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 875.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mwinche/dir-resolve#readme)

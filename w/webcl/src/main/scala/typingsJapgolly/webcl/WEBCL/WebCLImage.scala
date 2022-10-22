@@ -2,22 +2,26 @@ package typingsJapgolly.webcl.WEBCL
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6.2
-trait WebCLImage extends WebCLMemoryObject {
+trait WebCLImage
+  extends StObject
+     with WebCLMemoryObject {
+  
   def getInfo(): WebCLImageDescriptor
 }
-
 object WebCLImage {
-  @scala.inline
-  def apply(getInfo: CallbackTo[WebCLImageDescriptor], release: Callback): WebCLImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInfo")(getInfo.toJsFn)
-    __obj.updateDynamic("release")(release.toJsFn)
+  
+  inline def apply(getInfo: CallbackTo[WebCLImageDescriptor], release: Callback): WebCLImage = {
+    val __obj = js.Dynamic.literal(getInfo = getInfo.toJsFn, release = release.toJsFn)
     __obj.asInstanceOf[WebCLImage]
   }
+  
+  extension [Self <: WebCLImage](x: Self) {
+    
+    inline def setGetInfo(value: CallbackTo[WebCLImageDescriptor]): Self = StObject.set(x, "getInfo", value.toJsFn)
+  }
 }
-

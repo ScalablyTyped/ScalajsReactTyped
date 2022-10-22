@@ -1,57 +1,50 @@
 package typingsJapgolly.reactBootstrapTypeahead.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactBootstrapTypeahead.mod.MenuProps
 import typingsJapgolly.reactBootstrapTypeahead.mod.OverlayProps
 import typingsJapgolly.reactBootstrapTypeahead.mod.TypeaheadAlign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Overlay {
-  def apply(
-    container: HTMLElement,
-    align: TypeaheadAlign = null,
-    className: String = null,
-    dropup: js.UndefOr[Boolean] = js.undefined,
-    flip: js.UndefOr[Boolean] = js.undefined,
-    onMenuHide: js.UndefOr[Callback] = js.undefined,
-    onMenuShow: js.UndefOr[Callback] = js.undefined,
-    onMenuToggle: /* show */ Boolean => Callback = null,
-    referenceElement: HTMLElement = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[OverlayProps, typingsJapgolly.reactBootstrapTypeahead.mod.Overlay, Unit, OverlayProps] = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    onMenuHide.foreach(p => __obj.updateDynamic("onMenuHide")(p.toJsFn))
-    onMenuShow.foreach(p => __obj.updateDynamic("onMenuShow")(p.toJsFn))
-    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1((t0: /* show */ scala.Boolean) => onMenuToggle(t0).runNow()))
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrapTypeahead.mod.OverlayProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrapTypeahead.mod.Overlay](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.mod.OverlayProps])(children: _*)
+  inline def apply(container: HTMLElement): Builder = {
+    val __props = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[OverlayProps]))
   }
+  
   @JSImport("react-bootstrap-typeahead", "Overlay")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrapTypeahead.mod.Overlay] {
+    
+    inline def align(value: TypeaheadAlign): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def children(value: /* menuProps */ MenuProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dropup(value: Boolean): this.type = set("dropup", value.asInstanceOf[js.Any])
+    
+    inline def flip(value: Boolean): this.type = set("flip", value.asInstanceOf[js.Any])
+    
+    inline def isMenuShown(value: Boolean): this.type = set("isMenuShown", value.asInstanceOf[js.Any])
+    
+    inline def onMenuToggle(value: /* show */ Boolean => Callback): this.type = set("onMenuToggle", js.Any.fromFunction1((t0: /* show */ Boolean) => value(t0).runNow()))
+    
+    inline def positionFixed(value: Boolean): this.type = set("positionFixed", value.asInstanceOf[js.Any])
+    
+    inline def referenceElement(value: HTMLElement): this.type = set("referenceElement", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: OverlayProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

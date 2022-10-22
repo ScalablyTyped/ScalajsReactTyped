@@ -2,68 +2,100 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgProgressBar
-  extends /**
-	 * Option for igProgressBar
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   var animateTimeout: js.UndefOr[Double] = js.undefined
+  
   var change: js.UndefOr[ChangeEvent] = js.undefined
+  
   var endValue: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[String] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var orientation: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately.
-  	 */
+    * A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately.
+    */
   var queue: js.UndefOr[Boolean] = js.undefined
+  
   var range: js.UndefOr[Boolean] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[String] = js.undefined
 }
-
 object IgProgressBar {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igProgressBar
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animateTimeout: Int | Double = null,
-    change: (/* event */ Event_, /* ui */ ChangeEventUIParam) => Callback = null,
-    endValue: Int | Double = null,
-    height: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    orientation: String = null,
-    queue: js.UndefOr[Boolean] = js.undefined,
-    range: js.UndefOr[Boolean] = js.undefined,
-    value: Int | Double = null,
-    width: String = null
-  ): IgProgressBar = {
+  
+  inline def apply(): IgProgressBar = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animateTimeout != null) __obj.updateDynamic("animateTimeout")(animateTimeout.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ChangeEventUIParam) => change(t0, t1).runNow()))
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgProgressBar]
   }
+  
+  extension [Self <: IgProgressBar](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateTimeout(value: Double): Self = StObject.set(x, "animateTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateTimeoutUndefined: Self = StObject.set(x, "animateTimeout", js.undefined)
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setChange(value: (/* event */ Event, /* ui */ ChangeEventUIParam) => Callback): Self = StObject.set(x, "change", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ChangeEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,50 +1,66 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.boolean
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.date
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.number
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExpressionInfoProperties extends js.Object {
+trait ExpressionInfoProperties extends StObject {
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string, number, dictionary, or array. This expression can reference field values using the `$feature` global variable and perform mathematical calculations and logical evaluations at runtime.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#expression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */
   var expression: js.UndefOr[String] = js.undefined
+  
   /**
-    * The name of the expression. This is used to reference the value of the given `expression` in the popupTemplate's [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) property by wrapping it in curly braces and prefacing it with `expression/` (e.g. `{expression/expressionName}`). See the code snippets below for more examples.
+    * The name of the expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#name)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates the return type of the Arcade expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#returnType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#returnType)
     */
-  var returnType: js.UndefOr[String | Double] = js.undefined
+  var returnType: js.UndefOr[boolean | date | number | string_] = js.undefined
+  
   /**
-    * The title used to describe the value returned by the expression in the popup. This will display if the value is referenced in a [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) table.
+    * The title used to describe the value returned by the expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#title)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#title)
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object ExpressionInfoProperties {
-  @scala.inline
-  def apply(
-    expression: String = null,
-    name: String = null,
-    returnType: String | Double = null,
-    title: String = null
-  ): ExpressionInfoProperties = {
+  
+  inline def apply(): ExpressionInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionInfoProperties]
   }
+  
+  extension [Self <: ExpressionInfoProperties](x: Self) {
+    
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setReturnType(value: boolean | date | number | string_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

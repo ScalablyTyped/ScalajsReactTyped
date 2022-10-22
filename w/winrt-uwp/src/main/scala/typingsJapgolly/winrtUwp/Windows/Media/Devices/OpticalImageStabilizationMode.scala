@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpticalImageStabilizationMode extends js.Object
-
+sealed trait OpticalImageStabilizationMode extends StObject
 /** Defines the optical image stabilization modes. */
 @JSGlobal("Windows.Media.Devices.OpticalImageStabilizationMode")
 @js.native
-object OpticalImageStabilizationMode extends js.Object {
+object OpticalImageStabilizationMode extends StObject {
+  
   /** The system dynamically enables optical image stabilization when appropriate. */
   @js.native
-  sealed trait auto extends OpticalImageStabilizationMode
+  sealed trait auto
+    extends StObject
+       with OpticalImageStabilizationMode
   
   /** Optical image stabilization is disabled. */
   @js.native
-  sealed trait off extends OpticalImageStabilizationMode
+  sealed trait off
+    extends StObject
+       with OpticalImageStabilizationMode
   
   /** Optical image stabilization is enabled. */
   @js.native
-  sealed trait on extends OpticalImageStabilizationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpticalImageStabilizationMode with Double] = js.native
-  /* 2 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
+  sealed trait on
+    extends StObject
+       with OpticalImageStabilizationMode
 }
-

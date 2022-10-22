@@ -1,22 +1,27 @@
 package typingsJapgolly.minappEnv.DB
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IDocumentData
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var _id: js.UndefOr[DocumentId] = js.undefined
 }
-
 object IDocumentData {
-  @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, _id: DocumentId = null): IDocumentData = {
+  
+  inline def apply(): IDocumentData = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentData]
   }
+  
+  extension [Self <: IDocumentData](x: Self) {
+    
+    inline def set_id(value: DocumentId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+  }
 }
-

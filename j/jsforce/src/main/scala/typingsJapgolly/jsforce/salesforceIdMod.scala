@@ -1,12 +1,10 @@
 package typingsJapgolly.jsforce
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce/salesforce-id", JSImport.Namespace)
-@js.native
-object salesforceIdMod extends js.Object {
+object salesforceIdMod {
+  
   type SalesforceId = String
 }
-

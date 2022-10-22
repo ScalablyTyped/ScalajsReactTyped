@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbone
 
-Typings are for version 1.2
+Typings are for version 3.2
 
 ## Library description:
 Fast, Simple and Powerful report generator. Injects JSON and produces PDF, DOCX, XLSX, ODT, PPTX, ODS, ...!
@@ -10,10 +10,10 @@ Fast, Simple and Powerful report generator. Injects JSON and produces PDF, DOCX,
 | ------------------ | :-------------: |
 | Full name          | carbone |
 | Keywords           | report, document, pdf, xslx, docx, odt, ods, json |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 29143 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 16866.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://carbone.io)

@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.navbarBrandMod.NavbarBrandProps
+import typingsJapgolly.reactBootstrap.libNavbarBrandMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "NavbarBrand")
 @js.native
-class NavbarBrand ()
-  extends Component[NavbarBrandProps, js.Object, js.Any]
-
+open class NavbarBrand () extends ^

@@ -1,19 +1,24 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetterOptions extends js.Object {
+trait GetterOptions extends StObject {
+  
   var bufferStream: js.UndefOr[Boolean] = js.undefined
 }
-
 object GetterOptions {
-  @scala.inline
-  def apply(bufferStream: js.UndefOr[Boolean] = js.undefined): GetterOptions = {
+  
+  inline def apply(): GetterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bufferStream)) __obj.updateDynamic("bufferStream")(bufferStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetterOptions]
   }
+  
+  extension [Self <: GetterOptions](x: Self) {
+    
+    inline def setBufferStream(value: Boolean): Self = StObject.set(x, "bufferStream", value.asInstanceOf[js.Any])
+    
+    inline def setBufferStreamUndefined: Self = StObject.set(x, "bufferStream", js.undefined)
+  }
 }
-

@@ -10,15 +10,12 @@ JavaScript API to work against complex domain names, subdomains and URIs.
 | ------------------ | :-------------: |
 | Full name          | tldjs |
 | Keywords           | tld, sld, domain, browser, uri, url, domain name, subdomain, public suffix |
-| # releases         | 3 |
-| # dependents       | 72 |
-| # downloads        | 5041413 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 296232.3333333333 |
+| # stars            | 425.0 |
 
 ## Links
-- [Homepage](https://github.com/oncletom/tld.js)
-- [Bugs](https://github.com/oncletom/tld.js/issues)
-- [Repository](https://github.com/oncletom/tld.js)
 - [Npm](https://www.npmjs.com/package/tldjs)
     
 

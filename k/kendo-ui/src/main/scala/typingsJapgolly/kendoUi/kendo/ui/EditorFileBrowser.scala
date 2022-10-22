@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorFileBrowser extends js.Object {
+trait EditorFileBrowser extends StObject {
+  
   var fileTypes: js.UndefOr[String] = js.undefined
+  
   var messages: js.UndefOr[EditorFileBrowserMessages] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
+  
   var schema: js.UndefOr[EditorFileBrowserSchema] = js.undefined
+  
   var transport: js.UndefOr[EditorFileBrowserTransport] = js.undefined
 }
-
 object EditorFileBrowser {
-  @scala.inline
-  def apply(
-    fileTypes: String = null,
-    messages: EditorFileBrowserMessages = null,
-    path: String = null,
-    schema: EditorFileBrowserSchema = null,
-    transport: EditorFileBrowserTransport = null
-  ): EditorFileBrowser = {
+  
+  inline def apply(): EditorFileBrowser = {
     val __obj = js.Dynamic.literal()
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorFileBrowser]
   }
+  
+  extension [Self <: EditorFileBrowser](x: Self) {
+    
+    inline def setFileTypes(value: String): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    
+    inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+    
+    inline def setMessages(value: EditorFileBrowserMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSchema(value: EditorFileBrowserSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setTransport(value: EditorFileBrowserTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+  }
 }
-

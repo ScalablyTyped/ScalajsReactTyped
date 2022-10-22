@@ -1,32 +1,37 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StructDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var members: js.Array[VariableDeclaration]
+  
   var name: String
+  
   @JSName("type")
   var type_StructDefinition: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition
 }
-
 object StructDefinition {
-  @scala.inline
-  def apply(
-    members: js.Array[VariableDeclaration],
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): StructDefinition = {
+  
+  inline def apply(members: js.Array[VariableDeclaration], name: String): StructDefinition = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StructDefinition")
     __obj.asInstanceOf[StructDefinition]
   }
+  
+  extension [Self <: StructDefinition](x: Self) {
+    
+    inline def setMembers(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.nivoCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nivoCore.nivoCoreStrings.expand
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nivoCore.nivoCoreStrings.silhouette
   - typingsJapgolly.nivoCore.nivoCoreStrings.wiggle
 */
-trait StackOffset extends js.Object
-
+trait StackOffset extends StObject
 object StackOffset {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def diverging: typingsJapgolly.nivoCore.nivoCoreStrings.diverging = this.cast("diverging")
-  @scala.inline
-  def expand: typingsJapgolly.nivoCore.nivoCoreStrings.expand = this.cast("expand")
-  @scala.inline
-  def none: typingsJapgolly.nivoCore.nivoCoreStrings.none = this.cast("none")
-  @scala.inline
-  def silhouette: typingsJapgolly.nivoCore.nivoCoreStrings.silhouette = this.cast("silhouette")
-  @scala.inline
-  def wiggle: typingsJapgolly.nivoCore.nivoCoreStrings.wiggle = this.cast("wiggle")
+  
+  inline def diverging: typingsJapgolly.nivoCore.nivoCoreStrings.diverging = "diverging".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.diverging]
+  
+  inline def expand: typingsJapgolly.nivoCore.nivoCoreStrings.expand = "expand".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.expand]
+  
+  inline def none: typingsJapgolly.nivoCore.nivoCoreStrings.none = "none".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.none]
+  
+  inline def silhouette: typingsJapgolly.nivoCore.nivoCoreStrings.silhouette = "silhouette".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.silhouette]
+  
+  inline def wiggle: typingsJapgolly.nivoCore.nivoCoreStrings.wiggle = "wiggle".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.wiggle]
 }
-

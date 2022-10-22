@@ -1,9 +1,7 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name no-empty-interface
-trait IEventArgs extends js.Object
-
+trait IEventArgs extends StObject

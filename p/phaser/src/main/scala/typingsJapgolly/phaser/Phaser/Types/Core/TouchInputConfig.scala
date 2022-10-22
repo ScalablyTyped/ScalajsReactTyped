@@ -1,27 +1,36 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchInputConfig extends js.Object {
+trait TouchInputConfig extends StObject {
+  
   /**
     * Whether touch input events have preventDefault() called on them.
     */
   var capture: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Where the Touch Manager listens for touch input events. The default is the game canvas.
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
-
 object TouchInputConfig {
-  @scala.inline
-  def apply(capture: js.UndefOr[Boolean] = js.undefined, target: js.Any = null): TouchInputConfig = {
+  
+  inline def apply(): TouchInputConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchInputConfig]
   }
+  
+  extension [Self <: TouchInputConfig](x: Self) {
+    
+    inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

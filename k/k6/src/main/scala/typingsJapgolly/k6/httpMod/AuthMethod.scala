@@ -1,24 +1,20 @@
 package typingsJapgolly.k6.httpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.k6.k6Strings.basic
   - typingsJapgolly.k6.k6Strings.digest
   - typingsJapgolly.k6.k6Strings.ntlm
 */
-trait AuthMethod extends js.Object
-
+trait AuthMethod extends StObject
 object AuthMethod {
-  @scala.inline
-  def basic: typingsJapgolly.k6.k6Strings.basic = this.cast("basic")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def digest: typingsJapgolly.k6.k6Strings.digest = this.cast("digest")
-  @scala.inline
-  def ntlm: typingsJapgolly.k6.k6Strings.ntlm = this.cast("ntlm")
+  
+  inline def basic: typingsJapgolly.k6.k6Strings.basic = "basic".asInstanceOf[typingsJapgolly.k6.k6Strings.basic]
+  
+  inline def digest: typingsJapgolly.k6.k6Strings.digest = "digest".asInstanceOf[typingsJapgolly.k6.k6Strings.digest]
+  
+  inline def ntlm: typingsJapgolly.k6.k6Strings.ntlm = "ntlm".asInstanceOf[typingsJapgolly.k6.k6Strings.ntlm]
 }
-

@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.FlatButtonProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/FlatButton", JSImport.Namespace)
-@js.native
-object flatButtonMod extends js.Object {
-  @js.native
-  class FlatButton ()
-    extends Component[FlatButtonProps, js.Object, js.Any]
+object flatButtonMod {
   
+  @JSImport("material-ui/FlatButton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FlatButtonProps, js.Object, js.Any]
+  open class default () extends FlatButton
   
+  @JSImport("material-ui/FlatButton", "FlatButton")
+  @js.native
+  open class FlatButton ()
+    extends Component[FlatButtonProps, js.Object, Any]
 }
-

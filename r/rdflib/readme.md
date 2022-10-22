@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdflib
 
-Typings are for version 0.20
+Typings are for version 2.2.20
 
 ## Library description:
 an RDF library for node.js. Suitable for client and server side.
@@ -10,10 +10,10 @@ an RDF library for node.js. Suitable for client and server side.
 | ------------------ | :-------------: |
 | Full name          | rdflib |
 | Keywords           | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
-| # releases         | 27 |
-| # dependents       | 58 |
-| # downloads        | 52592 |
-| # stars            | 1 |
+| # releases         | 89 |
+| # dependents       | 0.0 |
+| # downloads        | 4371.0 |
+| # stars            | 516.0 |
 
 ## Links
 - [Homepage](http://github.com/linkeddata/rdflib.js)
@@ -24,7 +24,7 @@ an RDF library for node.js. Suitable for client and server side.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

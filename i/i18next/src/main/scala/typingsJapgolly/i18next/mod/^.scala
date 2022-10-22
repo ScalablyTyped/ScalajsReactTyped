@@ -1,11 +1,9 @@
 package typingsJapgolly.i18next.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("i18next", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[i18n]
-
+object ^ extends StObject

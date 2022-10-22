@@ -1,11 +1,11 @@
 package typingsJapgolly.fridaGum
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayBufferConstructor extends js.Object {
+trait ArrayBufferConstructor extends StObject {
+  
   /**
     * Creates an ArrayBuffer backed by an existing memory region. Unlike
     * the NativePointer `read*()` and `write*()` APIs, no validation is
@@ -18,13 +18,15 @@ trait ArrayBufferConstructor extends js.Object {
     */
   def wrap(address: NativePointerValue, size: Double): ArrayBuffer
 }
-
 object ArrayBufferConstructor {
-  @scala.inline
-  def apply(wrap: (NativePointerValue, Double) => CallbackTo[ArrayBuffer]): ArrayBufferConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("wrap")(js.Any.fromFunction2((t0: typingsJapgolly.fridaGum.NativePointerValue, t1: scala.Double) => wrap(t0, t1).runNow()))
+  
+  inline def apply(wrap: (NativePointerValue, Double) => ArrayBuffer): ArrayBufferConstructor = {
+    val __obj = js.Dynamic.literal(wrap = js.Any.fromFunction2(wrap))
     __obj.asInstanceOf[ArrayBufferConstructor]
   }
+  
+  extension [Self <: ArrayBufferConstructor](x: Self) {
+    
+    inline def setWrap(value: (NativePointerValue, Double) => ArrayBuffer): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
+  }
 }
-

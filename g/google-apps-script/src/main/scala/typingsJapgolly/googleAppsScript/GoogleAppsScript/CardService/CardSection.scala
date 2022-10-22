@@ -1,10 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A card section holds groups of widgets and provides visual separation between them.
@@ -19,27 +18,36 @@ import scala.scalajs.js.annotation._
   *         .addWidget(image)
   *         .addWidget(textParagraph);
   */
-trait CardSection extends js.Object {
+trait CardSection extends StObject {
+  
   def addWidget(widget: Widget): CardSection
+  
   def setCollapsible(collapsible: Boolean): CardSection
+  
   def setHeader(header: String): CardSection
+  
   def setNumUncollapsibleWidgets(numUncollapsibleWidgets: Integer): CardSection
 }
-
 object CardSection {
-  @scala.inline
-  def apply(
-    addWidget: Widget => CallbackTo[CardSection],
-    setCollapsible: Boolean => CallbackTo[CardSection],
-    setHeader: String => CallbackTo[CardSection],
-    setNumUncollapsibleWidgets: Integer => CallbackTo[CardSection]
+  
+  inline def apply(
+    addWidget: Widget => CardSection,
+    setCollapsible: Boolean => CardSection,
+    setHeader: String => CardSection,
+    setNumUncollapsibleWidgets: Integer => CardSection
   ): CardSection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addWidget")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Widget) => addWidget(t0).runNow()))
-    __obj.updateDynamic("setCollapsible")(js.Any.fromFunction1((t0: scala.Boolean) => setCollapsible(t0).runNow()))
-    __obj.updateDynamic("setHeader")(js.Any.fromFunction1((t0: java.lang.String) => setHeader(t0).runNow()))
-    __obj.updateDynamic("setNumUncollapsibleWidgets")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setNumUncollapsibleWidgets(t0).runNow()))
+    val __obj = js.Dynamic.literal(addWidget = js.Any.fromFunction1(addWidget), setCollapsible = js.Any.fromFunction1(setCollapsible), setHeader = js.Any.fromFunction1(setHeader), setNumUncollapsibleWidgets = js.Any.fromFunction1(setNumUncollapsibleWidgets))
     __obj.asInstanceOf[CardSection]
   }
+  
+  extension [Self <: CardSection](x: Self) {
+    
+    inline def setAddWidget(value: Widget => CardSection): Self = StObject.set(x, "addWidget", js.Any.fromFunction1(value))
+    
+    inline def setSetCollapsible(value: Boolean => CardSection): Self = StObject.set(x, "setCollapsible", js.Any.fromFunction1(value))
+    
+    inline def setSetHeader(value: String => CardSection): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
+    
+    inline def setSetNumUncollapsibleWidgets(value: Integer => CardSection): Self = StObject.set(x, "setNumUncollapsibleWidgets", js.Any.fromFunction1(value))
+  }
 }
-

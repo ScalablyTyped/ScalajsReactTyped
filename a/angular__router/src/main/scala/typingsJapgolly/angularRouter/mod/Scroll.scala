@@ -1,12 +1,14 @@
 package typingsJapgolly.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "Scroll")
 @js.native
-class Scroll protected () extends Event {
+open class Scroll protected ()
+  extends StObject
+     with Event2 {
   def this(/** @docsNotRequired */
   routerEvent: NavigationEnd) = this()
   def this(
@@ -31,11 +33,15 @@ class Scroll protected () extends Event {
     /** @docsNotRequired */
   anchor: String
   ) = this()
+  
   /** @docsNotRequired */
   val anchor: String | Null = js.native
+  
   /** @docsNotRequired */
   val position: (js.Tuple2[Double, Double]) | Null = js.native
+  
   /** @docsNotRequired */
   val routerEvent: NavigationEnd = js.native
+  
+  val `type`: String | Double = js.native
 }
-

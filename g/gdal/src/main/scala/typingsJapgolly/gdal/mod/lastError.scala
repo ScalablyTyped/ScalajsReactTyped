@@ -1,14 +1,26 @@
 package typingsJapgolly.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gdal", "lastError")
-@js.native
-object lastError extends js.Object {
-  var message: js.Any = js.native
-  var number: js.Any = js.native
-  var `type`: js.Any = js.native
+object lastError {
+  
+  @JSImport("gdal", "lastError")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("gdal", "lastError.message")
+  @js.native
+  def message: Any = js.native
+  inline def message_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+  
+  @JSImport("gdal", "lastError.number")
+  @js.native
+  def number: Any = js.native
+  inline def number_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
+  
+  @JSImport("gdal", "lastError.type")
+  @js.native
+  val `type`: Any = js.native
 }
-

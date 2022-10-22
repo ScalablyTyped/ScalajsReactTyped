@@ -1,27 +1,32 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.ConfigDict
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.Serializable
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.Serializable
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "AdadeltaOptimizer")
 @js.native
-class AdadeltaOptimizer protected ()
+open class AdadeltaOptimizer protected ()
   extends typingsJapgolly.tensorflowTfjs.mod.AdadeltaOptimizer {
   def this(learningRate: Double, rho: Double) = this()
   def this(learningRate: Double, rho: Double, epsilon: Double) = this()
 }
-
 /* static members */
-@JSImport("@tensorflow/tfjs-node", "AdadeltaOptimizer")
-@js.native
-object AdadeltaOptimizer extends js.Object {
+object AdadeltaOptimizer {
+  
+  @JSImport("@tensorflow/tfjs-node", "AdadeltaOptimizer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-node", "AdadeltaOptimizer.className")
+  @js.native
+  def className: String = js.native
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  
   /** @nocollapse */
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+  inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
 }
-

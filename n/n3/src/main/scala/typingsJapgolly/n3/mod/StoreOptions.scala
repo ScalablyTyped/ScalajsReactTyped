@@ -1,19 +1,34 @@
 package typingsJapgolly.n3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StoreOptions extends js.Object {
-  var factory: js.UndefOr[typingsJapgolly.rdfJs.mod.DataFactory[typingsJapgolly.rdfJs.mod.Quad]] = js.undefined
+trait StoreOptions extends StObject {
+  
+  var factory: js.UndefOr[
+    typingsJapgolly.rdfjsTypes.dataModelMod.DataFactory[
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad, 
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+    ]
+  ] = js.undefined
 }
-
 object StoreOptions {
-  @scala.inline
-  def apply(factory: typingsJapgolly.rdfJs.mod.DataFactory[typingsJapgolly.rdfJs.mod.Quad] = null): StoreOptions = {
+  
+  inline def apply(): StoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions]
   }
+  
+  extension [Self <: StoreOptions](x: Self) {
+    
+    inline def setFactory(
+      value: typingsJapgolly.rdfjsTypes.dataModelMod.DataFactory[
+          typingsJapgolly.rdfjsTypes.dataModelMod.Quad, 
+          typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+        ]
+    ): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    
+    inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+  }
 }
-

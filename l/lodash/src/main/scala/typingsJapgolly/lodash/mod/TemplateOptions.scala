@@ -1,35 +1,29 @@
 package typingsJapgolly.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// template
-trait TemplateOptions extends TemplateSettings {
+trait TemplateOptions
+  extends StObject
+     with TemplateSettings {
+  
   /**
-    * The sourceURL of the template's compiled source.
+    * @see _.sourceURL
     */
-  var sourceURL: js.UndefOr[String] = js.undefined
+  var sourceURL: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object TemplateOptions {
-  @scala.inline
-  def apply(
-    escape: js.RegExp = null,
-    evaluate: js.RegExp = null,
-    imports: Dictionary[_] = null,
-    interpolate: js.RegExp = null,
-    sourceURL: String = null,
-    variable: String = null
-  ): TemplateOptions = {
+  
+  inline def apply(): TemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
-    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
+  
+  extension [Self <: TemplateOptions](x: Self) {
+    
+    inline def setSourceURL(value: java.lang.String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    
+    inline def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
+  }
 }
-

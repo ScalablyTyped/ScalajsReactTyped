@@ -1,29 +1,27 @@
 package typingsJapgolly.vueClickaway
 
-import typingsJapgolly.vue.optionsMod.ComponentOptions
-import typingsJapgolly.vue.optionsMod.DefaultComputed
-import typingsJapgolly.vue.optionsMod.DefaultData
-import typingsJapgolly.vue.optionsMod.DefaultMethods
-import typingsJapgolly.vue.optionsMod.DefaultProps
-import typingsJapgolly.vue.optionsMod.DirectiveOptions
-import typingsJapgolly.vue.optionsMod.PropsDefinition
-import typingsJapgolly.vue.vueMod.Vue
-import typingsJapgolly.vue.vueMod.VueConstructor
+import typingsJapgolly.vueClickaway.anon.TypeofVue
+import typingsJapgolly.vueRuntimeCore.mod.ComponentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-clickaway", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val directive: DirectiveOptions = js.native
+object mod {
+  
+  @JSImport("vue-clickaway", "directive")
+  @js.native
+  val directive: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveOptions */ Any = js.native
+  
+  @JSImport("vue-clickaway", "mixin")
+  @js.native
   val mixin: (ComponentOptions[
-    Vue, 
-    DefaultData[Vue], 
-    DefaultMethods[Vue], 
-    DefaultComputed, 
-    PropsDefinition[DefaultProps], 
-    DefaultProps
-  ]) | VueConstructor[Vue] = js.native
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+    Any, 
+    Any, 
+    Any, 
+    Any, 
+    Any, 
+    Any, 
+    Any
+  ]) | TypeofVue = js.native
 }
-

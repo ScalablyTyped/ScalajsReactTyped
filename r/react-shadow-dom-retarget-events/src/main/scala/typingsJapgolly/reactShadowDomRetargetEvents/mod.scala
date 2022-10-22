@@ -1,13 +1,12 @@
 package typingsJapgolly.reactShadowDomRetargetEvents
 
 import typingsJapgolly.std.ShadowRoot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-shadow-dom-retarget-events", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Fixes events for react components rendered in a `shadow dom`.
     *
@@ -16,6 +15,9 @@ object mod extends js.Object {
     *
     * A bug is filed at [#10422](https://github.com/facebook/react/issues/10422).
     */
-  def apply(shadowRoot: ShadowRoot): Unit = js.native
+  inline def apply(shadowRoot: ShadowRoot): Unit = ^.asInstanceOf[js.Dynamic].apply(shadowRoot.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("react-shadow-dom-retarget-events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

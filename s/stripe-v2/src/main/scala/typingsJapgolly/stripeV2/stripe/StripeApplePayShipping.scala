@@ -1,8 +1,8 @@
 package typingsJapgolly.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV2.stripeV2Strings.shipping
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.stripeV2.stripeV2Strings.storePickup
   - typingsJapgolly.stripeV2.stripeV2Strings.servicePickup
 */
-trait StripeApplePayShipping extends js.Object
-
+trait StripeApplePayShipping extends StObject
 object StripeApplePayShipping {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delivery: typingsJapgolly.stripeV2.stripeV2Strings.delivery = this.cast("delivery")
-  @scala.inline
-  def servicePickup: typingsJapgolly.stripeV2.stripeV2Strings.servicePickup = this.cast("servicePickup")
-  @scala.inline
-  def shipping: typingsJapgolly.stripeV2.stripeV2Strings.shipping = this.cast("shipping")
-  @scala.inline
-  def storePickup: typingsJapgolly.stripeV2.stripeV2Strings.storePickup = this.cast("storePickup")
+  
+  inline def delivery: typingsJapgolly.stripeV2.stripeV2Strings.delivery = "delivery".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.delivery]
+  
+  inline def servicePickup: typingsJapgolly.stripeV2.stripeV2Strings.servicePickup = "servicePickup".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.servicePickup]
+  
+  inline def shipping: typingsJapgolly.stripeV2.stripeV2Strings.shipping = "shipping".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.shipping]
+  
+  inline def storePickup: typingsJapgolly.stripeV2.stripeV2Strings.storePickup = "storePickup".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.storePickup]
 }
-

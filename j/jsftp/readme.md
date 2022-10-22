@@ -10,10 +10,10 @@ A sane FTP client implementation for NodeJS
 | ------------------ | :-------------: |
 | Full name          | jsftp |
 | Keywords           | ftp, protocol, files, server, client, async |
-| # releases         | 2 |
-| # dependents       | 107 |
-| # downloads        | 2348894 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 390559.0 |
+| # stars            | 792.0 |
 
 ## Links
 - [Homepage](https://github.com/sergi/jsftp)

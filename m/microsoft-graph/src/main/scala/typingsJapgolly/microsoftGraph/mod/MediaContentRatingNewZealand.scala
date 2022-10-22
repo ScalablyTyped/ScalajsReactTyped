@@ -1,26 +1,35 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaContentRatingNewZealand extends js.Object {
+trait MediaContentRatingNewZealand extends StObject {
+  
   /**
     * Movies rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, mature,
     * agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
     */
   var movieRating: js.UndefOr[RatingNewZealandMoviesType] = js.undefined
+  
   // TV rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
   var tvRating: js.UndefOr[RatingNewZealandTelevisionType] = js.undefined
 }
-
 object MediaContentRatingNewZealand {
-  @scala.inline
-  def apply(movieRating: RatingNewZealandMoviesType = null, tvRating: RatingNewZealandTelevisionType = null): MediaContentRatingNewZealand = {
+  
+  inline def apply(): MediaContentRatingNewZealand = {
     val __obj = js.Dynamic.literal()
-    if (movieRating != null) __obj.updateDynamic("movieRating")(movieRating.asInstanceOf[js.Any])
-    if (tvRating != null) __obj.updateDynamic("tvRating")(tvRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaContentRatingNewZealand]
   }
+  
+  extension [Self <: MediaContentRatingNewZealand](x: Self) {
+    
+    inline def setMovieRating(value: RatingNewZealandMoviesType): Self = StObject.set(x, "movieRating", value.asInstanceOf[js.Any])
+    
+    inline def setMovieRatingUndefined: Self = StObject.set(x, "movieRating", js.undefined)
+    
+    inline def setTvRating(value: RatingNewZealandTelevisionType): Self = StObject.set(x, "tvRating", value.asInstanceOf[js.Any])
+    
+    inline def setTvRatingUndefined: Self = StObject.set(x, "tvRating", js.undefined)
+  }
 }
-

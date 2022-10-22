@@ -1,27 +1,23 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`12582912`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`12582912`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`12582912`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`12582912`
 */
-trait HTMLCaptionFlag extends js.Object
-
+trait HTMLCaptionFlag extends StObject
 object HTMLCaptionFlag {
-  @scala.inline
-  def HTMLCaptionFlagNo: `0` = this.cast(0)
-  @scala.inline
-  def HTMLCaptionFlagYes: `12582912` = this.cast(12582912)
-  @scala.inline
-  def HTMLCaptionFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HTMLCaptionFlagNo: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLCaptionFlagYes: `12582912` = 12582912.asInstanceOf[`12582912`]
+  
+  inline def HTMLCaptionFlag_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

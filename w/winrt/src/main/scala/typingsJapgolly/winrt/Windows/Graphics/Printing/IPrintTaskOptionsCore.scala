@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPrintTaskOptionsCore extends js.Object {
+trait IPrintTaskOptionsCore extends StObject {
+  
   def getPageDescription(jobPageNumber: Double): PrintPageDescription
 }
-
 object IPrintTaskOptionsCore {
-  @scala.inline
-  def apply(getPageDescription: Double => CallbackTo[PrintPageDescription]): IPrintTaskOptionsCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPageDescription")(js.Any.fromFunction1((t0: scala.Double) => getPageDescription(t0).runNow()))
+  
+  inline def apply(getPageDescription: Double => PrintPageDescription): IPrintTaskOptionsCore = {
+    val __obj = js.Dynamic.literal(getPageDescription = js.Any.fromFunction1(getPageDescription))
     __obj.asInstanceOf[IPrintTaskOptionsCore]
   }
+  
+  extension [Self <: IPrintTaskOptionsCore](x: Self) {
+    
+    inline def setGetPageDescription(value: Double => PrintPageDescription): Self = StObject.set(x, "getPageDescription", js.Any.fromFunction1(value))
+  }
 }
-

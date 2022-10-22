@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertificateBasedAuthConfiguration extends Entity {
+trait CertificateBasedAuthConfiguration
+  extends StObject
+     with Entity {
+  
   // Collection of certificate authorities which creates a trusted certificate chain.
   var certificateAuthorities: js.UndefOr[js.Array[CertificateAuthority]] = js.undefined
 }
-
 object CertificateBasedAuthConfiguration {
-  @scala.inline
-  def apply(certificateAuthorities: js.Array[CertificateAuthority] = null, id: String = null): CertificateBasedAuthConfiguration = {
+  
+  inline def apply(): CertificateBasedAuthConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (certificateAuthorities != null) __obj.updateDynamic("certificateAuthorities")(certificateAuthorities.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateBasedAuthConfiguration]
   }
+  
+  extension [Self <: CertificateBasedAuthConfiguration](x: Self) {
+    
+    inline def setCertificateAuthorities(value: js.Array[CertificateAuthority]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateAuthoritiesUndefined: Self = StObject.set(x, "certificateAuthorities", js.undefined)
+    
+    inline def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "certificateAuthorities", js.Array(value*))
+  }
 }
-

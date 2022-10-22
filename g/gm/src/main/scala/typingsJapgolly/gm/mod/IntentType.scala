@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Absolute
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Relative
   - typingsJapgolly.gm.gmStrings.Saturation
 */
-trait IntentType extends js.Object
-
+trait IntentType extends StObject
 object IntentType {
-  @scala.inline
-  def Absolute: typingsJapgolly.gm.gmStrings.Absolute = this.cast("Absolute")
-  @scala.inline
-  def Perceptual: typingsJapgolly.gm.gmStrings.Perceptual = this.cast("Perceptual")
-  @scala.inline
-  def Relative: typingsJapgolly.gm.gmStrings.Relative = this.cast("Relative")
-  @scala.inline
-  def Saturation: typingsJapgolly.gm.gmStrings.Saturation = this.cast("Saturation")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Absolute: typingsJapgolly.gm.gmStrings.Absolute = "Absolute".asInstanceOf[typingsJapgolly.gm.gmStrings.Absolute]
+  
+  inline def Perceptual: typingsJapgolly.gm.gmStrings.Perceptual = "Perceptual".asInstanceOf[typingsJapgolly.gm.gmStrings.Perceptual]
+  
+  inline def Relative: typingsJapgolly.gm.gmStrings.Relative = "Relative".asInstanceOf[typingsJapgolly.gm.gmStrings.Relative]
+  
+  inline def Saturation: typingsJapgolly.gm.gmStrings.Saturation = "Saturation".asInstanceOf[typingsJapgolly.gm.gmStrings.Saturation]
 }
-

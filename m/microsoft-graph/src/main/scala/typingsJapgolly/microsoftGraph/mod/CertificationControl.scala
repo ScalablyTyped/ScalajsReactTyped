@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertificationControl extends js.Object {
+trait CertificationControl extends StObject {
+  
   // Certification control name
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // URL for the Microsoft Service Trust Portal
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object CertificationControl {
-  @scala.inline
-  def apply(name: String = null, url: String = null): CertificationControl = {
+  
+  inline def apply(): CertificationControl = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationControl]
   }
+  
+  extension [Self <: CertificationControl](x: Self) {
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

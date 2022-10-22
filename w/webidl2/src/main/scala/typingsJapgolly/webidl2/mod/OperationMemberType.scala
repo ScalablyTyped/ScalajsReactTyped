@@ -6,41 +6,68 @@ import typingsJapgolly.webidl2.webidl2Strings.operation
 import typingsJapgolly.webidl2.webidl2Strings.setter
 import typingsJapgolly.webidl2.webidl2Strings.static
 import typingsJapgolly.webidl2.webidl2Strings.stringifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OperationMemberType
-  extends IDLInterfaceMemberType
+  extends StObject
+     with AbstractBase
+     with IDLCallbackInterfaceMemberType
+     with IDLInterfaceMemberType
+     with IDLInterfaceMixinMemberType
      with IDLNamespaceMemberType {
+  
   /** An array of arguments for the operation. */
   var arguments: js.Array[Argument]
-  /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute]
+  
   /** An IDL Type of what the operation returns. If a stringifier, may be absent. */
   var idlType: IDLTypeDescription | Null
+  
   /** The name of the operation. If a stringifier, may be null. */
   var name: String | Null
+  
+  @JSName("parent")
+  var parent_OperationMemberType: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
+  
   /** Special modifier if exists */
-  var special: getter | setter | deleter | static | stringifier
-  var `type`: operation
+  var special: getter | setter | deleter | static | stringifier | Null
+  
+  @JSName("type")
+  var type_OperationMemberType: operation
 }
-
 object OperationMemberType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
-    special: getter | setter | deleter | static | stringifier,
-    `type`: operation,
-    idlType: IDLTypeDescription = null,
-    name: String = null
+    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
   ): OperationMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (idlType != null) __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], idlType = null, name = null, special = null)
+    __obj.updateDynamic("type")("operation")
     __obj.asInstanceOf[OperationMemberType]
   }
+  
+  extension [Self <: OperationMemberType](x: Self) {
+    
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
+    
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    
+    inline def setIdlTypeNull: Self = StObject.set(x, "idlType", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setParent(value: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setSpecial(value: getter | setter | deleter | static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialNull: Self = StObject.set(x, "special", null)
+    
+    inline def setType(value: operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

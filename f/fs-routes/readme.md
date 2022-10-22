@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-routes
 
-Typings are for version 2.0.0
+Typings are for version 12.0.0
 
 ## Library description:
 Scan a filesystem for route files.
@@ -10,15 +10,12 @@ Scan a filesystem for route files.
 | ------------------ | :-------------: |
 | Full name          | fs-routes |
 | Keywords           | filesystem, routes, paths, api |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 396411 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 85993.0 |
+| # stars            | 696.0 |
 
 ## Links
-- [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/fs-routes#readme)
-- [Bugs](https://github.com/kogosoftwarellc/open-api/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Afs-routes)
-- [Repository](https://github.com/kogosoftwarellc/open-api)
 - [Npm](https://www.npmjs.com/package/fs-routes)
     
 

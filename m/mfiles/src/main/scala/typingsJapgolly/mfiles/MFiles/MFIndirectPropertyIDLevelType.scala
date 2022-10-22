@@ -1,27 +1,23 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
 */
-trait MFIndirectPropertyIDLevelType extends js.Object
-
+trait MFIndirectPropertyIDLevelType extends StObject
 object MFIndirectPropertyIDLevelType {
-  @scala.inline
-  def ObjectType: `1` = this.cast(1)
-  @scala.inline
-  def PropertyDef: `0` = this.cast(0)
-  @scala.inline
-  def StateChanger: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ObjectType: `1` = 1.asInstanceOf[`1`]
+  
+  inline def PropertyDef: `0` = 0.asInstanceOf[`0`]
+  
+  inline def StateChanger: `2` = 2.asInstanceOf[`2`]
 }
-

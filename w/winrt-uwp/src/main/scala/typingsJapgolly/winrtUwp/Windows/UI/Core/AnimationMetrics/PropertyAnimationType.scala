@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Core.AnimationMetrics
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyAnimationType extends js.Object
-
+sealed trait PropertyAnimationType extends StObject
 /** Specifies the animation type represented by a PropertyAnimation object. */
 @JSGlobal("Windows.UI.Core.AnimationMetrics.PropertyAnimationType")
 @js.native
-object PropertyAnimationType extends js.Object {
+object PropertyAnimationType extends StObject {
+  
   /** Animate the object's transparency. The corresponding object is the OpacityAnimation . */
   @js.native
-  sealed trait opacity extends PropertyAnimationType
+  sealed trait opacity
+    extends StObject
+       with PropertyAnimationType
   
   /** Animate the size of the object, magnifying or shrinking. The corresponding object is the ScaleAnimation . */
   @js.native
-  sealed trait scale extends PropertyAnimationType
+  sealed trait scale
+    extends StObject
+       with PropertyAnimationType
   
   /** Move the object. The corresponding object is the TranslationAnimation . */
   @js.native
-  sealed trait translation extends PropertyAnimationType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PropertyAnimationType with Double] = js.native
-  /* 2 */ @js.native
-  object opacity extends TopLevel[opacity with Double]
-  
-  /* 0 */ @js.native
-  object scale extends TopLevel[scale with Double]
-  
-  /* 1 */ @js.native
-  object translation extends TopLevel[translation with Double]
-  
+  sealed trait translation
+    extends StObject
+       with PropertyAnimationType
 }
-

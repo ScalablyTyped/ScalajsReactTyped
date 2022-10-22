@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesRecurrenceEditorOffsetPositions extends js.Object {
+trait SchedulerMessagesRecurrenceEditorOffsetPositions extends StObject {
+  
   var first: js.UndefOr[String] = js.undefined
+  
   var fourth: js.UndefOr[String] = js.undefined
+  
   var last: js.UndefOr[String] = js.undefined
+  
   var second: js.UndefOr[String] = js.undefined
+  
   var third: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerMessagesRecurrenceEditorOffsetPositions {
-  @scala.inline
-  def apply(
-    first: String = null,
-    fourth: String = null,
-    last: String = null,
-    second: String = null,
-    third: String = null
-  ): SchedulerMessagesRecurrenceEditorOffsetPositions = {
+  
+  inline def apply(): SchedulerMessagesRecurrenceEditorOffsetPositions = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (fourth != null) __obj.updateDynamic("fourth")(fourth.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (third != null) __obj.updateDynamic("third")(third.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorOffsetPositions]
   }
+  
+  extension [Self <: SchedulerMessagesRecurrenceEditorOffsetPositions](x: Self) {
+    
+    inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    
+    inline def setFourth(value: String): Self = StObject.set(x, "fourth", value.asInstanceOf[js.Any])
+    
+    inline def setFourthUndefined: Self = StObject.set(x, "fourth", js.undefined)
+    
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    
+    inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    
+    inline def setThird(value: String): Self = StObject.set(x, "third", value.asInstanceOf[js.Any])
+    
+    inline def setThirdUndefined: Self = StObject.set(x, "third", js.undefined)
+  }
 }
-

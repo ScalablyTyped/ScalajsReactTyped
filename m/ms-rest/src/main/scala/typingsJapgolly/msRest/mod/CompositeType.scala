@@ -1,32 +1,27 @@
 package typingsJapgolly.msRest.mod
 
-import typingsJapgolly.msRest.AnonClassName
+import typingsJapgolly.msRest.anon.ClassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompositeType extends Mapper {
+trait CompositeType
+  extends StObject
+     with Mapper {
+  
   @JSName("type")
-  var type_CompositeType: AnonClassName
+  var type_CompositeType: ClassName
 }
-
 object CompositeType {
-  @scala.inline
-  def apply(
-    name: MapperType,
-    required: Boolean,
-    serializedName: String,
-    `type`: AnonClassName,
-    isConstant: js.UndefOr[Boolean] = js.undefined,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined
-  ): CompositeType = {
+  
+  inline def apply(name: MapperType, required: Boolean, serializedName: String, `type`: ClassName): CompositeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], serializedName = serializedName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConstant)) __obj.updateDynamic("isConstant")(isConstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositeType]
   }
+  
+  extension [Self <: CompositeType](x: Self) {
+    
+    inline def setType(value: ClassName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

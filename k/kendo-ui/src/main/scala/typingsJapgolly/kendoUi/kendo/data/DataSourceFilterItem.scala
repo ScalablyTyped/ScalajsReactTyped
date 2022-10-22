@@ -1,23 +1,38 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceFilterItem extends DataSourceFilter {
+trait DataSourceFilterItem
+  extends StObject
+     with DataSourceFilter {
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var operator: js.UndefOr[String | js.Function] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object DataSourceFilterItem {
-  @scala.inline
-  def apply(field: String = null, operator: String | js.Function = null, value: js.Any = null): DataSourceFilterItem = {
+  
+  inline def apply(): DataSourceFilterItem = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceFilterItem]
   }
+  
+  extension [Self <: DataSourceFilterItem](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setOperator(value: String | js.Function): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

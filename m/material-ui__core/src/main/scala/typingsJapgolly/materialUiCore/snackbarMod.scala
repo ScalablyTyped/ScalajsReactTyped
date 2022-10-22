@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.snackbarSnackbarMod.SnackbarProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Snackbar", JSImport.Namespace)
-@js.native
-object snackbarMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[SnackbarProps, ComponentState, js.Any] {
-    def this(props: SnackbarProps) = this()
-    def this(props: SnackbarProps, context: js.Any) = this()
-  }
+object snackbarMod {
   
+  @JSImport("@material-ui/core/Snackbar", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[SnackbarProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: SnackbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

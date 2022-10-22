@@ -1,15 +1,15 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Natural Language Classifier uses machine learning algorithms to return the top matching predefined classes for short text input. You create and train a classifier to connect predefined classes to example texts so that the service can apply those classes to new inputs.
   */
 @JSImport("watson-developer-cloud/natural-language-classifier/v1-generated", JSImport.Namespace)
 @js.native
-class ^ protected () extends NaturalLanguageClassifierV1 {
+open class ^ protected () extends NaturalLanguageClassifierV1 {
   /**
     * Construct a NaturalLanguageClassifierV1 object.
     *
@@ -28,10 +28,6 @@ class ^ protected () extends NaturalLanguageClassifierV1 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/natural-language-classifier/v1-generated", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var URL: String = js.native
-}
-
+object ^ extends StObject

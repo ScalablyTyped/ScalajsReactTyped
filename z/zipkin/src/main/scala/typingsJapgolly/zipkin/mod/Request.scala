@@ -1,13 +1,15 @@
 package typingsJapgolly.zipkin.mod
 
-import typingsJapgolly.zipkin.AnonHeadersAny
+import typingsJapgolly.zipkin.anon.Headers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("zipkin", "Request")
-@js.native
-object Request extends js.Object {
-  def addZipkinHeaders[T, H](req: T with AnonHeadersAny, traceId: TraceId): RequestZipkinHeaders[T, H] = js.native
+object Request {
+  
+  @JSImport("zipkin", "Request")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def addZipkinHeaders[T, H](req: T & Headers, traceId: TraceId): RequestZipkinHeaders[T, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("addZipkinHeaders")(req.asInstanceOf[js.Any], traceId.asInstanceOf[js.Any])).asInstanceOf[RequestZipkinHeaders[T, H]]
 }
-

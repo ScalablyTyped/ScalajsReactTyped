@@ -1,24 +1,19 @@
 package typingsJapgolly.matrixAppserviceBridge.mod
 
-import typingsJapgolly.matrixAppserviceBridge.AnonMatrix
-import typingsJapgolly.matrixAppserviceBridge.AnonRemote
-import typingsJapgolly.matrixAppserviceBridge.AnonRemotes
+import typingsJapgolly.matrixAppserviceBridge.anon.Room
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BridgeContext extends js.Object {
-  var rooms: AnonRemotes
-  var senders: AnonMatrix
-  var targets: AnonRemote
+@JSImport("matrix-appservice-bridge", "BridgeContext")
+@js.native
+open class BridgeContext protected ()
+  extends typingsJapgolly.matrixAppserviceBridge.libComponentsBridgeContextMod.BridgeContext {
+  /**
+    * @param ctx Event related data
+    * @param ctx.sender Matrix user ID of the sender.
+    * @param ctx.target Matrix user ID of the target.
+    * @param ctx.room Matrix room ID.
+    */
+  def this(ctx: Room) = this()
 }
-
-object BridgeContext {
-  @scala.inline
-  def apply(rooms: AnonRemotes, senders: AnonMatrix, targets: AnonRemote): BridgeContext = {
-    val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any], senders = senders.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[BridgeContext]
-  }
-}
-

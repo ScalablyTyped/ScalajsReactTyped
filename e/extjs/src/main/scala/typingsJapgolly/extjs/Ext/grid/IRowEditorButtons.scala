@@ -1,18 +1,17 @@
 package typingsJapgolly.extjs.Ext.grid
 
 import typingsJapgolly.extjs.Ext.container.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRowEditorButtons extends IContainer
-
+trait IRowEditorButtons
+  extends StObject
+     with IContainer
 object IRowEditorButtons {
-  @scala.inline
-  def apply(IContainer: IContainer = null): IRowEditorButtons = {
+  
+  inline def apply(): IRowEditorButtons = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     __obj.asInstanceOf[IRowEditorButtons]
   }
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocketMessageType extends js.Object
-
+sealed trait SocketMessageType extends StObject
 /** Specifies the type of a message for a MessageWebSocket object. */
 @JSGlobal("Windows.Networking.Sockets.SocketMessageType")
 @js.native
-object SocketMessageType extends js.Object {
+object SocketMessageType extends StObject {
+  
   /** The message type is binary. */
   @js.native
-  sealed trait binary extends SocketMessageType
+  sealed trait binary
+    extends StObject
+       with SocketMessageType
   
   /** The message type is UTF-8 text. */
   @js.native
-  sealed trait utf8 extends SocketMessageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocketMessageType with Double] = js.native
-  /* 0 */ @js.native
-  object binary extends TopLevel[binary with Double]
-  
-  /* 1 */ @js.native
-  object utf8 extends TopLevel[utf8 with Double]
-  
+  sealed trait utf8
+    extends StObject
+       with SocketMessageType
 }
-

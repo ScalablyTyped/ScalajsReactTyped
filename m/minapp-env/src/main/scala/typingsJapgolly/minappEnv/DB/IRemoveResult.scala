@@ -1,21 +1,26 @@
 package typingsJapgolly.minappEnv.DB
 
-import typingsJapgolly.minappEnv.AnonRemoved
 import typingsJapgolly.minappEnv.IAPISuccessParam
+import typingsJapgolly.minappEnv.anon.Removed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRemoveResult extends IAPISuccessParam {
-  var stats: AnonRemoved
-}
-
-object IRemoveResult {
-  @scala.inline
-  def apply(errMsg: String, stats: AnonRemoved): IRemoveResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+trait IRemoveResult
+  extends StObject
+     with IAPISuccessParam {
   
+  var stats: Removed
+}
+object IRemoveResult {
+  
+  inline def apply(errMsg: String, stats: Removed): IRemoveResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemoveResult]
   }
+  
+  extension [Self <: IRemoveResult](x: Self) {
+    
+    inline def setStats(value: Removed): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+  }
 }
-

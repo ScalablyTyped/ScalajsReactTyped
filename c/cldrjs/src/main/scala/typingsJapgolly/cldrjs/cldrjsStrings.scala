@@ -1,19 +1,16 @@
 package typingsJapgolly.cldrjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cldrjsStrings {
-  @js.native
-  sealed trait `-_` extends js.Object
   
   @js.native
-  sealed trait _underscore extends js.Object
+  sealed trait `-_` extends StObject
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
-  @scala.inline
-  def _underscore: _underscore = "_".asInstanceOf[_underscore]
+  @js.native
+  sealed trait _underscore extends StObject
+  inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
 }
-

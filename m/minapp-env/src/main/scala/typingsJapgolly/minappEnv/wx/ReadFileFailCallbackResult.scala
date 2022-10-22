@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadFileFailCallbackResult extends js.Object {
+trait ReadFileFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -12,13 +13,15 @@ trait ReadFileFailCallbackResult extends js.Object {
     * - 'fail permission denied, open ${dirPath}': 指定的 filePath 路径没有读权限; */
   var errMsg: String
 }
-
 object ReadFileFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): ReadFileFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): ReadFileFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadFileFailCallbackResult]
   }
+  
+  extension [Self <: ReadFileFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

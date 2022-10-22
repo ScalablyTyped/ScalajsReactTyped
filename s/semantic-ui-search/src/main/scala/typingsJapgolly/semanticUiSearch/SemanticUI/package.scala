@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiSearch
+package typingsJapgolly.semanticUiSearch.SemanticUI
 
+import typingsJapgolly.semanticUiSearch.SemanticUI.SearchSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Search = typingsJapgolly.semanticUiSearch.SemanticUI.Search_
-  /**
-    * @see {@link http://semantic-ui.com/modules/search.html#/settings}
-    */
-  type SearchSettings = typingsJapgolly.semanticUiSearch.SemanticUI.SearchSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/search.html#/settings}
+  */
+type SearchSettings = Param

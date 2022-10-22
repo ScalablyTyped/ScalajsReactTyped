@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.jwk
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.raw
   - typingsJapgolly.std.stdStrings.spki
 */
-trait KeyFormat extends js.Object
-
+trait KeyFormat extends StObject
 object KeyFormat {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def jwk: typingsJapgolly.std.stdStrings.jwk = this.cast("jwk")
-  @scala.inline
-  def pkcs8: typingsJapgolly.std.stdStrings.pkcs8 = this.cast("pkcs8")
-  @scala.inline
-  def raw: typingsJapgolly.std.stdStrings.raw = this.cast("raw")
-  @scala.inline
-  def spki: typingsJapgolly.std.stdStrings.spki = this.cast("spki")
+  
+  inline def jwk: typingsJapgolly.std.stdStrings.jwk = "jwk".asInstanceOf[typingsJapgolly.std.stdStrings.jwk]
+  
+  inline def pkcs8: typingsJapgolly.std.stdStrings.pkcs8 = "pkcs8".asInstanceOf[typingsJapgolly.std.stdStrings.pkcs8]
+  
+  inline def raw: typingsJapgolly.std.stdStrings.raw = "raw".asInstanceOf[typingsJapgolly.std.stdStrings.raw]
+  
+  inline def spki: typingsJapgolly.std.stdStrings.spki = "spki".asInstanceOf[typingsJapgolly.std.stdStrings.spki]
 }
-

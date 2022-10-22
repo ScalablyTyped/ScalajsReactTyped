@@ -1,24 +1,21 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.RoleDefinitionBindingCollection")
 @js.native
-class RoleDefinitionBindingCollection protected () extends ClientObjectCollection[RoleDefinition] {
-  def this(context: ClientRuntimeContext) = this()
+trait RoleDefinitionBindingCollection
+  extends StObject
+     with ClientObjectCollection[RoleDefinition] {
+  
   def add(roleDefinition: RoleDefinition): Unit = js.native
+  
   def get_item(index: Double): RoleDefinition = js.native
+  
   def itemAt(index: Double): RoleDefinition = js.native
+  
   def remove(roleDefinition: RoleDefinition): Unit = js.native
+  
   def removeAll(): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("SP.RoleDefinitionBindingCollection")
-@js.native
-object RoleDefinitionBindingCollection extends js.Object {
-  def newObject(context: ClientRuntimeContext): RoleDefinitionBindingCollection = js.native
-}
-

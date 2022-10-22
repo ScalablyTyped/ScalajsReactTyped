@@ -1,14 +1,18 @@
 package typingsJapgolly.reactSpinners.components
 
-import typingsJapgolly.reactSpinners.pacmanLoaderMod.default
+import org.scalajs.dom.HTMLSpanElement
+import typingsJapgolly.reactSpinners.esmHelpersPropsMod.LoaderSizeMarginProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object PacmanLoader extends SharedApply_LoaderSizeMarginProps_190013267[default] {
-  @JSImport("react-spinners/PacmanLoader", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object PacmanLoader {
   
+  @JSImport("react-spinners/esm", "PacmanLoader")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: PacmanLoader.type): SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement] = new SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LoaderSizeMarginProps): SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement] = new SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

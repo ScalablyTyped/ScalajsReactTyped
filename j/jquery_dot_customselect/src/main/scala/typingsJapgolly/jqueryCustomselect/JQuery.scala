@@ -1,20 +1,22 @@
 package typingsJapgolly.jqueryCustomselect
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def customSelect(`val`: JQueryCustomSelectOption): JQuery
 }
-
 object JQuery {
-  @scala.inline
-  def apply(customSelect: JQueryCustomSelectOption => CallbackTo[JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customSelect")(js.Any.fromFunction1((t0: typingsJapgolly.jqueryCustomselect.JQueryCustomSelectOption) => customSelect(t0).runNow()))
+  
+  inline def apply(customSelect: JQueryCustomSelectOption => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(customSelect = js.Any.fromFunction1(customSelect))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setCustomSelect(value: JQueryCustomSelectOption => JQuery): Self = StObject.set(x, "customSelect", js.Any.fromFunction1(value))
+  }
 }
-

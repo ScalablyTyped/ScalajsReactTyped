@@ -1,37 +1,34 @@
 package typingsJapgolly.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.sparqljs.sparqljsStrings.Asterisk
 import typingsJapgolly.sparqljs.sparqljsStrings.DESCRIBE
-import typingsJapgolly.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DescribeQuery
-  extends Query
-     with BaseQuery {
+  extends StObject
+     with BaseQuery
+     with Query {
+  
   var queryType: DESCRIBE
-  var variables: js.Array[Asterisk | Variable]
+  
+  var variables: js.Array[Variable | Wildcard]
 }
-
 object DescribeQuery {
-  @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    queryType: DESCRIBE,
-    `type`: query,
-    variables: js.Array[Asterisk | Variable],
-    base: String = null,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): DescribeQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+  
+  inline def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): DescribeQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "DESCRIBE", variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[DescribeQuery]
   }
+  
+  extension [Self <: DescribeQuery](x: Self) {
+    
+    inline def setQueryType(value: DESCRIBE): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    
+    inline def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    
+    inline def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value*))
+  }
 }
-

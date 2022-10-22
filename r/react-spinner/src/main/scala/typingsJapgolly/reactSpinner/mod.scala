@@ -1,17 +1,16 @@
 package typingsJapgolly.reactSpinner
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-spinner", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default ()
-    extends Component[js.Object, js.Object, js.Any]
+object mod {
   
-  type Spinner = japgolly.scalajs.react.raw.React.Component[js.Object, js.Object]
+  @JSImport("react-spinner", JSImport.Default)
+  @js.native
+  open class default ()
+    extends Component[js.Object, js.Object, Any]
+  
+  type Spinner = japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
 }
-

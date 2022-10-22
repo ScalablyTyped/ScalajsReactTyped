@@ -1,22 +1,22 @@
 
 # Scala.js typings for adhan
 
-Typings are for version 3.0
+Typings are for version 4.4.3
 
 ## Library description:
-Adhan is a well tested and well documented library for calculating Islamic prayer times. All astronomical calculations are high precision equations directly from the book “Astronomical Algorithms” by Jean Meeus. This book is recommended by the Astronomica
+High precision Islamic prayer time library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | adhan |
-| Keywords           | adhan, islam, muslim, prayer |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 1250 |
-| # stars            | 1 |
+| Keywords           | adhan, islam, muslim, prayer, islamic, prayer times, salah, salat, salaat, namaz |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 4671.0 |
+| # stars            | 222.0 |
 
 ## Links
-- [Homepage](https://github.com/batoulapps/adhan-js#readme)
+- [Homepage](https://github.com/batoulapps/adhan-js)
 - [Bugs](https://github.com/batoulapps/adhan-js/issues)
 - [Repository](https://github.com/batoulapps/adhan-js)
 - [Npm](https://www.npmjs.com/package/adhan)
@@ -24,7 +24,7 @@ Adhan is a well tested and well documented library for calculating Islamic praye
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

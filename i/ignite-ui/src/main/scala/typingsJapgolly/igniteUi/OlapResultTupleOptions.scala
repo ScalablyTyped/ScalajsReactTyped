@@ -1,34 +1,35 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OlapResultTupleOptions
-  extends /**
-	 * Option for OlapResultTupleOptions
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" array of $.ig.OlapResultAxisMember objects which form the tuple object.
-  	 */
-  var members: js.UndefOr[js.Array[_]] = js.undefined
+    * Optional="false" array of $.ig.OlapResultAxisMember objects which form the tuple object.
+    */
+  var members: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object OlapResultTupleOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for OlapResultTupleOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    members: js.Array[_] = null
-  ): OlapResultTupleOptions = {
+  
+  inline def apply(): OlapResultTupleOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapResultTupleOptions]
   }
+  
+  extension [Self <: OlapResultTupleOptions](x: Self) {
+    
+    inline def setMembers(value: js.Array[Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    
+    inline def setMembersVarargs(value: Any*): Self = StObject.set(x, "members", js.Array(value*))
+  }
 }
-

@@ -1,15 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Diagnostics
 
 import typingsJapgolly.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the LogFileGenerated event. */
-@JSGlobal("Windows.Foundation.Diagnostics.LogFileGeneratedEventArgs")
-@js.native
-abstract class LogFileGeneratedEventArgs () extends js.Object {
+trait LogFileGeneratedEventArgs extends StObject {
+  
   /** Gets the log file. */
-  var file: StorageFile = js.native
+  var file: StorageFile
 }
-
+object LogFileGeneratedEventArgs {
+  
+  inline def apply(file: StorageFile): LogFileGeneratedEventArgs = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogFileGeneratedEventArgs]
+  }
+  
+  extension [Self <: LogFileGeneratedEventArgs](x: Self) {
+    
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+  }
+}

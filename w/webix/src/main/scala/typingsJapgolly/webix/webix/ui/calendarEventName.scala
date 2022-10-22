@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterContextMenu
@@ -20,7 +20,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onBlur
   - typingsJapgolly.webix.webixStrings.onChange
   - typingsJapgolly.webix.webixStrings.onDateClear
-  - typingsJapgolly.webix.webixStrings.onDateSelect
   - typingsJapgolly.webix.webixStrings.onDestruct
   - typingsJapgolly.webix.webixStrings.onEnter
   - typingsJapgolly.webix.webixStrings.onFocus
@@ -41,80 +40,74 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onViewResize
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait calendarEventName extends js.Object
-
+trait calendarEventName extends StObject
 object calendarEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterContextMenu: typingsJapgolly.webix.webixStrings.onAfterContextMenu = this.cast("onAfterContextMenu")
-  @scala.inline
-  def onAfterDateSelect: typingsJapgolly.webix.webixStrings.onAfterDateSelect = this.cast("onAfterDateSelect")
-  @scala.inline
-  def onAfterMonthChange: typingsJapgolly.webix.webixStrings.onAfterMonthChange = this.cast("onAfterMonthChange")
-  @scala.inline
-  def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = this.cast("onAfterRender")
-  @scala.inline
-  def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
-  @scala.inline
-  def onAfterZoom: typingsJapgolly.webix.webixStrings.onAfterZoom = this.cast("onAfterZoom")
-  @scala.inline
-  def onBeforeContextMenu: typingsJapgolly.webix.webixStrings.onBeforeContextMenu = this.cast("onBeforeContextMenu")
-  @scala.inline
-  def onBeforeDateSelect: typingsJapgolly.webix.webixStrings.onBeforeDateSelect = this.cast("onBeforeDateSelect")
-  @scala.inline
-  def onBeforeMonthChange: typingsJapgolly.webix.webixStrings.onBeforeMonthChange = this.cast("onBeforeMonthChange")
-  @scala.inline
-  def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = this.cast("onBeforeRender")
-  @scala.inline
-  def onBeforeZoom: typingsJapgolly.webix.webixStrings.onBeforeZoom = this.cast("onBeforeZoom")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onBlur: typingsJapgolly.webix.webixStrings.onBlur = this.cast("onBlur")
-  @scala.inline
-  def onChange: typingsJapgolly.webix.webixStrings.onChange = this.cast("onChange")
-  @scala.inline
-  def onDateClear: typingsJapgolly.webix.webixStrings.onDateClear = this.cast("onDateClear")
-  @scala.inline
-  def onDateSelect: typingsJapgolly.webix.webixStrings.onDateSelect = this.cast("onDateSelect")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onEnter: typingsJapgolly.webix.webixStrings.onEnter = this.cast("onEnter")
-  @scala.inline
-  def onFocus: typingsJapgolly.webix.webixStrings.onFocus = this.cast("onFocus")
-  @scala.inline
-  def onItemClick: typingsJapgolly.webix.webixStrings.onItemClick = this.cast("onItemClick")
-  @scala.inline
-  def onItemDblClick: typingsJapgolly.webix.webixStrings.onItemDblClick = this.cast("onItemDblClick")
-  @scala.inline
-  def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = this.cast("onKeyPress")
-  @scala.inline
-  def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = this.cast("onLongTouch")
-  @scala.inline
-  def onMouseMove: typingsJapgolly.webix.webixStrings.onMouseMove = this.cast("onMouseMove")
-  @scala.inline
-  def onMouseMoving: typingsJapgolly.webix.webixStrings.onMouseMoving = this.cast("onMouseMoving")
-  @scala.inline
-  def onMouseOut: typingsJapgolly.webix.webixStrings.onMouseOut = this.cast("onMouseOut")
-  @scala.inline
-  def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = this.cast("onSwipeX")
-  @scala.inline
-  def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = this.cast("onSwipeY")
-  @scala.inline
-  def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = this.cast("onTimedKeyPress")
-  @scala.inline
-  def onTodaySet: typingsJapgolly.webix.webixStrings.onTodaySet = this.cast("onTodaySet")
-  @scala.inline
-  def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = this.cast("onTouchEnd")
-  @scala.inline
-  def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = this.cast("onTouchMove")
-  @scala.inline
-  def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = this.cast("onTouchStart")
-  @scala.inline
-  def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = this.cast("onViewResize")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterContextMenu: typingsJapgolly.webix.webixStrings.onAfterContextMenu = "onAfterContextMenu".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterContextMenu]
+  
+  inline def onAfterDateSelect: typingsJapgolly.webix.webixStrings.onAfterDateSelect = "onAfterDateSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterDateSelect]
+  
+  inline def onAfterMonthChange: typingsJapgolly.webix.webixStrings.onAfterMonthChange = "onAfterMonthChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterMonthChange]
+  
+  inline def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterRender]
+  
+  inline def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterScroll]
+  
+  inline def onAfterZoom: typingsJapgolly.webix.webixStrings.onAfterZoom = "onAfterZoom".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterZoom]
+  
+  inline def onBeforeContextMenu: typingsJapgolly.webix.webixStrings.onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeContextMenu]
+  
+  inline def onBeforeDateSelect: typingsJapgolly.webix.webixStrings.onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDateSelect]
+  
+  inline def onBeforeMonthChange: typingsJapgolly.webix.webixStrings.onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeMonthChange]
+  
+  inline def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeRender]
+  
+  inline def onBeforeZoom: typingsJapgolly.webix.webixStrings.onBeforeZoom = "onBeforeZoom".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeZoom]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onBlur: typingsJapgolly.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typingsJapgolly.webix.webixStrings.onBlur]
+  
+  inline def onChange: typingsJapgolly.webix.webixStrings.onChange = "onChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onChange]
+  
+  inline def onDateClear: typingsJapgolly.webix.webixStrings.onDateClear = "onDateClear".asInstanceOf[typingsJapgolly.webix.webixStrings.onDateClear]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onEnter: typingsJapgolly.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typingsJapgolly.webix.webixStrings.onEnter]
+  
+  inline def onFocus: typingsJapgolly.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typingsJapgolly.webix.webixStrings.onFocus]
+  
+  inline def onItemClick: typingsJapgolly.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typingsJapgolly.webix.webixStrings.onItemClick]
+  
+  inline def onItemDblClick: typingsJapgolly.webix.webixStrings.onItemDblClick = "onItemDblClick".asInstanceOf[typingsJapgolly.webix.webixStrings.onItemDblClick]
+  
+  inline def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onKeyPress]
+  
+  inline def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typingsJapgolly.webix.webixStrings.onLongTouch]
+  
+  inline def onMouseMove: typingsJapgolly.webix.webixStrings.onMouseMove = "onMouseMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseMove]
+  
+  inline def onMouseMoving: typingsJapgolly.webix.webixStrings.onMouseMoving = "onMouseMoving".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseMoving]
+  
+  inline def onMouseOut: typingsJapgolly.webix.webixStrings.onMouseOut = "onMouseOut".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseOut]
+  
+  inline def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeX]
+  
+  inline def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeY]
+  
+  inline def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onTimedKeyPress]
+  
+  inline def onTodaySet: typingsJapgolly.webix.webixStrings.onTodaySet = "onTodaySet".asInstanceOf[typingsJapgolly.webix.webixStrings.onTodaySet]
+  
+  inline def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchEnd]
+  
+  inline def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchMove]
+  
+  inline def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchStart]
+  
+  inline def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewResize]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

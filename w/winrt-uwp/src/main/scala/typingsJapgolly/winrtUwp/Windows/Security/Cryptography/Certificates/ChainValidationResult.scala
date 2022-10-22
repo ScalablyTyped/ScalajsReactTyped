@@ -1,116 +1,97 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChainValidationResult extends js.Object
-
+sealed trait ChainValidationResult extends StObject
 /** Describes the result of a certificate chain verification operation. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.ChainValidationResult")
 @js.native
-object ChainValidationResult extends js.Object {
+object ChainValidationResult extends StObject {
+  
   /** The basic constraint extension of a certificate in the chain has not been observed. */
   @js.native
-  sealed trait basicConstraintsError extends ChainValidationResult
+  sealed trait basicConstraintsError
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain has expired. */
   @js.native
-  sealed trait expired extends ChainValidationResult
+  sealed trait expired
+    extends StObject
+       with ChainValidationResult
   
   /** The certificate chain is missing one or more certificates. */
   @js.native
-  sealed trait incompleteChain extends ChainValidationResult
+  sealed trait incompleteChain
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain has a policy that is not valid. */
   @js.native
-  sealed trait invalidCertificateAuthorityPolicy extends ChainValidationResult
+  sealed trait invalidCertificateAuthorityPolicy
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain has a name that is not valid. The name is either not included in the permitted list or is explicitly excluded. */
   @js.native
-  sealed trait invalidName extends ChainValidationResult
+  sealed trait invalidName
+    extends StObject
+       with ChainValidationResult
   
   /** The signature of a certificate in the chain cannot be verified. */
   @js.native
-  sealed trait invalidSignature extends ChainValidationResult
+  sealed trait invalidSignature
+    extends StObject
+       with ChainValidationResult
   
   /** An unexpected error occurred while validating the certificate chain. */
   @js.native
-  sealed trait otherErrors extends ChainValidationResult
+  sealed trait otherErrors
+    extends StObject
+       with ChainValidationResult
   
   /** Unable to connect to the revocation server. */
   @js.native
-  sealed trait revocationFailure extends ChainValidationResult
+  sealed trait revocationFailure
+    extends StObject
+       with ChainValidationResult
   
   /** No installed or registered DLL was found to verify revocation. */
   @js.native
-  sealed trait revocationInformationMissing extends ChainValidationResult
+  sealed trait revocationInformationMissing
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain has been revoked. */
   @js.native
-  sealed trait revoked extends ChainValidationResult
+  sealed trait revoked
+    extends StObject
+       with ChainValidationResult
   
   /** The certificate chain was verified. */
   @js.native
-  sealed trait success extends ChainValidationResult
+  sealed trait success
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain contains an unknown extension that is marked "critical". */
   @js.native
-  sealed trait unknownCriticalExtension extends ChainValidationResult
+  sealed trait unknownCriticalExtension
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain is not trusted. */
   @js.native
-  sealed trait untrusted extends ChainValidationResult
+  sealed trait untrusted
+    extends StObject
+       with ChainValidationResult
   
   /** A certificate in the chain is being used for a purpose other than one specified by its CA. */
   @js.native
-  sealed trait wrongUsage extends ChainValidationResult
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChainValidationResult with Double] = js.native
-  /* 9 */ @js.native
-  object basicConstraintsError extends TopLevel[basicConstraintsError with Double]
-  
-  /* 3 */ @js.native
-  object expired extends TopLevel[expired with Double]
-  
-  /* 4 */ @js.native
-  object incompleteChain extends TopLevel[incompleteChain with Double]
-  
-  /* 8 */ @js.native
-  object invalidCertificateAuthorityPolicy extends TopLevel[invalidCertificateAuthorityPolicy with Double]
-  
-  /* 7 */ @js.native
-  object invalidName extends TopLevel[invalidName with Double]
-  
-  /* 5 */ @js.native
-  object invalidSignature extends TopLevel[invalidSignature with Double]
-  
-  /* 13 */ @js.native
-  object otherErrors extends TopLevel[otherErrors with Double]
-  
-  /* 12 */ @js.native
-  object revocationFailure extends TopLevel[revocationFailure with Double]
-  
-  /* 11 */ @js.native
-  object revocationInformationMissing extends TopLevel[revocationInformationMissing with Double]
-  
-  /* 2 */ @js.native
-  object revoked extends TopLevel[revoked with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 10 */ @js.native
-  object unknownCriticalExtension extends TopLevel[unknownCriticalExtension with Double]
-  
-  /* 1 */ @js.native
-  object untrusted extends TopLevel[untrusted with Double]
-  
-  /* 6 */ @js.native
-  object wrongUsage extends TopLevel[wrongUsage with Double]
-  
+  sealed trait wrongUsage
+    extends StObject
+       with ChainValidationResult
 }
-

@@ -1,15 +1,11 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers
 
-import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterator
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Pickers.FileExtensionVector")
 @js.native
-class FileExtensionVector () extends IVector[String] {
-  /* CompleteClass */
-  override def first(): IIterator[String] = js.native
-}
-
+trait FileExtensionVector
+  extends StObject
+     with IVector[String]

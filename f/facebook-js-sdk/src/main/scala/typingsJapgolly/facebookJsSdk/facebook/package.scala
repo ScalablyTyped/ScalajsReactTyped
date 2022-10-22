@@ -1,10 +1,20 @@
-package typingsJapgolly.facebookJsSdk
+package typingsJapgolly.facebookJsSdk.facebook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object facebook {
-  type CollectionAdsDialogResponse = typingsJapgolly.facebookJsSdk.facebook.InstantExperiencesAdsDialogResponse
-  type FacebookEventCallback[TEvent /* <: typingsJapgolly.facebookJsSdk.facebook.FacebookEventType */] = (js.Function1[/* response */ typingsJapgolly.facebookJsSdk.facebook.StatusResponse, scala.Unit]) | js.Function0[scala.Unit]
-}
+
+type CollectionAdsDialogResponse = InstantExperiencesAdsDialogResponse
+
+type EducationExperience = Any
+
+type Experience = Any
+
+type Page = Any
+
+type PaymentPricepoints = Any
+
+type User = Any
+
+type VideoUploadLimits = Any

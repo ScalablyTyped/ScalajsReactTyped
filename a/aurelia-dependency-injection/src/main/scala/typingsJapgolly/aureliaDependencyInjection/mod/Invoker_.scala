@@ -1,12 +1,13 @@
 package typingsJapgolly.aureliaDependencyInjection.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends js.Object {
+trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends StObject {
+  
   def invoke(container: Container, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs], dependencies: TArgs): ImplOrAny[TImpl]
+  
   def invokeWithDynamicDependencies(
     container: Container,
     fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs],
@@ -18,23 +19,30 @@ trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ex
     ]
   ): ImplOrAny[TImpl]
 }
-
 object Invoker_ {
-  @scala.inline
-  def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
-    invoke: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => CallbackTo[ImplOrAny[TImpl]],
+  
+  inline def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
+    invoke: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl],
     invokeWithDynamicDependencies: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ], js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
-    ]) => CallbackTo[ImplOrAny[TImpl]]
+    ]) => ImplOrAny[TImpl]
   ): Invoker_[TBase, TImpl, TArgs] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invoke")(js.Any.fromFunction3((t0: typingsJapgolly.aureliaDependencyInjection.mod.Container, t1: typingsJapgolly.aureliaDependencyInjection.mod.DependencyCtorOrFunctor[TBase, TImpl, TArgs], t2: TArgs) => invoke(t0, t1, t2).runNow()))
-    __obj.updateDynamic("invokeWithDynamicDependencies")(js.Any.fromFunction4((t0: typingsJapgolly.aureliaDependencyInjection.mod.Container, t1: typingsJapgolly.aureliaDependencyInjection.mod.DependencyCtorOrFunctor[TBase, TImpl, TArgs], t2: js.Array[
-  /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any], t3: js.Array[
-  /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any]) => invokeWithDynamicDependencies(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction3(invoke), invokeWithDynamicDependencies = js.Any.fromFunction4(invokeWithDynamicDependencies))
     __obj.asInstanceOf[Invoker_[TBase, TImpl, TArgs]]
   }
+  
+  extension [Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (Invoker_[TBase, TImpl, TArgs])) {
+    
+    inline def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
+    
+    inline def setInvokeWithDynamicDependencies(
+      value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
+        ], js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
+        ]) => ImplOrAny[TImpl]
+    ): Self = StObject.set(x, "invokeWithDynamicDependencies", js.Any.fromFunction4(value))
+  }
 }
-

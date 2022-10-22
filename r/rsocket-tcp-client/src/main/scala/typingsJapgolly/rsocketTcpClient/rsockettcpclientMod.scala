@@ -8,35 +8,42 @@ import typingsJapgolly.rsocketFlowable.mod.Flowable
 import typingsJapgolly.rsocketTypes.reactiveSocketTypesMod.ConnectionStatus
 import typingsJapgolly.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typingsJapgolly.rsocketTypes.reactiveSocketTypesMod.Frame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-tcp-client/RSocketTcpClient", JSImport.Namespace)
-@js.native
-object rsockettcpclientMod extends js.Object {
+object rsockettcpclientMod {
+  
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTcpClient")
   @js.native
-  class RSocketTcpClient protected () extends RSocketTcpConnection {
+  open class RSocketTcpClient protected () extends RSocketTcpConnection {
     def this(options: TcpSocketConnectOpts) = this()
-    def this(options: TcpSocketConnectOpts, encoders: Encoders[_]) = this()
+    def this(options: TcpSocketConnectOpts, encoders: Encoders[Any]) = this()
   }
   
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTcpConnection")
   @js.native
-  class RSocketTcpConnection () extends DuplexConnection {
+  open class RSocketTcpConnection ()
+    extends StObject
+       with DuplexConnection {
     def this(socket: Socket) = this()
-    def this(socket: Socket, encoders: Encoders[_]) = this()
+    def this(socket: Unit, encoders: Encoders[Any]) = this()
+    def this(socket: Socket, encoders: Encoders[Any]) = this()
+    
     /**
       * Close the underlying connection, emitting `onComplete` on the receive()
       * Publisher.
       */
     /* CompleteClass */
     override def close(): Unit = js.native
+    
     /**
       * Open the underlying connection. Throws if the connection is already in
       * the CLOSED or ERROR state.
       */
     /* CompleteClass */
     override def connect(): Unit = js.native
+    
     /**
       * Returns a Flowable that immediately publishes the current connection
       * status and thereafter updates as it changes. Once a connection is in
@@ -44,8 +51,10 @@ object rsockettcpclientMod extends js.Object {
       * Implementations must publish values per the comments on ConnectionStatus.
       */
     /* CompleteClass */
-    override def connectionStatus(): Flowable[ConnectionStatus] = js.native
+    override def connectionStatus(): Any = js.native
+    
     def getConnectionState(): ConnectionStatus = js.native
+    
     /**
       * Returns a stream of all `Frame`s received on this connection.
       *
@@ -58,7 +67,9 @@ object rsockettcpclientMod extends js.Object {
       *   not should throw if `receive` is called more than once.
       */
     /* CompleteClass */
-    override def receive(): Flowable[Frame] = js.native
+    override def receive(): Any = js.native
+    
+    def send(frames: Flowable[Frame]): Unit = js.native
     /**
       * Send all the `input` frames on this connection.
       *
@@ -68,21 +79,25 @@ object rsockettcpclientMod extends js.Object {
       *   `receive()` Publisher.
       */
     /* CompleteClass */
-    override def send(input: Flowable[Frame]): Unit = js.native
+    override def send(
+      input: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Flowable<Frame> */ Any
+    ): Unit = js.native
+    
     /**
       * Send a single frame on the connection.
       */
     /* CompleteClass */
     override def sendOne(frame: Frame): Unit = js.native
+    
     def setConnectionStatus(status: ConnectionStatus): Unit = js.native
+    
     def setupSocket(socket: Socket): Unit = js.native
   }
   
+  @JSImport("rsocket-tcp-client/RSocketTcpClient", "RSocketTlsClient")
   @js.native
-  class RSocketTlsClient protected () extends RSocketTcpConnection {
+  open class RSocketTlsClient protected () extends RSocketTcpConnection {
     def this(options: ConnectionOptions) = this()
-    def this(options: ConnectionOptions, encoders: Encoders[_]) = this()
+    def this(options: ConnectionOptions, encoders: Encoders[Any]) = this()
   }
-  
 }
-

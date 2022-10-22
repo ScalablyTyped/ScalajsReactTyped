@@ -1,13 +1,16 @@
 package typingsJapgolly.emotionMemoize
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@emotion/memoize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[T](fn: Fn[T]): Fn[T] = js.native
+object mod {
+  
+  @JSImport("@emotion/memoize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](fn: Fn[T]): Fn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Fn[T]]
+  
   type Fn[T] = js.Function1[/* key */ String, T]
 }
-

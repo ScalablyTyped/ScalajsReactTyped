@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.applicationinsightsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsApplicationinsightsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ApplicationInsights")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ApplicationInsights ()
+open class ApplicationInsights ()
   extends typingsJapgolly.awsSdk.mod.ApplicationInsights {
   def this(options: ClientConfiguration) = this()
 }
-

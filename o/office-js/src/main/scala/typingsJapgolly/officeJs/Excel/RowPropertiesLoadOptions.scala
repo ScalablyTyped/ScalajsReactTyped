@@ -1,9 +1,9 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.CellPropertiesFormatLoadO
+import typingsJapgolly.officeJs.anon.CellPropertiesFormatLoadO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
+trait RowPropertiesLoadOptions
+  extends StObject
+     with CellPropertiesLoadOptions {
+  
   /**
     *
     * Specifies whether to load on the `format` property.
@@ -20,6 +23,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     */
   @JSName("format")
   var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadO] = js.undefined
+  
   /**
     *
     * Specifies whether to load on the `rowHidden` property.
@@ -27,6 +31,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   var rowHidden: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Specifies whether to load on the `rowIndex` property.
@@ -35,29 +40,25 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     */
   var rowIndex: js.UndefOr[Boolean] = js.undefined
 }
-
 object RowPropertiesLoadOptions {
-  @scala.inline
-  def apply(
-    address: js.UndefOr[Boolean] = js.undefined,
-    addressLocal: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormatLoadO = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hyperlink: js.UndefOr[Boolean] = js.undefined,
-    rowHidden: js.UndefOr[Boolean] = js.undefined,
-    rowIndex: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined
-  ): RowPropertiesLoadOptions = {
+  
+  inline def apply(): RowPropertiesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowPropertiesLoadOptions]
   }
+  
+  extension [Self <: RowPropertiesLoadOptions](x: Self) {
+    
+    inline def setFormat(value: CellPropertiesFormatLoadO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
+    
+    inline def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
+    
+    inline def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+  }
 }
-

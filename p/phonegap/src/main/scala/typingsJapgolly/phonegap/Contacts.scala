@@ -1,13 +1,15 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Contacts extends js.Object {
+trait Contacts extends StObject {
+  
   def create(): Contact = js.native
-  def create(properties: js.Any): Contact = js.native
+  def create(properties: Any): Contact = js.native
+  
   def find(
     contactFields: js.Array[String],
     contactSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
@@ -20,4 +22,3 @@ trait Contacts extends js.Object {
     contactFindOptions: ContactFindOptions
   ): Unit = js.native
 }
-

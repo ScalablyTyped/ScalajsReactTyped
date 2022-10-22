@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGetActivationFactory extends js.Object {
-  def getActivationFactory(activatableClassId: String): js.Any
+trait IGetActivationFactory extends StObject {
+  
+  def getActivationFactory(activatableClassId: String): Any
 }
-
 object IGetActivationFactory {
-  @scala.inline
-  def apply(getActivationFactory: String => CallbackTo[js.Any]): IGetActivationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActivationFactory")(js.Any.fromFunction1((t0: java.lang.String) => getActivationFactory(t0).runNow()))
+  
+  inline def apply(getActivationFactory: String => Any): IGetActivationFactory = {
+    val __obj = js.Dynamic.literal(getActivationFactory = js.Any.fromFunction1(getActivationFactory))
     __obj.asInstanceOf[IGetActivationFactory]
   }
+  
+  extension [Self <: IGetActivationFactory](x: Self) {
+    
+    inline def setGetActivationFactory(value: String => Any): Self = StObject.set(x, "getActivationFactory", js.Any.fromFunction1(value))
+  }
 }
-

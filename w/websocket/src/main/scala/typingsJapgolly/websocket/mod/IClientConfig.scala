@@ -1,17 +1,20 @@
 package typingsJapgolly.websocket.mod
 
 import typingsJapgolly.node.httpsMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IClientConfig extends IConfig {
+trait IClientConfig
+  extends StObject
+     with IConfig {
+  
   /**
-    * Options to pass to https.request if connecting via TLS.
-    * See Node's HTTPS documentation
+    * Options to pass to `https.request` if connecting via TLS.
     * @see https://nodejs.org/api/https.html#https_https_request_options_callback
     */
   var tlsOptions: js.UndefOr[RequestOptions] = js.undefined
+  
   /**
     * Which version of the WebSocket protocol to use when making the connection.
     * Currently supported values are 8 and 13. This option will be removed once the
@@ -22,29 +25,21 @@ trait IClientConfig extends IConfig {
     */
   var webSocketVersion: js.UndefOr[Double] = js.undefined
 }
-
 object IClientConfig {
-  @scala.inline
-  def apply(
-    assembleFragments: js.UndefOr[Boolean] = js.undefined,
-    closeTimeout: Int | Double = null,
-    fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined,
-    fragmentationThreshold: Int | Double = null,
-    maxReceivedFrameSize: Int | Double = null,
-    maxReceivedMessageSize: Int | Double = null,
-    tlsOptions: RequestOptions = null,
-    webSocketVersion: Int | Double = null
-  ): IClientConfig = {
+  
+  inline def apply(): IClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.asInstanceOf[js.Any])
-    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.asInstanceOf[js.Any])
-    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
-    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
-    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
-    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
-    if (webSocketVersion != null) __obj.updateDynamic("webSocketVersion")(webSocketVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientConfig]
   }
+  
+  extension [Self <: IClientConfig](x: Self) {
+    
+    inline def setTlsOptions(value: RequestOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
+    
+    inline def setWebSocketVersion(value: Double): Self = StObject.set(x, "webSocketVersion", value.asInstanceOf[js.Any])
+    
+    inline def setWebSocketVersionUndefined: Self = StObject.set(x, "webSocketVersion", js.undefined)
+  }
 }
-

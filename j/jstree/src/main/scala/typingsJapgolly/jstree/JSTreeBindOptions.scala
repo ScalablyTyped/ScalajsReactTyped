@@ -1,25 +1,42 @@
 package typingsJapgolly.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeBindOptions extends js.Object {
-  var args: js.UndefOr[js.Any] = js.undefined
-  var inst: js.UndefOr[js.Any] = js.undefined
-  var rlbk: js.UndefOr[js.Any] = js.undefined
-  var rslt: js.UndefOr[js.Any] = js.undefined
+trait JSTreeBindOptions extends StObject {
+  
+  var args: js.UndefOr[Any] = js.undefined
+  
+  var inst: js.UndefOr[Any] = js.undefined
+  
+  var rlbk: js.UndefOr[Any] = js.undefined
+  
+  var rslt: js.UndefOr[Any] = js.undefined
 }
-
 object JSTreeBindOptions {
-  @scala.inline
-  def apply(args: js.Any = null, inst: js.Any = null, rlbk: js.Any = null, rslt: js.Any = null): JSTreeBindOptions = {
+  
+  inline def apply(): JSTreeBindOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (inst != null) __obj.updateDynamic("inst")(inst.asInstanceOf[js.Any])
-    if (rlbk != null) __obj.updateDynamic("rlbk")(rlbk.asInstanceOf[js.Any])
-    if (rslt != null) __obj.updateDynamic("rslt")(rslt.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeBindOptions]
   }
+  
+  extension [Self <: JSTreeBindOptions](x: Self) {
+    
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setInst(value: Any): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
+    
+    inline def setInstUndefined: Self = StObject.set(x, "inst", js.undefined)
+    
+    inline def setRlbk(value: Any): Self = StObject.set(x, "rlbk", value.asInstanceOf[js.Any])
+    
+    inline def setRlbkUndefined: Self = StObject.set(x, "rlbk", js.undefined)
+    
+    inline def setRslt(value: Any): Self = StObject.set(x, "rslt", value.asInstanceOf[js.Any])
+    
+    inline def setRsltUndefined: Self = StObject.set(x, "rslt", js.undefined)
+  }
 }
-

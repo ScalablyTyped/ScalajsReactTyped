@@ -1,38 +1,31 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeaderPosition extends js.Object
-
+sealed trait HeaderPosition extends StObject
 /**
   * Specifies the position of group headers relative to their items in a ListView.
   **/
 @JSGlobal("WinJS.UI.HeaderPosition")
 @js.native
-object HeaderPosition extends js.Object {
+object HeaderPosition extends StObject {
+  
   /**
     * Group headers appear to the left of items.
     **/
   @js.native
-  sealed trait left extends HeaderPosition
+  sealed trait left
+    extends StObject
+       with HeaderPosition
   
   /**
     * Group headers appear above items.
     **/
   @js.native
-  sealed trait top extends HeaderPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HeaderPosition with Double] = js.native
-  /* 0 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 1 */ @js.native
-  object top extends TopLevel[top with Double]
-  
+  sealed trait top
+    extends StObject
+       with HeaderPosition
 }
-

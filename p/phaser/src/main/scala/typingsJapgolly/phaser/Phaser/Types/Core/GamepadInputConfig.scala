@@ -1,22 +1,27 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GamepadInputConfig extends js.Object {
+trait GamepadInputConfig extends StObject {
+  
   /**
     * Where the Gamepad Manager listens for gamepad input events.
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
-
 object GamepadInputConfig {
-  @scala.inline
-  def apply(target: js.Any = null): GamepadInputConfig = {
+  
+  inline def apply(): GamepadInputConfig = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadInputConfig]
   }
+  
+  extension [Self <: GamepadInputConfig](x: Self) {
+    
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

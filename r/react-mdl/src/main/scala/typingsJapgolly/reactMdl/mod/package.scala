@@ -1,10 +1,14 @@
-package typingsJapgolly.reactMdl
+package typingsJapgolly.reactMdl.mod
 
+import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type MDLClassProps = typingsJapgolly.react.mod.ClassAttributes[js.Any]
-  type MDLOtherProps = typingsJapgolly.react.mod.HTMLProps[js.Any]
-}
+
+type MDLClassProps = ClassAttributes[Any]
+
+type MDLOtherProps = HTMLProps[Any]
+
+type NavigationProps = MDLOtherProps

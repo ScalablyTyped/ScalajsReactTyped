@@ -1,35 +1,19 @@
 package typingsJapgolly.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The PathItem class is the base for any items that describe paths and
   *     offer standardised methods for drawing and path manipulation, such as
   *     {@link Path} and {@link CompoundPath}.
   */
-@JSGlobal("paper.PathItem")
 @js.native
-class PathItem () extends Item {
-  /** 
-    * Specifies whether the path as a whole is oriented clock-wise, by looking
-    * at the path's area.
-    * Note that self-intersecting paths and sub-paths of different orientation
-    * can result in areas that cancel each other out.
-    * 
-    * @see Path#area
-    * @see CompoundPath#area
-    */
-  var clockwise: Boolean = js.native
-  /** 
-    * Returns a point that is guaranteed to be inside the path.
-    */
-  val interiorPoint: Point = js.native
-  /** 
-    * The path's geometry, formatted as SVG style path data.
-    */
-  var pathData: String = js.native
+trait PathItem
+  extends StObject
+     with Item {
+  
   /** 
     * Adds an arc from the position of the last segment in the path, passing
     * through the specified `through` vector, to the specified `to` vector, all
@@ -51,6 +35,7 @@ class PathItem () extends Item {
     */
   def arcBy(to: Point): Unit = js.native
   def arcBy(to: Point, clockwise: Boolean): Unit = js.native
+  
   /** 
     * Adds an arc from the position of the last segment in the path, passing
     * through the specified `through` point, to the specified `to` point, by
@@ -70,6 +55,18 @@ class PathItem () extends Item {
     */
   def arcTo(to: Point): Unit = js.native
   def arcTo(to: Point, clockwise: Boolean): Unit = js.native
+  
+  /** 
+    * Specifies whether the path as a whole is oriented clock-wise, by looking
+    * at the path's area.
+    * Note that self-intersecting paths and sub-paths of different orientation
+    * can result in areas that cancel each other out.
+    * 
+    * @see Path#area
+    * @see CompoundPath#area
+    */
+  var clockwise: Boolean = js.native
+  
   /** 
     * Closes the path. When closed, Paper.js connects the first and last
     * segment of the path with an additional curve. The difference to setting
@@ -79,6 +76,7 @@ class PathItem () extends Item {
     * @see Path#closed
     */
   def closePath(): Unit = js.native
+  
   /** 
     * Compares the geometry of two paths to see if they describe the same
     * shape, detecting cases where paths start in different segments or even
@@ -91,6 +89,7 @@ class PathItem () extends Item {
     * @return true if two paths describe the same shape
     */
   def compare(path: PathItem): Boolean = js.native
+  
   /** 
     * Adds a cubic bezier curve to the path, from the last segment to the
     * to the specified `to` vector, with the curve itself defined by two
@@ -103,6 +102,7 @@ class PathItem () extends Item {
     * @param to - the destination point of the newly added curve
     */
   def cubicCurveBy(handle1: Point, handle2: Point, to: Point): Unit = js.native
+  
   /** 
     * Adds a cubic bezier curve to the path, from the last segment to the
     * specified destination point, with the curve itself defined by two
@@ -117,6 +117,7 @@ class PathItem () extends Item {
     * @param to - the destination point of the newly added curve
     */
   def cubicCurveTo(handle1: Point, handle2: Point, to: Point): Unit = js.native
+  
   /** 
     * Adds a curve from the last segment in the path through the specified
     * `through` vector, to the specified `to` vector, all specified relatively
@@ -129,6 +130,7 @@ class PathItem () extends Item {
     */
   def curveBy(through: Point, to: Point): Unit = js.native
   def curveBy(through: Point, to: Point, time: Double): Unit = js.native
+  
   /** 
     * Adds a curve from the last segment in the path through the specified
     * `through` point, to the specified destination point by adding one segment
@@ -141,6 +143,7 @@ class PathItem () extends Item {
     */
   def curveTo(through: Point, to: Point): Unit = js.native
   def curveTo(through: Point, to: Point, time: Double): Unit = js.native
+  
   /** 
     * Splits the geometry of this path along the geometry of the specified
     * path returns the result as a new group item. This is equivalent to
@@ -162,6 +165,7 @@ class PathItem () extends Item {
     */
   def divide(path: PathItem): PathItem = js.native
   def divide(path: PathItem, options: js.Object): PathItem = js.native
+  
   /** 
     * Excludes the intersection of the geometry of the specified path with
     * this path's geometry and returns the result as a new path item.
@@ -177,6 +181,7 @@ class PathItem () extends Item {
     */
   def exclude(path: PathItem): PathItem = js.native
   def exclude(path: PathItem, options: js.Object): PathItem = js.native
+  
   /** 
     * Flattens the curves in path items to a sequence of straight lines, by
     * subdividing them enough times until the specified maximum error is met.
@@ -186,6 +191,7 @@ class PathItem () extends Item {
     */
   def flatten(): Unit = js.native
   def flatten(flatness: Double): Unit = js.native
+  
   /** 
     * Returns all crossings between two {@link PathItem} items as an array of
     * {@link CurveLocation} objects. {@link CompoundPath} items are also
@@ -200,6 +206,7 @@ class PathItem () extends Item {
     *     paths
     */
   def getCrossings(path: PathItem): js.Array[CurveLocation] = js.native
+  
   /** 
     * Returns all intersections between two {@link PathItem} items as an array
     * of {@link CurveLocation} objects. {@link CompoundPath} items are also
@@ -217,6 +224,7 @@ class PathItem () extends Item {
     */
   def getIntersections(path: PathItem): js.Array[CurveLocation] = js.native
   def getIntersections(path: PathItem, include: js.Function): js.Array[CurveLocation] = js.native
+  
   /** 
     * Returns the nearest location on the path item to the specified point.
     * 
@@ -226,6 +234,7 @@ class PathItem () extends Item {
     * the specified point
     */
   def getNearestLocation(point: Point): CurveLocation = js.native
+  
   /** 
     * Returns the nearest point on the path item to the specified point.
     * 
@@ -235,6 +244,12 @@ class PathItem () extends Item {
     * point
     */
   def getNearestPoint(point: Point): Point = js.native
+  
+  /** 
+    * Returns a point that is guaranteed to be inside the path.
+    */
+  val interiorPoint: Point = js.native
+  
   /** 
     * Interpolates between the two specified path items and uses the result
     * as the geometry for this path item. The number of children and
@@ -248,6 +263,7 @@ class PathItem () extends Item {
     *     `0` and `1`, but extrapolation is possible too
     */
   def interpolate(from: PathItem, to: PathItem, factor: Double): Unit = js.native
+  
   /** 
     * Intersects the geometry of the specified path with this path's
     * geometry and returns the result as a new path item.
@@ -268,6 +284,7 @@ class PathItem () extends Item {
     */
   def intersect(path: PathItem): PathItem = js.native
   def intersect(path: PathItem, options: js.Object): PathItem = js.native
+  
   /** 
     * Adds a straight curve to the path, from the the last segment in the path
     * to the `to` vector specified relatively to it.
@@ -276,6 +293,7 @@ class PathItem () extends Item {
     *     added straight curve
     */
   def lineBy(point: Point): Unit = js.native
+  
   /** 
     * Adds a straight curve to the path, from the the last segment in the path
     * to the specified point.
@@ -284,12 +302,14 @@ class PathItem () extends Item {
     *     curve
     */
   def lineTo(point: Point): Unit = js.native
+  
   /** 
     * If called on a {@link CompoundPath}, a new {@link Path} is created as a
     * child and a point is added as its first segment relative to the position
     * of the last segment of the current path.
     */
   def moveBy(to: Point): Unit = js.native
+  
   /** 
     * On a normal empty {@link Path}, the point is simply added as the path's
     * first segment. If called on a {@link CompoundPath}, a new {@link Path} is
@@ -298,6 +318,12 @@ class PathItem () extends Item {
     * @param point - the point in which to start the path
     */
   def moveTo(point: Point): Unit = js.native
+  
+  /** 
+    * The path's geometry, formatted as SVG style path data.
+    */
+  var pathData: String = js.native
+  
   /** 
     * Adds a quadratic bezier curve to the path, from the last segment to the
     * specified destination point, with the curve itself defined by the
@@ -313,6 +339,7 @@ class PathItem () extends Item {
     * @param to - the destination point of the newly added curve
     */
   def quadraticCurveBy(handle: Point, to: Point): Unit = js.native
+  
   /** 
     * Adds a quadratic bezier curve to the path, from the last segment to the
     * specified destination point, with the curve itself defined by the
@@ -329,6 +356,7 @@ class PathItem () extends Item {
     * @param to - the destination point of the newly added curve
     */
   def quadraticCurveTo(handle: Point, to: Point): Unit = js.native
+  
   /** 
     * Fixes the orientation of the sub-paths of a compound-path, assuming
     * that non of its sub-paths intersect, by reorienting them so that they
@@ -348,12 +376,15 @@ class PathItem () extends Item {
   def reorient(): PathItem = js.native
   def reorient(nonZero: Boolean): PathItem = js.native
   def reorient(nonZero: Boolean, clockwise: Boolean): PathItem = js.native
+  def reorient(nonZero: Unit, clockwise: Boolean): PathItem = js.native
+  
   /** 
     * Reverses the orientation of the path item. When called on
     * {@link CompoundPath} items, each of the nested paths is reversed. On
     * {@link Path} items, the sequence of {@link Path#segments} is reversed.
     */
   def reverse(): Unit = js.native
+  
   /** 
     * Fits a sequence of as few curves as possible through the path's anchor
     * points, ignoring the path items's curve-handles, with an allowed maximum
@@ -373,6 +404,7 @@ class PathItem () extends Item {
     */
   def simplify(): Boolean = js.native
   def simplify(tolerance: Double): Boolean = js.native
+  
   /** 
     * Smooths the path item without changing the amount of segments in the path
     * or moving the segments' locations, by smoothing and adjusting the angle
@@ -443,6 +475,7 @@ class PathItem () extends Item {
     */
   def smooth(): Unit = js.native
   def smooth(options: js.Object): Unit = js.native
+  
   /** 
     * Subtracts the geometry of the specified path from this path's
     * geometry and returns the result as a new path item.
@@ -463,6 +496,7 @@ class PathItem () extends Item {
     */
   def subtract(path: PathItem): PathItem = js.native
   def subtract(path: PathItem, options: js.Object): PathItem = js.native
+  
   /** 
     * Unites the geometry of the specified path with this path's geometry
     * and returns the result as a new path item.
@@ -479,41 +513,3 @@ class PathItem () extends Item {
   def unite(path: PathItem): PathItem = js.native
   def unite(path: PathItem, options: js.Object): PathItem = js.native
 }
-
-/* static members */
-@JSGlobal("paper.PathItem")
-@js.native
-object PathItem extends js.Object {
-  /** 
-    * Creates a path item from the given object, determining if the
-    * contained information describes a plain path or a compound-path with
-    * multiple sub-paths.
-    * 
-    * @param object - an object containing the properties describing
-    *     the item to be created
-    * 
-    * @return the newly created path item
-    */
-  def create(`object`: js.Object): Path | CompoundPath = js.native
-  /** 
-    * Creates a path item from the given SVG path-data, determining if the
-    * data describes a plain path or a compound-path with multiple
-    * sub-paths.
-    * 
-    * @param pathData - the SVG path-data to parse
-    * 
-    * @return the newly created path item
-    */
-  def create(pathData: String): Path | CompoundPath = js.native
-  /** 
-    * Creates a path item from the given segments array, determining if the
-    * array describes a plain path or a compound-path with multiple
-    * sub-paths.
-    * 
-    * @param segments - the segments array to parse
-    * 
-    * @return the newly created path item
-    */
-  def create(segments: js.Array[js.Array[Double]]): Path | CompoundPath = js.native
-}
-

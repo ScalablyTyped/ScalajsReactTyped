@@ -1,26 +1,34 @@
 package typingsJapgolly.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Get a list of featured playlists
-  * 
+  *
   * GET /v1/browse/featured-playlists
   * https://developer.spotify.com/web-api/get-list-featured-playlists/
   */
-trait ListOfFeaturedPlaylistsResponse extends js.Object {
+trait ListOfFeaturedPlaylistsResponse extends StObject {
+  
   var message: js.UndefOr[String] = js.undefined
+  
   var playlists: PagingObject[PlaylistObjectSimplified]
 }
-
 object ListOfFeaturedPlaylistsResponse {
-  @scala.inline
-  def apply(playlists: PagingObject[PlaylistObjectSimplified], message: String = null): ListOfFeaturedPlaylistsResponse = {
+  
+  inline def apply(playlists: PagingObject[PlaylistObjectSimplified]): ListOfFeaturedPlaylistsResponse = {
     val __obj = js.Dynamic.literal(playlists = playlists.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOfFeaturedPlaylistsResponse]
   }
+  
+  extension [Self <: ListOfFeaturedPlaylistsResponse](x: Self) {
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
+  }
 }
-

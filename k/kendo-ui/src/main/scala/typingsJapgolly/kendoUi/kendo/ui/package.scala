@@ -1,79 +1,188 @@
-package typingsJapgolly.kendoUi.kendo
+package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Element
+import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type AutoCompleteChangeEvent = typingsJapgolly.kendoUi.kendo.ui.AutoCompleteEvent
-  type AutoCompleteCloseEvent = typingsJapgolly.kendoUi.kendo.ui.AutoCompleteEvent
-  type AutoCompleteDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.AutoCompleteEvent
-  type AutoCompleteOpenEvent = typingsJapgolly.kendoUi.kendo.ui.AutoCompleteEvent
-  type ChatTypingEndEvent = typingsJapgolly.kendoUi.kendo.ui.ChatEvent
-  type ChatTypingStartEvent = typingsJapgolly.kendoUi.kendo.ui.ChatEvent
-  type ComboBoxCascadeEvent = typingsJapgolly.kendoUi.kendo.ui.ComboBoxEvent
-  type ComboBoxChangeEvent = typingsJapgolly.kendoUi.kendo.ui.ComboBoxEvent
-  type ComboBoxCloseEvent = typingsJapgolly.kendoUi.kendo.ui.ComboBoxEvent
-  type ComboBoxDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.ComboBoxEvent
-  type ComboBoxOpenEvent = typingsJapgolly.kendoUi.kendo.ui.ComboBoxEvent
-  type DateInputChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DateInputEvent
-  type DatePickerChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DatePickerEvent
-  type DatePickerCloseEvent = typingsJapgolly.kendoUi.kendo.ui.DatePickerEvent
-  type DatePickerOpenEvent = typingsJapgolly.kendoUi.kendo.ui.DatePickerEvent
-  type DateRangePickerChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DateRangePickerEvent
-  type DateRangePickerCloseEvent = typingsJapgolly.kendoUi.kendo.ui.DateRangePickerEvent
-  type DateRangePickerOpenEvent = typingsJapgolly.kendoUi.kendo.ui.DateRangePickerEvent
-  type DateTimePickerChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DateTimePickerEvent
-  type DrawerHideEvent = typingsJapgolly.kendoUi.kendo.ui.DrawerEvent
-  type DropDownListCascadeEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownListEvent
-  type DropDownListChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownListEvent
-  type DropDownListCloseEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownListEvent
-  type DropDownListDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownListEvent
-  type DropDownListOpenEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownListEvent
-  type DropDownTreeChangeEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownTreeEvent
-  type DropDownTreeCloseEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownTreeEvent
-  type DropDownTreeDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownTreeEvent
-  type DropDownTreeOpenEvent = typingsJapgolly.kendoUi.kendo.ui.DropDownTreeEvent
-  type DropTargetDragenterEvent = typingsJapgolly.kendoUi.kendo.ui.DropTargetEvent
-  type DropTargetDragleaveEvent = typingsJapgolly.kendoUi.kendo.ui.DropTargetEvent
-  type DropTargetDropEvent = typingsJapgolly.kendoUi.kendo.ui.DropTargetEvent
-  type GanttChangeEvent = typingsJapgolly.kendoUi.kendo.ui.GanttEvent
-  type GanttDataBindingEvent = typingsJapgolly.kendoUi.kendo.ui.GanttEvent
-  type GanttDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.GanttEvent
-  type GridChangeEvent = typingsJapgolly.kendoUi.kendo.ui.GridEvent
-  type GridDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.GridEvent
-  type GridSaveChangesEvent = typingsJapgolly.kendoUi.kendo.ui.GridEvent
-  type MaskedTextBoxChangeEvent = typingsJapgolly.kendoUi.kendo.ui.MaskedTextBoxEvent
-  type MultiColumnComboBoxCascadeEvent = typingsJapgolly.kendoUi.kendo.ui.MultiColumnComboBoxEvent
-  type MultiColumnComboBoxChangeEvent = typingsJapgolly.kendoUi.kendo.ui.MultiColumnComboBoxEvent
-  type MultiColumnComboBoxCloseEvent = typingsJapgolly.kendoUi.kendo.ui.MultiColumnComboBoxEvent
-  type MultiColumnComboBoxDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.MultiColumnComboBoxEvent
-  type MultiColumnComboBoxOpenEvent = typingsJapgolly.kendoUi.kendo.ui.MultiColumnComboBoxEvent
-  type MultiSelectChangeEvent = typingsJapgolly.kendoUi.kendo.ui.MultiSelectEvent
-  type MultiSelectCloseEvent = typingsJapgolly.kendoUi.kendo.ui.MultiSelectEvent
-  type MultiSelectDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.MultiSelectEvent
-  type MultiSelectOpenEvent = typingsJapgolly.kendoUi.kendo.ui.MultiSelectEvent
-  type NumericTextBoxChangeEvent = typingsJapgolly.kendoUi.kendo.ui.NumericTextBoxEvent
-  type NumericTextBoxSpinEvent = typingsJapgolly.kendoUi.kendo.ui.NumericTextBoxEvent
-  type PagerChangeEvent = typingsJapgolly.kendoUi.kendo.ui.PagerEvent
-  type PivotGridDataBindingEvent = typingsJapgolly.kendoUi.kendo.ui.PivotGridEvent
-  type PivotGridDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.PivotGridEvent
-  type PopupActivateEvent = typingsJapgolly.kendoUi.kendo.ui.PopupEvent
-  type PopupCloseEvent = typingsJapgolly.kendoUi.kendo.ui.PopupEvent
-  type PopupDeactivateEvent = typingsJapgolly.kendoUi.kendo.ui.PopupEvent
-  type PopupOpenEvent = typingsJapgolly.kendoUi.kendo.ui.PopupEvent
-  type SchedulerDataBindingEvent = typingsJapgolly.kendoUi.kendo.ui.SchedulerEvent
-  type SchedulerDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.SchedulerEvent
-  type SpreadsheetInsertSheetEvent = typingsJapgolly.kendoUi.kendo.ui.SpreadsheetEvent
-  type SpreadsheetRenderEvent = typingsJapgolly.kendoUi.kendo.ui.SpreadsheetEvent
-  type TimePickerChangeEvent = typingsJapgolly.kendoUi.kendo.ui.TimePickerEvent
-  type TimePickerCloseEvent = typingsJapgolly.kendoUi.kendo.ui.TimePickerEvent
-  type TimePickerOpenEvent = typingsJapgolly.kendoUi.kendo.ui.TimePickerEvent
-  type TimelineDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.TimelineEvent
-  type ToolBarOverflowCloseEvent = typingsJapgolly.kendoUi.kendo.ui.ToolBarEvent
-  type ToolBarOverflowOpenEvent = typingsJapgolly.kendoUi.kendo.ui.ToolBarEvent
-  type TreeListChangeEvent = typingsJapgolly.kendoUi.kendo.ui.TreeListEvent
-  type TreeListDataBindingEvent = typingsJapgolly.kendoUi.kendo.ui.TreeListEvent
-  type TreeListDataBoundEvent = typingsJapgolly.kendoUi.kendo.ui.TreeListEvent
-  type TreeListSaveChangesEvent = typingsJapgolly.kendoUi.kendo.ui.TreeListEvent
-}
+
+type AppBarResizeEvent = AppBarEvent
+
+type AutoCompleteChangeEvent = AutoCompleteEvent
+
+type AutoCompleteCloseEvent = AutoCompleteEvent
+
+type AutoCompleteDataBoundEvent = AutoCompleteEvent
+
+type AutoCompleteOpenEvent = AutoCompleteEvent
+
+type ChatTypingEndEvent = ChatEvent
+
+type ChatTypingStartEvent = ChatEvent
+
+type ComboBoxCascadeEvent = ComboBoxEvent
+
+type ComboBoxChangeEvent = ComboBoxEvent
+
+type ComboBoxCloseEvent = ComboBoxEvent
+
+type ComboBoxDataBoundEvent = ComboBoxEvent
+
+type ComboBoxOpenEvent = ComboBoxEvent
+
+type DateInputChangeEvent = DateInputEvent
+
+type DatePickerChangeEvent = DatePickerEvent
+
+type DatePickerCloseEvent = DatePickerEvent
+
+type DatePickerOpenEvent = DatePickerEvent
+
+type DateRangePickerChangeEvent = DateRangePickerEvent
+
+type DateRangePickerCloseEvent = DateRangePickerEvent
+
+type DateRangePickerOpenEvent = DateRangePickerEvent
+
+type DateTimePickerChangeEvent = DateTimePickerEvent
+
+type DrawerHideEvent = DrawerEvent
+
+type DropDownListCascadeEvent = DropDownListEvent
+
+type DropDownListChangeEvent = DropDownListEvent
+
+type DropDownListCloseEvent = DropDownListEvent
+
+type DropDownListDataBoundEvent = DropDownListEvent
+
+type DropDownListOpenEvent = DropDownListEvent
+
+type DropDownTreeChangeEvent = DropDownTreeEvent
+
+type DropDownTreeCloseEvent = DropDownTreeEvent
+
+type DropDownTreeDataBoundEvent = DropDownTreeEvent
+
+type DropDownTreeOpenEvent = DropDownTreeEvent
+
+type DropTargetDragenterEvent = DropTargetEvent
+
+type DropTargetDragleaveEvent = DropTargetEvent
+
+type DropTargetDropEvent = DropTargetEvent
+
+type EditorDefinition = js.Function2[
+/* container */ JQuery | Element | String, 
+/* options */ EditorDefinitionOptions, 
+Unit]
+
+type FloatingActionButtonClickEvent = FloatingActionButtonEvent
+
+type FloatingActionButtonCollapseEvent = FloatingActionButtonEvent
+
+type FloatingActionButtonExpandEvent = FloatingActionButtonEvent
+
+type FormClearEvent = FormEvent
+
+type FormData = StringDictionary[Any]
+
+type GanttChangeEvent = GanttEvent
+
+type GanttDataBindingEvent = GanttEvent
+
+type GanttDataBoundEvent = GanttEvent
+
+type GridChangeEvent = GridEvent
+
+type GridDataBoundEvent = GridEvent
+
+type GridSaveChangesEvent = GridEvent
+
+type ImageEditorErrorEvent = ImageEditorEvent
+
+type MaskedTextBoxChangeEvent = MaskedTextBoxEvent
+
+type MultiColumnComboBoxCascadeEvent = MultiColumnComboBoxEvent
+
+type MultiColumnComboBoxChangeEvent = MultiColumnComboBoxEvent
+
+type MultiColumnComboBoxCloseEvent = MultiColumnComboBoxEvent
+
+type MultiColumnComboBoxDataBoundEvent = MultiColumnComboBoxEvent
+
+type MultiColumnComboBoxOpenEvent = MultiColumnComboBoxEvent
+
+type MultiSelectChangeEvent = MultiSelectEvent
+
+type MultiSelectCloseEvent = MultiSelectEvent
+
+type MultiSelectDataBoundEvent = MultiSelectEvent
+
+type MultiSelectOpenEvent = MultiSelectEvent
+
+type NumericTextBoxChangeEvent = NumericTextBoxEvent
+
+type NumericTextBoxSpinEvent = NumericTextBoxEvent
+
+type OrgChartChangeEvent = OrgChartEvent
+
+type OrgChartDataBindingEvent = OrgChartEvent
+
+type OrgChartDataBoundEvent = OrgChartEvent
+
+type PagerChangeEvent = PagerEvent
+
+type PivotGridDataBindingEvent = PivotGridEvent
+
+type PivotGridDataBoundEvent = PivotGridEvent
+
+type PivotGridV2DataBindingEvent = PivotGridV2Event
+
+type PivotGridV2DataBoundEvent = PivotGridV2Event
+
+type PopupActivateEvent = PopupEvent
+
+type PopupCloseEvent = PopupEvent
+
+type PopupDeactivateEvent = PopupEvent
+
+type PopupOpenEvent = PopupEvent
+
+type SchedulerDataBindingEvent = SchedulerEvent
+
+type SchedulerDataBoundEvent = SchedulerEvent
+
+type SpreadsheetInsertSheetEvent = SpreadsheetEvent
+
+type SpreadsheetRenderEvent = SpreadsheetEvent
+
+type TaskBoardColumnsDataBoundEvent = TaskBoardEvent
+
+type TaskBoardDataBoundEvent = TaskBoardEvent
+
+type TextAreaChangeEvent = TextAreaEvent
+
+type TextBoxChangeEvent = TextBoxEvent
+
+type TimePickerChangeEvent = TimePickerEvent
+
+type TimePickerCloseEvent = TimePickerEvent
+
+type TimePickerOpenEvent = TimePickerEvent
+
+type TimelineDataBoundEvent = TimelineEvent
+
+type ToolBarOverflowCloseEvent = ToolBarEvent
+
+type ToolBarOverflowOpenEvent = ToolBarEvent
+
+type TreeListChangeEvent = TreeListEvent
+
+type TreeListDataBindingEvent = TreeListEvent
+
+type TreeListDataBoundEvent = TreeListEvent
+
+type TreeListSaveChangesEvent = TreeListEvent

@@ -1,14 +1,11 @@
 package typingsJapgolly.webcl.WEBCL
 
-import typingsJapgolly.webcl.webclNumbers.`0x1`
+import typingsJapgolly.webcl.webclInts.`0x1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DeviceExecCapabilitiesBits {
-  @scala.inline
-  def EXEC_KERNEL: `0x1` = this.cast(0x1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def EXEC_KERNEL: `0x1` = 0x1.asInstanceOf[`0x1`]
 }
-

@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Cesium3DTileColorBlendMode extends js.Object
-
+sealed trait Cesium3DTileColorBlendMode extends StObject
 @JSImport("cesium", "Cesium3DTileColorBlendMode")
 @js.native
-object Cesium3DTileColorBlendMode extends js.Object {
-  @js.native
-  sealed trait HIGHLIGHT extends Cesium3DTileColorBlendMode
-  
-  @js.native
-  sealed trait MIX extends Cesium3DTileColorBlendMode
-  
-  @js.native
-  sealed trait REPLACE extends Cesium3DTileColorBlendMode
+object Cesium3DTileColorBlendMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Cesium3DTileColorBlendMode with Double] = js.native
-  /* 0 */ @js.native
-  object HIGHLIGHT extends TopLevel[HIGHLIGHT with Double]
+  def apply(value: Double): js.UndefOr[Cesium3DTileColorBlendMode & Double] = js.native
   
-  /* 2 */ @js.native
-  object MIX extends TopLevel[MIX with Double]
+  /**
+    * Multiplies the source color by the feature color.
+    */
+  @js.native
+  sealed trait HIGHLIGHT
+    extends StObject
+       with Cesium3DTileColorBlendMode
+  /* 0 */ val HIGHLIGHT: typingsJapgolly.cesium.mod.Cesium3DTileColorBlendMode.HIGHLIGHT & Double = js.native
   
-  /* 1 */ @js.native
-  object REPLACE extends TopLevel[REPLACE with Double]
+  /**
+    * Blends the source color and feature color together.
+    */
+  @js.native
+  sealed trait MIX
+    extends StObject
+       with Cesium3DTileColorBlendMode
+  /* 2 */ val MIX: typingsJapgolly.cesium.mod.Cesium3DTileColorBlendMode.MIX & Double = js.native
   
+  /**
+    * Replaces the source color with the feature color.
+    */
+  @js.native
+  sealed trait REPLACE
+    extends StObject
+       with Cesium3DTileColorBlendMode
+  /* 1 */ val REPLACE: typingsJapgolly.cesium.mod.Cesium3DTileColorBlendMode.REPLACE & Double = js.native
 }
-

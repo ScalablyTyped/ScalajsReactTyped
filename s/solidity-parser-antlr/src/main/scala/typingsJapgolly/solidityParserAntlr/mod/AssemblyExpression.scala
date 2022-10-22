@@ -1,41 +1,27 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.solidityParserAntlr.mod.AssemblyCall
   - typingsJapgolly.solidityParserAntlr.mod.AssemblyLiteral
 */
-trait AssemblyExpression extends AssemblyItem
-
+trait AssemblyExpression
+  extends StObject
+     with AssemblyItem
 object AssemblyExpression {
-  @scala.inline
-  def AssemblyCall(
-    arguments: js.Array[AssemblyExpression],
-    functionName: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyExpression = {
+  
+  inline def AssemblyCall(arguments: js.Array[AssemblyExpression], functionName: String): typingsJapgolly.solidityParserAntlr.mod.AssemblyCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AssemblyExpression]
+    __obj.updateDynamic("type")("AssemblyCall")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyCall]
   }
-  @scala.inline
-  def AssemblyLiteral(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyExpression = {
+  
+  inline def AssemblyLiteral(): typingsJapgolly.solidityParserAntlr.mod.AssemblyLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AssemblyExpression]
+    __obj.updateDynamic("type")("AssemblyLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyLiteral]
   }
 }
-

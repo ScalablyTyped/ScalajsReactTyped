@@ -1,26 +1,48 @@
 package typingsJapgolly.phonegap
 
-import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraPopoverOptions extends js.Object {
+trait CameraPopoverOptions extends StObject {
+  
   var arrowDir: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
+  
   var x: js.UndefOr[Double] = js.undefined
+  
   var y: js.UndefOr[Double] = js.undefined
 }
-
-@JSGlobal("CameraPopoverOptions")
-@js.native
-object CameraPopoverOptions extends Instantiable5[
-      /* x */ Double, 
-      /* y */ Double, 
-      /* width */ Double, 
-      /* height */ Double, 
-      /* arrowDir */ Double, 
-      CameraPopoverOptions
-    ]
-
+object CameraPopoverOptions {
+  
+  inline def apply(): CameraPopoverOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[CameraPopoverOptions]
+  }
+  
+  extension [Self <: CameraPopoverOptions](x: Self) {
+    
+    inline def setArrowDir(value: Double): Self = StObject.set(x, "arrowDir", value.asInstanceOf[js.Any])
+    
+    inline def setArrowDirUndefined: Self = StObject.set(x, "arrowDir", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
+}

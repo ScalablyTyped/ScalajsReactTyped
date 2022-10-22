@@ -1,34 +1,99 @@
 package typingsJapgolly.materialLinearProgress
 
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialLinearProgress.adapterMod.MDCLinearProgressAdapter
+import typingsJapgolly.materialLinearProgress.anon.PartialMDCLinearProgressA
+import typingsJapgolly.materialProgressIndicator.foundationMod.MDCProgressIndicatorFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/linear-progress/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/linear-progress/foundation", JSImport.Default)
   @js.native
-  trait MDCLinearProgressFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCLinearProgressAdapter] {
-    def close(): Unit = js.native
-    def open(): Unit = js.native
+  open class default () extends MDCLinearProgressFoundation {
+    def this(adapter: PartialMDCLinearProgressA) = this()
+  }
+  
+  @JSImport("@material/linear-progress/foundation", "MDCLinearProgressFoundation")
+  @js.native
+  open class MDCLinearProgressFoundation ()
+    extends MDCFoundation[MDCLinearProgressAdapter]
+       with MDCProgressIndicatorFoundation {
+    def this(adapter: PartialMDCLinearProgressA) = this()
+    
+    /* private */ var buffer: Any = js.native
+    
+    /* private */ var calculateAndSetDimensions: Any = js.native
+    
+    /**
+      * Puts the component in the closed state.
+      */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* private */ var determinate: Any = js.native
+    
+    def getBuffer(): Double = js.native
+    
+    /**
+      * @return the current progress value [0,1];
+      */
+    /* CompleteClass */
+    override def getProgress(): Double = js.native
+    
+    /**
+      * Handles the transitionend event emitted after `close()` is called and the
+      * opacity fades out. This is so that animations are removed only after the
+      * progress indicator is completely hidden.
+      */
+    def handleTransitionEnd(): Unit = js.native
+    
+    /**
+      * @return Whether the component is closed.
+      */
+    /* CompleteClass */
+    override def isClosed(): Boolean = js.native
+    
+    /**
+      * @return Whether the component is determinate.
+      */
+    /* CompleteClass */
+    override def isDeterminate(): Boolean = js.native
+    
+    /* private */ var observer: Any = js.native
+    
+    /**
+      * Puts the component in the open state.
+      */
+    /* CompleteClass */
+    override def open(): Unit = js.native
+    
+    /* private */ var progress: Any = js.native
+    
+    def restartAnimation(): Unit = js.native
+    
     def setBuffer(value: Double): Unit = js.native
-    def setDeterminate(isDeterminate: Boolean): Unit = js.native
-    def setProgress(value: Double): Unit = js.native
-    def setReverse(isReversed: Boolean): Unit = js.native
+    
+    /* private */ var setBufferBarProgress: Any = js.native
+    
+    /**
+      * Toggles the component between the determinate and indeterminate state.
+      *
+      * @param isDeterminate - Whether the component is in determinate state
+      */
+    /* CompleteClass */
+    override def setDeterminate(isDeterminate: Boolean): Unit = js.native
+    
+    /* private */ var setPrimaryBarProgress: Any = js.native
+    
+    /**
+      * Sets the current progress value.
+      *
+      * @param value - the current progress value, should be between [0,1]
+      */
+    /* CompleteClass */
+    override def setProgress(value: Double): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCLinearProgressFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialLinearProgress.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCLinearProgressAdapter = js.native
-    val strings: typingsJapgolly.materialLinearProgress.constantsMod.strings = js.native
-  }
-  
 }
-

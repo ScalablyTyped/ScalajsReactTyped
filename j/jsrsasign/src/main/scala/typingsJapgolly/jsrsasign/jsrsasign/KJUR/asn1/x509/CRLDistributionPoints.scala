@@ -1,10 +1,11 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonUri
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CRLDistributionPoints ASN.1 structure class
@@ -36,12 +37,42 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.CRLDistributionPoints")
-@js.native
-class CRLDistributionPoints () extends Extension {
-  def this(params: AnonUri) = this()
-  def getExtnValueHex(): String = js.native
-  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit = js.native
-  def setByOneURI(uri: String): Unit = js.native
+trait CRLDistributionPoints
+  extends StObject
+     with Extension {
+  
+  def getExtnValueHex(): String
+  
+  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit
+  
+  def setByOneURI(uri: String): Unit
 }
-
+object CRLDistributionPoints {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getExtnValueHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByDPArray: js.Array[ASN1Object] => Callback,
+    setByOneURI: String => Callback
+  ): CRLDistributionPoints = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getExtnValueHex = getExtnValueHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByDPArray = js.Any.fromFunction1((t0: js.Array[ASN1Object]) => setByDPArray(t0).runNow()), setByOneURI = js.Any.fromFunction1((t0: String) => setByOneURI(t0).runNow()), params = null)
+    __obj.asInstanceOf[CRLDistributionPoints]
+  }
+  
+  extension [Self <: CRLDistributionPoints](x: Self) {
+    
+    inline def setGetExtnValueHex(value: CallbackTo[String]): Self = StObject.set(x, "getExtnValueHex", value.toJsFn)
+    
+    inline def setSetByDPArray(value: js.Array[ASN1Object] => Callback): Self = StObject.set(x, "setByDPArray", js.Any.fromFunction1((t0: js.Array[ASN1Object]) => value(t0).runNow()))
+    
+    inline def setSetByOneURI(value: String => Callback): Self = StObject.set(x, "setByOneURI", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
+}

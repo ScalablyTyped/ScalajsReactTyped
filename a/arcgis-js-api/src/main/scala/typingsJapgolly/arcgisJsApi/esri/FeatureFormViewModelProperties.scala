@@ -1,29 +1,41 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.FeatureLayerPropertiestyp
+import typingsJapgolly.arcgisJsApi.anon.SceneLayerPropertiestypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureFormViewModelProperties extends js.Object {
+trait FeatureFormViewModelProperties extends StObject {
+  
   /**
-    * The associated feature containing the editable attributes. A common way to access this is via the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) or [SceneView's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest) `hitTest()` method.
+    * The associated feature containing the editable attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#feature)
     */
   var feature: js.UndefOr[GraphicProperties] = js.undefined
+  
   /**
-    * Array of individual or grouped field configuration objects. This is where you specify what fields to display and how you wish to display them. It is possible to configure individual or [grouped fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html). For an example of individual field configurations, please refer to the [Update FeatureLayer using ApplyEdits](https://developers.arcgis.com/javascript/latest/sample-code/editing-applyedits/index.html) sample. For an example of grouped field configurations, please refer to the [Update Feature Attributes](https://developers.arcgis.com/javascript/latest/sample-code/editing-groupedfeatureform/index.html) sample.
-    * > When not set, all fields except for `editor`, `globalID`, `objectID`, and system maintained area and length fields will be included. Otherwise, it is up to the developer to set the right field(s) to override and display.
+    * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used for the form.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#fieldConfig)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#formTemplate)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties | FieldGroupConfigProperties]] = js.undefined
+  var formTemplate: js.UndefOr[FormTemplateProperties] = js.undefined
+  
   /**
-    * Layer containing the editable feature attributes. If this layer is not specified, it is the same as the [graphic's layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer).
+    * Layer containing the editable feature attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
+  var layer: js.UndefOr[FeatureLayerPropertiestyp | SceneLayerPropertiestypes] = js.undefined
+  
+  /**
+    * When true, this form can be submitted without _introducing_ data validation issues.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#submittable)
+    */
+  var submittable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicates whether all input fields are valid.
     *
@@ -31,21 +43,33 @@ trait FeatureFormViewModelProperties extends js.Object {
     */
   var valid: js.UndefOr[Boolean] = js.undefined
 }
-
 object FeatureFormViewModelProperties {
-  @scala.inline
-  def apply(
-    feature: GraphicProperties = null,
-    fieldConfig: js.Array[FieldConfigProperties | FieldGroupConfigProperties] = null,
-    layer: FeatureLayerProperties = null,
-    valid: js.UndefOr[Boolean] = js.undefined
-  ): FeatureFormViewModelProperties = {
+  
+  inline def apply(): FeatureFormViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormViewModelProperties]
   }
+  
+  extension [Self <: FeatureFormViewModelProperties](x: Self) {
+    
+    inline def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    
+    inline def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
+    
+    inline def setLayer(value: FeatureLayerPropertiestyp | SceneLayerPropertiestypes): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setSubmittable(value: Boolean): Self = StObject.set(x, "submittable", value.asInstanceOf[js.Any])
+    
+    inline def setSubmittableUndefined: Self = StObject.set(x, "submittable", js.undefined)
+    
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+  }
 }
-

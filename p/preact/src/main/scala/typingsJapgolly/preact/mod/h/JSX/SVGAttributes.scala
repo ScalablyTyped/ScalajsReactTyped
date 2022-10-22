@@ -1,6 +1,6 @@
 package typingsJapgolly.preact.mod.h.JSX
 
-import org.scalajs.dom.raw.EventTarget
+import org.scalajs.dom.EventTarget
 import typingsJapgolly.preact.preactStrings.`after-edge`
 import typingsJapgolly.preact.preactStrings.`before-edge`
 import typingsJapgolly.preact.preactStrings.`text-after-edge`
@@ -32,741 +32,2239 @@ import typingsJapgolly.preact.preactStrings.square
 import typingsJapgolly.preact.preactStrings.sum
 import typingsJapgolly.preact.preactStrings.terminal
 import typingsJapgolly.preact.preactStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SVGAttributes[Target /* <: EventTarget */]
-  extends typingsJapgolly.preact.jsxMod.JSXInternal.HTMLAttributes[Target] {
-  var accentHeight: js.UndefOr[Double | String] = js.undefined
-  var accumulate: js.UndefOr[none | sum] = js.undefined
-  var additive: js.UndefOr[replace | sum] = js.undefined
-  var alignmentBaseline: js.UndefOr[
-    auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+  extends StObject
+     with typingsJapgolly.preact.srcJsxMod.JSXInternal.HTMLAttributes[Target] {
+  
+  var accentHeight: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
   ] = js.undefined
-  var allowReorder: js.UndefOr[no | yes] = js.undefined
-  var alphabetic: js.UndefOr[Double | String] = js.undefined
-  var amplitude: js.UndefOr[Double | String] = js.undefined
-  var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.undefined
-  var ascent: js.UndefOr[Double | String] = js.undefined
-  var attributeName: js.UndefOr[String] = js.undefined
-  var attributeType: js.UndefOr[String] = js.undefined
-  var autoReverse: js.UndefOr[Double | String] = js.undefined
-  var azimuth: js.UndefOr[Double | String] = js.undefined
-  var baseFrequency: js.UndefOr[Double | String] = js.undefined
-  var baseProfile: js.UndefOr[Double | String] = js.undefined
-  var baselineShift: js.UndefOr[Double | String] = js.undefined
-  var bbox: js.UndefOr[Double | String] = js.undefined
-  var begin: js.UndefOr[Double | String] = js.undefined
-  var bias: js.UndefOr[Double | String] = js.undefined
-  var by: js.UndefOr[Double | String] = js.undefined
-  var calcMode: js.UndefOr[Double | String] = js.undefined
-  var capHeight: js.UndefOr[Double | String] = js.undefined
-  var clip: js.UndefOr[Double | String] = js.undefined
-  var clipPath: js.UndefOr[String] = js.undefined
-  var clipPathUnits: js.UndefOr[Double | String] = js.undefined
-  var clipRule: js.UndefOr[Double | String] = js.undefined
-  var colorInterpolation: js.UndefOr[Double | String] = js.undefined
-  var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.undefined
-  var colorProfile: js.UndefOr[Double | String] = js.undefined
-  var colorRendering: js.UndefOr[Double | String] = js.undefined
-  var contentScriptType: js.UndefOr[Double | String] = js.undefined
-  var contentStyleType: js.UndefOr[Double | String] = js.undefined
-  var cursor: js.UndefOr[Double | String] = js.undefined
-  var cx: js.UndefOr[Double | String] = js.undefined
-  var cy: js.UndefOr[Double | String] = js.undefined
-  var d: js.UndefOr[String] = js.undefined
-  var decelerate: js.UndefOr[Double | String] = js.undefined
-  var descent: js.UndefOr[Double | String] = js.undefined
-  var diffuseConstant: js.UndefOr[Double | String] = js.undefined
-  var direction: js.UndefOr[Double | String] = js.undefined
-  var display: js.UndefOr[Double | String] = js.undefined
-  var divisor: js.UndefOr[Double | String] = js.undefined
-  var dominantBaseline: js.UndefOr[Double | String] = js.undefined
-  var dur: js.UndefOr[Double | String] = js.undefined
-  var dx: js.UndefOr[Double | String] = js.undefined
-  var dy: js.UndefOr[Double | String] = js.undefined
-  var edgeMode: js.UndefOr[Double | String] = js.undefined
-  var elevation: js.UndefOr[Double | String] = js.undefined
-  var enableBackground: js.UndefOr[Double | String] = js.undefined
-  var end: js.UndefOr[Double | String] = js.undefined
-  var exponent: js.UndefOr[Double | String] = js.undefined
-  var externalResourcesRequired: js.UndefOr[Double | String] = js.undefined
-  var fill: js.UndefOr[String] = js.undefined
-  var fillOpacity: js.UndefOr[Double | String] = js.undefined
-  var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var filterRes: js.UndefOr[Double | String] = js.undefined
-  var filterUnits: js.UndefOr[Double | String] = js.undefined
-  var floodColor: js.UndefOr[Double | String] = js.undefined
-  var floodOpacity: js.UndefOr[Double | String] = js.undefined
-  var focusable: js.UndefOr[Double | String] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double | String] = js.undefined
-  var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
-  var fontStretch: js.UndefOr[Double | String] = js.undefined
-  var fontStyle: js.UndefOr[Double | String] = js.undefined
-  var fontVariant: js.UndefOr[Double | String] = js.undefined
-  var fontWeight: js.UndefOr[Double | String] = js.undefined
-  var format: js.UndefOr[Double | String] = js.undefined
-  var from: js.UndefOr[Double | String] = js.undefined
-  var fx: js.UndefOr[Double | String] = js.undefined
-  var fy: js.UndefOr[Double | String] = js.undefined
-  var g1: js.UndefOr[Double | String] = js.undefined
-  var g2: js.UndefOr[Double | String] = js.undefined
-  var glyphName: js.UndefOr[Double | String] = js.undefined
-  var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.undefined
-  var glyphOrientationVertical: js.UndefOr[Double | String] = js.undefined
-  var glyphRef: js.UndefOr[Double | String] = js.undefined
-  var gradientTransform: js.UndefOr[String] = js.undefined
-  var gradientUnits: js.UndefOr[String] = js.undefined
-  var hanging: js.UndefOr[Double | String] = js.undefined
-  var horizAdvX: js.UndefOr[Double | String] = js.undefined
-  var horizOriginX: js.UndefOr[Double | String] = js.undefined
-  var ideographic: js.UndefOr[Double | String] = js.undefined
-  var imageRendering: js.UndefOr[Double | String] = js.undefined
-  var in: js.UndefOr[String] = js.undefined
-  var in2: js.UndefOr[Double | String] = js.undefined
-  var intercept: js.UndefOr[Double | String] = js.undefined
-  var k: js.UndefOr[Double | String] = js.undefined
-  var k1: js.UndefOr[Double | String] = js.undefined
-  var k2: js.UndefOr[Double | String] = js.undefined
-  var k3: js.UndefOr[Double | String] = js.undefined
-  var k4: js.UndefOr[Double | String] = js.undefined
-  var kernelMatrix: js.UndefOr[Double | String] = js.undefined
-  var kernelUnitLength: js.UndefOr[Double | String] = js.undefined
-  var kerning: js.UndefOr[Double | String] = js.undefined
-  var keyPoints: js.UndefOr[Double | String] = js.undefined
-  var keySplines: js.UndefOr[Double | String] = js.undefined
-  var keyTimes: js.UndefOr[Double | String] = js.undefined
-  var lengthAdjust: js.UndefOr[Double | String] = js.undefined
-  var letterSpacing: js.UndefOr[Double | String] = js.undefined
-  var lightingColor: js.UndefOr[Double | String] = js.undefined
-  var limitingConeAngle: js.UndefOr[Double | String] = js.undefined
-  var local: js.UndefOr[Double | String] = js.undefined
-  var markerEnd: js.UndefOr[String] = js.undefined
-  var markerHeight: js.UndefOr[Double | String] = js.undefined
-  var markerMid: js.UndefOr[String] = js.undefined
-  var markerStart: js.UndefOr[String] = js.undefined
-  var markerUnits: js.UndefOr[Double | String] = js.undefined
-  var markerWidth: js.UndefOr[Double | String] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var maskContentUnits: js.UndefOr[Double | String] = js.undefined
-  var maskUnits: js.UndefOr[Double | String] = js.undefined
-  var mathematical: js.UndefOr[Double | String] = js.undefined
-  var mode: js.UndefOr[Double | String] = js.undefined
-  var numOctaves: js.UndefOr[Double | String] = js.undefined
-  var offset: js.UndefOr[Double | String] = js.undefined
-  var opacity: js.UndefOr[Double | String] = js.undefined
-  var operator: js.UndefOr[Double | String] = js.undefined
-  var order: js.UndefOr[Double | String] = js.undefined
-  var orient: js.UndefOr[Double | String] = js.undefined
-  var orientation: js.UndefOr[Double | String] = js.undefined
-  var origin: js.UndefOr[Double | String] = js.undefined
-  var overflow: js.UndefOr[Double | String] = js.undefined
-  var overlinePosition: js.UndefOr[Double | String] = js.undefined
-  var overlineThickness: js.UndefOr[Double | String] = js.undefined
-  var paintOrder: js.UndefOr[Double | String] = js.undefined
-  var panose1: js.UndefOr[Double | String] = js.undefined
-  var pathLength: js.UndefOr[Double | String] = js.undefined
-  var patternContentUnits: js.UndefOr[String] = js.undefined
-  var patternTransform: js.UndefOr[Double | String] = js.undefined
-  var patternUnits: js.UndefOr[String] = js.undefined
-  var pointerEvents: js.UndefOr[Double | String] = js.undefined
-  var points: js.UndefOr[String] = js.undefined
-  var pointsAtX: js.UndefOr[Double | String] = js.undefined
-  var pointsAtY: js.UndefOr[Double | String] = js.undefined
-  var pointsAtZ: js.UndefOr[Double | String] = js.undefined
-  var preserveAlpha: js.UndefOr[Double | String] = js.undefined
-  var preserveAspectRatio: js.UndefOr[String] = js.undefined
-  var primitiveUnits: js.UndefOr[Double | String] = js.undefined
-  var r: js.UndefOr[Double | String] = js.undefined
-  var radius: js.UndefOr[Double | String] = js.undefined
-  var refX: js.UndefOr[Double | String] = js.undefined
-  var refY: js.UndefOr[Double | String] = js.undefined
-  var renderingIntent: js.UndefOr[Double | String] = js.undefined
-  var repeatCount: js.UndefOr[Double | String] = js.undefined
-  var repeatDur: js.UndefOr[Double | String] = js.undefined
-  var requiredExtensions: js.UndefOr[Double | String] = js.undefined
-  var requiredFeatures: js.UndefOr[Double | String] = js.undefined
-  var restart: js.UndefOr[Double | String] = js.undefined
-  var result: js.UndefOr[String] = js.undefined
-  var rotate: js.UndefOr[Double | String] = js.undefined
-  var rx: js.UndefOr[Double | String] = js.undefined
-  var ry: js.UndefOr[Double | String] = js.undefined
-  var scale: js.UndefOr[Double | String] = js.undefined
-  var seed: js.UndefOr[Double | String] = js.undefined
-  var shapeRendering: js.UndefOr[Double | String] = js.undefined
-  var slope: js.UndefOr[Double | String] = js.undefined
-  var spacing: js.UndefOr[Double | String] = js.undefined
-  var specularConstant: js.UndefOr[Double | String] = js.undefined
-  var specularExponent: js.UndefOr[Double | String] = js.undefined
-  var speed: js.UndefOr[Double | String] = js.undefined
-  var spreadMethod: js.UndefOr[String] = js.undefined
-  var startOffset: js.UndefOr[Double | String] = js.undefined
-  var stdDeviation: js.UndefOr[Double | String] = js.undefined
-  var stemh: js.UndefOr[Double | String] = js.undefined
-  var stemv: js.UndefOr[Double | String] = js.undefined
-  var stitchTiles: js.UndefOr[Double | String] = js.undefined
-  var stopColor: js.UndefOr[String] = js.undefined
-  var stopOpacity: js.UndefOr[Double | String] = js.undefined
-  var strikethroughPosition: js.UndefOr[Double | String] = js.undefined
-  var strikethroughThickness: js.UndefOr[Double | String] = js.undefined
-  var string: js.UndefOr[Double | String] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeDasharray: js.UndefOr[String | Double] = js.undefined
-  var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
-  var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.undefined
-  var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.undefined
-  var strokeMiterlimit: js.UndefOr[String] = js.undefined
-  var strokeOpacity: js.UndefOr[Double | String] = js.undefined
-  var strokeWidth: js.UndefOr[Double | String] = js.undefined
-  var surfaceScale: js.UndefOr[Double | String] = js.undefined
-  var systemLanguage: js.UndefOr[Double | String] = js.undefined
-  var tableValues: js.UndefOr[Double | String] = js.undefined
-  var targetX: js.UndefOr[Double | String] = js.undefined
-  var targetY: js.UndefOr[Double | String] = js.undefined
-  var textAnchor: js.UndefOr[String] = js.undefined
-  var textDecoration: js.UndefOr[Double | String] = js.undefined
-  var textLength: js.UndefOr[Double | String] = js.undefined
-  var textRendering: js.UndefOr[Double | String] = js.undefined
-  var to: js.UndefOr[Double | String] = js.undefined
-  var transform: js.UndefOr[String] = js.undefined
-  var u1: js.UndefOr[Double | String] = js.undefined
-  var u2: js.UndefOr[Double | String] = js.undefined
-  var underlinePosition: js.UndefOr[Double | String] = js.undefined
-  var underlineThickness: js.UndefOr[Double | String] = js.undefined
-  var unicode: js.UndefOr[Double | String] = js.undefined
-  var unicodeBidi: js.UndefOr[Double | String] = js.undefined
-  var unicodeRange: js.UndefOr[Double | String] = js.undefined
-  var unitsPerEm: js.UndefOr[Double | String] = js.undefined
-  var vAlphabetic: js.UndefOr[Double | String] = js.undefined
-  var vHanging: js.UndefOr[Double | String] = js.undefined
-  var vIdeographic: js.UndefOr[Double | String] = js.undefined
-  var vMathematical: js.UndefOr[Double | String] = js.undefined
-  var values: js.UndefOr[String] = js.undefined
-  var vectorEffect: js.UndefOr[Double | String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
-  var vertAdvY: js.UndefOr[Double | String] = js.undefined
-  var vertOriginX: js.UndefOr[Double | String] = js.undefined
-  var vertOriginY: js.UndefOr[Double | String] = js.undefined
-  var viewBox: js.UndefOr[String] = js.undefined
-  var viewTarget: js.UndefOr[Double | String] = js.undefined
-  var visibility: js.UndefOr[Double | String] = js.undefined
-  var widths: js.UndefOr[Double | String] = js.undefined
-  var wordSpacing: js.UndefOr[Double | String] = js.undefined
-  var writingMode: js.UndefOr[Double | String] = js.undefined
-  var x: js.UndefOr[Double | String] = js.undefined
-  var x1: js.UndefOr[Double | String] = js.undefined
-  var x2: js.UndefOr[Double | String] = js.undefined
-  var xChannelSelector: js.UndefOr[String] = js.undefined
-  var xHeight: js.UndefOr[Double | String] = js.undefined
-  var xlinkActuate: js.UndefOr[String] = js.undefined
-  var xlinkArcrole: js.UndefOr[String] = js.undefined
-  var xlinkHref: js.UndefOr[String] = js.undefined
-  var xlinkRole: js.UndefOr[String] = js.undefined
-  var xlinkShow: js.UndefOr[String] = js.undefined
-  var xlinkTitle: js.UndefOr[String] = js.undefined
-  var xlinkType: js.UndefOr[String] = js.undefined
-  var xmlBase: js.UndefOr[String] = js.undefined
-  var xmlLang: js.UndefOr[String] = js.undefined
-  var xmlSpace: js.UndefOr[String] = js.undefined
-  var xmlns: js.UndefOr[String] = js.undefined
-  var xmlnsXlink: js.UndefOr[String] = js.undefined
-  var y: js.UndefOr[Double | String] = js.undefined
-  var y1: js.UndefOr[Double | String] = js.undefined
-  var y2: js.UndefOr[Double | String] = js.undefined
-  var yChannelSelector: js.UndefOr[String] = js.undefined
-  var z: js.UndefOr[Double | String] = js.undefined
-  var zoomAndPan: js.UndefOr[String] = js.undefined
+  
+  var accumulate: js.UndefOr[
+    none | sum | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[none | sum])
+  ] = js.undefined
+  
+  var additive: js.UndefOr[
+    replace | sum | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[replace | sum])
+  ] = js.undefined
+  
+  var alignmentBaseline: js.UndefOr[
+    auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[
+      auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+    ])
+  ] = js.undefined
+  
+  var allowReorder: js.UndefOr[no | yes | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[no | yes])] = js.undefined
+  
+  var alphabetic: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var amplitude: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var arabicForm: js.UndefOr[
+    initial | medial | terminal | isolated | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[initial | medial | terminal | isolated])
+  ] = js.undefined
+  
+  var ascent: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var attributeName: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var attributeType: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var autoReverse: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var azimuth: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var baseFrequency: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var baseProfile: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var baselineShift: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var bbox: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var begin: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var bias: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var by: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var calcMode: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var capHeight: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var clip: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var clipPath: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var clipPathUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var clipRule: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var colorInterpolation: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var colorInterpolationFilters: js.UndefOr[
+    auto | sRGB | linearRGB | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[auto | sRGB | linearRGB | inherit])
+  ] = js.undefined
+  
+  var colorProfile: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var colorRendering: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var contentScriptType: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var contentStyleType: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var cursor: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var cx: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var cy: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var d: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var decelerate: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var descent: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var diffuseConstant: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var direction: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var display: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var divisor: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var dominantBaseline: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var dur: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var dx: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var dy: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var edgeMode: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var elevation: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var enableBackground: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var end: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var exponent: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var externalResourcesRequired: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fill: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var fillOpacity: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fillRule: js.UndefOr[
+    nonzero | evenodd | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[nonzero | evenodd | inherit])
+  ] = js.undefined
+  
+  var filter: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var filterRes: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var filterUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var floodColor: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var floodOpacity: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var focusable: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontFamily: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var fontSize: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontSizeAdjust: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontStretch: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontStyle: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontVariant: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fontWeight: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var format: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var from: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fx: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var fy: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var g1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var g2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var glyphName: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var glyphOrientationHorizontal: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var glyphOrientationVertical: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var glyphRef: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var gradientTransform: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var gradientUnits: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var hanging: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var horizAdvX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var horizOriginX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var ideographic: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var imageRendering: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var in: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var in2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var intercept: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var k: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var k1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var k2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var k3: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var k4: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var kernelMatrix: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var kernelUnitLength: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var kerning: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var keyPoints: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var keySplines: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var keyTimes: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var lengthAdjust: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var letterSpacing: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var lightingColor: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var limitingConeAngle: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var local: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var markerEnd: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var markerHeight: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var markerMid: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var markerStart: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var markerUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var markerWidth: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var mask: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var maskContentUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var maskUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var mathematical: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var mode: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var numOctaves: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var offset: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var opacity: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var operator: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var order: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var orient: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var orientation: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var origin: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var overflow: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var overlinePosition: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var overlineThickness: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var paintOrder: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var panose1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var pathLength: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var patternContentUnits: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var patternTransform: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var patternUnits: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var pointerEvents: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var points: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var pointsAtX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var pointsAtY: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var pointsAtZ: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var preserveAlpha: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var preserveAspectRatio: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var primitiveUnits: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var r: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var radius: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var refX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var refY: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var renderingIntent: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var repeatCount: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var repeatDur: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var requiredExtensions: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var requiredFeatures: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var restart: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var result: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var rotate: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var rx: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var ry: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var scale: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var seed: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var shapeRendering: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var slope: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var spacing: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var specularConstant: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var specularExponent: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var speed: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var spreadMethod: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var startOffset: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stdDeviation: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stemh: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stemv: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stitchTiles: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stopColor: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var stopOpacity: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strikethroughPosition: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strikethroughThickness: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var string: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var stroke: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var strokeDasharray: js.UndefOr[
+    String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strokeDashoffset: js.UndefOr[
+    String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strokeLinecap: js.UndefOr[
+    butt | round | square | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[butt | round | square | inherit])
+  ] = js.undefined
+  
+  var strokeLinejoin: js.UndefOr[
+    miter | round | bevel | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[miter | round | bevel | inherit])
+  ] = js.undefined
+  
+  var strokeMiterlimit: js.UndefOr[
+    String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strokeOpacity: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var strokeWidth: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var surfaceScale: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var systemLanguage: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var tableValues: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var targetX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var targetY: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var textAnchor: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var textDecoration: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var textLength: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var textRendering: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var to: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var transform: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var u1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var u2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var underlinePosition: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var underlineThickness: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var unicode: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var unicodeBidi: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var unicodeRange: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var unitsPerEm: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vAlphabetic: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vHanging: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vIdeographic: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vMathematical: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var values: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var vectorEffect: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var version: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var vertAdvY: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vertOriginX: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var vertOriginY: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var viewBox: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var viewTarget: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var visibility: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var widths: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var wordSpacing: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var writingMode: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var x: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var x1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var x2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var xChannelSelector: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xHeight: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var xlinkActuate: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkArcrole: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkHref: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkRole: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkShow: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkTitle: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xlinkType: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xmlBase: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xmlLang: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xmlSpace: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xmlns: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var xmlnsXlink: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var y: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var y1: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var y2: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var yChannelSelector: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
+  
+  var z: js.UndefOr[
+    Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+  ] = js.undefined
+  
+  var zoomAndPan: js.UndefOr[String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.undefined
 }
-
 object SVGAttributes {
-  @scala.inline
-  def apply[Target /* <: EventTarget */](
-    HTMLAttributes: typingsJapgolly.preact.jsxMod.JSXInternal.HTMLAttributes[Target] = null,
-    accentHeight: Double | String = null,
-    accumulate: none | sum = null,
-    additive: replace | sum = null,
-    alignmentBaseline: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit = null,
-    allowReorder: no | yes = null,
-    alphabetic: Double | String = null,
-    amplitude: Double | String = null,
-    arabicForm: initial | medial | terminal | isolated = null,
-    ascent: Double | String = null,
-    attributeName: String = null,
-    attributeType: String = null,
-    autoReverse: Double | String = null,
-    azimuth: Double | String = null,
-    baseFrequency: Double | String = null,
-    baseProfile: Double | String = null,
-    baselineShift: Double | String = null,
-    bbox: Double | String = null,
-    begin: Double | String = null,
-    bias: Double | String = null,
-    by: Double | String = null,
-    calcMode: Double | String = null,
-    capHeight: Double | String = null,
-    clip: Double | String = null,
-    clipPath: String = null,
-    clipPathUnits: Double | String = null,
-    clipRule: Double | String = null,
-    colorInterpolation: Double | String = null,
-    colorInterpolationFilters: auto | sRGB | linearRGB | inherit = null,
-    colorProfile: Double | String = null,
-    colorRendering: Double | String = null,
-    contentScriptType: Double | String = null,
-    contentStyleType: Double | String = null,
-    cursor: Double | String = null,
-    cx: Double | String = null,
-    cy: Double | String = null,
-    d: String = null,
-    decelerate: Double | String = null,
-    descent: Double | String = null,
-    diffuseConstant: Double | String = null,
-    direction: Double | String = null,
-    display: Double | String = null,
-    divisor: Double | String = null,
-    dominantBaseline: Double | String = null,
-    dur: Double | String = null,
-    dx: Double | String = null,
-    dy: Double | String = null,
-    edgeMode: Double | String = null,
-    elevation: Double | String = null,
-    enableBackground: Double | String = null,
-    end: Double | String = null,
-    exponent: Double | String = null,
-    externalResourcesRequired: Double | String = null,
-    fill: String = null,
-    fillOpacity: Double | String = null,
-    fillRule: nonzero | evenodd | inherit = null,
-    filter: String = null,
-    filterRes: Double | String = null,
-    filterUnits: Double | String = null,
-    floodColor: Double | String = null,
-    floodOpacity: Double | String = null,
-    focusable: Double | String = null,
-    fontFamily: String = null,
-    fontSize: Double | String = null,
-    fontSizeAdjust: Double | String = null,
-    fontStretch: Double | String = null,
-    fontStyle: Double | String = null,
-    fontVariant: Double | String = null,
-    fontWeight: Double | String = null,
-    format: Double | String = null,
-    from: Double | String = null,
-    fx: Double | String = null,
-    fy: Double | String = null,
-    g1: Double | String = null,
-    g2: Double | String = null,
-    glyphName: Double | String = null,
-    glyphOrientationHorizontal: Double | String = null,
-    glyphOrientationVertical: Double | String = null,
-    glyphRef: Double | String = null,
-    gradientTransform: String = null,
-    gradientUnits: String = null,
-    hanging: Double | String = null,
-    horizAdvX: Double | String = null,
-    horizOriginX: Double | String = null,
-    ideographic: Double | String = null,
-    imageRendering: Double | String = null,
-    in: String = null,
-    in2: Double | String = null,
-    intercept: Double | String = null,
-    k: Double | String = null,
-    k1: Double | String = null,
-    k2: Double | String = null,
-    k3: Double | String = null,
-    k4: Double | String = null,
-    kernelMatrix: Double | String = null,
-    kernelUnitLength: Double | String = null,
-    kerning: Double | String = null,
-    keyPoints: Double | String = null,
-    keySplines: Double | String = null,
-    keyTimes: Double | String = null,
-    lengthAdjust: Double | String = null,
-    letterSpacing: Double | String = null,
-    lightingColor: Double | String = null,
-    limitingConeAngle: Double | String = null,
-    local: Double | String = null,
-    markerEnd: String = null,
-    markerHeight: Double | String = null,
-    markerMid: String = null,
-    markerStart: String = null,
-    markerUnits: Double | String = null,
-    markerWidth: Double | String = null,
-    mask: String = null,
-    maskContentUnits: Double | String = null,
-    maskUnits: Double | String = null,
-    mathematical: Double | String = null,
-    mode: Double | String = null,
-    numOctaves: Double | String = null,
-    offset: Double | String = null,
-    opacity: Double | String = null,
-    operator: Double | String = null,
-    order: Double | String = null,
-    orient: Double | String = null,
-    orientation: Double | String = null,
-    origin: Double | String = null,
-    overflow: Double | String = null,
-    overlinePosition: Double | String = null,
-    overlineThickness: Double | String = null,
-    paintOrder: Double | String = null,
-    panose1: Double | String = null,
-    pathLength: Double | String = null,
-    patternContentUnits: String = null,
-    patternTransform: Double | String = null,
-    patternUnits: String = null,
-    pointerEvents: Double | String = null,
-    points: String = null,
-    pointsAtX: Double | String = null,
-    pointsAtY: Double | String = null,
-    pointsAtZ: Double | String = null,
-    preserveAlpha: Double | String = null,
-    preserveAspectRatio: String = null,
-    primitiveUnits: Double | String = null,
-    r: Double | String = null,
-    radius: Double | String = null,
-    refX: Double | String = null,
-    refY: Double | String = null,
-    renderingIntent: Double | String = null,
-    repeatCount: Double | String = null,
-    repeatDur: Double | String = null,
-    requiredExtensions: Double | String = null,
-    requiredFeatures: Double | String = null,
-    restart: Double | String = null,
-    result: String = null,
-    rotate: Double | String = null,
-    rx: Double | String = null,
-    ry: Double | String = null,
-    scale: Double | String = null,
-    seed: Double | String = null,
-    shapeRendering: Double | String = null,
-    slope: Double | String = null,
-    spacing: Double | String = null,
-    specularConstant: Double | String = null,
-    specularExponent: Double | String = null,
-    speed: Double | String = null,
-    spreadMethod: String = null,
-    startOffset: Double | String = null,
-    stdDeviation: Double | String = null,
-    stemh: Double | String = null,
-    stemv: Double | String = null,
-    stitchTiles: Double | String = null,
-    stopColor: String = null,
-    stopOpacity: Double | String = null,
-    strikethroughPosition: Double | String = null,
-    strikethroughThickness: Double | String = null,
-    string: Double | String = null,
-    stroke: String = null,
-    strokeDasharray: String | Double = null,
-    strokeDashoffset: String | Double = null,
-    strokeLinecap: butt | round | square | inherit = null,
-    strokeLinejoin: miter | round | bevel | inherit = null,
-    strokeMiterlimit: String = null,
-    strokeOpacity: Double | String = null,
-    strokeWidth: Double | String = null,
-    surfaceScale: Double | String = null,
-    systemLanguage: Double | String = null,
-    tableValues: Double | String = null,
-    targetX: Double | String = null,
-    targetY: Double | String = null,
-    textAnchor: String = null,
-    textDecoration: Double | String = null,
-    textLength: Double | String = null,
-    textRendering: Double | String = null,
-    to: Double | String = null,
-    transform: String = null,
-    u1: Double | String = null,
-    u2: Double | String = null,
-    underlinePosition: Double | String = null,
-    underlineThickness: Double | String = null,
-    unicode: Double | String = null,
-    unicodeBidi: Double | String = null,
-    unicodeRange: Double | String = null,
-    unitsPerEm: Double | String = null,
-    vAlphabetic: Double | String = null,
-    vHanging: Double | String = null,
-    vIdeographic: Double | String = null,
-    vMathematical: Double | String = null,
-    values: String = null,
-    vectorEffect: Double | String = null,
-    version: String = null,
-    vertAdvY: Double | String = null,
-    vertOriginX: Double | String = null,
-    vertOriginY: Double | String = null,
-    viewBox: String = null,
-    viewTarget: Double | String = null,
-    visibility: Double | String = null,
-    widths: Double | String = null,
-    wordSpacing: Double | String = null,
-    writingMode: Double | String = null,
-    x: Double | String = null,
-    x1: Double | String = null,
-    x2: Double | String = null,
-    xChannelSelector: String = null,
-    xHeight: Double | String = null,
-    xlinkActuate: String = null,
-    xlinkArcrole: String = null,
-    xlinkHref: String = null,
-    xlinkRole: String = null,
-    xlinkShow: String = null,
-    xlinkTitle: String = null,
-    xlinkType: String = null,
-    xmlBase: String = null,
-    xmlLang: String = null,
-    xmlSpace: String = null,
-    xmlns: String = null,
-    xmlnsXlink: String = null,
-    y: Double | String = null,
-    y1: Double | String = null,
-    y2: Double | String = null,
-    yChannelSelector: String = null,
-    z: Double | String = null,
-    zoomAndPan: String = null
-  ): SVGAttributes[Target] = {
+  
+  inline def apply[Target /* <: EventTarget */](): SVGAttributes[Target] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
-    if (accumulate != null) __obj.updateDynamic("accumulate")(accumulate.asInstanceOf[js.Any])
-    if (additive != null) __obj.updateDynamic("additive")(additive.asInstanceOf[js.Any])
-    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (allowReorder != null) __obj.updateDynamic("allowReorder")(allowReorder.asInstanceOf[js.Any])
-    if (alphabetic != null) __obj.updateDynamic("alphabetic")(alphabetic.asInstanceOf[js.Any])
-    if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
-    if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
-    if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (autoReverse != null) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
-    if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
-    if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
-    if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
-    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (calcMode != null) __obj.updateDynamic("calcMode")(calcMode.asInstanceOf[js.Any])
-    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (clipPathUnits != null) __obj.updateDynamic("clipPathUnits")(clipPathUnits.asInstanceOf[js.Any])
-    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
-    if (colorInterpolationFilters != null) __obj.updateDynamic("colorInterpolationFilters")(colorInterpolationFilters.asInstanceOf[js.Any])
-    if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
-    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
-    if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
-    if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (decelerate != null) __obj.updateDynamic("decelerate")(decelerate.asInstanceOf[js.Any])
-    if (descent != null) __obj.updateDynamic("descent")(descent.asInstanceOf[js.Any])
-    if (diffuseConstant != null) __obj.updateDynamic("diffuseConstant")(diffuseConstant.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (divisor != null) __obj.updateDynamic("divisor")(divisor.asInstanceOf[js.Any])
-    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (dur != null) __obj.updateDynamic("dur")(dur.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (edgeMode != null) __obj.updateDynamic("edgeMode")(edgeMode.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (externalResourcesRequired != null) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filterRes != null) __obj.updateDynamic("filterRes")(filterRes.asInstanceOf[js.Any])
-    if (filterUnits != null) __obj.updateDynamic("filterUnits")(filterUnits.asInstanceOf[js.Any])
-    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
-    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
-    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
-    if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
-    if (g1 != null) __obj.updateDynamic("g1")(g1.asInstanceOf[js.Any])
-    if (g2 != null) __obj.updateDynamic("g2")(g2.asInstanceOf[js.Any])
-    if (glyphName != null) __obj.updateDynamic("glyphName")(glyphName.asInstanceOf[js.Any])
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
-    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (glyphRef != null) __obj.updateDynamic("glyphRef")(glyphRef.asInstanceOf[js.Any])
-    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
-    if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits.asInstanceOf[js.Any])
-    if (hanging != null) __obj.updateDynamic("hanging")(hanging.asInstanceOf[js.Any])
-    if (horizAdvX != null) __obj.updateDynamic("horizAdvX")(horizAdvX.asInstanceOf[js.Any])
-    if (horizOriginX != null) __obj.updateDynamic("horizOriginX")(horizOriginX.asInstanceOf[js.Any])
-    if (ideographic != null) __obj.updateDynamic("ideographic")(ideographic.asInstanceOf[js.Any])
-    if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (in2 != null) __obj.updateDynamic("in2")(in2.asInstanceOf[js.Any])
-    if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (k1 != null) __obj.updateDynamic("k1")(k1.asInstanceOf[js.Any])
-    if (k2 != null) __obj.updateDynamic("k2")(k2.asInstanceOf[js.Any])
-    if (k3 != null) __obj.updateDynamic("k3")(k3.asInstanceOf[js.Any])
-    if (k4 != null) __obj.updateDynamic("k4")(k4.asInstanceOf[js.Any])
-    if (kernelMatrix != null) __obj.updateDynamic("kernelMatrix")(kernelMatrix.asInstanceOf[js.Any])
-    if (kernelUnitLength != null) __obj.updateDynamic("kernelUnitLength")(kernelUnitLength.asInstanceOf[js.Any])
-    if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (keyPoints != null) __obj.updateDynamic("keyPoints")(keyPoints.asInstanceOf[js.Any])
-    if (keySplines != null) __obj.updateDynamic("keySplines")(keySplines.asInstanceOf[js.Any])
-    if (keyTimes != null) __obj.updateDynamic("keyTimes")(keyTimes.asInstanceOf[js.Any])
-    if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
-    if (limitingConeAngle != null) __obj.updateDynamic("limitingConeAngle")(limitingConeAngle.asInstanceOf[js.Any])
-    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (markerHeight != null) __obj.updateDynamic("markerHeight")(markerHeight.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
-    if (markerUnits != null) __obj.updateDynamic("markerUnits")(markerUnits.asInstanceOf[js.Any])
-    if (markerWidth != null) __obj.updateDynamic("markerWidth")(markerWidth.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskContentUnits != null) __obj.updateDynamic("maskContentUnits")(maskContentUnits.asInstanceOf[js.Any])
-    if (maskUnits != null) __obj.updateDynamic("maskUnits")(maskUnits.asInstanceOf[js.Any])
-    if (mathematical != null) __obj.updateDynamic("mathematical")(mathematical.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (numOctaves != null) __obj.updateDynamic("numOctaves")(numOctaves.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overlinePosition != null) __obj.updateDynamic("overlinePosition")(overlinePosition.asInstanceOf[js.Any])
-    if (overlineThickness != null) __obj.updateDynamic("overlineThickness")(overlineThickness.asInstanceOf[js.Any])
-    if (paintOrder != null) __obj.updateDynamic("paintOrder")(paintOrder.asInstanceOf[js.Any])
-    if (panose1 != null) __obj.updateDynamic("panose1")(panose1.asInstanceOf[js.Any])
-    if (pathLength != null) __obj.updateDynamic("pathLength")(pathLength.asInstanceOf[js.Any])
-    if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits.asInstanceOf[js.Any])
-    if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])
-    if (patternUnits != null) __obj.updateDynamic("patternUnits")(patternUnits.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (pointsAtX != null) __obj.updateDynamic("pointsAtX")(pointsAtX.asInstanceOf[js.Any])
-    if (pointsAtY != null) __obj.updateDynamic("pointsAtY")(pointsAtY.asInstanceOf[js.Any])
-    if (pointsAtZ != null) __obj.updateDynamic("pointsAtZ")(pointsAtZ.asInstanceOf[js.Any])
-    if (preserveAlpha != null) __obj.updateDynamic("preserveAlpha")(preserveAlpha.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (primitiveUnits != null) __obj.updateDynamic("primitiveUnits")(primitiveUnits.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (refX != null) __obj.updateDynamic("refX")(refX.asInstanceOf[js.Any])
-    if (refY != null) __obj.updateDynamic("refY")(refY.asInstanceOf[js.Any])
-    if (renderingIntent != null) __obj.updateDynamic("renderingIntent")(renderingIntent.asInstanceOf[js.Any])
-    if (repeatCount != null) __obj.updateDynamic("repeatCount")(repeatCount.asInstanceOf[js.Any])
-    if (repeatDur != null) __obj.updateDynamic("repeatDur")(repeatDur.asInstanceOf[js.Any])
-    if (requiredExtensions != null) __obj.updateDynamic("requiredExtensions")(requiredExtensions.asInstanceOf[js.Any])
-    if (requiredFeatures != null) __obj.updateDynamic("requiredFeatures")(requiredFeatures.asInstanceOf[js.Any])
-    if (restart != null) __obj.updateDynamic("restart")(restart.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
-    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    if (slope != null) __obj.updateDynamic("slope")(slope.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (specularConstant != null) __obj.updateDynamic("specularConstant")(specularConstant.asInstanceOf[js.Any])
-    if (specularExponent != null) __obj.updateDynamic("specularExponent")(specularExponent.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (spreadMethod != null) __obj.updateDynamic("spreadMethod")(spreadMethod.asInstanceOf[js.Any])
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
-    if (stdDeviation != null) __obj.updateDynamic("stdDeviation")(stdDeviation.asInstanceOf[js.Any])
-    if (stemh != null) __obj.updateDynamic("stemh")(stemh.asInstanceOf[js.Any])
-    if (stemv != null) __obj.updateDynamic("stemv")(stemv.asInstanceOf[js.Any])
-    if (stitchTiles != null) __obj.updateDynamic("stitchTiles")(stitchTiles.asInstanceOf[js.Any])
-    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
-    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
-    if (strikethroughPosition != null) __obj.updateDynamic("strikethroughPosition")(strikethroughPosition.asInstanceOf[js.Any])
-    if (strikethroughThickness != null) __obj.updateDynamic("strikethroughThickness")(strikethroughThickness.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (surfaceScale != null) __obj.updateDynamic("surfaceScale")(surfaceScale.asInstanceOf[js.Any])
-    if (systemLanguage != null) __obj.updateDynamic("systemLanguage")(systemLanguage.asInstanceOf[js.Any])
-    if (tableValues != null) __obj.updateDynamic("tableValues")(tableValues.asInstanceOf[js.Any])
-    if (targetX != null) __obj.updateDynamic("targetX")(targetX.asInstanceOf[js.Any])
-    if (targetY != null) __obj.updateDynamic("targetY")(targetY.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (textLength != null) __obj.updateDynamic("textLength")(textLength.asInstanceOf[js.Any])
-    if (textRendering != null) __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (u1 != null) __obj.updateDynamic("u1")(u1.asInstanceOf[js.Any])
-    if (u2 != null) __obj.updateDynamic("u2")(u2.asInstanceOf[js.Any])
-    if (underlinePosition != null) __obj.updateDynamic("underlinePosition")(underlinePosition.asInstanceOf[js.Any])
-    if (underlineThickness != null) __obj.updateDynamic("underlineThickness")(underlineThickness.asInstanceOf[js.Any])
-    if (unicode != null) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
-    if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
-    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
-    if (unitsPerEm != null) __obj.updateDynamic("unitsPerEm")(unitsPerEm.asInstanceOf[js.Any])
-    if (vAlphabetic != null) __obj.updateDynamic("vAlphabetic")(vAlphabetic.asInstanceOf[js.Any])
-    if (vHanging != null) __obj.updateDynamic("vHanging")(vHanging.asInstanceOf[js.Any])
-    if (vIdeographic != null) __obj.updateDynamic("vIdeographic")(vIdeographic.asInstanceOf[js.Any])
-    if (vMathematical != null) __obj.updateDynamic("vMathematical")(vMathematical.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (vertAdvY != null) __obj.updateDynamic("vertAdvY")(vertAdvY.asInstanceOf[js.Any])
-    if (vertOriginX != null) __obj.updateDynamic("vertOriginX")(vertOriginX.asInstanceOf[js.Any])
-    if (vertOriginY != null) __obj.updateDynamic("vertOriginY")(vertOriginY.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (viewTarget != null) __obj.updateDynamic("viewTarget")(viewTarget.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
-    if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (xChannelSelector != null) __obj.updateDynamic("xChannelSelector")(xChannelSelector.asInstanceOf[js.Any])
-    if (xHeight != null) __obj.updateDynamic("xHeight")(xHeight.asInstanceOf[js.Any])
-    if (xlinkActuate != null) __obj.updateDynamic("xlinkActuate")(xlinkActuate.asInstanceOf[js.Any])
-    if (xlinkArcrole != null) __obj.updateDynamic("xlinkArcrole")(xlinkArcrole.asInstanceOf[js.Any])
-    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref.asInstanceOf[js.Any])
-    if (xlinkRole != null) __obj.updateDynamic("xlinkRole")(xlinkRole.asInstanceOf[js.Any])
-    if (xlinkShow != null) __obj.updateDynamic("xlinkShow")(xlinkShow.asInstanceOf[js.Any])
-    if (xlinkTitle != null) __obj.updateDynamic("xlinkTitle")(xlinkTitle.asInstanceOf[js.Any])
-    if (xlinkType != null) __obj.updateDynamic("xlinkType")(xlinkType.asInstanceOf[js.Any])
-    if (xmlBase != null) __obj.updateDynamic("xmlBase")(xmlBase.asInstanceOf[js.Any])
-    if (xmlLang != null) __obj.updateDynamic("xmlLang")(xmlLang.asInstanceOf[js.Any])
-    if (xmlSpace != null) __obj.updateDynamic("xmlSpace")(xmlSpace.asInstanceOf[js.Any])
-    if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
-    if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
-    if (yChannelSelector != null) __obj.updateDynamic("yChannelSelector")(yChannelSelector.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
-    if (zoomAndPan != null) __obj.updateDynamic("zoomAndPan")(zoomAndPan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[Target]]
   }
+  
+  extension [Self <: SVGAttributes[?], Target /* <: EventTarget */](x: Self & SVGAttributes[Target]) {
+    
+    inline def setAccentHeight(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
+    
+    inline def setAccentHeightUndefined: Self = StObject.set(x, "accentHeight", js.undefined)
+    
+    inline def setAccumulate(value: none | sum | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[none | sum])): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
+    
+    inline def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
+    
+    inline def setAdditive(value: replace | sum | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[replace | sum])): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
+    
+    inline def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
+    
+    inline def setAlignmentBaseline(
+      value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[
+          auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+        ])
+    ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
+    
+    inline def setAllowReorder(value: no | yes | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[no | yes])): Self = StObject.set(x, "allowReorder", value.asInstanceOf[js.Any])
+    
+    inline def setAllowReorderUndefined: Self = StObject.set(x, "allowReorder", js.undefined)
+    
+    inline def setAlphabetic(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "alphabetic", value.asInstanceOf[js.Any])
+    
+    inline def setAlphabeticUndefined: Self = StObject.set(x, "alphabetic", js.undefined)
+    
+    inline def setAmplitude(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
+    
+    inline def setAmplitudeUndefined: Self = StObject.set(x, "amplitude", js.undefined)
+    
+    inline def setArabicForm(
+      value: initial | medial | terminal | isolated | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[initial | medial | terminal | isolated])
+    ): Self = StObject.set(x, "arabicForm", value.asInstanceOf[js.Any])
+    
+    inline def setArabicFormUndefined: Self = StObject.set(x, "arabicForm", js.undefined)
+    
+    inline def setAscent(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
+    
+    inline def setAscentUndefined: Self = StObject.set(x, "ascent", js.undefined)
+    
+    inline def setAttributeName(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    
+    inline def setAttributeType(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "attributeType", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeTypeUndefined: Self = StObject.set(x, "attributeType", js.undefined)
+    
+    inline def setAutoReverse(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "autoReverse", value.asInstanceOf[js.Any])
+    
+    inline def setAutoReverseUndefined: Self = StObject.set(x, "autoReverse", js.undefined)
+    
+    inline def setAzimuth(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
+    
+    inline def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
+    
+    inline def setBaseFrequency(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "baseFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setBaseFrequencyUndefined: Self = StObject.set(x, "baseFrequency", js.undefined)
+    
+    inline def setBaseProfile(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "baseProfile", value.asInstanceOf[js.Any])
+    
+    inline def setBaseProfileUndefined: Self = StObject.set(x, "baseProfile", js.undefined)
+    
+    inline def setBaselineShift(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
+    
+    inline def setBbox(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+    
+    inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+    
+    inline def setBegin(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    
+    inline def setBias(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    
+    inline def setBy(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    
+    inline def setCalcMode(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "calcMode", value.asInstanceOf[js.Any])
+    
+    inline def setCalcModeUndefined: Self = StObject.set(x, "calcMode", js.undefined)
+    
+    inline def setCapHeight(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
+    
+    inline def setCapHeightUndefined: Self = StObject.set(x, "capHeight", js.undefined)
+    
+    inline def setClip(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipPath(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+    
+    inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
+    
+    inline def setClipPathUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "clipPathUnits", value.asInstanceOf[js.Any])
+    
+    inline def setClipPathUnitsUndefined: Self = StObject.set(x, "clipPathUnits", js.undefined)
+    
+    inline def setClipRule(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
+    
+    inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setColorInterpolation(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
+    
+    inline def setColorInterpolationFilters(
+      value: auto | sRGB | linearRGB | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[auto | sRGB | linearRGB | inherit])
+    ): Self = StObject.set(x, "colorInterpolationFilters", value.asInstanceOf[js.Any])
+    
+    inline def setColorInterpolationFiltersUndefined: Self = StObject.set(x, "colorInterpolationFilters", js.undefined)
+    
+    inline def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
+    
+    inline def setColorProfile(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "colorProfile", value.asInstanceOf[js.Any])
+    
+    inline def setColorProfileUndefined: Self = StObject.set(x, "colorProfile", js.undefined)
+    
+    inline def setColorRendering(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
+    
+    inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
+    
+    inline def setContentScriptType(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "contentScriptType", value.asInstanceOf[js.Any])
+    
+    inline def setContentScriptTypeUndefined: Self = StObject.set(x, "contentScriptType", js.undefined)
+    
+    inline def setContentStyleType(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "contentStyleType", value.asInstanceOf[js.Any])
+    
+    inline def setContentStyleTypeUndefined: Self = StObject.set(x, "contentStyleType", js.undefined)
+    
+    inline def setCursor(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setCx(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    
+    inline def setCy(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    
+    inline def setD(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    
+    inline def setDecelerate(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "decelerate", value.asInstanceOf[js.Any])
+    
+    inline def setDecelerateUndefined: Self = StObject.set(x, "decelerate", js.undefined)
+    
+    inline def setDescent(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
+    
+    inline def setDescentUndefined: Self = StObject.set(x, "descent", js.undefined)
+    
+    inline def setDiffuseConstant(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "diffuseConstant", value.asInstanceOf[js.Any])
+    
+    inline def setDiffuseConstantUndefined: Self = StObject.set(x, "diffuseConstant", js.undefined)
+    
+    inline def setDirection(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDisplay(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setDivisor(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
+    
+    inline def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
+    
+    inline def setDominantBaseline(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
+    
+    inline def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
+    
+    inline def setDur(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    
+    inline def setDurUndefined: Self = StObject.set(x, "dur", js.undefined)
+    
+    inline def setDx(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    
+    inline def setDy(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    
+    inline def setEdgeMode(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "edgeMode", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeModeUndefined: Self = StObject.set(x, "edgeMode", js.undefined)
+    
+    inline def setElevation(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    
+    inline def setEnableBackground(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "enableBackground", value.asInstanceOf[js.Any])
+    
+    inline def setEnableBackgroundUndefined: Self = StObject.set(x, "enableBackground", js.undefined)
+    
+    inline def setEnd(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setExponent(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+    
+    inline def setExponentUndefined: Self = StObject.set(x, "exponent", js.undefined)
+    
+    inline def setExternalResourcesRequired(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
+    
+    inline def setExternalResourcesRequiredUndefined: Self = StObject.set(x, "externalResourcesRequired", js.undefined)
+    
+    inline def setFill(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacity(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setFillRule(
+      value: nonzero | evenodd | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[nonzero | evenodd | inherit])
+    ): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    
+    inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFilter(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterRes(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "filterRes", value.asInstanceOf[js.Any])
+    
+    inline def setFilterResUndefined: Self = StObject.set(x, "filterRes", js.undefined)
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "filterUnits", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUnitsUndefined: Self = StObject.set(x, "filterUnits", js.undefined)
+    
+    inline def setFloodColor(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
+    
+    inline def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
+    
+    inline def setFloodOpacity(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
+    
+    inline def setFocusable(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    
+    inline def setFontFamily(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeAdjust(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontStretch(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
+    
+    inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
+    
+    inline def setFontStyle(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontVariant(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+    
+    inline def setFontWeight(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setFormat(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFrom(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setFx(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+    
+    inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+    
+    inline def setFy(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
+    
+    inline def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
+    
+    inline def setG1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "g1", value.asInstanceOf[js.Any])
+    
+    inline def setG1Undefined: Self = StObject.set(x, "g1", js.undefined)
+    
+    inline def setG2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "g2", value.asInstanceOf[js.Any])
+    
+    inline def setG2Undefined: Self = StObject.set(x, "g2", js.undefined)
+    
+    inline def setGlyphName(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "glyphName", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphNameUndefined: Self = StObject.set(x, "glyphName", js.undefined)
+    
+    inline def setGlyphOrientationHorizontal(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "glyphOrientationHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphOrientationHorizontalUndefined: Self = StObject.set(x, "glyphOrientationHorizontal", js.undefined)
+    
+    inline def setGlyphOrientationVertical(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
+    
+    inline def setGlyphRef(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "glyphRef", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphRefUndefined: Self = StObject.set(x, "glyphRef", js.undefined)
+    
+    inline def setGradientTransform(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    
+    inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+    
+    inline def setGradientUnits(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
+    
+    inline def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
+    
+    inline def setHanging(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "hanging", value.asInstanceOf[js.Any])
+    
+    inline def setHangingUndefined: Self = StObject.set(x, "hanging", js.undefined)
+    
+    inline def setHorizAdvX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "horizAdvX", value.asInstanceOf[js.Any])
+    
+    inline def setHorizAdvXUndefined: Self = StObject.set(x, "horizAdvX", js.undefined)
+    
+    inline def setHorizOriginX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "horizOriginX", value.asInstanceOf[js.Any])
+    
+    inline def setHorizOriginXUndefined: Self = StObject.set(x, "horizOriginX", js.undefined)
+    
+    inline def setIdeographic(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "ideographic", value.asInstanceOf[js.Any])
+    
+    inline def setIdeographicUndefined: Self = StObject.set(x, "ideographic", js.undefined)
+    
+    inline def setImageRendering(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
+    
+    inline def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
+    
+    inline def setIn(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    
+    inline def setIn2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "in2", value.asInstanceOf[js.Any])
+    
+    inline def setIn2Undefined: Self = StObject.set(x, "in2", js.undefined)
+    
+    inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+    
+    inline def setIntercept(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "intercept", value.asInstanceOf[js.Any])
+    
+    inline def setInterceptUndefined: Self = StObject.set(x, "intercept", js.undefined)
+    
+    inline def setK(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    
+    inline def setK1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
+    
+    inline def setK1Undefined: Self = StObject.set(x, "k1", js.undefined)
+    
+    inline def setK2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
+    
+    inline def setK2Undefined: Self = StObject.set(x, "k2", js.undefined)
+    
+    inline def setK3(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "k3", value.asInstanceOf[js.Any])
+    
+    inline def setK3Undefined: Self = StObject.set(x, "k3", js.undefined)
+    
+    inline def setK4(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "k4", value.asInstanceOf[js.Any])
+    
+    inline def setK4Undefined: Self = StObject.set(x, "k4", js.undefined)
+    
+    inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
+    
+    inline def setKernelMatrix(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "kernelMatrix", value.asInstanceOf[js.Any])
+    
+    inline def setKernelMatrixUndefined: Self = StObject.set(x, "kernelMatrix", js.undefined)
+    
+    inline def setKernelUnitLength(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "kernelUnitLength", value.asInstanceOf[js.Any])
+    
+    inline def setKernelUnitLengthUndefined: Self = StObject.set(x, "kernelUnitLength", js.undefined)
+    
+    inline def setKerning(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+    
+    inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+    
+    inline def setKeyPoints(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "keyPoints", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPointsUndefined: Self = StObject.set(x, "keyPoints", js.undefined)
+    
+    inline def setKeySplines(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "keySplines", value.asInstanceOf[js.Any])
+    
+    inline def setKeySplinesUndefined: Self = StObject.set(x, "keySplines", js.undefined)
+    
+    inline def setKeyTimes(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "keyTimes", value.asInstanceOf[js.Any])
+    
+    inline def setKeyTimesUndefined: Self = StObject.set(x, "keyTimes", js.undefined)
+    
+    inline def setLengthAdjust(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "lengthAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setLengthAdjustUndefined: Self = StObject.set(x, "lengthAdjust", js.undefined)
+    
+    inline def setLetterSpacing(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    
+    inline def setLightingColor(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
+    
+    inline def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
+    
+    inline def setLimitingConeAngle(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "limitingConeAngle", value.asInstanceOf[js.Any])
+    
+    inline def setLimitingConeAngleUndefined: Self = StObject.set(x, "limitingConeAngle", js.undefined)
+    
+    inline def setLocal(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    
+    inline def setMarkerEnd(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
+    
+    inline def setMarkerHeight(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerHeightUndefined: Self = StObject.set(x, "markerHeight", js.undefined)
+    
+    inline def setMarkerMid(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
+    
+    inline def setMarkerStart(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
+    
+    inline def setMarkerUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "markerUnits", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUnitsUndefined: Self = StObject.set(x, "markerUnits", js.undefined)
+    
+    inline def setMarkerWidth(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
+    
+    inline def setMask(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskContentUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
+    
+    inline def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    inline def setMaskUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "maskUnits", value.asInstanceOf[js.Any])
+    
+    inline def setMaskUnitsUndefined: Self = StObject.set(x, "maskUnits", js.undefined)
+    
+    inline def setMathematical(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "mathematical", value.asInstanceOf[js.Any])
+    
+    inline def setMathematicalUndefined: Self = StObject.set(x, "mathematical", js.undefined)
+    
+    inline def setMode(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setNumOctaves(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "numOctaves", value.asInstanceOf[js.Any])
+    
+    inline def setNumOctavesUndefined: Self = StObject.set(x, "numOctaves", js.undefined)
+    
+    inline def setOffset(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOpacity(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOperator(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setOrder(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setOrient(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    
+    inline def setOrientation(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setOrigin(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setOverflow(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setOverlinePosition(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "overlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def setOverlinePositionUndefined: Self = StObject.set(x, "overlinePosition", js.undefined)
+    
+    inline def setOverlineThickness(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "overlineThickness", value.asInstanceOf[js.Any])
+    
+    inline def setOverlineThicknessUndefined: Self = StObject.set(x, "overlineThickness", js.undefined)
+    
+    inline def setPaintOrder(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
+    
+    inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
+    
+    inline def setPanose1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "panose1", value.asInstanceOf[js.Any])
+    
+    inline def setPanose1Undefined: Self = StObject.set(x, "panose1", js.undefined)
+    
+    inline def setPathLength(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "pathLength", value.asInstanceOf[js.Any])
+    
+    inline def setPathLengthUndefined: Self = StObject.set(x, "pathLength", js.undefined)
+    
+    inline def setPatternContentUnits(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "patternContentUnits", value.asInstanceOf[js.Any])
+    
+    inline def setPatternContentUnitsUndefined: Self = StObject.set(x, "patternContentUnits", js.undefined)
+    
+    inline def setPatternTransform(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
+    
+    inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
+    
+    inline def setPatternUnits(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "patternUnits", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUnitsUndefined: Self = StObject.set(x, "patternUnits", js.undefined)
+    
+    inline def setPointerEvents(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    inline def setPoints(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsAtX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "pointsAtX", value.asInstanceOf[js.Any])
+    
+    inline def setPointsAtXUndefined: Self = StObject.set(x, "pointsAtX", js.undefined)
+    
+    inline def setPointsAtY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "pointsAtY", value.asInstanceOf[js.Any])
+    
+    inline def setPointsAtYUndefined: Self = StObject.set(x, "pointsAtY", js.undefined)
+    
+    inline def setPointsAtZ(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "pointsAtZ", value.asInstanceOf[js.Any])
+    
+    inline def setPointsAtZUndefined: Self = StObject.set(x, "pointsAtZ", js.undefined)
+    
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    
+    inline def setPreserveAlpha(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "preserveAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAlphaUndefined: Self = StObject.set(x, "preserveAlpha", js.undefined)
+    
+    inline def setPreserveAspectRatio(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+    
+    inline def setPrimitiveUnits(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "primitiveUnits", value.asInstanceOf[js.Any])
+    
+    inline def setPrimitiveUnitsUndefined: Self = StObject.set(x, "primitiveUnits", js.undefined)
+    
+    inline def setR(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    
+    inline def setRadius(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setRefX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
+    
+    inline def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
+    
+    inline def setRefY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "refY", value.asInstanceOf[js.Any])
+    
+    inline def setRefYUndefined: Self = StObject.set(x, "refY", js.undefined)
+    
+    inline def setRenderingIntent(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "renderingIntent", value.asInstanceOf[js.Any])
+    
+    inline def setRenderingIntentUndefined: Self = StObject.set(x, "renderingIntent", js.undefined)
+    
+    inline def setRepeatCount(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "repeatCount", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatCountUndefined: Self = StObject.set(x, "repeatCount", js.undefined)
+    
+    inline def setRepeatDur(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "repeatDur", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatDurUndefined: Self = StObject.set(x, "repeatDur", js.undefined)
+    
+    inline def setRequiredExtensions(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "requiredExtensions", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredExtensionsUndefined: Self = StObject.set(x, "requiredExtensions", js.undefined)
+    
+    inline def setRequiredFeatures(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredFeaturesUndefined: Self = StObject.set(x, "requiredFeatures", js.undefined)
+    
+    inline def setRestart(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
+    
+    inline def setRestartUndefined: Self = StObject.set(x, "restart", js.undefined)
+    
+    inline def setResult(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setRotate(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    
+    inline def setRx(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    
+    inline def setRy(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    
+    inline def setScale(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSeed(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    
+    inline def setShapeRendering(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
+    
+    inline def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
+    
+    inline def setSlope(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
+    
+    inline def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
+    
+    inline def setSpacing(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    
+    inline def setSpecularConstant(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "specularConstant", value.asInstanceOf[js.Any])
+    
+    inline def setSpecularConstantUndefined: Self = StObject.set(x, "specularConstant", js.undefined)
+    
+    inline def setSpecularExponent(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "specularExponent", value.asInstanceOf[js.Any])
+    
+    inline def setSpecularExponentUndefined: Self = StObject.set(x, "specularExponent", js.undefined)
+    
+    inline def setSpeed(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setSpreadMethod(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "spreadMethod", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadMethodUndefined: Self = StObject.set(x, "spreadMethod", js.undefined)
+    
+    inline def setStartOffset(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    
+    inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
+    
+    inline def setStdDeviation(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "stdDeviation", value.asInstanceOf[js.Any])
+    
+    inline def setStdDeviationUndefined: Self = StObject.set(x, "stdDeviation", js.undefined)
+    
+    inline def setStemh(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "stemh", value.asInstanceOf[js.Any])
+    
+    inline def setStemhUndefined: Self = StObject.set(x, "stemh", js.undefined)
+    
+    inline def setStemv(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "stemv", value.asInstanceOf[js.Any])
+    
+    inline def setStemvUndefined: Self = StObject.set(x, "stemv", js.undefined)
+    
+    inline def setStitchTiles(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "stitchTiles", value.asInstanceOf[js.Any])
+    
+    inline def setStitchTilesUndefined: Self = StObject.set(x, "stitchTiles", js.undefined)
+    
+    inline def setStopColor(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+    
+    inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
+    
+    inline def setStopOpacity(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
+    
+    inline def setStrikethroughPosition(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strikethroughPosition", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughPositionUndefined: Self = StObject.set(x, "strikethroughPosition", js.undefined)
+    
+    inline def setStrikethroughThickness(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strikethroughThickness", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughThicknessUndefined: Self = StObject.set(x, "strikethroughThickness", js.undefined)
+    
+    inline def setString(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    
+    inline def setStroke(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharray(
+      value: String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+    
+    inline def setStrokeDashoffset(
+      value: String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
+    
+    inline def setStrokeLinecap(
+      value: butt | round | square | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[butt | round | square | inherit])
+    ): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+    
+    inline def setStrokeLinejoin(
+      value: miter | round | bevel | inherit | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[miter | round | bevel | inherit])
+    ): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
+    
+    inline def setStrokeMiterlimit(
+      value: String | Double | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+    
+    inline def setStrokeOpacity(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    
+    inline def setSurfaceScale(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "surfaceScale", value.asInstanceOf[js.Any])
+    
+    inline def setSurfaceScaleUndefined: Self = StObject.set(x, "surfaceScale", js.undefined)
+    
+    inline def setSystemLanguage(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "systemLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setSystemLanguageUndefined: Self = StObject.set(x, "systemLanguage", js.undefined)
+    
+    inline def setTableValues(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "tableValues", value.asInstanceOf[js.Any])
+    
+    inline def setTableValuesUndefined: Self = StObject.set(x, "tableValues", js.undefined)
+    
+    inline def setTargetX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "targetX", value.asInstanceOf[js.Any])
+    
+    inline def setTargetXUndefined: Self = StObject.set(x, "targetX", js.undefined)
+    
+    inline def setTargetY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "targetY", value.asInstanceOf[js.Any])
+    
+    inline def setTargetYUndefined: Self = StObject.set(x, "targetY", js.undefined)
+    
+    inline def setTextAnchor(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
+    
+    inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
+    
+    inline def setTextDecoration(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    
+    inline def setTextLength(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "textLength", value.asInstanceOf[js.Any])
+    
+    inline def setTextLengthUndefined: Self = StObject.set(x, "textLength", js.undefined)
+    
+    inline def setTextRendering(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+    
+    inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
+    
+    inline def setTo(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    
+    inline def setTransform(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setU1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "u1", value.asInstanceOf[js.Any])
+    
+    inline def setU1Undefined: Self = StObject.set(x, "u1", js.undefined)
+    
+    inline def setU2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "u2", value.asInstanceOf[js.Any])
+    
+    inline def setU2Undefined: Self = StObject.set(x, "u2", js.undefined)
+    
+    inline def setUnderlinePosition(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlinePositionUndefined: Self = StObject.set(x, "underlinePosition", js.undefined)
+    
+    inline def setUnderlineThickness(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "underlineThickness", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineThicknessUndefined: Self = StObject.set(x, "underlineThickness", js.undefined)
+    
+    inline def setUnicode(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeBidi(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
+    
+    inline def setUnicodeRange(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
+    
+    inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+    
+    inline def setUnitsPerEm(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsPerEmUndefined: Self = StObject.set(x, "unitsPerEm", js.undefined)
+    
+    inline def setVAlphabetic(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vAlphabetic", value.asInstanceOf[js.Any])
+    
+    inline def setVAlphabeticUndefined: Self = StObject.set(x, "vAlphabetic", js.undefined)
+    
+    inline def setVHanging(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vHanging", value.asInstanceOf[js.Any])
+    
+    inline def setVHangingUndefined: Self = StObject.set(x, "vHanging", js.undefined)
+    
+    inline def setVIdeographic(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vIdeographic", value.asInstanceOf[js.Any])
+    
+    inline def setVIdeographicUndefined: Self = StObject.set(x, "vIdeographic", js.undefined)
+    
+    inline def setVMathematical(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vMathematical", value.asInstanceOf[js.Any])
+    
+    inline def setVMathematicalUndefined: Self = StObject.set(x, "vMathematical", js.undefined)
+    
+    inline def setValues(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setVectorEffect(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+    
+    inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
+    
+    inline def setVersion(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def setVertAdvY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vertAdvY", value.asInstanceOf[js.Any])
+    
+    inline def setVertAdvYUndefined: Self = StObject.set(x, "vertAdvY", js.undefined)
+    
+    inline def setVertOriginX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vertOriginX", value.asInstanceOf[js.Any])
+    
+    inline def setVertOriginXUndefined: Self = StObject.set(x, "vertOriginX", js.undefined)
+    
+    inline def setVertOriginY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "vertOriginY", value.asInstanceOf[js.Any])
+    
+    inline def setVertOriginYUndefined: Self = StObject.set(x, "vertOriginY", js.undefined)
+    
+    inline def setViewBox(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+    
+    inline def setViewTarget(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "viewTarget", value.asInstanceOf[js.Any])
+    
+    inline def setViewTargetUndefined: Self = StObject.set(x, "viewTarget", js.undefined)
+    
+    inline def setVisibility(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    
+    inline def setWidths(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+    
+    inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+    
+    inline def setWordSpacing(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
+    
+    inline def setWritingMode(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
+    
+    inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
+    
+    inline def setX(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setX1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    
+    inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+    
+    inline def setX2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    
+    inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+    
+    inline def setXChannelSelector(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xChannelSelector", value.asInstanceOf[js.Any])
+    
+    inline def setXChannelSelectorUndefined: Self = StObject.set(x, "xChannelSelector", js.undefined)
+    
+    inline def setXHeight(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "xHeight", value.asInstanceOf[js.Any])
+    
+    inline def setXHeightUndefined: Self = StObject.set(x, "xHeight", js.undefined)
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setXlinkActuate(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkActuate", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkActuateUndefined: Self = StObject.set(x, "xlinkActuate", js.undefined)
+    
+    inline def setXlinkArcrole(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkArcrole", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkArcroleUndefined: Self = StObject.set(x, "xlinkArcrole", js.undefined)
+    
+    inline def setXlinkHref(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkHref", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkHrefUndefined: Self = StObject.set(x, "xlinkHref", js.undefined)
+    
+    inline def setXlinkRole(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkRole", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkRoleUndefined: Self = StObject.set(x, "xlinkRole", js.undefined)
+    
+    inline def setXlinkShow(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkShow", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkShowUndefined: Self = StObject.set(x, "xlinkShow", js.undefined)
+    
+    inline def setXlinkTitle(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkTitle", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkTitleUndefined: Self = StObject.set(x, "xlinkTitle", js.undefined)
+    
+    inline def setXlinkType(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xlinkType", value.asInstanceOf[js.Any])
+    
+    inline def setXlinkTypeUndefined: Self = StObject.set(x, "xlinkType", js.undefined)
+    
+    inline def setXmlBase(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xmlBase", value.asInstanceOf[js.Any])
+    
+    inline def setXmlBaseUndefined: Self = StObject.set(x, "xmlBase", js.undefined)
+    
+    inline def setXmlLang(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xmlLang", value.asInstanceOf[js.Any])
+    
+    inline def setXmlLangUndefined: Self = StObject.set(x, "xmlLang", js.undefined)
+    
+    inline def setXmlSpace(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xmlSpace", value.asInstanceOf[js.Any])
+    
+    inline def setXmlSpaceUndefined: Self = StObject.set(x, "xmlSpace", js.undefined)
+    
+    inline def setXmlns(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+    
+    inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+    
+    inline def setXmlnsXlink(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "xmlnsXlink", value.asInstanceOf[js.Any])
+    
+    inline def setXmlnsXlinkUndefined: Self = StObject.set(x, "xmlnsXlink", js.undefined)
+    
+    inline def setY(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setY1(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    
+    inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+    
+    inline def setY2(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    
+    inline def setYChannelSelector(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "yChannelSelector", value.asInstanceOf[js.Any])
+    
+    inline def setYChannelSelectorUndefined: Self = StObject.set(x, "yChannelSelector", js.undefined)
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    inline def setZ(
+      value: Double | String | (typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    ): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    
+    inline def setZoomAndPan(value: String | typingsJapgolly.preact.srcJsxMod.JSXInternal.SignalLike[String]): Self = StObject.set(x, "zoomAndPan", value.asInstanceOf[js.Any])
+    
+    inline def setZoomAndPanUndefined: Self = StObject.set(x, "zoomAndPan", js.undefined)
+  }
 }
-

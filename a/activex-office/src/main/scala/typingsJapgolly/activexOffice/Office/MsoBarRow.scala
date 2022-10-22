@@ -1,23 +1,19 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-1`
 */
-trait MsoBarRow extends js.Object
-
+trait MsoBarRow extends StObject
 object MsoBarRow {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoBarRowFirst: `0` = this.cast(0)
-  @scala.inline
-  def msoBarRowLast: `-1` = this.cast(-1)
+  
+  inline def msoBarRowFirst: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoBarRowLast: `-1` = -1.asInstanceOf[`-1`]
 }
-

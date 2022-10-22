@@ -1,35 +1,27 @@
 package typingsJapgolly.jqueryAjaxfile
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataType extends js.Object
-
+sealed trait DataType extends StObject
 @JSGlobal("DataType")
 @js.native
-object DataType extends js.Object {
-  @js.native
-  sealed trait Json extends DataType
+object DataType extends StObject {
   
   @js.native
-  sealed trait Text extends DataType
+  sealed trait Json
+    extends StObject
+       with DataType
   
   @js.native
-  sealed trait Xml extends DataType
+  sealed trait Text
+    extends StObject
+       with DataType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DataType with Double] = js.native
-  /* 0 */ @js.native
-  object Json extends TopLevel[Json with Double]
-  
-  /* 2 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
-  /* 1 */ @js.native
-  object Xml extends TopLevel[Xml with Double]
-  
+  @js.native
+  sealed trait Xml
+    extends StObject
+       with DataType
 }
-

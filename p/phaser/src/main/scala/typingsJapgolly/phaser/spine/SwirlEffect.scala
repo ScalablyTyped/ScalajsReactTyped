@@ -1,31 +1,55 @@
 package typingsJapgolly.phaser.spine
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.SwirlEffect")
-@js.native
-class SwirlEffect protected () extends VertexEffect {
-  def this(radius: Double) = this()
-  var angle: Double = js.native
-  var centerX: Double = js.native
-  var centerY: Double = js.native
-  var radius: Double = js.native
-  var worldX: js.Any = js.native
-  var worldY: js.Any = js.native
-  /* CompleteClass */
-  override def begin(skeleton: Skeleton): Unit = js.native
-  /* CompleteClass */
-  override def end(): Unit = js.native
-  /* CompleteClass */
-  override def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit = js.native
+trait SwirlEffect
+  extends StObject
+     with VertexEffect {
+  
+  var angle: Double
+  
+  var centerX: Double
+  
+  var centerY: Double
+  
+  var radius: Double
+  
+  /* private */ var worldX: Any
+  
+  /* private */ var worldY: Any
 }
-
-/* static members */
-@JSGlobal("spine.SwirlEffect")
-@js.native
-object SwirlEffect extends js.Object {
-  var interpolation: PowOut = js.native
+object SwirlEffect {
+  
+  inline def apply(
+    angle: Double,
+    begin: Skeleton => Callback,
+    centerX: Double,
+    centerY: Double,
+    end: Callback,
+    radius: Double,
+    transform: (Vector2, Vector2, Color, Color) => Callback,
+    worldX: Any,
+    worldY: Any
+  ): SwirlEffect = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], begin = js.Any.fromFunction1((t0: Skeleton) => begin(t0).runNow()), centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], end = end.toJsFn, radius = radius.asInstanceOf[js.Any], transform = js.Any.fromFunction4((t0: Vector2, t1: Vector2, t2: Color, t3: Color) => (transform(t0, t1, t2, t3)).runNow()), worldX = worldX.asInstanceOf[js.Any], worldY = worldY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SwirlEffect]
+  }
+  
+  extension [Self <: SwirlEffect](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    
+    inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setWorldX(value: Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
+    
+    inline def setWorldY(value: Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
+  }
 }
-

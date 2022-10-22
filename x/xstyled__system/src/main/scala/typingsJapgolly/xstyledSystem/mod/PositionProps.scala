@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.PositionProperty
+import typingsJapgolly.csstype.mod.Property.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PositionProps extends js.Object {
-  val position: js.UndefOr[ResponsiveValue[PositionProperty]] = js.undefined
+trait PositionProps extends StObject {
+  
+  val position: js.UndefOr[ResponsiveValue[Position]] = js.undefined
 }
-
 object PositionProps {
-  @scala.inline
-  def apply(position: ResponsiveValue[PositionProperty] = null): PositionProps = {
+  
+  inline def apply(): PositionProps = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionProps]
   }
+  
+  extension [Self <: PositionProps](x: Self) {
+    
+    inline def setPosition(value: ResponsiveValue[Position]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setPositionVarargs(value: Position*): Self = StObject.set(x, "position", js.Array(value*))
+  }
 }
-

@@ -1,17 +1,19 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.BounceFilteringParameters")
 @js.native
-class BounceFilteringParameters protected ()
-  extends typingsJapgolly.postmark.modelsMod.BounceFilteringParameters {
+open class BounceFilteringParameters protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.BounceFilteringParameters {
   def this(
     count: js.UndefOr[Double],
     offset: js.UndefOr[Double],
-    `type`: js.UndefOr[typingsJapgolly.postmark.bounceFilteringParametersMod.BounceType],
+    `type`: js.UndefOr[
+        typingsJapgolly.postmark.distClientModelsBouncesBounceFilteringParametersMod.BounceType
+      ],
     inactive: js.UndefOr[Boolean],
     emailFilter: js.UndefOr[String],
     tag: js.UndefOr[String],
@@ -21,4 +23,3 @@ class BounceFilteringParameters protected ()
     messageStream: js.UndefOr[String]
   ) = this()
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomElementRegistry extends js.Object {
+trait CustomElementRegistry extends StObject {
+  
+  /* standard dom */
   def define(name: java.lang.String, constructor: CustomElementConstructor): Unit = js.native
   def define(name: java.lang.String, constructor: CustomElementConstructor, options: ElementDefinitionOptions): Unit = js.native
-  def get(name: java.lang.String): js.Any = js.native
-  def upgrade(root: org.scalajs.dom.raw.Node): Unit = js.native
-  def whenDefined(name: java.lang.String): js.Promise[Unit] = js.native
+  
+  /* standard dom */
+  def get(name: java.lang.String): js.UndefOr[CustomElementConstructor] = js.native
+  
+  /* standard dom */
+  def upgrade(root: org.scalajs.dom.Node): Unit = js.native
+  
+  /* standard dom */
+  def whenDefined(name: java.lang.String): js.Promise[CustomElementConstructor] = js.native
 }
-
-@JSGlobal("CustomElementRegistry")
-@js.native
-object CustomElementRegistry extends Instantiable0[CustomElementRegistry]
-

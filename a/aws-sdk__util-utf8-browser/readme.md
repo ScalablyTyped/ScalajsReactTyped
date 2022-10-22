@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-utf8-browser
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 3.188.0
 
 ## Library description:
 A browser UTF-8 string <-> UInt8Array converter
@@ -10,12 +10,15 @@ A browser UTF-8 string <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-utf8-browser |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 376 |
-| # downloads        | 7567 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1159410333333332E7 |
+| # stars            | 1888.0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-utf8-browser)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-utf8-browser)
     
 

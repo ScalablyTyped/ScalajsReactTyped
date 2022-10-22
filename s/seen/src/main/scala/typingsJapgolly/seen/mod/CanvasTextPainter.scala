@@ -1,16 +1,16 @@
 package typingsJapgolly.seen.mod
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import typingsJapgolly.seen.AnonFont
+import org.scalajs.dom.CanvasRenderingContext2D
+import typingsJapgolly.seen.anon.Font
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "CanvasTextPainter")
 @js.native
-class CanvasTextPainter protected () extends js.Object {
+open class CanvasTextPainter protected () extends StObject {
   def this(ctx: CanvasRenderingContext2D) = this()
+  
   def fillText(m: Matrix, text: String): this.type = js.native
-  def fillText(m: Matrix, text: String, style: AnonFont): this.type = js.native
+  def fillText(m: Matrix, text: String, style: Font): this.type = js.native
 }
-

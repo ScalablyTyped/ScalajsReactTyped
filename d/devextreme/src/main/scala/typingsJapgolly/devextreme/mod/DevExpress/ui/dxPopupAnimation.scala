@@ -1,19 +1,16 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.mod.DevExpress.animationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPopupAnimation extends dxOverlayAnimation
-
+trait dxPopupAnimation
+  extends StObject
+     with dxOverlayAnimation
 object dxPopupAnimation {
-  @scala.inline
-  def apply(hide: animationConfig = null, show: animationConfig = null): dxPopupAnimation = {
+  
+  inline def apply(): dxPopupAnimation = {
     val __obj = js.Dynamic.literal()
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPopupAnimation]
   }
 }
-

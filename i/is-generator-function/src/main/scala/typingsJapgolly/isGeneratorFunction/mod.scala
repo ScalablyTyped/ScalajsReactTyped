@@ -1,12 +1,14 @@
 package typingsJapgolly.isGeneratorFunction
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-generator-function", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(fn: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+object mod {
+  
+  inline def apply(fn: Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
+  
+  @JSImport("is-generator-function", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

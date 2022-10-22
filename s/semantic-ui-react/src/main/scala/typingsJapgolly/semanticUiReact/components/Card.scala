@@ -1,78 +1,180 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
-import typingsJapgolly.semanticUiReact.cardCardMod.CardProps
-import typingsJapgolly.semanticUiReact.cardDescriptionMod.CardDescriptionProps
-import typingsJapgolly.semanticUiReact.cardHeaderMod.CardHeaderProps
-import typingsJapgolly.semanticUiReact.cardMetaMod.CardMetaProps
-import typingsJapgolly.semanticUiReact.cardMod.default
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.imageImageMod.ImageProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsElementsImageImageMod.ImageProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardContentMod.CardContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardGroupMod.CardGroupProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardHeaderMod.CardHeaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardMetaMod.CardMetaProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardMod.CardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    content: SemanticShorthandContent = null,
-    description: SemanticShorthandItem[CardDescriptionProps] = null,
-    extra: SemanticShorthandContent = null,
-    fluid: js.UndefOr[Boolean] = js.undefined,
-    header: SemanticShorthandItem[CardHeaderProps] = null,
-    href: String = null,
-    image: SemanticShorthandItem[ImageProps] = null,
-    link: js.UndefOr[Boolean] = js.undefined,
-    meta: SemanticShorthandItem[CardMetaProps] = null,
-    onClick: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ CardProps) => Callback = null,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CardProps, default, Unit, CardProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement], t1: /* data */ typingsJapgolly.semanticUiReact.cardCardMod.CardProps) => onClick(t0, t1).runNow()))
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.cardCardMod.CardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.cardMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.cardCardMod.CardProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Card.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_CardContentProps_1425910179 = new SharedBuilder_CardContentProps_1425910179(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: CardContentProps): SharedBuilder_CardContentProps_1425910179 = new SharedBuilder_CardContentProps_1425910179(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/views/Card", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Description {
+    
+    @JSImport("semantic-ui-react", "Card.Description")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Description.type): SharedBuilder_CardDescriptionProps733411506 = new SharedBuilder_CardDescriptionProps733411506(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: CardDescriptionProps): SharedBuilder_CardDescriptionProps733411506 = new SharedBuilder_CardDescriptionProps733411506(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Group {
+    
+    @JSImport("semantic-ui-react", "Card.Group")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Group.type): SharedBuilder_CardGroupProps368716750 = new SharedBuilder_CardGroupProps368716750(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: CardGroupProps): SharedBuilder_CardGroupProps368716750 = new SharedBuilder_CardGroupProps368716750(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Header {
+    
+    @JSImport("semantic-ui-react", "Card.Header")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Header.type): SharedBuilder_CardHeaderProps586099955 = new SharedBuilder_CardHeaderProps586099955(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: CardHeaderProps): SharedBuilder_CardHeaderProps586099955 = new SharedBuilder_CardHeaderProps586099955(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Meta {
+    
+    @JSImport("semantic-ui-react", "Card.Meta")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Meta.type): SharedBuilder_CardMetaProps_2106210004 = new SharedBuilder_CardMetaProps_2106210004(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: CardMetaProps): SharedBuilder_CardMetaProps_2106210004 = new SharedBuilder_CardMetaProps_2106210004(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Card")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def centered(value: Boolean): this.type = set("centered", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def description(value: SemanticShorthandItem[CardDescriptionProps]): this.type = set("description", value.asInstanceOf[js.Any])
+    
+    inline def descriptionFunction3(
+      value: (/* component */ ElementType, CardDescriptionProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("description", js.Any.fromFunction3(value))
+    
+    inline def descriptionNull: this.type = set("description", null)
+    
+    inline def descriptionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("description", js.Array(value*))
+    
+    inline def descriptionVdomElement(value: VdomElement): this.type = set("description", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def extra(value: SemanticShorthandContent): this.type = set("extra", value.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def fluid(value: Boolean): this.type = set("fluid", value.asInstanceOf[js.Any])
+    
+    inline def header(value: SemanticShorthandItem[CardHeaderProps]): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def headerFunction3(
+      value: (/* component */ ElementType, CardHeaderProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("header", js.Any.fromFunction3(value))
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def image(value: SemanticShorthandItem[ImageProps]): this.type = set("image", value.asInstanceOf[js.Any])
+    
+    inline def imageFunction3(
+      value: (/* component */ ElementType, ImageProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("image", js.Any.fromFunction3(value))
+    
+    inline def imageNull: this.type = set("image", null)
+    
+    inline def imageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("image", js.Array(value*))
+    
+    inline def imageVdomElement(value: VdomElement): this.type = set("image", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def link(value: Boolean): this.type = set("link", value.asInstanceOf[js.Any])
+    
+    inline def meta(value: SemanticShorthandItem[CardMetaProps]): this.type = set("meta", value.asInstanceOf[js.Any])
+    
+    inline def metaFunction3(
+      value: (/* component */ ElementType, CardMetaProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("meta", js.Any.fromFunction3(value))
+    
+    inline def metaNull: this.type = set("meta", null)
+    
+    inline def metaVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("meta", js.Array(value*))
+    
+    inline def metaVdomElement(value: VdomElement): this.type = set("meta", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onClick(value: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ CardProps) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLAnchorElement], t1: /* data */ CardProps) => (value(t0, t1)).runNow()))
+    
+    inline def raised(value: Boolean): this.type = set("raised", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Card.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

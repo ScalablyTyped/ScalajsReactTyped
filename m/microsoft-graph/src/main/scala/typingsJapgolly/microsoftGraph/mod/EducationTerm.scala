@@ -1,34 +1,54 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EducationTerm extends js.Object {
+trait EducationTerm extends StObject {
+  
   // Display name of the term.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // End of the term.
-  var endDate: js.UndefOr[String] = js.undefined
+  var endDate: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // ID of term in the syncing system.
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Start of the term.
-  var startDate: js.UndefOr[String] = js.undefined
+  var startDate: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object EducationTerm {
-  @scala.inline
-  def apply(
-    displayName: String = null,
-    endDate: String = null,
-    externalId: String = null,
-    startDate: String = null
-  ): EducationTerm = {
+  
+  inline def apply(): EducationTerm = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationTerm]
   }
+  
+  extension [Self <: EducationTerm](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
+    
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    
+    inline def setStartDate(value: NullableOption[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
+    
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+  }
 }
-

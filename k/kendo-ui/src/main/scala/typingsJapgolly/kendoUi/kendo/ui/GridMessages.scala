@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridMessages extends js.Object {
+trait GridMessages extends StObject {
+  
   var commands: js.UndefOr[GridMessagesCommands] = js.undefined
+  
   var expandCollapseColumnHeader: js.UndefOr[String] = js.undefined
+  
   var noRecords: js.UndefOr[String] = js.undefined
 }
-
 object GridMessages {
-  @scala.inline
-  def apply(
-    commands: GridMessagesCommands = null,
-    expandCollapseColumnHeader: String = null,
-    noRecords: String = null
-  ): GridMessages = {
+  
+  inline def apply(): GridMessages = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (expandCollapseColumnHeader != null) __obj.updateDynamic("expandCollapseColumnHeader")(expandCollapseColumnHeader.asInstanceOf[js.Any])
-    if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridMessages]
   }
+  
+  extension [Self <: GridMessages](x: Self) {
+    
+    inline def setCommands(value: GridMessagesCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    
+    inline def setExpandCollapseColumnHeader(value: String): Self = StObject.set(x, "expandCollapseColumnHeader", value.asInstanceOf[js.Any])
+    
+    inline def setExpandCollapseColumnHeaderUndefined: Self = StObject.set(x, "expandCollapseColumnHeader", js.undefined)
+    
+    inline def setNoRecords(value: String): Self = StObject.set(x, "noRecords", value.asInstanceOf[js.Any])
+    
+    inline def setNoRecordsUndefined: Self = StObject.set(x, "noRecords", js.undefined)
+  }
 }
-

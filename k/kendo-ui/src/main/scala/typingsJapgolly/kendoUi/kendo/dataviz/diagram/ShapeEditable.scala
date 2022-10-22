@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShapeEditable extends js.Object {
+trait ShapeEditable extends StObject {
+  
   var connect: js.UndefOr[Boolean] = js.undefined
 }
-
 object ShapeEditable {
-  @scala.inline
-  def apply(connect: js.UndefOr[Boolean] = js.undefined): ShapeEditable = {
+  
+  inline def apply(): ShapeEditable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connect)) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeEditable]
   }
+  
+  extension [Self <: ShapeEditable](x: Self) {
+    
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+  }
 }
-

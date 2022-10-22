@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxActionSheetOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxActionSheet.ItemLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxActionSheet")
+@JSImport("devextreme", "default.ui.dxActionSheet")
 @js.native
-class dxActionSheet protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxActionSheet {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxActionSheetOptions) = this()
-  def this(element: Element, options: dxActionSheetOptions) = this()
-}
-
+open class dxActionSheet[TItem /* <: ItemLike[TKey] */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxActionSheet[TItem, TKey]

@@ -1,14 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
-import typingsJapgolly.gitlab.baseServiceMod.BaseServiceOptions
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "GroupAccessRequests")
 @js.native
-class GroupAccessRequests ()
-  extends typingsJapgolly.gitlab.servicesMod.GroupAccessRequests {
+open class GroupAccessRequests protected ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.GroupAccessRequests {
   def this(options: BaseServiceOptions) = this()
 }
-

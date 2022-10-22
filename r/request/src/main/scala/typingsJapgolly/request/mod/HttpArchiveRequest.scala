@@ -1,31 +1,45 @@
 package typingsJapgolly.request.mod
 
-import typingsJapgolly.request.AnonMimeType
+import typingsJapgolly.request.anon.MimeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HttpArchiveRequest extends js.Object {
+trait HttpArchiveRequest extends StObject {
+  
   var headers: js.UndefOr[js.Array[NameValuePair]] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
-  var postData: js.UndefOr[AnonMimeType] = js.undefined
+  
+  var postData: js.UndefOr[MimeType] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object HttpArchiveRequest {
-  @scala.inline
-  def apply(
-    headers: js.Array[NameValuePair] = null,
-    method: String = null,
-    postData: AnonMimeType = null,
-    url: String = null
-  ): HttpArchiveRequest = {
+  
+  inline def apply(): HttpArchiveRequest = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (postData != null) __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpArchiveRequest]
   }
+  
+  extension [Self <: HttpArchiveRequest](x: Self) {
+    
+    inline def setHeaders(value: js.Array[NameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setHeadersVarargs(value: NameValuePair*): Self = StObject.set(x, "headers", js.Array(value*))
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setPostData(value: MimeType): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

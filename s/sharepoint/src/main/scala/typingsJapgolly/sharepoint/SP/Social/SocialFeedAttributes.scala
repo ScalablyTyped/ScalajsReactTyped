@@ -1,13 +1,11 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialFeedAttributes extends js.Object
-
+sealed trait SocialFeedAttributes extends StObject
 // For some reasons this enum doesn't exist
 // enum SocialFollowResult {
 //    ok = 0,
@@ -19,20 +17,15 @@ sealed trait SocialFeedAttributes extends js.Object
   This type provides information about whether the feed on the server contains additional threads that were not returned. */
 @JSGlobal("SP.Social.SocialFeedAttributes")
 @js.native
-object SocialFeedAttributes extends js.Object {
-  @js.native
-  sealed trait moreThreadsAvailable extends SocialFeedAttributes
+object SocialFeedAttributes extends StObject {
   
   @js.native
-  sealed trait none extends SocialFeedAttributes
+  sealed trait moreThreadsAvailable
+    extends StObject
+       with SocialFeedAttributes
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialFeedAttributes with Double] = js.native
-  /* 1 */ @js.native
-  object moreThreadsAvailable extends TopLevel[moreThreadsAvailable with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with SocialFeedAttributes
 }
-

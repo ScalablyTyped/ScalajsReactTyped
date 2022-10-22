@@ -1,8 +1,6 @@
 package typingsJapgolly.ionicReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
 import japgolly.scalajs.react.ReactCompositionEventFrom
@@ -16,15 +14,18 @@ import japgolly.scalajs.react.ReactTouchEventFrom
 import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement
-import typingsJapgolly.ionicCore.mod.Color
-import typingsJapgolly.ionicReact.PickIonRouterLinkcolorhre
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.ionicCore.distTypesComponentsMod.global.HTMLIonRouterLinkElement
+import typingsJapgolly.ionicReact.anon.PickanycolorrouterAnimati
+import typingsJapgolly.ionicReact.distTypesModelsRouterOptionsMod.RouterOptions
+import typingsJapgolly.ionicReact.ionicReactStrings.`additions removals`
 import typingsJapgolly.ionicReact.ionicReactStrings.`additions text`
 import typingsJapgolly.ionicReact.ionicReactStrings.`inline`
+import typingsJapgolly.ionicReact.ionicReactStrings.`removals additions`
+import typingsJapgolly.ionicReact.ionicReactStrings.`removals text`
+import typingsJapgolly.ionicReact.ionicReactStrings.`text additions`
+import typingsJapgolly.ionicReact.ionicReactStrings.`text removals`
 import typingsJapgolly.ionicReact.ionicReactStrings.additions
 import typingsJapgolly.ionicReact.ionicReactStrings.all
 import typingsJapgolly.ionicReact.ionicReactStrings.ascending
@@ -50,9 +51,11 @@ import typingsJapgolly.ionicReact.ionicReactStrings.location
 import typingsJapgolly.ionicReact.ionicReactStrings.menu
 import typingsJapgolly.ionicReact.ionicReactStrings.mixed
 import typingsJapgolly.ionicReact.ionicReactStrings.move
+import typingsJapgolly.ionicReact.ionicReactStrings.no
 import typingsJapgolly.ionicReact.ionicReactStrings.none
 import typingsJapgolly.ionicReact.ionicReactStrings.numeric
 import typingsJapgolly.ionicReact.ionicReactStrings.off
+import typingsJapgolly.ionicReact.ionicReactStrings.on
 import typingsJapgolly.ionicReact.ionicReactStrings.other
 import typingsJapgolly.ionicReact.ionicReactStrings.page
 import typingsJapgolly.ionicReact.ionicReactStrings.polite
@@ -68,527 +71,552 @@ import typingsJapgolly.ionicReact.ionicReactStrings.time
 import typingsJapgolly.ionicReact.ionicReactStrings.tree
 import typingsJapgolly.ionicReact.ionicReactStrings.url
 import typingsJapgolly.ionicReact.ionicReactStrings.vertical
-import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.ionicReact.ionicReactStrings.yes
+import typingsJapgolly.react.anon.Html
+import typingsJapgolly.react.mod.AriaRole
 import typingsJapgolly.react.mod.Booleanish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IonRouterLink {
-  def apply(
-    onAbortCapture: js.Any,
-    onAnimationEndCapture: js.Any,
-    onAnimationIterationCapture: js.Any,
-    onAnimationStartCapture: js.Any,
-    onAuxClickCapture: js.Any,
-    onBeforeInputCapture: js.Any,
-    onBlurCapture: js.Any,
-    onCanPlayCapture: js.Any,
-    onCanPlayThroughCapture: js.Any,
-    onChangeCapture: js.Any,
-    onClickCapture: js.Any,
-    onCompositionEndCapture: js.Any,
-    onCompositionStartCapture: js.Any,
-    onCompositionUpdateCapture: js.Any,
-    onContextMenuCapture: js.Any,
-    onCopyCapture: js.Any,
-    onCutCapture: js.Any,
-    onDoubleClickCapture: js.Any,
-    onDragCapture: js.Any,
-    onDragEndCapture: js.Any,
-    onDragEnterCapture: js.Any,
-    onDragExitCapture: js.Any,
-    onDragLeaveCapture: js.Any,
-    onDragOverCapture: js.Any,
-    onDragStartCapture: js.Any,
-    onDropCapture: js.Any,
-    onDurationChangeCapture: js.Any,
-    onEmptiedCapture: js.Any,
-    onEncryptedCapture: js.Any,
-    onEndedCapture: js.Any,
-    onErrorCapture: js.Any,
-    onFocusCapture: js.Any,
-    onGotPointerCapture: js.Any,
-    onGotPointerCaptureCapture: js.Any,
-    onInputCapture: js.Any,
-    onInvalidCapture: js.Any,
-    onKeyDownCapture: js.Any,
-    onKeyPressCapture: js.Any,
-    onKeyUpCapture: js.Any,
-    onLoadCapture: js.Any,
-    onLoadStartCapture: js.Any,
-    onLoadedDataCapture: js.Any,
-    onLoadedMetadataCapture: js.Any,
-    onLostPointerCapture: js.Any,
-    onLostPointerCaptureCapture: js.Any,
-    onMouseDownCapture: js.Any,
-    onMouseMoveCapture: js.Any,
-    onMouseOutCapture: js.Any,
-    onMouseOverCapture: js.Any,
-    onMouseUpCapture: js.Any,
-    onPasteCapture: js.Any,
-    onPauseCapture: js.Any,
-    onPlayCapture: js.Any,
-    onPlayingCapture: js.Any,
-    onPointerCancelCapture: js.Any,
-    onPointerDownCapture: js.Any,
-    onPointerEnterCapture: js.Any,
-    onPointerLeaveCapture: js.Any,
-    onPointerMoveCapture: js.Any,
-    onPointerOutCapture: js.Any,
-    onPointerOverCapture: js.Any,
-    onPointerUpCapture: js.Any,
-    onProgressCapture: js.Any,
-    onRateChangeCapture: js.Any,
-    onResetCapture: js.Any,
-    onScrollCapture: js.Any,
-    onSeekedCapture: js.Any,
-    onSeekingCapture: js.Any,
-    onSelectCapture: js.Any,
-    onStalledCapture: js.Any,
-    onSubmitCapture: js.Any,
-    onSuspendCapture: js.Any,
-    onTimeUpdateCapture: js.Any,
-    onTouchCancelCapture: js.Any,
-    onTouchEndCapture: js.Any,
-    onTouchMoveCapture: js.Any,
-    onTouchStartCapture: js.Any,
-    onTransitionEndCapture: js.Any,
-    onVolumeChangeCapture: js.Any,
-    onWaitingCapture: js.Any,
-    onWheelCapture: js.Any,
-    about: String = null,
-    accessKey: String = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    autoCapitalize: String = null,
-    autoCorrect: String = null,
-    autoSave: String = null,
-    `class`: String = null,
-    className: String = null,
-    color: Color with String = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    datatype: String = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    lang: String = null,
-    onAbort: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onAnimationEnd: ReactAnimationEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onAnimationIteration: ReactAnimationEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onAnimationStart: ReactAnimationEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onAuxClick: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onBeforeInput: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onBlur: ReactFocusEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCanPlay: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCanPlayThrough: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onChange: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onClick: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCompositionEnd: ReactCompositionEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCompositionStart: ReactCompositionEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCompositionUpdate: ReactCompositionEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCopy: ReactClipboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onCut: ReactClipboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDoubleClick: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDrag: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragEnd: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragEnter: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragExit: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragLeave: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragOver: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDragStart: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDrop: ReactDragEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onDurationChange: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onEmptied: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onEncrypted: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onEnded: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onError: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onInput: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onInvalid: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onLoad: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onLoadStart: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onLoadedData: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onLoadedMetadata: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseMove: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseOut: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseOver: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPaste: ReactClipboardEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPause: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPlay: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPlaying: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerCancel: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerDown: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerEnter: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerLeave: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerMove: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerOut: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerOver: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onPointerUp: ReactPointerEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onProgress: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onRateChange: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onReset: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onScroll: ReactUIEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onSeeked: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onSeeking: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onSelect: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onStalled: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onSubmit: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onSuspend: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTimeUpdate: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTouchCancel: ReactTouchEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTouchEnd: ReactTouchEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTouchMove: ReactTouchEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTouchStart: ReactTouchEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onTransitionEnd: ReactTransitionEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onVolumeChange: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onWaiting: ReactEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    onWheel: ReactWheelEventFrom[HTMLIonRouterLinkElement with Element] => Callback = null,
-    placeholder: String = null,
-    prefix: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    rel: String = null,
-    resource: String = null,
-    results: Int | Double = null,
-    role: String = null,
-    routerDirection: none | forward | back | root = null,
-    routerLink: String = null,
-    security: String = null,
-    slot: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PickIonRouterLinkcolorhre, Ref, Unit, PickIonRouterLinkcolorhre] = {
-    val __obj = js.Dynamic.literal(onAbortCapture = onAbortCapture.asInstanceOf[js.Any], onAnimationEndCapture = onAnimationEndCapture.asInstanceOf[js.Any], onAnimationIterationCapture = onAnimationIterationCapture.asInstanceOf[js.Any], onAnimationStartCapture = onAnimationStartCapture.asInstanceOf[js.Any], onAuxClickCapture = onAuxClickCapture.asInstanceOf[js.Any], onBeforeInputCapture = onBeforeInputCapture.asInstanceOf[js.Any], onBlurCapture = onBlurCapture.asInstanceOf[js.Any], onCanPlayCapture = onCanPlayCapture.asInstanceOf[js.Any], onCanPlayThroughCapture = onCanPlayThroughCapture.asInstanceOf[js.Any], onChangeCapture = onChangeCapture.asInstanceOf[js.Any], onClickCapture = onClickCapture.asInstanceOf[js.Any], onCompositionEndCapture = onCompositionEndCapture.asInstanceOf[js.Any], onCompositionStartCapture = onCompositionStartCapture.asInstanceOf[js.Any], onCompositionUpdateCapture = onCompositionUpdateCapture.asInstanceOf[js.Any], onContextMenuCapture = onContextMenuCapture.asInstanceOf[js.Any], onCopyCapture = onCopyCapture.asInstanceOf[js.Any], onCutCapture = onCutCapture.asInstanceOf[js.Any], onDoubleClickCapture = onDoubleClickCapture.asInstanceOf[js.Any], onDragCapture = onDragCapture.asInstanceOf[js.Any], onDragEndCapture = onDragEndCapture.asInstanceOf[js.Any], onDragEnterCapture = onDragEnterCapture.asInstanceOf[js.Any], onDragExitCapture = onDragExitCapture.asInstanceOf[js.Any], onDragLeaveCapture = onDragLeaveCapture.asInstanceOf[js.Any], onDragOverCapture = onDragOverCapture.asInstanceOf[js.Any], onDragStartCapture = onDragStartCapture.asInstanceOf[js.Any], onDropCapture = onDropCapture.asInstanceOf[js.Any], onDurationChangeCapture = onDurationChangeCapture.asInstanceOf[js.Any], onEmptiedCapture = onEmptiedCapture.asInstanceOf[js.Any], onEncryptedCapture = onEncryptedCapture.asInstanceOf[js.Any], onEndedCapture = onEndedCapture.asInstanceOf[js.Any], onErrorCapture = onErrorCapture.asInstanceOf[js.Any], onFocusCapture = onFocusCapture.asInstanceOf[js.Any], onGotPointerCapture = onGotPointerCapture.asInstanceOf[js.Any], onGotPointerCaptureCapture = onGotPointerCaptureCapture.asInstanceOf[js.Any], onInputCapture = onInputCapture.asInstanceOf[js.Any], onInvalidCapture = onInvalidCapture.asInstanceOf[js.Any], onKeyDownCapture = onKeyDownCapture.asInstanceOf[js.Any], onKeyPressCapture = onKeyPressCapture.asInstanceOf[js.Any], onKeyUpCapture = onKeyUpCapture.asInstanceOf[js.Any], onLoadCapture = onLoadCapture.asInstanceOf[js.Any], onLoadStartCapture = onLoadStartCapture.asInstanceOf[js.Any], onLoadedDataCapture = onLoadedDataCapture.asInstanceOf[js.Any], onLoadedMetadataCapture = onLoadedMetadataCapture.asInstanceOf[js.Any], onLostPointerCapture = onLostPointerCapture.asInstanceOf[js.Any], onLostPointerCaptureCapture = onLostPointerCaptureCapture.asInstanceOf[js.Any], onMouseDownCapture = onMouseDownCapture.asInstanceOf[js.Any], onMouseMoveCapture = onMouseMoveCapture.asInstanceOf[js.Any], onMouseOutCapture = onMouseOutCapture.asInstanceOf[js.Any], onMouseOverCapture = onMouseOverCapture.asInstanceOf[js.Any], onMouseUpCapture = onMouseUpCapture.asInstanceOf[js.Any], onPasteCapture = onPasteCapture.asInstanceOf[js.Any], onPauseCapture = onPauseCapture.asInstanceOf[js.Any], onPlayCapture = onPlayCapture.asInstanceOf[js.Any], onPlayingCapture = onPlayingCapture.asInstanceOf[js.Any], onPointerCancelCapture = onPointerCancelCapture.asInstanceOf[js.Any], onPointerDownCapture = onPointerDownCapture.asInstanceOf[js.Any], onPointerEnterCapture = onPointerEnterCapture.asInstanceOf[js.Any], onPointerLeaveCapture = onPointerLeaveCapture.asInstanceOf[js.Any], onPointerMoveCapture = onPointerMoveCapture.asInstanceOf[js.Any], onPointerOutCapture = onPointerOutCapture.asInstanceOf[js.Any], onPointerOverCapture = onPointerOverCapture.asInstanceOf[js.Any], onPointerUpCapture = onPointerUpCapture.asInstanceOf[js.Any], onProgressCapture = onProgressCapture.asInstanceOf[js.Any], onRateChangeCapture = onRateChangeCapture.asInstanceOf[js.Any], onResetCapture = onResetCapture.asInstanceOf[js.Any], onScrollCapture = onScrollCapture.asInstanceOf[js.Any], onSeekedCapture = onSeekedCapture.asInstanceOf[js.Any], onSeekingCapture = onSeekingCapture.asInstanceOf[js.Any], onSelectCapture = onSelectCapture.asInstanceOf[js.Any], onStalledCapture = onStalledCapture.asInstanceOf[js.Any], onSubmitCapture = onSubmitCapture.asInstanceOf[js.Any], onSuspendCapture = onSuspendCapture.asInstanceOf[js.Any], onTimeUpdateCapture = onTimeUpdateCapture.asInstanceOf[js.Any], onTouchCancelCapture = onTouchCancelCapture.asInstanceOf[js.Any], onTouchEndCapture = onTouchEndCapture.asInstanceOf[js.Any], onTouchMoveCapture = onTouchMoveCapture.asInstanceOf[js.Any], onTouchStartCapture = onTouchStartCapture.asInstanceOf[js.Any], onTransitionEndCapture = onTransitionEndCapture.asInstanceOf[js.Any], onVolumeChangeCapture = onVolumeChangeCapture.asInstanceOf[js.Any], onWaitingCapture = onWaitingCapture.asInstanceOf[js.Any], onWheelCapture = onWheelCapture.asInstanceOf[js.Any])
   
-      if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onAbort(t0).runNow()))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onAnimationEnd(t0).runNow()))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onAnimationIteration(t0).runNow()))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onAnimationStart(t0).runNow()))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onAuxClick(t0).runNow()))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onBeforeInput(t0).runNow()))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCanPlay(t0).runNow()))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCanPlayThrough(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onClick(t0).runNow()))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCompositionEnd(t0).runNow()))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCompositionStart(t0).runNow()))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCompositionUpdate(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onContextMenu(t0).runNow()))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCopy(t0).runNow()))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onCut(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDoubleClick(t0).runNow()))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDrag(t0).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragEnd(t0).runNow()))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragEnter(t0).runNow()))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragExit(t0).runNow()))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragLeave(t0).runNow()))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragOver(t0).runNow()))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDragStart(t0).runNow()))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDrop(t0).runNow()))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onDurationChange(t0).runNow()))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onEmptied(t0).runNow()))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onEncrypted(t0).runNow()))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onEnded(t0).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onError(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onInput(t0).runNow()))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onInvalid(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onKeyUp(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onLoad(t0).runNow()))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onLoadStart(t0).runNow()))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onLoadedData(t0).runNow()))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onLoadedMetadata(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseOut(t0).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseOver(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onMouseUp(t0).runNow()))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPaste(t0).runNow()))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPause(t0).runNow()))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPlay(t0).runNow()))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPlaying(t0).runNow()))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerCancel(t0).runNow()))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerDown(t0).runNow()))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerEnter(t0).runNow()))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerLeave(t0).runNow()))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerMove(t0).runNow()))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerOut(t0).runNow()))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerOver(t0).runNow()))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onPointerUp(t0).runNow()))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onProgress(t0).runNow()))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onRateChange(t0).runNow()))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onReset(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactUIEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onScroll(t0).runNow()))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onSeeked(t0).runNow()))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onSeeking(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onSelect(t0).runNow()))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onStalled(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onSubmit(t0).runNow()))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onSuspend(t0).runNow()))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTimeUpdate(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTransitionEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onTransitionEnd(t0).runNow()))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onVolumeChange(t0).runNow()))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onWaiting(t0).runNow()))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactWheelEventFrom[
-  typingsJapgolly.ionicCore.componentsMod._Global_.HTMLIonRouterLinkElement with org.scalajs.dom.raw.Element]) => onWheel(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
-    if (routerLink != null) __obj.updateDynamic("routerLink")(routerLink.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.ionicReact.PickIonRouterLinkcolorhre, 
-  japgolly.scalajs.react.Children.Varargs, 
-  japgolly.scalajs.react.raw.React.Ref](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.ionicReact.PickIonRouterLinkcolorhre])(children: _*)
+  inline def apply(color: js.UndefOr[Any] & js.UndefOr[String]): Builder = {
+    val __props = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PickanycolorrouterAnimati]))
   }
+  
   @JSImport("@ionic/react", "IonRouterLink")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLIonRouterLinkElement] {
+    
+    inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
+    
+    inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
+    
+    inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+    
+    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+    
+    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+    
+    inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+    
+    inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+    
+    inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+    
+    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    
+    inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+    
+    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+    
+    inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+    
+    inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+    
+    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+    
+    inline def `aria-relevant`(
+      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+    
+    inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+    
+    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+    
+    inline def autoCapitalize(value: String): this.type = set("autoCapitalize", value.asInstanceOf[js.Any])
+    
+    inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
+    
+    inline def `class`(value: String): this.type = set("class", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    
+    inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
+    
+    inline def dangerouslySetInnerHTML(value: Html): this.type = set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    
+    inline def datatype(value: String): this.type = set("datatype", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String | Double | js.Array[String]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueVarargs(value: String*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def dir(value: String): this.type = set("dir", value.asInstanceOf[js.Any])
+    
+    inline def draggable(value: Booleanish): this.type = set("draggable", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def href(value: Any): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
+    
+    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    
+    inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
+    
+    inline def itemID(value: String): this.type = set("itemID", value.asInstanceOf[js.Any])
+    
+    inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
+    
+    inline def itemRef(value: String): this.type = set("itemRef", value.asInstanceOf[js.Any])
+    
+    inline def itemScope(value: Boolean): this.type = set("itemScope", value.asInstanceOf[js.Any])
+    
+    inline def itemType(value: String): this.type = set("itemType", value.asInstanceOf[js.Any])
+    
+    inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
+    
+    inline def onAbort(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onAbortCapture(value: Any): this.type = set("onAbortCapture", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationEndCapture(value: Any): this.type = set("onAnimationEndCapture", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationIterationCapture(value: Any): this.type = set("onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationStartCapture(value: Any): this.type = set("onAnimationStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def onAuxClick(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onAuxClickCapture(value: Any): this.type = set("onAuxClickCapture", value.asInstanceOf[js.Any])
+    
+    inline def onBeforeInput(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onBeforeInputCapture(value: Any): this.type = set("onBeforeInputCapture", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: ReactFocusEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onBlurCapture(value: Any): this.type = set("onBlurCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCanPlay(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayCapture(value: Any): this.type = set("onCanPlayCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCanPlayThrough(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayThroughCapture(value: Any): this.type = set("onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onChangeCapture(value: Any): this.type = set("onChangeCapture", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onClickCapture(value: Any): this.type = set("onClickCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionEndCapture(value: Any): this.type = set("onCompositionEndCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionStartCapture(value: Any): this.type = set("onCompositionStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionUpdateCapture(value: Any): this.type = set("onCompositionUpdateCapture", value.asInstanceOf[js.Any])
+    
+    inline def onContextMenu(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onContextMenuCapture(value: Any): this.type = set("onContextMenuCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCopy(value: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCopyCapture(value: Any): this.type = set("onCopyCapture", value.asInstanceOf[js.Any])
+    
+    inline def onCut(value: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onCutCapture(value: Any): this.type = set("onCutCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDoubleClickCapture(value: Any): this.type = set("onDoubleClickCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDrag(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragCapture(value: Any): this.type = set("onDragCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragEnd(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEndCapture(value: Any): this.type = set("onDragEndCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragEnter(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEnterCapture(value: Any): this.type = set("onDragEnterCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragExit(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragExitCapture(value: Any): this.type = set("onDragExitCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragLeave(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragLeaveCapture(value: Any): this.type = set("onDragLeaveCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragOver(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragOverCapture(value: Any): this.type = set("onDragOverCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDragStart(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragStartCapture(value: Any): this.type = set("onDragStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDrop(value: ReactDragEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDropCapture(value: Any): this.type = set("onDropCapture", value.asInstanceOf[js.Any])
+    
+    inline def onDurationChange(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onDurationChangeCapture(value: Any): this.type = set("onDurationChangeCapture", value.asInstanceOf[js.Any])
+    
+    inline def onEmptied(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onEmptiedCapture(value: Any): this.type = set("onEmptiedCapture", value.asInstanceOf[js.Any])
+    
+    inline def onEncrypted(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onEncryptedCapture(value: Any): this.type = set("onEncryptedCapture", value.asInstanceOf[js.Any])
+    
+    inline def onEnded(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onEndedCapture(value: Any): this.type = set("onEndedCapture", value.asInstanceOf[js.Any])
+    
+    inline def onError(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onErrorCapture(value: Any): this.type = set("onErrorCapture", value.asInstanceOf[js.Any])
+    
+    inline def onFocus(value: ReactFocusEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onFocusCapture(value: Any): this.type = set("onFocusCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCapture(value: Any): this.type = set("onGotPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onGotPointerCaptureCapture(value: Any): this.type = set("onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
+    
+    inline def onInput(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onInputCapture(value: Any): this.type = set("onInputCapture", value.asInstanceOf[js.Any])
+    
+    inline def onInvalid(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onInvalidCapture(value: Any): this.type = set("onInvalidCapture", value.asInstanceOf[js.Any])
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyDownCapture(value: Any): this.type = set("onKeyDownCapture", value.asInstanceOf[js.Any])
+    
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyPressCapture(value: Any): this.type = set("onKeyPressCapture", value.asInstanceOf[js.Any])
+    
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyUpCapture(value: Any): this.type = set("onKeyUpCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLoad(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadCapture(value: Any): this.type = set("onLoadCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLoadStart(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadStartCapture(value: Any): this.type = set("onLoadStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLoadedData(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedDataCapture(value: Any): this.type = set("onLoadedDataCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLoadedMetadata(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedMetadataCapture(value: Any): this.type = set("onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCapture(value: Any): this.type = set("onLostPointerCapture", value.asInstanceOf[js.Any])
+    
+    inline def onLostPointerCaptureCapture(value: Any): this.type = set("onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    
+    inline def onMouseDown(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseDownCapture(value: Any): this.type = set("onMouseDownCapture", value.asInstanceOf[js.Any])
+    
+    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseMoveCapture(value: Any): this.type = set("onMouseMoveCapture", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOut(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOutCapture(value: Any): this.type = set("onMouseOutCapture", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOver(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOverCapture(value: Any): this.type = set("onMouseOverCapture", value.asInstanceOf[js.Any])
+    
+    inline def onMouseUp(value: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseUpCapture(value: Any): this.type = set("onMouseUpCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPaste(value: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPasteCapture(value: Any): this.type = set("onPasteCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPause(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPauseCapture(value: Any): this.type = set("onPauseCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPlay(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlayCapture(value: Any): this.type = set("onPlayCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPlaying(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlayingCapture(value: Any): this.type = set("onPlayingCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancelCapture(value: Any): this.type = set("onPointerCancelCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerDown(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDownCapture(value: Any): this.type = set("onPointerDownCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnterCapture(value: Any): this.type = set("onPointerEnterCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeaveCapture(value: Any): this.type = set("onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerMove(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerMoveCapture(value: Any): this.type = set("onPointerMoveCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerOut(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOutCapture(value: Any): this.type = set("onPointerOutCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerOver(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOverCapture(value: Any): this.type = set("onPointerOverCapture", value.asInstanceOf[js.Any])
+    
+    inline def onPointerUp(value: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUpCapture(value: Any): this.type = set("onPointerUpCapture", value.asInstanceOf[js.Any])
+    
+    inline def onProgress(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onProgressCapture(value: Any): this.type = set("onProgressCapture", value.asInstanceOf[js.Any])
+    
+    inline def onRateChange(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onRateChangeCapture(value: Any): this.type = set("onRateChangeCapture", value.asInstanceOf[js.Any])
+    
+    inline def onReset(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onResetCapture(value: Any): this.type = set("onResetCapture", value.asInstanceOf[js.Any])
+    
+    inline def onScroll(value: ReactUIEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onScrollCapture(value: Any): this.type = set("onScrollCapture", value.asInstanceOf[js.Any])
+    
+    inline def onSeeked(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeekedCapture(value: Any): this.type = set("onSeekedCapture", value.asInstanceOf[js.Any])
+    
+    inline def onSeeking(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeekingCapture(value: Any): this.type = set("onSeekingCapture", value.asInstanceOf[js.Any])
+    
+    inline def onSelect(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onSelectCapture(value: Any): this.type = set("onSelectCapture", value.asInstanceOf[js.Any])
+    
+    inline def onStalled(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onStalledCapture(value: Any): this.type = set("onStalledCapture", value.asInstanceOf[js.Any])
+    
+    inline def onSubmit(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onSubmitCapture(value: Any): this.type = set("onSubmitCapture", value.asInstanceOf[js.Any])
+    
+    inline def onSuspend(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onSuspendCapture(value: Any): this.type = set("onSuspendCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTimeUpdate(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTimeUpdateCapture(value: Any): this.type = set("onTimeUpdateCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchCancelCapture(value: Any): this.type = set("onTouchCancelCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEndCapture(value: Any): this.type = set("onTouchEndCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTouchMove(value: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchMoveCapture(value: Any): this.type = set("onTouchMoveCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTouchStart(value: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchStartCapture(value: Any): this.type = set("onTouchStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onTransitionEndCapture(value: Any): this.type = set("onTransitionEndCapture", value.asInstanceOf[js.Any])
+    
+    inline def onVolumeChange(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onVolumeChangeCapture(value: Any): this.type = set("onVolumeChangeCapture", value.asInstanceOf[js.Any])
+    
+    inline def onWaiting(value: ReactEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onWaitingCapture(value: Any): this.type = set("onWaitingCapture", value.asInstanceOf[js.Any])
+    
+    inline def onWheel(value: ReactWheelEventFrom[HTMLIonRouterLinkElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLIonRouterLinkElement & Element]) => value(t0).runNow()))
+    
+    inline def onWheelCapture(value: Any): this.type = set("onWheelCapture", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def prefix(value: String): this.type = set("prefix", value.asInstanceOf[js.Any])
+    
+    inline def property(value: String): this.type = set("property", value.asInstanceOf[js.Any])
+    
+    inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
+    
+    inline def rel(value: Any): this.type = set("rel", value.asInstanceOf[js.Any])
+    
+    inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
+    
+    inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def routerAnimation(value: Any): this.type = set("routerAnimation", value.asInstanceOf[js.Any])
+    
+    inline def routerDirection(value: none | forward | back | root): this.type = set("routerDirection", value.asInstanceOf[js.Any])
+    
+    inline def routerLink(value: String): this.type = set("routerLink", value.asInstanceOf[js.Any])
+    
+    inline def routerOptions(value: RouterOptions): this.type = set("routerOptions", value.asInstanceOf[js.Any])
+    
+    inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
+    
+    inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
+    
+    inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
+    
+    inline def suppressContentEditableWarning(value: Boolean): this.type = set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    
+    inline def suppressHydrationWarning(value: Boolean): this.type = set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def target(value: Any): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    
+    inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
+    
+    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    
+    inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PickanycolorrouterAnimati): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

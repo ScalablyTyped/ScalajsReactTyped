@@ -1,25 +1,18 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.outputAstMod.TypeModifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ExpressionType")
 @js.native
-class ExpressionType protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.ExpressionType {
-  def this(value: typingsJapgolly.angularCompiler.outputAstMod.Expression) = this()
-  def this(value: typingsJapgolly.angularCompiler.outputAstMod.Expression, modifiers: js.Array[TypeModifier]) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    modifiers: js.Array[TypeModifier],
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type]
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    modifiers: Null,
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type]
-  ) = this()
+open class ExpressionType protected () extends Type {
+  def this(value: Expression) = this()
+  def this(value: Expression, modifiers: TypeModifier) = this()
+  def this(value: Expression, modifiers: Unit, typeParams: js.Array[Type]) = this()
+  def this(value: Expression, modifiers: TypeModifier, typeParams: js.Array[Type]) = this()
+  
+  var typeParams: js.Array[Type] | Null = js.native
+  
+  var value: Expression = js.native
 }
-

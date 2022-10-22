@@ -1,20 +1,21 @@
 package typingsJapgolly.momentHijri
 
 import typingsJapgolly.momentHijri.mod.momentAugmentingMod.IUnitOfTime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentHijriStrings {
-  @js.native
-  sealed trait iMonth extends IUnitOfTime
   
   @js.native
-  sealed trait iYear extends IUnitOfTime
+  sealed trait iMonth
+    extends StObject
+       with IUnitOfTime
+  inline def iMonth: iMonth = "iMonth".asInstanceOf[iMonth]
   
-  @scala.inline
-  def iMonth: iMonth = "iMonth".asInstanceOf[iMonth]
-  @scala.inline
-  def iYear: iYear = "iYear".asInstanceOf[iYear]
+  @js.native
+  sealed trait iYear
+    extends StObject
+       with IUnitOfTime
+  inline def iYear: iYear = "iYear".asInstanceOf[iYear]
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Point extends js.Object {
+trait Point extends StObject {
+  
   var x: js.UndefOr[Double] = js.undefined
+  
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object Point {
-  @scala.inline
-  def apply(x: Int | Double = null, y: Int | Double = null): Point = {
+  
+  inline def apply(): Point = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
+  
+  extension [Self <: Point](x: Self) {
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

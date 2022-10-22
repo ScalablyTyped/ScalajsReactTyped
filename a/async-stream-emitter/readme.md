@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-stream-emitter
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 An alternantive to EventEmitter using consumable streams.
@@ -10,10 +10,10 @@ An alternantive to EventEmitter using consumable streams.
 | ------------------ | :-------------: |
 | Full name          | async-stream-emitter |
 | Keywords           | iterable, async, stream, event, emitter, for-await-of |
-| # releases         | 11 |
-| # dependents       | 16 |
-| # downloads        | 57458 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 19187.666666666668 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/async-stream-emitter#readme)

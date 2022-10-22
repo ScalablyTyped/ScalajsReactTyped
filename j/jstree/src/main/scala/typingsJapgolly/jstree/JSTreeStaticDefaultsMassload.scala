@@ -1,11 +1,13 @@
 package typingsJapgolly.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeStaticDefaultsMassload extends js.Object {
-  var data: js.Any
+trait JSTreeStaticDefaultsMassload extends StObject {
+  
+  var data: Any
+  
   /**
     * massload configuration
     *
@@ -26,15 +28,19 @@ trait JSTreeStaticDefaultsMassload extends js.Object {
     * @name $.jstree.defaults.massload
     * @plugin massload
     */
-  var url: js.Any
+  var url: Any
 }
-
 object JSTreeStaticDefaultsMassload {
-  @scala.inline
-  def apply(data: js.Any, url: js.Any): JSTreeStaticDefaultsMassload = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
+  inline def apply(data: Any, url: Any): JSTreeStaticDefaultsMassload = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsMassload]
   }
+  
+  extension [Self <: JSTreeStaticDefaultsMassload](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

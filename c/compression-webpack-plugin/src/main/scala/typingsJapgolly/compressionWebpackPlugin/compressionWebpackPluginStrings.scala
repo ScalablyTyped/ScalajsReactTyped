@@ -1,30 +1,16 @@
 package typingsJapgolly.compressionWebpackPlugin
 
-import typingsJapgolly.compressionWebpackPlugin.mod.ZlibAlgorithm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compressionWebpackPluginStrings {
-  @js.native
-  sealed trait brotliCompress extends ZlibAlgorithm
   
   @js.native
-  sealed trait deflate extends ZlibAlgorithm
+  sealed trait `keep-source-map` extends StObject
+  inline def `keep-source-map`: `keep-source-map` = "keep-source-map".asInstanceOf[`keep-source-map`]
   
   @js.native
-  sealed trait deflateRaw extends ZlibAlgorithm
-  
-  @js.native
-  sealed trait gzip extends ZlibAlgorithm
-  
-  @scala.inline
-  def brotliCompress: brotliCompress = "brotliCompress".asInstanceOf[brotliCompress]
-  @scala.inline
-  def deflate: deflate = "deflate".asInstanceOf[deflate]
-  @scala.inline
-  def deflateRaw: deflateRaw = "deflateRaw".asInstanceOf[deflateRaw]
-  @scala.inline
-  def gzip: gzip = "gzip".asInstanceOf[gzip]
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }
-

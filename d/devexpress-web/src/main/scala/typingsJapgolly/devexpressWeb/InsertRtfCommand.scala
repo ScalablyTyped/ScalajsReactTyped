@@ -1,15 +1,17 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to add an RTF formatted content in the selected position.
   */
-@JSGlobal("InsertRtfCommand")
 @js.native
-class InsertRtfCommand () extends CommandWithSimpleStateBase {
+trait InsertRtfCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
+  
   /**
     * Executes the InsertRtfCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.
     * @param rtfText A string representing the RTF formatted content to insert.
@@ -25,5 +27,10 @@ class InsertRtfCommand () extends CommandWithSimpleStateBase {
     subDocumentId: Double,
     callback: js.Function2[/* interval */ Interval, /* isRtfValid */ Boolean, Unit]
   ): Boolean = js.native
+  def execute(
+    rtfText: String,
+    position: Double,
+    subDocumentId: Unit,
+    callback: js.Function2[/* interval */ Interval, /* isRtfValid */ Boolean, Unit]
+  ): Boolean = js.native
 }
-

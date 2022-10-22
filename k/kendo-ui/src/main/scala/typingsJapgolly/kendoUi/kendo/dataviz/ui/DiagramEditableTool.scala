@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramEditableTool extends js.Object {
+trait DiagramEditableTool extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
 }
-
 object DiagramEditableTool {
-  @scala.inline
-  def apply(name: String = null, step: Int | Double = null): DiagramEditableTool = {
+  
+  inline def apply(): DiagramEditableTool = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableTool]
   }
+  
+  extension [Self <: DiagramEditableTool](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+  }
 }
-

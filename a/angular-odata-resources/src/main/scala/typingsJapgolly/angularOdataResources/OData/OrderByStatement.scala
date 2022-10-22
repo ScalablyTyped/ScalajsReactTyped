@@ -1,15 +1,15 @@
 package typingsJapgolly.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OData.OrderByStatement")
 @js.native
-class OrderByStatement protected () extends IExecutable {
-  def this(propertyName: String) = this()
-  def this(propertyName: String, sortOrder: String) = this()
-  var direction: js.Any = js.native
-  var propertyName: js.Any = js.native
+trait OrderByStatement
+  extends StObject
+     with IExecutable {
+  
+  /* private */ var direction: Any = js.native
+  
+  /* private */ var propertyName: Any = js.native
 }
-

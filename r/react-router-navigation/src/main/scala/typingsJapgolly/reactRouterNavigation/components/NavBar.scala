@@ -1,43 +1,19 @@
 package typingsJapgolly.reactRouterNavigation.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Could't extract props from typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps because couldn't resolve ClassTree. */
 object NavBar {
-  def apply(
-    props: CardSubViewProps with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    CardSubViewProps with js.Object, 
-    typingsJapgolly.reactRouterNavigation.mod.NavBar, 
-    Unit, 
-    CardSubViewProps with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  def apply(p: CardSubViewProps): Default[typingsJapgolly.reactRouterNavigation.mod.NavBar] = new Default[typingsJapgolly.reactRouterNavigation.mod.NavBar](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterNavigation.mod.NavBar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps with js.Object])(children: _*)
-  }
   @JSImport("react-router-navigation", "NavBar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: NavBar.type): Default[typingsJapgolly.reactRouterNavigation.mod.NavBar] = new Default[typingsJapgolly.reactRouterNavigation.mod.NavBar](js.Array(this.component, js.Dictionary.empty))()
 }
-

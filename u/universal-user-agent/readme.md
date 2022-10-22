@@ -1,19 +1,19 @@
 
 # Scala.js typings for universal-user-agent
 
-Typings are for version 4.0.0
+Typings are for version 7.0.1
 
 ## Library description:
-Get a user agent string in both browser and node
+Get a user agent string across all JavaScript Runtime Environments
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | universal-user-agent |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 17 |
-| # downloads        | 40385450 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5675580333333332E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/gr2m/universal-user-agent#readme)

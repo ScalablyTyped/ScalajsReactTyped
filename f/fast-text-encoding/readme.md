@@ -10,15 +10,15 @@ Fast polyfill for TextEncoder and TextDecoder, only supports utf-8
 | ------------------ | :-------------: |
 | Full name          | fast-text-encoding |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 41843441 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7727027E7 |
+| # stars            | 75.0 |
 
 ## Links
-- [Homepage](https://github.com/samthor/fast-text-encoder#readme)
-- [Bugs](https://github.com/samthor/fast-text-encoder/issues)
-- [Repository](https://github.com/samthor/fast-text-encoder)
+- [Homepage](https://github.com/samthor/fast-text-encoding#readme)
+- [Bugs](https://github.com/samthor/fast-text-encoding/issues)
+- [Repository](https://github.com/samthor/fast-text-encoding)
 - [Npm](https://www.npmjs.com/package/fast-text-encoding)
     
 

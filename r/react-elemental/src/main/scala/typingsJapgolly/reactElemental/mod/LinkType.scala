@@ -1,24 +1,20 @@
 package typingsJapgolly.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactElemental.reactElementalStrings.regular
   - typingsJapgolly.reactElemental.reactElementalStrings.plain
   - typingsJapgolly.reactElemental.reactElementalStrings.underline
 */
-trait LinkType extends js.Object
-
+trait LinkType extends StObject
 object LinkType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def plain: typingsJapgolly.reactElemental.reactElementalStrings.plain = this.cast("plain")
-  @scala.inline
-  def regular: typingsJapgolly.reactElemental.reactElementalStrings.regular = this.cast("regular")
-  @scala.inline
-  def underline: typingsJapgolly.reactElemental.reactElementalStrings.underline = this.cast("underline")
+  
+  inline def plain: typingsJapgolly.reactElemental.reactElementalStrings.plain = "plain".asInstanceOf[typingsJapgolly.reactElemental.reactElementalStrings.plain]
+  
+  inline def regular: typingsJapgolly.reactElemental.reactElementalStrings.regular = "regular".asInstanceOf[typingsJapgolly.reactElemental.reactElementalStrings.regular]
+  
+  inline def underline: typingsJapgolly.reactElemental.reactElementalStrings.underline = "underline".asInstanceOf[typingsJapgolly.reactElemental.reactElementalStrings.underline]
 }
-

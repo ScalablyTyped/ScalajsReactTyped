@@ -1,47 +1,43 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
 */
-trait XlFormatConditionOperator extends js.Object
-
+trait XlFormatConditionOperator extends StObject
 object XlFormatConditionOperator {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlBetween: `1` = this.cast(1)
-  @scala.inline
-  def xlEqual: `3` = this.cast(3)
-  @scala.inline
-  def xlGreater: `5` = this.cast(5)
-  @scala.inline
-  def xlGreaterEqual: `7` = this.cast(7)
-  @scala.inline
-  def xlLess: `6` = this.cast(6)
-  @scala.inline
-  def xlLessEqual: `8` = this.cast(8)
-  @scala.inline
-  def xlNotBetween: `2` = this.cast(2)
-  @scala.inline
-  def xlNotEqual: `4` = this.cast(4)
+  
+  inline def xlBetween: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlEqual: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlGreater: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlGreaterEqual: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlLess: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlLessEqual: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlNotBetween: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlNotEqual: `4` = 4.asInstanceOf[`4`]
 }
-

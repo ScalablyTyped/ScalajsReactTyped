@@ -2,37 +2,46 @@ package typingsJapgolly.senchaTouch.Ext.field
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITextArea extends IText {
+trait ITextArea
+  extends StObject
+     with IText {
+  
   /** [Method] Returns the value of maxRows
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxRows: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Config Option] (Number) */
   var maxRows: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Sets the value of maxRows
-  		* @param maxRows Number The new value.
-  		*/
+    * @param maxRows Number The new value.
+    */
   var setMaxRows: js.UndefOr[js.Function1[/* maxRows */ js.UndefOr[Double], Unit]] = js.undefined
 }
-
 object ITextArea {
-  @scala.inline
-  def apply(
-    IText: IText = null,
-    getMaxRows: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    maxRows: Int | Double = null,
-    setMaxRows: /* maxRows */ js.UndefOr[Double] => Callback = null
-  ): ITextArea = {
+  
+  inline def apply(): ITextArea = {
     val __obj = js.Dynamic.literal()
-    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
-    getMaxRows.foreach(p => __obj.updateDynamic("getMaxRows")(p.toJsFn))
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (setMaxRows != null) __obj.updateDynamic("setMaxRows")(js.Any.fromFunction1((t0: /* maxRows */ js.UndefOr[scala.Double]) => setMaxRows(t0).runNow()))
     __obj.asInstanceOf[ITextArea]
   }
+  
+  extension [Self <: ITextArea](x: Self) {
+    
+    inline def setGetMaxRows(value: CallbackTo[Double]): Self = StObject.set(x, "getMaxRows", value.toJsFn)
+    
+    inline def setGetMaxRowsUndefined: Self = StObject.set(x, "getMaxRows", js.undefined)
+    
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+    
+    inline def setSetMaxRows(value: /* maxRows */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setMaxRows", js.Any.fromFunction1((t0: /* maxRows */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetMaxRowsUndefined: Self = StObject.set(x, "setMaxRows", js.undefined)
+  }
 }
-

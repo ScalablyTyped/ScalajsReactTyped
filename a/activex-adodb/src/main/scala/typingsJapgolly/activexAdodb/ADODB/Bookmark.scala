@@ -1,13 +1,24 @@
 package typingsJapgolly.activexAdodb.ADODB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ADODB.Bookmark")
-@js.native
-class Bookmark protected () extends js.Object {
-  @JSName("ADODB.Bookmark_typekey")
-  var ADODBDotBookmark_typekey: Bookmark = js.native
+trait Bookmark extends StObject {
+  
+  /* private */ @JSName("ADODB.Bookmark_typekey")
+  var ADODBDotBookmark_typekey: Bookmark
 }
-
+object Bookmark {
+  
+  inline def apply(ADODBDotBookmark_typekey: Bookmark): Bookmark = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ADODB.Bookmark_typekey")(ADODBDotBookmark_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Bookmark]
+  }
+  
+  extension [Self <: Bookmark](x: Self) {
+    
+    inline def setADODBDotBookmark_typekey(value: Bookmark): Self = StObject.set(x, "ADODB.Bookmark_typekey", value.asInstanceOf[js.Any])
+  }
+}

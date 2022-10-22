@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-swipe-gestures
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 4-directional swipe gestures for react-native
@@ -10,10 +10,10 @@ Typings are for version 1.0.4
 | ------------------ | :-------------: |
 | Full name          | react-native-swipe-gestures |
 | Keywords           | react-native, swipe, gesture |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 2424284 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 795520.0 |
+| # stars            | 555.0 |
 
 ## Links
 - [Homepage](https://github.com/glepur/react-native-swipe-gestures#readme)

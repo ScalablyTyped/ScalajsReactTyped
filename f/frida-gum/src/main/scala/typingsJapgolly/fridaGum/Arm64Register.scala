@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.x0
@@ -173,344 +173,342 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.q30
   - typingsJapgolly.fridaGum.fridaGumStrings.q31
 */
-trait Arm64Register extends _Arm64CallArgument
-
+trait Arm64Register
+  extends StObject
+     with _Arm64CallArgument
 object Arm64Register {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def d0: typingsJapgolly.fridaGum.fridaGumStrings.d0 = this.cast("d0")
-  @scala.inline
-  def d1: typingsJapgolly.fridaGum.fridaGumStrings.d1 = this.cast("d1")
-  @scala.inline
-  def d10: typingsJapgolly.fridaGum.fridaGumStrings.d10 = this.cast("d10")
-  @scala.inline
-  def d11: typingsJapgolly.fridaGum.fridaGumStrings.d11 = this.cast("d11")
-  @scala.inline
-  def d12: typingsJapgolly.fridaGum.fridaGumStrings.d12 = this.cast("d12")
-  @scala.inline
-  def d13: typingsJapgolly.fridaGum.fridaGumStrings.d13 = this.cast("d13")
-  @scala.inline
-  def d14: typingsJapgolly.fridaGum.fridaGumStrings.d14 = this.cast("d14")
-  @scala.inline
-  def d15: typingsJapgolly.fridaGum.fridaGumStrings.d15 = this.cast("d15")
-  @scala.inline
-  def d16: typingsJapgolly.fridaGum.fridaGumStrings.d16 = this.cast("d16")
-  @scala.inline
-  def d17: typingsJapgolly.fridaGum.fridaGumStrings.d17 = this.cast("d17")
-  @scala.inline
-  def d18: typingsJapgolly.fridaGum.fridaGumStrings.d18 = this.cast("d18")
-  @scala.inline
-  def d19: typingsJapgolly.fridaGum.fridaGumStrings.d19 = this.cast("d19")
-  @scala.inline
-  def d2: typingsJapgolly.fridaGum.fridaGumStrings.d2 = this.cast("d2")
-  @scala.inline
-  def d20: typingsJapgolly.fridaGum.fridaGumStrings.d20 = this.cast("d20")
-  @scala.inline
-  def d21: typingsJapgolly.fridaGum.fridaGumStrings.d21 = this.cast("d21")
-  @scala.inline
-  def d22: typingsJapgolly.fridaGum.fridaGumStrings.d22 = this.cast("d22")
-  @scala.inline
-  def d23: typingsJapgolly.fridaGum.fridaGumStrings.d23 = this.cast("d23")
-  @scala.inline
-  def d24: typingsJapgolly.fridaGum.fridaGumStrings.d24 = this.cast("d24")
-  @scala.inline
-  def d25: typingsJapgolly.fridaGum.fridaGumStrings.d25 = this.cast("d25")
-  @scala.inline
-  def d26: typingsJapgolly.fridaGum.fridaGumStrings.d26 = this.cast("d26")
-  @scala.inline
-  def d27: typingsJapgolly.fridaGum.fridaGumStrings.d27 = this.cast("d27")
-  @scala.inline
-  def d28: typingsJapgolly.fridaGum.fridaGumStrings.d28 = this.cast("d28")
-  @scala.inline
-  def d29: typingsJapgolly.fridaGum.fridaGumStrings.d29 = this.cast("d29")
-  @scala.inline
-  def d3: typingsJapgolly.fridaGum.fridaGumStrings.d3 = this.cast("d3")
-  @scala.inline
-  def d30: typingsJapgolly.fridaGum.fridaGumStrings.d30 = this.cast("d30")
-  @scala.inline
-  def d31: typingsJapgolly.fridaGum.fridaGumStrings.d31 = this.cast("d31")
-  @scala.inline
-  def d4: typingsJapgolly.fridaGum.fridaGumStrings.d4 = this.cast("d4")
-  @scala.inline
-  def d5: typingsJapgolly.fridaGum.fridaGumStrings.d5 = this.cast("d5")
-  @scala.inline
-  def d6: typingsJapgolly.fridaGum.fridaGumStrings.d6 = this.cast("d6")
-  @scala.inline
-  def d7: typingsJapgolly.fridaGum.fridaGumStrings.d7 = this.cast("d7")
-  @scala.inline
-  def d8: typingsJapgolly.fridaGum.fridaGumStrings.d8 = this.cast("d8")
-  @scala.inline
-  def d9: typingsJapgolly.fridaGum.fridaGumStrings.d9 = this.cast("d9")
-  @scala.inline
-  def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = this.cast("fp")
-  @scala.inline
-  def ip0: typingsJapgolly.fridaGum.fridaGumStrings.ip0 = this.cast("ip0")
-  @scala.inline
-  def ip1: typingsJapgolly.fridaGum.fridaGumStrings.ip1 = this.cast("ip1")
-  @scala.inline
-  def lr: typingsJapgolly.fridaGum.fridaGumStrings.lr = this.cast("lr")
-  @scala.inline
-  def nzcv: typingsJapgolly.fridaGum.fridaGumStrings.nzcv = this.cast("nzcv")
-  @scala.inline
-  def q0: typingsJapgolly.fridaGum.fridaGumStrings.q0 = this.cast("q0")
-  @scala.inline
-  def q1: typingsJapgolly.fridaGum.fridaGumStrings.q1 = this.cast("q1")
-  @scala.inline
-  def q10: typingsJapgolly.fridaGum.fridaGumStrings.q10 = this.cast("q10")
-  @scala.inline
-  def q11: typingsJapgolly.fridaGum.fridaGumStrings.q11 = this.cast("q11")
-  @scala.inline
-  def q12: typingsJapgolly.fridaGum.fridaGumStrings.q12 = this.cast("q12")
-  @scala.inline
-  def q13: typingsJapgolly.fridaGum.fridaGumStrings.q13 = this.cast("q13")
-  @scala.inline
-  def q14: typingsJapgolly.fridaGum.fridaGumStrings.q14 = this.cast("q14")
-  @scala.inline
-  def q15: typingsJapgolly.fridaGum.fridaGumStrings.q15 = this.cast("q15")
-  @scala.inline
-  def q16: typingsJapgolly.fridaGum.fridaGumStrings.q16 = this.cast("q16")
-  @scala.inline
-  def q17: typingsJapgolly.fridaGum.fridaGumStrings.q17 = this.cast("q17")
-  @scala.inline
-  def q18: typingsJapgolly.fridaGum.fridaGumStrings.q18 = this.cast("q18")
-  @scala.inline
-  def q19: typingsJapgolly.fridaGum.fridaGumStrings.q19 = this.cast("q19")
-  @scala.inline
-  def q2: typingsJapgolly.fridaGum.fridaGumStrings.q2 = this.cast("q2")
-  @scala.inline
-  def q20: typingsJapgolly.fridaGum.fridaGumStrings.q20 = this.cast("q20")
-  @scala.inline
-  def q21: typingsJapgolly.fridaGum.fridaGumStrings.q21 = this.cast("q21")
-  @scala.inline
-  def q22: typingsJapgolly.fridaGum.fridaGumStrings.q22 = this.cast("q22")
-  @scala.inline
-  def q23: typingsJapgolly.fridaGum.fridaGumStrings.q23 = this.cast("q23")
-  @scala.inline
-  def q24: typingsJapgolly.fridaGum.fridaGumStrings.q24 = this.cast("q24")
-  @scala.inline
-  def q25: typingsJapgolly.fridaGum.fridaGumStrings.q25 = this.cast("q25")
-  @scala.inline
-  def q26: typingsJapgolly.fridaGum.fridaGumStrings.q26 = this.cast("q26")
-  @scala.inline
-  def q27: typingsJapgolly.fridaGum.fridaGumStrings.q27 = this.cast("q27")
-  @scala.inline
-  def q28: typingsJapgolly.fridaGum.fridaGumStrings.q28 = this.cast("q28")
-  @scala.inline
-  def q29: typingsJapgolly.fridaGum.fridaGumStrings.q29 = this.cast("q29")
-  @scala.inline
-  def q3: typingsJapgolly.fridaGum.fridaGumStrings.q3 = this.cast("q3")
-  @scala.inline
-  def q30: typingsJapgolly.fridaGum.fridaGumStrings.q30 = this.cast("q30")
-  @scala.inline
-  def q31: typingsJapgolly.fridaGum.fridaGumStrings.q31 = this.cast("q31")
-  @scala.inline
-  def q4: typingsJapgolly.fridaGum.fridaGumStrings.q4 = this.cast("q4")
-  @scala.inline
-  def q5: typingsJapgolly.fridaGum.fridaGumStrings.q5 = this.cast("q5")
-  @scala.inline
-  def q6: typingsJapgolly.fridaGum.fridaGumStrings.q6 = this.cast("q6")
-  @scala.inline
-  def q7: typingsJapgolly.fridaGum.fridaGumStrings.q7 = this.cast("q7")
-  @scala.inline
-  def q8: typingsJapgolly.fridaGum.fridaGumStrings.q8 = this.cast("q8")
-  @scala.inline
-  def q9: typingsJapgolly.fridaGum.fridaGumStrings.q9 = this.cast("q9")
-  @scala.inline
-  def s0: typingsJapgolly.fridaGum.fridaGumStrings.s0 = this.cast("s0")
-  @scala.inline
-  def s1: typingsJapgolly.fridaGum.fridaGumStrings.s1 = this.cast("s1")
-  @scala.inline
-  def s10: typingsJapgolly.fridaGum.fridaGumStrings.s10 = this.cast("s10")
-  @scala.inline
-  def s11: typingsJapgolly.fridaGum.fridaGumStrings.s11 = this.cast("s11")
-  @scala.inline
-  def s12: typingsJapgolly.fridaGum.fridaGumStrings.s12 = this.cast("s12")
-  @scala.inline
-  def s13: typingsJapgolly.fridaGum.fridaGumStrings.s13 = this.cast("s13")
-  @scala.inline
-  def s14: typingsJapgolly.fridaGum.fridaGumStrings.s14 = this.cast("s14")
-  @scala.inline
-  def s15: typingsJapgolly.fridaGum.fridaGumStrings.s15 = this.cast("s15")
-  @scala.inline
-  def s16: typingsJapgolly.fridaGum.fridaGumStrings.s16 = this.cast("s16")
-  @scala.inline
-  def s17: typingsJapgolly.fridaGum.fridaGumStrings.s17 = this.cast("s17")
-  @scala.inline
-  def s18: typingsJapgolly.fridaGum.fridaGumStrings.s18 = this.cast("s18")
-  @scala.inline
-  def s19: typingsJapgolly.fridaGum.fridaGumStrings.s19 = this.cast("s19")
-  @scala.inline
-  def s2: typingsJapgolly.fridaGum.fridaGumStrings.s2 = this.cast("s2")
-  @scala.inline
-  def s20: typingsJapgolly.fridaGum.fridaGumStrings.s20 = this.cast("s20")
-  @scala.inline
-  def s21: typingsJapgolly.fridaGum.fridaGumStrings.s21 = this.cast("s21")
-  @scala.inline
-  def s22: typingsJapgolly.fridaGum.fridaGumStrings.s22 = this.cast("s22")
-  @scala.inline
-  def s23: typingsJapgolly.fridaGum.fridaGumStrings.s23 = this.cast("s23")
-  @scala.inline
-  def s24: typingsJapgolly.fridaGum.fridaGumStrings.s24 = this.cast("s24")
-  @scala.inline
-  def s25: typingsJapgolly.fridaGum.fridaGumStrings.s25 = this.cast("s25")
-  @scala.inline
-  def s26: typingsJapgolly.fridaGum.fridaGumStrings.s26 = this.cast("s26")
-  @scala.inline
-  def s27: typingsJapgolly.fridaGum.fridaGumStrings.s27 = this.cast("s27")
-  @scala.inline
-  def s28: typingsJapgolly.fridaGum.fridaGumStrings.s28 = this.cast("s28")
-  @scala.inline
-  def s29: typingsJapgolly.fridaGum.fridaGumStrings.s29 = this.cast("s29")
-  @scala.inline
-  def s3: typingsJapgolly.fridaGum.fridaGumStrings.s3 = this.cast("s3")
-  @scala.inline
-  def s30: typingsJapgolly.fridaGum.fridaGumStrings.s30 = this.cast("s30")
-  @scala.inline
-  def s31: typingsJapgolly.fridaGum.fridaGumStrings.s31 = this.cast("s31")
-  @scala.inline
-  def s4: typingsJapgolly.fridaGum.fridaGumStrings.s4 = this.cast("s4")
-  @scala.inline
-  def s5: typingsJapgolly.fridaGum.fridaGumStrings.s5 = this.cast("s5")
-  @scala.inline
-  def s6: typingsJapgolly.fridaGum.fridaGumStrings.s6 = this.cast("s6")
-  @scala.inline
-  def s7: typingsJapgolly.fridaGum.fridaGumStrings.s7 = this.cast("s7")
-  @scala.inline
-  def s8: typingsJapgolly.fridaGum.fridaGumStrings.s8 = this.cast("s8")
-  @scala.inline
-  def s9: typingsJapgolly.fridaGum.fridaGumStrings.s9 = this.cast("s9")
-  @scala.inline
-  def sp: typingsJapgolly.fridaGum.fridaGumStrings.sp = this.cast("sp")
-  @scala.inline
-  def w0: typingsJapgolly.fridaGum.fridaGumStrings.w0 = this.cast("w0")
-  @scala.inline
-  def w1: typingsJapgolly.fridaGum.fridaGumStrings.w1 = this.cast("w1")
-  @scala.inline
-  def w10: typingsJapgolly.fridaGum.fridaGumStrings.w10 = this.cast("w10")
-  @scala.inline
-  def w11: typingsJapgolly.fridaGum.fridaGumStrings.w11 = this.cast("w11")
-  @scala.inline
-  def w12: typingsJapgolly.fridaGum.fridaGumStrings.w12 = this.cast("w12")
-  @scala.inline
-  def w13: typingsJapgolly.fridaGum.fridaGumStrings.w13 = this.cast("w13")
-  @scala.inline
-  def w14: typingsJapgolly.fridaGum.fridaGumStrings.w14 = this.cast("w14")
-  @scala.inline
-  def w15: typingsJapgolly.fridaGum.fridaGumStrings.w15 = this.cast("w15")
-  @scala.inline
-  def w16: typingsJapgolly.fridaGum.fridaGumStrings.w16 = this.cast("w16")
-  @scala.inline
-  def w17: typingsJapgolly.fridaGum.fridaGumStrings.w17 = this.cast("w17")
-  @scala.inline
-  def w18: typingsJapgolly.fridaGum.fridaGumStrings.w18 = this.cast("w18")
-  @scala.inline
-  def w19: typingsJapgolly.fridaGum.fridaGumStrings.w19 = this.cast("w19")
-  @scala.inline
-  def w2: typingsJapgolly.fridaGum.fridaGumStrings.w2 = this.cast("w2")
-  @scala.inline
-  def w20: typingsJapgolly.fridaGum.fridaGumStrings.w20 = this.cast("w20")
-  @scala.inline
-  def w21: typingsJapgolly.fridaGum.fridaGumStrings.w21 = this.cast("w21")
-  @scala.inline
-  def w22: typingsJapgolly.fridaGum.fridaGumStrings.w22 = this.cast("w22")
-  @scala.inline
-  def w23: typingsJapgolly.fridaGum.fridaGumStrings.w23 = this.cast("w23")
-  @scala.inline
-  def w24: typingsJapgolly.fridaGum.fridaGumStrings.w24 = this.cast("w24")
-  @scala.inline
-  def w25: typingsJapgolly.fridaGum.fridaGumStrings.w25 = this.cast("w25")
-  @scala.inline
-  def w26: typingsJapgolly.fridaGum.fridaGumStrings.w26 = this.cast("w26")
-  @scala.inline
-  def w27: typingsJapgolly.fridaGum.fridaGumStrings.w27 = this.cast("w27")
-  @scala.inline
-  def w28: typingsJapgolly.fridaGum.fridaGumStrings.w28 = this.cast("w28")
-  @scala.inline
-  def w29: typingsJapgolly.fridaGum.fridaGumStrings.w29 = this.cast("w29")
-  @scala.inline
-  def w3: typingsJapgolly.fridaGum.fridaGumStrings.w3 = this.cast("w3")
-  @scala.inline
-  def w30: typingsJapgolly.fridaGum.fridaGumStrings.w30 = this.cast("w30")
-  @scala.inline
-  def w4: typingsJapgolly.fridaGum.fridaGumStrings.w4 = this.cast("w4")
-  @scala.inline
-  def w5: typingsJapgolly.fridaGum.fridaGumStrings.w5 = this.cast("w5")
-  @scala.inline
-  def w6: typingsJapgolly.fridaGum.fridaGumStrings.w6 = this.cast("w6")
-  @scala.inline
-  def w7: typingsJapgolly.fridaGum.fridaGumStrings.w7 = this.cast("w7")
-  @scala.inline
-  def w8: typingsJapgolly.fridaGum.fridaGumStrings.w8 = this.cast("w8")
-  @scala.inline
-  def w9: typingsJapgolly.fridaGum.fridaGumStrings.w9 = this.cast("w9")
-  @scala.inline
-  def wsp: typingsJapgolly.fridaGum.fridaGumStrings.wsp = this.cast("wsp")
-  @scala.inline
-  def wzr: typingsJapgolly.fridaGum.fridaGumStrings.wzr = this.cast("wzr")
-  @scala.inline
-  def x0: typingsJapgolly.fridaGum.fridaGumStrings.x0 = this.cast("x0")
-  @scala.inline
-  def x1: typingsJapgolly.fridaGum.fridaGumStrings.x1 = this.cast("x1")
-  @scala.inline
-  def x10: typingsJapgolly.fridaGum.fridaGumStrings.x10 = this.cast("x10")
-  @scala.inline
-  def x11: typingsJapgolly.fridaGum.fridaGumStrings.x11 = this.cast("x11")
-  @scala.inline
-  def x12: typingsJapgolly.fridaGum.fridaGumStrings.x12 = this.cast("x12")
-  @scala.inline
-  def x13: typingsJapgolly.fridaGum.fridaGumStrings.x13 = this.cast("x13")
-  @scala.inline
-  def x14: typingsJapgolly.fridaGum.fridaGumStrings.x14 = this.cast("x14")
-  @scala.inline
-  def x15: typingsJapgolly.fridaGum.fridaGumStrings.x15 = this.cast("x15")
-  @scala.inline
-  def x16: typingsJapgolly.fridaGum.fridaGumStrings.x16 = this.cast("x16")
-  @scala.inline
-  def x17: typingsJapgolly.fridaGum.fridaGumStrings.x17 = this.cast("x17")
-  @scala.inline
-  def x18: typingsJapgolly.fridaGum.fridaGumStrings.x18 = this.cast("x18")
-  @scala.inline
-  def x19: typingsJapgolly.fridaGum.fridaGumStrings.x19 = this.cast("x19")
-  @scala.inline
-  def x2: typingsJapgolly.fridaGum.fridaGumStrings.x2 = this.cast("x2")
-  @scala.inline
-  def x20: typingsJapgolly.fridaGum.fridaGumStrings.x20 = this.cast("x20")
-  @scala.inline
-  def x21: typingsJapgolly.fridaGum.fridaGumStrings.x21 = this.cast("x21")
-  @scala.inline
-  def x22: typingsJapgolly.fridaGum.fridaGumStrings.x22 = this.cast("x22")
-  @scala.inline
-  def x23: typingsJapgolly.fridaGum.fridaGumStrings.x23 = this.cast("x23")
-  @scala.inline
-  def x24: typingsJapgolly.fridaGum.fridaGumStrings.x24 = this.cast("x24")
-  @scala.inline
-  def x25: typingsJapgolly.fridaGum.fridaGumStrings.x25 = this.cast("x25")
-  @scala.inline
-  def x26: typingsJapgolly.fridaGum.fridaGumStrings.x26 = this.cast("x26")
-  @scala.inline
-  def x27: typingsJapgolly.fridaGum.fridaGumStrings.x27 = this.cast("x27")
-  @scala.inline
-  def x28: typingsJapgolly.fridaGum.fridaGumStrings.x28 = this.cast("x28")
-  @scala.inline
-  def x29: typingsJapgolly.fridaGum.fridaGumStrings.x29 = this.cast("x29")
-  @scala.inline
-  def x3: typingsJapgolly.fridaGum.fridaGumStrings.x3 = this.cast("x3")
-  @scala.inline
-  def x30: typingsJapgolly.fridaGum.fridaGumStrings.x30 = this.cast("x30")
-  @scala.inline
-  def x4: typingsJapgolly.fridaGum.fridaGumStrings.x4 = this.cast("x4")
-  @scala.inline
-  def x5: typingsJapgolly.fridaGum.fridaGumStrings.x5 = this.cast("x5")
-  @scala.inline
-  def x6: typingsJapgolly.fridaGum.fridaGumStrings.x6 = this.cast("x6")
-  @scala.inline
-  def x7: typingsJapgolly.fridaGum.fridaGumStrings.x7 = this.cast("x7")
-  @scala.inline
-  def x8: typingsJapgolly.fridaGum.fridaGumStrings.x8 = this.cast("x8")
-  @scala.inline
-  def x9: typingsJapgolly.fridaGum.fridaGumStrings.x9 = this.cast("x9")
-  @scala.inline
-  def xzr: typingsJapgolly.fridaGum.fridaGumStrings.xzr = this.cast("xzr")
+  
+  inline def d0: typingsJapgolly.fridaGum.fridaGumStrings.d0 = "d0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d0]
+  
+  inline def d1: typingsJapgolly.fridaGum.fridaGumStrings.d1 = "d1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d1]
+  
+  inline def d10: typingsJapgolly.fridaGum.fridaGumStrings.d10 = "d10".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d10]
+  
+  inline def d11: typingsJapgolly.fridaGum.fridaGumStrings.d11 = "d11".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d11]
+  
+  inline def d12: typingsJapgolly.fridaGum.fridaGumStrings.d12 = "d12".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d12]
+  
+  inline def d13: typingsJapgolly.fridaGum.fridaGumStrings.d13 = "d13".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d13]
+  
+  inline def d14: typingsJapgolly.fridaGum.fridaGumStrings.d14 = "d14".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d14]
+  
+  inline def d15: typingsJapgolly.fridaGum.fridaGumStrings.d15 = "d15".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d15]
+  
+  inline def d16: typingsJapgolly.fridaGum.fridaGumStrings.d16 = "d16".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d16]
+  
+  inline def d17: typingsJapgolly.fridaGum.fridaGumStrings.d17 = "d17".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d17]
+  
+  inline def d18: typingsJapgolly.fridaGum.fridaGumStrings.d18 = "d18".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d18]
+  
+  inline def d19: typingsJapgolly.fridaGum.fridaGumStrings.d19 = "d19".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d19]
+  
+  inline def d2: typingsJapgolly.fridaGum.fridaGumStrings.d2 = "d2".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d2]
+  
+  inline def d20: typingsJapgolly.fridaGum.fridaGumStrings.d20 = "d20".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d20]
+  
+  inline def d21: typingsJapgolly.fridaGum.fridaGumStrings.d21 = "d21".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d21]
+  
+  inline def d22: typingsJapgolly.fridaGum.fridaGumStrings.d22 = "d22".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d22]
+  
+  inline def d23: typingsJapgolly.fridaGum.fridaGumStrings.d23 = "d23".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d23]
+  
+  inline def d24: typingsJapgolly.fridaGum.fridaGumStrings.d24 = "d24".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d24]
+  
+  inline def d25: typingsJapgolly.fridaGum.fridaGumStrings.d25 = "d25".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d25]
+  
+  inline def d26: typingsJapgolly.fridaGum.fridaGumStrings.d26 = "d26".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d26]
+  
+  inline def d27: typingsJapgolly.fridaGum.fridaGumStrings.d27 = "d27".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d27]
+  
+  inline def d28: typingsJapgolly.fridaGum.fridaGumStrings.d28 = "d28".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d28]
+  
+  inline def d29: typingsJapgolly.fridaGum.fridaGumStrings.d29 = "d29".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d29]
+  
+  inline def d3: typingsJapgolly.fridaGum.fridaGumStrings.d3 = "d3".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d3]
+  
+  inline def d30: typingsJapgolly.fridaGum.fridaGumStrings.d30 = "d30".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d30]
+  
+  inline def d31: typingsJapgolly.fridaGum.fridaGumStrings.d31 = "d31".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d31]
+  
+  inline def d4: typingsJapgolly.fridaGum.fridaGumStrings.d4 = "d4".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d4]
+  
+  inline def d5: typingsJapgolly.fridaGum.fridaGumStrings.d5 = "d5".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d5]
+  
+  inline def d6: typingsJapgolly.fridaGum.fridaGumStrings.d6 = "d6".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d6]
+  
+  inline def d7: typingsJapgolly.fridaGum.fridaGumStrings.d7 = "d7".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d7]
+  
+  inline def d8: typingsJapgolly.fridaGum.fridaGumStrings.d8 = "d8".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d8]
+  
+  inline def d9: typingsJapgolly.fridaGum.fridaGumStrings.d9 = "d9".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.d9]
+  
+  inline def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = "fp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.fp]
+  
+  inline def ip0: typingsJapgolly.fridaGum.fridaGumStrings.ip0 = "ip0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.ip0]
+  
+  inline def ip1: typingsJapgolly.fridaGum.fridaGumStrings.ip1 = "ip1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.ip1]
+  
+  inline def lr: typingsJapgolly.fridaGum.fridaGumStrings.lr = "lr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.lr]
+  
+  inline def nzcv: typingsJapgolly.fridaGum.fridaGumStrings.nzcv = "nzcv".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.nzcv]
+  
+  inline def q0: typingsJapgolly.fridaGum.fridaGumStrings.q0 = "q0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q0]
+  
+  inline def q1: typingsJapgolly.fridaGum.fridaGumStrings.q1 = "q1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q1]
+  
+  inline def q10: typingsJapgolly.fridaGum.fridaGumStrings.q10 = "q10".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q10]
+  
+  inline def q11: typingsJapgolly.fridaGum.fridaGumStrings.q11 = "q11".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q11]
+  
+  inline def q12: typingsJapgolly.fridaGum.fridaGumStrings.q12 = "q12".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q12]
+  
+  inline def q13: typingsJapgolly.fridaGum.fridaGumStrings.q13 = "q13".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q13]
+  
+  inline def q14: typingsJapgolly.fridaGum.fridaGumStrings.q14 = "q14".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q14]
+  
+  inline def q15: typingsJapgolly.fridaGum.fridaGumStrings.q15 = "q15".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q15]
+  
+  inline def q16: typingsJapgolly.fridaGum.fridaGumStrings.q16 = "q16".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q16]
+  
+  inline def q17: typingsJapgolly.fridaGum.fridaGumStrings.q17 = "q17".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q17]
+  
+  inline def q18: typingsJapgolly.fridaGum.fridaGumStrings.q18 = "q18".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q18]
+  
+  inline def q19: typingsJapgolly.fridaGum.fridaGumStrings.q19 = "q19".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q19]
+  
+  inline def q2: typingsJapgolly.fridaGum.fridaGumStrings.q2 = "q2".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q2]
+  
+  inline def q20: typingsJapgolly.fridaGum.fridaGumStrings.q20 = "q20".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q20]
+  
+  inline def q21: typingsJapgolly.fridaGum.fridaGumStrings.q21 = "q21".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q21]
+  
+  inline def q22: typingsJapgolly.fridaGum.fridaGumStrings.q22 = "q22".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q22]
+  
+  inline def q23: typingsJapgolly.fridaGum.fridaGumStrings.q23 = "q23".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q23]
+  
+  inline def q24: typingsJapgolly.fridaGum.fridaGumStrings.q24 = "q24".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q24]
+  
+  inline def q25: typingsJapgolly.fridaGum.fridaGumStrings.q25 = "q25".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q25]
+  
+  inline def q26: typingsJapgolly.fridaGum.fridaGumStrings.q26 = "q26".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q26]
+  
+  inline def q27: typingsJapgolly.fridaGum.fridaGumStrings.q27 = "q27".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q27]
+  
+  inline def q28: typingsJapgolly.fridaGum.fridaGumStrings.q28 = "q28".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q28]
+  
+  inline def q29: typingsJapgolly.fridaGum.fridaGumStrings.q29 = "q29".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q29]
+  
+  inline def q3: typingsJapgolly.fridaGum.fridaGumStrings.q3 = "q3".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q3]
+  
+  inline def q30: typingsJapgolly.fridaGum.fridaGumStrings.q30 = "q30".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q30]
+  
+  inline def q31: typingsJapgolly.fridaGum.fridaGumStrings.q31 = "q31".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q31]
+  
+  inline def q4: typingsJapgolly.fridaGum.fridaGumStrings.q4 = "q4".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q4]
+  
+  inline def q5: typingsJapgolly.fridaGum.fridaGumStrings.q5 = "q5".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q5]
+  
+  inline def q6: typingsJapgolly.fridaGum.fridaGumStrings.q6 = "q6".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q6]
+  
+  inline def q7: typingsJapgolly.fridaGum.fridaGumStrings.q7 = "q7".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q7]
+  
+  inline def q8: typingsJapgolly.fridaGum.fridaGumStrings.q8 = "q8".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q8]
+  
+  inline def q9: typingsJapgolly.fridaGum.fridaGumStrings.q9 = "q9".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.q9]
+  
+  inline def s0: typingsJapgolly.fridaGum.fridaGumStrings.s0 = "s0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s0]
+  
+  inline def s1: typingsJapgolly.fridaGum.fridaGumStrings.s1 = "s1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s1]
+  
+  inline def s10: typingsJapgolly.fridaGum.fridaGumStrings.s10 = "s10".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s10]
+  
+  inline def s11: typingsJapgolly.fridaGum.fridaGumStrings.s11 = "s11".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s11]
+  
+  inline def s12: typingsJapgolly.fridaGum.fridaGumStrings.s12 = "s12".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s12]
+  
+  inline def s13: typingsJapgolly.fridaGum.fridaGumStrings.s13 = "s13".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s13]
+  
+  inline def s14: typingsJapgolly.fridaGum.fridaGumStrings.s14 = "s14".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s14]
+  
+  inline def s15: typingsJapgolly.fridaGum.fridaGumStrings.s15 = "s15".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s15]
+  
+  inline def s16: typingsJapgolly.fridaGum.fridaGumStrings.s16 = "s16".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s16]
+  
+  inline def s17: typingsJapgolly.fridaGum.fridaGumStrings.s17 = "s17".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s17]
+  
+  inline def s18: typingsJapgolly.fridaGum.fridaGumStrings.s18 = "s18".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s18]
+  
+  inline def s19: typingsJapgolly.fridaGum.fridaGumStrings.s19 = "s19".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s19]
+  
+  inline def s2: typingsJapgolly.fridaGum.fridaGumStrings.s2 = "s2".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s2]
+  
+  inline def s20: typingsJapgolly.fridaGum.fridaGumStrings.s20 = "s20".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s20]
+  
+  inline def s21: typingsJapgolly.fridaGum.fridaGumStrings.s21 = "s21".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s21]
+  
+  inline def s22: typingsJapgolly.fridaGum.fridaGumStrings.s22 = "s22".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s22]
+  
+  inline def s23: typingsJapgolly.fridaGum.fridaGumStrings.s23 = "s23".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s23]
+  
+  inline def s24: typingsJapgolly.fridaGum.fridaGumStrings.s24 = "s24".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s24]
+  
+  inline def s25: typingsJapgolly.fridaGum.fridaGumStrings.s25 = "s25".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s25]
+  
+  inline def s26: typingsJapgolly.fridaGum.fridaGumStrings.s26 = "s26".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s26]
+  
+  inline def s27: typingsJapgolly.fridaGum.fridaGumStrings.s27 = "s27".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s27]
+  
+  inline def s28: typingsJapgolly.fridaGum.fridaGumStrings.s28 = "s28".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s28]
+  
+  inline def s29: typingsJapgolly.fridaGum.fridaGumStrings.s29 = "s29".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s29]
+  
+  inline def s3: typingsJapgolly.fridaGum.fridaGumStrings.s3 = "s3".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s3]
+  
+  inline def s30: typingsJapgolly.fridaGum.fridaGumStrings.s30 = "s30".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s30]
+  
+  inline def s31: typingsJapgolly.fridaGum.fridaGumStrings.s31 = "s31".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s31]
+  
+  inline def s4: typingsJapgolly.fridaGum.fridaGumStrings.s4 = "s4".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s4]
+  
+  inline def s5: typingsJapgolly.fridaGum.fridaGumStrings.s5 = "s5".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s5]
+  
+  inline def s6: typingsJapgolly.fridaGum.fridaGumStrings.s6 = "s6".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s6]
+  
+  inline def s7: typingsJapgolly.fridaGum.fridaGumStrings.s7 = "s7".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s7]
+  
+  inline def s8: typingsJapgolly.fridaGum.fridaGumStrings.s8 = "s8".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s8]
+  
+  inline def s9: typingsJapgolly.fridaGum.fridaGumStrings.s9 = "s9".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.s9]
+  
+  inline def sp: typingsJapgolly.fridaGum.fridaGumStrings.sp = "sp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sp]
+  
+  inline def w0: typingsJapgolly.fridaGum.fridaGumStrings.w0 = "w0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w0]
+  
+  inline def w1: typingsJapgolly.fridaGum.fridaGumStrings.w1 = "w1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w1]
+  
+  inline def w10: typingsJapgolly.fridaGum.fridaGumStrings.w10 = "w10".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w10]
+  
+  inline def w11: typingsJapgolly.fridaGum.fridaGumStrings.w11 = "w11".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w11]
+  
+  inline def w12: typingsJapgolly.fridaGum.fridaGumStrings.w12 = "w12".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w12]
+  
+  inline def w13: typingsJapgolly.fridaGum.fridaGumStrings.w13 = "w13".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w13]
+  
+  inline def w14: typingsJapgolly.fridaGum.fridaGumStrings.w14 = "w14".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w14]
+  
+  inline def w15: typingsJapgolly.fridaGum.fridaGumStrings.w15 = "w15".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w15]
+  
+  inline def w16: typingsJapgolly.fridaGum.fridaGumStrings.w16 = "w16".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w16]
+  
+  inline def w17: typingsJapgolly.fridaGum.fridaGumStrings.w17 = "w17".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w17]
+  
+  inline def w18: typingsJapgolly.fridaGum.fridaGumStrings.w18 = "w18".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w18]
+  
+  inline def w19: typingsJapgolly.fridaGum.fridaGumStrings.w19 = "w19".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w19]
+  
+  inline def w2: typingsJapgolly.fridaGum.fridaGumStrings.w2 = "w2".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w2]
+  
+  inline def w20: typingsJapgolly.fridaGum.fridaGumStrings.w20 = "w20".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w20]
+  
+  inline def w21: typingsJapgolly.fridaGum.fridaGumStrings.w21 = "w21".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w21]
+  
+  inline def w22: typingsJapgolly.fridaGum.fridaGumStrings.w22 = "w22".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w22]
+  
+  inline def w23: typingsJapgolly.fridaGum.fridaGumStrings.w23 = "w23".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w23]
+  
+  inline def w24: typingsJapgolly.fridaGum.fridaGumStrings.w24 = "w24".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w24]
+  
+  inline def w25: typingsJapgolly.fridaGum.fridaGumStrings.w25 = "w25".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w25]
+  
+  inline def w26: typingsJapgolly.fridaGum.fridaGumStrings.w26 = "w26".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w26]
+  
+  inline def w27: typingsJapgolly.fridaGum.fridaGumStrings.w27 = "w27".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w27]
+  
+  inline def w28: typingsJapgolly.fridaGum.fridaGumStrings.w28 = "w28".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w28]
+  
+  inline def w29: typingsJapgolly.fridaGum.fridaGumStrings.w29 = "w29".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w29]
+  
+  inline def w3: typingsJapgolly.fridaGum.fridaGumStrings.w3 = "w3".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w3]
+  
+  inline def w30: typingsJapgolly.fridaGum.fridaGumStrings.w30 = "w30".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w30]
+  
+  inline def w4: typingsJapgolly.fridaGum.fridaGumStrings.w4 = "w4".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w4]
+  
+  inline def w5: typingsJapgolly.fridaGum.fridaGumStrings.w5 = "w5".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w5]
+  
+  inline def w6: typingsJapgolly.fridaGum.fridaGumStrings.w6 = "w6".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w6]
+  
+  inline def w7: typingsJapgolly.fridaGum.fridaGumStrings.w7 = "w7".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w7]
+  
+  inline def w8: typingsJapgolly.fridaGum.fridaGumStrings.w8 = "w8".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w8]
+  
+  inline def w9: typingsJapgolly.fridaGum.fridaGumStrings.w9 = "w9".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.w9]
+  
+  inline def wsp: typingsJapgolly.fridaGum.fridaGumStrings.wsp = "wsp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.wsp]
+  
+  inline def wzr: typingsJapgolly.fridaGum.fridaGumStrings.wzr = "wzr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.wzr]
+  
+  inline def x0: typingsJapgolly.fridaGum.fridaGumStrings.x0 = "x0".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x0]
+  
+  inline def x1: typingsJapgolly.fridaGum.fridaGumStrings.x1 = "x1".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x1]
+  
+  inline def x10: typingsJapgolly.fridaGum.fridaGumStrings.x10 = "x10".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x10]
+  
+  inline def x11: typingsJapgolly.fridaGum.fridaGumStrings.x11 = "x11".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x11]
+  
+  inline def x12: typingsJapgolly.fridaGum.fridaGumStrings.x12 = "x12".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x12]
+  
+  inline def x13: typingsJapgolly.fridaGum.fridaGumStrings.x13 = "x13".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x13]
+  
+  inline def x14: typingsJapgolly.fridaGum.fridaGumStrings.x14 = "x14".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x14]
+  
+  inline def x15: typingsJapgolly.fridaGum.fridaGumStrings.x15 = "x15".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x15]
+  
+  inline def x16: typingsJapgolly.fridaGum.fridaGumStrings.x16 = "x16".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x16]
+  
+  inline def x17: typingsJapgolly.fridaGum.fridaGumStrings.x17 = "x17".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x17]
+  
+  inline def x18: typingsJapgolly.fridaGum.fridaGumStrings.x18 = "x18".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x18]
+  
+  inline def x19: typingsJapgolly.fridaGum.fridaGumStrings.x19 = "x19".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x19]
+  
+  inline def x2: typingsJapgolly.fridaGum.fridaGumStrings.x2 = "x2".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x2]
+  
+  inline def x20: typingsJapgolly.fridaGum.fridaGumStrings.x20 = "x20".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x20]
+  
+  inline def x21: typingsJapgolly.fridaGum.fridaGumStrings.x21 = "x21".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x21]
+  
+  inline def x22: typingsJapgolly.fridaGum.fridaGumStrings.x22 = "x22".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x22]
+  
+  inline def x23: typingsJapgolly.fridaGum.fridaGumStrings.x23 = "x23".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x23]
+  
+  inline def x24: typingsJapgolly.fridaGum.fridaGumStrings.x24 = "x24".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x24]
+  
+  inline def x25: typingsJapgolly.fridaGum.fridaGumStrings.x25 = "x25".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x25]
+  
+  inline def x26: typingsJapgolly.fridaGum.fridaGumStrings.x26 = "x26".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x26]
+  
+  inline def x27: typingsJapgolly.fridaGum.fridaGumStrings.x27 = "x27".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x27]
+  
+  inline def x28: typingsJapgolly.fridaGum.fridaGumStrings.x28 = "x28".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x28]
+  
+  inline def x29: typingsJapgolly.fridaGum.fridaGumStrings.x29 = "x29".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x29]
+  
+  inline def x3: typingsJapgolly.fridaGum.fridaGumStrings.x3 = "x3".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x3]
+  
+  inline def x30: typingsJapgolly.fridaGum.fridaGumStrings.x30 = "x30".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x30]
+  
+  inline def x4: typingsJapgolly.fridaGum.fridaGumStrings.x4 = "x4".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x4]
+  
+  inline def x5: typingsJapgolly.fridaGum.fridaGumStrings.x5 = "x5".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x5]
+  
+  inline def x6: typingsJapgolly.fridaGum.fridaGumStrings.x6 = "x6".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x6]
+  
+  inline def x7: typingsJapgolly.fridaGum.fridaGumStrings.x7 = "x7".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x7]
+  
+  inline def x8: typingsJapgolly.fridaGum.fridaGumStrings.x8 = "x8".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x8]
+  
+  inline def x9: typingsJapgolly.fridaGum.fridaGumStrings.x9 = "x9".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.x9]
+  
+  inline def xzr: typingsJapgolly.fridaGum.fridaGumStrings.xzr = "xzr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.xzr]
 }
-

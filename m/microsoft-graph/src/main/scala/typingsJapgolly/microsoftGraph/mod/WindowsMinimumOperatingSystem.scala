@@ -1,30 +1,39 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsMinimumOperatingSystem extends js.Object {
+trait WindowsMinimumOperatingSystem extends StObject {
+  
   // Windows version 10.0 or later.
   var v10_0: js.UndefOr[Boolean] = js.undefined
+  
   // Windows version 8.0 or later.
   var v8_0: js.UndefOr[Boolean] = js.undefined
+  
   // Windows version 8.1 or later.
   var v8_1: js.UndefOr[Boolean] = js.undefined
 }
-
 object WindowsMinimumOperatingSystem {
-  @scala.inline
-  def apply(
-    v10_0: js.UndefOr[Boolean] = js.undefined,
-    v8_0: js.UndefOr[Boolean] = js.undefined,
-    v8_1: js.UndefOr[Boolean] = js.undefined
-  ): WindowsMinimumOperatingSystem = {
+  
+  inline def apply(): WindowsMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v8_1)) __obj.updateDynamic("v8_1")(v8_1.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsMinimumOperatingSystem]
   }
+  
+  extension [Self <: WindowsMinimumOperatingSystem](x: Self) {
+    
+    inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
+    
+    inline def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
+    
+    inline def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
+    
+    inline def setV8_0Undefined: Self = StObject.set(x, "v8_0", js.undefined)
+    
+    inline def setV8_1(value: Boolean): Self = StObject.set(x, "v8_1", value.asInstanceOf[js.Any])
+    
+    inline def setV8_1Undefined: Self = StObject.set(x, "v8_1", js.undefined)
+  }
 }
-

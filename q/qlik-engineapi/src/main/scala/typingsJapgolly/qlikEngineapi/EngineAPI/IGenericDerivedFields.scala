@@ -2,35 +2,44 @@ package typingsJapgolly.qlikEngineapi.EngineAPI
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGenericDerivedFields extends IGeneratedAPI {
+trait IGenericDerivedFields
+  extends StObject
+     with IGeneratedAPI {
+  
   /**
     * @returns qField
     */
-  def getDerivedField(qId: String): js.Promise[_]
+  def getDerivedField(qId: String): js.Promise[Any]
+  
   /**
     * @returns qData
     */
-  def getDerivedFieldData(): js.Promise[_]
+  def getDerivedFieldData(): js.Promise[Any]
+  
   /**
     * @returns qFields
     */
-  def getDerivedFields(): js.Promise[_]
+  def getDerivedFields(): js.Promise[Any]
+  
   /**
     * @returns qGroups
     */
-  def getDerivedGroups(): js.Promise[_]
+  def getDerivedGroups(): js.Promise[Any]
+  
   /**
     * @returns qInfo
     */
-  def getInfo(): js.Promise[_]
+  def getInfo(): js.Promise[Any]
+  
   /**
     * @returns qListData
     */
-  def getListData(): js.Promise[_]
+  def getListData(): js.Promise[Any]
+  
   /**
     * Shows the properties of an object.
     * Returns the identifier and the definition of the derived field.
@@ -39,27 +48,35 @@ trait IGenericDerivedFields extends IGeneratedAPI {
     */
   def getProperties(): js.Promise[IGenericDerivedFieldProperties]
 }
-
 object IGenericDerivedFields {
-  @scala.inline
-  def apply(
-    getDerivedField: String => CallbackTo[js.Promise[js.Any]],
-    getDerivedFieldData: CallbackTo[js.Promise[js.Any]],
-    getDerivedFields: CallbackTo[js.Promise[js.Any]],
-    getDerivedGroups: CallbackTo[js.Promise[js.Any]],
-    getInfo: CallbackTo[js.Promise[js.Any]],
-    getListData: CallbackTo[js.Promise[js.Any]],
+  
+  inline def apply(
+    getDerivedField: String => js.Promise[Any],
+    getDerivedFieldData: CallbackTo[js.Promise[Any]],
+    getDerivedFields: CallbackTo[js.Promise[Any]],
+    getDerivedGroups: CallbackTo[js.Promise[Any]],
+    getInfo: CallbackTo[js.Promise[Any]],
+    getListData: CallbackTo[js.Promise[Any]],
     getProperties: CallbackTo[js.Promise[IGenericDerivedFieldProperties]]
   ): IGenericDerivedFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDerivedField")(js.Any.fromFunction1((t0: java.lang.String) => getDerivedField(t0).runNow()))
-    __obj.updateDynamic("getDerivedFieldData")(getDerivedFieldData.toJsFn)
-    __obj.updateDynamic("getDerivedFields")(getDerivedFields.toJsFn)
-    __obj.updateDynamic("getDerivedGroups")(getDerivedGroups.toJsFn)
-    __obj.updateDynamic("getInfo")(getInfo.toJsFn)
-    __obj.updateDynamic("getListData")(getListData.toJsFn)
-    __obj.updateDynamic("getProperties")(getProperties.toJsFn)
+    val __obj = js.Dynamic.literal(getDerivedField = js.Any.fromFunction1(getDerivedField), getDerivedFieldData = getDerivedFieldData.toJsFn, getDerivedFields = getDerivedFields.toJsFn, getDerivedGroups = getDerivedGroups.toJsFn, getInfo = getInfo.toJsFn, getListData = getListData.toJsFn, getProperties = getProperties.toJsFn)
     __obj.asInstanceOf[IGenericDerivedFields]
   }
+  
+  extension [Self <: IGenericDerivedFields](x: Self) {
+    
+    inline def setGetDerivedField(value: String => js.Promise[Any]): Self = StObject.set(x, "getDerivedField", js.Any.fromFunction1(value))
+    
+    inline def setGetDerivedFieldData(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "getDerivedFieldData", value.toJsFn)
+    
+    inline def setGetDerivedFields(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "getDerivedFields", value.toJsFn)
+    
+    inline def setGetDerivedGroups(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "getDerivedGroups", value.toJsFn)
+    
+    inline def setGetInfo(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "getInfo", value.toJsFn)
+    
+    inline def setGetListData(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "getListData", value.toJsFn)
+    
+    inline def setGetProperties(value: CallbackTo[js.Promise[IGenericDerivedFieldProperties]]): Self = StObject.set(x, "getProperties", value.toJsFn)
+  }
 }
-

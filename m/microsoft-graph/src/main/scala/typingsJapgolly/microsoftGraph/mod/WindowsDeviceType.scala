@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -12,20 +12,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.holographic
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.team
 */
-trait WindowsDeviceType extends js.Object
-
+trait WindowsDeviceType extends StObject
 object WindowsDeviceType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desktop: typingsJapgolly.microsoftGraph.microsoftGraphStrings.desktop = this.cast("desktop")
-  @scala.inline
-  def holographic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.holographic = this.cast("holographic")
-  @scala.inline
-  def mobile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile = this.cast("mobile")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def team: typingsJapgolly.microsoftGraph.microsoftGraphStrings.team = this.cast("team")
+  
+  inline def desktop: typingsJapgolly.microsoftGraph.microsoftGraphStrings.desktop = "desktop".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.desktop]
+  
+  inline def holographic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.holographic = "holographic".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.holographic]
+  
+  inline def mobile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def team: typingsJapgolly.microsoftGraph.microsoftGraphStrings.team = "team".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.team]
 }
-

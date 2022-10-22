@@ -1,30 +1,19 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalajs.dom.Event
+import org.scalajs.dom.Node
 import typingsJapgolly.datatablesNet.JQuery
-import typingsJapgolly.std.Event_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "Namespaces"
 //#region "core-methods"
 @js.native
-trait CoreMethods extends UtilityMethods {
-  /**
-    * Ajax Methods
-    */
-  var ajax: AjaxMethodModel = js.native
-  /**
-    * Page Methods / object
-    */
-  @JSName("page")
-  var page_Original: PageMethods = js.native
-  /**
-    * Page Methods / object
-    */
-  @JSName("state")
-  var state_Original: StateMethods = js.native
+trait CoreMethods
+  extends StObject
+     with UtilityMethods {
+  
   /**
     * Get jquery object
     */
@@ -37,17 +26,24 @@ trait CoreMethods extends UtilityMethods {
   @JSName("$")
   def $(selector: js.Array[Node], modifier: ObjectSelectorModifier): JQuery = js.native
   @JSName("$")
-  def $(selector: JQuery): JQuery = js.native
-  @JSName("$")
-  def $(selector: JQuery, modifier: ObjectSelectorModifier): JQuery = js.native
-  @JSName("$")
   def $(selector: Node): JQuery = js.native
   @JSName("$")
   def $(selector: Node, modifier: ObjectSelectorModifier): JQuery = js.native
+  @JSName("$")
+  def $(selector: JQuery): JQuery = js.native
+  @JSName("$")
+  def $(selector: JQuery, modifier: ObjectSelectorModifier): JQuery = js.native
+  
+  /**
+    * Ajax Methods
+    */
+  var ajax: AjaxMethodModel = js.native
+  
   /**
     * Clear the table of all data.
     */
   def clear(): Api = js.native
+  
   /**
     * Destroy the DataTables in the current context.
     *
@@ -55,6 +51,7 @@ trait CoreMethods extends UtilityMethods {
     */
   def destroy(): Api = js.native
   def destroy(remove: Boolean): Api = js.native
+  
   /**
     * Redraw the DataTables in the current context, optionally updating ordering, searching and paging as required.
     *
@@ -63,6 +60,7 @@ trait CoreMethods extends UtilityMethods {
   def draw(): Api = js.native
   def draw(paging: String): Api = js.native
   def draw(paging: Boolean): Api = js.native
+  
   /*
     * Look up a language token that was defined in the DataTables' language initialisation object.
     *
@@ -72,12 +70,14 @@ trait CoreMethods extends UtilityMethods {
     *
     * @returns Resulting internationalised string.
     */
-  def i18n(token: String, `def`: js.Any): String = js.native
-  def i18n(token: String, `def`: js.Any, numeric: Double): String = js.native
+  def i18n(token: String, `def`: Any): String = js.native
+  def i18n(token: String, `def`: Any, numeric: Double): String = js.native
+  
   /*
     * Get the initialisation options used for the table. Since: DataTables 1.10.6
     */
   def init(): Settings = js.native
+  
   /**
     * Table events removal.
     *
@@ -85,21 +85,24 @@ trait CoreMethods extends UtilityMethods {
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
   def off(event: String): Api = js.native
-  def off(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def off(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
+  
   /**
     * Table events listener.
     *
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def on(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def on(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
+  
   /**
     * Listen for a table event once and then remove the listener.
     *
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def one(event: String, callback: js.Function2[/* e */ Event_, /* repeated */ js.Any, Unit]): Api = js.native
+  def one(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
+  
   /**
     * Get the current page of the table.
     */
@@ -118,6 +121,12 @@ trait CoreMethods extends UtilityMethods {
     */
   def page(page: Double): Api = js.native
   /**
+    * Page Methods / object
+    */
+  @JSName("page")
+  var page_Original: PageMethods = js.native
+  
+  /**
     * Get current search
     */
   def search(): String = js.native
@@ -133,10 +142,16 @@ trait CoreMethods extends UtilityMethods {
   def search(input: String, regex: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Boolean, smart: Unit, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Boolean, caseInsen: Boolean): Api = js.native
+  def search(input: String, regex: Unit, smart: Unit, caseInsen: Boolean): Api = js.native
+  
   /**
     * Obtain the table's settings object
     */
   def settings(): Api = js.native
+  
   /**
     * Get the last saved state of the table
     */
@@ -144,5 +159,9 @@ trait CoreMethods extends UtilityMethods {
     * Page Methods / object
     */
   def state(): StateReturnModel = js.native
+  /**
+    * Page Methods / object
+    */
+  @JSName("state")
+  var state_Original: StateMethods = js.native
 }
-

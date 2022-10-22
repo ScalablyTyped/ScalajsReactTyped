@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TemplateFileType extends js.Object
-
+sealed trait TemplateFileType extends StObject
 @JSGlobal("SP.TemplateFileType")
 @js.native
-object TemplateFileType extends js.Object {
-  @js.native
-  sealed trait formPage extends TemplateFileType
+object TemplateFileType extends StObject {
   
   @js.native
-  sealed trait standardPage extends TemplateFileType
+  sealed trait formPage
+    extends StObject
+       with TemplateFileType
   
   @js.native
-  sealed trait wikiPage extends TemplateFileType
+  sealed trait standardPage
+    extends StObject
+       with TemplateFileType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TemplateFileType with Double] = js.native
-  /* 2 */ @js.native
-  object formPage extends TopLevel[formPage with Double]
-  
-  /* 0 */ @js.native
-  object standardPage extends TopLevel[standardPage with Double]
-  
-  /* 1 */ @js.native
-  object wikiPage extends TopLevel[wikiPage with Double]
-  
+  @js.native
+  sealed trait wikiPage
+    extends StObject
+       with TemplateFileType
 }
-

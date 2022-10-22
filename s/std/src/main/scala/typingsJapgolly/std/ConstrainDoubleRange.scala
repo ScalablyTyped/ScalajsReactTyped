@@ -1,28 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstrainDoubleRange extends DoubleRange {
+trait ConstrainDoubleRange
+  extends StObject
+     with DoubleRange {
+  
+  /* standard dom */
   var exact: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var ideal: js.UndefOr[Double] = js.undefined
 }
-
 object ConstrainDoubleRange {
-  @scala.inline
-  def apply(
-    exact: Int | Double = null,
-    ideal: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null
-  ): ConstrainDoubleRange = {
+  
+  inline def apply(): ConstrainDoubleRange = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstrainDoubleRange]
   }
+  
+  extension [Self <: ConstrainDoubleRange](x: Self) {
+    
+    inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    
+    inline def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+  }
 }
-

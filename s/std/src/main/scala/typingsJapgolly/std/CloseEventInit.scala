@@ -1,33 +1,41 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CloseEventInit extends EventInit {
+trait CloseEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var code: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var reason: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var wasClean: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object CloseEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    code: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    reason: java.lang.String = null,
-    wasClean: js.UndefOr[scala.Boolean] = js.undefined
-  ): CloseEventInit = {
+  
+  inline def apply(): CloseEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasClean)) __obj.updateDynamic("wasClean")(wasClean.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseEventInit]
   }
+  
+  extension [Self <: CloseEventInit](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setReason(value: java.lang.String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
+    inline def setWasClean(value: scala.Boolean): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
+    
+    inline def setWasCleanUndefined: Self = StObject.set(x, "wasClean", js.undefined)
+  }
 }
-

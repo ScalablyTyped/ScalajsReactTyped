@@ -1,35 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextHorizontalOverflow extends js.Object
-
+sealed trait ShapeTextHorizontalOverflow extends StObject
 /**
-  *
   * Specifies the horizontal overflow for the text frame in a shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextHorizontalOverflow")
 @js.native
-object ShapeTextHorizontalOverflow extends js.Object {
+object ShapeTextHorizontalOverflow extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait clip extends ShapeTextHorizontalOverflow
+  sealed trait clip
+    extends StObject
+       with ShapeTextHorizontalOverflow
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait overflow extends ShapeTextHorizontalOverflow
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextHorizontalOverflow with String] = js.native
-  /* "Clip" */ @js.native
-  object clip extends TopLevel[clip with String]
-  
-  /* "Overflow" */ @js.native
-  object overflow extends TopLevel[overflow with String]
-  
+  sealed trait overflow
+    extends StObject
+       with ShapeTextHorizontalOverflow
 }
-

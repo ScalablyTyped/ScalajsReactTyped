@@ -1,47 +1,34 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Object
-import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateWorkflowData extends Object {
+@js.native
+trait CreateWorkflowData
+  extends StObject
+     with Accessor {
+  
   /**
-    * The [creationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo) provides the feature template and layer when creating a new feature.
+    * This provides the feature template and layer when creating a new feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#CreateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflowData.html#creationInfo)
     */
-  var creationInfo: CreationInfo
+  var creationInfo: CreationInfo = js.native
+  
   /**
-    * The edits used to keep track of a feature being modified.
+    * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being modified.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#CreateWorkflowData)
+    * @deprecated since 4.23. Use {@link module:esri/widgets/Editor/CreateFeaturesWorkflow#pendingFeatures CreateFeaturesWorkflow.pendingFeatures} to access edits made to the workflow data.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflowData.html#edits)
     */
-  var edits: Edits
+  var edits: Edits = js.native
+  
   /**
     * The associated [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) for this workflow.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#CreateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflowData.html#viewModel)
     */
-  var viewModel: EditorViewModel
+  var viewModel: EditorViewModel = js.native
 }
-
-object CreateWorkflowData {
-  @scala.inline
-  def apply(
-    constructor: js.Function,
-    creationInfo: CreationInfo,
-    edits: Edits,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    viewModel: EditorViewModel
-  ): CreateWorkflowData = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], creationInfo = creationInfo.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], viewModel = viewModel.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    __obj.asInstanceOf[CreateWorkflowData]
-  }
-}
-

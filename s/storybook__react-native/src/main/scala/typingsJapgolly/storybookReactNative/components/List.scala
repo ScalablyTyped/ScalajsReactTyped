@@ -1,42 +1,24 @@
 package typingsJapgolly.storybookReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.storybookAddons.distMod.Collection
-import typingsJapgolly.storybookReactNative.listMod.Props
-import typingsJapgolly.storybookReactNative.listMod.default
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.storybookAddons.distTs3Dot9Mod.Collection
+import typingsJapgolly.storybookReactNative.distPreviewComponentsOnDeviceUIAddonsListMod.Props
+import typingsJapgolly.storybookReactNative.distPreviewComponentsOnDeviceUIAddonsListMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply(
-    addonSelected: String,
-    panels: Collection,
-    onPressAddon: String => Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onPressAddon")(js.Any.fromFunction1((t0: java.lang.String) => onPressAddon(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookReactNative.listMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookReactNative.listMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookReactNative.listMod.Props])(children: _*)
+  inline def apply(addonSelected: String, onPressAddon: String => Callback, panels: Collection): Default[default] = {
+    val __props = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any], onPressAddon = js.Any.fromFunction1((t0: String) => onPressAddon(t0).runNow()), panels = panels.asInstanceOf[js.Any])
+    new Default[default](js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons/list", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: Props): Default[default] = new Default[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

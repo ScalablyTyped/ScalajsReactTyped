@@ -1,10 +1,11 @@
 package typingsJapgolly.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MML2jaxPreprocessor extends js.Object {
+trait MML2jaxPreprocessor extends StObject {
+  
   /*This controls whether mml2jax inserts MathJax_Preview spans to make a preview available, and what preview to
     * use, when it locates mathematics on the page. Possible values are: "mathml", "alttext", , "altimg", "none",
     * or an HTML snippet.
@@ -21,15 +22,19 @@ trait MML2jaxPreprocessor extends js.Object {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.undefined
+  var preview: js.UndefOr[Any] = js.undefined
 }
-
 object MML2jaxPreprocessor {
-  @scala.inline
-  def apply(preview: js.Any = null): MML2jaxPreprocessor = {
+  
+  inline def apply(): MML2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
-    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[MML2jaxPreprocessor]
   }
+  
+  extension [Self <: MML2jaxPreprocessor](x: Self) {
+    
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+  }
 }
-

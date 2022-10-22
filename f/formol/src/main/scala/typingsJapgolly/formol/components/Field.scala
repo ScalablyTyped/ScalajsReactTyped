@@ -1,98 +1,114 @@
 package typingsJapgolly.formol.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.formol.mod.FieldProps
 import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Field {
-  def apply(
-    TypeField: ComponentType[js.Object] = null,
-    choices: js.Array[_] = null,
-    className: String = null,
-    classNameModifiers: js.Any = null,
-    dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: VdomNode = null,
-    extras: VdomNode = null,
-    formatter: js.Any => CallbackTo[js.Any] = null,
-    handleChange: (/* name */ String, js.Any) => Callback = null,
-    handleEntered: (/* name */ String, js.Any) => Callback = null,
-    i18n: js.Any = null,
-    max: Int | Double = null,
-    minLength: Int | Double = null,
-    modified: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    normalizer: js.Any => CallbackTo[js.Any] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    register: (/* name */ String, /* element */ Ref, /* validator */ js.Any, /* validityErrors */ js.Any) => Callback = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null,
-    title: String = null,
-    `type`: String = null,
-    unformatter: js.Any => CallbackTo[js.Any] = null,
-    unit: VdomNode = null,
-    unregister: /* name */ String => Callback = null,
-    validator: js.Any => CallbackTo[String] = null,
-    validityErrors: js.Any = null,
-    value: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[FieldProps[js.Any], typingsJapgolly.formol.mod.Field, Unit, FieldProps[js.Any]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (TypeField != null) __obj.updateDynamic("TypeField")(TypeField.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classNameModifiers != null) __obj.updateDynamic("classNameModifiers")(classNameModifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerousRawHTMLLabels)) __obj.updateDynamic("dangerousRawHTMLLabels")(dangerousRawHTMLLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.rawNode.asInstanceOf[js.Any])
-    if (extras != null) __obj.updateDynamic("extras")(extras.rawNode.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1((t0: js.Any) => formatter(t0).runNow()))
-    if (handleChange != null) __obj.updateDynamic("handleChange")(js.Any.fromFunction2((t0: /* name */ java.lang.String, t1: js.Any) => handleChange(t0, t1).runNow()))
-    if (handleEntered != null) __obj.updateDynamic("handleEntered")(js.Any.fromFunction2((t0: /* name */ java.lang.String, t1: js.Any) => handleEntered(t0, t1).runNow()))
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(modified)) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1((t0: js.Any) => normalizer(t0).runNow()))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction4((t0: /* name */ java.lang.String, t1: /* element */ japgolly.scalajs.react.raw.React.Ref, t2: /* validator */ js.Any, t3: /* validityErrors */ js.Any) => register(t0, t1, t2, t3).runNow()))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unformatter != null) __obj.updateDynamic("unformatter")(js.Any.fromFunction1((t0: js.Any) => unformatter(t0).runNow()))
-    if (unit != null) __obj.updateDynamic("unit")(unit.rawNode.asInstanceOf[js.Any])
-    if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1((t0: /* name */ java.lang.String) => unregister(t0).runNow()))
-    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1((t0: js.Any) => validator(t0).runNow()))
-    if (validityErrors != null) __obj.updateDynamic("validityErrors")(validityErrors.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.formol.mod.FieldProps[js.Any], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.formol.mod.Field](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.formol.mod.FieldProps[js.Any]])
-  }
   @JSImport("formol", "Field")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def TypeField(value: ComponentType[js.Object]): this.type = set("TypeField", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def choices(value: js.Array[Any]): this.type = set("choices", value.asInstanceOf[js.Any])
+    
+    inline def choicesVarargs(value: Any*): this.type = set("choices", js.Array(value*))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classNameModifiers(value: Any): this.type = set("classNameModifiers", value.asInstanceOf[js.Any])
+    
+    inline def dangerousRawHTMLLabels(value: Boolean): this.type = set("dangerousRawHTMLLabels", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: VdomNode): this.type = set("error", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def errorNull: this.type = set("error", null)
+    
+    inline def errorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("error", js.Array(value*))
+    
+    inline def errorVdomElement(value: VdomElement): this.type = set("error", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def extras(value: VdomNode): this.type = set("extras", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extrasNull: this.type = set("extras", null)
+    
+    inline def extrasVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extras", js.Array(value*))
+    
+    inline def extrasVdomElement(value: VdomElement): this.type = set("extras", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def formatter(value: Any => Any): this.type = set("formatter", js.Any.fromFunction1(value))
+    
+    inline def handleChange(value: (/* name */ String, Any) => Callback): this.type = set("handleChange", js.Any.fromFunction2((t0: /* name */ String, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def handleEntered(value: (/* name */ String, Any) => Callback): this.type = set("handleEntered", js.Any.fromFunction2((t0: /* name */ String, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def i18n(value: Any): this.type = set("i18n", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def minLength(value: Double): this.type = set("minLength", value.asInstanceOf[js.Any])
+    
+    inline def modified(value: Boolean): this.type = set("modified", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def normalizer(value: Any => Any): this.type = set("normalizer", js.Any.fromFunction1(value))
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def register(
+      value: (/* name */ String, /* element */ Ref[Any], /* validator */ Any, /* validityErrors */ Any) => Callback
+    ): this.type = set("register", js.Any.fromFunction4((t0: /* name */ String, t1: /* element */ Ref[Any], t2: /* validator */ Any, t3: /* validityErrors */ Any) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def unformatter(value: Any => Any): this.type = set("unformatter", js.Any.fromFunction1(value))
+    
+    inline def unit(value: VdomNode): this.type = set("unit", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def unitNull: this.type = set("unit", null)
+    
+    inline def unitVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("unit", js.Array(value*))
+    
+    inline def unitVdomElement(value: VdomElement): this.type = set("unit", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def unregister(value: /* name */ String => Callback): this.type = set("unregister", js.Any.fromFunction1((t0: /* name */ String) => value(t0).runNow()))
+    
+    inline def validator(value: Any => String): this.type = set("validator", js.Any.fromFunction1(value))
+    
+    inline def validityErrors(value: Any): this.type = set("validityErrors", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Field.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FieldProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

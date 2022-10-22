@@ -1,20 +1,30 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ExpressionRunnerBase")
 @js.native
-class ExpressionRunnerBase protected () extends js.Object {
+open class ExpressionRunnerBase protected () extends StObject {
   def this(expression: String) = this()
-  var expression: String = js.native
-  val isAsync: Boolean = js.native
+  
   def canRun(): Boolean = js.native
-  /* protected */ def doOnComplete(res: js.Any): Unit = js.native
-  def getVariables(): js.Array[String] = js.native
+  
+  /* protected */ def doOnComplete(res: Any): Unit = js.native
+  
+  def expression: String = js.native
+  
+  var expressionExecutor: IExpresionExecutor = js.native
+  
+  def expression_=(`val`: String): Unit = js.native
+  
+  def getVariables(): js.Array[Any] = js.native
+  
   def hasFunction(): Boolean = js.native
-  /* protected */ def runCore(values: HashTable[_]): js.Any = js.native
-  /* protected */ def runCore(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
+  
+  def isAsync: Boolean = js.native
+  
+  /* protected */ def runCore(values: Any): Any = js.native
+  /* protected */ def runCore(values: Any, properties: Any): Any = js.native
 }
-

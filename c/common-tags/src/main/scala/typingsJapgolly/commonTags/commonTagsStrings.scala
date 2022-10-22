@@ -1,44 +1,36 @@
 package typingsJapgolly.commonTags
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonTagsStrings {
-  @js.native
-  sealed trait _empty extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
 }
-

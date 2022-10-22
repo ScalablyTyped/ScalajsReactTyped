@@ -1,21 +1,19 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "OctetString")
 @js.native
-class OctetString () extends BaseBlock[LocalOctetStringValueBlock] {
-  def this(params: LocalOctetStringValueBlockParams) = this()
+trait OctetString
+  extends StObject
+     with BaseBlock[LocalOctetStringValueBlock, LocalOctetStringValueBlockJson]
+     with _AsnType {
+  
   /**
-    * Checking that two OCTETSTRINGs are equal
-    * 
-    * @param {OctetString} octetString
-    * @returns {boolean}
-    * 
-    * @memberOf OctetString
+    * Returns OctetString value. If OctetString is constructed, returns concatenated internal OctetString values
+    * @returns Array buffer
+    * @since 3.0.0
     */
-  def isEqual(octetString: OctetString): scala.Boolean = js.native
+  def getValue(): js.typedarray.ArrayBuffer = js.native
 }
-

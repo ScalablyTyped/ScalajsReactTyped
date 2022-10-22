@@ -1,24 +1,20 @@
 package typingsJapgolly.overwatchApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.overwatchApi.overwatchApiStrings.pc
   - typingsJapgolly.overwatchApi.overwatchApiStrings.xbl
   - typingsJapgolly.overwatchApi.overwatchApiStrings.psn
 */
-trait PLATFORM extends js.Object
-
+trait PLATFORM extends StObject
 object PLATFORM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def pc: typingsJapgolly.overwatchApi.overwatchApiStrings.pc = this.cast("pc")
-  @scala.inline
-  def psn: typingsJapgolly.overwatchApi.overwatchApiStrings.psn = this.cast("psn")
-  @scala.inline
-  def xbl: typingsJapgolly.overwatchApi.overwatchApiStrings.xbl = this.cast("xbl")
+  
+  inline def pc: typingsJapgolly.overwatchApi.overwatchApiStrings.pc = "pc".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.pc]
+  
+  inline def psn: typingsJapgolly.overwatchApi.overwatchApiStrings.psn = "psn".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.psn]
+  
+  inline def xbl: typingsJapgolly.overwatchApi.overwatchApiStrings.xbl = "xbl".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.xbl]
 }
-

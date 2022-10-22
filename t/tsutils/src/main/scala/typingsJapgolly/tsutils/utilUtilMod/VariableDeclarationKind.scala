@@ -1,35 +1,33 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VariableDeclarationKind extends js.Object
-
+sealed trait VariableDeclarationKind extends StObject
 @JSImport("tsutils/util/util", "VariableDeclarationKind")
 @js.native
-object VariableDeclarationKind extends js.Object {
-  @js.native
-  sealed trait Const extends VariableDeclarationKind
-  
-  @js.native
-  sealed trait Let extends VariableDeclarationKind
-  
-  @js.native
-  sealed trait Var extends VariableDeclarationKind
+object VariableDeclarationKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VariableDeclarationKind with Double] = js.native
-  /* 2 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  def apply(value: Double): js.UndefOr[VariableDeclarationKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object Let extends TopLevel[Let with Double]
+  @js.native
+  sealed trait Const
+    extends StObject
+       with VariableDeclarationKind
+  /* 2 */ val Const: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Const & Double = js.native
   
-  /* 0 */ @js.native
-  object Var extends TopLevel[Var with Double]
+  @js.native
+  sealed trait Let
+    extends StObject
+       with VariableDeclarationKind
+  /* 1 */ val Let: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Let & Double = js.native
   
+  @js.native
+  sealed trait Var
+    extends StObject
+       with VariableDeclarationKind
+  /* 0 */ val Var: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Var & Double = js.native
 }
-

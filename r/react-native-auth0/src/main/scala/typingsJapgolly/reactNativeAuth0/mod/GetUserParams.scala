@@ -1,19 +1,22 @@
 package typingsJapgolly.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetUserParams extends js.Object {
+trait GetUserParams extends StObject {
+  
   var id: String
 }
-
 object GetUserParams {
-  @scala.inline
-  def apply(id: String): GetUserParams = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
+  inline def apply(id: String): GetUserParams = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserParams]
   }
+  
+  extension [Self <: GetUserParams](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+  }
 }
-

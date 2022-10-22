@@ -1,21 +1,17 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LineChartMediaInfoProperties
-  extends MediaInfoProperties
+  extends StObject
+     with MediaInfoProperties
      with ChartMediaInfoProperties
-
 object LineChartMediaInfoProperties {
-  @scala.inline
-  def apply(caption: String = null, title: String = null, value: ChartMediaInfoValueProperties = null): LineChartMediaInfoProperties = {
+  
+  inline def apply(): LineChartMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartMediaInfoProperties]
   }
 }
-

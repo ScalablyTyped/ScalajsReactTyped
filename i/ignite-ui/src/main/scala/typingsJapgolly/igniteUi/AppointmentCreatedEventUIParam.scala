@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppointmentCreatedEventUIParam extends js.Object {
+trait AppointmentCreatedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the created appointment.
-  	 */
-  var appointment: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the created appointment.
+    */
+  var appointment: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the scheduler.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the scheduler.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object AppointmentCreatedEventUIParam {
-  @scala.inline
-  def apply(appointment: js.Any = null, owner: js.Any = null): AppointmentCreatedEventUIParam = {
+  
+  inline def apply(): AppointmentCreatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentCreatedEventUIParam]
   }
+  
+  extension [Self <: AppointmentCreatedEventUIParam](x: Self) {
+    
+    inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    
+    inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

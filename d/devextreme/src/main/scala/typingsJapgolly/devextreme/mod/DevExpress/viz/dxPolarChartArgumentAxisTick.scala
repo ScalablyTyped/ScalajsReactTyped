@@ -1,32 +1,29 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartArgumentAxisTick extends dxPolarChartCommonAxisSettingsTick {
-  /** Shifts ticks from the reference position. */
+trait dxPolarChartArgumentAxisTick
+  extends StObject
+     with dxPolarChartCommonAxisSettingsTick {
+  
+  /**
+    * Shifts ticks from the reference position.
+    */
   var shift: js.UndefOr[Double] = js.undefined
 }
-
 object dxPolarChartArgumentAxisTick {
-  @scala.inline
-  def apply(
-    color: String = null,
-    length: Int | Double = null,
-    opacity: Int | Double = null,
-    shift: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxPolarChartArgumentAxisTick = {
+  
+  inline def apply(): dxPolarChartArgumentAxisTick = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartArgumentAxisTick]
   }
+  
+  extension [Self <: dxPolarChartArgumentAxisTick](x: Self) {
+    
+    inline def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    
+    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+  }
 }
-

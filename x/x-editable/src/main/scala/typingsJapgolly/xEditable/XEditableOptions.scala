@@ -1,99 +1,180 @@
 package typingsJapgolly.xEditable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XEditableOptions extends js.Object {
-  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
+trait XEditableOptions extends StObject {
+  
+  var ajaxOptions: js.UndefOr[Any] = js.undefined
+  
   var anim: js.UndefOr[String] = js.undefined
+  
   var autotext: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var display: js.UndefOr[js.Any] = js.undefined
+  
+  var display: js.UndefOr[Any] = js.undefined
+  
   var emptyclass: js.UndefOr[String] = js.undefined
+  
   var emptytext: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[js.Any] = js.undefined
-  var highlight: js.UndefOr[js.Any] = js.undefined
+  
+  var error: js.UndefOr[Any] = js.undefined
+  
+  var highlight: js.UndefOr[Any] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var onblur: js.UndefOr[String] = js.undefined
-  var params: js.UndefOr[js.Any] = js.undefined
-  var pk: js.UndefOr[js.Any] = js.undefined
+  
+  var params: js.UndefOr[Any] = js.undefined
+  
+  var pk: js.UndefOr[Any] = js.undefined
+  
   var placement: js.UndefOr[String] = js.undefined
+  
   var savenochange: js.UndefOr[Boolean] = js.undefined
+  
   var selector: js.UndefOr[String] = js.undefined
+  
   var send: js.UndefOr[String] = js.undefined
-  var showbuttons: js.UndefOr[js.Any] = js.undefined
-  var success: js.UndefOr[js.Any] = js.undefined
+  
+  var showbuttons: js.UndefOr[Any] = js.undefined
+  
+  var success: js.UndefOr[Any] = js.undefined
+  
   var toggle: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var unsavedclass: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
-  var validate: js.UndefOr[js.Any] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
+  
+  var validate: js.UndefOr[Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object XEditableOptions {
-  @scala.inline
-  def apply(
-    ajaxOptions: js.Any = null,
-    anim: String = null,
-    autotext: String = null,
-    defaultValue: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    display: js.Any = null,
-    emptyclass: String = null,
-    emptytext: String = null,
-    error: js.Any = null,
-    highlight: js.Any = null,
-    mode: String = null,
-    name: String = null,
-    onblur: String = null,
-    params: js.Any = null,
-    pk: js.Any = null,
-    placement: String = null,
-    savenochange: js.UndefOr[Boolean] = js.undefined,
-    selector: String = null,
-    send: String = null,
-    showbuttons: js.Any = null,
-    success: js.Any = null,
-    toggle: String = null,
-    `type`: String = null,
-    unsavedclass: String = null,
-    url: js.Any = null,
-    validate: js.Any = null,
-    value: js.Any = null
-  ): XEditableOptions = {
+  
+  inline def apply(): XEditableOptions = {
     val __obj = js.Dynamic.literal()
-    if (ajaxOptions != null) __obj.updateDynamic("ajaxOptions")(ajaxOptions.asInstanceOf[js.Any])
-    if (anim != null) __obj.updateDynamic("anim")(anim.asInstanceOf[js.Any])
-    if (autotext != null) __obj.updateDynamic("autotext")(autotext.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (emptyclass != null) __obj.updateDynamic("emptyclass")(emptyclass.asInstanceOf[js.Any])
-    if (emptytext != null) __obj.updateDynamic("emptytext")(emptytext.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onblur != null) __obj.updateDynamic("onblur")(onblur.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (pk != null) __obj.updateDynamic("pk")(pk.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(savenochange)) __obj.updateDynamic("savenochange")(savenochange.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
-    if (showbuttons != null) __obj.updateDynamic("showbuttons")(showbuttons.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unsavedclass != null) __obj.updateDynamic("unsavedclass")(unsavedclass.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[XEditableOptions]
   }
+  
+  extension [Self <: XEditableOptions](x: Self) {
+    
+    inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
+    
+    inline def setAnim(value: String): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
+    
+    inline def setAnimUndefined: Self = StObject.set(x, "anim", js.undefined)
+    
+    inline def setAutotext(value: String): Self = StObject.set(x, "autotext", value.asInstanceOf[js.Any])
+    
+    inline def setAutotextUndefined: Self = StObject.set(x, "autotext", js.undefined)
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDisplay(value: Any): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setEmptyclass(value: String): Self = StObject.set(x, "emptyclass", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyclassUndefined: Self = StObject.set(x, "emptyclass", js.undefined)
+    
+    inline def setEmptytext(value: String): Self = StObject.set(x, "emptytext", value.asInstanceOf[js.Any])
+    
+    inline def setEmptytextUndefined: Self = StObject.set(x, "emptytext", js.undefined)
+    
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnblur(value: String): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    
+    inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
+    
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setPk(value: Any): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    
+    inline def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
+    
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setSavenochange(value: Boolean): Self = StObject.set(x, "savenochange", value.asInstanceOf[js.Any])
+    
+    inline def setSavenochangeUndefined: Self = StObject.set(x, "savenochange", js.undefined)
+    
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    
+    inline def setShowbuttons(value: Any): Self = StObject.set(x, "showbuttons", value.asInstanceOf[js.Any])
+    
+    inline def setShowbuttonsUndefined: Self = StObject.set(x, "showbuttons", js.undefined)
+    
+    inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setToggle(value: String): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUnsavedclass(value: String): Self = StObject.set(x, "unsavedclass", value.asInstanceOf[js.Any])
+    
+    inline def setUnsavedclassUndefined: Self = StObject.set(x, "unsavedclass", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setValidate(value: Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

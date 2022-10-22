@@ -1,95 +1,93 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EFriendFlags extends js.Object
-
+sealed trait EFriendFlags extends StObject
 @JSImport("steam-client", "EFriendFlags")
 @js.native
-object EFriendFlags extends js.Object {
-  @js.native
-  sealed trait Blocked extends EFriendFlags
-  
-  @js.native
-  sealed trait ChatMember extends EFriendFlags
-  
-  @js.native
-  sealed trait ClanMember extends EFriendFlags
-  
-  @js.native
-  sealed trait FlagAll extends EFriendFlags
-  
-  @js.native
-  sealed trait FriendshipRequested extends EFriendFlags
-  
-  @js.native
-  sealed trait Ignored extends EFriendFlags
-  
-  @js.native
-  sealed trait IgnoredFriend extends EFriendFlags
-  
-  @js.native
-  sealed trait Immediate extends EFriendFlags
-  
-  @js.native
-  sealed trait None extends EFriendFlags
-  
-  @js.native
-  sealed trait OnGameServer extends EFriendFlags
-  
-  @js.native
-  sealed trait RequestingFriendship extends EFriendFlags
-  
-  @js.native
-  sealed trait RequestingInfo extends EFriendFlags
-  
-  @js.native
-  sealed trait Suggested extends EFriendFlags
+object EFriendFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EFriendFlags with Double] = js.native
-  /* 1 */ @js.native
-  object Blocked extends TopLevel[Blocked with Double]
+  def apply(value: Double): js.UndefOr[EFriendFlags & Double] = js.native
   
-  /* 4096 */ @js.native
-  object ChatMember extends TopLevel[ChatMember with Double]
+  @js.native
+  sealed trait Blocked
+    extends StObject
+       with EFriendFlags
+  /* 1 */ val Blocked: typingsJapgolly.steamClient.mod.EFriendFlags.Blocked & Double = js.native
   
-  /* 8 */ @js.native
-  object ClanMember extends TopLevel[ClanMember with Double]
+  @js.native
+  sealed trait ChatMember
+    extends StObject
+       with EFriendFlags
+  /* 4096 */ val ChatMember: typingsJapgolly.steamClient.mod.EFriendFlags.ChatMember & Double = js.native
   
-  /* 65535 */ @js.native
-  object FlagAll extends TopLevel[FlagAll with Double]
+  @js.native
+  sealed trait ClanMember
+    extends StObject
+       with EFriendFlags
+  /* 8 */ val ClanMember: typingsJapgolly.steamClient.mod.EFriendFlags.ClanMember & Double = js.native
   
-  /* 2 */ @js.native
-  object FriendshipRequested extends TopLevel[FriendshipRequested with Double]
+  @js.native
+  sealed trait FlagAll
+    extends StObject
+       with EFriendFlags
+  /* 65535 */ val FlagAll: typingsJapgolly.steamClient.mod.EFriendFlags.FlagAll & Double = js.native
   
-  /* 512 */ @js.native
-  object Ignored extends TopLevel[Ignored with Double]
+  @js.native
+  sealed trait FriendshipRequested
+    extends StObject
+       with EFriendFlags
+  /* 2 */ val FriendshipRequested: typingsJapgolly.steamClient.mod.EFriendFlags.FriendshipRequested & Double = js.native
   
-  /* 1024 */ @js.native
-  object IgnoredFriend extends TopLevel[IgnoredFriend with Double]
+  @js.native
+  sealed trait Ignored
+    extends StObject
+       with EFriendFlags
+  /* 512 */ val Ignored: typingsJapgolly.steamClient.mod.EFriendFlags.Ignored & Double = js.native
   
-  /* 4 */ @js.native
-  object Immediate extends TopLevel[Immediate with Double]
+  @js.native
+  sealed trait IgnoredFriend
+    extends StObject
+       with EFriendFlags
+  /* 1024 */ val IgnoredFriend: typingsJapgolly.steamClient.mod.EFriendFlags.IgnoredFriend & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait Immediate
+    extends StObject
+       with EFriendFlags
+  /* 4 */ val Immediate: typingsJapgolly.steamClient.mod.EFriendFlags.Immediate & Double = js.native
   
-  /* 16 */ @js.native
-  object OnGameServer extends TopLevel[OnGameServer with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with EFriendFlags
+  /* 0 */ val None: typingsJapgolly.steamClient.mod.EFriendFlags.None & Double = js.native
   
-  /* 128 */ @js.native
-  object RequestingFriendship extends TopLevel[RequestingFriendship with Double]
+  @js.native
+  sealed trait OnGameServer
+    extends StObject
+       with EFriendFlags
+  /* 16 */ val OnGameServer: typingsJapgolly.steamClient.mod.EFriendFlags.OnGameServer & Double = js.native
   
-  /* 256 */ @js.native
-  object RequestingInfo extends TopLevel[RequestingInfo with Double]
+  @js.native
+  sealed trait RequestingFriendship
+    extends StObject
+       with EFriendFlags
+  /* 128 */ val RequestingFriendship: typingsJapgolly.steamClient.mod.EFriendFlags.RequestingFriendship & Double = js.native
   
-  /* 2048 */ @js.native
-  object Suggested extends TopLevel[Suggested with Double]
+  @js.native
+  sealed trait RequestingInfo
+    extends StObject
+       with EFriendFlags
+  /* 256 */ val RequestingInfo: typingsJapgolly.steamClient.mod.EFriendFlags.RequestingInfo & Double = js.native
   
+  @js.native
+  sealed trait Suggested
+    extends StObject
+       with EFriendFlags
+  /* 2048 */ val Suggested: typingsJapgolly.steamClient.mod.EFriendFlags.Suggested & Double = js.native
 }
-

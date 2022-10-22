@@ -1,64 +1,52 @@
 package typingsJapgolly.dragula
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragulaStrings {
-  @js.native
-  sealed trait cancel extends js.Object
   
   @js.native
-  sealed trait cloned extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait cloned extends StObject
+  inline def cloned: cloned = "cloned".asInstanceOf[cloned]
   
   @js.native
-  sealed trait drag extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait dragend extends js.Object
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait drop extends js.Object
+  sealed trait dragend extends StObject
+  inline def dragend: dragend = "dragend".asInstanceOf[dragend]
   
   @js.native
-  sealed trait mirror extends js.Object
+  sealed trait drop extends StObject
+  inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
-  sealed trait out extends js.Object
+  sealed trait mirror extends StObject
+  inline def mirror: mirror = "mirror".asInstanceOf[mirror]
   
   @js.native
-  sealed trait over extends js.Object
+  sealed trait out extends StObject
+  inline def out: out = "out".asInstanceOf[out]
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait over extends StObject
+  inline def over: over = "over".asInstanceOf[over]
   
   @js.native
-  sealed trait shadow extends js.Object
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def cloned: cloned = "cloned".asInstanceOf[cloned]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def drag: drag = "drag".asInstanceOf[drag]
-  @scala.inline
-  def dragend: dragend = "dragend".asInstanceOf[dragend]
-  @scala.inline
-  def drop: drop = "drop".asInstanceOf[drop]
-  @scala.inline
-  def mirror: mirror = "mirror".asInstanceOf[mirror]
-  @scala.inline
-  def out: out = "out".asInstanceOf[out]
-  @scala.inline
-  def over: over = "over".asInstanceOf[over]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def shadow: shadow = "shadow".asInstanceOf[shadow]
+  @js.native
+  sealed trait shadow extends StObject
+  inline def shadow: shadow = "shadow".asInstanceOf[shadow]
 }
-

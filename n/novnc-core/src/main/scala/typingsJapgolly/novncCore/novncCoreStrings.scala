@@ -1,60 +1,57 @@
 package typingsJapgolly.novncCore
 
 import typingsJapgolly.novncCore.mod.NvConnectionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object novncCoreStrings {
-  @js.native
-  sealed trait connected extends NvConnectionState
   
   @js.native
-  sealed trait connecting extends NvConnectionState
+  sealed trait connected
+    extends StObject
+       with NvConnectionState
+  inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait connecting
+    extends StObject
+       with NvConnectionState
+  inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
-  sealed trait disconnected extends NvConnectionState
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait disconnecting extends NvConnectionState
+  sealed trait disconnected
+    extends StObject
+       with NvConnectionState
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait disconnecting
+    extends StObject
+       with NvConnectionState
+  inline def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

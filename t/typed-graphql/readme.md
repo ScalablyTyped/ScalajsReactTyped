@@ -11,9 +11,9 @@ Type definitions for graphql-js
 | Full name          | typed-graphql |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 108416 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2465.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/nitintutlani/typed-graphql#readme)

@@ -1,23 +1,46 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHeader extends js.Object {
-  var msg_id: String
-  var msg_type: String
-  var session: String
-  var username: String
-  var version: String
-}
-
-object IHeader {
-  @scala.inline
-  def apply(msg_id: String, msg_type: String, session: String, username: String, version: String): IHeader = {
-    val __obj = js.Dynamic.literal(msg_id = msg_id.asInstanceOf[js.Any], msg_type = msg_type.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+trait IHeader extends StObject {
   
+  var msg_id: js.UndefOr[String] = js.undefined
+  
+  var msg_type: String
+  
+  var session: js.UndefOr[String] = js.undefined
+  
+  var username: js.UndefOr[String] = js.undefined
+  
+  var version: js.UndefOr[String] = js.undefined
+}
+object IHeader {
+  
+  inline def apply(msg_type: String): IHeader = {
+    val __obj = js.Dynamic.literal(msg_type = msg_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeader]
   }
+  
+  extension [Self <: IHeader](x: Self) {
+    
+    inline def setMsg_id(value: String): Self = StObject.set(x, "msg_id", value.asInstanceOf[js.Any])
+    
+    inline def setMsg_idUndefined: Self = StObject.set(x, "msg_id", js.undefined)
+    
+    inline def setMsg_type(value: String): Self = StObject.set(x, "msg_type", value.asInstanceOf[js.Any])
+    
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

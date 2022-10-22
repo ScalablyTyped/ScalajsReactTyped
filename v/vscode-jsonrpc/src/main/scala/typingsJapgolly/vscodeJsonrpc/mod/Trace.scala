@@ -1,37 +1,25 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-sealed trait Trace extends js.Object
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-jsonrpc", "Trace")
 @js.native
-object Trace extends js.Object {
-  @js.native
-  sealed trait Messages extends Trace
-  
-  @js.native
-  sealed trait Off extends Trace
-  
-  @js.native
-  sealed trait Verbose extends Trace
+object Trace extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Trace with Double] = js.native
-  def fromString(value: String): Trace = js.native
-  def toString(value: Trace): TraceValues = js.native
-  /* 1 */ @js.native
-  object Messages extends TopLevel[Messages with Double]
+  def apply(value: Double): js.UndefOr[typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace & Double] = js.native
   
-  /* 0 */ @js.native
-  object Off extends TopLevel[Off with Double]
+  /* 2 */ val Compact: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace.Compact & Double = js.native
   
-  /* 2 */ @js.native
-  object Verbose extends TopLevel[Verbose with Double]
+  /* 1 */ val Messages: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace.Messages & Double = js.native
   
+  /* 0 */ val Off: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace.Off & Double = js.native
+  
+  /* 3 */ val Verbose: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace.Verbose & Double = js.native
+  
+  def fromString(value: String): typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace = js.native
+  
+  def toString_(value: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.Trace): typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.TraceValues = js.native
 }
-

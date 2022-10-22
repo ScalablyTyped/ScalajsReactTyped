@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetConnectedWifiRes extends js.Object {
+trait GetConnectedWifiRes extends StObject {
+  
   /**
     * 接口调用成功的回调函数
     */
   var wifi: js.UndefOr[WiFi] = js.undefined
 }
-
 object GetConnectedWifiRes {
-  @scala.inline
-  def apply(wifi: WiFi = null): GetConnectedWifiRes = {
+  
+  inline def apply(): GetConnectedWifiRes = {
     val __obj = js.Dynamic.literal()
-    if (wifi != null) __obj.updateDynamic("wifi")(wifi.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedWifiRes]
   }
+  
+  extension [Self <: GetConnectedWifiRes](x: Self) {
+    
+    inline def setWifi(value: WiFi): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    
+    inline def setWifiUndefined: Self = StObject.set(x, "wifi", js.undefined)
+  }
 }
-

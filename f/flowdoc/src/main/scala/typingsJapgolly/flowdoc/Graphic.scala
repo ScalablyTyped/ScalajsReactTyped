@@ -4,19 +4,23 @@ import typingsJapgolly.flowdoc.Flow.FileAsset
 import typingsJapgolly.flowdoc.Flow.Point
 import typingsJapgolly.flowdoc.Flow.Size
 import typingsJapgolly.flowdoc.Flow.URLAsset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Graphic extends Node {
+trait Graphic
+  extends StObject
+     with Node {
+  
   var position: Point
+  
   var size: Size
+  
   var source: FileAsset | URLAsset
 }
-
 object Graphic {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     id: String,
     name: String,
     position: Point,
@@ -28,5 +32,13 @@ object Graphic {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graphic]
   }
+  
+  extension [Self <: Graphic](x: Self) {
+    
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: FileAsset | URLAsset): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+  }
 }
-

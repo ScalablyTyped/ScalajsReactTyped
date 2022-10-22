@@ -1,30 +1,39 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItems extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
-  def apply(Index: js.Any): js.Any = js.native
+trait MenuItems extends StObject {
+  
+  def apply(Index: Any): Any = js.native
+  
   def Add(
     Caption: String,
-    OnAction: js.UndefOr[js.Any],
-    ShortcutKey: js.UndefOr[js.Any],
-    Before: js.UndefOr[js.Any],
-    Restore: js.UndefOr[js.Any],
-    StatusBar: js.UndefOr[js.Any],
-    HelpFile: js.UndefOr[js.Any],
-    HelpContextID: js.UndefOr[js.Any]
+    OnAction: js.UndefOr[Any],
+    ShortcutKey: js.UndefOr[Any],
+    Before: js.UndefOr[Any],
+    Restore: js.UndefOr[Any],
+    StatusBar: js.UndefOr[Any],
+    HelpFile: js.UndefOr[Any],
+    HelpContextID: js.UndefOr[Any]
   ): MenuItem = js.native
+  
   def AddMenu(Caption: String): Menu = js.native
-  def AddMenu(Caption: String, Before: js.Any): Menu = js.native
-  def AddMenu(Caption: String, Before: js.Any, Restore: js.Any): Menu = js.native
-  def Item(Index: js.Any): js.Any = js.native
-  def _Default(Index: js.Any): js.Any = js.native
+  def AddMenu(Caption: String, Before: Any): Menu = js.native
+  def AddMenu(Caption: String, Before: Any, Restore: Any): Menu = js.native
+  def AddMenu(Caption: String, Before: Unit, Restore: Any): Menu = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
+  def Item(Index: Any): Any = js.native
+  
+  val Parent: Any = js.native
+  
+  def _Default(Index: Any): Any = js.native
 }
-

@@ -1,79 +1,147 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderContext extends js.Object {
+trait RenderContext extends StObject {
+  
   var BaseViewID: js.UndefOr[Double] = js.undefined
+  
   var ControlMode: js.UndefOr[ClientControlMode] = js.undefined
+  
   var CurrentCultureName: js.UndefOr[String] = js.undefined
+  
   var CurrentLanguage: js.UndefOr[Double] = js.undefined
-  var CurrentSelectedItems: js.UndefOr[js.Any] = js.undefined
+  
+  var CurrentSelectedItems: js.UndefOr[Any] = js.undefined
+  
   var CurrentUICultureName: js.UndefOr[String] = js.undefined
+  
   var ListTemplateType: js.UndefOr[Double] = js.undefined
+  
   var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
+  
   var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
+  
   var RenderBody: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderFieldByName: js.UndefOr[js.Function2[/* renderContext */ this.type, /* fieldName */ String, String]] = js.undefined
+  
   var RenderFields: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderFooter: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderGroups: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderHeader: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderItems: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var RenderView: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
+  
   var SiteClientTag: js.UndefOr[String] = js.undefined
+  
   var Templates: js.UndefOr[typingsJapgolly.sharepoint.SPClientTemplates.Templates] = js.undefined
-  var onRefreshFailed: js.UndefOr[js.Any] = js.undefined
+  
+  var onRefreshFailed: js.UndefOr[Any] = js.undefined
 }
-
 object RenderContext {
-  @scala.inline
-  def apply(
-    BaseViewID: Int | Double = null,
-    ControlMode: ClientControlMode = null,
-    CurrentCultureName: String = null,
-    CurrentLanguage: Int | Double = null,
-    CurrentSelectedItems: js.Any = null,
-    CurrentUICultureName: String = null,
-    ListTemplateType: Int | Double = null,
-    OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
-    OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
-    RenderBody: RenderContext => CallbackTo[String] = null,
-    RenderFieldByName: (RenderContext, /* fieldName */ String) => CallbackTo[String] = null,
-    RenderFields: RenderContext => CallbackTo[String] = null,
-    RenderFooter: RenderContext => CallbackTo[String] = null,
-    RenderGroups: RenderContext => CallbackTo[String] = null,
-    RenderHeader: RenderContext => CallbackTo[String] = null,
-    RenderItems: RenderContext => CallbackTo[String] = null,
-    RenderView: RenderContext => CallbackTo[String] = null,
-    SiteClientTag: String = null,
-    Templates: Templates = null,
-    onRefreshFailed: js.Any = null
-  ): RenderContext = {
+  
+  inline def apply(): RenderContext = {
     val __obj = js.Dynamic.literal()
-    if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
-    if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode.asInstanceOf[js.Any])
-    if (CurrentCultureName != null) __obj.updateDynamic("CurrentCultureName")(CurrentCultureName.asInstanceOf[js.Any])
-    if (CurrentLanguage != null) __obj.updateDynamic("CurrentLanguage")(CurrentLanguage.asInstanceOf[js.Any])
-    if (CurrentSelectedItems != null) __obj.updateDynamic("CurrentSelectedItems")(CurrentSelectedItems.asInstanceOf[js.Any])
-    if (CurrentUICultureName != null) __obj.updateDynamic("CurrentUICultureName")(CurrentUICultureName.asInstanceOf[js.Any])
-    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
-    if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
-    if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
-    if (RenderBody != null) __obj.updateDynamic("RenderBody")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderBody(t0).runNow()))
-    if (RenderFieldByName != null) __obj.updateDynamic("RenderFieldByName")(js.Any.fromFunction2((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext, t1: /* fieldName */ java.lang.String) => RenderFieldByName(t0, t1).runNow()))
-    if (RenderFields != null) __obj.updateDynamic("RenderFields")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderFields(t0).runNow()))
-    if (RenderFooter != null) __obj.updateDynamic("RenderFooter")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderFooter(t0).runNow()))
-    if (RenderGroups != null) __obj.updateDynamic("RenderGroups")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderGroups(t0).runNow()))
-    if (RenderHeader != null) __obj.updateDynamic("RenderHeader")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderHeader(t0).runNow()))
-    if (RenderItems != null) __obj.updateDynamic("RenderItems")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderItems(t0).runNow()))
-    if (RenderView != null) __obj.updateDynamic("RenderView")(js.Any.fromFunction1((t0: typingsJapgolly.sharepoint.SPClientTemplates.RenderContext) => RenderView(t0).runNow()))
-    if (SiteClientTag != null) __obj.updateDynamic("SiteClientTag")(SiteClientTag.asInstanceOf[js.Any])
-    if (Templates != null) __obj.updateDynamic("Templates")(Templates.asInstanceOf[js.Any])
-    if (onRefreshFailed != null) __obj.updateDynamic("onRefreshFailed")(onRefreshFailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderContext]
   }
+  
+  extension [Self <: RenderContext](x: Self) {
+    
+    inline def setBaseViewID(value: Double): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
+    
+    inline def setBaseViewIDUndefined: Self = StObject.set(x, "BaseViewID", js.undefined)
+    
+    inline def setControlMode(value: ClientControlMode): Self = StObject.set(x, "ControlMode", value.asInstanceOf[js.Any])
+    
+    inline def setControlModeUndefined: Self = StObject.set(x, "ControlMode", js.undefined)
+    
+    inline def setCurrentCultureName(value: String): Self = StObject.set(x, "CurrentCultureName", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentCultureNameUndefined: Self = StObject.set(x, "CurrentCultureName", js.undefined)
+    
+    inline def setCurrentLanguage(value: Double): Self = StObject.set(x, "CurrentLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentLanguageUndefined: Self = StObject.set(x, "CurrentLanguage", js.undefined)
+    
+    inline def setCurrentSelectedItems(value: Any): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentSelectedItemsUndefined: Self = StObject.set(x, "CurrentSelectedItems", js.undefined)
+    
+    inline def setCurrentUICultureName(value: String): Self = StObject.set(x, "CurrentUICultureName", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentUICultureNameUndefined: Self = StObject.set(x, "CurrentUICultureName", js.undefined)
+    
+    inline def setListTemplateType(value: Double): Self = StObject.set(x, "ListTemplateType", value.asInstanceOf[js.Any])
+    
+    inline def setListTemplateTypeUndefined: Self = StObject.set(x, "ListTemplateType", js.undefined)
+    
+    inline def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPostRender", value.asInstanceOf[js.Any])
+    
+    inline def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Callback): Self = StObject.set(x, "OnPostRender", js.Any.fromFunction1((t0: /* ctx */ RenderContext) => value(t0).runNow()))
+    
+    inline def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
+    
+    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value*))
+    
+    inline def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
+    
+    inline def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Callback): Self = StObject.set(x, "OnPreRender", js.Any.fromFunction1((t0: /* ctx */ RenderContext) => value(t0).runNow()))
+    
+    inline def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
+    
+    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value*))
+    
+    inline def setOnRefreshFailed(value: Any): Self = StObject.set(x, "onRefreshFailed", value.asInstanceOf[js.Any])
+    
+    inline def setOnRefreshFailedUndefined: Self = StObject.set(x, "onRefreshFailed", js.undefined)
+    
+    inline def setRenderBody(value: RenderContext => String): Self = StObject.set(x, "RenderBody", js.Any.fromFunction1(value))
+    
+    inline def setRenderBodyUndefined: Self = StObject.set(x, "RenderBody", js.undefined)
+    
+    inline def setRenderFieldByName(value: (RenderContext, /* fieldName */ String) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction2(value))
+    
+    inline def setRenderFieldByNameUndefined: Self = StObject.set(x, "RenderFieldByName", js.undefined)
+    
+    inline def setRenderFields(value: RenderContext => String): Self = StObject.set(x, "RenderFields", js.Any.fromFunction1(value))
+    
+    inline def setRenderFieldsUndefined: Self = StObject.set(x, "RenderFields", js.undefined)
+    
+    inline def setRenderFooter(value: RenderContext => String): Self = StObject.set(x, "RenderFooter", js.Any.fromFunction1(value))
+    
+    inline def setRenderFooterUndefined: Self = StObject.set(x, "RenderFooter", js.undefined)
+    
+    inline def setRenderGroups(value: RenderContext => String): Self = StObject.set(x, "RenderGroups", js.Any.fromFunction1(value))
+    
+    inline def setRenderGroupsUndefined: Self = StObject.set(x, "RenderGroups", js.undefined)
+    
+    inline def setRenderHeader(value: RenderContext => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction1(value))
+    
+    inline def setRenderHeaderUndefined: Self = StObject.set(x, "RenderHeader", js.undefined)
+    
+    inline def setRenderItems(value: RenderContext => String): Self = StObject.set(x, "RenderItems", js.Any.fromFunction1(value))
+    
+    inline def setRenderItemsUndefined: Self = StObject.set(x, "RenderItems", js.undefined)
+    
+    inline def setRenderView(value: RenderContext => String): Self = StObject.set(x, "RenderView", js.Any.fromFunction1(value))
+    
+    inline def setRenderViewUndefined: Self = StObject.set(x, "RenderView", js.undefined)
+    
+    inline def setSiteClientTag(value: String): Self = StObject.set(x, "SiteClientTag", value.asInstanceOf[js.Any])
+    
+    inline def setSiteClientTagUndefined: Self = StObject.set(x, "SiteClientTag", js.undefined)
+    
+    inline def setTemplates(value: Templates): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
+    
+    inline def setTemplatesUndefined: Self = StObject.set(x, "Templates", js.undefined)
+  }
 }
-

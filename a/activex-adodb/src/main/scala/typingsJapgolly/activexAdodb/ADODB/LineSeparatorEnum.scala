@@ -1,27 +1,23 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`10`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`13`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`10`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`13`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`13`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`10`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`13`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`10`
 */
-trait LineSeparatorEnum extends js.Object
-
+trait LineSeparatorEnum extends StObject
 object LineSeparatorEnum {
-  @scala.inline
-  def adCR: `13` = this.cast(13)
-  @scala.inline
-  def adCRLF: `-1` = this.cast(-1)
-  @scala.inline
-  def adLF: `10` = this.cast(10)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adCR: `13` = 13.asInstanceOf[`13`]
+  
+  inline def adCRLF: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def adLF: `10` = 10.asInstanceOf[`10`]
 }
-

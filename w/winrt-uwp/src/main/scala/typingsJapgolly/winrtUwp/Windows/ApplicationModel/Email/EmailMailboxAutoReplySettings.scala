@@ -1,27 +1,62 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for the automatic reply functionality of an email account. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReplySettings")
-@js.native
-/** Initializes a new instance of an EmailMailboxAutoReplySettings object. */
-class EmailMailboxAutoReplySettings () extends js.Object {
+trait EmailMailboxAutoReplySettings extends StObject {
+  
   /** Represents the end time for the automated reply period. */
-  var endTime: js.Date = js.native
+  var endTime: js.Date
+  
   /** Gets the automatic reply message intended for an email message from an internal sender. */
-  var internalReply: EmailMailboxAutoReply = js.native
+  var internalReply: EmailMailboxAutoReply
+  
   /** Gets a Boolean value indicating whether automatic replies are enabled. */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
+  
   /** Gets the automatic reply message intended for an email message from a known external sender. */
-  var knownExternalReply: EmailMailboxAutoReply = js.native
+  var knownExternalReply: EmailMailboxAutoReply
+  
   /** Gets or sets whether the automated response email message is encoded as HTML or plain text. */
-  var responseKind: EmailMailboxAutoReplyMessageResponseKind = js.native
+  var responseKind: EmailMailboxAutoReplyMessageResponseKind
+  
   /** Represents the start time for the automated reply period. */
-  var startTime: js.Date = js.native
+  var startTime: js.Date
+  
   /** Gets the automatic reply message intended for an email message from an unknown external sender. */
-  var unknownExternalReply: EmailMailboxAutoReply = js.native
+  var unknownExternalReply: EmailMailboxAutoReply
 }
-
+object EmailMailboxAutoReplySettings {
+  
+  inline def apply(
+    endTime: js.Date,
+    internalReply: EmailMailboxAutoReply,
+    isEnabled: Boolean,
+    knownExternalReply: EmailMailboxAutoReply,
+    responseKind: EmailMailboxAutoReplyMessageResponseKind,
+    startTime: js.Date,
+    unknownExternalReply: EmailMailboxAutoReply
+  ): EmailMailboxAutoReplySettings = {
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], internalReply = internalReply.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], knownExternalReply = knownExternalReply.asInstanceOf[js.Any], responseKind = responseKind.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], unknownExternalReply = unknownExternalReply.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmailMailboxAutoReplySettings]
+  }
+  
+  extension [Self <: EmailMailboxAutoReplySettings](x: Self) {
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setInternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "internalReply", value.asInstanceOf[js.Any])
+    
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setKnownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "knownExternalReply", value.asInstanceOf[js.Any])
+    
+    inline def setResponseKind(value: EmailMailboxAutoReplyMessageResponseKind): Self = StObject.set(x, "responseKind", value.asInstanceOf[js.Any])
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "unknownExternalReply", value.asInstanceOf[js.Any])
+  }
+}

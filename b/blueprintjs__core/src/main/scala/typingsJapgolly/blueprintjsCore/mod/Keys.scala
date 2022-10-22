@@ -1,34 +1,58 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`13`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`16`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`27`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`32`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`37`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`38`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`39`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`40`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`46`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`8`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core", "Keys")
-@js.native
-object Keys extends js.Object {
-  val ARROW_DOWN: `40` = js.native
-  val ARROW_LEFT: `37` = js.native
-  val ARROW_RIGHT: `39` = js.native
-  val ARROW_UP: `38` = js.native
-  val BACKSPACE: `8` = js.native
-  val DELETE: `46` = js.native
-  val ENTER: `13` = js.native
-  val ESCAPE: `27` = js.native
-  val SHIFT: `16` = js.native
-  val SPACE: `32` = js.native
-  val TAB: `9` = js.native
-  def isKeyboardClick(keyCode: Double): Boolean = js.native
+object Keys {
+  
+  @JSImport("@blueprintjs/core", "Keys")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ARROW_DOWN")
+  @js.native
+  val ARROW_DOWN: /* 40 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ARROW_LEFT")
+  @js.native
+  val ARROW_LEFT: /* 37 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ARROW_RIGHT")
+  @js.native
+  val ARROW_RIGHT: /* 39 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ARROW_UP")
+  @js.native
+  val ARROW_UP: /* 38 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.BACKSPACE")
+  @js.native
+  val BACKSPACE: /* 8 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.DELETE")
+  @js.native
+  val DELETE: /* 46 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ENTER")
+  @js.native
+  val ENTER: /* 13 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.ESCAPE")
+  @js.native
+  val ESCAPE: /* 27 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.SHIFT")
+  @js.native
+  val SHIFT: /* 16 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.SPACE")
+  @js.native
+  val SPACE: /* 32 */ Double = js.native
+  
+  @JSImport("@blueprintjs/core", "Keys.TAB")
+  @js.native
+  val TAB: /* 9 */ Double = js.native
+  
+  inline def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

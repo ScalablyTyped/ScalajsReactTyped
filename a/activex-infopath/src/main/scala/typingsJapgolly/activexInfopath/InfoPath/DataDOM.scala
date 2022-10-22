@@ -1,13 +1,24 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("InfoPath.DataDOM")
-@js.native
-class DataDOM protected () extends js.Object {
-  @JSName("InfoPath.DataDOM_typekey")
-  var InfoPathDotDataDOM_typekey: DataDOM = js.native
+trait DataDOM extends StObject {
+  
+  /* private */ @JSName("InfoPath.DataDOM_typekey")
+  var InfoPathDotDataDOM_typekey: DataDOM
 }
-
+object DataDOM {
+  
+  inline def apply(InfoPathDotDataDOM_typekey: DataDOM): DataDOM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InfoPath.DataDOM_typekey")(InfoPathDotDataDOM_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataDOM]
+  }
+  
+  extension [Self <: DataDOM](x: Self) {
+    
+    inline def setInfoPathDotDataDOM_typekey(value: DataDOM): Self = StObject.set(x, "InfoPath.DataDOM_typekey", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,32 +1,23 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.modalModalMod.ModalProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.materialUiCore.anon.HandleContainerOverflow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Modal", JSImport.Namespace)
-@js.native
-object modalMod extends js.Object {
+object modalMod {
+  
+  @JSImport("@material-ui/core/Modal", JSImport.Default)
   @js.native
-  class ModalManager ()
-    extends typingsJapgolly.materialUiCore.modalManagerMod.default {
-    def this(opts: AnonHandleContainerOverflow) = this()
+  open class default ()
+    extends typingsJapgolly.materialUiCore.modalModalManagerMod.default {
+    def this(opts: HandleContainerOverflow) = this()
   }
   
+  @JSImport("@material-ui/core/Modal", "ModalManager")
   @js.native
-  class default protected ()
-    extends Component[ModalProps, ComponentState, js.Any] {
-    def this(props: ModalProps) = this()
-    def this(props: ModalProps, context: js.Any) = this()
+  open class ModalManager ()
+    extends typingsJapgolly.materialUiCore.modalModalManagerMod.default {
+    def this(opts: HandleContainerOverflow) = this()
   }
-  
-  @js.native
-  object default extends TopLevel[ComponentType[ModalProps]]
-  
 }
-

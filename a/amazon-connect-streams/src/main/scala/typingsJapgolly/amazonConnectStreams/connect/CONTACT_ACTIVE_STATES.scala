@@ -1,35 +1,32 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CONTACT_ACTIVE_STATES extends js.Object
-
+sealed trait CONTACT_ACTIVE_STATES extends StObject
 @JSGlobal("connect.CONTACT_ACTIVE_STATES")
 @js.native
-object CONTACT_ACTIVE_STATES extends js.Object {
-  @js.native
-  sealed trait CONNECTED extends CONTACT_ACTIVE_STATES
+object CONTACT_ACTIVE_STATES extends StObject {
   
   @js.native
-  sealed trait CONNECTING extends CONTACT_ACTIVE_STATES
+  sealed trait CONNECTED
+    extends StObject
+       with CONTACT_ACTIVE_STATES
   
   @js.native
-  sealed trait INCOMING extends CONTACT_ACTIVE_STATES
+  sealed trait CONNECTING
+    extends StObject
+       with CONTACT_ACTIVE_STATES
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CONTACT_ACTIVE_STATES with String] = js.native
-  /* "connected" */ @js.native
-  object CONNECTED extends TopLevel[CONNECTED with String]
+  @js.native
+  sealed trait INCOMING
+    extends StObject
+       with CONTACT_ACTIVE_STATES
   
-  /* "connecting" */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with String]
-  
-  /* "incoming" */ @js.native
-  object INCOMING extends TopLevel[INCOMING with String]
-  
+  @js.native
+  sealed trait PENDING
+    extends StObject
+       with CONTACT_ACTIVE_STATES
 }
-

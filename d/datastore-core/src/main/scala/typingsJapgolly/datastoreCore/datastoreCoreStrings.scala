@@ -1,24 +1,20 @@
 package typingsJapgolly.datastoreCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datastoreCoreStrings {
-  @js.native
-  sealed trait SHARDING extends js.Object
   
   @js.native
-  sealed trait SlashrepoSlashflatfsSlashshardSlash extends js.Object
+  sealed trait SHARDING extends StObject
+  inline def SHARDING: SHARDING = "SHARDING".asInstanceOf[SHARDING]
   
   @js.native
-  sealed trait _README extends js.Object
+  sealed trait SlashrepoSlashflatfsSlashshardSlash extends StObject
+  inline def SlashrepoSlashflatfsSlashshardSlash: SlashrepoSlashflatfsSlashshardSlash = "/repo/flatfs/shard/".asInstanceOf[SlashrepoSlashflatfsSlashshardSlash]
   
-  @scala.inline
-  def SHARDING: SHARDING = "SHARDING".asInstanceOf[SHARDING]
-  @scala.inline
-  def SlashrepoSlashflatfsSlashshardSlash: SlashrepoSlashflatfsSlashshardSlash = "/repo/flatfs/shard/".asInstanceOf[SlashrepoSlashflatfsSlashshardSlash]
-  @scala.inline
-  def _README: _README = "_README".asInstanceOf[_README]
+  @js.native
+  sealed trait _README extends StObject
+  inline def _README: _README = "_README".asInstanceOf[_README]
 }
-

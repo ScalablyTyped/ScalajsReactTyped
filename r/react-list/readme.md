@@ -10,15 +10,15 @@ A versatile infinite scroll [React] component.
 | ------------------ | :-------------: |
 | Full name          | react-list |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 53 |
-| # downloads        | 1624338 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 730154.3333333334 |
+| # stars            | 1905.0 |
 
 ## Links
-- [Homepage](https://github.com/coderiety/react-list#readme)
-- [Bugs](https://github.com/coderiety/react-list/issues)
-- [Repository](https://github.com/coderiety/react-list)
+- [Homepage](https://github.com/caseywebdev/react-list#readme)
+- [Bugs](https://github.com/caseywebdev/react-list/issues)
+- [Repository](https://github.com/caseywebdev/react-list)
 - [Npm](https://www.npmjs.com/package/react-list)
     
 

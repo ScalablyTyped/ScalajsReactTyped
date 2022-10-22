@@ -1,29 +1,39 @@
-package typingsJapgolly.reactNativeZssRichTextEditor
+package typingsJapgolly.reactNativeZssRichTextEditor.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.reactNative.mod.ImageProps
+import typingsJapgolly.reactNative.mod.ImageSourcePropType
+import typingsJapgolly.reactNative.mod.ImageStyle
+import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TextStyle
+import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ColorHandler = js.Function1[/* color */ java.lang.String, scala.Unit]
-  type ContentGetHandler = js.Function0[js.Promise[java.lang.String]]
-  type ContentSetHandler = js.Function1[/* html */ java.lang.String, scala.Unit]
-  type ContentStylesHandler = js.Function1[
-    /* styles */ typingsJapgolly.reactNativeZssRichTextEditor.mod.RichTextStyles, 
-    scala.Unit
-  ]
-  type ElementStyles = typingsJapgolly.reactNative.mod.StyleProp[
-    typingsJapgolly.reactNative.mod.ViewStyle | typingsJapgolly.reactNative.mod.TextStyle | typingsJapgolly.reactNative.mod.ImageStyle
-  ]
-  type FocusHandler = js.Function1[
-    /* callback */ typingsJapgolly.reactNativeZssRichTextEditor.mod.FunctionWithZeroArgs, 
-    scala.Unit
-  ]
-  type FunctionWithZeroArgs = js.Function0[scala.Unit]
-  type IconsMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactNative.mod.ImageSourcePropType]
-  type ImageHandler = js.Function1[/* attributes */ typingsJapgolly.reactNative.mod.ImageProps, scala.Unit]
-  type LinkDialogHandler = js.Function2[/* optionalTitle */ java.lang.String, /* optionalUrl */ java.lang.String, scala.Unit]
-  type LinkHandler = js.Function2[/* url */ java.lang.String, /* title */ java.lang.String, scala.Unit]
-  type PlaceHolderHandler = js.Function1[/* placeholder */ java.lang.String, scala.Unit]
-  type RichTextStyles = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactNativeZssRichTextEditor.mod.ElementStyles]
-}
+
+type ColorHandler = js.Function1[/* color */ String, Unit]
+
+type ContentGetHandler = js.Function0[js.Promise[String]]
+
+type ContentSetHandler = js.Function1[/* html */ String, Unit]
+
+type ContentStylesHandler = js.Function1[/* styles */ RichTextStyles, Unit]
+
+type ElementStyles = StyleProp[ViewStyle | TextStyle | ImageStyle]
+
+type FocusHandler = js.Function1[/* callback */ FunctionWithZeroArgs, Unit]
+
+type FunctionWithZeroArgs = js.Function0[Unit]
+
+type IconsMap = StringDictionary[ImageSourcePropType]
+
+type ImageHandler = js.Function1[/* attributes */ ImageProps, Unit]
+
+type LinkDialogHandler = js.Function2[/* optionalTitle */ String, /* optionalUrl */ String, Unit]
+
+type LinkHandler = js.Function2[/* url */ String, /* title */ String, Unit]
+
+type PlaceHolderHandler = js.Function1[/* placeholder */ String, Unit]
+
+type RichTextStyles = StringDictionary[ElementStyles]

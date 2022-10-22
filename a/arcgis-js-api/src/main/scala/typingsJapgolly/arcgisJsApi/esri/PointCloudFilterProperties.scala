@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudFilterProperties extends js.Object {
+trait PointCloudFilterProperties extends StObject {
+  
   /**
     * The field used for applying the filter.
     *
@@ -12,13 +13,17 @@ trait PointCloudFilterProperties extends js.Object {
     */
   var field: js.UndefOr[String] = js.undefined
 }
-
 object PointCloudFilterProperties {
-  @scala.inline
-  def apply(field: String = null): PointCloudFilterProperties = {
+  
+  inline def apply(): PointCloudFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudFilterProperties]
   }
+  
+  extension [Self <: PointCloudFilterProperties](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

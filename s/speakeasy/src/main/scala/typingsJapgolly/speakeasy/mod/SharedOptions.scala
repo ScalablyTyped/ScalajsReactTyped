@@ -1,27 +1,36 @@
 package typingsJapgolly.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SharedOptions extends js.Object {
+trait SharedOptions extends StObject {
+  
   /**
     * Algorithm, defaults to sha1
     */
   var algorithm: js.UndefOr[Algorithm] = js.undefined
+  
   /**
     * Key encoding, defaults to ascii
     */
   var encoding: js.UndefOr[Encoding] = js.undefined
 }
-
 object SharedOptions {
-  @scala.inline
-  def apply(algorithm: Algorithm = null, encoding: Encoding = null): SharedOptions = {
+  
+  inline def apply(): SharedOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedOptions]
   }
+  
+  extension [Self <: SharedOptions](x: Self) {
+    
+    inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    
+    inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+  }
 }
-

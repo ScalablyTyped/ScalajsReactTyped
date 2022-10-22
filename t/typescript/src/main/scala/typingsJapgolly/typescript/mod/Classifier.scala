@@ -1,11 +1,11 @@
 package typingsJapgolly.typescript.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Classifier extends js.Object {
+trait Classifier extends StObject {
+  
   /**
     * Gives lexical classifications of tokens on a line without any syntactic context.
     * For instance, a token consisting of the text 'string' can be either an identifier
@@ -27,19 +27,23 @@ trait Classifier extends js.Object {
     * @deprecated Use getLexicalClassifications instead.
     */
   def getClassificationsForLine(text: java.lang.String, lexState: EndOfLineState, syntacticClassifierAbsent: Boolean): ClassificationResult
+  
   def getEncodedLexicalClassifications(text: java.lang.String, endOfLineState: EndOfLineState, syntacticClassifierAbsent: Boolean): Classifications
 }
-
 object Classifier {
-  @scala.inline
-  def apply(
-    getClassificationsForLine: (java.lang.String, EndOfLineState, Boolean) => CallbackTo[ClassificationResult],
-    getEncodedLexicalClassifications: (java.lang.String, EndOfLineState, Boolean) => CallbackTo[Classifications]
+  
+  inline def apply(
+    getClassificationsForLine: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult,
+    getEncodedLexicalClassifications: (java.lang.String, EndOfLineState, Boolean) => Classifications
   ): Classifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClassificationsForLine")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.typescript.mod.EndOfLineState, t2: scala.Boolean) => getClassificationsForLine(t0, t1, t2).runNow()))
-    __obj.updateDynamic("getEncodedLexicalClassifications")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.typescript.mod.EndOfLineState, t2: scala.Boolean) => getEncodedLexicalClassifications(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(getClassificationsForLine = js.Any.fromFunction3(getClassificationsForLine), getEncodedLexicalClassifications = js.Any.fromFunction3(getEncodedLexicalClassifications))
     __obj.asInstanceOf[Classifier]
   }
+  
+  extension [Self <: Classifier](x: Self) {
+    
+    inline def setGetClassificationsForLine(value: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction3(value))
+    
+    inline def setGetEncodedLexicalClassifications(value: (java.lang.String, EndOfLineState, Boolean) => Classifications): Self = StObject.set(x, "getEncodedLexicalClassifications", js.Any.fromFunction3(value))
+  }
 }
-

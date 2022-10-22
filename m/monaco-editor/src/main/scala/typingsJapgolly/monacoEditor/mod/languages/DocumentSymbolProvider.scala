@@ -1,30 +1,35 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentSymbolProvider extends js.Object {
+trait DocumentSymbolProvider extends StObject {
+  
   var displayName: js.UndefOr[String] = js.undefined
+  
   /**
     * Provide symbol information for the given document.
     */
   def provideDocumentSymbols(model: ITextModel, token: CancellationToken): ProviderResult[js.Array[DocumentSymbol]]
 }
-
 object DocumentSymbolProvider {
-  @scala.inline
-  def apply(
-    provideDocumentSymbols: (ITextModel, CancellationToken) => CallbackTo[ProviderResult[js.Array[DocumentSymbol]]],
-    displayName: String = null
+  
+  inline def apply(
+    provideDocumentSymbols: (ITextModel, CancellationToken) => ProviderResult[js.Array[DocumentSymbol]]
   ): DocumentSymbolProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideDocumentSymbols")(js.Any.fromFunction2((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideDocumentSymbols(t0, t1).runNow()))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
+  
+  extension [Self <: DocumentSymbolProvider](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setProvideDocumentSymbols(value: (ITextModel, CancellationToken) => ProviderResult[js.Array[DocumentSymbol]]): Self = StObject.set(x, "provideDocumentSymbols", js.Any.fromFunction2(value))
+  }
 }
-

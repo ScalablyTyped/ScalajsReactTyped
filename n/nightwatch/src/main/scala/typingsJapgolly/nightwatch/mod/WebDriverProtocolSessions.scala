@@ -1,17 +1,19 @@
 package typingsJapgolly.nightwatch.mod
 
-import typingsJapgolly.nightwatch.AnonBuild
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.nightwatch.anon.Build
 import typingsJapgolly.nightwatch.nightwatchStrings.browser
 import typingsJapgolly.nightwatch.nightwatchStrings.client
 import typingsJapgolly.nightwatch.nightwatchStrings.driver
 import typingsJapgolly.nightwatch.nightwatchStrings.server
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolSessions extends js.Object {
+trait WebDriverProtocolSessions extends StObject {
+  
   /**
     * Get info about, delete or create a new session. Defaults to the current session.
     *
@@ -38,10 +40,39 @@ trait WebDriverProtocolSessions extends js.Object {
     sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, _]], 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
   ): this.type = js.native
+  def session(
+    action: String,
+    sessionId: Unit,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(action: Unit, sessionId: String): this.type = js.native
+  def session(
+    action: Unit,
+    sessionId: String,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(
+    action: Unit,
+    sessionId: Unit,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
+      Unit
+    ]
+  ): this.type = js.native
+  
   /**
     * Gets the text of the log type specified. To find out the available log types, use `.getLogTypes()`.
     *
@@ -59,6 +90,7 @@ trait WebDriverProtocolSessions extends js.Object {
     typeString: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
   ): this.type = js.native
+  
   /**
     * Gets an array of strings for which log types are available. This methods returns the entire WebDriver response, if you are only interested in the logs array, use `.getLogTypes()` instead.
     *
@@ -77,6 +109,7 @@ trait WebDriverProtocolSessions extends js.Object {
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Returns a list of the currently active sessions.
     *
@@ -91,16 +124,41 @@ trait WebDriverProtocolSessions extends js.Object {
   def sessions(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[Record[String, _]]], 
+      /* result */ NightwatchCallbackResult[js.Array[Record[String, Any]]], 
       Unit
     ]
   ): this.type = js.native
+  
+  /**
+    * Command to set Chrome network emulation settings.
+    *
+    * @example
+    *  this.demoTest = function() {
+    *    browser.setNetworkConditions({
+    *      offline: false,
+    *      latency: 50000,
+    *      download_throughput: 450 * 1024,
+    *      upload_throughput: 150 * 1024
+    *    });
+    *  };
+    */
+  def setNetworkConditions(spec: StringDictionary[Any]): this.type = js.native
+  def setNetworkConditions(
+    spec: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): this.type = js.native
+  
   /**
     * Query the server's current status.
     */
   def status(): this.type = js.native
   def status(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonBuild], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
+  ): this.type = js.native
+  
+  def timeouts(): this.type = js.native
+  def timeouts(
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   /**
     * Configure the amount of time that a particular type of operation can execute for before they are aborted and a |Timeout| error is returned to the client.
@@ -118,6 +176,7 @@ trait WebDriverProtocolSessions extends js.Object {
     ms: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Set the amount of time, in milliseconds, that asynchronous scripts executed by `.executeAsync` are permitted to run before they are aborted and a |Timeout| error is returned to the client.
     *
@@ -133,6 +192,7 @@ trait WebDriverProtocolSessions extends js.Object {
     ms: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Set the amount of time the driver should wait when searching for elements. If this command is never sent, the driver will default to an implicit wait of 0ms.
     *
@@ -149,4 +209,3 @@ trait WebDriverProtocolSessions extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

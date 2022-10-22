@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FindOptions extends js.Object
-
+sealed trait FindOptions extends StObject
 /** Specifies the options to use when doing a text search. */
 @JSGlobal("Windows.UI.Text.FindOptions")
 @js.native
-object FindOptions extends js.Object {
+object FindOptions extends StObject {
+  
   /** Match case; that is, a case-sensitive search. */
   @js.native
-  sealed trait `case` extends FindOptions
+  sealed trait `case`
+    extends StObject
+       with FindOptions
   
   /** Use the default text search options; namely, use case- independent, arbitrary character boundaries. */
   @js.native
-  sealed trait none extends FindOptions
+  sealed trait none
+    extends StObject
+       with FindOptions
   
   /** Match whole words. */
   @js.native
-  sealed trait word extends FindOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FindOptions with Double] = js.native
-  /* 2 */ @js.native
-  object `case` extends TopLevel[`case` with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object word extends TopLevel[word with Double]
-  
+  sealed trait word
+    extends StObject
+       with FindOptions
 }
-

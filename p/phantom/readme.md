@@ -10,15 +10,12 @@ PhantomJS integration module for NodeJS
 | ------------------ | :-------------: |
 | Full name          | phantom |
 | Keywords           | phantom, phantomjs, driver |
-| # releases         | 10 |
-| # dependents       | 331 |
-| # downloads        | 3550583 |
-| # stars            | 58 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 95583.33333333333 |
+| # stars            | 3547.0 |
 
 ## Links
-- [Homepage](https://github.com/amir20/phantomjs-node)
-- [Bugs](https://github.com/amir20/phantomjs-node/issues)
-- [Repository](https://github.com/amir20/phantomjs-node)
 - [Npm](https://www.npmjs.com/package/phantom)
     
 

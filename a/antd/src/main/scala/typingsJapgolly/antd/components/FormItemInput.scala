@@ -1,64 +1,70 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.formItemInputMod.FormItemInputMiscProps
-import typingsJapgolly.antd.formItemInputMod.FormItemInputProps
-import typingsJapgolly.antd.formItemMod.ValidateStatus
-import typingsJapgolly.antd.gridColMod.ColProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libFormFormItemInputMod.FormItemInputMiscProps
+import typingsJapgolly.antd.libFormFormItemInputMod.FormItemInputProps
+import typingsJapgolly.antd.libFormFormItemMod.ValidateStatus
+import typingsJapgolly.antd.libGridColMod.ColProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormItemInput {
-  def apply(
-    errors: js.Array[Node],
+  
+  inline def apply(
+    errors: js.Array[japgolly.scalajs.react.facade.React.Node],
     prefixCls: String,
-    onDomErrorVisibleChange: Boolean => Callback,
-    extra: VdomNode = null,
-    hasFeedback: js.UndefOr[Boolean] = js.undefined,
-    help: VdomNode = null,
-    validateStatus: ValidateStatus = null,
-    wrapperCol: ColProps = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    FormItemInputProps with FormItemInputMiscProps, 
-    MountedWithRawType[
-      FormItemInputProps with FormItemInputMiscProps, 
-      js.Object, 
-      RawMounted[FormItemInputProps with FormItemInputMiscProps, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("onDomErrorVisibleChange")(js.Any.fromFunction1((t0: scala.Boolean) => onDomErrorVisibleChange(t0).runNow()))
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasFeedback)) __obj.updateDynamic("hasFeedback")(hasFeedback.asInstanceOf[js.Any])
-    if (help != null) __obj.updateDynamic("help")(help.rawNode.asInstanceOf[js.Any])
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus.asInstanceOf[js.Any])
-    if (wrapperCol != null) __obj.updateDynamic("wrapperCol")(wrapperCol.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.formItemInputMod.FormItemInputProps with typingsJapgolly.antd.formItemInputMod.FormItemInputMiscProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.formItemInputMod.FormItemInputProps with typingsJapgolly.antd.formItemInputMod.FormItemInputMiscProps])(children: _*)
+    warnings: js.Array[japgolly.scalajs.react.facade.React.Node]
+  ): Builder = {
+    val __props = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[FormItemInputProps & FormItemInputMiscProps]))
   }
+  
   @JSImport("antd/lib/form/FormItemInput", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def fieldId(value: String): this.type = set("fieldId", value.asInstanceOf[js.Any])
+    
+    inline def help(value: VdomNode): this.type = set("help", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def helpNull: this.type = set("help", null)
+    
+    inline def helpVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("help", js.Array(value*))
+    
+    inline def helpVdomElement(value: VdomElement): this.type = set("help", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def marginBottom(value: Double): this.type = set("marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def marginBottomNull: this.type = set("marginBottom", null)
+    
+    inline def onErrorVisibleChanged(value: /* visible */ Boolean => Callback): this.type = set("onErrorVisibleChanged", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def status(value: ValidateStatus): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def wrapperCol(value: ColProps): this.type = set("wrapperCol", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: FormItemInputProps & FormItemInputMiscProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

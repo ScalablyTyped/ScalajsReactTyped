@@ -1,35 +1,33 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StatusBarAlignment extends js.Object
-
+sealed trait StatusBarAlignment extends StObject
 @JSImport("vscode", "StatusBarAlignment")
 @js.native
-object StatusBarAlignment extends js.Object {
-  /**
-  		 * Aligned to the left side.
-  		 */
-  @js.native
-  sealed trait Left extends StatusBarAlignment
-  
-  /**
-  		 * Aligned to the right side.
-  		 */
-  @js.native
-  sealed trait Right extends StatusBarAlignment
+object StatusBarAlignment extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StatusBarAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object Left extends TopLevel[Left with Double]
+  def apply(value: Double): js.UndefOr[StatusBarAlignment & Double] = js.native
   
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
+  /**
+    * Aligned to the left side.
+    */
+  @js.native
+  sealed trait Left
+    extends StObject
+       with StatusBarAlignment
+  /* 1 */ val Left: typingsJapgolly.vscode.mod.StatusBarAlignment.Left & Double = js.native
   
+  /**
+    * Aligned to the right side.
+    */
+  @js.native
+  sealed trait Right
+    extends StObject
+       with StatusBarAlignment
+  /* 2 */ val Right: typingsJapgolly.vscode.mod.StatusBarAlignment.Right & Double = js.native
 }
-

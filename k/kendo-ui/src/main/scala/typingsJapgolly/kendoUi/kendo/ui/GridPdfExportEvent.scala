@@ -2,26 +2,27 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridPdfExportEvent extends GridEvent {
-  var promise: js.UndefOr[JQueryPromise[_]] = js.undefined
+trait GridPdfExportEvent
+  extends StObject
+     with GridEvent {
+  
+  var promise: js.UndefOr[JQueryPromise[Any]] = js.undefined
 }
-
 object GridPdfExportEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Grid,
-    promise: JQueryPromise[_] = null
-  ): GridPdfExportEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Grid): GridPdfExportEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPdfExportEvent]
   }
+  
+  extension [Self <: GridPdfExportEvent](x: Self) {
+    
+    inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+  }
 }
-

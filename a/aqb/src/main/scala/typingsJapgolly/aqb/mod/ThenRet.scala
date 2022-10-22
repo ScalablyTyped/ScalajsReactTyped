@@ -1,27 +1,31 @@
 package typingsJapgolly.aqb.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThenRet extends js.Object {
+trait ThenRet extends StObject {
+  
+  def `else`(y: Any): TernaryOperation
+  
   var else_ : TernaryOperation
-  def `else`(y: js.Any): TernaryOperation
-  def otherwise(y: js.Any): TernaryOperation
+  
+  def otherwise(y: Any): TernaryOperation
 }
-
 object ThenRet {
-  @scala.inline
-  def apply(
-    `else`: js.Any => CallbackTo[TernaryOperation],
-    else_ : TernaryOperation,
-    otherwise: js.Any => CallbackTo[TernaryOperation]
-  ): ThenRet = {
-    val __obj = js.Dynamic.literal(else_ = else_.asInstanceOf[js.Any])
-    __obj.updateDynamic("else")(js.Any.fromFunction1((t0: js.Any) => `else`(t0).runNow()))
-    __obj.updateDynamic("otherwise")(js.Any.fromFunction1((t0: js.Any) => otherwise(t0).runNow()))
+  
+  inline def apply(`else`: Any => TernaryOperation, else_ : TernaryOperation, otherwise: Any => TernaryOperation): ThenRet = {
+    val __obj = js.Dynamic.literal(else_ = else_.asInstanceOf[js.Any], otherwise = js.Any.fromFunction1(otherwise))
+    __obj.updateDynamic("else")(js.Any.fromFunction1(`else`))
     __obj.asInstanceOf[ThenRet]
   }
+  
+  extension [Self <: ThenRet](x: Self) {
+    
+    inline def setElse(value: Any => TernaryOperation): Self = StObject.set(x, "else", js.Any.fromFunction1(value))
+    
+    inline def setElse_(value: TernaryOperation): Self = StObject.set(x, "else_", value.asInstanceOf[js.Any])
+    
+    inline def setOtherwise(value: Any => TernaryOperation): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+  }
 }
-

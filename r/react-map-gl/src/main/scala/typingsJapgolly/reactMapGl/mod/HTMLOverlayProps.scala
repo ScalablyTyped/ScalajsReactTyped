@@ -2,33 +2,31 @@ package typingsJapgolly.reactMapGl.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HTMLOverlayProps extends BaseControlProps {
-  var style: js.UndefOr[CSSProperties] = js.undefined
+trait HTMLOverlayProps
+  extends StObject
+     with BaseControlProps {
+  
   def redraw(opts: HTMLRedrawOptions): Unit
+  
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object HTMLOverlayProps {
-  @scala.inline
-  def apply(
-    redraw: HTMLRedrawOptions => Callback,
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null
-  ): HTMLOverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redraw")(js.Any.fromFunction1((t0: typingsJapgolly.reactMapGl.mod.HTMLRedrawOptions) => redraw(t0).runNow()))
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+  
+  inline def apply(redraw: HTMLRedrawOptions => Callback): HTMLOverlayProps = {
+    val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1((t0: HTMLRedrawOptions) => redraw(t0).runNow()))
     __obj.asInstanceOf[HTMLOverlayProps]
   }
+  
+  extension [Self <: HTMLOverlayProps](x: Self) {
+    
+    inline def setRedraw(value: HTMLRedrawOptions => Callback): Self = StObject.set(x, "redraw", js.Any.fromFunction1((t0: HTMLRedrawOptions) => value(t0).runNow()))
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

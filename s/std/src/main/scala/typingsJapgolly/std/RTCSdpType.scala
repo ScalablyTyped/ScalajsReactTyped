@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.answer
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.pranswer
   - typingsJapgolly.std.stdStrings.rollback
 */
-trait RTCSdpType extends js.Object
-
+trait RTCSdpType extends StObject
 object RTCSdpType {
-  @scala.inline
-  def answer: typingsJapgolly.std.stdStrings.answer = this.cast("answer")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def offer: typingsJapgolly.std.stdStrings.offer = this.cast("offer")
-  @scala.inline
-  def pranswer: typingsJapgolly.std.stdStrings.pranswer = this.cast("pranswer")
-  @scala.inline
-  def rollback: typingsJapgolly.std.stdStrings.rollback = this.cast("rollback")
+  
+  inline def answer: typingsJapgolly.std.stdStrings.answer = "answer".asInstanceOf[typingsJapgolly.std.stdStrings.answer]
+  
+  inline def offer: typingsJapgolly.std.stdStrings.offer = "offer".asInstanceOf[typingsJapgolly.std.stdStrings.offer]
+  
+  inline def pranswer: typingsJapgolly.std.stdStrings.pranswer = "pranswer".asInstanceOf[typingsJapgolly.std.stdStrings.pranswer]
+  
+  inline def rollback: typingsJapgolly.std.stdStrings.rollback = "rollback".asInstanceOf[typingsJapgolly.std.stdStrings.rollback]
 }
-

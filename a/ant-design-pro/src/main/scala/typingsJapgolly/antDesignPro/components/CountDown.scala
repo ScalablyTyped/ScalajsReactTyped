@@ -1,45 +1,35 @@
 package typingsJapgolly.antDesignPro.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.countDownMod.ICountDownProps
-import typingsJapgolly.antDesignPro.countDownMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.libCountDownMod.ICountDownProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CountDown {
-  def apply(
-    target: js.Date | Double,
-    format: /* time */ Double => Callback = null,
-    onEnd: js.UndefOr[Callback] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ICountDownProps, default, Unit, ICountDownProps] = {
-    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
   
-      if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1((t0: /* time */ scala.Double) => format(t0).runNow()))
-    onEnd.foreach(p => __obj.updateDynamic("onEnd")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.countDownMod.ICountDownProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.countDownMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.countDownMod.ICountDownProps])(children: _*)
+  inline def apply(target: js.Date | Double): Builder = {
+    val __props = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ICountDownProps]))
   }
-  @JSImport("ant-design-pro/lib/CountDown", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("ant-design-pro", "CountDown")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.CountDown] {
+    
+    inline def format(value: /* time */ Double => Callback): this.type = set("format", js.Any.fromFunction1((t0: /* time */ Double) => value(t0).runNow()))
+    
+    inline def onEnd(value: Callback): this.type = set("onEnd", value.toJsFn)
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ICountDownProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

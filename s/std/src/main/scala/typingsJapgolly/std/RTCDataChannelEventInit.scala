@@ -1,26 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCDataChannelEventInit extends EventInit {
-  var channel: org.scalajs.dom.experimental.webrtc.RTCDataChannel
+trait RTCDataChannelEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var channel: org.scalajs.dom.RTCDataChannel
 }
-
 object RTCDataChannelEventInit {
-  @scala.inline
-  def apply(
-    channel: org.scalajs.dom.experimental.webrtc.RTCDataChannel,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): RTCDataChannelEventInit = {
+  
+  inline def apply(channel: org.scalajs.dom.RTCDataChannel): RTCDataChannelEventInit = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelEventInit]
   }
+  
+  extension [Self <: RTCDataChannelEventInit](x: Self) {
+    
+    inline def setChannel(value: org.scalajs.dom.RTCDataChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+  }
 }
-

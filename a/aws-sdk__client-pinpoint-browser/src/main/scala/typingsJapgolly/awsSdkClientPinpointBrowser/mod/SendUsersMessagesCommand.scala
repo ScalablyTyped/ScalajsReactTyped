@@ -1,14 +1,13 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser.mod
 
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesSendUsersMessagesInputMod.SendUsersMessagesInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "SendUsersMessagesCommand")
 @js.native
-class SendUsersMessagesCommand protected ()
-  extends typingsJapgolly.awsSdkClientPinpointBrowser.sendUsersMessagesCommandMod.SendUsersMessagesCommand {
+open class SendUsersMessagesCommand protected ()
+  extends typingsJapgolly.awsSdkClientPinpointBrowser.commandsSendUsersMessagesCommandMod.SendUsersMessagesCommand {
   def this(input: SendUsersMessagesInput) = this()
 }
-

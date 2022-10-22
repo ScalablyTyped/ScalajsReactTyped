@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.IdleDispatchedHandlerArgs")
-@js.native
-class IdleDispatchedHandlerArgs () extends IIdleDispatchedHandlerArgs {
-  /* CompleteClass */
-  override var isDispatcherIdle: Boolean = js.native
+trait IdleDispatchedHandlerArgs
+  extends StObject
+     with IIdleDispatchedHandlerArgs
+object IdleDispatchedHandlerArgs {
+  
+  inline def apply(isDispatcherIdle: Boolean): IdleDispatchedHandlerArgs = {
+    val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdleDispatchedHandlerArgs]
+  }
 }
-

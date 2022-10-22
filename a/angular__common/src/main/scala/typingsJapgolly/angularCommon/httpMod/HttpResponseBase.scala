@@ -1,22 +1,55 @@
 package typingsJapgolly.angularCommon.httpMod
 
-import typingsJapgolly.angularCommon.AnonHeaders
+import typingsJapgolly.angularCommon.anon.Status
+import typingsJapgolly.angularCommon.httpMod.HttpEventType.Response
+import typingsJapgolly.angularCommon.httpMod.HttpEventType.ResponseHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/http", "HttpResponseBase")
+/* note: abstract class */ @JSImport("@angular/common/http", "HttpResponseBase")
 @js.native
-abstract class HttpResponseBase protected ()
-  extends typingsJapgolly.angularCommon.httpHttpMod.HttpResponseBase {
+open class HttpResponseBase protected () extends StObject {
   /**
     * Super-constructor for all responses.
     *
     * The single parameter accepted is an initialization hash. Any properties
     * of the response passed there will override the default values.
     */
-  def this(init: AnonHeaders) = this()
-  def this(init: AnonHeaders, defaultStatus: Double) = this()
-  def this(init: AnonHeaders, defaultStatus: Double, defaultStatusText: String) = this()
+  def this(init: Status) = this()
+  def this(init: Status, defaultStatus: Double) = this()
+  def this(init: Status, defaultStatus: Double, defaultStatusText: String) = this()
+  def this(init: Status, defaultStatus: Unit, defaultStatusText: String) = this()
+  
+  /**
+    * All response headers.
+    */
+  val headers: HttpHeaders = js.native
+  
+  /**
+    * Whether the status code falls in the 2xx range.
+    */
+  val ok: Boolean = js.native
+  
+  /**
+    * Response status code.
+    */
+  val status: Double = js.native
+  
+  /**
+    * Textual description of response status code, defaults to OK.
+    *
+    * Do not depend on this.
+    */
+  val statusText: String = js.native
+  
+  /**
+    * Type of the response, narrowed to either the full response or the header.
+    */
+  val `type`: Response | ResponseHeader = js.native
+  
+  /**
+    * URL of the resource retrieved, or null if not available.
+    */
+  val url: String | Null = js.native
 }
-

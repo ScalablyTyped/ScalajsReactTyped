@@ -1,19 +1,57 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Bibliography")
-@js.native
-class Bibliography protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  var BibliographyStyle: String = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  val Sources: typingsJapgolly.activexWord.Word.Sources = js.native
-  @JSName("Word.Bibliography_typekey")
-  var WordDotBibliography_typekey: Bibliography = js.native
-  def GenerateUniqueTag(): String = js.native
+trait Bibliography extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  var BibliographyStyle: String
+  
+  val Creator: Double
+  
+  def GenerateUniqueTag(): String
+  
+  val Parent: Any
+  
+  val Sources: typingsJapgolly.activexWord.Word.Sources
+  
+  /* private */ @JSName("Word.Bibliography_typekey")
+  var WordDotBibliography_typekey: Bibliography
 }
-
+object Bibliography {
+  
+  inline def apply(
+    Application: Application,
+    BibliographyStyle: String,
+    Creator: Double,
+    GenerateUniqueTag: CallbackTo[String],
+    Parent: Any,
+    Sources: Sources,
+    WordDotBibliography_typekey: Bibliography
+  ): Bibliography = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BibliographyStyle = BibliographyStyle.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], GenerateUniqueTag = GenerateUniqueTag.toJsFn, Parent = Parent.asInstanceOf[js.Any], Sources = Sources.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Bibliography_typekey")(WordDotBibliography_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Bibliography]
+  }
+  
+  extension [Self <: Bibliography](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setBibliographyStyle(value: String): Self = StObject.set(x, "BibliographyStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setGenerateUniqueTag(value: CallbackTo[String]): Self = StObject.set(x, "GenerateUniqueTag", value.toJsFn)
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setSources(value: Sources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotBibliography_typekey(value: Bibliography): Self = StObject.set(x, "Word.Bibliography_typekey", value.asInstanceOf[js.Any])
+  }
+}

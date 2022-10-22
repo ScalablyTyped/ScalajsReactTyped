@@ -11,14 +11,11 @@ get date and/or time by pattern
 | Full name          | easydate |
 | Keywords           | datetime, dateformat, formatting, date, time |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 65192 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 693.3333333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/roryrjb/easydate)
-- [Bugs](http://github.com/roryrjb/easydate/issues)
-- [Repository](https://github.com/roryrjb/easydate)
 - [Npm](https://www.npmjs.com/package/easydate)
     
 

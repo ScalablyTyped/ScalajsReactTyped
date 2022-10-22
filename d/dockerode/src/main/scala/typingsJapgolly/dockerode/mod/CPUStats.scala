@@ -1,29 +1,39 @@
 package typingsJapgolly.dockerode.mod
 
-import typingsJapgolly.dockerode.AnonPercpuusage
-import typingsJapgolly.dockerode.AnonPeriods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CPUStats extends js.Object {
-  var cpu_usage: AnonPercpuusage
+trait CPUStats extends StObject {
+  
+  var cpu_usage: CPUUsage
+  
   var online_cpus: Double
+  
   var system_cpu_usage: Double
-  var throttling_data: AnonPeriods
+  
+  var throttling_data: ThrottlingData
 }
-
 object CPUStats {
-  @scala.inline
-  def apply(
-    cpu_usage: AnonPercpuusage,
+  
+  inline def apply(
+    cpu_usage: CPUUsage,
     online_cpus: Double,
     system_cpu_usage: Double,
-    throttling_data: AnonPeriods
+    throttling_data: ThrottlingData
   ): CPUStats = {
     val __obj = js.Dynamic.literal(cpu_usage = cpu_usage.asInstanceOf[js.Any], online_cpus = online_cpus.asInstanceOf[js.Any], system_cpu_usage = system_cpu_usage.asInstanceOf[js.Any], throttling_data = throttling_data.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CPUStats]
   }
+  
+  extension [Self <: CPUStats](x: Self) {
+    
+    inline def setCpu_usage(value: CPUUsage): Self = StObject.set(x, "cpu_usage", value.asInstanceOf[js.Any])
+    
+    inline def setOnline_cpus(value: Double): Self = StObject.set(x, "online_cpus", value.asInstanceOf[js.Any])
+    
+    inline def setSystem_cpu_usage(value: Double): Self = StObject.set(x, "system_cpu_usage", value.asInstanceOf[js.Any])
+    
+    inline def setThrottling_data(value: ThrottlingData): Self = StObject.set(x, "throttling_data", value.asInstanceOf[js.Any])
+  }
 }
-

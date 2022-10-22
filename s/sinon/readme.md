@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinon
 
-Typings are for version 7.5
+Typings are for version 10.0
 
 ## Library description:
 JavaScript test spies, stubs and mocks.
@@ -9,11 +9,11 @@ JavaScript test spies, stubs and mocks.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sinon |
-| Keywords           | - |
-| # releases         | 73 |
-| # dependents       | 1445 |
-| # downloads        | 102525731 |
-| # stars            | 192 |
+| Keywords           | sinon, test, testing, unit, stub, spy, fake, time, clock, mock, xhr, assert |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1096066333333332E7 |
+| # stars            | 9113.0 |
 
 ## Links
 - [Homepage](https://sinonjs.org/)

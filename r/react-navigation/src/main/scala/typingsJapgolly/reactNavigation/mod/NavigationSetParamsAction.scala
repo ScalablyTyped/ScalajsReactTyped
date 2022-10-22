@@ -1,22 +1,27 @@
 package typingsJapgolly.reactNavigation.mod
 
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashSET_PARAMS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationSetParamsAction
-  extends NavigationStackAction
-     with NavigationSetParamsActionPayload {
+  extends StObject
+     with NavigationSetParamsActionPayload
+     with NavigationStackAction {
+  
   var `type`: NavigationSlashSET_PARAMS
 }
-
 object NavigationSetParamsAction {
-  @scala.inline
-  def apply(key: String, params: NavigationParams, `type`: NavigationSlashSET_PARAMS): NavigationSetParamsAction = {
+  
+  inline def apply(key: String, params: NavigationParams): NavigationSetParamsAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/SET_PARAMS")
     __obj.asInstanceOf[NavigationSetParamsAction]
   }
+  
+  extension [Self <: NavigationSetParamsAction](x: Self) {
+    
+    inline def setType(value: NavigationSlashSET_PARAMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

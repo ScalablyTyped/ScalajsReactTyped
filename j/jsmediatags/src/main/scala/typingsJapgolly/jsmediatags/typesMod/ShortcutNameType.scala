@@ -1,8 +1,8 @@
 package typingsJapgolly.jsmediatags.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jsmediatags.jsmediatagsStrings.title
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jsmediatags.jsmediatagsStrings.picture
   - typingsJapgolly.jsmediatags.jsmediatagsStrings.lyrics
 */
-trait ShortcutNameType extends js.Object
-
+trait ShortcutNameType extends StObject
 object ShortcutNameType {
-  @scala.inline
-  def album: typingsJapgolly.jsmediatags.jsmediatagsStrings.album = this.cast("album")
-  @scala.inline
-  def artist: typingsJapgolly.jsmediatags.jsmediatagsStrings.artist = this.cast("artist")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def comment: typingsJapgolly.jsmediatags.jsmediatagsStrings.comment = this.cast("comment")
-  @scala.inline
-  def genre: typingsJapgolly.jsmediatags.jsmediatagsStrings.genre = this.cast("genre")
-  @scala.inline
-  def lyrics: typingsJapgolly.jsmediatags.jsmediatagsStrings.lyrics = this.cast("lyrics")
-  @scala.inline
-  def picture: typingsJapgolly.jsmediatags.jsmediatagsStrings.picture = this.cast("picture")
-  @scala.inline
-  def title: typingsJapgolly.jsmediatags.jsmediatagsStrings.title = this.cast("title")
-  @scala.inline
-  def track: typingsJapgolly.jsmediatags.jsmediatagsStrings.track = this.cast("track")
-  @scala.inline
-  def year: typingsJapgolly.jsmediatags.jsmediatagsStrings.year = this.cast("year")
+  
+  inline def album: typingsJapgolly.jsmediatags.jsmediatagsStrings.album = "album".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.album]
+  
+  inline def artist: typingsJapgolly.jsmediatags.jsmediatagsStrings.artist = "artist".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.artist]
+  
+  inline def comment: typingsJapgolly.jsmediatags.jsmediatagsStrings.comment = "comment".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.comment]
+  
+  inline def genre: typingsJapgolly.jsmediatags.jsmediatagsStrings.genre = "genre".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.genre]
+  
+  inline def lyrics: typingsJapgolly.jsmediatags.jsmediatagsStrings.lyrics = "lyrics".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.lyrics]
+  
+  inline def picture: typingsJapgolly.jsmediatags.jsmediatagsStrings.picture = "picture".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.picture]
+  
+  inline def title: typingsJapgolly.jsmediatags.jsmediatagsStrings.title = "title".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.title]
+  
+  inline def track: typingsJapgolly.jsmediatags.jsmediatagsStrings.track = "track".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.track]
+  
+  inline def year: typingsJapgolly.jsmediatags.jsmediatagsStrings.year = "year".asInstanceOf[typingsJapgolly.jsmediatags.jsmediatagsStrings.year]
 }
-

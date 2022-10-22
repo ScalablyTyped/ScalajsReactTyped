@@ -1,53 +1,73 @@
 package typingsJapgolly.muiDatatables.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.muiDatatables.mod.MUIDataTablePopover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
-  def apply(
-    action: /* args */ js.Any => CallbackTo[js.Any] = null,
-    anchorEl: VdomNode = null,
-    anchorOrigin: js.Any = null,
-    elevation: Int | Double = null,
-    onClose: /* args */ js.Any => CallbackTo[js.Any] = null,
-    onExited: /* args */ js.Any => CallbackTo[js.Any] = null,
-    option: js.UndefOr[Boolean] = js.undefined,
-    transformOrigin: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MUIDataTablePopover, js.Any, Unit, MUIDataTablePopover] = {
-    val __obj = js.Dynamic.literal()
   
-      if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1((t0: /* args */ js.Any) => action(t0).runNow()))
-    if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.rawNode.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* args */ js.Any) => onClose(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* args */ js.Any) => onExited(t0).runNow()))
-    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.muiDatatables.mod.MUIDataTablePopover, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Any](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.muiDatatables.mod.MUIDataTablePopover])(children: _*)
-  }
   @JSImport("mui-datatables", "Popover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def action(value: /* args */ Any => Any): this.type = set("action", js.Any.fromFunction1(value))
+    
+    inline def anchorEl(value: VdomNode): this.type = set("anchorEl", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def anchorElNull: this.type = set("anchorEl", null)
+    
+    inline def anchorElVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("anchorEl", js.Array(value*))
+    
+    inline def anchorElVdomElement(value: VdomElement): this.type = set("anchorEl", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def anchorOrigin(value: Any): this.type = set("anchorOrigin", value.asInstanceOf[js.Any])
+    
+    inline def classes(value: js.Object): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def content(value: VdomNode): this.type = set("content", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def elevation(value: Double): this.type = set("elevation", value.asInstanceOf[js.Any])
+    
+    inline def onClose(value: /* args */ Any => Any): this.type = set("onClose", js.Any.fromFunction1(value))
+    
+    inline def onExited(value: /* args */ Any => Any): this.type = set("onExited", js.Any.fromFunction1(value))
+    
+    inline def option(value: Boolean): this.type = set("option", value.asInstanceOf[js.Any])
+    
+    inline def ref(value: Any): this.type = set("ref", value.asInstanceOf[js.Any])
+    
+    inline def refExit(value: /* args */ Any => Any): this.type = set("refExit", js.Any.fromFunction1(value))
+    
+    inline def transformOrigin(value: Any): this.type = set("transformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def trigger(value: VdomNode): this.type = set("trigger", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def triggerNull: this.type = set("trigger", null)
+    
+    inline def triggerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("trigger", js.Array(value*))
+    
+    inline def triggerVdomElement(value: VdomElement): this.type = set("trigger", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Popover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MUIDataTablePopover): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

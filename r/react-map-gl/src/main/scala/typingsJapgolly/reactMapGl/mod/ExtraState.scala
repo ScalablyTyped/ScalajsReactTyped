@@ -1,36 +1,54 @@
 package typingsJapgolly.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtraState extends js.Object {
+trait ExtraState extends StObject {
+  
   var inTransition: js.UndefOr[Boolean] = js.undefined
+  
   var isDragging: js.UndefOr[Boolean] = js.undefined
+  
   var isHovering: js.UndefOr[Boolean] = js.undefined
+  
   var isPanning: js.UndefOr[Boolean] = js.undefined
+  
   var isRotating: js.UndefOr[Boolean] = js.undefined
+  
   var isZooming: js.UndefOr[Boolean] = js.undefined
 }
-
 object ExtraState {
-  @scala.inline
-  def apply(
-    inTransition: js.UndefOr[Boolean] = js.undefined,
-    isDragging: js.UndefOr[Boolean] = js.undefined,
-    isHovering: js.UndefOr[Boolean] = js.undefined,
-    isPanning: js.UndefOr[Boolean] = js.undefined,
-    isRotating: js.UndefOr[Boolean] = js.undefined,
-    isZooming: js.UndefOr[Boolean] = js.undefined
-  ): ExtraState = {
+  
+  inline def apply(): ExtraState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inTransition)) __obj.updateDynamic("inTransition")(inTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDragging)) __obj.updateDynamic("isDragging")(isDragging.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHovering)) __obj.updateDynamic("isHovering")(isHovering.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPanning)) __obj.updateDynamic("isPanning")(isPanning.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRotating)) __obj.updateDynamic("isRotating")(isRotating.asInstanceOf[js.Any])
-    if (!js.isUndefined(isZooming)) __obj.updateDynamic("isZooming")(isZooming.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraState]
   }
+  
+  extension [Self <: ExtraState](x: Self) {
+    
+    inline def setInTransition(value: Boolean): Self = StObject.set(x, "inTransition", value.asInstanceOf[js.Any])
+    
+    inline def setInTransitionUndefined: Self = StObject.set(x, "inTransition", js.undefined)
+    
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    
+    inline def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
+    
+    inline def setIsHovering(value: Boolean): Self = StObject.set(x, "isHovering", value.asInstanceOf[js.Any])
+    
+    inline def setIsHoveringUndefined: Self = StObject.set(x, "isHovering", js.undefined)
+    
+    inline def setIsPanning(value: Boolean): Self = StObject.set(x, "isPanning", value.asInstanceOf[js.Any])
+    
+    inline def setIsPanningUndefined: Self = StObject.set(x, "isPanning", js.undefined)
+    
+    inline def setIsRotating(value: Boolean): Self = StObject.set(x, "isRotating", value.asInstanceOf[js.Any])
+    
+    inline def setIsRotatingUndefined: Self = StObject.set(x, "isRotating", js.undefined)
+    
+    inline def setIsZooming(value: Boolean): Self = StObject.set(x, "isZooming", value.asInstanceOf[js.Any])
+    
+    inline def setIsZoomingUndefined: Self = StObject.set(x, "isZooming", js.undefined)
+  }
 }
-

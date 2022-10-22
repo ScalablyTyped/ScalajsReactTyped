@@ -1,35 +1,33 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SponsoredGroupRole extends js.Object
-
+sealed trait SponsoredGroupRole extends StObject
 @JSImport("evernote", "Types.SponsoredGroupRole")
 @js.native
-object SponsoredGroupRole extends js.Object {
-  @js.native
-  sealed trait GROUP_ADMIN extends SponsoredGroupRole
-  
-  @js.native
-  sealed trait GROUP_MEMBER extends SponsoredGroupRole
-  
-  @js.native
-  sealed trait GROUP_OWNER extends SponsoredGroupRole
+object SponsoredGroupRole extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SponsoredGroupRole with Double] = js.native
-  /* 2 */ @js.native
-  object GROUP_ADMIN extends TopLevel[GROUP_ADMIN with Double]
+  def apply(value: Double): js.UndefOr[SponsoredGroupRole & Double] = js.native
   
-  /* 1 */ @js.native
-  object GROUP_MEMBER extends TopLevel[GROUP_MEMBER with Double]
+  @js.native
+  sealed trait GROUP_ADMIN
+    extends StObject
+       with SponsoredGroupRole
+  /* 2 */ val GROUP_ADMIN: typingsJapgolly.evernote.mod.Types.SponsoredGroupRole.GROUP_ADMIN & Double = js.native
   
-  /* 3 */ @js.native
-  object GROUP_OWNER extends TopLevel[GROUP_OWNER with Double]
+  @js.native
+  sealed trait GROUP_MEMBER
+    extends StObject
+       with SponsoredGroupRole
+  /* 1 */ val GROUP_MEMBER: typingsJapgolly.evernote.mod.Types.SponsoredGroupRole.GROUP_MEMBER & Double = js.native
   
+  @js.native
+  sealed trait GROUP_OWNER
+    extends StObject
+       with SponsoredGroupRole
+  /* 3 */ val GROUP_OWNER: typingsJapgolly.evernote.mod.Types.SponsoredGroupRole.GROUP_OWNER & Double = js.native
 }
-

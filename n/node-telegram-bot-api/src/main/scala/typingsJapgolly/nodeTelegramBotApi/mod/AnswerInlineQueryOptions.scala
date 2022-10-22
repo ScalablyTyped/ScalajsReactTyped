@@ -1,33 +1,48 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnswerInlineQueryOptions extends js.Object {
+trait AnswerInlineQueryOptions extends StObject {
+  
   var cache_time: js.UndefOr[Double] = js.undefined
+  
   var is_personal: js.UndefOr[Boolean] = js.undefined
+  
   var next_offset: js.UndefOr[String] = js.undefined
+  
   var switch_pm_parameter: js.UndefOr[String] = js.undefined
+  
   var switch_pm_text: js.UndefOr[String] = js.undefined
 }
-
 object AnswerInlineQueryOptions {
-  @scala.inline
-  def apply(
-    cache_time: Int | Double = null,
-    is_personal: js.UndefOr[Boolean] = js.undefined,
-    next_offset: String = null,
-    switch_pm_parameter: String = null,
-    switch_pm_text: String = null
-  ): AnswerInlineQueryOptions = {
+  
+  inline def apply(): AnswerInlineQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (cache_time != null) __obj.updateDynamic("cache_time")(cache_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_personal)) __obj.updateDynamic("is_personal")(is_personal.asInstanceOf[js.Any])
-    if (next_offset != null) __obj.updateDynamic("next_offset")(next_offset.asInstanceOf[js.Any])
-    if (switch_pm_parameter != null) __obj.updateDynamic("switch_pm_parameter")(switch_pm_parameter.asInstanceOf[js.Any])
-    if (switch_pm_text != null) __obj.updateDynamic("switch_pm_text")(switch_pm_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerInlineQueryOptions]
   }
+  
+  extension [Self <: AnswerInlineQueryOptions](x: Self) {
+    
+    inline def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
+    
+    inline def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
+    
+    inline def setIs_personal(value: Boolean): Self = StObject.set(x, "is_personal", value.asInstanceOf[js.Any])
+    
+    inline def setIs_personalUndefined: Self = StObject.set(x, "is_personal", js.undefined)
+    
+    inline def setNext_offset(value: String): Self = StObject.set(x, "next_offset", value.asInstanceOf[js.Any])
+    
+    inline def setNext_offsetUndefined: Self = StObject.set(x, "next_offset", js.undefined)
+    
+    inline def setSwitch_pm_parameter(value: String): Self = StObject.set(x, "switch_pm_parameter", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_pm_parameterUndefined: Self = StObject.set(x, "switch_pm_parameter", js.undefined)
+    
+    inline def setSwitch_pm_text(value: String): Self = StObject.set(x, "switch_pm_text", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_pm_textUndefined: Self = StObject.set(x, "switch_pm_text", js.undefined)
+  }
 }
-

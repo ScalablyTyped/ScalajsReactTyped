@@ -1,16 +1,20 @@
 organization := "org.scalablytyped.japgolly"
 name := "socketio-wildcard"
-version := "2.0-dt-20200127Z-15c68f"
-scalaVersion := "2.13.1"
+version := "2.0-dt-20220519Z-27d416"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "socket_dot_io" % "2.1-dt-20200227Z-860c64",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "cors" % "2.8-dt-20211202Z-10d8ea",
+  "org.scalablytyped.japgolly" %%% "engine_dot_io" % "6.2.0-483c78",
+  "org.scalablytyped.japgolly" %%% "engine_dot_io-parser" % "5.0.4-0b66bc",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "socket_dot_io" % "4.5.3-1659e0",
+  "org.scalablytyped.japgolly" %%% "socket_dot_io-adapter" % "2.4.0-6e49f0",
+  "org.scalablytyped.japgolly" %%% "socket_dot_io-parser" % "4.2.1-4a28f3",
+  "org.scalablytyped.japgolly" %%% "socket_dot_io__component-emitter" % "3.1.0-61c6c4",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

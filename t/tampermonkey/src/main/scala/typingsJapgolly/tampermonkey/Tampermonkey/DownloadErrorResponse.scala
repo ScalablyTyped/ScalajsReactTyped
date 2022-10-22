@@ -5,13 +5,15 @@ import typingsJapgolly.tampermonkey.tampermonkeyStrings.not_permitted
 import typingsJapgolly.tampermonkey.tampermonkeyStrings.not_succeeded
 import typingsJapgolly.tampermonkey.tampermonkeyStrings.not_supported
 import typingsJapgolly.tampermonkey.tampermonkeyStrings.not_whitelisted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DownloadErrorResponse extends js.Object {
+trait DownloadErrorResponse extends StObject {
+  
   /** Detail about that error */
   var details: js.UndefOr[String] = js.undefined
+  
   /**
     * Error reason
     * - `not_enabled` - the download feature isn't enabled by the user
@@ -26,16 +28,19 @@ trait DownloadErrorResponse extends js.Object {
     */
   var error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded
 }
-
 object DownloadErrorResponse {
-  @scala.inline
-  def apply(
-    error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded,
-    details: String = null
-  ): DownloadErrorResponse = {
+  
+  inline def apply(error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): DownloadErrorResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadErrorResponse]
   }
+  
+  extension [Self <: DownloadErrorResponse](x: Self) {
+    
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setError(value: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

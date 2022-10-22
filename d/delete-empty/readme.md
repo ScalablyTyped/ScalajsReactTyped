@@ -1,7 +1,7 @@
 
 # Scala.js typings for delete-empty
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Recursively delete all empty folders in a directory and child directories.
@@ -10,10 +10,10 @@ Recursively delete all empty folders in a directory and child directories.
 | ------------------ | :-------------: |
 | Full name          | delete-empty |
 | Keywords           | del, delete, dir, directory, empty, files, folder, recurse, recursive, remove |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 285529 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 77234.66666666667 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/delete-empty)

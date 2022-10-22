@@ -1,22 +1,31 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import typingsJapgolly.reactNativeMaterialUi.AnonContainerViewStyle
+import typingsJapgolly.reactNativeMaterialUi.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DividerProps extends js.Object {
+trait DividerProps extends StObject {
+  
   var inset: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[AnonContainerViewStyle] = js.undefined
+  
+  var style: js.UndefOr[`0`] = js.undefined
 }
-
 object DividerProps {
-  @scala.inline
-  def apply(inset: js.UndefOr[Boolean] = js.undefined, style: AnonContainerViewStyle = null): DividerProps = {
+  
+  inline def apply(): DividerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DividerProps]
   }
+  
+  extension [Self <: DividerProps](x: Self) {
+    
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
+    inline def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

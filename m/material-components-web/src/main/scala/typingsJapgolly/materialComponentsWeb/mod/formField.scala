@@ -1,35 +1,70 @@
 package typingsJapgolly.materialComponentsWeb.mod
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialFormField.adapterMod.MDCFormFieldAdapter
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialFormField.anon.PartialMDCFormFieldAdapte
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-components-web", "formField")
-@js.native
-object formField extends js.Object {
-  @js.native
-  class MDCFormField ()
-    extends typingsJapgolly.materialFormField.mod.MDCFormField
+object formField {
   
+  @JSImport("material-components-web", "formField.default")
   @js.native
-  class MDCFormFieldFoundation ()
-    extends typingsJapgolly.materialFormField.mod.MDCFormFieldFoundation
-  
-  /* static members */
-  @js.native
-  object MDCFormField extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialFormField.mod.MDCFormField = js.native
+  open class default ()
+    extends typingsJapgolly.materialFormField.mod.default {
+    def this(adapter: PartialMDCFormFieldAdapte) = this()
   }
   
-  /* static members */
+  @JSImport("material-components-web", "formField.MDCFormField")
   @js.native
-  object MDCFormFieldFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialFormField.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCFormFieldAdapter = js.native
-    val strings: typingsJapgolly.materialFormField.constantsMod.strings = js.native
+  open class MDCFormField protected ()
+    extends typingsJapgolly.materialFormField.mod.MDCFormField {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialFormField.foundationMod.MDCFormFieldFoundation,
+      args: Any*
+    ) = this()
+  }
+  /* static members */
+  object MDCFormField {
+    
+    @JSImport("material-components-web", "formField.MDCFormField")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: HTMLElement): typingsJapgolly.materialFormField.componentMod.MDCFormField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialFormField.componentMod.MDCFormField]
   }
   
+  @JSImport("material-components-web", "formField.MDCFormFieldFoundation")
+  @js.native
+  open class MDCFormFieldFoundation ()
+    extends typingsJapgolly.materialFormField.mod.MDCFormFieldFoundation {
+    def this(adapter: PartialMDCFormFieldAdapte) = this()
+  }
+  
+  object cssClasses {
+    
+    @JSImport("material-components-web", "formField.cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "formField.cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+  }
+  
+  object strings {
+    
+    @JSImport("material-components-web", "formField.strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "formField.strings.LABEL_SELECTOR")
+    @js.native
+    def LABEL_SELECTOR: String = js.native
+    inline def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,39 +1,32 @@
 package typingsJapgolly.utility
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilityStrings {
-  @js.native
-  sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait md5 extends StObject
+  inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait sha1 extends StObject
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def md5: md5 = "md5".asInstanceOf[md5]
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

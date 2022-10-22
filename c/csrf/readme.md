@@ -1,7 +1,7 @@
 
 # Scala.js typings for csrf
 
-Typings are for version 1.3
+Typings are for version 3.1.0
 
 ## Library description:
 primary logic behind csrf tokens
@@ -10,10 +10,10 @@ primary logic behind csrf tokens
 | ------------------ | :-------------: |
 | Full name          | csrf |
 | Keywords           | csrf, tokens |
-| # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 12583288 |
-| # stars            | 25 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2189988.6666666665 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/csrf#readme)
@@ -24,7 +24,7 @@ primary logic behind csrf tokens
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

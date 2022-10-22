@@ -10,10 +10,10 @@ simple, compliant file streaming module for node
 | ------------------ | :-------------: |
 | Full name          | node-static |
 | Keywords           | http, static, file, server |
-| # releases         | 2 |
-| # dependents       | 393 |
-| # downloads        | 1657157 |
-| # stars            | 49 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 189748.0 |
+| # stars            | 2159.0 |
 
 ## Links
 - [Homepage](https://github.com/cloudhead/node-static)

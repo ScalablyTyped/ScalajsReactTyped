@@ -1,30 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeleteUserFromSharedAppleDeviceActionResult extends DeviceActionResult {
+trait DeleteUserFromSharedAppleDeviceActionResult
+  extends StObject
+     with DeviceActionResult {
+  
   // User principal name of the user to be deleted
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DeleteUserFromSharedAppleDeviceActionResult {
-  @scala.inline
-  def apply(
-    actionName: String = null,
-    actionState: ActionState = null,
-    lastUpdatedDateTime: String = null,
-    startDateTime: String = null,
-    userPrincipalName: String = null
-  ): DeleteUserFromSharedAppleDeviceActionResult = {
+  
+  inline def apply(): DeleteUserFromSharedAppleDeviceActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserFromSharedAppleDeviceActionResult]
   }
+  
+  extension [Self <: DeleteUserFromSharedAppleDeviceActionResult](x: Self) {
+    
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+  }
 }
-

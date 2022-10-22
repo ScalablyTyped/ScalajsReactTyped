@@ -1,11 +1,13 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotMacdMacdLineOptions extends js.Object {
+trait PlotMacdMacdLineOptions extends StObject {
+  
   var styles: js.UndefOr[PlotMacdMacdLineStylesOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
     * can be applied to the X axis, Y axis or Z axis for bubbles, according to
@@ -16,16 +18,25 @@ trait PlotMacdMacdLineOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotMacdMacdLineZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
-
 object PlotMacdMacdLineOptions {
-  @scala.inline
-  def apply(styles: PlotMacdMacdLineStylesOptions = null, zones: js.Array[PlotMacdMacdLineZonesOptions] = null): PlotMacdMacdLineOptions = {
+  
+  inline def apply(): PlotMacdMacdLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMacdMacdLineOptions]
   }
+  
+  extension [Self <: PlotMacdMacdLineOptions](x: Self) {
+    
+    inline def setStyles(value: PlotMacdMacdLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
+  }
 }
-

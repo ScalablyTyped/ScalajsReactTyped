@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChoiceFormatType extends js.Object
-
+sealed trait ChoiceFormatType extends StObject
 @JSGlobal("SPClientTemplates.ChoiceFormatType")
 @js.native
-object ChoiceFormatType extends js.Object {
-  @js.native
-  sealed trait Dropdown extends ChoiceFormatType
+object ChoiceFormatType extends StObject {
   
   @js.native
-  sealed trait Radio extends ChoiceFormatType
+  sealed trait Dropdown
+    extends StObject
+       with ChoiceFormatType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChoiceFormatType with Double] = js.native
-  /* 0 */ @js.native
-  object Dropdown extends TopLevel[Dropdown with Double]
-  
-  /* 1 */ @js.native
-  object Radio extends TopLevel[Radio with Double]
-  
+  @js.native
+  sealed trait Radio
+    extends StObject
+       with ChoiceFormatType
 }
-

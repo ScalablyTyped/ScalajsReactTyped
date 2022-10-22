@@ -1,54 +1,94 @@
 package typingsJapgolly.epiceditor
 
+import typingsJapgolly.epiceditor.anon.AutoSave
+import typingsJapgolly.epiceditor.anon.Base
+import typingsJapgolly.epiceditor.anon.Fullscreen
+import typingsJapgolly.epiceditor.anon.ToggleEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EpicEditorOptions extends js.Object {
+trait EpicEditorOptions extends StObject {
+  
   var basePath: js.UndefOr[String] = js.undefined
+  
   var clientSideStorage: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[js.Any] = js.undefined
-  var file: js.UndefOr[AnonAutoSave] = js.undefined
+  
+  var container: js.UndefOr[Any] = js.undefined
+  
+  var file: js.UndefOr[AutoSave] = js.undefined
+  
   var focusOnLoad: js.UndefOr[Boolean] = js.undefined
+  
   var localStorageName: js.UndefOr[String] = js.undefined
-  var parser: js.UndefOr[js.Any] = js.undefined
-  var shortcut: js.UndefOr[AnonFullscreen] = js.undefined
-  var string: js.UndefOr[AnonToggleEdit] = js.undefined
-  var textarea: js.UndefOr[js.Any] = js.undefined
-  var theme: js.UndefOr[AnonBase] = js.undefined
+  
+  var parser: js.UndefOr[Any] = js.undefined
+  
+  var shortcut: js.UndefOr[Fullscreen] = js.undefined
+  
+  var string: js.UndefOr[ToggleEdit] = js.undefined
+  
+  var textarea: js.UndefOr[Any] = js.undefined
+  
+  var theme: js.UndefOr[Base] = js.undefined
+  
   var useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
 }
-
 object EpicEditorOptions {
-  @scala.inline
-  def apply(
-    basePath: String = null,
-    clientSideStorage: js.UndefOr[Boolean] = js.undefined,
-    container: js.Any = null,
-    file: AnonAutoSave = null,
-    focusOnLoad: js.UndefOr[Boolean] = js.undefined,
-    localStorageName: String = null,
-    parser: js.Any = null,
-    shortcut: AnonFullscreen = null,
-    string: AnonToggleEdit = null,
-    textarea: js.Any = null,
-    theme: AnonBase = null,
-    useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
-  ): EpicEditorOptions = {
+  
+  inline def apply(): EpicEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientSideStorage)) __obj.updateDynamic("clientSideStorage")(clientSideStorage.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnLoad)) __obj.updateDynamic("focusOnLoad")(focusOnLoad.asInstanceOf[js.Any])
-    if (localStorageName != null) __obj.updateDynamic("localStorageName")(localStorageName.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeFullsreen)) __obj.updateDynamic("useNativeFullsreen")(useNativeFullsreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpicEditorOptions]
   }
+  
+  extension [Self <: EpicEditorOptions](x: Self) {
+    
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    
+    inline def setClientSideStorage(value: Boolean): Self = StObject.set(x, "clientSideStorage", value.asInstanceOf[js.Any])
+    
+    inline def setClientSideStorageUndefined: Self = StObject.set(x, "clientSideStorage", js.undefined)
+    
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setFile(value: AutoSave): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setFocusOnLoad(value: Boolean): Self = StObject.set(x, "focusOnLoad", value.asInstanceOf[js.Any])
+    
+    inline def setFocusOnLoadUndefined: Self = StObject.set(x, "focusOnLoad", js.undefined)
+    
+    inline def setLocalStorageName(value: String): Self = StObject.set(x, "localStorageName", value.asInstanceOf[js.Any])
+    
+    inline def setLocalStorageNameUndefined: Self = StObject.set(x, "localStorageName", js.undefined)
+    
+    inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    
+    inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+    
+    inline def setShortcut(value: Fullscreen): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    
+    inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+    
+    inline def setString(value: ToggleEdit): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    
+    inline def setTextarea(value: Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    
+    inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+    
+    inline def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setUseNativeFullsreen(value: Boolean): Self = StObject.set(x, "useNativeFullsreen", value.asInstanceOf[js.Any])
+    
+    inline def setUseNativeFullsreenUndefined: Self = StObject.set(x, "useNativeFullsreen", js.undefined)
+  }
 }
-

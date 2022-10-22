@@ -1,52 +1,75 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlashXMLUI extends js.Object {
-  def accept(): js.Any
-  def cancel(): js.Any
-  def get(): js.Any
-  def getControlItemElement(): js.Any
-  def getEnabled(): js.Any
-  def getVisible(): js.Any
-  def set(): js.Any
-  def setControItemElement(): js.Any
-  def setControItemElements(): js.Any
-  def setEnabled(): js.Any
-  def setVisible(): js.Any
+trait FlashXMLUI extends StObject {
+  
+  def accept(): Any
+  
+  def cancel(): Any
+  
+  def get(): Any
+  
+  def getControlItemElement(): Any
+  
+  def getEnabled(): Any
+  
+  def getVisible(): Any
+  
+  def set(): Any
+  
+  def setControItemElement(): Any
+  
+  def setControItemElements(): Any
+  
+  def setEnabled(): Any
+  
+  def setVisible(): Any
 }
-
 object FlashXMLUI {
-  @scala.inline
-  def apply(
-    accept: CallbackTo[js.Any],
-    cancel: CallbackTo[js.Any],
-    get: CallbackTo[js.Any],
-    getControlItemElement: CallbackTo[js.Any],
-    getEnabled: CallbackTo[js.Any],
-    getVisible: CallbackTo[js.Any],
-    set: CallbackTo[js.Any],
-    setControItemElement: CallbackTo[js.Any],
-    setControItemElements: CallbackTo[js.Any],
-    setEnabled: CallbackTo[js.Any],
-    setVisible: CallbackTo[js.Any]
+  
+  inline def apply(
+    accept: CallbackTo[Any],
+    cancel: CallbackTo[Any],
+    get: CallbackTo[Any],
+    getControlItemElement: CallbackTo[Any],
+    getEnabled: CallbackTo[Any],
+    getVisible: CallbackTo[Any],
+    set: CallbackTo[Any],
+    setControItemElement: CallbackTo[Any],
+    setControItemElements: CallbackTo[Any],
+    setEnabled: CallbackTo[Any],
+    setVisible: CallbackTo[Any]
   ): FlashXMLUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept.toJsFn)
-    __obj.updateDynamic("cancel")(cancel.toJsFn)
-    __obj.updateDynamic("get")(get.toJsFn)
-    __obj.updateDynamic("getControlItemElement")(getControlItemElement.toJsFn)
-    __obj.updateDynamic("getEnabled")(getEnabled.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("set")(set.toJsFn)
-    __obj.updateDynamic("setControItemElement")(setControItemElement.toJsFn)
-    __obj.updateDynamic("setControItemElements")(setControItemElements.toJsFn)
-    __obj.updateDynamic("setEnabled")(setEnabled.toJsFn)
-    __obj.updateDynamic("setVisible")(setVisible.toJsFn)
+    val __obj = js.Dynamic.literal(accept = accept.toJsFn, cancel = cancel.toJsFn, get = get.toJsFn, getControlItemElement = getControlItemElement.toJsFn, getEnabled = getEnabled.toJsFn, getVisible = getVisible.toJsFn, set = set.toJsFn, setControItemElement = setControItemElement.toJsFn, setControItemElements = setControItemElements.toJsFn, setEnabled = setEnabled.toJsFn, setVisible = setVisible.toJsFn)
     __obj.asInstanceOf[FlashXMLUI]
   }
+  
+  extension [Self <: FlashXMLUI](x: Self) {
+    
+    inline def setAccept(value: CallbackTo[Any]): Self = StObject.set(x, "accept", value.toJsFn)
+    
+    inline def setCancel(value: CallbackTo[Any]): Self = StObject.set(x, "cancel", value.toJsFn)
+    
+    inline def setGet(value: CallbackTo[Any]): Self = StObject.set(x, "get", value.toJsFn)
+    
+    inline def setGetControlItemElement(value: CallbackTo[Any]): Self = StObject.set(x, "getControlItemElement", value.toJsFn)
+    
+    inline def setGetEnabled(value: CallbackTo[Any]): Self = StObject.set(x, "getEnabled", value.toJsFn)
+    
+    inline def setGetVisible(value: CallbackTo[Any]): Self = StObject.set(x, "getVisible", value.toJsFn)
+    
+    inline def setSet(value: CallbackTo[Any]): Self = StObject.set(x, "set", value.toJsFn)
+    
+    inline def setSetControItemElement(value: CallbackTo[Any]): Self = StObject.set(x, "setControItemElement", value.toJsFn)
+    
+    inline def setSetControItemElements(value: CallbackTo[Any]): Self = StObject.set(x, "setControItemElements", value.toJsFn)
+    
+    inline def setSetEnabled(value: CallbackTo[Any]): Self = StObject.set(x, "setEnabled", value.toJsFn)
+    
+    inline def setSetVisible(value: CallbackTo[Any]): Self = StObject.set(x, "setVisible", value.toJsFn)
+  }
 }
-

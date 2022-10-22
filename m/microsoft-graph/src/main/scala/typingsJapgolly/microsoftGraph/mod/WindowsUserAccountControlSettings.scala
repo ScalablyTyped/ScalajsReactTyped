@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverNotify
 */
-trait WindowsUserAccountControlSettings extends js.Object
-
+trait WindowsUserAccountControlSettings extends StObject
 object WindowsUserAccountControlSettings {
-  @scala.inline
-  def alwaysNotify: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysNotify = this.cast("alwaysNotify")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def neverNotify: typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverNotify = this.cast("neverNotify")
-  @scala.inline
-  def notifyOnAppChanges: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges = this.cast("notifyOnAppChanges")
-  @scala.inline
-  def notifyOnAppChangesWithoutDimming: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming = this.cast("notifyOnAppChangesWithoutDimming")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def alwaysNotify: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysNotify = "alwaysNotify".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysNotify]
+  
+  inline def neverNotify: typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverNotify = "neverNotify".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverNotify]
+  
+  inline def notifyOnAppChanges: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges = "notifyOnAppChanges".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges]
+  
+  inline def notifyOnAppChangesWithoutDimming: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming = "notifyOnAppChangesWithoutDimming".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

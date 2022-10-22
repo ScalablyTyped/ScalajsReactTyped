@@ -10,10 +10,10 @@ Run jasmine tests in a browser or headless browser using gulp.
 | ------------------ | :-------------: |
 | Full name          | gulp-jasmine-browser |
 | Keywords           | gulp, gulpplugin, jasmine, test, testing, spec |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 165611 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2840.6666666666665 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/jasmine/gulp-jasmine-browser)

@@ -1,16 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a conflict between appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentConflictResult")
-@js.native
-abstract class AppointmentConflictResult () extends js.Object {
+trait AppointmentConflictResult extends StObject {
+  
   /** Gets the date of the appointment conflict. */
-  var date: js.Date = js.native
+  var date: js.Date
+  
   /** Gets a value indicating the type of appointment conflict. */
-  var `type`: AppointmentConflictType = js.native
+  var `type`: AppointmentConflictType
 }
-
+object AppointmentConflictResult {
+  
+  inline def apply(date: js.Date, `type`: AppointmentConflictType): AppointmentConflictResult = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppointmentConflictResult]
+  }
+  
+  extension [Self <: AppointmentConflictResult](x: Self) {
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: AppointmentConflictType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,34 +1,28 @@
 package typingsJapgolly.electronDebug
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronDebugStrings {
-  @js.native
-  sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait detach extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait previous extends js.Object
+  sealed trait detach extends StObject
+  inline def detach: detach = "detach".asInstanceOf[detach]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait undocked extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def detach: detach = "detach".asInstanceOf[detach]
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def undocked: undocked = "undocked".asInstanceOf[undocked]
+  @js.native
+  sealed trait undocked extends StObject
+  inline def undocked: undocked = "undocked".asInstanceOf[undocked]
 }
-

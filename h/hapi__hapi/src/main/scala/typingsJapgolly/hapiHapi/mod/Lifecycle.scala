@@ -1,16 +1,13 @@
 package typingsJapgolly.hapiHapi.mod
 
 import typingsJapgolly.hapiBoom.mod.Boom
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hapi/hapi", "Lifecycle")
-@js.native
-object Lifecycle extends js.Object {
-  trait _FailAction extends js.Object
+object Lifecycle {
   
   /**
     * Various configuration options allows defining how errors are handled. For example, when invalid payload is received or malformed cookie, instead of returning an error, the framework can be
@@ -31,6 +28,7 @@ object Lifecycle extends js.Object {
     - typingsJapgolly.hapiHapi.mod.Lifecycle.Method
   */
   type FailAction = _FailAction | Method
+  
   /**
     * Lifecycle methods are the interface between the framework and the application. Many of the request lifecycle steps:
     * extensions, authentication, handlers, pre-handler methods, and failAction function values are lifecyle methods
@@ -46,6 +44,7 @@ object Lifecycle extends js.Object {
     /* err */ js.UndefOr[js.Error], 
     ReturnValue
   ]
+  
   /**
     * Each lifecycle method must return a value or a promise that resolves into a value. If a lifecycle method returns
     * without a value or resolves to an undefined value, an Internal Server Error (500) error response is sent.
@@ -61,6 +60,25 @@ object Lifecycle extends js.Object {
     * For more info please [See docs](https://github.com/hapijs/hapi/blob/master/API.md#lifecycle-methods)
     */
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
-  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | js.Error | Boom[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
+  
+  /* Rewritten from type alias, can be one of: 
+    - scala.Null
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - typingsJapgolly.node.bufferMod.global.Buffer
+    - js.Error
+    - typingsJapgolly.hapiBoom.mod.Boom[scala.Any]
+    - typingsJapgolly.node.streamMod.Stream
+    - js.Object
+    - js.Array[js.Object]
+    - js.Symbol
+    - typingsJapgolly.hapiHapi.mod.Auth
+    - typingsJapgolly.hapiHapi.mod.ResponseObject
+  */
+  type ReturnValueTypes = _ReturnValueTypes | Boom[Any] | js.Array[js.Object] | Null | String | Double | Boolean | Buffer | js.Error | Stream | js.Object | js.Symbol
+  
+  trait _FailAction extends StObject
+  
+  trait _ReturnValueTypes extends StObject
 }
-

@@ -1,57 +1,45 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonExpanded
-import typingsJapgolly.baseui.SharedPropsexpandednever
-import typingsJapgolly.baseui.accordionMod.AccordionOverrides
-import typingsJapgolly.baseui.accordionMod.AccordionProps
-import typingsJapgolly.baseui.accordionMod.AccordionState
-import typingsJapgolly.baseui.baseuiStrings.expand
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.accordionTypesMod.AccordionOverrides
+import typingsJapgolly.baseui.accordionTypesMod.AccordionProps
+import typingsJapgolly.baseui.accordionTypesMod.AccordionState
+import typingsJapgolly.baseui.accordionTypesMod.StateChangeType
+import typingsJapgolly.baseui.anon.Expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Accordion {
-  def apply(
-    accordion: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    initialState: AccordionState = null,
-    onChange: /* args */ AnonExpanded => CallbackTo[js.Any] = null,
-    overrides: AccordionOverrides[SharedPropsexpandednever] = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    renderPanelContent: js.UndefOr[Boolean] = js.undefined,
-    stateReducer: (expand, AccordionState, AccordionState) => CallbackTo[AccordionState] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AccordionProps, typingsJapgolly.baseui.accordionMod.Accordion, Unit, AccordionProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonExpanded) => onChange(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderPanelContent)) __obj.updateDynamic("renderPanelContent")(renderPanelContent.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.expand, t1: typingsJapgolly.baseui.accordionMod.AccordionState, t2: typingsJapgolly.baseui.accordionMod.AccordionState) => stateReducer(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.accordionMod.AccordionProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.accordionMod.Accordion](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.accordionMod.AccordionProps])(children: _*)
+  inline def apply(
+    stateReducer: (/* stateChangeType */ StateChangeType, /* nextState */ AccordionState, /* currentState */ AccordionState) => AccordionState
+  ): Builder = {
+    val __props = js.Dynamic.literal(stateReducer = js.Any.fromFunction3(stateReducer))
+    new Builder(js.Array(this.component, __props.asInstanceOf[AccordionProps]))
   }
+  
   @JSImport("baseui/accordion", "Accordion")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.accordionMod.Accordion] {
+    
+    inline def accordion(value: Boolean): this.type = set("accordion", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def initialState(value: AccordionState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* a */ Expanded => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: AccordionOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def renderAll(value: Boolean): this.type = set("renderAll", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AccordionProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

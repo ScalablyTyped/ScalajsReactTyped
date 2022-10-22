@@ -10,15 +10,15 @@ A Lua parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | luaparse |
 | Keywords           | ast, lua, parser, parsing |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 53930 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9015.0 |
+| # stars            | 372.0 |
 
 ## Links
-- [Homepage](https://oxyc.github.io/luaparse/)
-- [Bugs](https://github.com/oxyc/luaparse/issues)
-- [Repository](https://github.com/oxyc/luaparse)
+- [Homepage](https://fstirlitz.github.io/luaparse/)
+- [Bugs](https://github.com/fstirlitz/luaparse/issues)
+- [Repository](https://github.com/fstirlitz/luaparse)
 - [Npm](https://www.npmjs.com/package/luaparse)
     
 

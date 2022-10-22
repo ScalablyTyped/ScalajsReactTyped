@@ -1,27 +1,33 @@
 package typingsJapgolly.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "CriteriaParts")
 @js.native
-class CriteriaParts protected () extends ICriteriaParts {
+open class CriteriaParts protected ()
+  extends StObject
+     with ICriteriaParts {
   def this(
-    rawCriteriaObject: js.Any,
+    rawCriteriaObject: Any,
     tables: js.Array[TableToSearchPart],
     noDatabaseProperties: js.Array[String],
     whereClause: String
   ) = this()
+  
   /* CompleteClass */
-  override var noDatabaseProperties: js.Array[String] = js.native
+  var noDatabaseProperties: js.Array[String] = js.native
+  
   /* CompleteClass */
-  override var rawCriteriaObject: js.Any = js.native
-  /* CompleteClass */
-  override var tables: js.Array[TableToSearchPart] = js.native
-  /* CompleteClass */
-  override var whereClause: String = js.native
+  var rawCriteriaObject: Any = js.native
+  
   /* CompleteClass */
   override def selectFromClause[T](_table: Table[T]): String = js.native
+  
+  /* CompleteClass */
+  var tables: js.Array[TableToSearchPart] = js.native
+  
+  /* CompleteClass */
+  var whereClause: String = js.native
 }
-

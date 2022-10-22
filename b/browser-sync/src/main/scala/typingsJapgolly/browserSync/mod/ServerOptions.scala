@@ -1,45 +1,69 @@
 package typingsJapgolly.browserSync.mod
 
+import typingsJapgolly.node.httpMod.IncomingMessage
+import typingsJapgolly.node.httpMod.ServerResponse
 import typingsJapgolly.serveStatic.mod.ServeStaticOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerOptions extends js.Object {
+trait ServerOptions extends StObject {
+  
   /** set base directory */
   var baseDir: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /** enable directory listing */
   var directory: js.UndefOr[Boolean] = js.undefined
+  
   /** set index filename */
   var index: js.UndefOr[String] = js.undefined
+  
   /** configure custom middleware */
   var middleware: js.UndefOr[js.Array[MiddlewareHandler | PerRouteMiddleware]] = js.undefined
+  
   /**
     * key-value object hash, where the key is the url to match,
     * and the value is the folder to serve (relative to your working directory)
     */
   var routes: js.UndefOr[Hash[String]] = js.undefined
-  var serveStaticOptions: js.UndefOr[ServeStaticOptions] = js.undefined
+  
+  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse[IncomingMessage]]] = js.undefined
 }
-
 object ServerOptions {
-  @scala.inline
-  def apply(
-    baseDir: String | js.Array[String] = null,
-    directory: js.UndefOr[Boolean] = js.undefined,
-    index: String = null,
-    middleware: js.Array[MiddlewareHandler | PerRouteMiddleware] = null,
-    routes: Hash[String] = null,
-    serveStaticOptions: ServeStaticOptions = null
-  ): ServerOptions = {
+  
+  inline def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
+  
+  extension [Self <: ServerOptions](x: Self) {
+    
+    inline def setBaseDir(value: String | js.Array[String]): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    
+    inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+    
+    inline def setBaseDirVarargs(value: String*): Self = StObject.set(x, "baseDir", js.Array(value*))
+    
+    inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setMiddleware(value: js.Array[MiddlewareHandler | PerRouteMiddleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    
+    inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+    
+    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value*))
+    
+    inline def setRoutes(value: Hash[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    
+    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse[IncomingMessage]]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
+    
+    inline def setServeStaticOptionsUndefined: Self = StObject.set(x, "serveStaticOptions", js.undefined)
+  }
 }
-

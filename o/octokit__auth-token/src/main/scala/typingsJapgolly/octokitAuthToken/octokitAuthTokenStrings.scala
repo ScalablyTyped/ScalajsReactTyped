@@ -1,29 +1,28 @@
 package typingsJapgolly.octokitAuthToken
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octokitAuthTokenStrings {
-  @js.native
-  sealed trait app extends js.Object
   
   @js.native
-  sealed trait installation extends js.Object
+  sealed trait app extends StObject
+  inline def app: app = "app".asInstanceOf[app]
   
   @js.native
-  sealed trait oauth extends js.Object
+  sealed trait installation extends StObject
+  inline def installation: installation = "installation".asInstanceOf[installation]
   
   @js.native
-  sealed trait token extends js.Object
+  sealed trait oauth extends StObject
+  inline def oauth: oauth = "oauth".asInstanceOf[oauth]
   
-  @scala.inline
-  def app: app = "app".asInstanceOf[app]
-  @scala.inline
-  def installation: installation = "installation".asInstanceOf[installation]
-  @scala.inline
-  def oauth: oauth = "oauth".asInstanceOf[oauth]
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
+  @js.native
+  sealed trait token extends StObject
+  inline def token: token = "token".asInstanceOf[token]
+  
+  @js.native
+  sealed trait `user-to-server` extends StObject
+  inline def `user-to-server`: `user-to-server` = "user-to-server".asInstanceOf[`user-to-server`]
 }
-

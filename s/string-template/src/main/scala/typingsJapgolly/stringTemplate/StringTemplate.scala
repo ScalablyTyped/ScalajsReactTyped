@@ -1,37 +1,37 @@
 package typingsJapgolly.stringTemplate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("StringTemplate")
-@js.native
-object StringTemplate extends js.Object {
-  /**
-    * Format
-    */
-  @js.native
-  trait Format extends js.Object {
-    // Escape {} pairs by using double {{}} 
-    def apply(string: String): String = js.native
-    // Format using optional arguments 
-    def apply(string: String, array: js.Any*): String = js.native
-    // Format using a number indexed array
-    def apply(string: String, array: js.Array[_]): String = js.native
-    // Format using an object hash with keys matching [0-9a-zA-Z]+ 
-    def apply(string: String, `object`: js.Any): String = js.native
-  }
-  
-  @js.native
-  trait Template extends js.Object {
-    def apply(array: js.Any*): String = js.native
-    def apply(array: js.Array[_]): String = js.native
-    def apply(`object`: js.Any): String = js.native
-  }
+object StringTemplate {
   
   /**
     * Compile
     */
   type Compile = js.Function2[/* string */ String, /* inline */ js.UndefOr[Boolean], Template]
+  
+  /**
+    * Format
+    */
+  @js.native
+  trait Format extends StObject {
+    
+    // Escape {} pairs by using double {{}} 
+    def apply(string: String): String = js.native
+    // Format using optional arguments 
+    def apply(string: String, array: Any*): String = js.native
+    // Format using a number indexed array
+    def apply(string: String, array: js.Array[Any]): String = js.native
+    // Format using an object hash with keys matching [0-9a-zA-Z]+ 
+    def apply(string: String, `object`: Any): String = js.native
+  }
+  
+  @js.native
+  trait Template extends StObject {
+    
+    def apply(array: Any*): String = js.native
+    def apply(array: js.Array[Any]): String = js.native
+    def apply(`object`: Any): String = js.native
+  }
 }
-

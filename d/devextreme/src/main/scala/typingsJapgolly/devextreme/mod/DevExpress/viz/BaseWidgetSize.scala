@@ -1,24 +1,36 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Specifies the widget's size in pixels. */
-trait BaseWidgetSize extends js.Object {
-  /** Specifies the height of the widget in pixels. */
+trait BaseWidgetSize extends StObject {
+  
+  /**
+    * Specifies the height of the UI component in pixels.
+    */
   var height: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of the widget in pixels. */
+  
+  /**
+    * Specifies the width of the UI component in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object BaseWidgetSize {
-  @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): BaseWidgetSize = {
+  
+  inline def apply(): BaseWidgetSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWidgetSize]
   }
+  
+  extension [Self <: BaseWidgetSize](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

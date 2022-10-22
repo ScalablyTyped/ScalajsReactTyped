@@ -1,130 +1,251 @@
 package typingsJapgolly.googleMapReact.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.googleMapReact.AnonMap
-import typingsJapgolly.react.mod.HTMLProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.googleMapReact.anon.Map
+import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Props extends js.Object {
+trait Props extends StObject {
+  
   var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.undefined
+  
   var center: js.UndefOr[Coords] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   var debounced: js.UndefOr[Boolean] = js.undefined
+  
   var defaultCenter: js.UndefOr[Coords] = js.undefined
+  
   var defaultZoom: js.UndefOr[Double] = js.undefined
+  
   var distanceToMouse: js.UndefOr[
     js.Function3[/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object], Double]
   ] = js.undefined
+  
   var draggable: js.UndefOr[Boolean] = js.undefined
-  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ js.Any, Unit]] = js.undefined
+  
+  var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ Any, Unit]] = js.undefined
+  
+  var heatmap: js.UndefOr[Heatmap] = js.undefined
+  
   var heatmapLibrary: js.UndefOr[Boolean] = js.undefined
+  
   var hoverDistance: js.UndefOr[Double] = js.undefined
+  
   var layerTypes: js.UndefOr[js.Array[String]] = js.undefined
-  var margin: js.UndefOr[js.Array[_]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, _]] = js.undefined
-  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
-  var onChildMouseDown: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
-  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
-  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, Unit]] = js.undefined
-  var onChildMouseMove: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
-  var onChildMouseUp: js.UndefOr[
-    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
-  ] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.undefined
-  var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
-  var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
-  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ AnonMap, Unit]] = js.undefined
-  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  
+  var margin: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, Any]] = js.undefined
+  
+  var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
+  
+  var onChildMouseDown: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
+  
+  var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
+  
+  var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ Any, /* childProps */ Any, Unit]] = js.undefined
+  
+  var onChildMouseMove: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
+  
+  var onChildMouseUp: js.UndefOr[js.Function3[/* childKey */ Any, /* childProps */ Any, /* mouse */ Any, Unit]] = js.undefined
+  
+  var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, Any]] = js.undefined
+  
+  var onDrag: js.UndefOr[js.Function1[/* map */ Any, Unit]] = js.undefined
+  
+  var onDragEnd: js.UndefOr[js.Function1[/* map */ Any, Unit]] = js.undefined
+  
+  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Map, Unit]] = js.undefined
+  
+  var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
+  
   var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
-  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  
+  var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
+  
+  var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ Any, Unit]] = js.undefined
+  
   var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.undefined
+  
   var resetBoundsOnResize: js.UndefOr[Boolean] = js.undefined
+  
   var shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
+  
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  
   var yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined
+  
   var zoom: js.UndefOr[Double] = js.undefined
 }
-
 object Props {
-  @scala.inline
-  def apply(
-    bootstrapURLKeys: BootstrapURLKeys = null,
-    center: Coords = null,
-    debounced: js.UndefOr[Boolean] = js.undefined,
-    defaultCenter: Coords = null,
-    defaultZoom: Int | Double = null,
-    distanceToMouse: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => CallbackTo[Double] = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    googleMapLoader: /* bootstrapURLKeys */ js.Any => Callback = null,
-    heatmapLibrary: js.UndefOr[Boolean] = js.undefined,
-    hoverDistance: Int | Double = null,
-    layerTypes: js.Array[String] = null,
-    margin: js.Array[_] = null,
-    onChange: /* value */ ChangeEventValue => CallbackTo[js.Any] = null,
-    onChildClick: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Callback = null,
-    onChildMouseDown: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Callback = null,
-    onChildMouseEnter: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Callback = null,
-    onChildMouseLeave: (/* hoverKey */ js.Any, /* childProps */ js.Any) => Callback = null,
-    onChildMouseMove: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Callback = null,
-    onChildMouseUp: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Callback = null,
-    onClick: /* value */ ClickEventValue => CallbackTo[js.Any] = null,
-    onDrag: /* map */ js.Any => Callback = null,
-    onDragEnd: /* map */ js.Any => Callback = null,
-    onGoogleApiLoaded: /* maps */ AnonMap => Callback = null,
-    onMapTypeIdChange: /* args */ js.Any => Callback = null,
-    onTilesLoaded: js.UndefOr[Callback] = js.undefined,
-    onZoomAnimationEnd: /* args */ js.Any => Callback = null,
-    onZoomAnimationStart: /* args */ js.Any => Callback = null,
-    options: MapOptions | (js.Function1[/* maps */ Maps, MapOptions]) = null,
-    resetBoundsOnResize: js.UndefOr[Boolean] = js.undefined,
-    shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined,
-    style: HTMLProps[HTMLDivElement] = null,
-    yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null
-  ): Props = {
+  
+  inline def apply(): Props = {
     val __obj = js.Dynamic.literal()
-    if (bootstrapURLKeys != null) __obj.updateDynamic("bootstrapURLKeys")(bootstrapURLKeys.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(debounced)) __obj.updateDynamic("debounced")(debounced.asInstanceOf[js.Any])
-    if (defaultCenter != null) __obj.updateDynamic("defaultCenter")(defaultCenter.asInstanceOf[js.Any])
-    if (defaultZoom != null) __obj.updateDynamic("defaultZoom")(defaultZoom.asInstanceOf[js.Any])
-    if (distanceToMouse != null) __obj.updateDynamic("distanceToMouse")(js.Any.fromFunction3((t0: /* pt */ typingsJapgolly.googleMapReact.mod.Point, t1: /* mousePos */ typingsJapgolly.googleMapReact.mod.Point, t2: /* markerProps */ js.UndefOr[js.Object]) => distanceToMouse(t0, t1, t2).runNow()))
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (googleMapLoader != null) __obj.updateDynamic("googleMapLoader")(js.Any.fromFunction1((t0: /* bootstrapURLKeys */ js.Any) => googleMapLoader(t0).runNow()))
-    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary.asInstanceOf[js.Any])
-    if (hoverDistance != null) __obj.updateDynamic("hoverDistance")(hoverDistance.asInstanceOf[js.Any])
-    if (layerTypes != null) __obj.updateDynamic("layerTypes")(layerTypes.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.googleMapReact.mod.ChangeEventValue) => onChange(t0).runNow()))
-    if (onChildClick != null) __obj.updateDynamic("onChildClick")(js.Any.fromFunction2((t0: /* hoverKey */ js.Any, t1: /* childProps */ js.Any) => onChildClick(t0, t1).runNow()))
-    if (onChildMouseDown != null) __obj.updateDynamic("onChildMouseDown")(js.Any.fromFunction3((t0: /* childKey */ js.Any, t1: /* childProps */ js.Any, t2: /* mouse */ js.Any) => onChildMouseDown(t0, t1, t2).runNow()))
-    if (onChildMouseEnter != null) __obj.updateDynamic("onChildMouseEnter")(js.Any.fromFunction2((t0: /* hoverKey */ js.Any, t1: /* childProps */ js.Any) => onChildMouseEnter(t0, t1).runNow()))
-    if (onChildMouseLeave != null) __obj.updateDynamic("onChildMouseLeave")(js.Any.fromFunction2((t0: /* hoverKey */ js.Any, t1: /* childProps */ js.Any) => onChildMouseLeave(t0, t1).runNow()))
-    if (onChildMouseMove != null) __obj.updateDynamic("onChildMouseMove")(js.Any.fromFunction3((t0: /* childKey */ js.Any, t1: /* childProps */ js.Any, t2: /* mouse */ js.Any) => onChildMouseMove(t0, t1, t2).runNow()))
-    if (onChildMouseUp != null) __obj.updateDynamic("onChildMouseUp")(js.Any.fromFunction3((t0: /* childKey */ js.Any, t1: /* childProps */ js.Any, t2: /* mouse */ js.Any) => onChildMouseUp(t0, t1, t2).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.googleMapReact.mod.ClickEventValue) => onClick(t0).runNow()))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1((t0: /* map */ js.Any) => onDrag(t0).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: /* map */ js.Any) => onDragEnd(t0).runNow()))
-    if (onGoogleApiLoaded != null) __obj.updateDynamic("onGoogleApiLoaded")(js.Any.fromFunction1((t0: /* maps */ typingsJapgolly.googleMapReact.AnonMap) => onGoogleApiLoaded(t0).runNow()))
-    if (onMapTypeIdChange != null) __obj.updateDynamic("onMapTypeIdChange")(js.Any.fromFunction1((t0: /* args */ js.Any) => onMapTypeIdChange(t0).runNow()))
-    onTilesLoaded.foreach(p => __obj.updateDynamic("onTilesLoaded")(p.toJsFn))
-    if (onZoomAnimationEnd != null) __obj.updateDynamic("onZoomAnimationEnd")(js.Any.fromFunction1((t0: /* args */ js.Any) => onZoomAnimationEnd(t0).runNow()))
-    if (onZoomAnimationStart != null) __obj.updateDynamic("onZoomAnimationStart")(js.Any.fromFunction1((t0: /* args */ js.Any) => onZoomAnimationStart(t0).runNow()))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetBoundsOnResize)) __obj.updateDynamic("resetBoundsOnResize")(resetBoundsOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUnregisterMapOnUnmount)) __obj.updateDynamic("shouldUnregisterMapOnUnmount")(shouldUnregisterMapOnUnmount.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(yesIWantToUseGoogleMapApiInternals)) __obj.updateDynamic("yesIWantToUseGoogleMapApiInternals")(yesIWantToUseGoogleMapApiInternals.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  
+  extension [Self <: Props](x: Self) {
+    
+    inline def setBootstrapURLKeys(value: BootstrapURLKeys): Self = StObject.set(x, "bootstrapURLKeys", value.asInstanceOf[js.Any])
+    
+    inline def setBootstrapURLKeysUndefined: Self = StObject.set(x, "bootstrapURLKeys", js.undefined)
+    
+    inline def setCenter(value: Coords): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setDebounced(value: Boolean): Self = StObject.set(x, "debounced", value.asInstanceOf[js.Any])
+    
+    inline def setDebouncedUndefined: Self = StObject.set(x, "debounced", js.undefined)
+    
+    inline def setDefaultCenter(value: Coords): Self = StObject.set(x, "defaultCenter", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCenterUndefined: Self = StObject.set(x, "defaultCenter", js.undefined)
+    
+    inline def setDefaultZoom(value: Double): Self = StObject.set(x, "defaultZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultZoomUndefined: Self = StObject.set(x, "defaultZoom", js.undefined)
+    
+    inline def setDistanceToMouse(value: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => Double): Self = StObject.set(x, "distanceToMouse", js.Any.fromFunction3(value))
+    
+    inline def setDistanceToMouseUndefined: Self = StObject.set(x, "distanceToMouse", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setGoogleMapLoader(value: /* bootstrapURLKeys */ Any => Callback): Self = StObject.set(x, "googleMapLoader", js.Any.fromFunction1((t0: /* bootstrapURLKeys */ Any) => value(t0).runNow()))
+    
+    inline def setGoogleMapLoaderUndefined: Self = StObject.set(x, "googleMapLoader", js.undefined)
+    
+    inline def setHeatmap(value: Heatmap): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
+    
+    inline def setHeatmapLibrary(value: Boolean): Self = StObject.set(x, "heatmapLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setHeatmapLibraryUndefined: Self = StObject.set(x, "heatmapLibrary", js.undefined)
+    
+    inline def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
+    
+    inline def setHoverDistance(value: Double): Self = StObject.set(x, "hoverDistance", value.asInstanceOf[js.Any])
+    
+    inline def setHoverDistanceUndefined: Self = StObject.set(x, "hoverDistance", js.undefined)
+    
+    inline def setLayerTypes(value: js.Array[String]): Self = StObject.set(x, "layerTypes", value.asInstanceOf[js.Any])
+    
+    inline def setLayerTypesUndefined: Self = StObject.set(x, "layerTypes", js.undefined)
+    
+    inline def setLayerTypesVarargs(value: String*): Self = StObject.set(x, "layerTypes", js.Array(value*))
+    
+    inline def setMargin(value: js.Array[Any]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMarginVarargs(value: Any*): Self = StObject.set(x, "margin", js.Array(value*))
+    
+    inline def setOnChange(value: /* value */ ChangeEventValue => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnChildClick(value: (/* hoverKey */ Any, /* childProps */ Any) => Callback): Self = StObject.set(x, "onChildClick", js.Any.fromFunction2((t0: /* hoverKey */ Any, t1: /* childProps */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChildClickUndefined: Self = StObject.set(x, "onChildClick", js.undefined)
+    
+    inline def setOnChildMouseDown(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Callback): Self = StObject.set(x, "onChildMouseDown", js.Any.fromFunction3((t0: /* childKey */ Any, t1: /* childProps */ Any, t2: /* mouse */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnChildMouseDownUndefined: Self = StObject.set(x, "onChildMouseDown", js.undefined)
+    
+    inline def setOnChildMouseEnter(value: (/* hoverKey */ Any, /* childProps */ Any) => Callback): Self = StObject.set(x, "onChildMouseEnter", js.Any.fromFunction2((t0: /* hoverKey */ Any, t1: /* childProps */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChildMouseEnterUndefined: Self = StObject.set(x, "onChildMouseEnter", js.undefined)
+    
+    inline def setOnChildMouseLeave(value: (/* hoverKey */ Any, /* childProps */ Any) => Callback): Self = StObject.set(x, "onChildMouseLeave", js.Any.fromFunction2((t0: /* hoverKey */ Any, t1: /* childProps */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChildMouseLeaveUndefined: Self = StObject.set(x, "onChildMouseLeave", js.undefined)
+    
+    inline def setOnChildMouseMove(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Callback): Self = StObject.set(x, "onChildMouseMove", js.Any.fromFunction3((t0: /* childKey */ Any, t1: /* childProps */ Any, t2: /* mouse */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnChildMouseMoveUndefined: Self = StObject.set(x, "onChildMouseMove", js.undefined)
+    
+    inline def setOnChildMouseUp(value: (/* childKey */ Any, /* childProps */ Any, /* mouse */ Any) => Callback): Self = StObject.set(x, "onChildMouseUp", js.Any.fromFunction3((t0: /* childKey */ Any, t1: /* childProps */ Any, t2: /* mouse */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnChildMouseUpUndefined: Self = StObject.set(x, "onChildMouseUp", js.undefined)
+    
+    inline def setOnClick(value: /* value */ ClickEventValue => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setOnDrag(value: /* map */ Any => Callback): Self = StObject.set(x, "onDrag", js.Any.fromFunction1((t0: /* map */ Any) => value(t0).runNow()))
+    
+    inline def setOnDragEnd(value: /* map */ Any => Callback): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1((t0: /* map */ Any) => value(t0).runNow()))
+    
+    inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+    
+    inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+    
+    inline def setOnGoogleApiLoaded(value: /* maps */ Map => Callback): Self = StObject.set(x, "onGoogleApiLoaded", js.Any.fromFunction1((t0: /* maps */ Map) => value(t0).runNow()))
+    
+    inline def setOnGoogleApiLoadedUndefined: Self = StObject.set(x, "onGoogleApiLoaded", js.undefined)
+    
+    inline def setOnMapTypeIdChange(value: /* args */ Any => Callback): Self = StObject.set(x, "onMapTypeIdChange", js.Any.fromFunction1((t0: /* args */ Any) => value(t0).runNow()))
+    
+    inline def setOnMapTypeIdChangeUndefined: Self = StObject.set(x, "onMapTypeIdChange", js.undefined)
+    
+    inline def setOnTilesLoaded(value: Callback): Self = StObject.set(x, "onTilesLoaded", value.toJsFn)
+    
+    inline def setOnTilesLoadedUndefined: Self = StObject.set(x, "onTilesLoaded", js.undefined)
+    
+    inline def setOnZoomAnimationEnd(value: /* args */ Any => Callback): Self = StObject.set(x, "onZoomAnimationEnd", js.Any.fromFunction1((t0: /* args */ Any) => value(t0).runNow()))
+    
+    inline def setOnZoomAnimationEndUndefined: Self = StObject.set(x, "onZoomAnimationEnd", js.undefined)
+    
+    inline def setOnZoomAnimationStart(value: /* args */ Any => Callback): Self = StObject.set(x, "onZoomAnimationStart", js.Any.fromFunction1((t0: /* args */ Any) => value(t0).runNow()))
+    
+    inline def setOnZoomAnimationStartUndefined: Self = StObject.set(x, "onZoomAnimationStart", js.undefined)
+    
+    inline def setOptions(value: MapOptions | (js.Function1[/* maps */ Maps, MapOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsFunction1(value: /* maps */ Maps => MapOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setResetBoundsOnResize(value: Boolean): Self = StObject.set(x, "resetBoundsOnResize", value.asInstanceOf[js.Any])
+    
+    inline def setResetBoundsOnResizeUndefined: Self = StObject.set(x, "resetBoundsOnResize", js.undefined)
+    
+    inline def setShouldUnregisterMapOnUnmount(value: Boolean): Self = StObject.set(x, "shouldUnregisterMapOnUnmount", value.asInstanceOf[js.Any])
+    
+    inline def setShouldUnregisterMapOnUnmountUndefined: Self = StObject.set(x, "shouldUnregisterMapOnUnmount", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setYesIWantToUseGoogleMapApiInternals(value: Boolean): Self = StObject.set(x, "yesIWantToUseGoogleMapApiInternals", value.asInstanceOf[js.Any])
+    
+    inline def setYesIWantToUseGoogleMapApiInternalsUndefined: Self = StObject.set(x, "yesIWantToUseGoogleMapApiInternals", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

@@ -1,29 +1,28 @@
 package typingsJapgolly.youtube.YT
 
-import typingsJapgolly.youtube.youtubeNumbers.`0`
-import typingsJapgolly.youtube.youtubeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.youtube.youtubeNumbers.`0`
-  - typingsJapgolly.youtube.youtubeNumbers.`1`
-*/
-trait ClosedCaptionsLoadPolicy extends js.Object
-
-object ClosedCaptionsLoadPolicy {
+@js.native
+sealed trait ClosedCaptionsLoadPolicy extends StObject
+@JSGlobal("YT.ClosedCaptionsLoadPolicy")
+@js.native
+object ClosedCaptionsLoadPolicy extends StObject {
+  
   /**
-  		 * For closed captions to be shown.
-  		 */
-  @scala.inline
-  def ForceOn: `1` = this.cast(1)
+    * For closed captions to be shown.
+    */
+  @js.native
+  sealed trait ForceOn
+    extends StObject
+       with ClosedCaptionsLoadPolicy
+  
   /**
-  		 * Defaults to the user's preferences.
-  		 */
-  @scala.inline
-  def UserDefault: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+    * Defaults to the user's preferences.
+    */
+  @js.native
+  sealed trait UserDefault
+    extends StObject
+       with ClosedCaptionsLoadPolicy
 }
-

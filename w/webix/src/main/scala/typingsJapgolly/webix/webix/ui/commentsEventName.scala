@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterAdd
@@ -20,38 +20,34 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onUserMentioned
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait commentsEventName extends js.Object
-
+trait commentsEventName extends StObject
 object commentsEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterAdd: typingsJapgolly.webix.webixStrings.onAfterAdd = this.cast("onAfterAdd")
-  @scala.inline
-  def onAfterDelete: typingsJapgolly.webix.webixStrings.onAfterDelete = this.cast("onAfterDelete")
-  @scala.inline
-  def onAfterEditStart: typingsJapgolly.webix.webixStrings.onAfterEditStart = this.cast("onAfterEditStart")
-  @scala.inline
-  def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
-  @scala.inline
-  def onBeforeAdd: typingsJapgolly.webix.webixStrings.onBeforeAdd = this.cast("onBeforeAdd")
-  @scala.inline
-  def onBeforeDelete: typingsJapgolly.webix.webixStrings.onBeforeDelete = this.cast("onBeforeDelete")
-  @scala.inline
-  def onBeforeEditStart: typingsJapgolly.webix.webixStrings.onBeforeEditStart = this.cast("onBeforeEditStart")
-  @scala.inline
-  def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
-  @scala.inline
-  def onBeforeMenuAction: typingsJapgolly.webix.webixStrings.onBeforeMenuAction = this.cast("onBeforeMenuAction")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onUserMentioned: typingsJapgolly.webix.webixStrings.onUserMentioned = this.cast("onUserMentioned")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterAdd: typingsJapgolly.webix.webixStrings.onAfterAdd = "onAfterAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterAdd]
+  
+  inline def onAfterDelete: typingsJapgolly.webix.webixStrings.onAfterDelete = "onAfterDelete".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterDelete]
+  
+  inline def onAfterEditStart: typingsJapgolly.webix.webixStrings.onAfterEditStart = "onAfterEditStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterEditStart]
+  
+  inline def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterLoad]
+  
+  inline def onBeforeAdd: typingsJapgolly.webix.webixStrings.onBeforeAdd = "onBeforeAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeAdd]
+  
+  inline def onBeforeDelete: typingsJapgolly.webix.webixStrings.onBeforeDelete = "onBeforeDelete".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDelete]
+  
+  inline def onBeforeEditStart: typingsJapgolly.webix.webixStrings.onBeforeEditStart = "onBeforeEditStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeEditStart]
+  
+  inline def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeLoad]
+  
+  inline def onBeforeMenuAction: typingsJapgolly.webix.webixStrings.onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeMenuAction]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typingsJapgolly.webix.webixStrings.onLoadError]
+  
+  inline def onUserMentioned: typingsJapgolly.webix.webixStrings.onUserMentioned = "onUserMentioned".asInstanceOf[typingsJapgolly.webix.webixStrings.onUserMentioned]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

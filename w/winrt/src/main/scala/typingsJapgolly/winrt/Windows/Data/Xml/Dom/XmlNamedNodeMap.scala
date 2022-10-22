@@ -1,14 +1,10 @@
 package typingsJapgolly.winrt.Windows.Data.Xml.Dom
 
-import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Data.Xml.Dom.XmlNamedNodeMap")
 @js.native
-class XmlNamedNodeMap () extends IXmlNamedNodeMap {
-  /* CompleteClass */
-  override def first(): IIterator[IXmlNode] = js.native
-}
-
+trait XmlNamedNodeMap
+  extends StObject
+     with IXmlNamedNodeMap

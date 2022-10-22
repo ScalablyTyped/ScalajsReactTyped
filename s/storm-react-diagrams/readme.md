@@ -10,10 +10,10 @@ Typings are for version 5.2.1
 | ------------------ | :-------------: |
 | Full name          | storm-react-diagrams |
 | Keywords           | web, diagram, diagrams, react, typescript, flowchart, simple, links, nodes |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 468797 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28845.0 |
+| # stars            | 7057.0 |
 
 ## Links
 - [Homepage](https://github.com/projectstorm/react-diagrams#readme)

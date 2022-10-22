@@ -1,15 +1,12 @@
 package typingsJapgolly.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GlideScopedEvaluator")
 @js.native
-/**
-  * Instantiates a GlideScopedEvaluator object.
-  */
-class GlideScopedEvaluator () extends js.Object {
+trait GlideScopedEvaluator extends StObject {
+  
   /**
     * Evaluates a script from a GlideRecord field.
     *
@@ -38,9 +35,11 @@ class GlideScopedEvaluator () extends js.Object {
     *   gs.info(evaluator.evaluateScript(gr, 'test_script', vars));
     * }
     */
-  def evaluateScript(grObj: ScopedGlideRecord): js.Any = js.native
-  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): js.Any = js.native
-  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): js.Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: Unit, variables: js.Object): Any = js.native
+  
   /**
     * Returns a variable from a GlideScopedEvaluator object.
     *
@@ -66,7 +65,8 @@ class GlideScopedEvaluator () extends js.Object {
     *   gs.info(evaluator.getVariable('result'));
     * }
     */
-  def getVariable(name: String): js.Any = js.native
+  def getVariable(name: String): Any = js.native
+  
   /**
     * Puts a variable into the GlideScopedEvaluator object. These variables are available to
     * the script that this GlideScopedEvaluator object runs.
@@ -93,6 +93,5 @@ class GlideScopedEvaluator () extends js.Object {
     *   gs.info(evaluator.getVariable('result'));
     * }
     */
-  def putVariable(name: String, value: js.Any): Unit = js.native
+  def putVariable(name: String, value: Any): Unit = js.native
 }
-

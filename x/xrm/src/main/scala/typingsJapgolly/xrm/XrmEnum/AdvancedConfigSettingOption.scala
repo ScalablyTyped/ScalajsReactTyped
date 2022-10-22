@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.XrmEnum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Settings for {@link GlobalContext.getAdvancedConfigSetting globalContext.getAdvancedConfigSetting(setting)}
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.MaxChildIncidentNumber
   - typingsJapgolly.xrm.xrmStrings.MaxIncidentMergeNumber
 */
-trait AdvancedConfigSettingOption extends js.Object
-
+trait AdvancedConfigSettingOption extends StObject
 object AdvancedConfigSettingOption {
-  @scala.inline
-  def MaxChildIncidentNumber: typingsJapgolly.xrm.xrmStrings.MaxChildIncidentNumber = this.cast("MaxChildIncidentNumber")
-  @scala.inline
-  def MaxIncidentMergeNumber: typingsJapgolly.xrm.xrmStrings.MaxIncidentMergeNumber = this.cast("MaxIncidentMergeNumber")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def MaxChildIncidentNumber: typingsJapgolly.xrm.xrmStrings.MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[typingsJapgolly.xrm.xrmStrings.MaxChildIncidentNumber]
+  
+  inline def MaxIncidentMergeNumber: typingsJapgolly.xrm.xrmStrings.MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[typingsJapgolly.xrm.xrmStrings.MaxIncidentMergeNumber]
 }
-

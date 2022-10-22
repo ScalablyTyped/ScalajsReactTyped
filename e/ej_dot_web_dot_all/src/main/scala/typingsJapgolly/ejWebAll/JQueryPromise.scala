@@ -1,22 +1,27 @@
 package typingsJapgolly.ejWebAll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryPromise[T] extends js.Object {
+trait JQueryPromise[T] extends StObject {
+  
   /**
     * Returns the cancel option value.
     */
   var cancel: js.UndefOr[Boolean] = js.undefined
 }
-
 object JQueryPromise {
-  @scala.inline
-  def apply[T](cancel: js.UndefOr[Boolean] = js.undefined): JQueryPromise[T] = {
+  
+  inline def apply[T](): JQueryPromise[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryPromise[T]]
   }
+  
+  extension [Self <: JQueryPromise[?], T](x: Self & JQueryPromise[T]) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+  }
 }
-

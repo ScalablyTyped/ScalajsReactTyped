@@ -1,108 +1,96 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataChangeType extends js.Object
-
+sealed trait DataChangeType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.DataChangeType")
 @js.native
-object DataChangeType extends js.Object {
-  /**
-    *
-    * CellDeleted represents the data change event is triggered by deleting cells.
-    *
-    */
-  @js.native
-  sealed trait cellDeleted extends DataChangeType
+object DataChangeType extends StObject {
   
   /**
-    *
-    * CellInserted represents the data change event is triggered by inserting new cells.
-    *
+    * `CellDeleted` indicates that the data change event is triggered by deleting cells.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait cellInserted extends DataChangeType
+  sealed trait cellDeleted
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * ColumnDeleted represents the data change event is triggered by deleting columns.
-    *
+    * `CellInserted` indicates that the data change event is triggered by inserting new cells.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait columnDeleted extends DataChangeType
+  sealed trait cellInserted
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * ColumnInserted represents the data change event is triggered by inserting new columns.
-    *
+    * `ColumnDeleted` indicates that the data change event is triggered by deleting columns.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait columnInserted extends DataChangeType
+  sealed trait columnDeleted
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * RangeEdited represents the data change event is triggered by range being edited.
-    *
+    * `ColumnInserted` indicates that the data change event is triggered by inserting new columns.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait rangeEdited extends DataChangeType
+  sealed trait columnInserted
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * RowDeleted represents the data change event is triggered by deleting rows.
-    *
+    * `RangeEdited` indicates that the data change event is triggered by a range being edited.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait rowDeleted extends DataChangeType
+  sealed trait rangeEdited
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * RowInserted represents the data change event is triggered by inserting new rows.
-    *
+    * `RowDeleted` indicates that the data change event is triggered by deleting rows.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait rowInserted extends DataChangeType
+  sealed trait rowDeleted
+    extends StObject
+       with DataChangeType
   
   /**
-    *
-    * Unknown represents the type of data change is not the listed types.
-    *
+    * `RowInserted` indicates that the data change event is triggered by inserting new rows.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait unknown extends DataChangeType
+  sealed trait rowInserted
+    extends StObject
+       with DataChangeType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataChangeType with String] = js.native
-  /* "CellDeleted" */ @js.native
-  object cellDeleted extends TopLevel[cellDeleted with String]
-  
-  /* "CellInserted" */ @js.native
-  object cellInserted extends TopLevel[cellInserted with String]
-  
-  /* "ColumnDeleted" */ @js.native
-  object columnDeleted extends TopLevel[columnDeleted with String]
-  
-  /* "ColumnInserted" */ @js.native
-  object columnInserted extends TopLevel[columnInserted with String]
-  
-  /* "RangeEdited" */ @js.native
-  object rangeEdited extends TopLevel[rangeEdited with String]
-  
-  /* "RowDeleted" */ @js.native
-  object rowDeleted extends TopLevel[rowDeleted with String]
-  
-  /* "RowInserted" */ @js.native
-  object rowInserted extends TopLevel[rowInserted with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  /**
+    * `Unknown` indicates that the type of data change is not one of the listed types.
+    * @remarks
+    * [Api set: ExcelApi 1.8. The name of this value was 'Others' in ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with DataChangeType
 }
-

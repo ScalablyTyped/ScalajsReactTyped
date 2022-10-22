@@ -1,90 +1,91 @@
 package typingsJapgolly.atlaskitSingleSelect.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.atlaskitSingleSelect.AnonEvent
-import typingsJapgolly.atlaskitSingleSelect.atlaskitSingleSelectStrings.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.atlaskitSingleSelect.anon.Event
 import typingsJapgolly.atlaskitSingleSelect.atlaskitSingleSelectStrings.subtle
 import typingsJapgolly.atlaskitSingleSelect.mod.GroupType
 import typingsJapgolly.atlaskitSingleSelect.mod.ItemType
 import typingsJapgolly.atlaskitSingleSelect.mod.Props
+import typingsJapgolly.atlaskitSingleSelect.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SingleSelect {
-  def apply(
-    appearance: default | subtle = null,
-    defaultSelected: ItemType = null,
-    droplistShouldFitContainer: js.UndefOr[Boolean] = js.undefined,
-    hasAutocomplete: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    invalidMessage: VdomNode = null,
-    isDefaultOpen: js.UndefOr[Boolean] = js.undefined,
-    isDisabled: js.UndefOr[Boolean] = js.undefined,
-    isFirstChild: js.UndefOr[Boolean] = js.undefined,
-    isInvalid: js.UndefOr[Boolean] = js.undefined,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[GroupType] = null,
-    label: String = null,
-    maxHeight: Int | Double = null,
-    name: String = null,
-    noMatchesFound: String = null,
-    onFilterChange: /* filter */ String => Callback = null,
-    onOpenChange: /* change */ AnonEvent => Callback = null,
-    onSelected: /* item */ ItemType => Callback = null,
-    placeholder: String = null,
-    position: String = null,
-    shouldFitContainer: js.UndefOr[Boolean] = js.undefined,
-    shouldFlip: js.UndefOr[Boolean] = js.undefined,
-    shouldFocus: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, typingsJapgolly.atlaskitSingleSelect.mod.default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(droplistShouldFitContainer)) __obj.updateDynamic("droplistShouldFitContainer")(droplistShouldFitContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAutocomplete)) __obj.updateDynamic("hasAutocomplete")(hasAutocomplete.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (invalidMessage != null) __obj.updateDynamic("invalidMessage")(invalidMessage.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultOpen)) __obj.updateDynamic("isDefaultOpen")(isDefaultOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFirstChild)) __obj.updateDynamic("isFirstChild")(isFirstChild.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInvalid)) __obj.updateDynamic("isInvalid")(isInvalid.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noMatchesFound != null) __obj.updateDynamic("noMatchesFound")(noMatchesFound.asInstanceOf[js.Any])
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction1((t0: /* filter */ java.lang.String) => onFilterChange(t0).runNow()))
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* change */ typingsJapgolly.atlaskitSingleSelect.AnonEvent) => onOpenChange(t0).runNow()))
-    if (onSelected != null) __obj.updateDynamic("onSelected")(js.Any.fromFunction1((t0: /* item */ typingsJapgolly.atlaskitSingleSelect.mod.ItemType) => onSelected(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFitContainer)) __obj.updateDynamic("shouldFitContainer")(shouldFitContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFlip)) __obj.updateDynamic("shouldFlip")(shouldFlip.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.atlaskitSingleSelect.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atlaskitSingleSelect.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.atlaskitSingleSelect.mod.Props])(children: _*)
-  }
   @JSImport("@atlaskit/single-select", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def appearance(value: typingsJapgolly.atlaskitSingleSelect.atlaskitSingleSelectStrings.default | subtle): this.type = set("appearance", value.asInstanceOf[js.Any])
+    
+    inline def defaultSelected(value: ItemType): this.type = set("defaultSelected", value.asInstanceOf[js.Any])
+    
+    inline def droplistShouldFitContainer(value: Boolean): this.type = set("droplistShouldFitContainer", value.asInstanceOf[js.Any])
+    
+    inline def hasAutocomplete(value: Boolean): this.type = set("hasAutocomplete", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def invalidMessage(value: VdomNode): this.type = set("invalidMessage", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def invalidMessageNull: this.type = set("invalidMessage", null)
+    
+    inline def invalidMessageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("invalidMessage", js.Array(value*))
+    
+    inline def invalidMessageVdomElement(value: VdomElement): this.type = set("invalidMessage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def isDefaultOpen(value: Boolean): this.type = set("isDefaultOpen", value.asInstanceOf[js.Any])
+    
+    inline def isDisabled(value: Boolean): this.type = set("isDisabled", value.asInstanceOf[js.Any])
+    
+    inline def isFirstChild(value: Boolean): this.type = set("isFirstChild", value.asInstanceOf[js.Any])
+    
+    inline def isInvalid(value: Boolean): this.type = set("isInvalid", value.asInstanceOf[js.Any])
+    
+    inline def isRequired(value: Boolean): this.type = set("isRequired", value.asInstanceOf[js.Any])
+    
+    inline def items(value: js.Array[GroupType]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: GroupType*): this.type = set("items", js.Array(value*))
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def maxHeight(value: Double): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def noMatchesFound(value: String): this.type = set("noMatchesFound", value.asInstanceOf[js.Any])
+    
+    inline def onFilterChange(value: /* filter */ String => Callback): this.type = set("onFilterChange", js.Any.fromFunction1((t0: /* filter */ String) => value(t0).runNow()))
+    
+    inline def onOpenChange(value: /* change */ Event => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* change */ Event) => value(t0).runNow()))
+    
+    inline def onSelected(value: /* item */ ItemType => Callback): this.type = set("onSelected", js.Any.fromFunction1((t0: /* item */ ItemType) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def position(value: String): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def shouldFitContainer(value: Boolean): this.type = set("shouldFitContainer", value.asInstanceOf[js.Any])
+    
+    inline def shouldFlip(value: Boolean): this.type = set("shouldFlip", value.asInstanceOf[js.Any])
+    
+    inline def shouldFocus(value: Boolean): this.type = set("shouldFocus", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SingleSelect.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

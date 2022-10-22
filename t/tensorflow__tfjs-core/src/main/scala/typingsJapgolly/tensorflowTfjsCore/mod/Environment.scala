@@ -1,13 +1,12 @@
 package typingsJapgolly.tensorflowTfjsCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-core", "Environment")
 @js.native
-class Environment protected ()
-  extends typingsJapgolly.tensorflowTfjsCore.environmentMod.Environment {
-  def this(global: js.Any) = this()
+open class Environment protected ()
+  extends typingsJapgolly.tensorflowTfjsCore.distBaseMod.Environment {
+  def this(global: Any) = this()
 }
-

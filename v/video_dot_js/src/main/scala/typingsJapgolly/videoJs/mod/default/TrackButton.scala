@@ -1,16 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import typingsJapgolly.videoJs.mod.videojs.MenuButton
 import typingsJapgolly.videoJs.mod.videojs.TrackButtonOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "TrackButton")
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+@JSImport("video.js", "default.TrackButton")
 @js.native
-class TrackButton protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.MenuButton {
+open class TrackButton protected ()
+  extends StObject
+     with MenuButton {
   /**
     * Creates an instance of this class.
     *
@@ -23,29 +24,3 @@ class TrackButton protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
 }
-
-/**
-  * The base class for buttons that toggle specific  track types (e.g. subtitles).
-  */
-@JSImport("video.js", "TrackButton")
-@js.native
-object TrackButton
-  extends /**
-  * Creates an instance of this class.
-  *
-  * @param player
-  *         The `Player` that this class should be attached to.
-  *
-  * @param [options]
-  *         The key/value store of player options.
-  */
-Instantiable1[
-      /* player */ typingsJapgolly.videoJs.mod.videojs.Player, 
-      typingsJapgolly.videoJs.mod.videojs.MenuButton
-    ]
-     with Instantiable2[
-      /* player */ typingsJapgolly.videoJs.mod.videojs.Player, 
-      /* options */ TrackButtonOptions, 
-      typingsJapgolly.videoJs.mod.videojs.MenuButton
-    ]
-

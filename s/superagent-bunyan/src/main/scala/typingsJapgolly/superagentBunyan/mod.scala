@@ -1,16 +1,18 @@
 package typingsJapgolly.superagentBunyan
 
-import typingsJapgolly.bunyan.mod.^
 import typingsJapgolly.superagent.mod.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("superagent-bunyan", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(logger: ^): Plugin = js.native
-  def apply(logger: ^, requestId: String): Plugin = js.native
-  def apply(logger: ^, requestId: String, extra: js.Object): Plugin = js.native
+object mod {
+  
+  inline def apply(logger: typingsJapgolly.bunyan.mod.^): Plugin = ^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def apply(logger: typingsJapgolly.bunyan.mod.^, requestId: String): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  inline def apply(logger: typingsJapgolly.bunyan.mod.^, requestId: String, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  inline def apply(logger: typingsJapgolly.bunyan.mod.^, requestId: Unit, extra: js.Object): Plugin = (^.asInstanceOf[js.Dynamic].apply(logger.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Plugin]
+  
+  @JSImport("superagent-bunyan", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

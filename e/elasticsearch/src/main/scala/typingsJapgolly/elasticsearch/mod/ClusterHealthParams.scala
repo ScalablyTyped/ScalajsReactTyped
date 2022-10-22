@@ -12,58 +12,77 @@ import typingsJapgolly.elasticsearch.elasticsearchStrings.red
 import typingsJapgolly.elasticsearch.elasticsearchStrings.shards
 import typingsJapgolly.elasticsearch.elasticsearchStrings.urgent
 import typingsJapgolly.elasticsearch.elasticsearchStrings.yellow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClusterHealthParams extends GenericParams {
+trait ClusterHealthParams
+  extends StObject
+     with GenericParams {
+  
   var index: js.UndefOr[NameList] = js.undefined
+  
   var level: js.UndefOr[cluster | indices | shards] = js.undefined
+  
   var local: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var waitForActiveShards: js.UndefOr[String] = js.undefined
+  
   var waitForEvents: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.undefined
+  
   var waitForNodes: js.UndefOr[String] = js.undefined
+  
   var waitForRelocatingShards: js.UndefOr[Boolean] = js.undefined
+  
   var waitForStatus: js.UndefOr[green | yellow | red] = js.undefined
 }
-
 object ClusterHealthParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    index: NameList = null,
-    level: cluster | indices | shards = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null,
-    waitForActiveShards: String = null,
-    waitForEvents: immediate | urgent | high | normal | low | languid = null,
-    waitForNodes: String = null,
-    waitForRelocatingShards: js.UndefOr[Boolean] = js.undefined,
-    waitForStatus: green | yellow | red = null
-  ): ClusterHealthParams = {
+  
+  inline def apply(): ClusterHealthParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
-    if (waitForEvents != null) __obj.updateDynamic("waitForEvents")(waitForEvents.asInstanceOf[js.Any])
-    if (waitForNodes != null) __obj.updateDynamic("waitForNodes")(waitForNodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForRelocatingShards)) __obj.updateDynamic("waitForRelocatingShards")(waitForRelocatingShards.asInstanceOf[js.Any])
-    if (waitForStatus != null) __obj.updateDynamic("waitForStatus")(waitForStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterHealthParams]
   }
+  
+  extension [Self <: ClusterHealthParams](x: Self) {
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+    
+    inline def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    
+    inline def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
+    
+    inline def setWaitForEvents(value: immediate | urgent | high | normal | low | languid): Self = StObject.set(x, "waitForEvents", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForEventsUndefined: Self = StObject.set(x, "waitForEvents", js.undefined)
+    
+    inline def setWaitForNodes(value: String): Self = StObject.set(x, "waitForNodes", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForNodesUndefined: Self = StObject.set(x, "waitForNodes", js.undefined)
+    
+    inline def setWaitForRelocatingShards(value: Boolean): Self = StObject.set(x, "waitForRelocatingShards", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForRelocatingShardsUndefined: Self = StObject.set(x, "waitForRelocatingShards", js.undefined)
+    
+    inline def setWaitForStatus(value: green | yellow | red): Self = StObject.set(x, "waitForStatus", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForStatusUndefined: Self = StObject.set(x, "waitForStatus", js.undefined)
+  }
 }
-

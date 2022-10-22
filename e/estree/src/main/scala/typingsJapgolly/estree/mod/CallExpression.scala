@@ -1,51 +1,25 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.mod.SimpleCallExpression
   - typingsJapgolly.estree.mod.NewExpression
 */
-trait CallExpression extends Expression
-
+trait CallExpression extends StObject
 object CallExpression {
-  @scala.inline
-  def SimpleCallExpression(
-    arguments: js.Array[Expression | SpreadElement],
-    callee: Expression | Super,
-    `type`: typingsJapgolly.estree.estreeStrings.CallExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): CallExpression = {
+  
+  inline def NewExpression(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): typingsJapgolly.estree.mod.NewExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CallExpression]
+    __obj.updateDynamic("type")("NewExpression")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.NewExpression]
   }
-  @scala.inline
-  def NewExpression(
-    arguments: js.Array[Expression | SpreadElement],
-    callee: Expression | Super,
-    `type`: typingsJapgolly.estree.estreeStrings.NewExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): CallExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CallExpression]
+  
+  inline def SimpleCallExpression(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): typingsJapgolly.estree.mod.SimpleCallExpression = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CallExpression")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.SimpleCallExpression]
   }
 }
-

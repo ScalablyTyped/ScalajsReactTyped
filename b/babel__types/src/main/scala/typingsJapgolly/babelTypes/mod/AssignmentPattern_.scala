@@ -1,50 +1,59 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.AssignmentPattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait AssignmentPattern_
-  extends LVal
+  extends StObject
      with BaseNode
+     with LVal
      with Pattern
-     with PatternLike {
+     with PatternLike
+     with Standardized {
+  
   var decorators: js.Array[Decorator_] | Null
-  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_
+  
+  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_
+  
   var right: Expression
+  
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
+  
   @JSName("type")
   var type_AssignmentPattern_ : AssignmentPattern
 }
-
 object AssignmentPattern_ {
-  @scala.inline
-  def apply(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_,
-    right: Expression,
-    `type`: AssignmentPattern,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null
+  
+  inline def apply(
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
+    right: Expression
   ): AssignmentPattern_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
   }
+  
+  extension [Self <: AssignmentPattern_](x: Self) {
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setLeft(
+      value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_
+    ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: AssignmentPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+  }
 }
-

@@ -1,9 +1,8 @@
-package typingsJapgolly.senchaTouch.Ext
+package typingsJapgolly.senchaTouch.Ext.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object field {
-  type ITextAreaInput = typingsJapgolly.senchaTouch.Ext.field.IInput
-}
+
+type ITextAreaInput = IInput

@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Responses from the Spotify Web API in the same order as in the API endpoint docs seen here:
@@ -12,5 +12,4 @@ import scala.scalajs.js.annotation._
 /**
   * Void Response
   */
-trait VoidResponse extends js.Object
-
+trait VoidResponse extends StObject

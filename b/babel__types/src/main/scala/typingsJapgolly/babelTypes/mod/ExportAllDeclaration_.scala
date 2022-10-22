@@ -1,43 +1,53 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ExportAllDeclaration
+import typingsJapgolly.babelTypes.babelTypesStrings.`type`
+import typingsJapgolly.babelTypes.babelTypesStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ExportAllDeclaration_
-  extends Declaration
+  extends StObject
      with BaseNode
+     with Declaration
      with ExportDeclaration
      with ModuleDeclaration
+     with Standardized
      with Statement {
+  
+  var assertions: js.Array[ImportAttribute_] | Null
+  
+  var exportKind: `type` | value | Null
+  
   var source: StringLiteral_
+  
   @JSName("type")
   var type_ExportAllDeclaration_ : ExportAllDeclaration
 }
-
 object ExportAllDeclaration_ {
-  @scala.inline
-  def apply(
-    source: StringLiteral_,
-    `type`: ExportAllDeclaration,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(source: StringLiteral_): ExportAllDeclaration_ = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
+  
+  extension [Self <: ExportAllDeclaration_](x: Self) {
+    
+    inline def setAssertions(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+    
+    inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
+    
+    inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
+    
+    inline def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
+    
+    inline def setExportKindNull: Self = StObject.set(x, "exportKind", null)
+    
+    inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

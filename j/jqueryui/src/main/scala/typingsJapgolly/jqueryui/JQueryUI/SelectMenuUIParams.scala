@@ -1,20 +1,25 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
 import typingsJapgolly.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectMenuUIParams extends js.Object {
+trait SelectMenuUIParams extends StObject {
+  
   var item: js.UndefOr[JQuery] = js.undefined
 }
-
 object SelectMenuUIParams {
-  @scala.inline
-  def apply(item: JQuery = null): SelectMenuUIParams = {
+  
+  inline def apply(): SelectMenuUIParams = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectMenuUIParams]
   }
+  
+  extension [Self <: SelectMenuUIParams](x: Self) {
+    
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+  }
 }
-

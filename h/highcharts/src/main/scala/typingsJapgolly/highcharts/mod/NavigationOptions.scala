@@ -1,15 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationOptions extends js.Object {
+trait NavigationOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional options to be merged
     * into all annotations.
     */
   var annotationsOptions: js.UndefOr[AnnotationsOptions | NavigationAnnotationsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock) Bindings definitions for custom HTML buttons.
     * Each binding implements simple event-driven interface:
@@ -25,7 +27,8 @@ trait NavigationOptions extends js.Object {
     *
     * - `end`: last event to be called after last step event
     */
-  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[StockToolsBindingsObject]] = js.undefined
+  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name where all
     * bindings will be attached to. Multiple charts on the same page should
@@ -34,69 +37,64 @@ trait NavigationOptions extends js.Object {
     * Default value of versions < 7.0.4 `highcharts-bindings-wrapper`
     */
   var bindingsClassName: js.UndefOr[String] = js.undefined
+  
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) A collection of options for
-    * buttons appearing in the exporting module.
-    *
-    * In styled mode, the buttons are styled with the
-    * `.highcharts-contextbutton` and `.highcharts-button-symbol` classes.
+    * (Highcharts) Options for breadcrumbs. Breadcrumbs general options are
+    * defined in `navigation.breadcrumbs`. Specific options for drilldown are
+    * set in `drilldown.breadcrumbs` and for tree-like series traversing, in
+    * `plotOptions[series].breadcrumbs`.
     */
+  var breadcrumbs: js.UndefOr[NavigationBreadcrumbsOptions] = js.undefined
+  
   var buttonOptions: js.UndefOr[NavigationButtonOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock) Events to communicate between Stock Tools and
     * custom GUI.
     */
   var events: js.UndefOr[NavigationEventsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for icons. Change this to use icons from a different server.
     */
   var iconsURL: js.UndefOr[String] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the hover state
-    * of the individual items within the popup menu appearing by default when
-    * the export icon is clicked. The menu items are rendered in HTML.
-    */
-  var menuItemHoverStyle: js.UndefOr[CSSObject] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the individual
-    * items within the popup menu appearing by default when the export icon is
-    * clicked. The menu items are rendered in HTML. Font size defaults to
-    * `11px` on desktop and `14px` on touch devices.
-    */
-  var menuItemStyle: js.UndefOr[CSSObject] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the popup menu
-    * appearing by default when the export icon is clicked. This menu is
-    * rendered in HTML.
-    */
-  var menuStyle: js.UndefOr[CSSObject] = js.undefined
 }
-
 object NavigationOptions {
-  @scala.inline
-  def apply(
-    annotationsOptions: AnnotationsOptions | NavigationAnnotationsOptions = null,
-    bindings: NavigationBindingsOptions | Dictionary[StockToolsBindingsObject] = null,
-    bindingsClassName: String = null,
-    buttonOptions: NavigationButtonOptions = null,
-    events: NavigationEventsOptions = null,
-    iconsURL: String = null,
-    menuItemHoverStyle: CSSObject = null,
-    menuItemStyle: CSSObject = null,
-    menuStyle: CSSObject = null
-  ): NavigationOptions = {
+  
+  inline def apply(): NavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (annotationsOptions != null) __obj.updateDynamic("annotationsOptions")(annotationsOptions.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (bindingsClassName != null) __obj.updateDynamic("bindingsClassName")(bindingsClassName.asInstanceOf[js.Any])
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (iconsURL != null) __obj.updateDynamic("iconsURL")(iconsURL.asInstanceOf[js.Any])
-    if (menuItemHoverStyle != null) __obj.updateDynamic("menuItemHoverStyle")(menuItemHoverStyle.asInstanceOf[js.Any])
-    if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle.asInstanceOf[js.Any])
-    if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]
   }
+  
+  extension [Self <: NavigationOptions](x: Self) {
+    
+    inline def setAnnotationsOptions(value: AnnotationsOptions | NavigationAnnotationsOptions): Self = StObject.set(x, "annotationsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsOptionsUndefined: Self = StObject.set(x, "annotationsOptions", js.undefined)
+    
+    inline def setBindings(value: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    
+    inline def setBindingsClassName(value: String): Self = StObject.set(x, "bindingsClassName", value.asInstanceOf[js.Any])
+    
+    inline def setBindingsClassNameUndefined: Self = StObject.set(x, "bindingsClassName", js.undefined)
+    
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    
+    inline def setBreadcrumbs(value: NavigationBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+    
+    inline def setButtonOptions(value: NavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+    
+    inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
+    
+    inline def setEvents(value: NavigationEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setIconsURL(value: String): Self = StObject.set(x, "iconsURL", value.asInstanceOf[js.Any])
+    
+    inline def setIconsURLUndefined: Self = StObject.set(x, "iconsURL", js.undefined)
+  }
 }
-

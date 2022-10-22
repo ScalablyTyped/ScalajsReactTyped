@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EndedEventUIParam extends js.Object {
+trait EndedEventUIParam extends StObject {
+  
   /**
-  	 * Get the video duration in seconds.
-  	 */
+    * Get the video duration in seconds.
+    */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Get the url of the playing video.
-  	 */
+    * Get the url of the playing video.
+    */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object EndedEventUIParam {
-  @scala.inline
-  def apply(duration: Int | Double = null, source: String = null): EndedEventUIParam = {
+  
+  inline def apply(): EndedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndedEventUIParam]
   }
+  
+  extension [Self <: EndedEventUIParam](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

@@ -1,24 +1,37 @@
 package typingsJapgolly.dynogels.mod
 
 import typingsJapgolly.dynogels.mod.AWS.DynamoDB
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModelConfig extends js.Object {
-  var docClient: js.UndefOr[js.Any] = js.undefined
+trait ModelConfig extends StObject {
+  
+  var docClient: js.UndefOr[Any] = js.undefined
+  
   var dynamodb: js.UndefOr[DynamoDB] = js.undefined
+  
   var tableName: js.UndefOr[String] = js.undefined
 }
-
 object ModelConfig {
-  @scala.inline
-  def apply(docClient: js.Any = null, dynamodb: DynamoDB = null, tableName: String = null): ModelConfig = {
+  
+  inline def apply(): ModelConfig = {
     val __obj = js.Dynamic.literal()
-    if (docClient != null) __obj.updateDynamic("docClient")(docClient.asInstanceOf[js.Any])
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelConfig]
   }
+  
+  extension [Self <: ModelConfig](x: Self) {
+    
+    inline def setDocClient(value: Any): Self = StObject.set(x, "docClient", value.asInstanceOf[js.Any])
+    
+    inline def setDocClientUndefined: Self = StObject.set(x, "docClient", js.undefined)
+    
+    inline def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+  }
 }
-

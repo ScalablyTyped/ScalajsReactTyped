@@ -1,20 +1,31 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.fileInputMod.IFileInputProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsFormsFileInputMod.FileInputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "FileInput")
 @js.native
-class FileInput ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.FileInput
-
-/* static members */
-@JSImport("@blueprintjs/core", "FileInput")
-@js.native
-object FileInput extends js.Object {
-  var defaultProps: IFileInputProps = js.native
-  var displayName: String = js.native
+open class FileInput protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.FileInput {
+  def this(props: FileInputProps) = this()
+  def this(props: FileInputProps, context: Any) = this()
 }
-
+/* static members */
+object FileInput {
+  
+  @JSImport("@blueprintjs/core", "FileInput")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "FileInput.defaultProps")
+  @js.native
+  def defaultProps: FileInputProps = js.native
+  inline def defaultProps_=(x: FileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "FileInput.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

@@ -1,55 +1,60 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import typingsJapgolly.std.stdStrings.processorerror
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Available only in secure contexts. */
 @js.native
-trait AudioWorkletNode extends AudioNode {
-  var onprocessorerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val parameters: AudioParamMap = js.native
-  val port: org.scalajs.dom.raw.MessagePort = js.native
-  @JSName("addEventListener")
-  def addEventListener_processorerror(`type`: processorerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+trait AudioWorkletNode
+  extends StObject
+     with AudioNode {
+  
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_processorerror(
     `type`: processorerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_processorerror(
+    `type`: processorerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_processorerror(
     `type`: processorerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_processorerror(`type`: processorerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  
+  /* standard dom */
+  var onprocessorerror: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  val parameters: AudioParamMap = js.native
+  
+  /* standard dom */
+  val port: org.scalajs.dom.MessagePort = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_processorerror(
     `type`: processorerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_processorerror(
+    `type`: processorerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_processorerror(
+    `type`: processorerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_processorerror(
-    `type`: processorerror,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
 }
-
-@JSGlobal("AudioWorkletNode")
-@js.native
-object AudioWorkletNode
-  extends Instantiable2[/* context */ BaseAudioContext, /* name */ java.lang.String, AudioWorkletNode]
-     with Instantiable3[
-      /* context */ BaseAudioContext, 
-      /* name */ java.lang.String, 
-      /* options */ AudioWorkletNodeOptions, 
-      AudioWorkletNode
-    ]
-

@@ -1,12 +1,9 @@
 package typingsJapgolly.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("clearbladejs-node", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var ClearBlade: ClearBladeGlobal = js.native
-}
-
+object ^ extends StObject

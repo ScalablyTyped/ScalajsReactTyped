@@ -1,11 +1,7 @@
 package typingsJapgolly.griddleReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.griddleReact.AnonFilterPlaceholder
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.griddleReact.anon.FilterPlaceholder
 import typingsJapgolly.griddleReact.mod.GriddleComponents
 import typingsJapgolly.griddleReact.mod.GriddleEvents
 import typingsJapgolly.griddleReact.mod.GriddleInitialState
@@ -24,69 +20,76 @@ import typingsJapgolly.griddleReact.mod.default
 import typingsJapgolly.redux.mod.AnyAction
 import typingsJapgolly.redux.mod.Dispatch
 import typingsJapgolly.redux.mod.Middleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GriddleReact {
-  def apply[T](
-    components: GriddleComponents = null,
-    core: GriddlePlugin = null,
-    data: js.Array[T] = null,
-    enableSettings: js.UndefOr[Boolean] = js.undefined,
-    events: GriddleEvents = null,
-    initialState: GriddleInitialState = null,
-    listeners: PropertyBag[Listener] = null,
-    pageProperties: GriddlePageProperties = null,
-    plugins: js.Array[GriddlePlugin] = null,
-    reducer: PropertyBag[Reducer] = null,
-    reduxMiddleware: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]] = null,
-    renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[Selector] = null,
-    settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
-    sortMethod: (/* data */ js.Array[js.Any], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => CallbackTo[Double] = null,
-    sortProperties: js.Array[GriddleSortKey] = null,
-    storeKey: String = null,
-    styleConfig: GriddleStyleConfig = null,
-    textProperties: AnonFilterPlaceholder = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GriddleProps[T], default[T], Unit, GriddleProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (core != null) __obj.updateDynamic("core")(core.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (reducer != null) __obj.updateDynamic("reducer")(reducer.asInstanceOf[js.Any])
-    if (reduxMiddleware != null) __obj.updateDynamic("reduxMiddleware")(reduxMiddleware.asInstanceOf[js.Any])
-    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects.asInstanceOf[js.Any])
-    if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3((t0: /* data */ js.Array[js.Any], t1: /* column */ java.lang.String, t2: /* sortAscending */ js.UndefOr[scala.Boolean]) => sortMethod(t0, t1, t2).runNow()))
-    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties.asInstanceOf[js.Any])
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
-    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig.asInstanceOf[js.Any])
-    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.griddleReact.mod.GriddleProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.griddleReact.mod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.griddleReact.mod.GriddleProps[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[GriddleProps[T]]))
   }
+  
   @JSImport("griddle-react", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default[T]] {
+    
+    inline def components(value: GriddleComponents): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def core(value: GriddlePlugin): this.type = set("core", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Array[T]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: T*): this.type = set("data", js.Array(value*))
+    
+    inline def enableSettings(value: Boolean): this.type = set("enableSettings", value.asInstanceOf[js.Any])
+    
+    inline def events(value: GriddleEvents): this.type = set("events", value.asInstanceOf[js.Any])
+    
+    inline def initialState(value: GriddleInitialState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def listeners(value: PropertyBag[Listener]): this.type = set("listeners", value.asInstanceOf[js.Any])
+    
+    inline def pageProperties(value: GriddlePageProperties): this.type = set("pageProperties", value.asInstanceOf[js.Any])
+    
+    inline def plugins(value: js.Array[GriddlePlugin]): this.type = set("plugins", value.asInstanceOf[js.Any])
+    
+    inline def pluginsVarargs(value: GriddlePlugin*): this.type = set("plugins", js.Array(value*))
+    
+    inline def reducer(value: PropertyBag[Reducer]): this.type = set("reducer", value.asInstanceOf[js.Any])
+    
+    inline def reduxMiddleware(value: js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]]): this.type = set("reduxMiddleware", value.asInstanceOf[js.Any])
+    
+    inline def reduxMiddlewareVarargs(value: (Middleware[js.Object, Any, Dispatch[AnyAction]])*): this.type = set("reduxMiddleware", js.Array(value*))
+    
+    inline def renderProperties(value: GriddleRenderProperties): this.type = set("renderProperties", value.asInstanceOf[js.Any])
+    
+    inline def selectors(value: PropertyBag[Selector]): this.type = set("selectors", value.asInstanceOf[js.Any])
+    
+    inline def settingsComponentObjects(value: PropertyBag[SettingsComponentObject]): this.type = set("settingsComponentObjects", value.asInstanceOf[js.Any])
+    
+    inline def sortMethod(
+      value: (/* data */ js.Array[Any], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double
+    ): this.type = set("sortMethod", js.Any.fromFunction3(value))
+    
+    inline def sortProperties(value: js.Array[GriddleSortKey]): this.type = set("sortProperties", value.asInstanceOf[js.Any])
+    
+    inline def sortPropertiesVarargs(value: GriddleSortKey*): this.type = set("sortProperties", js.Array(value*))
+    
+    inline def storeKey(value: String): this.type = set("storeKey", value.asInstanceOf[js.Any])
+    
+    inline def styleConfig(value: GriddleStyleConfig): this.type = set("styleConfig", value.asInstanceOf[js.Any])
+    
+    inline def textProperties(value: FilterPlaceholder): this.type = set("textProperties", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[T](companion: GriddleReact.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: GriddleProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

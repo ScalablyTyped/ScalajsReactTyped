@@ -1,26 +1,28 @@
 package typingsJapgolly.businessRulesEngine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IValidationFailure extends IError {
+trait IValidationFailure
+  extends StObject
+     with IError {
+  
   var Error: IError
+  
   var IsAsync: Boolean
 }
-
 object IValidationFailure {
-  @scala.inline
-  def apply(
-    Error: IError,
-    ErrorMessage: String,
-    HasError: Boolean,
-    IsAsync: Boolean,
-    TranslateArgs: IErrorTranslateArgs = null
-  ): IValidationFailure = {
+  
+  inline def apply(Error: IError, ErrorMessage: String, HasError: Boolean, IsAsync: Boolean): IValidationFailure = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ErrorMessage = ErrorMessage.asInstanceOf[js.Any], HasError = HasError.asInstanceOf[js.Any], IsAsync = IsAsync.asInstanceOf[js.Any])
-    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationFailure]
   }
+  
+  extension [Self <: IValidationFailure](x: Self) {
+    
+    inline def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    
+    inline def setIsAsync(value: Boolean): Self = StObject.set(x, "IsAsync", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,18 +1,23 @@
 package typingsJapgolly.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagActions extends js.Object {
-  val Application: typingsJapgolly.activexAccess.Access.Application = js.native
-  val Count: Double = js.native
-  val Parent: js.Any = js.native
+trait SmartTagActions extends StObject {
+  
   def apply(Index: String): SmartTagAction = js.native
   def apply(Index: Double): SmartTagAction = js.native
+  
+  val Application: typingsJapgolly.activexAccess.Access.Application = js.native
+  
+  val Count: Double = js.native
+  
   def IsMemberSafe(dispid: Double): Boolean = js.native
+  
   def Item(Index: String): SmartTagAction = js.native
   def Item(Index: Double): SmartTagAction = js.native
+  
+  val Parent: Any = js.native
 }
-

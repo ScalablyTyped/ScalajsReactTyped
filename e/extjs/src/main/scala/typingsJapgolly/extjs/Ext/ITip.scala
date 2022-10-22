@@ -1,25 +1,27 @@
 package typingsJapgolly.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ITip
-  extends typingsJapgolly.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.panel.IPanel {
+  
   /** [Config Option] (Boolean) */
   var constrainPosition: js.UndefOr[Boolean] = js.undefined
 }
-
 object ITip {
-  @scala.inline
-  def apply(
-    IPanel: typingsJapgolly.extjs.Ext.panel.IPanel = null,
-    constrainPosition: js.UndefOr[Boolean] = js.undefined
-  ): ITip = {
+  
+  inline def apply(): ITip = {
     val __obj = js.Dynamic.literal()
-    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (!js.isUndefined(constrainPosition)) __obj.updateDynamic("constrainPosition")(constrainPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITip]
   }
+  
+  extension [Self <: ITip](x: Self) {
+    
+    inline def setConstrainPosition(value: Boolean): Self = StObject.set(x, "constrainPosition", value.asInstanceOf[js.Any])
+    
+    inline def setConstrainPositionUndefined: Self = StObject.set(x, "constrainPosition", js.undefined)
+  }
 }
-

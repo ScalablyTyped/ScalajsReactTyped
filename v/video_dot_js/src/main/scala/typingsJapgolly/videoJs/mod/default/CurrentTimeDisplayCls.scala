@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
 import typingsJapgolly.videoJs.mod.videojs.ComponentOptions
+import typingsJapgolly.videoJs.mod.videojs.CurrentTimeDisplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "CurrentTimeDisplay")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.CurrentTimeDisplay")
 @js.native
-class CurrentTimeDisplayCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.CurrentTimeDisplay {
+open class CurrentTimeDisplayCls protected ()
+  extends StObject
+     with CurrentTimeDisplay {
   /**
     * Creates an instance of this class.
     *
@@ -20,4 +23,3 @@ class CurrentTimeDisplayCls protected ()
     */
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
 }
-

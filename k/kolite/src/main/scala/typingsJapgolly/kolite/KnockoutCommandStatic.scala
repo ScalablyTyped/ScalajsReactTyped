@@ -1,26 +1,30 @@
 package typingsJapgolly.kolite
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // when using AMD, it is exported
-trait KnockoutCommandStatic extends js.Object {
+trait KnockoutCommandStatic extends StObject {
+  
   def asyncCommand(options: KoLiteCommandOptions): KoliteAsyncCommand
+  
   def command(options: KoLiteCommandOptions): KoliteCommand
 }
-
 object KnockoutCommandStatic {
-  @scala.inline
-  def apply(
-    asyncCommand: KoLiteCommandOptions => CallbackTo[KoliteAsyncCommand],
-    command: KoLiteCommandOptions => CallbackTo[KoliteCommand]
+  
+  inline def apply(
+    asyncCommand: KoLiteCommandOptions => KoliteAsyncCommand,
+    command: KoLiteCommandOptions => KoliteCommand
   ): KnockoutCommandStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncCommand")(js.Any.fromFunction1((t0: typingsJapgolly.kolite.KoLiteCommandOptions) => asyncCommand(t0).runNow()))
-    __obj.updateDynamic("command")(js.Any.fromFunction1((t0: typingsJapgolly.kolite.KoLiteCommandOptions) => command(t0).runNow()))
+    val __obj = js.Dynamic.literal(asyncCommand = js.Any.fromFunction1(asyncCommand), command = js.Any.fromFunction1(command))
     __obj.asInstanceOf[KnockoutCommandStatic]
   }
+  
+  extension [Self <: KnockoutCommandStatic](x: Self) {
+    
+    inline def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
+    
+    inline def setCommand(value: KoLiteCommandOptions => KoliteCommand): Self = StObject.set(x, "command", js.Any.fromFunction1(value))
+  }
 }
-

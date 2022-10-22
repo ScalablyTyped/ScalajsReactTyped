@@ -1,21 +1,30 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlobalizationDateOptions extends js.Object {
+trait GlobalizationDateOptions extends StObject {
+  
   var formatLength: js.UndefOr[String] = js.undefined
+  
   var selector: js.UndefOr[String] = js.undefined
 }
-
 object GlobalizationDateOptions {
-  @scala.inline
-  def apply(formatLength: String = null, selector: String = null): GlobalizationDateOptions = {
+  
+  inline def apply(): GlobalizationDateOptions = {
     val __obj = js.Dynamic.literal()
-    if (formatLength != null) __obj.updateDynamic("formatLength")(formatLength.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalizationDateOptions]
   }
+  
+  extension [Self <: GlobalizationDateOptions](x: Self) {
+    
+    inline def setFormatLength(value: String): Self = StObject.set(x, "formatLength", value.asInstanceOf[js.Any])
+    
+    inline def setFormatLengthUndefined: Self = StObject.set(x, "formatLength", js.undefined)
+    
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+  }
 }
-

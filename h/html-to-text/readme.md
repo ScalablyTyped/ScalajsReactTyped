@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-to-text
 
-Typings are for version v1.4.0
+Typings are for version 8.1
 
 ## Library description:
 Advanced html to plain text converter
@@ -10,15 +10,15 @@ Advanced html to plain text converter
 | ------------------ | :-------------: |
 | Full name          | html-to-text |
 | Keywords           | html, node, text, mail, plain, converter |
-| # releases         | 5 |
-| # dependents       | 283 |
-| # downloads        | 7217561 |
-| # stars            | 36 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3172211.0 |
+| # stars            | 1219.0 |
 
 ## Links
-- [Homepage](https://github.com/werk85/node-html-to-text)
-- [Bugs](https://github.com/werk85/node-html-to-text/issues)
-- [Repository](https://github.com/werk85/node-html-to-text)
+- [Homepage](https://github.com/html-to-text/node-html-to-text)
+- [Bugs](https://github.com/html-to-text/node-html-to-text/issues)
+- [Repository](https://github.com/html-to-text/node-html-to-text)
 - [Npm](https://www.npmjs.com/package/html-to-text)
     
 

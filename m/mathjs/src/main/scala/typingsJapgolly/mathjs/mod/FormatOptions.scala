@@ -4,22 +4,25 @@ import typingsJapgolly.mathjs.mathjsStrings.auto
 import typingsJapgolly.mathjs.mathjsStrings.engineering
 import typingsJapgolly.mathjs.mathjsStrings.exponential
 import typingsJapgolly.mathjs.mathjsStrings.fixed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormatOptions extends js.Object {
+trait FormatOptions extends StObject {
+  
   /**
     * Available values: 'ratio' (default) or 'decimal'. For example
     * format(fraction(1, 3)) will output '1/3' when 'ratio' is configured,
     * and will output 0.(3) when 'decimal' is configured.
     */
   var fraction: js.UndefOr[String] = js.undefined
+  
   /**
     * Exponent determining the lower boundary for formatting a value with
     * an exponent when notation='auto. Default value is -3.
     */
   var lowerExp: js.UndefOr[Double] = js.undefined
+  
   /**
     * Number notation. Choose from: 'fixed' Always use regular number
     * notation. For example '123.40' and '14000000' 'exponential' Always
@@ -30,6 +33,7 @@ trait FormatOptions extends js.Object {
     * example '123.4' and '1.4e7'.
     */
   var notation: js.UndefOr[fixed | exponential | engineering | auto] = js.undefined
+  
   /**
     * A number between 0 and 16 to round the digits of the number. In case
     * of notations 'exponential' and 'auto', precision defines the total
@@ -38,29 +42,40 @@ trait FormatOptions extends js.Object {
     * digits after the decimal point, and is 0 by default.
     */
   var precision: js.UndefOr[Double] = js.undefined
+  
   /**
     * Exponent determining the upper boundary for formatting a value with
     * an exponent when notation='auto. Default value is 5.
     */
   var upperExp: js.UndefOr[Double] = js.undefined
 }
-
 object FormatOptions {
-  @scala.inline
-  def apply(
-    fraction: String = null,
-    lowerExp: Int | Double = null,
-    notation: fixed | exponential | engineering | auto = null,
-    precision: Int | Double = null,
-    upperExp: Int | Double = null
-  ): FormatOptions = {
+  
+  inline def apply(): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
-    if (lowerExp != null) __obj.updateDynamic("lowerExp")(lowerExp.asInstanceOf[js.Any])
-    if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (upperExp != null) __obj.updateDynamic("upperExp")(upperExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }
+  
+  extension [Self <: FormatOptions](x: Self) {
+    
+    inline def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+    
+    inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+    
+    inline def setLowerExp(value: Double): Self = StObject.set(x, "lowerExp", value.asInstanceOf[js.Any])
+    
+    inline def setLowerExpUndefined: Self = StObject.set(x, "lowerExp", js.undefined)
+    
+    inline def setNotation(value: fixed | exponential | engineering | auto): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    
+    inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
+    
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    
+    inline def setUpperExp(value: Double): Self = StObject.set(x, "upperExp", value.asInstanceOf[js.Any])
+    
+    inline def setUpperExpUndefined: Self = StObject.set(x, "upperExp", js.undefined)
+  }
 }
-

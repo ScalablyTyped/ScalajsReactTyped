@@ -1,22 +1,27 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunOptions extends js.Object {
+trait RunOptions extends StObject {
+  
   /**
-  		 * Controls whether task variables are re-evaluated on rerun.
-  		 */
+    * Controls whether task variables are re-evaluated on rerun.
+    */
   var reevaluateOnRerun: js.UndefOr[Boolean] = js.undefined
 }
-
 object RunOptions {
-  @scala.inline
-  def apply(reevaluateOnRerun: js.UndefOr[Boolean] = js.undefined): RunOptions = {
+  
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reevaluateOnRerun)) __obj.updateDynamic("reevaluateOnRerun")(reevaluateOnRerun.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
+  
+  extension [Self <: RunOptions](x: Self) {
+    
+    inline def setReevaluateOnRerun(value: Boolean): Self = StObject.set(x, "reevaluateOnRerun", value.asInstanceOf[js.Any])
+    
+    inline def setReevaluateOnRerunUndefined: Self = StObject.set(x, "reevaluateOnRerun", js.undefined)
+  }
 }
-

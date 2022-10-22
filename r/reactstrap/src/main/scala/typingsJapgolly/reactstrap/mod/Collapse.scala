@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.collapseMod.CollapseProps
+import typingsJapgolly.reactstrap.typesLibCollapseMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Collapse")
 @js.native
-class Collapse[T] ()
-  extends Component[CollapseProps, js.Object, js.Any]
-
+open class Collapse () extends default

@@ -1,19 +1,24 @@
 package typingsJapgolly.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventActionCall extends js.Object {
+trait EventActionCall extends StObject {
+  
   var functionName: js.UndefOr[String] = js.undefined
 }
-
 object EventActionCall {
-  @scala.inline
-  def apply(functionName: String = null): EventActionCall = {
+  
+  inline def apply(): EventActionCall = {
     val __obj = js.Dynamic.literal()
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventActionCall]
   }
+  
+  extension [Self <: EventActionCall](x: Self) {
+    
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+  }
 }
-

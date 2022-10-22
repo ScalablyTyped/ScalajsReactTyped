@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.sesMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsSesMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.SES")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SES ()
+open class SES ()
   extends typingsJapgolly.awsSdk.mod.SES {
   def this(options: ClientConfiguration) = this()
 }
-

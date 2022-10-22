@@ -1,23 +1,28 @@
 package typingsJapgolly.youtubePlayer
 
-import typingsJapgolly.std.HTMLElement
-import typingsJapgolly.youtubePlayer.typesMod.Options
-import typingsJapgolly.youtubePlayer.typesMod.YouTubePlayer
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.youtubePlayer.distTypesMod.Options
+import typingsJapgolly.youtubePlayer.distTypesMod.YouTubePlayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("youtube-player", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(maybeElementId: String): YouTubePlayer = js.native
-  def default(maybeElementId: String, options: Options): YouTubePlayer = js.native
-  def default(maybeElementId: String, options: Options, strictState: Boolean): YouTubePlayer = js.native
-  def default(maybeElementId: HTMLElement): YouTubePlayer = js.native
-  def default(maybeElementId: HTMLElement, options: Options): YouTubePlayer = js.native
-  def default(maybeElementId: HTMLElement, options: Options, strictState: Boolean): YouTubePlayer = js.native
-  def default(maybeElementId: YouTubePlayer): YouTubePlayer = js.native
-  def default(maybeElementId: YouTubePlayer, options: Options): YouTubePlayer = js.native
-  def default(maybeElementId: YouTubePlayer, options: Options, strictState: Boolean): YouTubePlayer = js.native
+object mod {
+  
+  @JSImport("youtube-player", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(maybeElementId: String): YouTubePlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any]).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: String, options: Unit, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: String, options: Options): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: String, options: Options, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: HTMLElement): YouTubePlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any]).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: HTMLElement, options: Unit, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: HTMLElement, options: Options): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: HTMLElement, options: Options, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: YouTubePlayer): YouTubePlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any]).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: YouTubePlayer, options: Unit, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: YouTubePlayer, options: Options): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+  inline def default(maybeElementId: YouTubePlayer, options: Options, strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(maybeElementId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
 }
-

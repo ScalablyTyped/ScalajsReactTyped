@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidation for a GridItem.
@@ -19,5 +19,4 @@ import scala.scalajs.js.annotation._
   *     gridItem.setValidation(gridValidation);
   */
 // tslint:disable-next-line: no-empty-interface
-trait GridValidation extends js.Object
-
+trait GridValidation extends StObject

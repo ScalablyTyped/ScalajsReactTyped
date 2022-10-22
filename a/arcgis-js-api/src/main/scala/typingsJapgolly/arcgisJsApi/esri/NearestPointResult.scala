@@ -1,37 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NearestPointResult extends Object {
+trait NearestPointResult
+  extends StObject
+     with Object {
+  
   /**
     * A vertex within the specified distance of the search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
     */
   var coordinate: Point
+  
   /**
     * The distance from the `inputPoint` in the units of the view's spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
     */
   var distance: Double
+  
   /**
     * Indicates if it is an empty geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
     */
   var isEmpty: Boolean
-  /**
-    * Indicates if the vertex is on the right side of the `geometry`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
-  var isRightSide: Boolean
+  
   /**
     * The index of the vertex within the geometry's rings or paths.
     *
@@ -39,23 +38,29 @@ trait NearestPointResult extends Object {
     */
   var vertexIndex: Double
 }
-
 object NearestPointResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     coordinate: Point,
     distance: Double,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     isEmpty: Boolean,
-    isRightSide: Boolean,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    propertyIsEnumerable: PropertyKey => Boolean,
     vertexIndex: Double
   ): NearestPointResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], isRightSide = isRightSide.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isEmpty = isEmpty.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertexIndex = vertexIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestPointResult]
   }
+  
+  extension [Self <: NearestPointResult](x: Self) {
+    
+    inline def setCoordinate(value: Point): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
+  }
 }
-

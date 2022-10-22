@@ -2,39 +2,59 @@ package typingsJapgolly.reactElemental.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TagProps extends js.Object {
+trait TagProps extends StObject {
+  
   val backgroundColor: js.UndefOr[String] = js.undefined
+  
   val dismissible: js.UndefOr[Boolean] = js.undefined
+  
   val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   val outlineColor: js.UndefOr[String] = js.undefined
+  
   val size: js.UndefOr[TagSize] = js.undefined
+  
   val style: js.UndefOr[CSSProperties] = js.undefined
+  
   val text: String
 }
-
 object TagProps {
-  @scala.inline
-  def apply(
-    text: String,
-    backgroundColor: String = null,
-    dismissible: js.UndefOr[Boolean] = js.undefined,
-    onDismiss: js.UndefOr[Callback] = js.undefined,
-    outlineColor: String = null,
-    size: TagSize = null,
-    style: CSSProperties = null
-  ): TagProps = {
+  
+  inline def apply(text: String): TagProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
-    onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagProps]
   }
+  
+  extension [Self <: TagProps](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
+    
+    inline def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
+    
+    inline def setOnDismiss(value: Callback): Self = StObject.set(x, "onDismiss", value.toJsFn)
+    
+    inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+    
+    inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    
+    inline def setSize(value: TagSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

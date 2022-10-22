@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InputStreamOptions extends js.Object
-
+sealed trait InputStreamOptions extends StObject
 @JSGlobal("Windows.Storage.Streams.InputStreamOptions")
 @js.native
-object InputStreamOptions extends js.Object {
-  @js.native
-  sealed trait none extends InputStreamOptions
+object InputStreamOptions extends StObject {
   
   @js.native
-  sealed trait partial extends InputStreamOptions
+  sealed trait none
+    extends StObject
+       with InputStreamOptions
   
   @js.native
-  sealed trait readAhead extends InputStreamOptions
+  sealed trait partial
+    extends StObject
+       with InputStreamOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InputStreamOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object partial extends TopLevel[partial with Double]
-  
-  /* 2 */ @js.native
-  object readAhead extends TopLevel[readAhead with Double]
-  
+  @js.native
+  sealed trait readAhead
+    extends StObject
+       with InputStreamOptions
 }
-

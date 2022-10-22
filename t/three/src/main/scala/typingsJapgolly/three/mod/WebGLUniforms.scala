@@ -1,28 +1,32 @@
 package typingsJapgolly.three.mod
 
+import org.scalajs.dom.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLUniforms")
 @js.native
-class WebGLUniforms protected ()
-  extends typingsJapgolly.three.webGLUniformsMod.WebGLUniforms {
-  def this(gl: js.Any, program: typingsJapgolly.three.webGLProgramMod.WebGLProgram) = this()
+open class WebGLUniforms protected ()
+  extends typingsJapgolly.three.srcThreeMod.WebGLUniforms {
+  def this(
+    gl: WebGLRenderingContext,
+    program: typingsJapgolly.three.srcRenderersWebglWebGLProgramMod.WebGLProgram
+  ) = this()
 }
-
 /* static members */
-@JSImport("three", "WebGLUniforms")
-@js.native
-object WebGLUniforms extends js.Object {
-  def evalDynamic(seq: js.Any, values: js.Array[_], `object`: js.Any, camera: js.Any): js.Array[_] = js.native
-  def seqWithValue(seq: js.Any, values: js.Array[_]): js.Array[_] = js.native
-  def splitDynamic(seq: js.Any, values: js.Array[_]): js.Array[_] = js.native
-  def upload(
-    gl: js.Any,
-    seq: js.Any,
-    values: js.Array[_],
-    textures: typingsJapgolly.three.webGLTexturesMod.WebGLTextures
-  ): Unit = js.native
+object WebGLUniforms {
+  
+  @JSImport("three", "WebGLUniforms")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def seqWithValue(seq: Any, values: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seqWithValue")(seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  
+  inline def upload(
+    gl: WebGLRenderingContext,
+    seq: Any,
+    values: js.Array[Any],
+    textures: typingsJapgolly.three.srcRenderersWebglWebGLTexturesMod.WebGLTextures
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(gl.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

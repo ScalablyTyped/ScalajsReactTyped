@@ -1,41 +1,39 @@
 package typingsJapgolly.reactMapGl.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TRANSITION_EVENTS extends js.Object
-
+sealed trait TRANSITION_EVENTS extends StObject
 @JSImport("react-map-gl", "TRANSITION_EVENTS")
 @js.native
-object TRANSITION_EVENTS extends js.Object {
-  @js.native
-  sealed trait BREAK extends TRANSITION_EVENTS
-  
-  @js.native
-  sealed trait IGNORE extends TRANSITION_EVENTS
-  
-  @js.native
-  sealed trait SNAP_TO_END extends TRANSITION_EVENTS
-  
-  @js.native
-  sealed trait UPDATE extends TRANSITION_EVENTS
+object TRANSITION_EVENTS extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TRANSITION_EVENTS with Double] = js.native
-  /* 1 */ @js.native
-  object BREAK extends TopLevel[BREAK with Double]
+  def apply(value: Double): js.UndefOr[TRANSITION_EVENTS & Double] = js.native
   
-  /* 3 */ @js.native
-  object IGNORE extends TopLevel[IGNORE with Double]
+  @js.native
+  sealed trait BREAK
+    extends StObject
+       with TRANSITION_EVENTS
+  /* 1 */ val BREAK: typingsJapgolly.reactMapGl.mod.TRANSITION_EVENTS.BREAK & Double = js.native
   
-  /* 2 */ @js.native
-  object SNAP_TO_END extends TopLevel[SNAP_TO_END with Double]
+  @js.native
+  sealed trait IGNORE
+    extends StObject
+       with TRANSITION_EVENTS
+  /* 3 */ val IGNORE: typingsJapgolly.reactMapGl.mod.TRANSITION_EVENTS.IGNORE & Double = js.native
   
-  /* 4 */ @js.native
-  object UPDATE extends TopLevel[UPDATE with Double]
+  @js.native
+  sealed trait SNAP_TO_END
+    extends StObject
+       with TRANSITION_EVENTS
+  /* 2 */ val SNAP_TO_END: typingsJapgolly.reactMapGl.mod.TRANSITION_EVENTS.SNAP_TO_END & Double = js.native
   
+  @js.native
+  sealed trait UPDATE
+    extends StObject
+       with TRANSITION_EVENTS
+  /* 4 */ val UPDATE: typingsJapgolly.reactMapGl.mod.TRANSITION_EVENTS.UPDATE & Double = js.native
 }
-

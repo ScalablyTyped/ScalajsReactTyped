@@ -1,54 +1,44 @@
 package typingsJapgolly.passportSteam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("passport-steam", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // Circular reference from passport_steam
-  val Strategy: js.Any = js.native
-  val version: String = js.native
-  def apply(options: js.Any, validate: js.Any): js.Any = js.native
+object mod {
+  
+  inline def apply(options: Any, validate: Any): Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], validate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("passport-steam", JSImport.Namespace)
   @js.native
-  object prototype extends js.Object {
-    @js.native
-    object authenticate extends js.Object {
-      def apply(req: js.Any): js.Any = js.native
-    }
+  val ^ : js.Any = js.native
+  
+  // Circular reference from passport_steam
+  @JSImport("passport-steam", "Strategy")
+  @js.native
+  val Strategy: Any = js.native
+  
+  object prototype {
     
+    @JSImport("passport-steam", "prototype")
     @js.native
-    object loadAssociation extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    val ^ : js.Any = js.native
     
-    @js.native
-    object loadDiscoveredInfo extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    inline def authenticate(req: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @js.native
-    object loadDiscoveredInformation extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    inline def loadAssociation(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAssociation")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @js.native
-    object saveAssociation extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    inline def loadDiscoveredInfo(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDiscoveredInfo")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @js.native
-    object saveDiscoveredInfo extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    inline def loadDiscoveredInformation(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadDiscoveredInformation")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @js.native
-    object saveDiscoveredInformation extends js.Object {
-      def apply(fn: js.Any): js.Any = js.native
-    }
+    inline def saveAssociation(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAssociation")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    inline def saveDiscoveredInfo(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveDiscoveredInfo")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    inline def saveDiscoveredInformation(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("saveDiscoveredInformation")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
+  @JSImport("passport-steam", "version")
+  @js.native
+  val version: String = js.native
 }
-

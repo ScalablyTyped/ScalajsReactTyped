@@ -1,9 +1,9 @@
 package typingsJapgolly.esriLeaflet.mod
 
 import typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.MapServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.MapService` is an abstraction for interacting with Map Services running on ArcGIS Online and ArcGIS
@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("esri-leaflet", "MapService")
 @js.native
-class MapService_ protected ()
+open class MapService_ protected ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ {
   def this(options: MapServiceOptions) = this()
 }
-

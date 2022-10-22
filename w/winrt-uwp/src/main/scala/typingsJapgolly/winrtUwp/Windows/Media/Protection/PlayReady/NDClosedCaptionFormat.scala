@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDClosedCaptionFormat extends js.Object
-
+sealed trait NDClosedCaptionFormat extends StObject
 /** Indicates the type of format used for closed captions. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDClosedCaptionFormat")
 @js.native
-object NDClosedCaptionFormat extends js.Object {
+object NDClosedCaptionFormat extends StObject {
+  
   /** ATSC digital television closed captions. */
   @js.native
-  sealed trait atsc extends NDClosedCaptionFormat
+  sealed trait atsc
+    extends StObject
+       with NDClosedCaptionFormat
   
   /** SCTE 20 MPEG2 closed captions. */
   @js.native
-  sealed trait scte20 extends NDClosedCaptionFormat
+  sealed trait scte20
+    extends StObject
+       with NDClosedCaptionFormat
   
   /** Invalid format. */
   @js.native
-  sealed trait unknown extends NDClosedCaptionFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NDClosedCaptionFormat with Double] = js.native
-  /* 0 */ @js.native
-  object atsc extends TopLevel[atsc with Double]
-  
-  /* 1 */ @js.native
-  object scte20 extends TopLevel[scte20 with Double]
-  
-  /* 2 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with NDClosedCaptionFormat
 }
-

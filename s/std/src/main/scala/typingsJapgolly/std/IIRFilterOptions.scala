@@ -1,28 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IIRFilterOptions extends AudioNodeOptions {
+trait IIRFilterOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var feedback: js.Array[Double]
+  
+  /* standard dom */
   var feedforward: js.Array[Double]
 }
-
 object IIRFilterOptions {
-  @scala.inline
-  def apply(
-    feedback: js.Array[Double],
-    feedforward: js.Array[Double],
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null
-  ): IIRFilterOptions = {
+  
+  inline def apply(feedback: js.Array[Double], feedforward: js.Array[Double]): IIRFilterOptions = {
     val __obj = js.Dynamic.literal(feedback = feedback.asInstanceOf[js.Any], feedforward = feedforward.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIRFilterOptions]
   }
+  
+  extension [Self <: IIRFilterOptions](x: Self) {
+    
+    inline def setFeedback(value: js.Array[Double]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    
+    inline def setFeedbackVarargs(value: Double*): Self = StObject.set(x, "feedback", js.Array(value*))
+    
+    inline def setFeedforward(value: js.Array[Double]): Self = StObject.set(x, "feedforward", value.asInstanceOf[js.Any])
+    
+    inline def setFeedforwardVarargs(value: Double*): Self = StObject.set(x, "feedforward", js.Array(value*))
+  }
 }
-

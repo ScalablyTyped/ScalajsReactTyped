@@ -1,19 +1,26 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonExportOptions extends js.Object {
+trait ButtonExportOptions extends StObject {
+  
   var columns: js.UndefOr[ButtonSelectorTypes | js.Array[ButtonSelectorTypes]] = js.undefined
 }
-
 object ButtonExportOptions {
-  @scala.inline
-  def apply(columns: ButtonSelectorTypes | js.Array[ButtonSelectorTypes] = null): ButtonExportOptions = {
+  
+  inline def apply(): ButtonExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonExportOptions]
   }
+  
+  extension [Self <: ButtonExportOptions](x: Self) {
+    
+    inline def setColumns(value: ButtonSelectorTypes | js.Array[ButtonSelectorTypes]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: ButtonSelectorTypes*): Self = StObject.set(x, "columns", js.Array(value*))
+  }
 }
-

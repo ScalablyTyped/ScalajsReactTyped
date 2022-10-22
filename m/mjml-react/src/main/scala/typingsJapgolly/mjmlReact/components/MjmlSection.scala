@@ -1,91 +1,85 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.BackgroundRepeatProperty
-import typingsJapgolly.csstype.mod.BackgroundSizeProperty
-import typingsJapgolly.csstype.mod.TextAlignProperty
-import typingsJapgolly.csstype.mod.VerticalAlignProperty
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.BackgroundPosition
+import typingsJapgolly.csstype.mod.Property.BackgroundPositionX
+import typingsJapgolly.csstype.mod.Property.BackgroundPositionY
+import typingsJapgolly.csstype.mod.Property.BackgroundRepeat
+import typingsJapgolly.csstype.mod.Property.BackgroundSize
+import typingsJapgolly.csstype.mod.Property.TextAlign
+import typingsJapgolly.csstype.mod.Property.VerticalAlign
 import typingsJapgolly.mjmlReact.mjmlReactStrings.ltr
 import typingsJapgolly.mjmlReact.mjmlReactStrings.rtl
 import typingsJapgolly.mjmlReact.mod.BorderProps
 import typingsJapgolly.mjmlReact.mod.ClassNameProps
 import typingsJapgolly.mjmlReact.mod.MjmlSectionProps
 import typingsJapgolly.mjmlReact.mod.PaddingProps
-import typingsJapgolly.mjmlReact.mod.RequiredChildrenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlSection {
-  def apply(
-    backgroundColor: BackgroundColorProperty = null,
-    backgroundRepeat: BackgroundRepeatProperty = null,
-    backgroundSize: BackgroundSizeProperty[String | Double] = null,
-    backgroundUrl: String = null,
-    border: String = null,
-    borderBottom: String = null,
-    borderLeft: String = null,
-    borderRadius: String | Double = null,
-    borderRight: String = null,
-    borderTop: String = null,
-    cssClass: String = null,
-    direction: ltr | rtl = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    padding: String | Double = null,
-    paddingBottom: String | Double = null,
-    paddingLeft: String | Double = null,
-    paddingRight: String | Double = null,
-    paddingTop: String | Double = null,
-    textAlign: TextAlignProperty = null,
-    verticalAlign: VerticalAlignProperty[String | Double] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    MjmlSectionProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlSection, 
-    Unit, 
-    MjmlSectionProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
-    if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
-    if (backgroundUrl != null) __obj.updateDynamic("backgroundUrl")(backgroundUrl.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.MjmlSectionProps with typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.BorderProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlSection](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.MjmlSectionProps with typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.BorderProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlSection")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlSection] {
+    
+    inline def backgroundColor(value: BackgroundColor): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def backgroundPosition(value: BackgroundPosition[String | Double]): this.type = set("backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def backgroundPositionX(value: BackgroundPositionX[String | Double]): this.type = set("backgroundPositionX", value.asInstanceOf[js.Any])
+    
+    inline def backgroundPositionY(value: BackgroundPositionY[String | Double]): this.type = set("backgroundPositionY", value.asInstanceOf[js.Any])
+    
+    inline def backgroundRepeat(value: BackgroundRepeat): this.type = set("backgroundRepeat", value.asInstanceOf[js.Any])
+    
+    inline def backgroundSize(value: BackgroundSize[String | Double]): this.type = set("backgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def backgroundUrl(value: String): this.type = set("backgroundUrl", value.asInstanceOf[js.Any])
+    
+    inline def border(value: String): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderBottom(value: String): this.type = set("borderBottom", value.asInstanceOf[js.Any])
+    
+    inline def borderLeft(value: String): this.type = set("borderLeft", value.asInstanceOf[js.Any])
+    
+    inline def borderRadius(value: String | Double): this.type = set("borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def borderRight(value: String): this.type = set("borderRight", value.asInstanceOf[js.Any])
+    
+    inline def borderTop(value: String): this.type = set("borderTop", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def fullWidth(value: Boolean): this.type = set("fullWidth", value.asInstanceOf[js.Any])
+    
+    inline def mjClass(value: String): this.type = set("mjClass", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: String | Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottom(value: String | Double): this.type = set("paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def paddingLeft(value: String | Double): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingRight(value: String | Double): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def paddingTop(value: String | Double): this.type = set("paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def textAlign(value: TextAlign): this.type = set("textAlign", value.asInstanceOf[js.Any])
+    
+    inline def verticalAlign(value: VerticalAlign[String | Double]): this.type = set("verticalAlign", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlSection.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlSectionProps & BorderProps & PaddingProps & ClassNameProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.ethereumProtocol.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SolidityTypes extends js.Object
-
+sealed trait SolidityTypes extends StObject
 @JSImport("ethereum-protocol", "SolidityTypes")
 @js.native
-object SolidityTypes extends js.Object {
-  @js.native
-  sealed trait Address extends SolidityTypes
-  
-  @js.native
-  sealed trait Uint extends SolidityTypes
-  
-  @js.native
-  sealed trait Uint256 extends SolidityTypes
-  
-  @js.native
-  sealed trait Uint8 extends SolidityTypes
+object SolidityTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[SolidityTypes with String] = js.native
-  /* "address" */ @js.native
-  object Address extends TopLevel[Address with String]
+  def apply(value: String): js.UndefOr[SolidityTypes & String] = js.native
   
-  /* "uint" */ @js.native
-  object Uint extends TopLevel[Uint with String]
+  @js.native
+  sealed trait Address
+    extends StObject
+       with SolidityTypes
+  /* "address" */ val Address: typingsJapgolly.ethereumProtocol.mod.SolidityTypes.Address & String = js.native
   
-  /* "uint256" */ @js.native
-  object Uint256 extends TopLevel[Uint256 with String]
+  @js.native
+  sealed trait Uint
+    extends StObject
+       with SolidityTypes
+  /* "uint" */ val Uint: typingsJapgolly.ethereumProtocol.mod.SolidityTypes.Uint & String = js.native
   
-  /* "uint8" */ @js.native
-  object Uint8 extends TopLevel[Uint8 with String]
+  @js.native
+  sealed trait Uint256
+    extends StObject
+       with SolidityTypes
+  /* "uint256" */ val Uint256: typingsJapgolly.ethereumProtocol.mod.SolidityTypes.Uint256 & String = js.native
   
+  @js.native
+  sealed trait Uint8
+    extends StObject
+       with SolidityTypes
+  /* "uint8" */ val Uint8: typingsJapgolly.ethereumProtocol.mod.SolidityTypes.Uint8 & String = js.native
 }
-

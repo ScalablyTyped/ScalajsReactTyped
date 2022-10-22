@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextRowRenderingEventUIParam extends js.Object {
+trait ContextRowRenderingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the current context row mode.
-  	 */
+    * Gets the current context row mode.
+    */
   var contextRowMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets current page index.
-  	 */
+    * Gets current page index.
+    */
   var currentPageIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets reference to the first data row. Null if there are no records.
-  	 */
-  var dataRow: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the first data row. Null if there are no records.
+    */
+  var dataRow: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to igTreeGridPaging.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to igTreeGridPaging.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ContextRowRenderingEventUIParam {
-  @scala.inline
-  def apply(
-    contextRowMode: String = null,
-    currentPageIndex: Int | Double = null,
-    dataRow: js.Any = null,
-    owner: js.Any = null
-  ): ContextRowRenderingEventUIParam = {
+  
+  inline def apply(): ContextRowRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode.asInstanceOf[js.Any])
-    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
-    if (dataRow != null) __obj.updateDynamic("dataRow")(dataRow.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextRowRenderingEventUIParam]
   }
+  
+  extension [Self <: ContextRowRenderingEventUIParam](x: Self) {
+    
+    inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
+    
+    inline def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
+    
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    
+    inline def setDataRow(value: Any): Self = StObject.set(x, "dataRow", value.asInstanceOf[js.Any])
+    
+    inline def setDataRowUndefined: Self = StObject.set(x, "dataRow", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotIkhKijunLineOptions extends js.Object {
+trait PlotIkhKijunLineOptions extends StObject {
+  
   var styles: js.UndefOr[PlotIkhKijunLineStylesOptions] = js.undefined
 }
-
 object PlotIkhKijunLineOptions {
-  @scala.inline
-  def apply(styles: PlotIkhKijunLineStylesOptions = null): PlotIkhKijunLineOptions = {
+  
+  inline def apply(): PlotIkhKijunLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhKijunLineOptions]
   }
+  
+  extension [Self <: PlotIkhKijunLineOptions](x: Self) {
+    
+    inline def setStyles(value: PlotIkhKijunLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+  }
 }
-

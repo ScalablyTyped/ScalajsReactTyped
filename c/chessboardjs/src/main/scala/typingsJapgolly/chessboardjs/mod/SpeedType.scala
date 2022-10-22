@@ -1,21 +1,17 @@
 package typingsJapgolly.chessboardjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chessboardjs.chessboardjsStrings.slow
   - typingsJapgolly.chessboardjs.chessboardjsStrings.fast
 */
-trait SpeedType extends js.Object
-
+trait SpeedType extends StObject
 object SpeedType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fast: typingsJapgolly.chessboardjs.chessboardjsStrings.fast = this.cast("fast")
-  @scala.inline
-  def slow: typingsJapgolly.chessboardjs.chessboardjsStrings.slow = this.cast("slow")
+  
+  inline def fast: typingsJapgolly.chessboardjs.chessboardjsStrings.fast = "fast".asInstanceOf[typingsJapgolly.chessboardjs.chessboardjsStrings.fast]
+  
+  inline def slow: typingsJapgolly.chessboardjs.chessboardjsStrings.slow = "slow".asInstanceOf[typingsJapgolly.chessboardjs.chessboardjsStrings.slow]
 }
-

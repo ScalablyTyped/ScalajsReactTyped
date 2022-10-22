@@ -1,20 +1,23 @@
 package typingsJapgolly.wxServerSdk.mod
 
-import typingsJapgolly.wxServerSdk.AnonTotal
+import typingsJapgolly.wxServerSdk.anon.Total
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CountCollectionResult extends js.Object {
-  var stats: AnonTotal
-}
-
-object CountCollectionResult {
-  @scala.inline
-  def apply(stats: AnonTotal): CountCollectionResult = {
-    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+trait CountCollectionResult extends StObject {
   
+  var stats: Total
+}
+object CountCollectionResult {
+  
+  inline def apply(stats: Total): CountCollectionResult = {
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountCollectionResult]
   }
+  
+  extension [Self <: CountCollectionResult](x: Self) {
+    
+    inline def setStats(value: Total): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -10,15 +10,12 @@ Convert a string to space case.
 | ------------------ | :-------------: |
 | Full name          | to-space-case |
 | Keywords           | camel, case, slug, space, spacecase, string |
-| # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 21470282 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3222985.0 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/ianstormtaylor/to-space-case)
-- [Bugs](https://github.com/ianstormtaylor/to-space-case/issues)
-- [Repository](https://github.com/ianstormtaylor/to-space-case)
 - [Npm](https://www.npmjs.com/package/to-space-case)
     
 

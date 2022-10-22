@@ -1,15 +1,16 @@
 package typingsJapgolly.xrm.Xrm
 
 import typingsJapgolly.xrm.Xrm.Async.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.WebApi.offline API
   */
 @js.native
-trait WebApiOffline extends js.Object {
+trait WebApiOffline extends StObject {
+  
   /**
     * Creates an entity record
     * @param entityLogicalName Logical name of the entity you want to create. For example: "account".
@@ -17,7 +18,8 @@ trait WebApiOffline extends js.Object {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/createrecord External Link: createRecord (Client API reference)}
     */
-  def createRecord(entityLogicalName: String, record: js.Any): PromiseLike[CreateResponse] = js.native
+  def createRecord(entityLogicalName: String, record: Any): PromiseLike[CreateResponse] = js.native
+  
   /**
     * Deletes an entity record.
     * @param entityLogicalName The entity logical name of the record you want to delete. For example: "account".
@@ -26,6 +28,7 @@ trait WebApiOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/deleterecord External Link: deleteRecord (Client API reference)}
     */
   def deleteRecord(entityLogicalName: String, id: String): PromiseLike[String] = js.native
+  
   /**
     * Retrieves a collection of entity records.
     * @param entityLogicalName The entity logical name of the records you want to retrieve. For example: "account".
@@ -45,6 +48,8 @@ trait WebApiOffline extends js.Object {
   def retrieveMultipleRecords(entityLogicalName: String): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String, maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
+  def retrieveMultipleRecords(entityLogicalName: String, options: Unit, maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
+  
   /**
     * Retrieves an entity record.
     * @param entityLogicalName The entity logical name of the record you want to retrieve. For example: "account".
@@ -64,8 +69,9 @@ trait WebApiOffline extends js.Object {
     * @returns On success, returns a promise containing a JSON object with the retrieved attributes and their values.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrieverecord External Link: retrieveRecord (Client API reference)}
     */
-  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[_] = js.native
-  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[_] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[Any] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[Any] = js.native
+  
   /**
     * Updates an entity record.
     * @param entityLogicalName The entity logical name of the record you want to update. For example: "account".
@@ -74,6 +80,5 @@ trait WebApiOffline extends js.Object {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/updaterecord External Link: updateRecord (Client API reference)}
     */
-  def updateRecord(entityLogicalName: String, id: String, data: js.Any): PromiseLike[_] = js.native
+  def updateRecord(entityLogicalName: String, id: String, data: Any): PromiseLike[Any] = js.native
 }
-

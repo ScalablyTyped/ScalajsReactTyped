@@ -1,20 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExternalLink extends js.Object {
+trait ExternalLink extends StObject {
+  
   // The url of the link.
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ExternalLink {
-  @scala.inline
-  def apply(href: String = null): ExternalLink = {
+  
+  inline def apply(): ExternalLink = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalLink]
   }
+  
+  extension [Self <: ExternalLink](x: Self) {
+    
+    inline def setHref(value: NullableOption[String]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefNull: Self = StObject.set(x, "href", null)
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+  }
 }
-

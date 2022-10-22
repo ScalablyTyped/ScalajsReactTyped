@@ -1,44 +1,35 @@
 package typingsJapgolly.reactShowMore.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactShowMore.mod.ReactShowMoreProps
 import typingsJapgolly.reactShowMore.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactShowMore {
-  def apply(
-    anchorClass: String = null,
-    less: String = null,
-    lines: Int | Double = null,
-    more: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: String = null
-  ): UnmountedWithRoot[ReactShowMoreProps, default, Unit, ReactShowMoreProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (anchorClass != null) __obj.updateDynamic("anchorClass")(anchorClass.asInstanceOf[js.Any])
-    if (less != null) __obj.updateDynamic("less")(less.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (more != null) __obj.updateDynamic("more")(more.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactShowMore.mod.ReactShowMoreProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactShowMore.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactShowMore.mod.ReactShowMoreProps])
-  }
   @JSImport("react-show-more", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def anchorClass(value: String): this.type = set("anchorClass", value.asInstanceOf[js.Any])
+    
+    inline def children(value: String): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def less(value: String): this.type = set("less", value.asInstanceOf[js.Any])
+    
+    inline def lines(value: Double): this.type = set("lines", value.asInstanceOf[js.Any])
+    
+    inline def more(value: String): this.type = set("more", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactShowMore.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReactShowMoreProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

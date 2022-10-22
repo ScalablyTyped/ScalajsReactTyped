@@ -1,12 +1,14 @@
 package typingsJapgolly.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProtocolSpec extends js.Object {
+trait ProtocolSpec extends StObject {
+  
   var methods: js.UndefOr[StringDictionary[ProtocolMethodSpec]] = js.undefined
+  
   /**
     * Name of the protocol.
     *
@@ -14,24 +16,33 @@ trait ProtocolSpec extends js.Object {
     * for you.
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * Protocols this protocol conforms to.
     */
   var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
 }
-
 object ProtocolSpec {
-  @scala.inline
-  def apply(
-    methods: StringDictionary[ProtocolMethodSpec] = null,
-    name: String = null,
-    protocols: js.Array[Protocol] = null
-  ): ProtocolSpec = {
+  
+  inline def apply(): ProtocolSpec = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolSpec]
   }
+  
+  extension [Self <: ProtocolSpec](x: Self) {
+    
+    inline def setMethods(value: StringDictionary[ProtocolMethodSpec]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
+  }
 }
-

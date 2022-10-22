@@ -1,13 +1,16 @@
 package typingsJapgolly.pulumiKubernetes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/path", JSImport.Namespace)
-@js.native
-object pathMod extends js.Object {
-  def quotePath(path: String): String = js.native
-  def quoteWindowsPath(path: String): String = js.native
+object pathMod {
+  
+  @JSImport("@pulumi/kubernetes/path", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def quotePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quotePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def quoteWindowsPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteWindowsPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

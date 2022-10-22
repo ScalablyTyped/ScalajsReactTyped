@@ -20,51 +20,64 @@ import typingsJapgolly.officeJs.officeJsStrings.ToDoPriority1
 import typingsJapgolly.officeJs.officeJsStrings.ToDoPriority2
 import typingsJapgolly.officeJs.officeJsStrings.Unknown_
 import typingsJapgolly.officeJs.officeJsStrings.Website
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "noteTag.toJSON()". */
-trait NoteTagData extends js.Object {
+/** An interface describing the data returned by calling `noteTag.toJSON()`. */
+trait NoteTagData extends StObject {
+  
   /**
-    *
     * Gets the Id of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets the status of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var status: js.UndefOr[
     NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
   ] = js.undefined
+  
   /**
-    *
     * Gets the type of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[
     NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2
   ] = js.undefined
 }
-
 object NoteTagData {
-  @scala.inline
-  def apply(
-    id: String = null,
-    status: NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved = null,
-    `type`: NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2 = null
-  ): NoteTagData = {
+  
+  inline def apply(): NoteTagData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoteTagData]
   }
+  
+  extension [Self <: NoteTagData](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setStatus(
+      value: NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
+    ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setType(
+      value: NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

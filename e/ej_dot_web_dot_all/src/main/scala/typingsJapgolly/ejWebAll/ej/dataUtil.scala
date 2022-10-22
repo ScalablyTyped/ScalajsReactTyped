@@ -1,31 +1,38 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait dataUtil extends js.Object {
-  def avg(json: js.Any, fieldName: String): Double = js.native
-  def distinct(jsonArray: js.Array[_]): js.Array[_] = js.native
-  def distinct(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
-  def distinct(jsonArray: js.Array[_], fieldName: String, requiresCompleteRecord: js.Any): js.Array[_] = js.native
-  def group(jsonArray: js.Array[_], field: String, /* internal */ level: Double): js.Array[_] = js.native
-  def max(jsonArray: js.Array[_]): js.Array[_] = js.native
-  def max(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
-  def max(jsonArray: js.Array[_], fieldName: String, comparer: String): js.Array[_] = js.native
-  def mergeSort(jsonArray: js.Array[_]): js.Array[_] = js.native
-  def mergeSort(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
-  def mergeSort(jsonArray: js.Array[_], fieldName: String, comparer: js.Any): js.Array[_] = js.native
-  def min(jsonArray: js.Array[_], fieldName: String, comparer: String): js.Array[_] = js.native
-  def parseTable(table: String, headerOption: headerOption, headerRowIndex: Double): js.Any = js.native
-  def select(jsonArray: js.Array[_], fieldName: String, fields: String): js.Array[_] = js.native
-  def sum(json: js.Any, fieldName: String): Double = js.native
-  def swap(array: js.Array[_], x: Double, y: Double): Unit = js.native
+trait dataUtil extends StObject {
+  
+  def avg(json: Any, fieldName: String): Double = js.native
+  
+  def distinct(jsonArray: js.Array[Any]): js.Array[Any] = js.native
+  def distinct(jsonArray: js.Array[Any], fieldName: String): js.Array[Any] = js.native
+  def distinct(jsonArray: js.Array[Any], fieldName: String, requiresCompleteRecord: Any): js.Array[Any] = js.native
+  def distinct(jsonArray: js.Array[Any], fieldName: Unit, requiresCompleteRecord: Any): js.Array[Any] = js.native
+  
+  def group(jsonArray: js.Array[Any], field: String, /* internal */ level: Double): js.Array[Any] = js.native
+  
+  def max(jsonArray: js.Array[Any]): js.Array[Any] = js.native
+  def max(jsonArray: js.Array[Any], fieldName: String): js.Array[Any] = js.native
+  def max(jsonArray: js.Array[Any], fieldName: String, comparer: String): js.Array[Any] = js.native
+  def max(jsonArray: js.Array[Any], fieldName: Unit, comparer: String): js.Array[Any] = js.native
+  
+  def mergeSort(jsonArray: js.Array[Any]): js.Array[Any] = js.native
+  def mergeSort(jsonArray: js.Array[Any], fieldName: String): js.Array[Any] = js.native
+  def mergeSort(jsonArray: js.Array[Any], fieldName: String, comparer: Any): js.Array[Any] = js.native
+  def mergeSort(jsonArray: js.Array[Any], fieldName: Unit, comparer: Any): js.Array[Any] = js.native
+  
+  def min(jsonArray: js.Array[Any], fieldName: String, comparer: String): js.Array[Any] = js.native
+  
+  def parseTable(table: String, headerOption: headerOption, headerRowIndex: Double): Any = js.native
+  
+  def select(jsonArray: js.Array[Any], fieldName: String, fields: String): js.Array[Any] = js.native
+  
+  def sum(json: Any, fieldName: String): Double = js.native
+  
+  def swap(array: js.Array[Any], x: Double, y: Double): Unit = js.native
 }
-
-@JSGlobal("ej.dataUtil")
-@js.native
-object dataUtil extends TopLevel[dataUtil]
-

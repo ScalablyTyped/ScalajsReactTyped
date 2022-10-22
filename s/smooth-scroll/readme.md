@@ -10,10 +10,10 @@ Animate scrolling to anchor links
 | ------------------ | :-------------: |
 | Full name          | smooth-scroll |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 32 |
-| # downloads        | 1145483 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 127696.33333333333 |
+| # stars            | 5403.0 |
 
 ## Links
 - [Homepage](https://github.com/cferdinandi/smooth-scroll#readme)

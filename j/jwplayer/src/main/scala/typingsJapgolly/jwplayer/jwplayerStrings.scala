@@ -1,315 +1,281 @@
 package typingsJapgolly.jwplayer
 
 import typingsJapgolly.jwplayer.jwplayer.NoParamEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwplayerStrings {
-  @js.native
-  sealed trait adBlock extends NoParamEvent
   
   @js.native
-  sealed trait adClick extends js.Object
+  sealed trait adBlock
+    extends StObject
+       with NoParamEvent
+  inline def adBlock: adBlock = "adBlock".asInstanceOf[adBlock]
   
   @js.native
-  sealed trait adCompanions extends js.Object
+  sealed trait adClick extends StObject
+  inline def adClick: adClick = "adClick".asInstanceOf[adClick]
   
   @js.native
-  sealed trait adComplete extends js.Object
+  sealed trait adCompanions extends StObject
+  inline def adCompanions: adCompanions = "adCompanions".asInstanceOf[adCompanions]
   
   @js.native
-  sealed trait adError extends js.Object
+  sealed trait adComplete extends StObject
+  inline def adComplete: adComplete = "adComplete".asInstanceOf[adComplete]
   
   @js.native
-  sealed trait adImpression extends js.Object
+  sealed trait adError extends StObject
+  inline def adError: adError = "adError".asInstanceOf[adError]
   
   @js.native
-  sealed trait adPause extends js.Object
+  sealed trait adImpression extends StObject
+  inline def adImpression: adImpression = "adImpression".asInstanceOf[adImpression]
   
   @js.native
-  sealed trait adPlay extends js.Object
+  sealed trait adPause extends StObject
+  inline def adPause: adPause = "adPause".asInstanceOf[adPause]
   
   @js.native
-  sealed trait adRequest extends js.Object
+  sealed trait adPlay extends StObject
+  inline def adPlay: adPlay = "adPlay".asInstanceOf[adPlay]
   
   @js.native
-  sealed trait adSchedule extends js.Object
+  sealed trait adRequest extends StObject
+  inline def adRequest: adRequest = "adRequest".asInstanceOf[adRequest]
   
   @js.native
-  sealed trait adSkipped extends js.Object
+  sealed trait adSchedule extends StObject
+  inline def adSchedule: adSchedule = "adSchedule".asInstanceOf[adSchedule]
   
   @js.native
-  sealed trait adStarted extends js.Object
+  sealed trait adSkipped extends StObject
+  inline def adSkipped: adSkipped = "adSkipped".asInstanceOf[adSkipped]
   
   @js.native
-  sealed trait adTime extends js.Object
+  sealed trait adStarted extends StObject
+  inline def adStarted: adStarted = "adStarted".asInstanceOf[adStarted]
   
   @js.native
-  sealed trait api extends js.Object
+  sealed trait adTime extends StObject
+  inline def adTime: adTime = "adTime".asInstanceOf[adTime]
   
   @js.native
-  sealed trait audioTrackChanged extends js.Object
+  sealed trait api extends StObject
+  inline def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait audioTracks extends js.Object
+  sealed trait audioTrackChanged extends StObject
+  inline def audioTrackChanged: audioTrackChanged = "audioTrackChanged".asInstanceOf[audioTrackChanged]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait audioTracks extends StObject
+  inline def audioTracks: audioTracks = "audioTracks".asInstanceOf[audioTracks]
   
   @js.native
-  sealed trait beforeComplete extends NoParamEvent
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait beforePlay extends NoParamEvent
+  sealed trait beforeComplete
+    extends StObject
+       with NoParamEvent
+  inline def beforeComplete: beforeComplete = "beforeComplete".asInstanceOf[beforeComplete]
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait beforePlay
+    extends StObject
+       with NoParamEvent
+  inline def beforePlay: beforePlay = "beforePlay".asInstanceOf[beforePlay]
   
   @js.native
-  sealed trait bufferChange extends js.Object
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait buffering extends js.Object
+  sealed trait bufferChange extends StObject
+  inline def bufferChange: bufferChange = "bufferChange".asInstanceOf[bufferChange]
   
   @js.native
-  sealed trait captionsChanged extends js.Object
+  sealed trait buffering extends StObject
+  inline def buffering: buffering = "buffering".asInstanceOf[buffering]
   
   @js.native
-  sealed trait captionsList extends js.Object
+  sealed trait captionsChanged extends StObject
+  inline def captionsChanged: captionsChanged = "captionsChanged".asInstanceOf[captionsChanged]
   
   @js.native
-  sealed trait cast extends js.Object
+  sealed trait captionsList extends StObject
+  inline def captionsList: captionsList = "captionsList".asInstanceOf[captionsList]
   
   @js.native
-  sealed trait complete extends NoParamEvent
+  sealed trait cast extends StObject
+  inline def cast: cast = "cast".asInstanceOf[cast]
   
   @js.native
-  sealed trait controls extends js.Object
+  sealed trait complete
+    extends StObject
+       with NoParamEvent
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait displayClick extends NoParamEvent
+  sealed trait controls extends StObject
+  inline def controls: controls = "controls".asInstanceOf[controls]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait displayClick
+    extends StObject
+       with NoParamEvent
+  inline def displayClick: displayClick = "displayClick".asInstanceOf[displayClick]
   
   @js.native
-  sealed trait firstFrame extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait firstFrame extends StObject
+  inline def firstFrame: firstFrame = "firstFrame".asInstanceOf[firstFrame]
   
   @js.native
-  sealed trait googima extends js.Object
+  sealed trait fullscreen extends StObject
+  inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait googima extends StObject
+  inline def googima: googima = "googima".asInstanceOf[googima]
   
   @js.native
-  sealed trait `initial choice` extends js.Object
+  sealed trait idle extends StObject
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait levels extends js.Object
+  sealed trait `initial choice` extends StObject
+  inline def `initial choice`: `initial choice` = ("initial choice").asInstanceOf[`initial choice`]
   
   @js.native
-  sealed trait levelsChanged extends js.Object
+  sealed trait levels extends StObject
+  inline def levels: levels = "levels".asInstanceOf[levels]
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait levelsChanged extends StObject
+  inline def levelsChanged: levelsChanged = "levelsChanged".asInstanceOf[levelsChanged]
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait meta extends js.Object
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait mid extends js.Object
+  sealed trait meta extends StObject
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
-  sealed trait mute extends js.Object
+  sealed trait metadataCueParsed extends StObject
+  inline def metadataCueParsed: metadataCueParsed = "metadataCueParsed".asInstanceOf[metadataCueParsed]
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait mid extends StObject
+  inline def mid: mid = "mid".asInstanceOf[mid]
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait mute extends StObject
+  inline def mute: mute = "mute".asInstanceOf[mute]
   
   @js.native
-  sealed trait play extends js.Object
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait playing extends js.Object
+  sealed trait paused extends StObject
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait playlist extends js.Object
+  sealed trait play extends StObject
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait playlistComplete extends NoParamEvent
+  sealed trait playbackRateChanged extends StObject
+  inline def playbackRateChanged: playbackRateChanged = "playbackRateChanged".asInstanceOf[playbackRateChanged]
   
   @js.native
-  sealed trait playlistItem extends js.Object
+  sealed trait playing extends StObject
+  inline def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait playlist extends StObject
+  inline def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait playlistComplete
+    extends StObject
+       with NoParamEvent
+  inline def playlistComplete: playlistComplete = "playlistComplete".asInstanceOf[playlistComplete]
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait playlistItem extends StObject
+  inline def playlistItem: playlistItem = "playlistItem".asInstanceOf[playlistItem]
   
   @js.native
-  sealed trait remove extends NoParamEvent
+  sealed trait post extends StObject
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait pre extends StObject
+  inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait seek extends js.Object
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait seeked extends NoParamEvent
+  sealed trait remove
+    extends StObject
+       with NoParamEvent
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait setupError extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait stalled extends js.Object
+  sealed trait seek extends StObject
+  inline def seek: seek = "seek".asInstanceOf[seek]
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait seeked
+    extends StObject
+       with NoParamEvent
+  inline def seeked: seeked = "seeked".asInstanceOf[seeked]
   
   @js.native
-  sealed trait vast extends js.Object
+  sealed trait setupError extends StObject
+  inline def setupError: setupError = "setupError".asInstanceOf[setupError]
   
   @js.native
-  sealed trait visualQuality extends js.Object
+  sealed trait stalled extends StObject
+  inline def stalled: stalled = "stalled".asInstanceOf[stalled]
   
   @js.native
-  sealed trait volume extends js.Object
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
   
-  @scala.inline
-  def adBlock: adBlock = "adBlock".asInstanceOf[adBlock]
-  @scala.inline
-  def adClick: adClick = "adClick".asInstanceOf[adClick]
-  @scala.inline
-  def adCompanions: adCompanions = "adCompanions".asInstanceOf[adCompanions]
-  @scala.inline
-  def adComplete: adComplete = "adComplete".asInstanceOf[adComplete]
-  @scala.inline
-  def adError: adError = "adError".asInstanceOf[adError]
-  @scala.inline
-  def adImpression: adImpression = "adImpression".asInstanceOf[adImpression]
-  @scala.inline
-  def adPause: adPause = "adPause".asInstanceOf[adPause]
-  @scala.inline
-  def adPlay: adPlay = "adPlay".asInstanceOf[adPlay]
-  @scala.inline
-  def adRequest: adRequest = "adRequest".asInstanceOf[adRequest]
-  @scala.inline
-  def adSchedule: adSchedule = "adSchedule".asInstanceOf[adSchedule]
-  @scala.inline
-  def adSkipped: adSkipped = "adSkipped".asInstanceOf[adSkipped]
-  @scala.inline
-  def adStarted: adStarted = "adStarted".asInstanceOf[adStarted]
-  @scala.inline
-  def adTime: adTime = "adTime".asInstanceOf[adTime]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def audioTrackChanged: audioTrackChanged = "audioTrackChanged".asInstanceOf[audioTrackChanged]
-  @scala.inline
-  def audioTracks: audioTracks = "audioTracks".asInstanceOf[audioTracks]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def beforeComplete: beforeComplete = "beforeComplete".asInstanceOf[beforeComplete]
-  @scala.inline
-  def beforePlay: beforePlay = "beforePlay".asInstanceOf[beforePlay]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def bufferChange: bufferChange = "bufferChange".asInstanceOf[bufferChange]
-  @scala.inline
-  def buffering: buffering = "buffering".asInstanceOf[buffering]
-  @scala.inline
-  def captionsChanged: captionsChanged = "captionsChanged".asInstanceOf[captionsChanged]
-  @scala.inline
-  def captionsList: captionsList = "captionsList".asInstanceOf[captionsList]
-  @scala.inline
-  def cast: cast = "cast".asInstanceOf[cast]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def controls: controls = "controls".asInstanceOf[controls]
-  @scala.inline
-  def displayClick: displayClick = "displayClick".asInstanceOf[displayClick]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def firstFrame: firstFrame = "firstFrame".asInstanceOf[firstFrame]
-  @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
-  @scala.inline
-  def googima: googima = "googima".asInstanceOf[googima]
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
-  @scala.inline
-  def `initial choice`: `initial choice` = "initial choice".asInstanceOf[`initial choice`]
-  @scala.inline
-  def levels: levels = "levels".asInstanceOf[levels]
-  @scala.inline
-  def levelsChanged: levelsChanged = "levelsChanged".asInstanceOf[levelsChanged]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def mid: mid = "mid".asInstanceOf[mid]
-  @scala.inline
-  def mute: mute = "mute".asInstanceOf[mute]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
-  @scala.inline
-  def playlist: playlist = "playlist".asInstanceOf[playlist]
-  @scala.inline
-  def playlistComplete: playlistComplete = "playlistComplete".asInstanceOf[playlistComplete]
-  @scala.inline
-  def playlistItem: playlistItem = "playlistItem".asInstanceOf[playlistItem]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def seek: seek = "seek".asInstanceOf[seek]
-  @scala.inline
-  def seeked: seeked = "seeked".asInstanceOf[seeked]
-  @scala.inline
-  def setupError: setupError = "setupError".asInstanceOf[setupError]
-  @scala.inline
-  def stalled: stalled = "stalled".asInstanceOf[stalled]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def vast: vast = "vast".asInstanceOf[vast]
-  @scala.inline
-  def visualQuality: visualQuality = "visualQuality".asInstanceOf[visualQuality]
-  @scala.inline
-  def volume: volume = "volume".asInstanceOf[volume]
+  @js.native
+  sealed trait vast extends StObject
+  inline def vast: vast = "vast".asInstanceOf[vast]
+  
+  @js.native
+  sealed trait visualQuality extends StObject
+  inline def visualQuality: visualQuality = "visualQuality".asInstanceOf[visualQuality]
+  
+  @js.native
+  sealed trait volume extends StObject
+  inline def volume: volume = "volume".asInstanceOf[volume]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }
-

@@ -1,322 +1,648 @@
 package typingsJapgolly.csstype.mod
 
+import typingsJapgolly.csstype.mod.Property._AccentColor
+import typingsJapgolly.csstype.mod.Property._AlignContent
+import typingsJapgolly.csstype.mod.Property._AlignItems
+import typingsJapgolly.csstype.mod.Property._AlignSelf
+import typingsJapgolly.csstype.mod.Property._AlignTracks
+import typingsJapgolly.csstype.mod.Property._Animation
+import typingsJapgolly.csstype.mod.Property._AnimationDirection
+import typingsJapgolly.csstype.mod.Property._AnimationFillMode
+import typingsJapgolly.csstype.mod.Property._AnimationIterationCount
+import typingsJapgolly.csstype.mod.Property._AnimationName
+import typingsJapgolly.csstype.mod.Property._AnimationPlayState
+import typingsJapgolly.csstype.mod.Property._AnimationTimeline
+import typingsJapgolly.csstype.mod.Property._AnimationTimingFunction
+import typingsJapgolly.csstype.mod.Property._AspectRatio
+import typingsJapgolly.csstype.mod.Property._Azimuth
+import typingsJapgolly.csstype.mod.Property._BackdropFilter
+import typingsJapgolly.csstype.mod.Property._Background
+import typingsJapgolly.csstype.mod.Property._BackgroundAttachment
+import typingsJapgolly.csstype.mod.Property._BackgroundBlendMode
+import typingsJapgolly.csstype.mod.Property._BackgroundClip
+import typingsJapgolly.csstype.mod.Property._BackgroundColor
+import typingsJapgolly.csstype.mod.Property._BackgroundImage
+import typingsJapgolly.csstype.mod.Property._BackgroundOrigin
+import typingsJapgolly.csstype.mod.Property._BackgroundPosition
+import typingsJapgolly.csstype.mod.Property._BackgroundPositionX
+import typingsJapgolly.csstype.mod.Property._BackgroundPositionY
+import typingsJapgolly.csstype.mod.Property._BackgroundRepeat
+import typingsJapgolly.csstype.mod.Property._BackgroundSize
+import typingsJapgolly.csstype.mod.Property._BaselineShift
+import typingsJapgolly.csstype.mod.Property._BlockOverflow
+import typingsJapgolly.csstype.mod.Property._BlockSize
+import typingsJapgolly.csstype.mod.Property._Border
+import typingsJapgolly.csstype.mod.Property._BorderBlock
+import typingsJapgolly.csstype.mod.Property._BorderBlockColor
+import typingsJapgolly.csstype.mod.Property._BorderBlockEnd
+import typingsJapgolly.csstype.mod.Property._BorderBlockEndColor
+import typingsJapgolly.csstype.mod.Property._BorderBlockEndWidth
+import typingsJapgolly.csstype.mod.Property._BorderBlockStart
+import typingsJapgolly.csstype.mod.Property._BorderBlockStartColor
+import typingsJapgolly.csstype.mod.Property._BorderBlockStartWidth
+import typingsJapgolly.csstype.mod.Property._BorderBlockWidth
+import typingsJapgolly.csstype.mod.Property._BorderBottom
+import typingsJapgolly.csstype.mod.Property._BorderBottomColor
+import typingsJapgolly.csstype.mod.Property._BorderBottomWidth
+import typingsJapgolly.csstype.mod.Property._BorderColor
+import typingsJapgolly.csstype.mod.Property._BorderImage
+import typingsJapgolly.csstype.mod.Property._BorderImageRepeat
+import typingsJapgolly.csstype.mod.Property._BorderImageSource
+import typingsJapgolly.csstype.mod.Property._BorderImageWidth
+import typingsJapgolly.csstype.mod.Property._BorderInline
+import typingsJapgolly.csstype.mod.Property._BorderInlineColor
+import typingsJapgolly.csstype.mod.Property._BorderInlineEnd
+import typingsJapgolly.csstype.mod.Property._BorderInlineEndColor
+import typingsJapgolly.csstype.mod.Property._BorderInlineEndWidth
+import typingsJapgolly.csstype.mod.Property._BorderInlineStart
+import typingsJapgolly.csstype.mod.Property._BorderInlineStartColor
+import typingsJapgolly.csstype.mod.Property._BorderInlineStartWidth
+import typingsJapgolly.csstype.mod.Property._BorderInlineWidth
+import typingsJapgolly.csstype.mod.Property._BorderLeft
+import typingsJapgolly.csstype.mod.Property._BorderLeftColor
+import typingsJapgolly.csstype.mod.Property._BorderLeftWidth
+import typingsJapgolly.csstype.mod.Property._BorderRight
+import typingsJapgolly.csstype.mod.Property._BorderRightColor
+import typingsJapgolly.csstype.mod.Property._BorderRightWidth
+import typingsJapgolly.csstype.mod.Property._BorderStyle
+import typingsJapgolly.csstype.mod.Property._BorderTop
+import typingsJapgolly.csstype.mod.Property._BorderTopColor
+import typingsJapgolly.csstype.mod.Property._BorderTopWidth
+import typingsJapgolly.csstype.mod.Property._BorderWidth
+import typingsJapgolly.csstype.mod.Property._Bottom
+import typingsJapgolly.csstype.mod.Property._BoxShadow
+import typingsJapgolly.csstype.mod.Property._CaretColor
+import typingsJapgolly.csstype.mod.Property._Clip
+import typingsJapgolly.csstype.mod.Property._ClipPath
+import typingsJapgolly.csstype.mod.Property._Color
+import typingsJapgolly.csstype.mod.Property._ColorScheme
+import typingsJapgolly.csstype.mod.Property._ColumnCount
+import typingsJapgolly.csstype.mod.Property._ColumnGap
+import typingsJapgolly.csstype.mod.Property._ColumnRule
+import typingsJapgolly.csstype.mod.Property._ColumnRuleColor
+import typingsJapgolly.csstype.mod.Property._ColumnRuleStyle
+import typingsJapgolly.csstype.mod.Property._ColumnRuleWidth
+import typingsJapgolly.csstype.mod.Property._ColumnWidth
+import typingsJapgolly.csstype.mod.Property._Columns
+import typingsJapgolly.csstype.mod.Property._Contain
+import typingsJapgolly.csstype.mod.Property._Content
+import typingsJapgolly.csstype.mod.Property._CounterIncrement
+import typingsJapgolly.csstype.mod.Property._CounterReset
+import typingsJapgolly.csstype.mod.Property._CounterSet
+import typingsJapgolly.csstype.mod.Property._Cursor
+import typingsJapgolly.csstype.mod.Property._Display
+import typingsJapgolly.csstype.mod.Property._Fill
+import typingsJapgolly.csstype.mod.Property._Filter
+import typingsJapgolly.csstype.mod.Property._Flex
+import typingsJapgolly.csstype.mod.Property._FlexBasis
+import typingsJapgolly.csstype.mod.Property._FlexFlow
+import typingsJapgolly.csstype.mod.Property._FloodColor
+import typingsJapgolly.csstype.mod.Property._Font
+import typingsJapgolly.csstype.mod.Property._FontFamily
+import typingsJapgolly.csstype.mod.Property._FontFeatureSettings
+import typingsJapgolly.csstype.mod.Property._FontLanguageOverride
+import typingsJapgolly.csstype.mod.Property._FontSize
+import typingsJapgolly.csstype.mod.Property._FontSizeAdjust
+import typingsJapgolly.csstype.mod.Property._FontSmooth
+import typingsJapgolly.csstype.mod.Property._FontStretch
+import typingsJapgolly.csstype.mod.Property._FontStyle
+import typingsJapgolly.csstype.mod.Property._FontSynthesis
+import typingsJapgolly.csstype.mod.Property._FontVariant
+import typingsJapgolly.csstype.mod.Property._FontVariantAlternates
+import typingsJapgolly.csstype.mod.Property._FontVariantEastAsian
+import typingsJapgolly.csstype.mod.Property._FontVariantLigatures
+import typingsJapgolly.csstype.mod.Property._FontVariantNumeric
+import typingsJapgolly.csstype.mod.Property._FontVariationSettings
+import typingsJapgolly.csstype.mod.Property._FontWeight
+import typingsJapgolly.csstype.mod.Property._Gap
+import typingsJapgolly.csstype.mod.Property._GlyphOrientationVertical
+import typingsJapgolly.csstype.mod.Property._Grid
+import typingsJapgolly.csstype.mod.Property._GridAutoColumns
+import typingsJapgolly.csstype.mod.Property._GridAutoFlow
+import typingsJapgolly.csstype.mod.Property._GridAutoRows
+import typingsJapgolly.csstype.mod.Property._GridTemplate
+import typingsJapgolly.csstype.mod.Property._GridTemplateAreas
+import typingsJapgolly.csstype.mod.Property._GridTemplateColumns
+import typingsJapgolly.csstype.mod.Property._GridTemplateRows
+import typingsJapgolly.csstype.mod.Property._HangingPunctuation
+import typingsJapgolly.csstype.mod.Property._Height
+import typingsJapgolly.csstype.mod.Property._HyphenateCharacter
+import typingsJapgolly.csstype.mod.Property._ImageOrientation
+import typingsJapgolly.csstype.mod.Property._ImageResolution
+import typingsJapgolly.csstype.mod.Property._InitialLetter
+import typingsJapgolly.csstype.mod.Property._InlineSize
+import typingsJapgolly.csstype.mod.Property._Inset
+import typingsJapgolly.csstype.mod.Property._InsetBlock
+import typingsJapgolly.csstype.mod.Property._InsetBlockEnd
+import typingsJapgolly.csstype.mod.Property._InsetBlockStart
+import typingsJapgolly.csstype.mod.Property._InsetInline
+import typingsJapgolly.csstype.mod.Property._InsetInlineEnd
+import typingsJapgolly.csstype.mod.Property._InsetInlineStart
+import typingsJapgolly.csstype.mod.Property._JustifyContent
+import typingsJapgolly.csstype.mod.Property._JustifyItems
+import typingsJapgolly.csstype.mod.Property._JustifySelf
+import typingsJapgolly.csstype.mod.Property._JustifyTracks
+import typingsJapgolly.csstype.mod.Property._Left
+import typingsJapgolly.csstype.mod.Property._LetterSpacing
+import typingsJapgolly.csstype.mod.Property._LightingColor
+import typingsJapgolly.csstype.mod.Property._LineClamp
+import typingsJapgolly.csstype.mod.Property._LineHeight
+import typingsJapgolly.csstype.mod.Property._ListStyle
+import typingsJapgolly.csstype.mod.Property._ListStyleImage
+import typingsJapgolly.csstype.mod.Property._ListStyleType
+import typingsJapgolly.csstype.mod.Property._Margin
+import typingsJapgolly.csstype.mod.Property._MarginBlock
+import typingsJapgolly.csstype.mod.Property._MarginBlockEnd
+import typingsJapgolly.csstype.mod.Property._MarginBlockStart
+import typingsJapgolly.csstype.mod.Property._MarginBottom
+import typingsJapgolly.csstype.mod.Property._MarginInline
+import typingsJapgolly.csstype.mod.Property._MarginInlineEnd
+import typingsJapgolly.csstype.mod.Property._MarginInlineStart
+import typingsJapgolly.csstype.mod.Property._MarginLeft
+import typingsJapgolly.csstype.mod.Property._MarginRight
+import typingsJapgolly.csstype.mod.Property._MarginTop
+import typingsJapgolly.csstype.mod.Property._Marker
+import typingsJapgolly.csstype.mod.Property._MarkerEnd
+import typingsJapgolly.csstype.mod.Property._MarkerMid
+import typingsJapgolly.csstype.mod.Property._MarkerStart
+import typingsJapgolly.csstype.mod.Property._Mask
+import typingsJapgolly.csstype.mod.Property._MaskBorder
+import typingsJapgolly.csstype.mod.Property._MaskBorderRepeat
+import typingsJapgolly.csstype.mod.Property._MaskBorderSource
+import typingsJapgolly.csstype.mod.Property._MaskBorderWidth
+import typingsJapgolly.csstype.mod.Property._MaskClip
+import typingsJapgolly.csstype.mod.Property._MaskComposite
+import typingsJapgolly.csstype.mod.Property._MaskImage
+import typingsJapgolly.csstype.mod.Property._MaskMode
+import typingsJapgolly.csstype.mod.Property._MaskOrigin
+import typingsJapgolly.csstype.mod.Property._MaskPosition
+import typingsJapgolly.csstype.mod.Property._MaskRepeat
+import typingsJapgolly.csstype.mod.Property._MaskSize
+import typingsJapgolly.csstype.mod.Property._MathDepth
+import typingsJapgolly.csstype.mod.Property._MaxBlockSize
+import typingsJapgolly.csstype.mod.Property._MaxHeight
+import typingsJapgolly.csstype.mod.Property._MaxInlineSize
+import typingsJapgolly.csstype.mod.Property._MaxLines
+import typingsJapgolly.csstype.mod.Property._MaxWidth
+import typingsJapgolly.csstype.mod.Property._MinBlockSize
+import typingsJapgolly.csstype.mod.Property._MinHeight
+import typingsJapgolly.csstype.mod.Property._MinInlineSize
+import typingsJapgolly.csstype.mod.Property._MinWidth
+import typingsJapgolly.csstype.mod.Property._MozBinding
+import typingsJapgolly.csstype.mod.Property._MozBorderBottomColors
+import typingsJapgolly.csstype.mod.Property._MozBorderLeftColors
+import typingsJapgolly.csstype.mod.Property._MozBorderRightColors
+import typingsJapgolly.csstype.mod.Property._MozBorderTopColors
+import typingsJapgolly.csstype.mod.Property._MozContextProperties
+import typingsJapgolly.csstype.mod.Property._MozForceBrokenImageIcon
+import typingsJapgolly.csstype.mod.Property._MozImageRegion
+import typingsJapgolly.csstype.mod.Property._MsContentZoomSnap
+import typingsJapgolly.csstype.mod.Property._MsFlowFrom
+import typingsJapgolly.csstype.mod.Property._MsFlowInto
+import typingsJapgolly.csstype.mod.Property._MsGridColumns
+import typingsJapgolly.csstype.mod.Property._MsGridRows
+import typingsJapgolly.csstype.mod.Property._MsHyphenateLimitChars
+import typingsJapgolly.csstype.mod.Property._MsHyphenateLimitLines
+import typingsJapgolly.csstype.mod.Property._MsScrollLimitXMax
+import typingsJapgolly.csstype.mod.Property._MsScrollLimitYMax
+import typingsJapgolly.csstype.mod.Property._MsScrollbar3dlightColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarArrowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarBaseColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarDarkshadowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarFaceColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarHighlightColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarShadowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarTrackColor
+import typingsJapgolly.csstype.mod.Property._ObjectPosition
+import typingsJapgolly.csstype.mod.Property._Offset
+import typingsJapgolly.csstype.mod.Property._OffsetAnchor
+import typingsJapgolly.csstype.mod.Property._OffsetPath
+import typingsJapgolly.csstype.mod.Property._OffsetRotate
+import typingsJapgolly.csstype.mod.Property._Outline
+import typingsJapgolly.csstype.mod.Property._OutlineColor
+import typingsJapgolly.csstype.mod.Property._OutlineStyle
+import typingsJapgolly.csstype.mod.Property._OutlineWidth
+import typingsJapgolly.csstype.mod.Property._Overflow
+import typingsJapgolly.csstype.mod.Property._OverflowClipMargin
+import typingsJapgolly.csstype.mod.Property._OverscrollBehavior
+import typingsJapgolly.csstype.mod.Property._PaintOrder
+import typingsJapgolly.csstype.mod.Property._Perspective
+import typingsJapgolly.csstype.mod.Property._PerspectiveOrigin
+import typingsJapgolly.csstype.mod.Property._PlaceContent
+import typingsJapgolly.csstype.mod.Property._PlaceItems
+import typingsJapgolly.csstype.mod.Property._PlaceSelf
+import typingsJapgolly.csstype.mod.Property._Quotes
+import typingsJapgolly.csstype.mod.Property._Right
+import typingsJapgolly.csstype.mod.Property._Rotate
+import typingsJapgolly.csstype.mod.Property._RowGap
+import typingsJapgolly.csstype.mod.Property._RubyPosition
+import typingsJapgolly.csstype.mod.Property._Scale
+import typingsJapgolly.csstype.mod.Property._ScrollPadding
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingBlock
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingBlockEnd
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingBlockStart
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingBottom
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingInline
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingInlineEnd
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingInlineStart
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingLeft
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingRight
+import typingsJapgolly.csstype.mod.Property._ScrollPaddingTop
+import typingsJapgolly.csstype.mod.Property._ScrollSnapAlign
+import typingsJapgolly.csstype.mod.Property._ScrollSnapCoordinate
+import typingsJapgolly.csstype.mod.Property._ScrollSnapDestination
+import typingsJapgolly.csstype.mod.Property._ScrollSnapPointsX
+import typingsJapgolly.csstype.mod.Property._ScrollSnapPointsY
+import typingsJapgolly.csstype.mod.Property._ScrollSnapType
+import typingsJapgolly.csstype.mod.Property._ScrollbarColor
+import typingsJapgolly.csstype.mod.Property._ScrollbarGutter
+import typingsJapgolly.csstype.mod.Property._ShapeOutside
+import typingsJapgolly.csstype.mod.Property._StopColor
+import typingsJapgolly.csstype.mod.Property._Stroke
+import typingsJapgolly.csstype.mod.Property._StrokeDasharray
+import typingsJapgolly.csstype.mod.Property._TextCombineUpright
+import typingsJapgolly.csstype.mod.Property._TextDecoration
+import typingsJapgolly.csstype.mod.Property._TextDecorationColor
+import typingsJapgolly.csstype.mod.Property._TextDecorationLine
+import typingsJapgolly.csstype.mod.Property._TextDecorationSkip
+import typingsJapgolly.csstype.mod.Property._TextDecorationThickness
+import typingsJapgolly.csstype.mod.Property._TextEmphasis
+import typingsJapgolly.csstype.mod.Property._TextEmphasisColor
+import typingsJapgolly.csstype.mod.Property._TextEmphasisStyle
+import typingsJapgolly.csstype.mod.Property._TextOverflow
+import typingsJapgolly.csstype.mod.Property._TextShadow
+import typingsJapgolly.csstype.mod.Property._TextSizeAdjust
+import typingsJapgolly.csstype.mod.Property._TextUnderlineOffset
+import typingsJapgolly.csstype.mod.Property._TextUnderlinePosition
+import typingsJapgolly.csstype.mod.Property._Top
+import typingsJapgolly.csstype.mod.Property._TouchAction
+import typingsJapgolly.csstype.mod.Property._Transform
+import typingsJapgolly.csstype.mod.Property._TransformOrigin
+import typingsJapgolly.csstype.mod.Property._Transition
+import typingsJapgolly.csstype.mod.Property._TransitionProperty
+import typingsJapgolly.csstype.mod.Property._TransitionTimingFunction
+import typingsJapgolly.csstype.mod.Property._Translate
+import typingsJapgolly.csstype.mod.Property._VerticalAlign
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBefore
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBeforeColor
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBeforeStyle
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBeforeWidth
+import typingsJapgolly.csstype.mod.Property._WebkitBoxReflect
+import typingsJapgolly.csstype.mod.Property._WebkitLineClamp
+import typingsJapgolly.csstype.mod.Property._WebkitMask
+import typingsJapgolly.csstype.mod.Property._WebkitMaskAttachment
+import typingsJapgolly.csstype.mod.Property._WebkitMaskClip
+import typingsJapgolly.csstype.mod.Property._WebkitMaskComposite
+import typingsJapgolly.csstype.mod.Property._WebkitMaskImage
+import typingsJapgolly.csstype.mod.Property._WebkitMaskOrigin
+import typingsJapgolly.csstype.mod.Property._WebkitMaskPosition
+import typingsJapgolly.csstype.mod.Property._WebkitMaskPositionX
+import typingsJapgolly.csstype.mod.Property._WebkitMaskPositionY
+import typingsJapgolly.csstype.mod.Property._WebkitMaskRepeat
+import typingsJapgolly.csstype.mod.Property._WebkitMaskSize
+import typingsJapgolly.csstype.mod.Property._WebkitTapHighlightColor
+import typingsJapgolly.csstype.mod.Property._WebkitTextFillColor
+import typingsJapgolly.csstype.mod.Property._WebkitTextStroke
+import typingsJapgolly.csstype.mod.Property._WebkitTextStrokeColor
+import typingsJapgolly.csstype.mod.Property._Width
+import typingsJapgolly.csstype.mod.Property._WillChange
+import typingsJapgolly.csstype.mod.Property._WordSpacing
+import typingsJapgolly.csstype.mod.Property._ZIndex
+import typingsJapgolly.csstype.mod.Property._Zoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.csstype.csstypeStrings.`-moz-initial`
   - typingsJapgolly.csstype.csstypeStrings.inherit
   - typingsJapgolly.csstype.csstypeStrings.initial
   - typingsJapgolly.csstype.csstypeStrings.revert
+  - typingsJapgolly.csstype.csstypeStrings.`revert-layer`
   - typingsJapgolly.csstype.csstypeStrings.unset
 */
 trait Globals
-  extends _AlignContentProperty
-     with _AlignItemsProperty
-     with _AlignSelfProperty
-     with _AnimationDirectionProperty
-     with _AnimationFillModeProperty
-     with _AnimationIterationCountProperty
-     with _AnimationNameProperty
-     with _AnimationPlayStateProperty
-     with _AnimationProperty
-     with _AnimationTimingFunctionProperty
-     with _BackdropFilterProperty
-     with _BackgroundAttachmentProperty
-     with _BackgroundBlendModeProperty
-     with _BackgroundClipProperty
-     with _BackgroundColorProperty
-     with _BackgroundImageProperty
-     with _BackgroundOriginProperty
-     with _BackgroundPositionProperty[js.Any]
-     with _BackgroundPositionXProperty[js.Any]
-     with _BackgroundPositionYProperty[js.Any]
-     with _BackgroundProperty[js.Any]
-     with _BackgroundRepeatProperty
-     with _BackgroundSizeProperty[js.Any]
-     with _BaselineShiftProperty[js.Any]
-     with _BlockOverflowProperty
-     with _BlockSizeProperty[js.Any]
-     with _BorderBlockColorProperty
-     with _BorderBlockEndColorProperty
-     with _BorderBlockEndProperty[js.Any]
-     with _BorderBlockEndWidthProperty[js.Any]
-     with _BorderBlockProperty[js.Any]
-     with _BorderBlockStartColorProperty
-     with _BorderBlockStartProperty[js.Any]
-     with _BorderBlockStartWidthProperty[js.Any]
-     with _BorderBlockWidthProperty[js.Any]
-     with _BorderBottomColorProperty
-     with _BorderBottomProperty[js.Any]
-     with _BorderBottomWidthProperty[js.Any]
-     with _BorderColorProperty
-     with _BorderImageProperty
-     with _BorderImageRepeatProperty
-     with _BorderImageSourceProperty
-     with _BorderImageWidthProperty[js.Any]
-     with _BorderInlineColorProperty
-     with _BorderInlineEndColorProperty
-     with _BorderInlineEndProperty[js.Any]
-     with _BorderInlineEndWidthProperty[js.Any]
-     with _BorderInlineProperty[js.Any]
-     with _BorderInlineStartColorProperty
-     with _BorderInlineStartProperty[js.Any]
-     with _BorderInlineStartWidthProperty[js.Any]
-     with _BorderInlineWidthProperty[js.Any]
-     with _BorderLeftColorProperty
-     with _BorderLeftProperty[js.Any]
-     with _BorderLeftWidthProperty[js.Any]
-     with _BorderProperty[js.Any]
-     with _BorderRightColorProperty
-     with _BorderRightProperty[js.Any]
-     with _BorderRightWidthProperty[js.Any]
-     with _BorderStyleProperty
-     with _BorderTopColorProperty
-     with _BorderTopProperty[js.Any]
-     with _BorderTopWidthProperty[js.Any]
-     with _BorderWidthProperty[js.Any]
-     with _BottomProperty[js.Any]
-     with _BoxShadowProperty
-     with _CaretColorProperty
-     with _ClipPathProperty
-     with _ClipProperty
-     with _ColorProperty
-     with _ColumnCountProperty
-     with _ColumnGapProperty[js.Any]
-     with _ColumnRuleColorProperty
-     with _ColumnRuleProperty[js.Any]
-     with _ColumnRuleStyleProperty
-     with _ColumnRuleWidthProperty[js.Any]
-     with _ColumnWidthProperty[js.Any]
-     with _ColumnsProperty[js.Any]
-     with _ContainProperty
-     with _ContentProperty
-     with _CounterIncrementProperty
-     with _CounterResetProperty
-     with _CounterSetProperty
-     with _CursorProperty
-     with _DisplayProperty
-     with _FillProperty
-     with _FilterProperty
-     with _FlexBasisProperty[js.Any]
-     with _FlexFlowProperty
-     with _FlexProperty[js.Any]
-     with _FloodColorProperty
-     with _FontFamilyProperty
-     with _FontFeatureSettingsProperty
-     with _FontLanguageOverrideProperty
-     with _FontProperty
-     with _FontSizeAdjustProperty
-     with _FontSizeProperty[js.Any]
-     with _FontStretchProperty
-     with _FontStyleProperty
-     with _FontSynthesisProperty
-     with _FontVariantAlternatesProperty
-     with _FontVariantEastAsianProperty
-     with _FontVariantLigaturesProperty
-     with _FontVariantNumericProperty
-     with _FontVariantProperty
-     with _FontVariationSettingsProperty
-     with _FontWeightProperty
-     with _GapProperty[js.Any]
-     with _GlyphOrientationVerticalProperty
-     with _GridAutoColumnsProperty[js.Any]
-     with _GridAutoFlowProperty
-     with _GridAutoRowsProperty[js.Any]
-     with _GridProperty
-     with _GridTemplateAreasProperty
-     with _GridTemplateColumnsProperty[js.Any]
-     with _GridTemplateProperty
-     with _GridTemplateRowsProperty[js.Any]
-     with _HangingPunctuationProperty
-     with _HeightProperty[js.Any]
-     with _ImageOrientationProperty
-     with _ImageResolutionProperty
-     with _InitialLetterProperty
-     with _InlineSizeProperty[js.Any]
-     with _InsetBlockEndProperty[js.Any]
-     with _InsetBlockProperty[js.Any]
-     with _InsetBlockStartProperty[js.Any]
-     with _InsetInlineEndProperty[js.Any]
-     with _InsetInlineProperty[js.Any]
-     with _InsetInlineStartProperty[js.Any]
-     with _InsetProperty[js.Any]
-     with _JustifyContentProperty
-     with _JustifyItemsProperty
-     with _JustifySelfProperty
-     with _LeftProperty[js.Any]
-     with _LetterSpacingProperty[js.Any]
-     with _LightingColorProperty
-     with _LineClampProperty
-     with _LineHeightProperty[js.Any]
-     with _ListStyleImageProperty
-     with _ListStyleProperty
-     with _ListStyleTypeProperty
-     with _MarginBlockEndProperty[js.Any]
-     with _MarginBlockProperty[js.Any]
-     with _MarginBlockStartProperty[js.Any]
-     with _MarginBottomProperty[js.Any]
-     with _MarginInlineEndProperty[js.Any]
-     with _MarginInlineProperty[js.Any]
-     with _MarginInlineStartProperty[js.Any]
-     with _MarginLeftProperty[js.Any]
-     with _MarginProperty[js.Any]
-     with _MarginRightProperty[js.Any]
-     with _MarginTopProperty[js.Any]
-     with _MarkerEndProperty
-     with _MarkerMidProperty
-     with _MarkerProperty
-     with _MarkerStartProperty
-     with _MaskBorderProperty
-     with _MaskBorderRepeatProperty
-     with _MaskBorderSourceProperty
-     with _MaskBorderWidthProperty[js.Any]
-     with _MaskClipProperty
-     with _MaskCompositeProperty
-     with _MaskImageProperty
-     with _MaskModeProperty
-     with _MaskOriginProperty
-     with _MaskPositionProperty[js.Any]
-     with _MaskProperty[js.Any]
-     with _MaskRepeatProperty
-     with _MaskSizeProperty[js.Any]
-     with _MaxBlockSizeProperty[js.Any]
-     with _MaxHeightProperty[js.Any]
-     with _MaxInlineSizeProperty[js.Any]
-     with _MaxLinesProperty
-     with _MaxWidthProperty[js.Any]
-     with _MinBlockSizeProperty[js.Any]
-     with _MinHeightProperty[js.Any]
-     with _MinInlineSizeProperty[js.Any]
-     with _MinWidthProperty[js.Any]
-     with _MozBindingProperty
-     with _MozBorderBottomColorsProperty
-     with _MozBorderLeftColorsProperty
-     with _MozBorderRightColorsProperty
-     with _MozBorderTopColorsProperty
-     with _MozContextPropertiesProperty
-     with _MozImageRegionProperty
-     with _MsContentZoomSnapProperty
-     with _MsFlowFromProperty
-     with _MsFlowIntoProperty
-     with _MsHyphenateLimitCharsProperty
-     with _MsHyphenateLimitLinesProperty
-     with _MsScrollLimitXMaxProperty[js.Any]
-     with _MsScrollLimitYMaxProperty[js.Any]
-     with _MsScrollbar3dlightColorProperty
-     with _MsScrollbarArrowColorProperty
-     with _MsScrollbarBaseColorProperty
-     with _MsScrollbarDarkshadowColorProperty
-     with _MsScrollbarFaceColorProperty
-     with _MsScrollbarHighlightColorProperty
-     with _MsScrollbarShadowColorProperty
-     with _MsScrollbarTrackColorProperty
-     with _ObjectPositionProperty[js.Any]
-     with _OffsetAnchorProperty[js.Any]
-     with _OffsetPathProperty
-     with _OffsetPositionProperty[js.Any]
-     with _OffsetProperty[js.Any]
-     with _OffsetRotateProperty
-     with _OutlineColorProperty
-     with _OutlineProperty[js.Any]
-     with _OutlineStyleProperty
-     with _OutlineWidthProperty[js.Any]
-     with _OverflowProperty
-     with _OverscrollBehaviorProperty
-     with _PaintOrderProperty
-     with _PerspectiveOriginProperty[js.Any]
-     with _PerspectiveProperty[js.Any]
-     with _PlaceContentProperty
-     with _PlaceItemsProperty
-     with _PlaceSelfProperty
-     with _QuotesProperty
-     with _RightProperty[js.Any]
-     with _RotateProperty
-     with _RowGapProperty[js.Any]
-     with _ScaleProperty
-     with _ScrollPaddingBlockEndProperty[js.Any]
-     with _ScrollPaddingBlockProperty[js.Any]
-     with _ScrollPaddingBlockStartProperty[js.Any]
-     with _ScrollPaddingBottomProperty[js.Any]
-     with _ScrollPaddingInlineEndProperty[js.Any]
-     with _ScrollPaddingInlineProperty[js.Any]
-     with _ScrollPaddingInlineStartProperty[js.Any]
-     with _ScrollPaddingLeftProperty[js.Any]
-     with _ScrollPaddingProperty[js.Any]
-     with _ScrollPaddingRightProperty[js.Any]
-     with _ScrollPaddingTopProperty[js.Any]
-     with _ScrollSnapAlignProperty
-     with _ScrollSnapCoordinateProperty[js.Any]
-     with _ScrollSnapDestinationProperty[js.Any]
-     with _ScrollSnapPointsXProperty
-     with _ScrollSnapPointsYProperty
-     with _ScrollSnapTypeProperty
-     with _ScrollbarColorProperty
-     with _ShapeOutsideProperty
-     with _StopColorProperty
-     with _StrokeDasharrayProperty[js.Any]
-     with _StrokeProperty
-     with _TextCombineUprightProperty
-     with _TextDecorationColorProperty
-     with _TextDecorationLineProperty
-     with _TextDecorationProperty
-     with _TextDecorationSkipProperty
-     with _TextEmphasisColorProperty
-     with _TextEmphasisProperty
-     with _TextEmphasisStyleProperty
-     with _TextOverflowProperty
-     with _TextShadowProperty
-     with _TextSizeAdjustProperty
-     with _TextUnderlinePositionProperty
-     with _TopProperty[js.Any]
-     with _TouchActionProperty
-     with _TransformOriginProperty[js.Any]
-     with _TransformProperty
+  extends StObject
+     with _AccentColor
+     with _AlignContent
+     with _AlignItems
+     with _AlignSelf
+     with _AlignTracks
+     with _Animation[Any]
+     with _AnimationDirection
+     with _AnimationFillMode
+     with _AnimationIterationCount
+     with _AnimationName
+     with _AnimationPlayState
+     with _AnimationTimeline
+     with _AnimationTimingFunction
+     with _AspectRatio
+     with _Azimuth
+     with _BackdropFilter
+     with _Background[Any]
+     with _BackgroundAttachment
+     with _BackgroundBlendMode
+     with _BackgroundClip
+     with _BackgroundColor
+     with _BackgroundImage
+     with _BackgroundOrigin
+     with _BackgroundPosition[Any]
+     with _BackgroundPositionX[Any]
+     with _BackgroundPositionY[Any]
+     with _BackgroundRepeat
+     with _BackgroundSize[Any]
+     with _BaselineShift[Any]
+     with _BlockOverflow
+     with _BlockSize[Any]
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockEndWidth[Any]
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBlockStartWidth[Any]
+     with _BorderBlockWidth[Any]
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderBottomWidth[Any]
+     with _BorderColor
+     with _BorderImage
+     with _BorderImageRepeat
+     with _BorderImageSource
+     with _BorderImageWidth[Any]
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineEndWidth[Any]
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderInlineStartWidth[Any]
+     with _BorderInlineWidth[Any]
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderLeftWidth[Any]
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderRightWidth[Any]
+     with _BorderStyle
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _BorderTopWidth[Any]
+     with _BorderWidth[Any]
+     with _Bottom[Any]
+     with _BoxShadow
+     with _CaretColor
+     with _Clip
+     with _ClipPath
+     with _Color
+     with _ColorScheme
+     with _ColumnCount
+     with _ColumnGap[Any]
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _ColumnRuleStyle
+     with _ColumnRuleWidth[Any]
+     with _ColumnWidth[Any]
+     with _Columns[Any]
+     with _Contain
+     with _Content
+     with _CounterIncrement
+     with _CounterReset
+     with _CounterSet
+     with _Cursor
+     with _Display
+     with _Fill
+     with _Filter
+     with _Flex[Any]
+     with _FlexBasis[Any]
+     with _FlexFlow
+     with _FloodColor
+     with _Font
+     with _FontFamily
+     with _FontFeatureSettings
+     with _FontLanguageOverride
+     with _FontSize[Any]
+     with _FontSizeAdjust
+     with _FontSmooth[Any]
+     with _FontStretch
+     with _FontStyle
+     with _FontSynthesis
+     with _FontVariant
+     with _FontVariantAlternates
+     with _FontVariantEastAsian
+     with _FontVariantLigatures
+     with _FontVariantNumeric
+     with _FontVariationSettings
+     with _FontWeight
+     with _Gap[Any]
+     with _GlyphOrientationVertical
+     with _Grid
+     with _GridAutoColumns[Any]
+     with _GridAutoFlow
+     with _GridAutoRows[Any]
+     with _GridTemplate
+     with _GridTemplateAreas
+     with _GridTemplateColumns[Any]
+     with _GridTemplateRows[Any]
+     with _HangingPunctuation
+     with _Height[Any]
+     with _HyphenateCharacter
+     with _ImageOrientation
+     with _ImageResolution
+     with _InitialLetter
+     with _InlineSize[Any]
+     with _Inset[Any]
+     with _InsetBlock[Any]
+     with _InsetBlockEnd[Any]
+     with _InsetBlockStart[Any]
+     with _InsetInline[Any]
+     with _InsetInlineEnd[Any]
+     with _InsetInlineStart[Any]
+     with _JustifyContent
+     with _JustifyItems
+     with _JustifySelf
+     with _JustifyTracks
+     with _Left[Any]
+     with _LetterSpacing[Any]
+     with _LightingColor
+     with _LineClamp
+     with _LineHeight[Any]
+     with _ListStyle
+     with _ListStyleImage
+     with _ListStyleType
+     with _Margin[Any]
+     with _MarginBlock[Any]
+     with _MarginBlockEnd[Any]
+     with _MarginBlockStart[Any]
+     with _MarginBottom[Any]
+     with _MarginInline[Any]
+     with _MarginInlineEnd[Any]
+     with _MarginInlineStart[Any]
+     with _MarginLeft[Any]
+     with _MarginRight[Any]
+     with _MarginTop[Any]
+     with _Marker
+     with _MarkerEnd
+     with _MarkerMid
+     with _MarkerStart
+     with _Mask[Any]
+     with _MaskBorder
+     with _MaskBorderRepeat
+     with _MaskBorderSource
+     with _MaskBorderWidth[Any]
+     with _MaskClip
+     with _MaskComposite
+     with _MaskImage
+     with _MaskMode
+     with _MaskOrigin
+     with _MaskPosition[Any]
+     with _MaskRepeat
+     with _MaskSize[Any]
+     with _MathDepth
+     with _MaxBlockSize[Any]
+     with _MaxHeight[Any]
+     with _MaxInlineSize[Any]
+     with _MaxLines
+     with _MaxWidth[Any]
+     with _MinBlockSize[Any]
+     with _MinHeight[Any]
+     with _MinInlineSize[Any]
+     with _MinWidth[Any]
+     with _MozBinding
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MozContextProperties
+     with _MozForceBrokenImageIcon
+     with _MozImageRegion
+     with _MsContentZoomSnap
+     with _MsFlowFrom
+     with _MsFlowInto
+     with _MsGridColumns[Any]
+     with _MsGridRows[Any]
+     with _MsHyphenateLimitChars
+     with _MsHyphenateLimitLines
+     with _MsScrollLimitXMax[Any]
+     with _MsScrollLimitYMax[Any]
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _ObjectPosition[Any]
+     with _Offset[Any]
+     with _OffsetAnchor[Any]
+     with _OffsetPath
+     with _OffsetRotate
+     with _Outline[Any]
+     with _OutlineColor
+     with _OutlineStyle
+     with _OutlineWidth[Any]
+     with _Overflow
+     with _OverflowClipMargin[Any]
+     with _OverscrollBehavior
+     with _PaintOrder
+     with _Perspective[Any]
+     with _PerspectiveOrigin[Any]
+     with _PlaceContent
+     with _PlaceItems
+     with _PlaceSelf
+     with _Quotes
+     with _Right[Any]
+     with _Rotate
+     with _RowGap[Any]
+     with _RubyPosition
+     with _Scale
+     with _ScrollPadding[Any]
+     with _ScrollPaddingBlock[Any]
+     with _ScrollPaddingBlockEnd[Any]
+     with _ScrollPaddingBlockStart[Any]
+     with _ScrollPaddingBottom[Any]
+     with _ScrollPaddingInline[Any]
+     with _ScrollPaddingInlineEnd[Any]
+     with _ScrollPaddingInlineStart[Any]
+     with _ScrollPaddingLeft[Any]
+     with _ScrollPaddingRight[Any]
+     with _ScrollPaddingTop[Any]
+     with _ScrollSnapAlign
+     with _ScrollSnapCoordinate[Any]
+     with _ScrollSnapDestination[Any]
+     with _ScrollSnapPointsX
+     with _ScrollSnapPointsY
+     with _ScrollSnapType
+     with _ScrollbarColor
+     with _ScrollbarGutter
+     with _ShapeOutside
+     with _StopColor
+     with _Stroke
+     with _StrokeDasharray[Any]
+     with _TextCombineUpright
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextDecorationLine
+     with _TextDecorationSkip
+     with _TextDecorationThickness[Any]
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _TextEmphasisStyle
+     with _TextOverflow
+     with _TextShadow
+     with _TextSizeAdjust
+     with _TextUnderlineOffset[Any]
+     with _TextUnderlinePosition
+     with _Top[Any]
+     with _TouchAction
+     with _Transform
+     with _TransformOrigin[Any]
+     with _Transition[Any]
      with _TransitionProperty
-     with _TransitionPropertyProperty
-     with _TransitionTimingFunctionProperty
-     with _TranslateProperty[js.Any]
-     with _VerticalAlignProperty[js.Any]
-     with _WebkitBorderBeforeColorProperty
-     with _WebkitBorderBeforeProperty[js.Any]
-     with _WebkitBorderBeforeStyleProperty
-     with _WebkitBorderBeforeWidthProperty[js.Any]
-     with _WebkitBoxReflectProperty[js.Any]
-     with _WebkitLineClampProperty
-     with _WebkitMaskAttachmentProperty
-     with _WebkitMaskClipProperty
-     with _WebkitMaskCompositeProperty
-     with _WebkitMaskImageProperty
-     with _WebkitMaskOriginProperty
-     with _WebkitMaskPositionProperty[js.Any]
-     with _WebkitMaskPositionXProperty[js.Any]
-     with _WebkitMaskPositionYProperty[js.Any]
-     with _WebkitMaskProperty[js.Any]
-     with _WebkitMaskRepeatProperty
-     with _WebkitMaskSizeProperty[js.Any]
-     with _WebkitTapHighlightColorProperty
-     with _WebkitTextFillColorProperty
-     with _WebkitTextStrokeColorProperty
-     with _WebkitTextStrokeProperty[js.Any]
-     with _WidthProperty[js.Any]
-     with _WillChangeProperty
-     with _WordSpacingProperty[js.Any]
-     with _ZIndexProperty
-     with _ZoomProperty
-
+     with _TransitionTimingFunction
+     with _Translate[Any]
+     with _VerticalAlign[Any]
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitBorderBeforeStyle
+     with _WebkitBorderBeforeWidth[Any]
+     with _WebkitBoxReflect[Any]
+     with _WebkitLineClamp
+     with _WebkitMask[Any]
+     with _WebkitMaskAttachment
+     with _WebkitMaskClip
+     with _WebkitMaskComposite
+     with _WebkitMaskImage
+     with _WebkitMaskOrigin
+     with _WebkitMaskPosition[Any]
+     with _WebkitMaskPositionX[Any]
+     with _WebkitMaskPositionY[Any]
+     with _WebkitMaskRepeat
+     with _WebkitMaskSize[Any]
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor
+     with _Width[Any]
+     with _WillChange
+     with _WordSpacing[Any]
+     with _ZIndex
+     with _Zoom
 object Globals {
-  @scala.inline
-  def `-moz-initial`: typingsJapgolly.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inherit: typingsJapgolly.csstype.csstypeStrings.inherit = this.cast("inherit")
-  @scala.inline
-  def initial: typingsJapgolly.csstype.csstypeStrings.initial = this.cast("initial")
-  @scala.inline
-  def revert: typingsJapgolly.csstype.csstypeStrings.revert = this.cast("revert")
-  @scala.inline
-  def unset: typingsJapgolly.csstype.csstypeStrings.unset = this.cast("unset")
+  
+  inline def `-moz-initial`: typingsJapgolly.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`-moz-initial`]
+  
+  inline def inherit: typingsJapgolly.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.inherit]
+  
+  inline def initial: typingsJapgolly.csstype.csstypeStrings.initial = "initial".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.initial]
+  
+  inline def revert: typingsJapgolly.csstype.csstypeStrings.revert = "revert".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.revert]
+  
+  inline def `revert-layer`: typingsJapgolly.csstype.csstypeStrings.`revert-layer` = "revert-layer".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`revert-layer`]
+  
+  inline def unset: typingsJapgolly.csstype.csstypeStrings.unset = "unset".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.unset]
 }
-

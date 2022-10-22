@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A text style configuration object. Used in charts options to configure text style for elements
@@ -36,20 +36,27 @@ import scala.scalajs.js.annotation._
   *           .setDataTable(sampleData)
   *           .build();
   */
-trait TextStyle extends js.Object {
+trait TextStyle extends StObject {
+  
   def getColor(): String
+  
   def getFontName(): String
+  
   def getFontSize(): Double
 }
-
 object TextStyle {
-  @scala.inline
-  def apply(getColor: CallbackTo[String], getFontName: CallbackTo[String], getFontSize: CallbackTo[Double]): TextStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColor")(getColor.toJsFn)
-    __obj.updateDynamic("getFontName")(getFontName.toJsFn)
-    __obj.updateDynamic("getFontSize")(getFontSize.toJsFn)
+  
+  inline def apply(getColor: CallbackTo[String], getFontName: CallbackTo[String], getFontSize: CallbackTo[Double]): TextStyle = {
+    val __obj = js.Dynamic.literal(getColor = getColor.toJsFn, getFontName = getFontName.toJsFn, getFontSize = getFontSize.toJsFn)
     __obj.asInstanceOf[TextStyle]
   }
+  
+  extension [Self <: TextStyle](x: Self) {
+    
+    inline def setGetColor(value: CallbackTo[String]): Self = StObject.set(x, "getColor", value.toJsFn)
+    
+    inline def setGetFontName(value: CallbackTo[String]): Self = StObject.set(x, "getFontName", value.toJsFn)
+    
+    inline def setGetFontSize(value: CallbackTo[Double]): Self = StObject.set(x, "getFontSize", value.toJsFn)
+  }
 }
-

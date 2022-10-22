@@ -10,15 +10,15 @@ Ledger Hardware Wallet WebUSB implementation of the communication layer
 | ------------------ | :-------------: |
 | Full name          | @ledgerhq/hw-transport-webusb |
 | Keywords           | Ledger, LedgerWallet, webusb, NanoS, Blue, Hardware Wallet |
-| # releases         | 78 |
-| # dependents       | 25 |
-| # downloads        | 56338 |
-| # stars            | 0 |
+| # releases         | 79 |
+| # dependents       | 0.0 |
+| # downloads        | 150034.33333333334 |
+| # stars            | 118.0 |
 
 ## Links
-- [Homepage](https://github.com/LedgerHQ/ledgerjs)
-- [Bugs](https://github.com/LedgerHQ/ledgerjs/issues)
-- [Repository](https://github.com/LedgerHQ/ledgerjs)
+- [Homepage](https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/hw-transport-webusb)
+- [Bugs](https://github.com/LedgerHQ/ledger-live/issues)
+- [Repository](https://github.com/LedgerHQ/ledger-live)
 - [Npm](https://www.npmjs.com/package/%40ledgerhq%2Fhw-transport-webusb)
     
 

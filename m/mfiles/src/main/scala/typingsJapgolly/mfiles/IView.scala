@@ -5,35 +5,53 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mfiles.MFiles.MFSearchFlags
 import typingsJapgolly.mfiles.MFiles.MFViewFlag
 import typingsJapgolly.mfiles.MFiles.MFViewType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IView extends js.Object {
+trait IView extends StObject {
+  
   var AccessControlList: IAccessControlList
-  var Common: Boolean
-  val GUID: String
-  var HasParent: Boolean
-  var ID: Double
-  var Levels: IExpressionExs
-  var LookInAllVersions: Boolean
-  var Name: String
-  var Parent: Double
-  var ReturnLatestVisibleVersion: Boolean
-  var SearchConditions: ISearchConditions
-  var SearchDef: ISearchDef
-  var SearchFlags: MFSearchFlags
-  var ViewFlags: MFViewFlag
-  var ViewLocation: IViewLocation
-  var ViewType: MFViewType
-  var Visible: Boolean
+  
   def Clone(): IView
+  
   def CloneFrom(View: IView): Unit
+  
+  var Common: Boolean
+  
+  val GUID: String
+  
+  var HasParent: Boolean
+  
+  var ID: Double
+  
+  var Levels: IExpressionExs
+  
+  var LookInAllVersions: Boolean
+  
+  var Name: String
+  
+  var Parent: Double
+  
+  var ReturnLatestVisibleVersion: Boolean
+  
+  var SearchConditions: ISearchConditions
+  
+  var SearchDef: ISearchDef
+  
+  var SearchFlags: MFSearchFlags
+  
+  var ViewFlags: MFViewFlag
+  
+  var ViewLocation: IViewLocation
+  
+  var ViewType: MFViewType
+  
+  var Visible: Boolean
 }
-
 object IView {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     AccessControlList: IAccessControlList,
     Clone: CallbackTo[IView],
     CloneFrom: IView => Callback,
@@ -54,10 +72,48 @@ object IView {
     ViewType: MFViewType,
     Visible: Boolean
   ): IView = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], Common = Common.asInstanceOf[js.Any], GUID = GUID.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], LookInAllVersions = LookInAllVersions.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReturnLatestVisibleVersion = ReturnLatestVisibleVersion.asInstanceOf[js.Any], SearchConditions = SearchConditions.asInstanceOf[js.Any], SearchDef = SearchDef.asInstanceOf[js.Any], SearchFlags = SearchFlags.asInstanceOf[js.Any], ViewFlags = ViewFlags.asInstanceOf[js.Any], ViewLocation = ViewLocation.asInstanceOf[js.Any], ViewType = ViewType.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
-    __obj.updateDynamic("CloneFrom")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IView) => CloneFrom(t0).runNow()))
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], Clone = Clone.toJsFn, CloneFrom = js.Any.fromFunction1((t0: IView) => CloneFrom(t0).runNow()), Common = Common.asInstanceOf[js.Any], GUID = GUID.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], LookInAllVersions = LookInAllVersions.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReturnLatestVisibleVersion = ReturnLatestVisibleVersion.asInstanceOf[js.Any], SearchConditions = SearchConditions.asInstanceOf[js.Any], SearchDef = SearchDef.asInstanceOf[js.Any], SearchFlags = SearchFlags.asInstanceOf[js.Any], ViewFlags = ViewFlags.asInstanceOf[js.Any], ViewLocation = ViewLocation.asInstanceOf[js.Any], ViewType = ViewType.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IView]
   }
+  
+  extension [Self <: IView](x: Self) {
+    
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    
+    inline def setClone(value: CallbackTo[IView]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setCloneFrom(value: IView => Callback): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1((t0: IView) => value(t0).runNow()))
+    
+    inline def setCommon(value: Boolean): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
+    
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    
+    inline def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
+    
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    
+    inline def setLevels(value: IExpressionExs): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    
+    inline def setLookInAllVersions(value: Boolean): Self = StObject.set(x, "LookInAllVersions", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Double): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setReturnLatestVisibleVersion(value: Boolean): Self = StObject.set(x, "ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
+    
+    inline def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
+    
+    inline def setSearchDef(value: ISearchDef): Self = StObject.set(x, "SearchDef", value.asInstanceOf[js.Any])
+    
+    inline def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
+    
+    inline def setViewFlags(value: MFViewFlag): Self = StObject.set(x, "ViewFlags", value.asInstanceOf[js.Any])
+    
+    inline def setViewLocation(value: IViewLocation): Self = StObject.set(x, "ViewLocation", value.asInstanceOf[js.Any])
+    
+    inline def setViewType(value: MFViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+  }
 }
-

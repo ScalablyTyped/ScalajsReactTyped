@@ -10,10 +10,10 @@ Parse JSON with more helpful errors
 | ------------------ | :-------------: |
 | Full name          | parse-json |
 | Keywords           | parse, json, graceful, error, message, humanize, friendly, helpful, string |
-| # releases         | 2 |
-| # dependents       | 169 |
-| # downloads        | 732526713 |
-| # stars            | 11 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.03313615E8 |
+| # stars            | 280.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/parse-json#readme)

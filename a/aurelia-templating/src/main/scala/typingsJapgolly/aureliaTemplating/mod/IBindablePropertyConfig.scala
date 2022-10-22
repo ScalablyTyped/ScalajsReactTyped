@@ -7,57 +7,72 @@ import typingsJapgolly.aureliaTemplating.aureliaTemplatingStrings.oneTime
 import typingsJapgolly.aureliaTemplating.aureliaTemplatingStrings.oneWay
 import typingsJapgolly.aureliaTemplating.aureliaTemplatingStrings.toView
 import typingsJapgolly.aureliaTemplating.aureliaTemplatingStrings.twoWay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IBindablePropertyConfig
-  extends // For compatibility and future extension
-/* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var attribute: js.UndefOr[String] = js.undefined
+  
   /**
-    * The name of a view model method to invoke when the property is updated.
-    */
+  	 * The name of a view model method to invoke when the property is updated.
+  	 */
   var changeHandler: js.UndefOr[String] = js.undefined
+  
   /**
-    * The default binding mode of the property. If given string, will use to lookup
-    */
+  	 * The default binding mode of the property. If given string, will use to lookup
+  	 */
   var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.undefined
+  
   /**
-    * A default value for the property.
-    */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  	 * A default value for the property.
+  	 */
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   /**
-    * The name of the property.
-    */
+  	* The name of the property.
+  	*/
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    * Designates the property as the default bindable property among all the other bindable properties when used in a custom attribute with multiple bindable properties.
-    */
+  	 * Designates the property as the default bindable property among all the other bindable properties when used in a custom attribute with multiple bindable properties.
+  	 */
   var primaryProperty: js.UndefOr[Boolean] = js.undefined
 }
-
 object IBindablePropertyConfig {
-  @scala.inline
-  def apply(
-    StringDictionary: // For compatibility and future extension
-  /* key */ StringDictionary[js.Any] = null,
-    attribute: String = null,
-    changeHandler: String = null,
-    defaultBindingMode: bindingMode | oneTime | oneWay | twoWay | fromView | toView = null,
-    defaultValue: js.Any = null,
-    name: String = null,
-    primaryProperty: js.UndefOr[Boolean] = js.undefined
-  ): IBindablePropertyConfig = {
+  
+  inline def apply(): IBindablePropertyConfig = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (changeHandler != null) __obj.updateDynamic("changeHandler")(changeHandler.asInstanceOf[js.Any])
-    if (defaultBindingMode != null) __obj.updateDynamic("defaultBindingMode")(defaultBindingMode.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryProperty)) __obj.updateDynamic("primaryProperty")(primaryProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBindablePropertyConfig]
   }
+  
+  extension [Self <: IBindablePropertyConfig](x: Self) {
+    
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    
+    inline def setChangeHandler(value: String): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
+    
+    inline def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
+    
+    inline def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPrimaryProperty(value: Boolean): Self = StObject.set(x, "primaryProperty", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryPropertyUndefined: Self = StObject.set(x, "primaryProperty", js.undefined)
+  }
 }
-

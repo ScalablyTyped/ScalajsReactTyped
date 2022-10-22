@@ -1,29 +1,27 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SignatureKind extends js.Object
-
+sealed trait SignatureKind extends StObject
 @JSImport("typescript", "SignatureKind")
 @js.native
-object SignatureKind extends js.Object {
-  @js.native
-  sealed trait Call extends SignatureKind
-  
-  @js.native
-  sealed trait Construct extends SignatureKind
+object SignatureKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SignatureKind with Double] = js.native
-  /* 0 */ @js.native
-  object Call extends TopLevel[Call with Double]
+  def apply(value: Double): js.UndefOr[SignatureKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object Construct extends TopLevel[Construct with Double]
+  @js.native
+  sealed trait Call
+    extends StObject
+       with SignatureKind
+  /* 0 */ val Call: typingsJapgolly.typescript.mod.SignatureKind.Call & Double = js.native
   
+  @js.native
+  sealed trait Construct
+    extends StObject
+       with SignatureKind
+  /* 1 */ val Construct: typingsJapgolly.typescript.mod.SignatureKind.Construct & Double = js.native
 }
-

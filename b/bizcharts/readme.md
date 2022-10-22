@@ -1,22 +1,22 @@
 
 # Scala.js typings for bizcharts
 
-Typings are for version 3.5.6
+Typings are for version 4.1.20
 
 ## Library description:
-A powerful React chart library based G2 for browser
+bizcharts
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bizcharts |
-| Keywords           | visualization, canvas, react, reactjs, chart, react-component, g2, BizCharts |
-| # releases         | 78 |
-| # dependents       | 463 |
-| # downloads        | 760448 |
-| # stars            | 2 |
+| Keywords           | bizcharts, g2 |
+| # releases         | 88 |
+| # dependents       | 0.0 |
+| # downloads        | 101076.0 |
+| # stars            | 5911.0 |
 
 ## Links
-- [Homepage](https://alibaba.github.io/BizCharts/)
+- [Homepage](https://github.com/alibaba/BizCharts#readme)
 - [Bugs](https://github.com/alibaba/BizCharts/issues)
 - [Repository](https://github.com/alibaba/BizCharts)
 - [Npm](https://www.npmjs.com/package/bizcharts)

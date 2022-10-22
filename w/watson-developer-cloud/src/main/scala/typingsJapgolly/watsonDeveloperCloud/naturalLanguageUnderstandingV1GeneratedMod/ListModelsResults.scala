@@ -1,21 +1,28 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Custom models that are available for entities and relations. */
-trait ListModelsResults extends js.Object {
+trait ListModelsResults extends StObject {
+  
   /** An array of available models. */
   var models: js.UndefOr[js.Array[Model]] = js.undefined
 }
-
 object ListModelsResults {
-  @scala.inline
-  def apply(models: js.Array[Model] = null): ListModelsResults = {
+  
+  inline def apply(): ListModelsResults = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelsResults]
   }
+  
+  extension [Self <: ListModelsResults](x: Self) {
+    
+    inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    
+    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value*))
+  }
 }
-

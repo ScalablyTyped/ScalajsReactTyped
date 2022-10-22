@@ -1,185 +1,308 @@
 package typingsJapgolly.pulumiKubernetes
 
+import typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyListArgs
+import typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicyArgs
+import typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatchArgs
+import typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetListArgs
+import typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudgetArgs
+import typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/policy/v1beta1", JSImport.Namespace)
-@js.native
-object policyV1beta1Mod extends js.Object {
-  @js.native
-  class PodDisruptionBudget protected ()
-    extends typingsJapgolly.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget {
-    /**
-      * Create a policy.v1beta1.PodDisruptionBudget resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodDisruptionBudget) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodDisruptionBudget,
-      opts: CustomResourceOptions
-    ) = this()
-  }
+object policyV1beta1Mod {
   
-  @js.native
-  class PodDisruptionBudgetList protected ()
-    extends typingsJapgolly.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList {
+  object PodDisruptionBudget {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Create a policy.v1beta1.PodDisruptionBudgetList resource with the given unique name, arguments, and options.
+      * Get an existing PodDisruptionBudget resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodDisruptionBudgetList
-    ) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodDisruptionBudgetList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class PodSecurityPolicy protected ()
-    extends typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy {
-    /**
-      * Create a policy.v1beta1.PodSecurityPolicy resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodSecurityPolicy) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodSecurityPolicy,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class PodSecurityPolicyList protected ()
-    extends typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList {
-    /**
-      * Create a policy.v1beta1.PodSecurityPolicyList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodSecurityPolicyList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.policy.v1beta1.PodSecurityPolicyList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object PodDisruptionBudget extends js.Object {
-    /**
-      * Get the state of an existing `PodDisruptionBudget` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
-      *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
-      */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.podDisruptionBudgetMod.PodDisruptionBudget = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget]
+    
     /**
       * Returns true if the given object is an instance of PodDisruptionBudget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodDisruptionBudget.PodDisruptionBudget */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget.PodDisruptionBudget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudget.PodDisruptionBudget */ Boolean]
+  }
+  type PodDisruptionBudget = typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudget")
+  @js.native
+  open class PodDisruptionBudgetCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget {
+    /**
+      * Create a PodDisruptionBudget resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodDisruptionBudgetArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodDisruptionBudgetArgs, opts: CustomResourceOptions) = this()
   }
   
-  /* static members */
-  @js.native
-  object PodDisruptionBudgetList extends js.Object {
+  object PodDisruptionBudgetList {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `PodDisruptionBudgetList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing PodDisruptionBudgetList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.podDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList]
+    
     /**
       * Returns true if the given object is an instance of PodDisruptionBudgetList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodDisruptionBudgetList.PodDisruptionBudgetList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudgetList.PodDisruptionBudgetList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudgetList.PodDisruptionBudgetList */ Boolean]
+  }
+  type PodDisruptionBudgetList = typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetList")
+  @js.native
+  open class PodDisruptionBudgetListCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList {
+    /**
+      * Create a PodDisruptionBudgetList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodDisruptionBudgetListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodDisruptionBudgetListArgs, opts: CustomResourceOptions) = this()
   }
   
-  /* static members */
-  @js.native
-  object PodSecurityPolicy extends js.Object {
+  object PodDisruptionBudgetPatch {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `PodSecurityPolicy` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing PodDisruptionBudgetPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch]
+    
+    /**
+      * Returns true if the given object is an instance of PodDisruptionBudgetPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudgetPatch.PodDisruptionBudgetPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/podDisruptionBudgetPatch.PodDisruptionBudgetPatch */ Boolean]
+  }
+  type PodDisruptionBudgetPatch = typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodDisruptionBudgetPatch")
+  @js.native
+  open class PodDisruptionBudgetPatchCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.policyV1beta1PodDisruptionBudgetPatchMod.PodDisruptionBudgetPatch {
+    /**
+      * Create a PodDisruptionBudgetPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodDisruptionBudgetPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodDisruptionBudgetPatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object PodSecurityPolicy {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing PodSecurityPolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy]
+    
+    /**
+      * Get an existing PodSecurityPolicy resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_PodSecurityPolicy(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy]
+    inline def get_PodSecurityPolicy(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy]
+    
     /**
       * Returns true if the given object is an instance of PodSecurityPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodSecurityPolicy.PodSecurityPolicy */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicy.PodSecurityPolicy */ Boolean]
+  }
+  type PodSecurityPolicy = typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicy")
+  @js.native
+  open class PodSecurityPolicyCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyMod.PodSecurityPolicy {
+    /**
+      * Create a PodSecurityPolicy resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodSecurityPolicyArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodSecurityPolicyArgs, opts: CustomResourceOptions) = this()
   }
   
-  /* static members */
-  @js.native
-  object PodSecurityPolicyList extends js.Object {
+  object PodSecurityPolicyList {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `PodSecurityPolicyList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing PodSecurityPolicyList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList]
+    
+    /**
+      * Get an existing PodSecurityPolicyList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_PodSecurityPolicyList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList]
+    inline def get_PodSecurityPolicyList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList]
+    
     /**
       * Returns true if the given object is an instance of PodSecurityPolicyList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/policy/v1beta1/PodSecurityPolicyList.PodSecurityPolicyList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyList.PodSecurityPolicyList */ Boolean]
+  }
+  type PodSecurityPolicyList = typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyList")
+  @js.native
+  open class PodSecurityPolicyListCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList {
+    /**
+      * Create a PodSecurityPolicyList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodSecurityPolicyListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodSecurityPolicyListArgs, opts: CustomResourceOptions) = this()
   }
   
+  object PodSecurityPolicyPatch {
+    
+    @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing PodSecurityPolicyPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.policyV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch]
+    
+    /**
+      * Get an existing PodSecurityPolicyPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_PodSecurityPolicyPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch]
+    inline def get_PodSecurityPolicyPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch]
+    
+    /**
+      * Returns true if the given object is an instance of PodSecurityPolicyPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyPatch.PodSecurityPolicyPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/extensions/v1beta1/podSecurityPolicyPatch.PodSecurityPolicyPatch */ Boolean]
+  }
+  type PodSecurityPolicyPatch = typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/policy/v1beta1", "PodSecurityPolicyPatch")
+  @js.native
+  open class PodSecurityPolicyPatchCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.extensionsV1beta1PodSecurityPolicyPatchMod.PodSecurityPolicyPatch {
+    /**
+      * Create a PodSecurityPolicyPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: PodSecurityPolicyPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: PodSecurityPolicyPatchArgs, opts: CustomResourceOptions) = this()
+  }
 }
-

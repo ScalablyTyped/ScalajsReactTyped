@@ -1,116 +1,244 @@
 package typingsJapgolly.csstype.mod
 
+import typingsJapgolly.csstype.mod.Property.Animation
+import typingsJapgolly.csstype.mod.Property.BorderImage
+import typingsJapgolly.csstype.mod.Property.BorderRadius
+import typingsJapgolly.csstype.mod.Property.ColumnRule
+import typingsJapgolly.csstype.mod.Property.Columns
+import typingsJapgolly.csstype.mod.Property.Flex
+import typingsJapgolly.csstype.mod.Property.FlexFlow
+import typingsJapgolly.csstype.mod.Property.MaskBorder
+import typingsJapgolly.csstype.mod.Property.MsContentZoomLimit
+import typingsJapgolly.csstype.mod.Property.MsContentZoomSnap
+import typingsJapgolly.csstype.mod.Property.MsScrollLimit
+import typingsJapgolly.csstype.mod.Property.MsScrollSnapX
+import typingsJapgolly.csstype.mod.Property.MsScrollSnapY
+import typingsJapgolly.csstype.mod.Property.TextEmphasis
+import typingsJapgolly.csstype.mod.Property.Transition
+import typingsJapgolly.csstype.mod.Property.WebkitBorderBefore
+import typingsJapgolly.csstype.mod.Property.WebkitMask
+import typingsJapgolly.csstype.mod.Property.WebkitTextStroke
+import typingsJapgolly.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VendorShorthandPropertiesHyphenFallback[TLength] extends js.Object {
-  /** The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
-  var `-moz-animation`: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
-  /** The **`border-image`** CSS property draws an image in place of an element's `border-style`. */
-  var `-moz-border-image`: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
-  /** The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout. */
-  var `-moz-column-rule`: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
-  /** The **`columns`** CSS property sets the column width and column count of an element. */
-  var `-moz-columns`: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
-  /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
-  var `-moz-transition`: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
-  /** The **`-ms-content-zoom-limit`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-limit-min` and `-ms-content-zoom-limit-max` properties. */
-  var `-ms-content-zoom-limit`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /** The **`-ms-content-zoom-snap`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-snap-type` and `-ms-content-zoom-snap-points` properties. */
-  var `-ms-content-zoom-snap`: js.UndefOr[MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty]] = js.undefined
-  /** The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`. */
-  var `-ms-flex`: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
-  /** The **\-ms-scroll-limit** CSS property is a Microsoft extension that specifies values for the `-ms-scroll-limit-x-min`, `-ms-scroll-limit-y-min`, `-ms-scroll-limit-x-max`, and `-ms-scroll-limit-y-max` properties. */
-  var `-ms-scroll-limit`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-x` properties. */
-  var `-ms-scroll-snap-x`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties. */
-  var `-ms-scroll-snap-y`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
-  var `-ms-transition`: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
-  /** The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
-  var `-webkit-animation`: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
-  /** The **`-webkit-border-before`** CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet. */
+/* Inlined csstype.csstype.Fallback<csstype.csstype.VendorShorthandPropertiesHyphen<TLength, TTime>> */
+trait VendorShorthandPropertiesHyphenFallback[TLength, TTime] extends StObject {
+  
+  var `-moz-animation`: js.UndefOr[Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]] = js.undefined
+  
+  var `-moz-border-image`: js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]] = js.undefined
+  
+  var `-moz-column-rule`: js.UndefOr[ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]] = js.undefined
+  
+  var `-moz-columns`: js.UndefOr[Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]] = js.undefined
+  
+  var `-moz-transition`: js.UndefOr[Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]] = js.undefined
+  
+  var `-ms-content-zoom-limit`: js.UndefOr[MsContentZoomLimit | js.Array[NonNullable[js.UndefOr[MsContentZoomLimit]]]] = js.undefined
+  
+  var `-ms-content-zoom-snap`: js.UndefOr[MsContentZoomSnap | js.Array[NonNullable[js.UndefOr[MsContentZoomSnap]]]] = js.undefined
+  
+  var `-ms-flex`: js.UndefOr[Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]] = js.undefined
+  
+  var `-ms-scroll-limit`: js.UndefOr[MsScrollLimit | js.Array[NonNullable[js.UndefOr[MsScrollLimit]]]] = js.undefined
+  
+  var `-ms-scroll-snap-x`: js.UndefOr[MsScrollSnapX | js.Array[NonNullable[js.UndefOr[MsScrollSnapX]]]] = js.undefined
+  
+  var `-ms-scroll-snap-y`: js.UndefOr[MsScrollSnapY | js.Array[NonNullable[js.UndefOr[MsScrollSnapY]]]] = js.undefined
+  
+  var `-ms-transition`: js.UndefOr[Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]] = js.undefined
+  
+  var `-webkit-animation`: js.UndefOr[Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]] = js.undefined
+  
   var `-webkit-border-before`: js.UndefOr[
-    WebkitBorderBeforeProperty[TLength] | js.Array[WebkitBorderBeforeProperty[TLength]]
+    WebkitBorderBefore[TLength] | js.Array[NonNullable[js.UndefOr[WebkitBorderBefore[TLength]]]]
   ] = js.undefined
-  /** The **`border-image`** CSS property draws an image in place of an element's `border-style`. */
-  var `-webkit-border-image`: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
-  /** The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. */
-  var `-webkit-border-radius`: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
-  /** The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout. */
-  var `-webkit-column-rule`: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
-  /** The **`columns`** CSS property sets the column width and column count of an element. */
-  var `-webkit-columns`: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
-  /** The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`. */
-  var `-webkit-flex`: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
-  /** The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties. */
-  var `-webkit-flex-flow`: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
-  /** The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points. */
-  var `-webkit-mask`: js.UndefOr[WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]]] = js.undefined
-  /** The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`. */
-  var `-webkit-text-emphasis`: js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]] = js.undefined
-  /** The **`-webkit-text-stroke`** CSS property specifies the width and color of strokes for text characters. This is a shorthand property for the longhand properties `-webkit-text-stroke-width` and `-webkit-text-stroke-color`. */
-  var `-webkit-text-stroke`: js.UndefOr[WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]]] = js.undefined
-  /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
-  var `-webkit-transition`: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
+  
+  var `-webkit-border-image`: js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]] = js.undefined
+  
+  var `-webkit-border-radius`: js.UndefOr[BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]] = js.undefined
+  
+  var `-webkit-column-rule`: js.UndefOr[ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]] = js.undefined
+  
+  var `-webkit-columns`: js.UndefOr[Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]] = js.undefined
+  
+  var `-webkit-flex`: js.UndefOr[Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]] = js.undefined
+  
+  var `-webkit-flex-flow`: js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]] = js.undefined
+  
+  var `-webkit-mask`: js.UndefOr[WebkitMask[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMask[TLength]]]]] = js.undefined
+  
+  var `-webkit-mask-box-image`: js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]] = js.undefined
+  
+  var `-webkit-text-emphasis`: js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]] = js.undefined
+  
+  var `-webkit-text-stroke`: js.UndefOr[
+    WebkitTextStroke[TLength] | js.Array[NonNullable[js.UndefOr[WebkitTextStroke[TLength]]]]
+  ] = js.undefined
+  
+  var `-webkit-transition`: js.UndefOr[Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]] = js.undefined
 }
-
 object VendorShorthandPropertiesHyphenFallback {
-  @scala.inline
-  def apply[TLength](
-    `-moz-animation`: AnimationProperty | js.Array[AnimationProperty] = null,
-    `-moz-border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
-    `-moz-column-rule`: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
-    `-moz-columns`: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
-    `-moz-transition`: TransitionProperty | js.Array[TransitionProperty] = null,
-    `-ms-content-zoom-limit`: GlobalsString | js.Array[GlobalsString] = null,
-    `-ms-content-zoom-snap`: MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty] = null,
-    `-ms-flex`: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
-    `-ms-scroll-limit`: GlobalsString | js.Array[GlobalsString] = null,
-    `-ms-scroll-snap-x`: GlobalsString | js.Array[GlobalsString] = null,
-    `-ms-scroll-snap-y`: GlobalsString | js.Array[GlobalsString] = null,
-    `-ms-transition`: TransitionProperty | js.Array[TransitionProperty] = null,
-    `-webkit-animation`: AnimationProperty | js.Array[AnimationProperty] = null,
-    `-webkit-border-before`: WebkitBorderBeforeProperty[TLength] | js.Array[WebkitBorderBeforeProperty[TLength]] = null,
-    `-webkit-border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
-    `-webkit-border-radius`: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
-    `-webkit-column-rule`: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
-    `-webkit-columns`: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
-    `-webkit-flex`: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
-    `-webkit-flex-flow`: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
-    `-webkit-mask`: WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]] = null,
-    `-webkit-text-emphasis`: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
-    `-webkit-text-stroke`: WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]] = null,
-    `-webkit-transition`: TransitionProperty | js.Array[TransitionProperty] = null
-  ): VendorShorthandPropertiesHyphenFallback[TLength] = {
+  
+  inline def apply[TLength, TTime](): VendorShorthandPropertiesHyphenFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (`-moz-animation` != null) __obj.updateDynamic("-moz-animation")(`-moz-animation`.asInstanceOf[js.Any])
-    if (`-moz-border-image` != null) __obj.updateDynamic("-moz-border-image")(`-moz-border-image`.asInstanceOf[js.Any])
-    if (`-moz-column-rule` != null) __obj.updateDynamic("-moz-column-rule")(`-moz-column-rule`.asInstanceOf[js.Any])
-    if (`-moz-columns` != null) __obj.updateDynamic("-moz-columns")(`-moz-columns`.asInstanceOf[js.Any])
-    if (`-moz-transition` != null) __obj.updateDynamic("-moz-transition")(`-moz-transition`.asInstanceOf[js.Any])
-    if (`-ms-content-zoom-limit` != null) __obj.updateDynamic("-ms-content-zoom-limit")(`-ms-content-zoom-limit`.asInstanceOf[js.Any])
-    if (`-ms-content-zoom-snap` != null) __obj.updateDynamic("-ms-content-zoom-snap")(`-ms-content-zoom-snap`.asInstanceOf[js.Any])
-    if (`-ms-flex` != null) __obj.updateDynamic("-ms-flex")(`-ms-flex`.asInstanceOf[js.Any])
-    if (`-ms-scroll-limit` != null) __obj.updateDynamic("-ms-scroll-limit")(`-ms-scroll-limit`.asInstanceOf[js.Any])
-    if (`-ms-scroll-snap-x` != null) __obj.updateDynamic("-ms-scroll-snap-x")(`-ms-scroll-snap-x`.asInstanceOf[js.Any])
-    if (`-ms-scroll-snap-y` != null) __obj.updateDynamic("-ms-scroll-snap-y")(`-ms-scroll-snap-y`.asInstanceOf[js.Any])
-    if (`-ms-transition` != null) __obj.updateDynamic("-ms-transition")(`-ms-transition`.asInstanceOf[js.Any])
-    if (`-webkit-animation` != null) __obj.updateDynamic("-webkit-animation")(`-webkit-animation`.asInstanceOf[js.Any])
-    if (`-webkit-border-before` != null) __obj.updateDynamic("-webkit-border-before")(`-webkit-border-before`.asInstanceOf[js.Any])
-    if (`-webkit-border-image` != null) __obj.updateDynamic("-webkit-border-image")(`-webkit-border-image`.asInstanceOf[js.Any])
-    if (`-webkit-border-radius` != null) __obj.updateDynamic("-webkit-border-radius")(`-webkit-border-radius`.asInstanceOf[js.Any])
-    if (`-webkit-column-rule` != null) __obj.updateDynamic("-webkit-column-rule")(`-webkit-column-rule`.asInstanceOf[js.Any])
-    if (`-webkit-columns` != null) __obj.updateDynamic("-webkit-columns")(`-webkit-columns`.asInstanceOf[js.Any])
-    if (`-webkit-flex` != null) __obj.updateDynamic("-webkit-flex")(`-webkit-flex`.asInstanceOf[js.Any])
-    if (`-webkit-flex-flow` != null) __obj.updateDynamic("-webkit-flex-flow")(`-webkit-flex-flow`.asInstanceOf[js.Any])
-    if (`-webkit-mask` != null) __obj.updateDynamic("-webkit-mask")(`-webkit-mask`.asInstanceOf[js.Any])
-    if (`-webkit-text-emphasis` != null) __obj.updateDynamic("-webkit-text-emphasis")(`-webkit-text-emphasis`.asInstanceOf[js.Any])
-    if (`-webkit-text-stroke` != null) __obj.updateDynamic("-webkit-text-stroke")(`-webkit-text-stroke`.asInstanceOf[js.Any])
-    if (`-webkit-transition` != null) __obj.updateDynamic("-webkit-transition")(`-webkit-transition`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[VendorShorthandPropertiesHyphenFallback[TLength]]
+    __obj.asInstanceOf[VendorShorthandPropertiesHyphenFallback[TLength, TTime]]
+  }
+  
+  extension [Self <: VendorShorthandPropertiesHyphenFallback[?, ?], TLength, TTime](x: Self & (VendorShorthandPropertiesHyphenFallback[TLength, TTime])) {
+    
+    inline def `set-moz-animation`(value: Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]): Self = StObject.set(x, "-moz-animation", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-animationUndefined`: Self = StObject.set(x, "-moz-animation", js.undefined)
+    
+    inline def `set-moz-animationVarargs`(value: NonNullable[js.UndefOr[Animation[TTime]]]*): Self = StObject.set(x, "-moz-animation", js.Array(value*))
+    
+    inline def `set-moz-border-image`(value: BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]): Self = StObject.set(x, "-moz-border-image", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-border-imageUndefined`: Self = StObject.set(x, "-moz-border-image", js.undefined)
+    
+    inline def `set-moz-border-imageVarargs`(value: NonNullable[js.UndefOr[BorderImage]]*): Self = StObject.set(x, "-moz-border-image", js.Array(value*))
+    
+    inline def `set-moz-column-rule`(value: ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]): Self = StObject.set(x, "-moz-column-rule", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-column-ruleUndefined`: Self = StObject.set(x, "-moz-column-rule", js.undefined)
+    
+    inline def `set-moz-column-ruleVarargs`(value: NonNullable[js.UndefOr[ColumnRule[TLength]]]*): Self = StObject.set(x, "-moz-column-rule", js.Array(value*))
+    
+    inline def `set-moz-columns`(value: Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]): Self = StObject.set(x, "-moz-columns", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-columnsUndefined`: Self = StObject.set(x, "-moz-columns", js.undefined)
+    
+    inline def `set-moz-columnsVarargs`(value: NonNullable[js.UndefOr[Columns[TLength]]]*): Self = StObject.set(x, "-moz-columns", js.Array(value*))
+    
+    inline def `set-moz-transition`(value: Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]): Self = StObject.set(x, "-moz-transition", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-transitionUndefined`: Self = StObject.set(x, "-moz-transition", js.undefined)
+    
+    inline def `set-moz-transitionVarargs`(value: NonNullable[js.UndefOr[Transition[TTime]]]*): Self = StObject.set(x, "-moz-transition", js.Array(value*))
+    
+    inline def `set-ms-content-zoom-limit`(value: MsContentZoomLimit | js.Array[NonNullable[js.UndefOr[MsContentZoomLimit]]]): Self = StObject.set(x, "-ms-content-zoom-limit", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-content-zoom-limitUndefined`: Self = StObject.set(x, "-ms-content-zoom-limit", js.undefined)
+    
+    inline def `set-ms-content-zoom-limitVarargs`(value: NonNullable[js.UndefOr[MsContentZoomLimit]]*): Self = StObject.set(x, "-ms-content-zoom-limit", js.Array(value*))
+    
+    inline def `set-ms-content-zoom-snap`(value: MsContentZoomSnap | js.Array[NonNullable[js.UndefOr[MsContentZoomSnap]]]): Self = StObject.set(x, "-ms-content-zoom-snap", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-content-zoom-snapUndefined`: Self = StObject.set(x, "-ms-content-zoom-snap", js.undefined)
+    
+    inline def `set-ms-content-zoom-snapVarargs`(value: NonNullable[js.UndefOr[MsContentZoomSnap]]*): Self = StObject.set(x, "-ms-content-zoom-snap", js.Array(value*))
+    
+    inline def `set-ms-flex`(value: Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]): Self = StObject.set(x, "-ms-flex", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-flexUndefined`: Self = StObject.set(x, "-ms-flex", js.undefined)
+    
+    inline def `set-ms-flexVarargs`(value: NonNullable[js.UndefOr[Flex[TLength]]]*): Self = StObject.set(x, "-ms-flex", js.Array(value*))
+    
+    inline def `set-ms-scroll-limit`(value: MsScrollLimit | js.Array[NonNullable[js.UndefOr[MsScrollLimit]]]): Self = StObject.set(x, "-ms-scroll-limit", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-scroll-limitUndefined`: Self = StObject.set(x, "-ms-scroll-limit", js.undefined)
+    
+    inline def `set-ms-scroll-limitVarargs`(value: NonNullable[js.UndefOr[MsScrollLimit]]*): Self = StObject.set(x, "-ms-scroll-limit", js.Array(value*))
+    
+    inline def `set-ms-scroll-snap-x`(value: MsScrollSnapX | js.Array[NonNullable[js.UndefOr[MsScrollSnapX]]]): Self = StObject.set(x, "-ms-scroll-snap-x", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-scroll-snap-xUndefined`: Self = StObject.set(x, "-ms-scroll-snap-x", js.undefined)
+    
+    inline def `set-ms-scroll-snap-xVarargs`(value: NonNullable[js.UndefOr[MsScrollSnapX]]*): Self = StObject.set(x, "-ms-scroll-snap-x", js.Array(value*))
+    
+    inline def `set-ms-scroll-snap-y`(value: MsScrollSnapY | js.Array[NonNullable[js.UndefOr[MsScrollSnapY]]]): Self = StObject.set(x, "-ms-scroll-snap-y", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-scroll-snap-yUndefined`: Self = StObject.set(x, "-ms-scroll-snap-y", js.undefined)
+    
+    inline def `set-ms-scroll-snap-yVarargs`(value: NonNullable[js.UndefOr[MsScrollSnapY]]*): Self = StObject.set(x, "-ms-scroll-snap-y", js.Array(value*))
+    
+    inline def `set-ms-transition`(value: Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]): Self = StObject.set(x, "-ms-transition", value.asInstanceOf[js.Any])
+    
+    inline def `set-ms-transitionUndefined`: Self = StObject.set(x, "-ms-transition", js.undefined)
+    
+    inline def `set-ms-transitionVarargs`(value: NonNullable[js.UndefOr[Transition[TTime]]]*): Self = StObject.set(x, "-ms-transition", js.Array(value*))
+    
+    inline def `set-webkit-animation`(value: Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]): Self = StObject.set(x, "-webkit-animation", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-animationUndefined`: Self = StObject.set(x, "-webkit-animation", js.undefined)
+    
+    inline def `set-webkit-animationVarargs`(value: NonNullable[js.UndefOr[Animation[TTime]]]*): Self = StObject.set(x, "-webkit-animation", js.Array(value*))
+    
+    inline def `set-webkit-border-before`(
+      value: WebkitBorderBefore[TLength] | js.Array[NonNullable[js.UndefOr[WebkitBorderBefore[TLength]]]]
+    ): Self = StObject.set(x, "-webkit-border-before", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-border-beforeUndefined`: Self = StObject.set(x, "-webkit-border-before", js.undefined)
+    
+    inline def `set-webkit-border-beforeVarargs`(value: NonNullable[js.UndefOr[WebkitBorderBefore[TLength]]]*): Self = StObject.set(x, "-webkit-border-before", js.Array(value*))
+    
+    inline def `set-webkit-border-image`(value: BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]): Self = StObject.set(x, "-webkit-border-image", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-border-imageUndefined`: Self = StObject.set(x, "-webkit-border-image", js.undefined)
+    
+    inline def `set-webkit-border-imageVarargs`(value: NonNullable[js.UndefOr[BorderImage]]*): Self = StObject.set(x, "-webkit-border-image", js.Array(value*))
+    
+    inline def `set-webkit-border-radius`(value: BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]): Self = StObject.set(x, "-webkit-border-radius", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-border-radiusUndefined`: Self = StObject.set(x, "-webkit-border-radius", js.undefined)
+    
+    inline def `set-webkit-border-radiusVarargs`(value: NonNullable[js.UndefOr[BorderRadius[TLength]]]*): Self = StObject.set(x, "-webkit-border-radius", js.Array(value*))
+    
+    inline def `set-webkit-column-rule`(value: ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]): Self = StObject.set(x, "-webkit-column-rule", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-column-ruleUndefined`: Self = StObject.set(x, "-webkit-column-rule", js.undefined)
+    
+    inline def `set-webkit-column-ruleVarargs`(value: NonNullable[js.UndefOr[ColumnRule[TLength]]]*): Self = StObject.set(x, "-webkit-column-rule", js.Array(value*))
+    
+    inline def `set-webkit-columns`(value: Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]): Self = StObject.set(x, "-webkit-columns", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-columnsUndefined`: Self = StObject.set(x, "-webkit-columns", js.undefined)
+    
+    inline def `set-webkit-columnsVarargs`(value: NonNullable[js.UndefOr[Columns[TLength]]]*): Self = StObject.set(x, "-webkit-columns", js.Array(value*))
+    
+    inline def `set-webkit-flex`(value: Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]): Self = StObject.set(x, "-webkit-flex", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-flex-flow`(value: FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]): Self = StObject.set(x, "-webkit-flex-flow", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-flex-flowUndefined`: Self = StObject.set(x, "-webkit-flex-flow", js.undefined)
+    
+    inline def `set-webkit-flex-flowVarargs`(value: NonNullable[js.UndefOr[FlexFlow]]*): Self = StObject.set(x, "-webkit-flex-flow", js.Array(value*))
+    
+    inline def `set-webkit-flexUndefined`: Self = StObject.set(x, "-webkit-flex", js.undefined)
+    
+    inline def `set-webkit-flexVarargs`(value: NonNullable[js.UndefOr[Flex[TLength]]]*): Self = StObject.set(x, "-webkit-flex", js.Array(value*))
+    
+    inline def `set-webkit-mask`(value: WebkitMask[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMask[TLength]]]]): Self = StObject.set(x, "-webkit-mask", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-mask-box-image`(value: MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]): Self = StObject.set(x, "-webkit-mask-box-image", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-mask-box-imageUndefined`: Self = StObject.set(x, "-webkit-mask-box-image", js.undefined)
+    
+    inline def `set-webkit-mask-box-imageVarargs`(value: NonNullable[js.UndefOr[MaskBorder]]*): Self = StObject.set(x, "-webkit-mask-box-image", js.Array(value*))
+    
+    inline def `set-webkit-maskUndefined`: Self = StObject.set(x, "-webkit-mask", js.undefined)
+    
+    inline def `set-webkit-maskVarargs`(value: NonNullable[js.UndefOr[WebkitMask[TLength]]]*): Self = StObject.set(x, "-webkit-mask", js.Array(value*))
+    
+    inline def `set-webkit-text-emphasis`(value: TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]): Self = StObject.set(x, "-webkit-text-emphasis", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-text-emphasisUndefined`: Self = StObject.set(x, "-webkit-text-emphasis", js.undefined)
+    
+    inline def `set-webkit-text-emphasisVarargs`(value: NonNullable[js.UndefOr[TextEmphasis]]*): Self = StObject.set(x, "-webkit-text-emphasis", js.Array(value*))
+    
+    inline def `set-webkit-text-stroke`(value: WebkitTextStroke[TLength] | js.Array[NonNullable[js.UndefOr[WebkitTextStroke[TLength]]]]): Self = StObject.set(x, "-webkit-text-stroke", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-text-strokeUndefined`: Self = StObject.set(x, "-webkit-text-stroke", js.undefined)
+    
+    inline def `set-webkit-text-strokeVarargs`(value: NonNullable[js.UndefOr[WebkitTextStroke[TLength]]]*): Self = StObject.set(x, "-webkit-text-stroke", js.Array(value*))
+    
+    inline def `set-webkit-transition`(value: Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]): Self = StObject.set(x, "-webkit-transition", value.asInstanceOf[js.Any])
+    
+    inline def `set-webkit-transitionUndefined`: Self = StObject.set(x, "-webkit-transition", js.undefined)
+    
+    inline def `set-webkit-transitionVarargs`(value: NonNullable[js.UndefOr[Transition[TTime]]]*): Self = StObject.set(x, "-webkit-transition", js.Array(value*))
   }
 }
-

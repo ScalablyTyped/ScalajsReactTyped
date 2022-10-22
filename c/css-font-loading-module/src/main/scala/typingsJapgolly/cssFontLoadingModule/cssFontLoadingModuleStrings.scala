@@ -2,34 +2,43 @@ package typingsJapgolly.cssFontLoadingModule
 
 import typingsJapgolly.cssFontLoadingModule.mod.FontFaceLoadStatus
 import typingsJapgolly.cssFontLoadingModule.mod.FontFaceSetLoadStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssFontLoadingModuleStrings {
+  
   @js.native
-  sealed trait error extends FontFaceLoadStatus
+  sealed trait error
+    extends StObject
+       with FontFaceLoadStatus
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait loaded
-    extends FontFaceLoadStatus
+    extends StObject
+       with FontFaceLoadStatus
        with FontFaceSetLoadStatus
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
   sealed trait loading
-    extends FontFaceLoadStatus
+    extends StObject
+       with FontFaceLoadStatus
        with FontFaceSetLoadStatus
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait unloaded extends FontFaceLoadStatus
+  sealed trait loadingdone extends StObject
+  inline def loadingdone: loadingdone = "loadingdone".asInstanceOf[loadingdone]
   
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
+  @js.native
+  sealed trait loadingerror extends StObject
+  inline def loadingerror: loadingerror = "loadingerror".asInstanceOf[loadingerror]
+  
+  @js.native
+  sealed trait unloaded
+    extends StObject
+       with FontFaceLoadStatus
+  inline def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
 }
-

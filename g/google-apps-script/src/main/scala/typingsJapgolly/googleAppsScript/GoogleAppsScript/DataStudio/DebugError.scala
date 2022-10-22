@@ -1,10 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error that is only visible to admins of the connector.
@@ -15,20 +14,31 @@ import scala.scalajs.js.annotation._
   *       .setText("This is the debug error text.")
   *       .throwException();
   */
-trait DebugError extends js.Object {
+trait DebugError extends StObject {
+  
   def printJson(): String
+  
   def setText(text: String): DebugError
-  def throwException(): Unit
+  
+  def throwException(): scala.Nothing
 }
-
 object DebugError {
-  @scala.inline
-  def apply(printJson: CallbackTo[String], setText: String => CallbackTo[DebugError], throwException: Callback): DebugError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
-    __obj.updateDynamic("setText")(js.Any.fromFunction1((t0: java.lang.String) => setText(t0).runNow()))
-    __obj.updateDynamic("throwException")(throwException.toJsFn)
+  
+  inline def apply(
+    printJson: CallbackTo[String],
+    setText: String => DebugError,
+    throwException: CallbackTo[scala.Nothing]
+  ): DebugError = {
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn, setText = js.Any.fromFunction1(setText), throwException = throwException.toJsFn)
     __obj.asInstanceOf[DebugError]
   }
+  
+  extension [Self <: DebugError](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+    
+    inline def setSetText(value: String => DebugError): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    
+    inline def setThrowException(value: CallbackTo[scala.Nothing]): Self = StObject.set(x, "throwException", value.toJsFn)
+  }
 }
-

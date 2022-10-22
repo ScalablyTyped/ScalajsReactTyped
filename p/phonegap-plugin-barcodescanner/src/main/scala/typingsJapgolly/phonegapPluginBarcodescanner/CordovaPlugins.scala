@@ -1,20 +1,23 @@
 package typingsJapgolly.phonegapPluginBarcodescanner
 
 import typingsJapgolly.phonegapPluginBarcodescanner.phonegapBarcode.BarcodeScanner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CordovaPlugins extends js.Object {
+trait CordovaPlugins extends StObject {
+  
   var barcodeScanner: BarcodeScanner
 }
-
 object CordovaPlugins {
-  @scala.inline
-  def apply(barcodeScanner: BarcodeScanner): CordovaPlugins = {
-    val __obj = js.Dynamic.literal(barcodeScanner = barcodeScanner.asInstanceOf[js.Any])
   
+  inline def apply(barcodeScanner: BarcodeScanner): CordovaPlugins = {
+    val __obj = js.Dynamic.literal(barcodeScanner = barcodeScanner.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
+  
+  extension [Self <: CordovaPlugins](x: Self) {
+    
+    inline def setBarcodeScanner(value: BarcodeScanner): Self = StObject.set(x, "barcodeScanner", value.asInstanceOf[js.Any])
+  }
 }
-

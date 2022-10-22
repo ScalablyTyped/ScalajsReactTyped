@@ -1,23 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChatInfo extends js.Object {
-  var messageId: js.UndefOr[String] = js.undefined
-  var replyChainMessageId: js.UndefOr[String] = js.undefined
-  var threadId: js.UndefOr[String] = js.undefined
+trait ChatInfo extends StObject {
+  
+  // The unique identifier of a message in a Microsoft Teams channel.
+  var messageId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The ID of the reply message.
+  var replyChainMessageId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The unique identifier for a thread in Microsoft Teams.
+  var threadId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ChatInfo {
-  @scala.inline
-  def apply(messageId: String = null, replyChainMessageId: String = null, threadId: String = null): ChatInfo = {
+  
+  inline def apply(): ChatInfo = {
     val __obj = js.Dynamic.literal()
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (replyChainMessageId != null) __obj.updateDynamic("replyChainMessageId")(replyChainMessageId.asInstanceOf[js.Any])
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatInfo]
   }
+  
+  extension [Self <: ChatInfo](x: Self) {
+    
+    inline def setMessageId(value: NullableOption[String]): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    
+    inline def setMessageIdNull: Self = StObject.set(x, "messageId", null)
+    
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    
+    inline def setReplyChainMessageId(value: NullableOption[String]): Self = StObject.set(x, "replyChainMessageId", value.asInstanceOf[js.Any])
+    
+    inline def setReplyChainMessageIdNull: Self = StObject.set(x, "replyChainMessageId", null)
+    
+    inline def setReplyChainMessageIdUndefined: Self = StObject.set(x, "replyChainMessageId", js.undefined)
+    
+    inline def setThreadId(value: NullableOption[String]): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    
+    inline def setThreadIdNull: Self = StObject.set(x, "threadId", null)
+    
+    inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
+  }
 }
-

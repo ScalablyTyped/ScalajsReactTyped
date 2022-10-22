@@ -10,10 +10,10 @@ A collection of probability distribution functions
 | ------------------ | :-------------: |
 | Full name          | distributions |
 | Keywords           | distribution, normal, studentt, uniform |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 260722 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 187009.0 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/AndreasMadsen/distributions#readme)

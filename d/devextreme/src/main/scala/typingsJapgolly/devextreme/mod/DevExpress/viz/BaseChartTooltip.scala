@@ -1,71 +1,89 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonBlur
-import typingsJapgolly.devextreme.AnonDashStyleOpacity
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
 import typingsJapgolly.devextreme.mod.DevExpress.core.template
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures tooltips. */
-trait BaseChartTooltip extends BaseWidgetTooltip {
-  /** Formats the point argument before it is displayed in the tooltip. To format the point value, use the format option. */
-  var argumentFormat: js.UndefOr[format] = js.undefined
-  /** Specifies a custom template for a tooltip. */
+trait BaseChartTooltip
+  extends StObject
+     with BaseWidgetTooltip {
+  
+  /**
+    * Formats the point argument before it is displayed in the tooltip. To format the point value, use the format property.
+    */
+  var argumentFormat: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Specifies a custom template for a tooltip.
+    */
   var contentTemplate: js.UndefOr[
-    template | (js.Function2[/* pointInfo */ js.Any, /* element */ dxElement, String | Element | JQuery])
+    template | (js.Function2[
+      /* pointInfo */ Any, 
+      /* element */ DxElement_[HTMLElement], 
+      String | UserDefinedElement[Element]
+    ])
   ] = js.undefined
-  /** Allows you to change tooltip appearance. */
-  var customizeTooltip: js.UndefOr[js.Function1[/* pointInfo */ js.Any, _]] = js.undefined
-  /** Specifies whether the tooltip is shared across all series points with the same argument. */
+  
+  /**
+    * Allows you to change tooltip appearance.
+    */
+  var customizeTooltip: js.UndefOr[js.Function1[/* pointInfo */ Any, Any]] = js.undefined
+  
+  /**
+    * Allows users to interact with the tooltip content.
+    */
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies whether the tooltip is shared across all series points with the same argument.
+    */
   var shared: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseChartTooltip {
-  @scala.inline
-  def apply(
-    argumentFormat: format = null,
-    arrowLength: Int | Double = null,
-    border: AnonDashStyleOpacity = null,
-    color: String = null,
-    container: String | Element | JQuery = null,
-    contentTemplate: template | (js.Function2[/* pointInfo */ js.Any, /* element */ dxElement, String | Element | JQuery]) = null,
-    cornerRadius: Int | Double = null,
-    customizeTooltip: /* pointInfo */ js.Any => CallbackTo[js.Any] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    font: Font = null,
-    format: format = null,
-    opacity: Int | Double = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null,
-    shadow: AnonBlur = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): BaseChartTooltip = {
+  
+  inline def apply(): BaseChartTooltip = {
     val __obj = js.Dynamic.literal()
-    if (argumentFormat != null) __obj.updateDynamic("argumentFormat")(argumentFormat.asInstanceOf[js.Any])
-    if (arrowLength != null) __obj.updateDynamic("arrowLength")(arrowLength.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (customizeTooltip != null) __obj.updateDynamic("customizeTooltip")(js.Any.fromFunction1((t0: /* pointInfo */ js.Any) => customizeTooltip(t0).runNow()))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseChartTooltip]
   }
+  
+  extension [Self <: BaseChartTooltip](x: Self) {
+    
+    inline def setArgumentFormat(value: Format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "argumentFormat", js.Any.fromFunction1(value))
+    
+    inline def setArgumentFormatUndefined: Self = StObject.set(x, "argumentFormat", js.undefined)
+    
+    inline def setContentTemplate(
+      value: template | (js.Function2[
+          /* pointInfo */ Any, 
+          /* element */ DxElement_[HTMLElement], 
+          String | UserDefinedElement[Element]
+        ])
+    ): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setContentTemplateFunction2(
+      value: (/* pointInfo */ Any, /* element */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
+    ): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction2(value))
+    
+    inline def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
+    
+    inline def setCustomizeTooltip(value: /* pointInfo */ Any => Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+    
+    inline def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
+    inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+  }
 }
-

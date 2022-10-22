@@ -1,21 +1,23 @@
 package typingsJapgolly.jqueryTypeahead
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jqueryTypeahead.RunningCoder.Typeahead.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def typeahead(options: Options): JQuery
 }
-
 object JQuery {
-  @scala.inline
-  def apply(typeahead: Options => CallbackTo[JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeahead")(js.Any.fromFunction1((t0: typingsJapgolly.jqueryTypeahead.RunningCoder.Typeahead.Options) => typeahead(t0).runNow()))
+  
+  inline def apply(typeahead: Options => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(typeahead = js.Any.fromFunction1(typeahead))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setTypeahead(value: Options => JQuery): Self = StObject.set(x, "typeahead", js.Any.fromFunction1(value))
+  }
 }
-

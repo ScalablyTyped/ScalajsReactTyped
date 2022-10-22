@@ -1,24 +1,37 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.sequelizeStrings.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddDefaultConstraintOptions extends AddConstraintOptions {
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+trait AddDefaultConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
+  
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var `type`: default
+  
+  var `type`: typingsJapgolly.sequelize.sequelizeStrings.default
 }
-
 object AddDefaultConstraintOptions {
-  @scala.inline
-  def apply(`type`: default, defaultValue: js.Any = null, name: String = null): AddDefaultConstraintOptions = {
+  
+  inline def apply(): AddDefaultConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("default")
     __obj.asInstanceOf[AddDefaultConstraintOptions]
   }
+  
+  extension [Self <: AddDefaultConstraintOptions](x: Self) {
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.sequelize.sequelizeStrings.default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

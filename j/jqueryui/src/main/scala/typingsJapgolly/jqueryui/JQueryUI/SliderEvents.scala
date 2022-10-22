@@ -2,34 +2,49 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderEvents extends js.Object {
+trait SliderEvents extends StObject {
+  
   var change: js.UndefOr[SliderEvent] = js.undefined
+  
   var create: js.UndefOr[SliderEvent] = js.undefined
+  
   var slide: js.UndefOr[SliderEvent] = js.undefined
+  
   var start: js.UndefOr[SliderEvent] = js.undefined
+  
   var stop: js.UndefOr[SliderEvent] = js.undefined
 }
-
 object SliderEvents {
-  @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback = null,
-    slide: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback = null,
-    start: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback = null
-  ): SliderEvents = {
+  
+  inline def apply(): SliderEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SliderUIParams) => change(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SliderUIParams) => create(t0, t1).runNow()))
-    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SliderUIParams) => slide(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SliderUIParams) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SliderUIParams) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[SliderEvents]
   }
+  
+  extension [Self <: SliderEvents](x: Self) {
+    
+    inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback): Self = StObject.set(x, "change", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SliderUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SliderUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setSlide(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback): Self = StObject.set(x, "slide", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SliderUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
+    
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback): Self = StObject.set(x, "start", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SliderUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Callback): Self = StObject.set(x, "stop", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SliderUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+  }
 }
-

@@ -4,16 +4,16 @@
 Typings are for version 2.0
 
 ## Library description:
-Apply a color scheme in a style pipe
+Create chalk style schemes with simpler style strings
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chalk-pipe |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 46 |
-| # downloads        | 231933 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 25125.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/LitoMore/chalk-pipe#readme)

@@ -1,26 +1,16 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps.SpatialDataService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Maps.SpatialDataService.FilterGroup")
-@js.native
-class FilterGroup protected () extends IFilter {
-  /**
-    * @constructor
-    * @requires The Microsoft.Maps.SpatialDataService module.
-    * @param filters An array consisting of Filter or FilterGroup objects to combine.
-    * @param operator The logical operator for combining the filters together.
-    * @param not A boolean is the logical inverse should of the filter should be used.
-    */
-  def this(filters: js.Array[IFilter], operator: FilterLogicalOperator) = this()
-  def this(filters: js.Array[IFilter], operator: FilterLogicalOperator, not: Boolean) = this()
-  /**
-    * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
-    * @returns A boolean indicating if the specified object meets the requirements of the Filter.
-    */
-  /* CompleteClass */
-  override def execute(`object`: js.Any): Boolean = js.native
+trait FilterGroup
+  extends StObject
+     with IFilter
+object FilterGroup {
+  
+  inline def apply(execute: Any => Boolean): FilterGroup = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
+    __obj.asInstanceOf[FilterGroup]
+  }
 }
-

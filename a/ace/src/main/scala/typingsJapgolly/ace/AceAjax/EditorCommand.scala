@@ -1,22 +1,19 @@
 package typingsJapgolly.ace.AceAjax
 
+import typingsJapgolly.ace.anon.Mac
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorCommand extends js.Object {
-  var bindKey: js.Any
-  var exec: js.Function
-  var name: String
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+@js.native
+trait EditorCommand extends StObject {
+  
+  var bindKey: js.UndefOr[String | Mac] = js.native
+  
+  def exec(editor: Editor): Unit = js.native
+  def exec(editor: Editor, args: Any): Unit = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var readOnly: js.UndefOr[Boolean] = js.native
 }
-
-object EditorCommand {
-  @scala.inline
-  def apply(bindKey: js.Any, exec: js.Function, name: String, readOnly: js.UndefOr[Boolean] = js.undefined): EditorCommand = {
-    val __obj = js.Dynamic.literal(bindKey = bindKey.asInstanceOf[js.Any], exec = exec.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EditorCommand]
-  }
-}
-

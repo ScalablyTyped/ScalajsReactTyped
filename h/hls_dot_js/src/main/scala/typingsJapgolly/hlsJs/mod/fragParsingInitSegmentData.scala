@@ -1,22 +1,7 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait fragParsingInitSegmentData extends js.Object {
-  var codecs: js.Any
-  var frag: Fragment
-  var id: String
-  var moov: js.Any
-}
-
-object fragParsingInitSegmentData {
-  @scala.inline
-  def apply(codecs: js.Any, frag: Fragment, id: String, moov: js.Any): fragParsingInitSegmentData = {
-    val __obj = js.Dynamic.literal(codecs = codecs.asInstanceOf[js.Any], frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moov = moov.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[fragParsingInitSegmentData]
-  }
-}
-
+trait FragParsingInitSegmentData extends StObject

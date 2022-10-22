@@ -1,83 +1,68 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAutoRefresh
+import typingsJapgolly.reactOnsenui.anon.AutoRefresh
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
 import typingsJapgolly.reactOnsenui.mod.AnimationOptions
 import typingsJapgolly.reactOnsenui.reactOnsenuiStrings.horizontal
 import typingsJapgolly.reactOnsenui.reactOnsenuiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Carousel {
-  def apply(
-    animationOptions: AnimationOptions = null,
-    autoRefresh: js.UndefOr[Boolean] = js.undefined,
-    autoScroll: js.UndefOr[Boolean] = js.undefined,
-    autoScrollRatio: Int | Double = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    direction: horizontal | vertical = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    index: Int | Double = null,
-    itemHeight: Double | String = null,
-    itemWidth: Double | String = null,
-    onOverscroll: js.UndefOr[Callback] = js.undefined,
-    onPostChange: js.UndefOr[Callback] = js.undefined,
-    onRefresh: js.UndefOr[Callback] = js.undefined,
-    overscrollable: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameAutoRefresh, 
-    typingsJapgolly.reactOnsenui.mod.Carousel, 
-    Unit, 
-    HTMLAttributesidclassNameAutoRefresh
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
-    if (autoScrollRatio != null) __obj.updateDynamic("autoScrollRatio")(autoScrollRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    onOverscroll.foreach(p => __obj.updateDynamic("onOverscroll")(p.toJsFn))
-    onPostChange.foreach(p => __obj.updateDynamic("onPostChange")(p.toJsFn))
-    onRefresh.foreach(p => __obj.updateDynamic("onRefresh")(p.toJsFn))
-    if (!js.isUndefined(overscrollable)) __obj.updateDynamic("overscrollable")(overscrollable.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAutoRefresh, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.Carousel](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAutoRefresh])(children: _*)
-  }
   @JSImport("react-onsenui", "Carousel")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.Carousel] {
+    
+    inline def animationOptions(value: AnimationOptions): this.type = set("animationOptions", value.asInstanceOf[js.Any])
+    
+    inline def autoRefresh(value: Boolean): this.type = set("autoRefresh", value.asInstanceOf[js.Any])
+    
+    inline def autoScroll(value: Boolean): this.type = set("autoScroll", value.asInstanceOf[js.Any])
+    
+    inline def autoScrollRatio(value: Double): this.type = set("autoScrollRatio", value.asInstanceOf[js.Any])
+    
+    inline def centered(value: Boolean): this.type = set("centered", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: horizontal | vertical): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fullscreen(value: Boolean): this.type = set("fullscreen", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def itemHeight(value: Double | String): this.type = set("itemHeight", value.asInstanceOf[js.Any])
+    
+    inline def itemWidth(value: Double | String): this.type = set("itemWidth", value.asInstanceOf[js.Any])
+    
+    inline def onOverscroll(value: Callback): this.type = set("onOverscroll", value.toJsFn)
+    
+    inline def onPostChange(value: Callback): this.type = set("onPostChange", value.toJsFn)
+    
+    inline def onRefresh(value: Callback): this.type = set("onRefresh", value.toJsFn)
+    
+    inline def overscrollable(value: Boolean): this.type = set("overscrollable", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def swipeable(value: Boolean): this.type = set("swipeable", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Carousel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & AutoRefresh): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

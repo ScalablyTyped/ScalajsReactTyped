@@ -1,23 +1,31 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#dom-rtcrtpcontributingsource
-trait RTCRtpContributingSource extends js.Object {
+trait RTCRtpContributingSource extends StObject {
+  
   //readonly timestamp: number;
   var source: Double
+  
   //readonly audioLevel: number | null;
   val voiceActivityFlag: js.UndefOr[Boolean] = js.undefined
 }
-
 object RTCRtpContributingSource {
-  @scala.inline
-  def apply(source: Double, voiceActivityFlag: js.UndefOr[Boolean] = js.undefined): RTCRtpContributingSource = {
+  
+  inline def apply(source: Double): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityFlag)) __obj.updateDynamic("voiceActivityFlag")(voiceActivityFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
+  
+  extension [Self <: RTCRtpContributingSource](x: Self) {
+    
+    inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceActivityFlag(value: Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
+  }
 }
-

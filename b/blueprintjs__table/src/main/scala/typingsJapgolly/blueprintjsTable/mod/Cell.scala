@@ -1,20 +1,36 @@
 package typingsJapgolly.blueprintjsTable.mod
 
-import typingsJapgolly.blueprintjsTable.AnonTruncated
+import typingsJapgolly.blueprintjsTable.anon.Truncated
+import typingsJapgolly.blueprintjsTable.libEsmCellCellMod.ICellProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "Cell")
 @js.native
-class Cell ()
-  extends typingsJapgolly.blueprintjsTable.cellMod.Cell
-
-/* static members */
-@JSImport("@blueprintjs/table", "Cell")
-@js.native
-object Cell extends js.Object {
-  var defaultProps: AnonTruncated = js.native
-  var displayName: String = js.native
+open class Cell protected ()
+  extends typingsJapgolly.blueprintjsTable.libEsmCellCellMod.Cell {
+  def this(props: ICellProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ICellProps, context: Any) = this()
 }
-
+/* static members */
+object Cell {
+  
+  @JSImport("@blueprintjs/table", "Cell")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/table", "Cell.defaultProps")
+  @js.native
+  def defaultProps: Truncated = js.native
+  inline def defaultProps_=(x: Truncated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "Cell.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

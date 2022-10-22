@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#ele.group
@@ -15,14 +15,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.nodes
   - typingsJapgolly.cytoscape.cytoscapeStrings.edges
 */
-trait ElementGroup extends js.Object
-
+trait ElementGroup extends StObject
 object ElementGroup {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def edges: typingsJapgolly.cytoscape.cytoscapeStrings.edges = this.cast("edges")
-  @scala.inline
-  def nodes: typingsJapgolly.cytoscape.cytoscapeStrings.nodes = this.cast("nodes")
+  
+  inline def edges: typingsJapgolly.cytoscape.cytoscapeStrings.edges = "edges".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.edges]
+  
+  inline def nodes: typingsJapgolly.cytoscape.cytoscapeStrings.nodes = "nodes".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.nodes]
 }
-

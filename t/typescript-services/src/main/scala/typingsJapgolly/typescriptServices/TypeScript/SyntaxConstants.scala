@@ -1,65 +1,52 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyntaxConstants extends js.Object
-
+sealed trait SyntaxConstants extends StObject
 @JSGlobal("TypeScript.SyntaxConstants")
 @js.native
-object SyntaxConstants extends js.Object {
-  @js.native
-  sealed trait IsVariableWidthKeyword extends SyntaxConstants
+object SyntaxConstants extends StObject {
   
   @js.native
-  sealed trait NodeDataComputed extends SyntaxConstants
+  sealed trait IsVariableWidthKeyword
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeFullWidthShift extends SyntaxConstants
+  sealed trait NodeDataComputed
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeIncrementallyUnusableMask extends SyntaxConstants
+  sealed trait NodeFullWidthShift
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait NodeParsedInStrictModeMask extends SyntaxConstants
+  sealed trait NodeIncrementallyUnusableMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaCommentMask extends SyntaxConstants
+  sealed trait NodeParsedInStrictModeMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaFullWidthShift extends SyntaxConstants
+  sealed trait TriviaCommentMask
+    extends StObject
+       with SyntaxConstants
   
   @js.native
-  sealed trait TriviaNewLineMask extends SyntaxConstants
+  sealed trait TriviaFullWidthShift
+    extends StObject
+       with SyntaxConstants
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SyntaxConstants with Double] = js.native
-  /* -2147483648 */ @js.native
-  object IsVariableWidthKeyword extends TopLevel[IsVariableWidthKeyword with Double]
-  
-  /* 1 */ @js.native
-  object NodeDataComputed extends TopLevel[NodeDataComputed with Double]
-  
-  /* 3 */ @js.native
-  object NodeFullWidthShift extends TopLevel[NodeFullWidthShift with Double]
-  
-  /* 2 */ @js.native
-  object NodeIncrementallyUnusableMask extends TopLevel[NodeIncrementallyUnusableMask with Double]
-  
-  /* 4 */ @js.native
-  object NodeParsedInStrictModeMask extends TopLevel[NodeParsedInStrictModeMask with Double]
-  
-  /* 2 */ @js.native
-  object TriviaCommentMask extends TopLevel[TriviaCommentMask with Double]
-  
-  /* 2 */ @js.native
-  object TriviaFullWidthShift extends TopLevel[TriviaFullWidthShift with Double]
-  
-  /* 1 */ @js.native
-  object TriviaNewLineMask extends TopLevel[TriviaNewLineMask with Double]
-  
+  @js.native
+  sealed trait TriviaNewLineMask
+    extends StObject
+       with SyntaxConstants
 }
-

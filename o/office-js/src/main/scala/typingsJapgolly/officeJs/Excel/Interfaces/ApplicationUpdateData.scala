@@ -4,40 +4,46 @@ import typingsJapgolly.officeJs.Excel.CalculationMode
 import typingsJapgolly.officeJs.officeJsStrings.Automatic
 import typingsJapgolly.officeJs.officeJsStrings.AutomaticExceptTables
 import typingsJapgolly.officeJs.officeJsStrings.Manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
-trait ApplicationUpdateData extends js.Object {
+trait ApplicationUpdateData extends StObject {
+  
   /**
+    * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
     *
-    * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
+  
   /**
-    *
-    * Returns the Iterative Calculation settings.
+    * Returns the iterative calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
 }
-
 object ApplicationUpdateData {
-  @scala.inline
-  def apply(
-    calculationMode: CalculationMode | Automatic | AutomaticExceptTables | Manual = null,
-    iterativeCalculation: IterativeCalculationUpdateData = null
-  ): ApplicationUpdateData = {
+  
+  inline def apply(): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
-    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdateData]
   }
+  
+  extension [Self <: ApplicationUpdateData](x: Self) {
+    
+    inline def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
+    
+    inline def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
+    
+    inline def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
+    
+    inline def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
+  }
 }
-

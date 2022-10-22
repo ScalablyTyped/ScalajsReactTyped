@@ -10,10 +10,10 @@ Beautiful color gradients in terminal output
 | ------------------ | :-------------: |
 | Full name          | gradient-string |
 | Keywords           | cli, color, colors, colour, command-line, console, formatting, gradient, gradients, log, logging, shell, string, style, styles, terminal |
-| # releases         | 3 |
-| # dependents       | 96 |
-| # downloads        | 267316 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 126322.33333333333 |
+| # stars            | 787.0 |
 
 ## Links
 - [Homepage](https://github.com/bokub/gradient-string)

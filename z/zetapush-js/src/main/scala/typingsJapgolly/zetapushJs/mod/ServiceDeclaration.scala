@@ -1,22 +1,34 @@
 package typingsJapgolly.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceDeclaration extends js.Object {
+trait ServiceDeclaration extends StObject {
+  
   var Type: Service
+  
   var deploymentId: js.UndefOr[String] = js.undefined
-  var listener: js.UndefOr[js.Any] = js.undefined
+  
+  var listener: js.UndefOr[Any] = js.undefined
 }
-
 object ServiceDeclaration {
-  @scala.inline
-  def apply(Type: Service, deploymentId: String = null, listener: js.Any = null): ServiceDeclaration = {
+  
+  inline def apply(Type: Service): ServiceDeclaration = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId.asInstanceOf[js.Any])
-    if (listener != null) __obj.updateDynamic("listener")(listener.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceDeclaration]
   }
+  
+  extension [Self <: ServiceDeclaration](x: Self) {
+    
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    
+    inline def setListener(value: Any): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    
+    inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+    
+    inline def setType(value: Service): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
 }
-

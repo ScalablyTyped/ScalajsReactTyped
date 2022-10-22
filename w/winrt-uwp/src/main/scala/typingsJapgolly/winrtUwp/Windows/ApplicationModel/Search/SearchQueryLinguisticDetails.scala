@@ -1,31 +1,39 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Search
 
-import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IIterable
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about query text that the user enters through an Input Method Editor (IME). */
-@JSGlobal("Windows.ApplicationModel.Search.SearchQueryLinguisticDetails")
-@js.native
-class SearchQueryLinguisticDetails protected () extends js.Object {
-  /**
-    * Initializes a new instance of the SearchQueryLinguisticDetails class.
-    * @param queryTextAlternatives A list of the text alternatives for the current query text.
-    * @param queryTextCompositionStart The starting location of the text that the user is composing with an IME.
-    * @param queryTextCompositionLength The length of the portion of the query text that the user is composing with an IME.
-    */
-  def this(
-    queryTextAlternatives: IIterable[String],
-    queryTextCompositionStart: Double,
-    queryTextCompositionLength: Double
-  ) = this()
+trait SearchQueryLinguisticDetails extends StObject {
+  
   /** A list of the text alternatives for the current query text. These alternatives account for uncomposed text the user is entering in an IME. */
-  var queryTextAlternatives: IVectorView[String] = js.native
+  var queryTextAlternatives: IVectorView[String]
+  
   /** The length of the portion of the query text that the user is composing with an Input Method Editor (IME). */
-  var queryTextCompositionLength: Double = js.native
+  var queryTextCompositionLength: Double
+  
   /** The starting location of the text that the user is composing with an Input Method Editor (IME). */
-  var queryTextCompositionStart: Double = js.native
+  var queryTextCompositionStart: Double
 }
-
+object SearchQueryLinguisticDetails {
+  
+  inline def apply(
+    queryTextAlternatives: IVectorView[String],
+    queryTextCompositionLength: Double,
+    queryTextCompositionStart: Double
+  ): SearchQueryLinguisticDetails = {
+    val __obj = js.Dynamic.literal(queryTextAlternatives = queryTextAlternatives.asInstanceOf[js.Any], queryTextCompositionLength = queryTextCompositionLength.asInstanceOf[js.Any], queryTextCompositionStart = queryTextCompositionStart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchQueryLinguisticDetails]
+  }
+  
+  extension [Self <: SearchQueryLinguisticDetails](x: Self) {
+    
+    inline def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
+    
+    inline def setQueryTextCompositionLength(value: Double): Self = StObject.set(x, "queryTextCompositionLength", value.asInstanceOf[js.Any])
+    
+    inline def setQueryTextCompositionStart(value: Double): Self = StObject.set(x, "queryTextCompositionStart", value.asInstanceOf[js.Any])
+  }
+}

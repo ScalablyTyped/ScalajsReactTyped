@@ -1,15 +1,21 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
 import typingsJapgolly.angular.mod.IRootScopeService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/angularjs", "watchDigests")
-@js.native
-object watchDigests extends js.Object {
-  @JSName("$inject")
-  var inject: js.Array[String] = js.native
-  def apply($rootScope: IRootScopeService): Unit = js.native
+object watchDigests {
+  
+  inline def apply($rootScope: IRootScopeService): Unit = ^.asInstanceOf[js.Dynamic].apply($rootScope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("@uirouter/angularjs", "watchDigests")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@uirouter/angularjs", "watchDigests.$inject")
+  @js.native
+  def inject: js.Array[String] = js.native
+  
+  inline def inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
 }
-

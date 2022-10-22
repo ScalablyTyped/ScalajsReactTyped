@@ -1,55 +1,73 @@
 package typingsJapgolly.igniteUi
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CellClickEventUIParam extends js.Object {
+trait CellClickEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to cell DOM element.
-  	 */
+    * Gets a reference to cell DOM element.
+    */
   var cellElement: js.UndefOr[Element] = js.undefined
+  
   /**
-  	 * Gets the column index of the DOM element.
-  	 */
+    * Gets the column index of the DOM element.
+    */
   var colIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var colKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the row index.
-  	 */
+    * Gets the row index.
+    */
   var rowIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets the row key.
-  	 */
-  var rowKey: js.UndefOr[js.Any] = js.undefined
+    * Gets the row key.
+    */
+  var rowKey: js.UndefOr[Any] = js.undefined
 }
-
 object CellClickEventUIParam {
-  @scala.inline
-  def apply(
-    cellElement: Element = null,
-    colIndex: Int | Double = null,
-    colKey: String = null,
-    owner: js.Any = null,
-    rowIndex: Int | Double = null,
-    rowKey: js.Any = null
-  ): CellClickEventUIParam = {
+  
+  inline def apply(): CellClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
-    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
-    if (colKey != null) __obj.updateDynamic("colKey")(colKey.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellClickEventUIParam]
   }
+  
+  extension [Self <: CellClickEventUIParam](x: Self) {
+    
+    inline def setCellElement(value: Element): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+    
+    inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
+    
+    inline def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
+    
+    inline def setColKey(value: String): Self = StObject.set(x, "colKey", value.asInstanceOf[js.Any])
+    
+    inline def setColKeyUndefined: Self = StObject.set(x, "colKey", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    
+    inline def setRowKey(value: Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    
+    inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
+  }
 }
-

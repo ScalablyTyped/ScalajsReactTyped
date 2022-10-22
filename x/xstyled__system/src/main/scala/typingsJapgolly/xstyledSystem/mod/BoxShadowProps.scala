@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BoxShadowProperty
+import typingsJapgolly.csstype.mod.Property.BoxShadow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoxShadowProps extends js.Object {
-  val boxShadow: js.UndefOr[ResponsiveValue[BoxShadowProperty | Double]] = js.undefined
+trait BoxShadowProps extends StObject {
+  
+  val boxShadow: js.UndefOr[ResponsiveValue[BoxShadow | Double]] = js.undefined
 }
-
 object BoxShadowProps {
-  @scala.inline
-  def apply(boxShadow: ResponsiveValue[BoxShadowProperty | Double] = null): BoxShadowProps = {
+  
+  inline def apply(): BoxShadowProps = {
     val __obj = js.Dynamic.literal()
-    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxShadowProps]
   }
+  
+  extension [Self <: BoxShadowProps](x: Self) {
+    
+    inline def setBoxShadow(value: ResponsiveValue[BoxShadow | Double]): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    
+    inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    
+    inline def setBoxShadowVarargs(value: (BoxShadow | Double)*): Self = StObject.set(x, "boxShadow", js.Array(value*))
+  }
 }
-

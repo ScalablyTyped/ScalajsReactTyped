@@ -1,36 +1,41 @@
 package typingsJapgolly.baiduApp.swan
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DownloadFileOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /** HTTP 请求 Header */
   var header: js.UndefOr[RequestHeader] = js.undefined
+  
   /** 下载成功后以 tempFilePath 的形式传给页面，res = {tempFilePath: '文件的临时路径'} */
   @JSName("success")
   var success_DownloadFileOptions: js.UndefOr[js.Function1[/* res */ TempFileResponse, Unit]] = js.undefined
+  
   /** 下载资源的 url */
   var url: String
 }
-
 object DownloadFileOptions {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    header: RequestHeader = null,
-    success: /* res */ TempFileResponse => Callback = null
-  ): DownloadFileOptions = {
+  
+  inline def apply(url: String): DownloadFileOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.baiduApp.swan.TempFileResponse) => success(t0).runNow()))
     __obj.asInstanceOf[DownloadFileOptions]
   }
+  
+  extension [Self <: DownloadFileOptions](x: Self) {
+    
+    inline def setHeader(value: RequestHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setSuccess(value: /* res */ TempFileResponse => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ TempFileResponse) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

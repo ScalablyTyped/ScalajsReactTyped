@@ -1,21 +1,34 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstrainStringParameters extends js.Object {
+trait ConstrainStringParameters extends StObject {
+  
   var exact: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var ideal: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object ConstrainStringParameters {
-  @scala.inline
-  def apply(exact: String | js.Array[String] = null, ideal: String | js.Array[String] = null): ConstrainStringParameters = {
+  
+  inline def apply(): ConstrainStringParameters = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstrainStringParameters]
   }
+  
+  extension [Self <: ConstrainStringParameters](x: Self) {
+    
+    inline def setExact(value: String | js.Array[String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    
+    inline def setExactVarargs(value: String*): Self = StObject.set(x, "exact", js.Array(value*))
+    
+    inline def setIdeal(value: String | js.Array[String]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    
+    inline def setIdealVarargs(value: String*): Self = StObject.set(x, "ideal", js.Array(value*))
+  }
 }
-

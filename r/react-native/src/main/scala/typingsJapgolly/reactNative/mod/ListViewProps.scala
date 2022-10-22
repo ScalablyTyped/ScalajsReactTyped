@@ -1,17 +1,21 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListViewProps extends ScrollViewProps {
+trait ListViewProps
+  extends StObject
+     with ScrollViewProps {
+  
   /**
     * An instance of [ListView.DataSource](docs/listviewdatasource.html) to use
     */
   var dataSource: ListViewDataSource = js.native
+  
   /**
     * Flag indicating whether empty section headers should be rendered.
     * In the future release empty section headers will be rendered by
@@ -20,12 +24,14 @@ trait ListViewProps extends ScrollViewProps {
     * sectionID object.
     */
   var enableEmptySections: js.UndefOr[Boolean] = js.native
+  
   /**
     * How many rows to render on initial component mount.  Use this to make
     * it so that the first screen worth of data apears at one time instead of
     * over the course of multiple frames.
     */
   var initialListSize: js.UndefOr[Double] = js.native
+  
   /**
     * (visibleRows, changedRows) => void
     *
@@ -42,20 +48,24 @@ trait ListViewProps extends ScrollViewProps {
       Unit
     ]
   ] = js.native
+  
   /**
     * Called when all rows have been rendered and the list has been scrolled
     * to within onEndReachedThreshold of the bottom.  The native scroll
     * event is provided.
     */
   var onEndReached: js.UndefOr[js.Function0[Unit]] = js.native
+  
   /**
     * Threshold in pixels for onEndReached.
     */
   var onEndReachedThreshold: js.UndefOr[Double] = js.native
+  
   /**
     * Number of rows to render per event loop.
     */
   var pageSize: js.UndefOr[Double] = js.native
+  
   /**
     * () => renderable
     *
@@ -65,6 +75,7 @@ trait ListViewProps extends ScrollViewProps {
     * at the bottom of the list, and header at the top, on every render pass.
     */
   var renderFooter: js.UndefOr[js.Function0[Element]] = js.native
+  
   /**
     * () => renderable
     *
@@ -74,11 +85,29 @@ trait ListViewProps extends ScrollViewProps {
     * at the bottom of the list, and header at the top, on every render pass.
     */
   var renderHeader: js.UndefOr[js.Function0[Element]] = js.native
+  
+  /**
+    * (rowData, sectionID, rowID) => renderable
+    * Takes a data entry from the data source and its ids and should return
+    * a renderable component to be rendered as the row.  By default the data
+    * is exactly what was put into the data source, but it's also possible to
+    * provide custom extractors.
+    */
+  def renderRow(rowData: Any, sectionID: String, rowID: String): Element = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: String, highlightRow: Boolean): Element = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double): Element = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double, highlightRow: Boolean): Element = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String): Element = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String, highlightRow: Boolean): Element = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double): Element = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double, highlightRow: Boolean): Element = js.native
+  
   /**
     * A function that returns the scrollable component in which the list rows are rendered.
     * Defaults to returning a ScrollView with the given props.
     */
   var renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, Element]] = js.native
+  
   /**
     * (sectionData, sectionID) => renderable
     *
@@ -88,7 +117,8 @@ trait ListViewProps extends ScrollViewProps {
     * stick to the top until it is pushed off the screen by the next section
     * header.
     */
-  var renderSectionHeader: js.UndefOr[js.Function2[/* sectionData */ js.Any, /* sectionId */ String | Double, Element]] = js.native
+  var renderSectionHeader: js.UndefOr[js.Function2[/* sectionData */ Any, /* sectionId */ String | Double, Element]] = js.native
+  
   /**
     * (sectionID, rowID, adjacentRowHighlighted) => renderable
     * If provided, a renderable component to be rendered as the separator below each row
@@ -103,11 +133,13 @@ trait ListViewProps extends ScrollViewProps {
       Element
     ]
   ] = js.native
+  
   /**
     * How early to start rendering rows before they come on screen, in
     * pixels.
     */
   var scrollRenderAheadDistance: js.UndefOr[Double] = js.native
+  
   /**
     * Makes the sections headers sticky. The sticky behavior means that it will scroll with the
     * content at the top of the section until it reaches the top of the screen, at which point it
@@ -116,20 +148,4 @@ trait ListViewProps extends ScrollViewProps {
     * on iOS because of typical platform standards.
     */
   var stickySectionHeadersEnabled: js.UndefOr[Boolean] = js.native
-  /**
-    * (rowData, sectionID, rowID) => renderable
-    * Takes a data entry from the data source and its ids and should return
-    * a renderable component to be rendered as the row.  By default the data
-    * is exactly what was put into the data source, but it's also possible to
-    * provide custom extractors.
-    */
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String, highlightRow: Boolean): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double, highlightRow: Boolean): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String, highlightRow: Boolean): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double): Element = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double, highlightRow: Boolean): Element = js.native
 }
-

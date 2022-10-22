@@ -1,51 +1,88 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestOptions extends js.Object {
+/** Custom request options 
+  * @see README: {@link https://www.npmjs.com/package/nano#nanorequestopts-callback}*/
+trait RequestOptions extends StObject {
+  
   var att: js.UndefOr[String] = js.undefined
-  var body: js.UndefOr[js.Any] = js.undefined
+  
+  var body: js.UndefOr[Any] = js.undefined
+  
   var content_type: js.UndefOr[String] = js.undefined
+  
   var db: js.UndefOr[String] = js.undefined
+  
   var doc: js.UndefOr[String] = js.undefined
+  
   var encoding: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
+  
+  var headers: js.UndefOr[Any] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
-  var multipart: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var multipart: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
-  var qs: js.UndefOr[js.Any] = js.undefined
+  
+  var qs: js.UndefOr[Any] = js.undefined
 }
-
 object RequestOptions {
-  @scala.inline
-  def apply(
-    att: String = null,
-    body: js.Any = null,
-    content_type: String = null,
-    db: String = null,
-    doc: String = null,
-    encoding: String = null,
-    headers: js.Any = null,
-    method: String = null,
-    multipart: js.Array[_] = null,
-    path: String = null,
-    qs: js.Any = null
-  ): RequestOptions = {
+  
+  inline def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (att != null) __obj.updateDynamic("att")(att.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
-    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
-    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
+  
+  extension [Self <: RequestOptions](x: Self) {
+    
+    inline def setAtt(value: String): Self = StObject.set(x, "att", value.asInstanceOf[js.Any])
+    
+    inline def setAttUndefined: Self = StObject.set(x, "att", js.undefined)
+    
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    
+    inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+    
+    inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setMultipart(value: js.Array[Any]): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    
+    inline def setMultipartVarargs(value: Any*): Self = StObject.set(x, "multipart", js.Array(value*))
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setQs(value: Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+    
+    inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
+  }
 }
-

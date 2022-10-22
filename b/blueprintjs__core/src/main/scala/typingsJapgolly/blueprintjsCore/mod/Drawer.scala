@@ -1,26 +1,31 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreStrings.`360px`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreStrings.`50Percentsign`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreStrings.`90Percentsign`
-import typingsJapgolly.blueprintjsCore.drawerMod.IDrawerProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Drawer")
 @js.native
-class Drawer ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Drawer
-
-/* static members */
-@JSImport("@blueprintjs/core", "Drawer")
-@js.native
-object Drawer extends js.Object {
-  val SIZE_LARGE: `90Percentsign` = js.native
-  val SIZE_SMALL: `360px` = js.native
-  val SIZE_STANDARD: `50Percentsign` = js.native
-  var defaultProps: IDrawerProps = js.native
-  var displayName: String = js.native
+open class Drawer protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Drawer {
+  def this(props: DrawerProps) = this()
+  def this(props: DrawerProps, context: Any) = this()
 }
-
+/* static members */
+object Drawer {
+  
+  @JSImport("@blueprintjs/core", "Drawer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Drawer.defaultProps")
+  @js.native
+  def defaultProps: DrawerProps = js.native
+  inline def defaultProps_=(x: DrawerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Drawer.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

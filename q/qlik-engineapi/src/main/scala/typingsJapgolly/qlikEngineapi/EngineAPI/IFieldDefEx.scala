@@ -1,17 +1,19 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldDefEx...
   */
-trait IFieldDefEx extends js.Object {
+trait IFieldDefEx extends StObject {
+  
   /**
     * Name of the field
     */
   var qName: String
+  
   /**
     * Type of data entity
     *
@@ -22,13 +24,17 @@ trait IFieldDefEx extends js.Object {
     */
   var qType: FieldDefExType
 }
-
 object IFieldDefEx {
-  @scala.inline
-  def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
-    val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
+  inline def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
+    val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldDefEx]
   }
+  
+  extension [Self <: IFieldDefEx](x: Self) {
+    
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    
+    inline def setQType(value: FieldDefExType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+  }
 }
-

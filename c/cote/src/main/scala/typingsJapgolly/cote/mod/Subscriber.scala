@@ -1,12 +1,12 @@
 package typingsJapgolly.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Subscriber")
 @js.native
-class Subscriber protected () extends Component {
+open class Subscriber protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */
@@ -21,5 +21,13 @@ class Subscriber protected () extends Component {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  
+  /**
+    * Subscribes to events emitted from a Publisher.
+    *
+    * @param type Type. May be wildcarded or namespaced like in EventEmitter2.
+    * @param listener Callback. Returns nothing.
+    */
+  def on[T /* <: Event */](`type`: String, listener: js.Function1[/* event */ T, Unit]): this.type = js.native
+  def on[T /* <: Event */](`type`: js.Array[String], listener: js.Function1[/* event */ T, Unit]): this.type = js.native
 }
-

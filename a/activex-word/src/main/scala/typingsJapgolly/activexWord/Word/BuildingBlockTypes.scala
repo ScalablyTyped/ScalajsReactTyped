@@ -1,18 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.BuildingBlockTypes")
-@js.native
-class BuildingBlockTypes protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.BuildingBlockTypes_typekey")
-  var WordDotBuildingBlockTypes_typekey: BuildingBlockTypes = js.native
-  def Item(Index: WdBuildingBlockTypes): BuildingBlockType = js.native
+trait BuildingBlockTypes extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Count: Double
+  
+  val Creator: Double
+  
+  def Item(Index: WdBuildingBlockTypes): BuildingBlockType
+  
+  val Parent: Any
+  
+  /* private */ @JSName("Word.BuildingBlockTypes_typekey")
+  var WordDotBuildingBlockTypes_typekey: BuildingBlockTypes
 }
-
+object BuildingBlockTypes {
+  
+  inline def apply(
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: WdBuildingBlockTypes => BuildingBlockType,
+    Parent: Any,
+    WordDotBuildingBlockTypes_typekey: BuildingBlockTypes
+  ): BuildingBlockTypes = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.BuildingBlockTypes_typekey")(WordDotBuildingBlockTypes_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BuildingBlockTypes]
+  }
+  
+  extension [Self <: BuildingBlockTypes](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: WdBuildingBlockTypes => BuildingBlockType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotBuildingBlockTypes_typekey(value: BuildingBlockTypes): Self = StObject.set(x, "Word.BuildingBlockTypes_typekey", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region IDefinition
 /* Rewritten from type alias, can be one of: 
@@ -10,16 +10,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty
 */
-trait ExpressionType extends js.Object
-
+trait ExpressionType extends StObject
 object ExpressionType {
-  @scala.inline
-  def _empty: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty = this.cast("")
-  @scala.inline
-  def always: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always = this.cast("always")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def optional: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional = this.cast("optional")
+  
+  inline def _empty: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty = "".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings._empty]
+  
+  inline def always: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always = "always".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.always]
+  
+  inline def optional: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional = "optional".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.optional]
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.StamenOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Stamen")
 @js.native
-class Stamen protected () extends XYZ {
+open class Stamen protected () extends XYZ {
   /**
     * @classdesc
     * Layer source for the Stamen tile server.
@@ -24,4 +24,3 @@ class Stamen protected () extends XYZ {
     */
   def this(options: StamenOptions) = this()
 }
-

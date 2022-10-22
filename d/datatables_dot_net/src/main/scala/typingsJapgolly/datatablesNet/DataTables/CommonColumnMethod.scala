@@ -1,28 +1,34 @@
 package typingsJapgolly.datatablesNet.DataTables
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "cell-methods"
 //#region "column-methods"
 @js.native
-trait CommonColumnMethod extends CommonSubMethods {
+trait CommonColumnMethod
+  extends StObject
+     with CommonSubMethods {
+  
   /**
     * Get the footer th / td cell for the selected column.
     */
   def footer(): HTMLElement = js.native
+  
   /**
     * Get the header th / td cell for a column.
     */
   def header(): HTMLElement = js.native
+  
   /**
     * Order the table, in the direction specified, by the column selected by the column()DT selector.
     *
     * @param direction Direction of sort to apply to the selected column - desc (descending) or asc (ascending).
     */
   def order(direction: String): Api = js.native
+  
   /**
     * Get the visibility of the selected column.
     */
@@ -36,4 +42,3 @@ trait CommonColumnMethod extends CommonSubMethods {
   def visible(show: Boolean): Api = js.native
   def visible(show: Boolean, redrawCalculations: Boolean): Api = js.native
 }
-

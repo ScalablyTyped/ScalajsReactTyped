@@ -1,22 +1,23 @@
 package typingsJapgolly.breeze.breeze
 
-import typingsJapgolly.breeze.AnonIsCaseSensitive
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("breeze.LocalQueryComparisonOptions")
-@js.native
-class LocalQueryComparisonOptions protected () extends js.Object {
-  def this(config: AnonIsCaseSensitive) = this()
-  def setAsDefault(): Unit = js.native
+trait LocalQueryComparisonOptions extends StObject {
+  
+  def setAsDefault(): Unit
 }
-
-/* static members */
-@JSGlobal("breeze.LocalQueryComparisonOptions")
-@js.native
-object LocalQueryComparisonOptions extends js.Object {
-  var caseInsensitiveSQL: LocalQueryComparisonOptions = js.native
-  var defaultInstance: LocalQueryComparisonOptions = js.native
+object LocalQueryComparisonOptions {
+  
+  inline def apply(setAsDefault: Callback): LocalQueryComparisonOptions = {
+    val __obj = js.Dynamic.literal(setAsDefault = setAsDefault.toJsFn)
+    __obj.asInstanceOf[LocalQueryComparisonOptions]
+  }
+  
+  extension [Self <: LocalQueryComparisonOptions](x: Self) {
+    
+    inline def setSetAsDefault(value: Callback): Self = StObject.set(x, "setAsDefault", value.toJsFn)
+  }
 }
-
